@@ -8,6 +8,7 @@ Architecture & Execution Pipeline:
    - Extensible LLM Agent Interface (OpenAI / vLLM / Ollama / Transformers compatible).
 4. Tool Execution & State Transition: Calls executed sequentially on zaic_tools.ToolEnv.
 5. Submission Generation: Produces submission.jsonl with (id, tool_calls, state_hash).
+6. Remote GitHub Dataset Support: Can auto-clone or stream datasets directly from GitHub repo.
 """
 
 from __future__ import annotations
@@ -15,21 +16,96 @@ from __future__ import annotations
 import argparse
 import copy
 from datetime import datetime, timedelta
+import io
 import json
 import os
 from pathlib import Path
 import re
+import shutil
+import subprocess
 import sys
 from typing import Any, Dict, List, Optional, Tuple
+import urllib.request
 
-# Add zaic_tools paths
+# Configuration & Constants
 PROJECT_ROOT = Path(__file__).resolve().parent
-TRAIN_ROOT = PROJECT_ROOT / "train+public_test" / "train"
-TEST_ROOT = PROJECT_ROOT / "train+public_test" / "public_test"
+DEFAULT_REPO_URL = os.getenv("ZALOAI_REPO_URL", "https://github.com/vdhwy/ZALOAI.git")
+DEFAULT_RAW_BASE = os.getenv(
+    "ZALOAI_RAW_BASE", "https://raw.githubusercontent.com/vdhwy/ZALOAI/main/train+public_test"
+)
+DEFAULT_DATA_DIR = PROJECT_ROOT / "train+public_test"
 
-if str(TRAIN_ROOT) not in sys.path:
-    sys.path.insert(0, str(TRAIN_ROOT))
 
+# ==============================================================================
+# 0. Remote GitHub Dataset Loader
+# ==============================================================================
+def open_dataset(path_or_url: str | Path) -> List[str]:
+    """Load lines from a local file path or HTTP/HTTPS/GitHub raw URL transparently."""
+    s = str(path_or_url)
+    if s.startswith("http://") or s.startswith("https://"):
+        req = urllib.request.Request(s, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            return resp.read().decode("utf-8").splitlines()
+    with open(path_or_url, "r", encoding="utf-8") as f:
+        return f.read().splitlines()
+
+
+def ensure_dataset(
+    repo_url: str = DEFAULT_REPO_URL,
+    data_dir: Path | str = DEFAULT_DATA_DIR,
+    branch: str = "main",
+) -> Path:
+    """Ensure that the dataset exists locally; if not, auto-clone from the GitHub repo."""
+    data_path = Path(data_dir).resolve()
+    train_marker = data_path / "train" / "train.jsonl"
+    test_marker = data_path / "public_test" / "public_test.jsonl"
+
+    if train_marker.is_file() and test_marker.is_file():
+        return data_path
+
+    print(f"\n[Dataset] Local dataset not complete at '{data_path}'.")
+    print(f"[Dataset] Fetching dataset from GitHub repository: {repo_url} (branch: {branch})...")
+
+    temp_dir = data_path.parent / "_temp_repo_clone"
+    if temp_dir.exists():
+        shutil.rmtree(temp_dir, ignore_errors=True)
+
+    try:
+        cmd = ["git", "clone", "--depth", "1", "-b", branch, repo_url, str(temp_dir)]
+        subprocess.run(cmd, check=True)
+
+        candidate_data = temp_dir / "train+public_test"
+        if candidate_data.is_dir():
+            if data_path.exists():
+                shutil.rmtree(data_path, ignore_errors=True)
+            shutil.move(str(candidate_data), str(data_path))
+            print(f"[Dataset] Successfully extracted dataset to: {data_path}")
+        else:
+            if data_path.exists():
+                shutil.rmtree(data_path, ignore_errors=True)
+            shutil.move(str(temp_dir), str(data_path))
+            print(f"[Dataset] Moved cloned repo to dataset path: {data_path}")
+
+    except Exception as e:
+        print(f"[Dataset] Warning: git clone failed ({e}).")
+        print(f"[Dataset] You can stream jsonl directly from raw GitHub or download manually.")
+    finally:
+        if temp_dir.exists():
+            shutil.rmtree(temp_dir, ignore_errors=True)
+
+    return data_path
+
+
+# Ensure zaic_tools is importable
+def _setup_runtime_paths(data_dir: Path):
+    train_pkg = data_dir / "train"
+    test_pkg = data_dir / "public_test"
+    for p in [train_pkg, test_pkg]:
+        if p.is_dir() and str(p) not in sys.path:
+            sys.path.insert(0, str(p))
+
+
+_setup_runtime_paths(DEFAULT_DATA_DIR)
 from zaic_tools import ToolEnv, schema_validate  # noqa: E402
 from zaic_tools.utils import state_hash  # noqa: E402
 
@@ -81,7 +157,6 @@ class DateTimeResolver:
 
     @staticmethod
     def parse_current_time(current_time_str: str) -> datetime:
-        # e.g. "2026-11-10T08:15:00+07:00"
         time_part = current_time_str[:19]
         return datetime.fromisoformat(time_part)
 
@@ -193,8 +268,7 @@ class HeuristicBaselineAgent(BaseAgent):
                 if "mai" in text:
                     target_date = target_date + timedelta(days=1)
                 date_str = target_date.isoformat()
-                # Execute read call immediately to inform downstream actions
-                res = env.call("weather.get_forecast", {"date": date_str})
+                env.call("weather.get_forecast", {"date": date_str})
                 calls.append({"name": "weather.get_forecast", "arguments": {"date": date_str}})
 
         # ------------------------------------------------------------------
@@ -205,7 +279,6 @@ class HeuristicBaselineAgent(BaseAgent):
             lights = [d for d in sh_state.get("devices", []) if d.get("type") == "light"]
             if lights:
                 target_device = lights[0]["id"]
-                # Match room / device name in text
                 for d in lights:
                     name = d.get("name", "").lower()
                     room = d.get("room", "").lower()
@@ -314,7 +387,6 @@ class LLMBaselineAgent(BaseAgent):
         )
 
     def predict(self, item: Dict[str, Any], env: Any) -> List[Dict[str, Any]]:
-        # In this template, fallback to heuristic or call external API
         heuristic = HeuristicBaselineAgent()
         return heuristic.predict(item, env)
 
@@ -324,54 +396,55 @@ class LLMBaselineAgent(BaseAgent):
 # ==============================================================================
 def evaluate_agent(
     agent: BaseAgent,
-    data_path: Path,
+    data_source: str | Path,
+    data_root: Path = DEFAULT_DATA_DIR,
     split: str = "train",
     max_samples: Optional[int] = None,
 ) -> Dict[str, float]:
-    """Evaluate agent against ground truth labels in train.jsonl."""
-    print(f"\n--- Evaluating Agent on {split} ({data_path}) ---")
+    """Evaluate agent against ground truth labels in train.jsonl (supports local file or HTTP URL)."""
+    print(f"\n--- Evaluating Agent on {split} (source: {data_source}) ---")
     correct_hash = 0
     total = 0
     total_calls_pred = 0
     total_calls_target = 0
     exact_tool_names = 0
 
-    with open(data_path, encoding="utf-8") as f:
-        for idx, line in enumerate(f):
-            if not line.strip():
-                continue
-            if max_samples and idx >= max_samples:
-                break
+    lines = open_dataset(data_source)
+    for idx, line in enumerate(lines):
+        if not line.strip():
+            continue
+        if max_samples and idx >= max_samples:
+            break
 
-            item = json.loads(line)
-            sample_id = item["id"]
+        item = json.loads(line)
+        sample_id = item["id"]
 
-            # 1. Oracle environment: compute target state hash
-            oracle_env = ToolEnv(split, sample_id, root=PROJECT_ROOT / "train+public_test")
-            for call in item["label"]["tool_calls"]:
-                oracle_env.call(call["name"], call.get("arguments", {}))
-            target_hash = oracle_env.get_state_hash()
-            target_tools = [c["name"] for c in item["label"]["tool_calls"]]
+        # 1. Oracle environment: compute target state hash
+        oracle_env = ToolEnv(split, sample_id, root=data_root)
+        for call in item["label"]["tool_calls"]:
+            oracle_env.call(call["name"], call.get("arguments", {}))
+        target_hash = oracle_env.get_state_hash()
+        target_tools = [c["name"] for c in item["label"]["tool_calls"]]
 
-            # 2. Prediction environment: run agent
-            pred_env = ToolEnv(split, sample_id, root=PROJECT_ROOT / "train+public_test")
-            agent.predict(item, pred_env)
-            pred_hash = pred_env.get_state_hash()
-            pred_calls = pred_env.get_tool_calls()
-            pred_tools = [c["name"] for c in pred_calls]
+        # 2. Prediction environment: run agent
+        pred_env = ToolEnv(split, sample_id, root=data_root)
+        agent.predict(item, pred_env)
+        pred_hash = pred_env.get_state_hash()
+        pred_calls = pred_env.get_tool_calls()
+        pred_tools = [c["name"] for c in pred_calls]
 
-            # 3. Metrics
-            if pred_hash == target_hash:
-                correct_hash += 1
-            if pred_tools == target_tools:
-                exact_tool_names += 1
+        # 3. Metrics
+        if pred_hash == target_hash:
+            correct_hash += 1
+        if pred_tools == target_tools:
+            exact_tool_names += 1
 
-            total_calls_pred += len(pred_calls)
-            total_calls_target += len(target_tools)
-            total += 1
+        total_calls_pred += len(pred_calls)
+        total_calls_target += len(target_tools)
+        total += 1
 
-            if total % 100 == 0:
-                print(f"Evaluated {total} samples | Current State Hash Accuracy: {correct_hash/total*100:.2f}%")
+        if total % 100 == 0:
+            print(f"Evaluated {total} samples | Current State Hash Accuracy: {correct_hash/total*100:.2f}%")
 
     acc = correct_hash / total if total > 0 else 0.0
     tool_acc = exact_tool_names / total if total > 0 else 0.0
@@ -387,17 +460,19 @@ def evaluate_agent(
 
 def generate_submission(
     agent: BaseAgent,
-    test_jsonl: Path,
+    test_source: str | Path,
     output_path: Path,
+    data_root: Path = DEFAULT_DATA_DIR,
     split: str = "public_test",
 ) -> None:
-    """Run agent on test split and generate valid submission.jsonl."""
+    """Run agent on test split and generate valid submission.jsonl (supports local file or HTTP URL)."""
     print(f"\n--- Generating Submission for {split} -> {output_path} ---")
-    data_root = PROJECT_ROOT / "train+public_test"
     count = 0
+    all_calls = []
 
-    with open(test_jsonl, encoding="utf-8") as fin, open(output_path, "w", encoding="utf-8") as fout:
-        for line in fin:
+    lines = open_dataset(test_source)
+    with open(output_path, "w", encoding="utf-8") as fout:
+        for line in lines:
             if not line.strip():
                 continue
             item = json.loads(line)
@@ -406,9 +481,11 @@ def generate_submission(
             env = ToolEnv(split, sample_id, root=data_root)
             agent.predict(item, env)
 
+            calls = env.get_tool_calls()
+            all_calls.extend(calls)
             record = {
                 "id": sample_id,
-                "tool_calls": env.get_tool_calls(),
+                "tool_calls": calls,
                 "state_hash": env.get_state_hash(),
             }
             fout.write(json.dumps(record, ensure_ascii=False) + "\n")
@@ -416,50 +493,56 @@ def generate_submission(
 
     print(f"Wrote {count} lines to {output_path}.")
 
-    # Validate output schema using zaic_tools validator
-    print("Running schema validation on submission...")
-    from zaic_tools.executor import Executor
-
-    executor = Executor(
-        str(data_root / split / f"{split}_environment"),
-        str(data_root / split / f"{split}_tools_catalog.json"),
-    )
-    all_calls = []
-    with open(output_path, encoding="utf-8") as f:
-        for line in f:
-            rec = json.loads(line)
-            all_calls.extend(rec.get("tool_calls", []))
-
-    val_res = schema_validate(all_calls, executor.catalog)
-    errors = [v for v in val_res if not v.get("ok")]
-    print(f"Validation finished: {len(all_calls)} tool calls checked, {len(errors)} schema errors.")
-    if errors:
-        print("First 3 errors:", errors[:3])
-    else:
-        print("Submission is 100% valid and ready for leaderboard!")
+    # Fast validation: check calls against catalog
+    catalog_file = data_root / split / f"{split}_tools_catalog.json"
+    if catalog_file.is_file():
+        print("Running schema validation on submission...")
+        catalog = json.load(open(catalog_file, encoding="utf-8"))
+        val_res = schema_validate(all_calls, catalog)
+        errors = [v for v in val_res if not v.get("ok")]
+        print(f"Validation finished: {len(all_calls)} tool calls checked, {len(errors)} schema errors.")
+        if errors:
+            print("First 3 errors:", errors[:3])
+        else:
+            print("Submission is 100% valid and ready for leaderboard!")
 
 
 # ==============================================================================
 # 5. Main CLI Entry Point
 # ==============================================================================
 def main():
-    parser = argparse.ArgumentParser(description="ZAC 2026 LifeMate Baseline")
+    parser = argparse.ArgumentParser(description="ZAC 2026 LifeMate Baseline (GitHub Repo Dataset Support)")
     parser.add_argument("--evaluate", action="store_true", help="Evaluate baseline on train split")
     parser.add_argument("--predict", action="store_true", help="Generate submission for public_test")
+    parser.add_argument("--repo-url", type=str, default=DEFAULT_REPO_URL, help=f"GitHub repository URL (default: {DEFAULT_REPO_URL})")
+    parser.add_argument("--data-dir", type=str, default=str(DEFAULT_DATA_DIR), help="Local dataset directory")
+    parser.add_argument("--train-source", type=str, default="", help="Path or HTTP URL to train.jsonl (defaults to local or raw GitHub)")
+    parser.add_argument("--test-source", type=str, default="", help="Path or HTTP URL to public_test.jsonl")
+    parser.add_argument("--stream-github", action="store_true", help="Stream dataset directly from raw.githubusercontent.com")
     parser.add_argument("--max-samples", type=int, default=200, help="Max samples for evaluation (default: 200)")
     parser.add_argument("--output", type=str, default="submission.jsonl", help="Output submission path")
     args = parser.parse_args()
 
+    # 1. Ensure dataset exists locally (auto-clone from GitHub if needed)
+    data_root = ensure_dataset(repo_url=args.repo_url, data_dir=args.data_dir)
+    _setup_runtime_paths(data_root)
+
+    # 2. Determine train and test sources (local path or GitHub raw URL)
+    if args.stream_github:
+        train_source = f"{DEFAULT_RAW_BASE}/train/train.jsonl"
+        test_source = f"{DEFAULT_RAW_BASE}/public_test/public_test.jsonl"
+    else:
+        train_source = args.train_source or str(data_root / "train" / "train.jsonl")
+        test_source = args.test_source or str(data_root / "public_test" / "public_test.jsonl")
+
     agent = HeuristicBaselineAgent()
 
     if args.evaluate or (not args.evaluate and not args.predict):
-        train_file = PROJECT_ROOT / "train+public_test" / "train" / "train.jsonl"
-        evaluate_agent(agent, train_file, split="train", max_samples=args.max_samples)
+        evaluate_agent(agent, data_source=train_source, data_root=data_root, split="train", max_samples=args.max_samples)
 
     if args.predict:
-        test_file = PROJECT_ROOT / "train+public_test" / "public_test" / "public_test.jsonl"
         out_file = PROJECT_ROOT / args.output
-        generate_submission(agent, test_file, out_file, split="public_test")
+        generate_submission(agent, test_source=test_source, output_path=out_file, data_root=data_root, split="public_test")
 
 
 if __name__ == "__main__":
