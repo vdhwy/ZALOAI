@@ -1,0 +1,225 @@
+{
+ "_meta": {
+  "question_id": "train_0443",
+  "current_time": "2026-09-24T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "fuel_price.get_price",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn trần phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-09-24",
+    "to": "2026-09-24",
+    "kwh": 8.3,
+    "cost": 24100,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.7
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.7
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-09-18",
+    "to": "2026-09-24",
+    "kwh": 74.0,
+    "cost": 214600,
+    "days": [
+     {
+      "date": "2026-09-18",
+      "kwh": 9.8
+     },
+     {
+      "date": "2026-09-19",
+      "kwh": 14.0
+     },
+     {
+      "date": "2026-09-20",
+      "kwh": 9.7
+     },
+     {
+      "date": "2026-09-21",
+      "kwh": 12.7
+     },
+     {
+      "date": "2026-09-22",
+      "kwh": 12.2
+     },
+     {
+      "date": "2026-09-23",
+      "kwh": 7.3
+     },
+     {
+      "date": "2026-09-24",
+      "kwh": 8.3
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-09-01",
+    "to": "2026-09-24",
+    "kwh": 276.7,
+    "cost": 802400
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "đi chơi công viên",
+    "start": "2026-09-27T18:00:00+07:00",
+    "end": "2026-09-27T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "họp team",
+    "start": "2026-09-25T09:30:00+07:00",
+    "end": "2026-09-25T10:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "ăn tối với gia đình",
+    "start": "2026-09-26T08:30:00+07:00",
+    "end": "2026-09-26T09:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_02",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_03",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22000
+   },
+   {
+    "type": "e5",
+    "price": 20800
+   },
+   {
+    "type": "diesel",
+    "price": 19400
+   }
+  ]
+ }
+}

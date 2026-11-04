@@ -1,0 +1,358 @@
+{
+ "_meta": {
+  "question_id": "public_0254",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_01",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-09-29",
+    "depart": "06:00",
+    "arrive": "11:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_02",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-09-29",
+    "depart": "13:00",
+    "arrive": "16:00",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_03",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-09-29",
+    "depart": "21:00",
+    "arrive": "00:30",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_04",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-09-29",
+    "depart": "21:00",
+    "arrive": "07:30",
+    "price": 450000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_05",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-01",
+    "depart": "06:00",
+    "arrive": "11:00",
+    "price": 250000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_06",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-01",
+    "depart": "13:00",
+    "arrive": "16:00",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_07",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-01",
+    "depart": "21:00",
+    "arrive": "07:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_08",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-01",
+    "depart": "21:00",
+    "arrive": "04:30",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_09",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Hà Nội",
+    "destination": "Ninh Bình",
+    "date": "2026-09-25",
+    "depart": "11:30",
+    "arrive": "13:45",
+    "price": 180000,
+    "seats_left": 14
+   },
+   {
+    "id": "trip_10",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Hà Nội",
+    "destination": "Huế",
+    "date": "2026-09-25",
+    "depart": "19:30",
+    "arrive": "08:20",
+    "price": 720000,
+    "seats_left": 6
+   },
+   {
+    "id": "trip_11",
+    "type": "bus",
+    "operator": "Xe khách Hưng Long",
+    "origin": "Hà Nội",
+    "destination": "Huế",
+    "date": "2026-09-25",
+    "depart": "18:00",
+    "arrive": "06:00",
+    "price": 380000,
+    "seats_left": 20
+   }
+  ],
+  "bookings": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_02",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_03",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_04",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_05",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "metro_3",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_09",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Bờ Hồ",
+     "Láng Hạ",
+     "Cầu Giấy",
+     "Đại học Mỏ"
+    ],
+    "fare": 7000,
+    "duration_min": 45,
+    "headway_min": 15
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Kim Mã",
+    "route": "metro_3",
+    "time": "2026-09-25T09:04:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_3",
+    "time": "2026-09-25T09:14:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_3",
+    "time": "2026-09-25T09:24:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:07:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:15:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:23:00+07:00"
+   },
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_09",
+    "time": "2026-09-25T09:10:00+07:00"
+   },
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_09",
+    "time": "2026-09-25T09:25:00+07:00"
+   },
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_09",
+    "time": "2026-09-25T09:40:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_01",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_02",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 0
+   },
+   {
+    "id": "lot_03",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_04",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 0
+   }
+  ],
+  "sessions": []
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

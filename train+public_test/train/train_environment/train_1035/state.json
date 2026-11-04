@@ -1,0 +1,373 @@
+{
+ "_meta": {
+  "question_id": "train_1035",
+  "current_time": "2026-10-22T07:15:00+07:00",
+  "tools": [
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_7580",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_998",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 1200,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_905",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-10-25",
+    "used": false
+   },
+   {
+    "id": "vch_137",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-10-31",
+    "used": false
+   },
+   {
+    "id": "vch_6571",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-11-17",
+    "used": false
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_98",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_271",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_823",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_760",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_8025",
+    "show_id": "show_823",
+    "title": "Số 7: Gửi tiết kiệm hay mua vàng",
+    "number": 7,
+    "duration_min": 32,
+    "published": "2026-10-08"
+   },
+   {
+    "id": "ep_6791",
+    "show_id": "show_98",
+    "title": "Số 12: Nhà giả kim - phần 2",
+    "number": 12,
+    "duration_min": 32,
+    "published": "2026-10-15"
+   },
+   {
+    "id": "ep_799",
+    "show_id": "show_823",
+    "title": "Số 8: Quản lý chi tiêu gia đình",
+    "number": 8,
+    "duration_min": 32,
+    "published": "2026-10-15"
+   },
+   {
+    "id": "ep_963",
+    "show_id": "show_823",
+    "title": "Số 6: Lập quỹ khẩn cấp",
+    "number": 6,
+    "duration_min": 32,
+    "published": "2026-10-01"
+   },
+   {
+    "id": "ep_673",
+    "show_id": "show_760",
+    "title": "Số 9: Rác thải nhựa ở đô thị",
+    "number": 9,
+    "duration_min": 18,
+    "published": "2026-10-01"
+   },
+   {
+    "id": "ep_668",
+    "show_id": "show_271",
+    "title": "Số 8: Giấc ngủ và trí nhớ",
+    "number": 8,
+    "duration_min": 32,
+    "published": "2026-10-08"
+   },
+   {
+    "id": "ep_814",
+    "show_id": "show_760",
+    "title": "Số 11: Đi xe đạp đi làm",
+    "number": 11,
+    "duration_min": 32,
+    "published": "2026-10-15"
+   },
+   {
+    "id": "ep_315",
+    "show_id": "show_271",
+    "title": "Số 9: Lỗ đen là gì",
+    "number": 9,
+    "duration_min": 18,
+    "published": "2026-10-15"
+   },
+   {
+    "id": "ep_296",
+    "show_id": "show_271",
+    "title": "Số 7: Vì sao bầu trời màu xanh",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-01"
+   },
+   {
+    "id": "ep_9035",
+    "show_id": "show_760",
+    "title": "Số 10: Trồng cây trên sân thượng",
+    "number": 10,
+    "duration_min": 45,
+    "published": "2026-10-08"
+   },
+   {
+    "id": "ep_841",
+    "show_id": "show_98",
+    "title": "Số 11: Nhà giả kim - phần 1",
+    "number": 11,
+    "duration_min": 45,
+    "published": "2026-10-08"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_1399",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_81",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_166",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_597",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 32,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-10-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 29
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-10-23",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-10-24",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-10-25",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_146",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-10-22T02:45:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_6071",
+    "title": "Bão số 7 hướng vào Đà Nẵng - Quảng Ngãi",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-10-22T05:40:00+07:00",
+    "summary": "Ngư dân được yêu cầu vào bờ trú bão trước tối mai, các tỉnh miền Trung khẩn trương chằng chống nhà cửa."
+   },
+   {
+    "id": "art_7342",
+    "title": "Đà Nẵng cho học sinh nghỉ học tránh bão số 7",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-10-22T06:30:00+07:00",
+    "summary": "Học sinh toàn thành phố nghỉ học từ chiều mai, nhiều trường được dùng làm nơi tránh trú cho người dân."
+   },
+   {
+    "id": "art_1528",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-10-21T05:30:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_8618",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-10-21T05:15:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_982",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-10-21T10:30:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_430",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-10-21T23:15:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_259",
+    "title": "Áp thấp nhiệt đới trên Biển Đông có thể mạnh lên thành bão",
+    "topic": "general",
+    "source": "Nhịp Sống",
+    "published_at": "2026-10-21T16:20:00+07:00",
+    "summary": "Trong 24 giờ tới áp thấp di chuyển theo hướng Tây Tây Bắc, gió giật cấp 8."
+   }
+  ],
+  "saved": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_8948",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_478",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_3099",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   }
+  ]
+ }
+}

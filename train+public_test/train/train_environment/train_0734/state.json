@@ -1,0 +1,286 @@
+{
+ "_meta": {
+  "question_id": "train_0734",
+  "current_time": "2026-10-01T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "library.reserve",
+   "library.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-05T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-02T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-05T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-06T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_05",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-05T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_01",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_02",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_03",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_04",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_05",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": false
+   },
+   {
+    "id": "book_06",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_07",
+    "title": "Sửa đồ gia dụng căn bản",
+    "author": "Trần Văn Hậu",
+    "available": false
+   }
+  ],
+  "reservations": [
+   {
+    "id": "res_01",
+    "book_id": "book_07",
+    "status": "ready"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_02",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_03",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_04",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_05",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-10-01T08:00:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-09-30T00:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-09-29T23:00:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "họp team",
+    "start": "2026-10-04T09:30:00+07:00",
+    "end": "2026-10-04T10:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "khám răng",
+    "start": "2026-10-04T15:30:00+07:00",
+    "end": "2026-10-04T16:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-02T18:00:00+07:00",
+    "end": "2026-10-02T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

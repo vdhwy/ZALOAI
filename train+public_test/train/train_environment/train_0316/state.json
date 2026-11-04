@@ -1,0 +1,443 @@
+{
+ "_meta": {
+  "question_id": "train_0316",
+  "current_time": "2026-11-23T15:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fuel_price.get_price",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "time": "2026-11-24T06:45:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09244875278"
+   },
+   {
+    "id": "c_02",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09587772049"
+   },
+   {
+    "id": "c_03",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09668217021"
+   },
+   {
+    "id": "c_04",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09948509970"
+   },
+   {
+    "id": "c_05",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09210449065"
+   },
+   {
+    "id": "c_06",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09311402853"
+   },
+   {
+    "id": "c_07",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09511245300"
+   },
+   {
+    "id": "c_08",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09355801124"
+   },
+   {
+    "id": "c_09",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09164368153"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_01",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_02",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_03",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_04",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_05",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_06",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_01",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_02",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 26,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-23",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-24",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-25",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-26",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 28
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "cool",
+     "temperature": 26
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_01",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_02",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_01",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_02",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_03",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "họp phụ huynh",
+    "start": "2026-11-25T09:30:00+07:00",
+    "end": "2026-11-25T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-26T10:30:00+07:00",
+    "end": "2026-11-26T11:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-24T18:00:00+07:00",
+    "end": "2026-11-24T19:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "title": "đi chơi công viên",
+    "start": "2026-11-26T09:30:00+07:00",
+    "end": "2026-11-26T10:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_05",
+    "title": "khám răng",
+    "start": "2026-11-24T18:30:00+07:00",
+    "end": "2026-11-24T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22500
+   },
+   {
+    "type": "e5",
+    "price": 21300
+   },
+   {
+    "type": "diesel",
+    "price": 19900
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ }
+}

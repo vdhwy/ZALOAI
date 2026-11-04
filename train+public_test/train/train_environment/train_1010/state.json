@@ -1,0 +1,307 @@
+{
+ "_meta": {
+  "question_id": "train_1010",
+  "current_time": "2026-10-17T17:25:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "library.reserve",
+   "library.search",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_348",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-19T14:00:00+07:00",
+    "end": "2026-10-19T15:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5327",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-18T15:00:00+07:00",
+    "end": "2026-10-18T16:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_291",
+    "title": "khám răng",
+    "start": "2026-10-20T08:00:00+07:00",
+    "end": "2026-10-20T09:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_18",
+    "title": "đá bóng",
+    "start": "2026-10-19T08:30:00+07:00",
+    "end": "2026-10-19T09:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_228",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_72",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_5744",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_7448",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_934",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": false
+   },
+   {
+    "id": "book_597",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_52",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_5068",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-03",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_6665",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-10-26",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_978",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-11",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_543",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-11-05",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_541",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-10-24",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_3092",
+    "name": "Vitech Play gói Max",
+    "price": 110000,
+    "next_billing": "2026-10-22",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_962",
+    "name": "Phơi quần áo",
+    "assignee": "Bà nội",
+    "done": true
+   },
+   {
+    "id": "chore_8256",
+    "name": "Nấu cơm tối",
+    "assignee": "Anh Khoa",
+    "done": false
+   },
+   {
+    "id": "chore_3587",
+    "name": "Giặt quần áo",
+    "assignee": "Anh Khoa",
+    "done": false
+   },
+   {
+    "id": "chore_75",
+    "name": "Đi chợ",
+    "assignee": "Lan",
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Khoa",
+   "Lan",
+   "Bé Na",
+   "Bà nội"
+  ]
+ }
+}

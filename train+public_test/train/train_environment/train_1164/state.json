@@ -1,0 +1,549 @@
+{
+ "_meta": {
+  "question_id": "train_1164",
+  "current_time": "2026-12-06T08:15:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_7495",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09634947248"
+   },
+   {
+    "id": "c_930",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09868448478"
+   },
+   {
+    "id": "c_1603",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09425139711"
+   },
+   {
+    "id": "c_6391",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09432202912"
+   },
+   {
+    "id": "c_5414",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09571332561"
+   },
+   {
+    "id": "c_125",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09886229352"
+   },
+   {
+    "id": "c_801",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09230599658"
+   },
+   {
+    "id": "c_228",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09454316305"
+   },
+   {
+    "id": "c_712",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09280042184"
+   },
+   {
+    "id": "c_2076",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09415607877"
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_620",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_514",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_337",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_9067",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_1206",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_5979",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_2107",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_396",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_8813",
+    "title": "Mạ dặn",
+    "content": "Chủ nhật dậy nhớ mở cái rèm ra, tưới mấy chậu lan ngoài hiên"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 28,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-12-06",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-07",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 29
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-08",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-09",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 33
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "curtain_living",
+    "name": "rèm phòng khách",
+    "type": "curtain",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off"
+    }
+   },
+   {
+    "id": "curtain_bedroom",
+    "name": "rèm phòng ngủ",
+    "type": "curtain",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off"
+    }
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_265",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2026-12-12",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_987",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2026-12-12",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_7088",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2026-12-12",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_249",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2026-12-12",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_456",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1805",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_387",
+    "name": "Mạ",
+    "type": "direct",
+    "members": [
+     "Mạ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5473",
+    "name": "Nhi",
+    "type": "direct",
+    "members": [
+     "Nhi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_459",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-12-06",
+    "to": "2026-12-06",
+    "kwh": 3.8,
+    "cost": 11000,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 1.7
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 0.8
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-30",
+    "to": "2026-12-06",
+    "kwh": 73.0,
+    "cost": 211700,
+    "days": [
+     {
+      "date": "2026-11-30",
+      "kwh": 13.9
+     },
+     {
+      "date": "2026-12-01",
+      "kwh": 10.9
+     },
+     {
+      "date": "2026-12-02",
+      "kwh": 15.3
+     },
+     {
+      "date": "2026-12-03",
+      "kwh": 10.8
+     },
+     {
+      "date": "2026-12-04",
+      "kwh": 11.0
+     },
+     {
+      "date": "2026-12-05",
+      "kwh": 7.3
+     },
+     {
+      "date": "2026-12-06",
+      "kwh": 3.8
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-12-01",
+    "to": "2026-12-06",
+    "kwh": 59.1,
+    "cost": 171400
+   }
+  },
+  "alert_threshold_kwh": 350
+ }
+}

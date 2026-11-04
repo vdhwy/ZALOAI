@@ -1,0 +1,336 @@
+{
+ "_meta": {
+  "question_id": "public_0321",
+  "current_time": "2026-10-01T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_01",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_02",
+    "name": "Bàn phím cơ AKKO 3068B",
+    "price": 1290000,
+    "seller": "AKKO Việt Nam",
+    "category": "máy tính",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_03",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_04",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_05",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_06",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_07",
+    "name": "Máy xay sinh tố Sunhouse SHD5112",
+    "price": 590000,
+    "seller": "Sunhouse Official",
+    "category": "gia dụng",
+    "rating": 4.5,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_01",
+    "items": [
+     {
+      "product_id": "prod_05",
+      "name": "Sạc dự phòng Xiaomi 10000mAh",
+      "price": 399000,
+      "quantity": 1
+     }
+    ],
+    "total": 399000,
+    "status": "delivered",
+    "placed_at": "2026-09-23T06:00:00+07:00",
+    "seller": "Xiaomi Official",
+    "delivered_at": "2026-09-25T06:00:00+07:00"
+   },
+   {
+    "id": "ord_02",
+    "items": [
+     {
+      "product_id": "prod_06",
+      "name": "Nồi chiên không dầu Philips 4.1 lít",
+      "price": 1990000,
+      "quantity": 1
+     }
+    ],
+    "total": 1990000,
+    "status": "shipping",
+    "placed_at": "2026-09-29T07:00:00+07:00",
+    "seller": "Philips Official"
+   },
+   {
+    "id": "ord_03",
+    "items": [
+     {
+      "product_id": "prod_04",
+      "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+      "price": 389000,
+      "quantity": 1
+     }
+    ],
+    "total": 389000,
+    "status": "delivered",
+    "placed_at": "2026-09-26T20:15:00+07:00",
+    "seller": "Lock&Lock Mall",
+    "delivered_at": "2026-09-29T10:00:00+07:00"
+   }
+  ],
+  "returns": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_02",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_03",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_04",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-09-30T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-05T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-07T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-09-30T22:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-09-29T18:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-09-28T10:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-04T19:00:00+07:00",
+    "end": "2026-10-04T20:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "đá bóng",
+    "start": "2026-10-04T18:00:00+07:00",
+    "end": "2026-10-04T19:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "khám răng",
+    "start": "2026-10-03T15:00:00+07:00",
+    "end": "2026-10-03T16:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

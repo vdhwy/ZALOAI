@@ -1,0 +1,283 @@
+{
+ "_meta": {
+  "question_id": "train_0978",
+  "current_time": "2026-10-28T08:05:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fuel_price.get_price",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_3222",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-10-25T17:20:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_298",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-10-28T02:05:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_276",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-10-26T11:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21400
+   },
+   {
+    "type": "e5",
+    "price": 20200
+   },
+   {
+    "type": "diesel",
+    "price": 18800
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9845",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09539793061"
+   },
+   {
+    "id": "c_8118",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09934532151"
+   },
+   {
+    "id": "c_2934",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09963961935"
+   },
+   {
+    "id": "c_742",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09359900139"
+   },
+   {
+    "id": "c_8384",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09369235243"
+   },
+   {
+    "id": "c_394",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09743794070"
+   },
+   {
+    "id": "c_376",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09114745517"
+   },
+   {
+    "id": "c_642",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09204787232"
+   },
+   {
+    "id": "c_6700",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09408854794"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25465
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27502
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 169.8
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_4629",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-11-14",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_307",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-11-03",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_325",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-16",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_1437",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_655",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_51",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_3962",
+    "time": "2026-10-26T12:05:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_211",
+    "time": "2026-10-27T17:00:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_8657",
+    "time": "2026-10-26T20:00:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_5674",
+    "time": "2026-10-27T11:20:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_578",
+    "time": "2026-10-26T14:30:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   }
+  ]
+ }
+}

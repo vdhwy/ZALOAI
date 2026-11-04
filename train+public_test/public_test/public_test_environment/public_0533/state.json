@@ -1,0 +1,553 @@
+{
+ "_meta": {
+  "question_id": "public_0533",
+  "current_time": "2026-11-27T06:45:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_917",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_171",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_430",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_5394",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_815",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_937",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_368",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_2857",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_97",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_958",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_769",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_4622",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_697",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_770",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "public_transit": {
+  "card_balance": 0,
+  "routes": [
+   {
+    "id": "bus_4019",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Tòa nhà Nam Sơn",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   },
+   {
+    "id": "metro_308",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Ba Son",
+    "route": "metro_308",
+    "time": "2026-11-27T06:49:00+07:00"
+   },
+   {
+    "stop": "Tòa nhà Nam Sơn",
+    "route": "bus_4019",
+    "time": "2026-11-27T07:16:00+07:00"
+   },
+   {
+    "stop": "Ba Son",
+    "route": "metro_308",
+    "time": "2026-11-27T07:05:00+07:00"
+   },
+   {
+    "stop": "Tòa nhà Nam Sơn",
+    "route": "bus_4019",
+    "time": "2026-11-27T06:52:00+07:00"
+   },
+   {
+    "stop": "Tòa nhà Nam Sơn",
+    "route": "bus_4019",
+    "time": "2026-11-27T07:04:00+07:00"
+   },
+   {
+    "stop": "Ba Son",
+    "route": "metro_308",
+    "time": "2026-11-27T06:57:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_951",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 209000,
+    "due_date": "2026-12-03",
+    "paid": false
+   },
+   {
+    "id": "bill_305",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 196000,
+    "due_date": "2026-12-05",
+    "paid": false
+   },
+   {
+    "id": "bill_511",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 855000,
+    "due_date": "2026-12-01",
+    "paid": false
+   },
+   {
+    "id": "bill_734",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 149000,
+    "due_date": "2026-12-05",
+    "paid": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_755",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_958",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_5334",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_5949",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_6213",
+    "name": "Đùi gà góc tư 1kg",
+    "price": 89000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_119",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   }
+  ],
+  "cart": [
+   {
+    "product_id": "gro_6213",
+    "name": "Đùi gà góc tư 1kg",
+    "price": 89000,
+    "quantity": 1
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_7074",
+    "items": [
+     {
+      "product_id": "gro_5949",
+      "name": "Trứng gà ta hộp 10 quả",
+      "price": 42000,
+      "quantity": 2
+     }
+    ],
+    "total": 84000,
+    "status": "delivered",
+    "delivery_time": "2026-11-23T09:00:00+07:00"
+   }
+  ]
+ }
+}

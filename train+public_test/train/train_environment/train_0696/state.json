@@ -1,0 +1,405 @@
+{
+ "_meta": {
+  "question_id": "train_0696",
+  "current_time": "2026-10-01T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_sign",
+    "name": "đèn biển hiệu",
+    "type": "light",
+    "room": "cửa hàng",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-01",
+    "to": "2026-10-01",
+    "kwh": 5.7,
+    "cost": 16500,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 2.6
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.1
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-09-25",
+    "to": "2026-10-01",
+    "kwh": 61.9,
+    "cost": 179500,
+    "days": [
+     {
+      "date": "2026-09-25",
+      "kwh": 7.4
+     },
+     {
+      "date": "2026-09-26",
+      "kwh": 8.6
+     },
+     {
+      "date": "2026-09-27",
+      "kwh": 13.0
+     },
+     {
+      "date": "2026-09-28",
+      "kwh": 9.8
+     },
+     {
+      "date": "2026-09-29",
+      "kwh": 8.7
+     },
+     {
+      "date": "2026-09-30",
+      "kwh": 8.7
+     },
+     {
+      "date": "2026-10-01",
+      "kwh": 5.7
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-01",
+    "kwh": 5.7,
+    "cost": 16500
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_02",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_03",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_04",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-02T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-03T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-05T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-10-01T00:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-09-30T11:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-09-30T10:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_04",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-09-30T00:30:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_05",
+    "from": "dung.pham@congty.example.test",
+    "from_name": "Anh Dũng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-09-29T15:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "họp team",
+    "start": "2026-10-03T08:30:00+07:00",
+    "end": "2026-10-03T09:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "họp phụ huynh",
+    "start": "2026-10-03T09:00:00+07:00",
+    "end": "2026-10-03T10:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_01",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_02",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   }
+  ]
+ }
+}

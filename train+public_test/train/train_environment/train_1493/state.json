@@ -1,0 +1,238 @@
+{
+ "_meta": {
+  "question_id": "train_1493",
+  "current_time": "2026-12-17T14:10:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_1841",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-19T19:00:00+07:00",
+    "end": "2026-12-19T20:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5309",
+    "title": "khám răng",
+    "start": "2026-12-20T19:00:00+07:00",
+    "end": "2026-12-20T20:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6128",
+    "title": "khám mắt",
+    "start": "2026-12-17T15:00:00+07:00",
+    "end": "2026-12-17T16:30:00+07:00",
+    "location": "Bệnh viện Mắt Trung ương, 85 Bà Triệu, Hà Nội",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7775",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-19T10:30:00+07:00",
+    "end": "2026-12-19T11:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_272",
+    "title": "họp team",
+    "start": "2026-12-20T18:30:00+07:00",
+    "end": "2026-12-20T19:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_780",
+    "title": "họp phụ huynh",
+    "start": "2026-12-18T18:30:00+07:00",
+    "end": "2026-12-18T19:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "31 Hàng Bạc, Hoàn Kiếm, Hà Nội",
+    "dropoff": "Bệnh viện Mắt Trung ương, 85 Bà Triệu, Hà Nội",
+    "vehicle": "car4"
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_590",
+    "tracking_id": "STP879629881",
+    "carrier": "SaoTel Post",
+    "name": "Áo khoác gió",
+    "status": "out_for_delivery",
+    "eta": "2026-12-17T15:00:00+07:00"
+   },
+   {
+    "id": "shp_483",
+    "tracking_id": "EV945314177",
+    "carrier": "VNPost",
+    "name": "Bộ nồi inox",
+    "status": "in_transit",
+    "eta": "2026-12-18T14:00:00+07:00"
+   },
+   {
+    "id": "shp_1162",
+    "tracking_id": "GST731205846",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Máy đo huyết áp",
+    "status": "out_for_delivery",
+    "eta": "2026-12-17T15:30:00+07:00"
+   },
+   {
+    "id": "shp_27",
+    "tracking_id": "GST656939802",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Lịch treo tường 2027",
+    "status": "delivered",
+    "eta": "2026-12-16T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_129",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-12-17T09:25:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_1246",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-12-16T20:10:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_225",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-12-16T13:40:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_4187",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-12-17T10:25:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_440",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-12-16T08:55:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_8864",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-12-17T06:25:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   }
+  ],
+  "saved": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_327",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-12-22",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_711",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-12-23",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_491",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-12-29",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_1518",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-12-27",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ }
+}

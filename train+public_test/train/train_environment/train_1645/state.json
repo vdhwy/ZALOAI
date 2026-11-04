@@ -1,0 +1,531 @@
+{
+ "_meta": {
+  "question_id": "train_1645",
+  "current_time": "2026-12-19T07:40:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "fuel_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "17 Nguyễn Huệ, Phú Nhuận, Huế",
+    "dropoff": "Chợ Đông Ba, Huế",
+    "vehicle": "bike"
+   }
+  ]
+ },
+ "calculator": {},
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_605",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_276",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_517",
+    "name": "Nhi",
+    "type": "direct",
+    "members": [
+     "Nhi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_602",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_160",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_150",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_93",
+    "name": "Lớp Văn K45",
+    "type": "group",
+    "members": [
+     "Nhi",
+     "Minh",
+     "Thảo",
+     "Quân"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22100
+   },
+   {
+    "type": "e5",
+    "price": 20900
+   },
+   {
+    "type": "diesel",
+    "price": 19500
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_6612",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_86",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_136",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá\nBánh lọc, tôm chua"
+   },
+   {
+    "id": "note_893",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_148",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen\nMột bó hoa hồng"
+   },
+   {
+    "id": "note_06",
+    "title": "Ý tưởng bài giảng",
+    "content": "Dạy bài Tây Tiến bằng sơ đồ tư duy"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_843",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2027-01-04",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_43",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2027-01-04",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_1280",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2027-01-04",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_8035",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2027-01-04",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_366",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-12-17T09:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_968",
+    "from": "dung.pham@congty.example.test",
+    "from_name": "Anh Dũng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-12-17T23:55:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_809",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-12-18T00:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_967",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-12-16T19:55:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_827",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-12-18T08:40:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_600",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-12-22T09:00:00+07:00",
+    "link": "https://meet.example.test/lql-jolm-vgs",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_359",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-12-22T20:30:00+07:00",
+    "link": "https://meet.example.test/tcx-loxx-nkh",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_464",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-25T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_7118",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-24T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_971",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-25T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_294",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-24T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_900",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-18T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 31,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-12-19",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-20",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 28
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 33
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   }
+  ]
+ }
+}

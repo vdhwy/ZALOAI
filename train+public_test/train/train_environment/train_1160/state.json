@@ -1,0 +1,257 @@
+{
+ "_meta": {
+  "question_id": "train_1160",
+  "current_time": "2026-12-16T08:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "phone.call",
+   "phone.recent_calls"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_531",
+    "time": "2026-12-17T06:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_761",
+    "time": "2026-12-17T08:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_440",
+    "origin": "DAD",
+    "destination": "PQC",
+    "date": "2026-12-22",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_991",
+    "origin": "DAD",
+    "destination": "PQC",
+    "date": "2026-12-22",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_515",
+    "origin": "DAD",
+    "destination": "PQC",
+    "date": "2026-12-22",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_852",
+    "origin": "DAD",
+    "destination": "PQC",
+    "date": "2026-12-22",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_2617",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-12-21",
+    "depart": "07:30",
+    "arrive": "08:50",
+    "airline": "Rồng Việt Air",
+    "price": 1650000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_274",
+    "flight_id": "fl_2617",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_593",
+    "flight_id": "fl_852",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_6454",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_6791",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_314",
+    "time": "2026-12-15T06:10:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_5598",
+    "time": "2026-12-15T21:40:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_399",
+    "time": "2026-12-15T12:00:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_566",
+    "time": "2026-12-14T16:05:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_5965",
+    "time": "2026-12-16T05:35:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 26193
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28288
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 174.6
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_329",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09144564238"
+   },
+   {
+    "id": "c_902",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09410314192"
+   },
+   {
+    "id": "c_9491",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09911847537"
+   },
+   {
+    "id": "c_724",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09204511675"
+   },
+   {
+    "id": "c_113",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09532977642"
+   },
+   {
+    "id": "c_172",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09330531611"
+   },
+   {
+    "id": "c_388",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09940140210"
+   },
+   {
+    "id": "c_4055",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09176891618"
+   },
+   {
+    "id": "c_305",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09235114072"
+   }
+  ]
+ }
+}

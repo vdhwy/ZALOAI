@@ -1,0 +1,678 @@
+{
+ "_meta": {
+  "question_id": "train_1431",
+  "current_time": "2026-12-10T07:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_894",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_122",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_5505",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_135",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_850",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 7200,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_589",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 1200,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_70",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2027-01-05",
+    "used": false
+   },
+   {
+    "id": "vch_480",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2027-01-01",
+    "used": false
+   },
+   {
+    "id": "vch_842",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-12-26",
+    "used": false
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-12-10",
+    "prizes": {
+     "special": "627193",
+     "first": "59504",
+     "eighth": "92"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-12-10",
+    "prizes": {
+     "special": "109227",
+     "first": "55076",
+     "eighth": "67"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-12-10",
+    "prizes": {
+     "special": "414287",
+     "first": "32192",
+     "eighth": "29"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-12-10",
+    "prizes": {
+     "special": "148865",
+     "first": "34777",
+     "eighth": "38"
+    }
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_330",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-12-20",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_4583",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-12-15",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_8981",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-12-19",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_827",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2027-01-06",
+    "status": "paused",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_31",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-12-28",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_598",
+    "name": "Mì Quảng Bà Mùi",
+    "address": "19 Trần Bình Trọng, Hải Châu, Đà Nẵng",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_507",
+    "name": "Bệnh viện Đà Nẵng",
+    "address": "124 Hải Phòng, Hải Châu, Đà Nẵng",
+    "category": "hospital"
+   },
+   {
+    "id": "place_3747",
+    "name": "Lotus Mart Đà Nẵng",
+    "address": "6 Nại Nam, Hải Châu, Đà Nẵng",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_1168",
+    "name": "Ký Ức Cà Phê Bạch Đằng",
+    "address": "98 Bạch Đằng, Hải Châu, Đà Nẵng",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_1643",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 852000,
+    "due_date": "2026-12-18",
+    "paid": false
+   },
+   {
+    "id": "bill_938",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 201000,
+    "due_date": "2026-12-13",
+    "paid": false
+   },
+   {
+    "id": "bill_331",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 216000,
+    "due_date": "2026-12-14",
+    "paid": false
+   },
+   {
+    "id": "bill_882",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 151000,
+    "due_date": "2026-12-13",
+    "paid": false
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_557",
+    "title": "Họp lớp online",
+    "start": "2026-12-11T08:00:00+07:00",
+    "link": "https://meet.example.test/jhg-unwg-xpp",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_3854",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-12-11T10:00:00+07:00",
+    "link": "https://meet.example.test/opz-ozem-fjt",
+    "attendees": [
+     "c_2716"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_848",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-12-10T15:00:00+07:00",
+    "link": "https://meet.example.test/wff-edpa-mnd",
+    "attendees": [
+     "c_981"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_656",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-12-13T10:30:00+07:00",
+    "link": "https://meet.example.test/vtl-dcio-hic",
+    "attendees": [
+     "c_875",
+     "c_8755"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_2041",
+    "title": "Họp đoàn tour Kuala Lumpur",
+    "start": "2026-12-16T19:30:00+07:00",
+    "link": "https://meet.example.test/kql-umpr-hdt",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_2077",
+    "title": "Họp đoàn tour Kota Kinabalu",
+    "start": "2026-12-21T19:30:00+07:00",
+    "link": "https://meet.example.test/ktk-nblu-hdt",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_832",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-12-07T11:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_680",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-12-07T14:50:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_223",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-12-08T15:20:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_100",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09864006474"
+   },
+   {
+    "id": "c_2716",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09175736996"
+   },
+   {
+    "id": "c_8266",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09708454502"
+   },
+   {
+    "id": "c_875",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09965979251"
+   },
+   {
+    "id": "c_981",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09363861130"
+   },
+   {
+    "id": "c_731",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09355660396"
+   },
+   {
+    "id": "c_83",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09983844814"
+   },
+   {
+    "id": "c_8755",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09620855386"
+   },
+   {
+    "id": "c_175",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09183614079"
+   },
+   {
+    "id": "c_4873",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09670310613"
+   },
+   {
+    "id": "c_8875",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09249046419"
+   }
+  ]
+ }
+}

@@ -1,0 +1,346 @@
+{
+ "_meta": {
+  "question_id": "train_1575",
+  "current_time": "2026-11-10T15:45:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_326",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_623",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_4056",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_771",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_4056",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 50000,
+    "address": null,
+    "payment": "ewallet",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_326",
+    "items": [
+     {
+      "item_id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 90000,
+    "address": null,
+    "payment": "ewallet",
+    "status": "placed"
+   }
+  ]
+ },
+ "calculator": {},
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_4923",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09958170177"
+   },
+   {
+    "id": "c_6028",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09803389628"
+   },
+   {
+    "id": "c_980",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09773121088"
+   },
+   {
+    "id": "c_7856",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09190059957"
+   },
+   {
+    "id": "c_3465",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09696243098"
+   },
+   {
+    "id": "c_904",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09341739387"
+   },
+   {
+    "id": "c_664",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09158066948"
+   },
+   {
+    "id": "c_751",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09391745121"
+   },
+   {
+    "id": "c_913",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09128736141"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_39",
+    "title": "đá bóng",
+    "start": "2026-11-13T08:00:00+07:00",
+    "end": "2026-11-13T09:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7104",
+    "title": "đi chơi công viên",
+    "start": "2026-11-11T09:00:00+07:00",
+    "end": "2026-11-11T10:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_270",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-11T15:30:00+07:00",
+    "end": "2026-11-11T16:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_188",
+    "title": "họp phụ huynh",
+    "start": "2026-11-13T09:00:00+07:00",
+    "end": "2026-11-13T10:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_362",
+    "title": "họp team",
+    "start": "2026-11-13T14:00:00+07:00",
+    "end": "2026-11-13T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_485",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 213000,
+    "due_date": "2026-11-16",
+    "paid": false
+   },
+   {
+    "id": "bill_657",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 216000,
+    "due_date": "2026-11-18",
+    "paid": true,
+    "paid_with": "ewallet"
+   },
+   {
+    "id": "bill_732",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 151000,
+    "due_date": "2026-11-16",
+    "paid": false
+   },
+   {
+    "id": "bill_484",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 201000,
+    "due_date": "2026-11-14",
+    "paid": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3184000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "bill_payment",
+    "bill_id": "bill_657",
+    "amount": -216000
+   }
+  ]
+ }
+}

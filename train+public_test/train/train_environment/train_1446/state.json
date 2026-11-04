@@ -1,0 +1,218 @@
+{
+ "_meta": {
+  "question_id": "train_1446",
+  "current_time": "2026-11-18T18:10:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "phone.call",
+   "phone.recent_calls",
+   "sms.read_recent",
+   "sms.send",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-15": {
+    "steps": 2616,
+    "calories": 104,
+    "distance_km": 1.9
+   },
+   "2026-11-16": {
+    "steps": 4090,
+    "calories": 163,
+    "distance_km": 2.9
+   },
+   "2026-11-17": {
+    "steps": 3757,
+    "calories": 150,
+    "distance_km": 2.7
+   },
+   "2026-11-18": {
+    "steps": 2780,
+    "calories": 111,
+    "distance_km": 2.0
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_427",
+    "type": "running",
+    "minutes": 20,
+    "time": "2026-11-17T18:00:00+07:00"
+   },
+   {
+    "id": "wo_21",
+    "type": "gym",
+    "minutes": 60,
+    "time": "2026-11-15T06:30:00+07:00"
+   },
+   {
+    "id": "wo_8294",
+    "type": "walking",
+    "minutes": 60,
+    "time": "2026-11-14T18:00:00+07:00"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_123",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 203000,
+    "due_date": "2026-11-24",
+    "paid": false
+   },
+   {
+    "id": "bill_9548",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 849000,
+    "due_date": "2026-11-27",
+    "paid": false
+   },
+   {
+    "id": "bill_6131",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 155000,
+    "due_date": "2026-11-22",
+    "paid": false
+   },
+   {
+    "id": "bill_881",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 211000,
+    "due_date": "2026-11-20",
+    "paid": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_339",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_18",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_7733",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_207",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_4336",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [
+   {
+    "id": "les_01",
+    "course_id": "course_339",
+    "time": "2026-11-20T08:00:00+07:00",
+    "status": "scheduled"
+   }
+  ],
+  "progress": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_367",
+    "title": "họp team",
+    "start": "2026-11-20T14:00:00+07:00",
+    "end": "2026-11-20T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_187",
+    "title": "họp phụ huynh",
+    "start": "2026-11-19T14:00:00+07:00",
+    "end": "2026-11-19T15:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1098",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-19T08:00:00+07:00",
+    "end": "2026-11-19T09:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

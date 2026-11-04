@@ -1,0 +1,516 @@
+{
+ "_meta": {
+  "question_id": "train_1348",
+  "current_time": "2026-11-18T07:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22700
+   },
+   {
+    "type": "e5",
+    "price": 21500
+   },
+   {
+    "type": "diesel",
+    "price": 20100
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 26,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-18",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-19",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-20",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-21",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 31
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_736",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09956489145"
+   },
+   {
+    "id": "c_314",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09662236060"
+   },
+   {
+    "id": "c_29",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09934144026"
+   },
+   {
+    "id": "c_3952",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09682560556"
+   },
+   {
+    "id": "c_588",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09770715972"
+   },
+   {
+    "id": "c_948",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09353435596"
+   },
+   {
+    "id": "c_654",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09339397564"
+   },
+   {
+    "id": "c_53",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09314548723"
+   },
+   {
+    "id": "c_50",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09739136323"
+   },
+   {
+    "id": "c_333",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09151105114"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_210",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-19T14:00:00+07:00",
+    "link": "https://meet.example.test/nxr-jpwb-zhp",
+    "attendees": [
+     "c_736"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_4517",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-19T15:30:00+07:00",
+    "link": "https://meet.example.test/cxq-wbcm-nzt",
+    "attendees": [
+     "c_736"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_158",
+    "title": "Họp lớp online",
+    "start": "2026-11-21T15:00:00+07:00",
+    "link": "https://meet.example.test/gnu-sbch-pjs",
+    "attendees": [
+     "c_314",
+     "c_3952"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_6185",
+    "title": "Daily Standup",
+    "start": "2026-11-18T07:30:00+07:00",
+    "link": "https://meet.example.test/dsu-kqvm-rta",
+    "attendees": [
+     "c_53",
+     "c_588"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_855",
+    "title": "Họp giao ban tuần",
+    "start": "2026-11-20T10:30:00+07:00",
+    "link": "https://meet.example.test/hci-wrro-jqz",
+    "attendees": [
+     "c_948"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_4402",
+    "title": "Roadmap Review",
+    "start": "2026-11-18T08:00:00+07:00",
+    "link": "https://meet.example.test/rqk-vmzt-hap",
+    "attendees": [
+     "c_53"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_391",
+    "title": "Roadmap Preview",
+    "start": "2026-11-19T08:00:00+07:00",
+    "link": "https://meet.example.test/tbe-oxwn-kcl",
+    "attendees": [
+     "c_53",
+     "c_588"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_7730",
+    "title": "Vendor Sync",
+    "start": "2026-11-18T14:00:00+07:00",
+    "link": "https://meet.example.test/lwd-pgua-sfe",
+    "attendees": [
+     "c_333"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_9321",
+    "title": "đá bóng",
+    "start": "2026-11-21T18:00:00+07:00",
+    "end": "2026-11-21T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_614",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-19T15:30:00+07:00",
+    "end": "2026-11-19T16:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6270",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-20T15:30:00+07:00",
+    "end": "2026-11-20T16:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9429",
+    "title": "họp phụ huynh",
+    "start": "2026-11-19T10:00:00+07:00",
+    "end": "2026-11-19T11:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_123",
+    "title": "đi chơi công viên",
+    "start": "2026-11-19T10:00:00+07:00",
+    "end": "2026-11-19T11:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_8812",
+    "title": "Roadmap Review với team Nexora",
+    "start": "2026-11-18T08:00:00+07:00",
+    "end": "2026-11-18T09:00:00+07:00",
+    "location": "Online",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_275",
+    "title": "Design Critique",
+    "start": "2026-11-18T15:00:00+07:00",
+    "end": "2026-11-18T16:00:00+07:00",
+    "location": "Phòng họp tầng 5",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3906",
+    "title": "Vendor Sync",
+    "start": "2026-11-18T14:00:00+07:00",
+    "end": "2026-11-18T15:00:00+07:00",
+    "location": "Online",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_864",
+    "time": "2026-11-19T07:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_1858",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_292",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_2821",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_129",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_2094",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_173",
+    "tracking_id": "MDXVN359184503",
+    "carrier": "MDX Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "delivered",
+    "eta": "2026-11-17T17:00:00+07:00"
+   },
+   {
+    "id": "shp_9272",
+    "tracking_id": "JV882252926",
+    "carrier": "JetViệt Express",
+    "name": "Hộp quà Trung thu",
+    "status": "in_transit",
+    "eta": "2026-11-21T10:00:00+07:00"
+   },
+   {
+    "id": "shp_656",
+    "tracking_id": "STP310781941",
+    "carrier": "SaoTel Post",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "out_for_delivery",
+    "eta": "2026-11-18T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ }
+}

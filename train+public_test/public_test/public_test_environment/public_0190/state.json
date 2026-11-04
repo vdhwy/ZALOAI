@@ -1,0 +1,274 @@
+{
+ "_meta": {
+  "question_id": "public_0190",
+  "current_time": "2026-09-24T09:00:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list"
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_01",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_02",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_03",
+    "name": "Đèn bàn LED chống cận Rạng Đông",
+    "price": 275000,
+    "seller": "Rạng Đông Official",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_04",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_05",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_06",
+    "name": "Balo laptop Mikkor 15.6 inch",
+    "price": 650000,
+    "seller": "Mikkor Store",
+    "category": "thời trang",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_07",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_08",
+    "name": "Ấm điện HomeOne 1.8 lít",
+    "price": 459000,
+    "seller": "HomeOne Official",
+    "category": "gia dụng",
+    "rating": 4.5,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_01",
+    "items": [
+     {
+      "product_id": "prod_05",
+      "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+      "price": 389000,
+      "quantity": 1
+     }
+    ],
+    "total": 389000,
+    "status": "delivered",
+    "placed_at": "2026-09-13T08:00:00+07:00",
+    "seller": "Lock&Lock Mall",
+    "delivered_at": "2026-09-16T08:00:00+07:00"
+   },
+   {
+    "id": "ord_02",
+    "items": [
+     {
+      "product_id": "prod_06",
+      "name": "Balo laptop Mikkor 15.6 inch",
+      "price": 650000,
+      "quantity": 1
+     }
+    ],
+    "total": 650000,
+    "status": "shipping",
+    "placed_at": "2026-09-21T03:00:00+07:00",
+    "seller": "Mikkor Store"
+   },
+   {
+    "id": "ord_03",
+    "items": [
+     {
+      "product_id": "prod_08",
+      "name": "Ấm điện HomeOne 1.8 lít",
+      "price": 459000,
+      "quantity": 1
+     }
+    ],
+    "total": 459000,
+    "status": "delivered",
+    "placed_at": "2026-09-21T20:15:00+07:00",
+    "seller": "HomeOne Official",
+    "delivered_at": "2026-09-24T08:00:00+07:00"
+   }
+  ],
+  "returns": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-09-23T17:30:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-09-23T11:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-09-23T06:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_04",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-09-22T20:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_05",
+    "from": "dung.pham@congty.example.test",
+    "from_name": "Anh Dũng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-09-21T13:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_02",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_03",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "time": "2026-09-25T06:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_02",
+    "time": "2026-09-25T07:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,545 @@
+{
+ "_meta": {
+  "question_id": "public_0584",
+  "current_time": "2026-11-26T17:55:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "gold_price.get_price",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate"
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_54",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-03",
+    "depart": "13:00",
+    "arrive": "18:30",
+    "price": 400000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_4198",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-12-03",
+    "depart": "08:00",
+    "arrive": "11:30",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_6052",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-12-03",
+    "depart": "12:00",
+    "arrive": "19:30",
+    "price": 750000,
+    "seats_left": 6
+   },
+   {
+    "id": "trip_711",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-12-03",
+    "depart": "19:00",
+    "arrive": "00:30",
+    "price": 920000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_21",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-03",
+    "depart": "08:00",
+    "arrive": "13:30",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_883",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-12-03",
+    "depart": "21:00",
+    "arrive": "04:00",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_185",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-03",
+    "depart": "06:00",
+    "arrive": "13:00",
+    "price": 250000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_897",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-12-03",
+    "depart": "06:00",
+    "arrive": "13:00",
+    "price": 320000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_1334",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-03",
+    "depart": "06:00",
+    "arrive": "16:00",
+    "price": 680000,
+    "seats_left": 15
+   }
+  ],
+  "bookings": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_347",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 214000,
+    "due_date": "2026-11-28",
+    "paid": false
+   },
+   {
+    "id": "bill_1651",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 223000,
+    "due_date": "2026-12-01",
+    "paid": false
+   },
+   {
+    "id": "bill_193",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 148000,
+    "due_date": "2026-12-03",
+    "paid": false
+   },
+   {
+    "id": "bill_445",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 197000,
+    "due_date": "2026-12-03",
+    "paid": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 15000,
+  "routes": [
+   {
+    "id": "bus_3993",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Khu Công nghệ cao",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   },
+   {
+    "id": "bus_207",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   },
+   {
+    "id": "metro_9988",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_9988",
+    "time": "2026-11-26T18:07:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_3993",
+    "time": "2026-11-26T18:09:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_3993",
+    "time": "2026-11-26T17:57:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_9988",
+    "time": "2026-11-26T18:15:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_207",
+    "time": "2026-11-26T18:21:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_9988",
+    "time": "2026-11-26T17:59:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_3993",
+    "time": "2026-11-26T18:21:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_207",
+    "time": "2026-11-26T18:06:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_207",
+    "time": "2026-11-26T18:36:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_765",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-13",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_943",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-13",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_7023",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-13",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_910",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-13",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": []
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   },
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 124800000,
+    "sell": 126800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 118800000,
+    "sell": 120800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4193
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9945",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09888347704"
+   },
+   {
+    "id": "c_529",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09298600385"
+   },
+   {
+    "id": "c_8972",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09187194986"
+   },
+   {
+    "id": "c_6263",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09821933465"
+   },
+   {
+    "id": "c_497",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09518834468"
+   },
+   {
+    "id": "c_4216",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09230906593"
+   },
+   {
+    "id": "c_176",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09546628921"
+   },
+   {
+    "id": "c_88",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09465760940"
+   },
+   {
+    "id": "c_916",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09839645936"
+   },
+   {
+    "id": "c_3381",
+    "name": "Lucas Bennett",
+    "relation": "đồng nghiệp",
+    "phone": "09617402853"
+   },
+   {
+    "id": "c_752",
+    "name": "Lucas Bennet Media",
+    "relation": "đối tác",
+    "phone": "09356180274"
+   }
+  ]
+ }
+}

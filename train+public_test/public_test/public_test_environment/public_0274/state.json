@@ -1,0 +1,298 @@
+{
+ "_meta": {
+  "question_id": "public_0274",
+  "current_time": "2026-10-01T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "pantry.consume",
+   "pantry.list_items",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_01",
+    "name": "gạo ST25",
+    "stock": 4,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_02",
+    "name": "sữa tươi",
+    "stock": 3,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_03",
+    "name": "bột mì",
+    "stock": 3,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_04",
+    "name": "đường",
+    "stock": 3,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_05",
+    "name": "cà phê G7",
+    "stock": 4,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_06",
+    "name": "yến mạch",
+    "stock": 2,
+    "unit": "túi"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_01",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_02",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_03",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_04",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_05",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": true
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_02",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_03",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_04",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-06T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-07T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-09-30T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-01T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_05",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-02T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-09-29T15:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-09-29T13:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-09-29T00:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "khám răng",
+    "start": "2026-10-02T14:30:00+07:00",
+    "end": "2026-10-02T15:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "đá bóng",
+    "start": "2026-10-02T19:30:00+07:00",
+    "end": "2026-10-02T20:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

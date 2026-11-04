@@ -1,0 +1,427 @@
+{
+ "_meta": {
+  "question_id": "train_1673",
+  "current_time": "2026-10-31T13:20:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_1827",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_142",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_944",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_212",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_944",
+    "items": [
+     {
+      "item_id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "quantity": 1,
+      "note": null
+     },
+     {
+      "item_id": "rest_01_m3",
+      "name": "Chả cua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 60000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_5382",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "quick",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_9176",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "keep_warm",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_723",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "heavy",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_7864",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_451",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09930451843"
+   },
+   {
+    "id": "c_2790",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09944002075"
+   },
+   {
+    "id": "c_32",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09445593964"
+   },
+   {
+    "id": "c_655",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09478414816"
+   },
+   {
+    "id": "c_7198",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09412453446"
+   },
+   {
+    "id": "c_562",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09402929556"
+   },
+   {
+    "id": "c_511",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09823528186"
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_900",
+    "tracking_id": "MDXVN187928544",
+    "carrier": "MDX Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "out_for_delivery",
+    "eta": "2026-10-31T14:00:00+07:00",
+    "scheduled_time": "2026-10-31T17:00:00+07:00"
+   },
+   {
+    "id": "shp_4419",
+    "tracking_id": "GST746965175",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-11-03T10:00:00+07:00"
+   },
+   {
+    "id": "shp_4826",
+    "tracking_id": "EV202690248",
+    "carrier": "VNPost",
+    "name": "Giày thể thao",
+    "status": "delivered",
+    "eta": "2026-10-30T17:00:00+07:00"
+   },
+   {
+    "id": "shp_8591",
+    "tracking_id": "JV325069656",
+    "carrier": "JetViệt Express",
+    "name": "Tai nghe Bluetooth",
+    "status": "in_transit",
+    "eta": "2026-11-01T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_777",
+    "name": "Lotus Mart Đà Nẵng",
+    "address": "6 Nại Nam, Hải Châu, Đà Nẵng",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_308",
+    "name": "Mì Quảng Bà Mùi",
+    "address": "19 Trần Bình Trọng, Hải Châu, Đà Nẵng",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_6263",
+    "name": "Cây xăng PetroHưng Nguyễn Văn Linh",
+    "address": "150 Nguyễn Văn Linh, Thanh Khê, Đà Nẵng",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_5232",
+    "name": "Ký Ức Cà Phê Bạch Đằng",
+    "address": "98 Bạch Đằng, Hải Châu, Đà Nẵng",
+    "category": "cafe"
+   },
+   {
+    "id": "place_508",
+    "name": "Bệnh viện Đà Nẵng",
+    "address": "124 Hải Phòng, Hải Châu, Đà Nẵng",
+    "category": "hospital"
+   },
+   {
+    "id": "place_4418",
+    "name": "Bún bò Huế Mệ Hoa",
+    "address": "Kiệt 15 Trần Phú, Hải Châu, Đà Nẵng",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_629",
+    "name": "Bún bò Huế Bà Thương",
+    "address": "118 Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ }
+}

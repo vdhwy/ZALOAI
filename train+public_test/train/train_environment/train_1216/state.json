@@ -1,0 +1,551 @@
+{
+ "_meta": {
+  "question_id": "train_1216",
+  "current_time": "2026-11-06T18:40:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "library.reserve",
+   "library.search",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 90,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_984",
+    "name": "bếp",
+    "area_m2": 22
+   },
+   {
+    "id": "room_579",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 8
+   },
+   {
+    "id": "room_782",
+    "name": "phòng khách",
+    "area_m2": 15
+   },
+   {
+    "id": "room_742",
+    "name": "phòng ngủ",
+    "area_m2": 22
+   },
+   {
+    "id": "room_187",
+    "name": "phòng ăn",
+    "area_m2": 8
+   }
+  ],
+  "current_job": null
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_326",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_631",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_933",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_581",
+    "show_id": "show_933",
+    "title": "Số 11: Giấc ngủ và trí nhớ",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-10-23"
+   },
+   {
+    "id": "ep_530",
+    "show_id": "show_326",
+    "title": "Số 17: Lập quỹ khẩn cấp",
+    "number": 17,
+    "duration_min": 18,
+    "published": "2026-10-16"
+   },
+   {
+    "id": "ep_1673",
+    "show_id": "show_933",
+    "title": "Số 10: Vì sao bầu trời màu xanh",
+    "number": 10,
+    "duration_min": 18,
+    "published": "2026-10-16"
+   },
+   {
+    "id": "ep_7757",
+    "show_id": "show_631",
+    "title": "Số 16: Rác thải nhựa ở đô thị",
+    "number": 16,
+    "duration_min": 32,
+    "published": "2026-10-16"
+   },
+   {
+    "id": "ep_516",
+    "show_id": "show_326",
+    "title": "Số 19: Quản lý chi tiêu gia đình",
+    "number": 19,
+    "duration_min": 18,
+    "published": "2026-10-30"
+   },
+   {
+    "id": "ep_454",
+    "show_id": "show_631",
+    "title": "Số 18: Đi xe đạp đi làm",
+    "number": 18,
+    "duration_min": 32,
+    "published": "2026-10-30"
+   },
+   {
+    "id": "ep_6887",
+    "show_id": "show_631",
+    "title": "Số 17: Trồng cây trên sân thượng",
+    "number": 17,
+    "duration_min": 25,
+    "published": "2026-10-23"
+   },
+   {
+    "id": "ep_669",
+    "show_id": "show_326",
+    "title": "Số 18: Gửi tiết kiệm hay mua vàng",
+    "number": 18,
+    "duration_min": 45,
+    "published": "2026-10-23"
+   },
+   {
+    "id": "ep_630",
+    "show_id": "show_933",
+    "title": "Số 12: Lỗ đen là gì",
+    "number": 12,
+    "duration_min": 18,
+    "published": "2026-10-30"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_290",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_2224",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_6404",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_736",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_933"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_2597",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5003",
+    "name": "Sếp Kim",
+    "type": "direct",
+    "members": [
+     "Sếp Kim"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_467",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_865",
+    "name": "Anh Long",
+    "type": "direct",
+    "members": [
+     "Anh Long"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_999",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_858",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_4757",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_5554",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_446",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_134",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09794191314"
+   },
+   {
+    "id": "c_274",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09886438477"
+   },
+   {
+    "id": "c_345",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09353571496"
+   },
+   {
+    "id": "c_4294",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09717654515"
+   },
+   {
+    "id": "c_95",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09886076813"
+   },
+   {
+    "id": "c_187",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09614211688"
+   },
+   {
+    "id": "c_945",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09693631973"
+   },
+   {
+    "id": "c_456",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09885589530"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_376",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_5192",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_2631",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_7346",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_525",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_8841",
+    "account_id": "acc_5192",
+    "time": "2026-11-04T19:20:00+07:00",
+    "amount": -1860000,
+    "counterparty": "EVNHCMC",
+    "note": "Thanh toán tiền điện tháng 10"
+   },
+   {
+    "id": "tx_305",
+    "account_id": "acc_5192",
+    "time": "2026-11-02T10:00:00+07:00",
+    "amount": -2300000,
+    "counterparty": "BQL An Thảo Thảo Điền",
+    "note": "Phí quản lý và tiền nước tháng 10"
+   },
+   {
+    "id": "tx_6127",
+    "account_id": "acc_5192",
+    "time": "2026-10-31T16:30:00+07:00",
+    "amount": 21500000,
+    "counterparty": "Công ty Truyền thông Sao Mai",
+    "note": "Lương tháng 10"
+   },
+   {
+    "id": "tx_92",
+    "account_id": "acc_5192",
+    "time": "2026-10-05T20:05:00+07:00",
+    "amount": -1320000,
+    "counterparty": "EVNHCMC",
+    "note": "Thanh toán tiền điện tháng 9"
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_478",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_777",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_866",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_226",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_8693",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   }
+  ],
+  "reservations": []
+ }
+}

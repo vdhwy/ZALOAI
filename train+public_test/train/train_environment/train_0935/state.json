@@ -1,0 +1,469 @@
+{
+ "_meta": {
+  "question_id": "train_0935",
+  "current_time": "2026-11-03T15:10:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "library.reserve",
+   "library.search",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_749",
+    "name": "Khách Hàn",
+    "type": "direct",
+    "members": [
+     "Khách Hàn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2047",
+    "name": "Anh Bình",
+    "type": "direct",
+    "members": [
+     "Anh Bình"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_284",
+    "name": "Vợ",
+    "type": "direct",
+    "members": [
+     "Vợ"
+    ],
+    "messages": [
+     {
+      "from": "Vợ",
+      "content": "Anh ơi chiều đi tour về ghé Xinh Mart mua giùm em chai sữa rửa mặt với hộp bông tẩy trang nha",
+      "time": "2026-11-03T13:42:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_957",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_184",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_550",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_463",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_1740",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_519",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_9807",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_06",
+    "title": "Mua cho vợ",
+    "content": "Sữa rửa mặt, bông tẩy trang"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23300
+   },
+   {
+    "type": "e5",
+    "price": 22100
+   },
+   {
+    "type": "diesel",
+    "price": 20700
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_445",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 400,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_570",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 75,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_4705",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-20",
+    "used": false
+   },
+   {
+    "id": "vch_318",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 30.000đ",
+    "value": 30000,
+    "expires": "2026-11-30",
+    "used": true
+   },
+   {
+    "id": "vch_9062",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-12",
+    "used": false
+   },
+   {
+    "id": "vch_2274",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-11-25",
+    "used": false
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-03",
+    "prizes": {
+     "special": "229277",
+     "first": "82655",
+     "eighth": "11"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-03",
+    "prizes": {
+     "special": "213958",
+     "first": "25187",
+     "eighth": "98"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-03",
+    "prizes": {
+     "special": "199993",
+     "first": "92902",
+     "eighth": "28"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-03",
+    "prizes": {
+     "special": "787754",
+     "first": "41495",
+     "eighth": "81"
+    }
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_1519",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_242",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_544",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_769",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_485",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_4216",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_564",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_619",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_8599",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_758",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09814563691"
+   },
+   {
+    "id": "c_113",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09872789897"
+   },
+   {
+    "id": "c_625",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09741049431"
+   },
+   {
+    "id": "c_870",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09190946873"
+   },
+   {
+    "id": "c_715",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09266333327"
+   },
+   {
+    "id": "c_4179",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09245871107"
+   },
+   {
+    "id": "c_664",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09428677014"
+   },
+   {
+    "id": "c_390",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09155353045"
+   },
+   {
+    "id": "c_74",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09517199742"
+   }
+  ]
+ }
+}

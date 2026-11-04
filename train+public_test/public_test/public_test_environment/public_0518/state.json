@@ -1,0 +1,286 @@
+{
+ "_meta": {
+  "question_id": "public_0518",
+  "current_time": "2026-11-17T15:05:00+07:00",
+  "tools": [
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_634",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_148",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_15",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_1816",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_204",
+    "restaurant_id": "rest_148",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 55000,
+    "address": "Công ty Sài Gòn Soft, Quận 3, TP.HCM",
+    "payment": "ewallet",
+    "status": "delivered"
+   },
+   {
+    "id": "ord_199",
+    "restaurant_id": "rest_1816",
+    "items": [
+     {
+      "item_id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 219000,
+    "address": "210 Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+    "payment": "ewallet",
+    "status": "placed"
+   },
+   {
+    "id": "ord_201",
+    "restaurant_id": "rest_1816",
+    "items": [
+     {
+      "item_id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 198000,
+    "address": "Công ty Sài Gòn Soft, Quận 3, TP.HCM",
+    "payment": "ewallet",
+    "status": "placed"
+   },
+   {
+    "id": "ord_04",
+    "restaurant_id": "rest_15",
+    "items": [
+     {
+      "item_id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "quantity": 3,
+      "note": null
+     }
+    ],
+    "total": 135000,
+    "address": "Công ty Sài Gòn Soft, Quận 3, TP.HCM",
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_05",
+    "restaurant_id": "rest_1816",
+    "items": [
+     {
+      "item_id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 189000,
+    "address": "Công ty Sài Gòn Soft, Quận 3, TP.HCM",
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_727",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_647",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_2687",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_735",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_4437",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23700
+   },
+   {
+    "type": "e5",
+    "price": 22500
+   },
+   {
+    "type": "diesel",
+    "price": 21100
+   }
+  ]
+ }
+}

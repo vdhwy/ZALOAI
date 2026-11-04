@@ -1,0 +1,237 @@
+{
+ "_meta": {
+  "question_id": "train_0937",
+  "current_time": "2026-11-22T06:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_375",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-12-03",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_304",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-12-02",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_4234",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-26",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-23",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-24",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-25",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 34
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_474",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 145000,
+    "due_date": "2026-11-27",
+    "paid": false
+   },
+   {
+    "id": "bill_779",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 204000,
+    "due_date": "2026-11-28",
+    "paid": false
+   },
+   {
+    "id": "bill_728",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 205000,
+    "due_date": "2026-11-25",
+    "paid": false
+   },
+   {
+    "id": "bill_217",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 217000,
+    "due_date": "2026-11-29",
+    "paid": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_944",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_8197",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_298",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_146",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_8694",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_44",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_807",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_943",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ }
+}

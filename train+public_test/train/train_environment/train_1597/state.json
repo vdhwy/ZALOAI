@@ -1,0 +1,407 @@
+{
+ "_meta": {
+  "question_id": "train_1597",
+  "current_time": "2026-11-22T10:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_226",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-21T06:45:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_220",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-21T18:00:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_787",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-20T22:45:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_731",
+    "from": "tran.le@congty.example.test",
+    "from_name": "Sếp Trân",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch họp đầu tuần",
+    "snippet": "Sáng thứ hai tám giờ họp tổng kết tháng.",
+    "body": "Khoa ơi, sáng thứ hai tám giờ họp tổng kết tháng mười một nha, em chuẩn bị số liệu doanh số khu vực Quận 1 giúp chị.",
+    "time": "2026-11-21T21:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_4472",
+    "from": "promo@senair.example.test",
+    "from_name": "Sen Air",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Flash sale cuối tuần: giảm 30% vé đi Phú Quốc",
+    "snippet": "Chỉ trong hai ngày cuối tuần, giảm 30% vé đi Phú Quốc.",
+    "body": "Sen Air giảm 30% giá vé Sài Gòn – Phú Quốc cho các chuyến bay tháng mười hai, áp dụng đến hết Chủ nhật.",
+    "time": "2026-11-22T06:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5310",
+    "from": "khuyenmai@jetxanh.example.test",
+    "from_name": "JetXanh",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Săn vé Tết giá chỉ từ 499 nghìn",
+    "snippet": "Mở bán vé Tết, giá chỉ từ 499 nghìn một chiều.",
+    "body": "JetXanh mở bán vé Tết với giá chỉ từ 499 nghìn một chiều cho mọi đường bay nội địa, số lượng có hạn.",
+    "time": "2026-11-22T07:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_9015",
+    "from": "uudai@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Tặng bạn voucher 50 nghìn",
+    "snippet": "Voucher 50 nghìn cho đơn từ 300 nghìn.",
+    "body": "Muado tặng bạn voucher 50 nghìn cho đơn hàng từ 300 nghìn, hạn dùng đến 30/11.",
+    "time": "2026-11-22T08:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_2286",
+    "from": "thongbao@vivu.example.test",
+    "from_name": "Ví Vivu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Bạn được hoàn 50.000đ",
+    "snippet": "Ví Vivu đã hoàn 50.000đ vào tài khoản của bạn.",
+    "body": "Ví Vivu đã hoàn 50.000đ cho giao dịch nạp tiền điện thoại ngày 20/11 của bạn. Số tiền đã được cộng vào ví.",
+    "time": "2026-11-22T08:20:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "calculator": {},
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_801",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_88",
+    "name": "Má",
+    "type": "direct",
+    "members": [
+     "Má"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_804",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_31",
+    "name": "Vy",
+    "type": "direct",
+    "members": [
+     "Vy"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_991",
+    "name": "Sếp Trân",
+    "type": "direct",
+    "members": [
+     "Sếp Trân"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 850000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_9872",
+    "amount": -300000,
+    "note": "Tiền ăn tối qua"
+   },
+   {
+    "id": "tx_02",
+    "type": "topup_mobile",
+    "phone": "09687551630",
+    "amount": -100000
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_565",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_450",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_883",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_993",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_550",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_3491",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-03",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_665",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-03",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_466",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-03",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_129",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-03",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-23T06:00:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_761",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09179363198"
+   },
+   {
+    "id": "c_5663",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09192257218"
+   },
+   {
+    "id": "c_498",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09169459272"
+   },
+   {
+    "id": "c_254",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09687551630"
+   },
+   {
+    "id": "c_809",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09916730151"
+   },
+   {
+    "id": "c_9872",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09226936401"
+   },
+   {
+    "id": "c_5161",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09295727078"
+   },
+   {
+    "id": "c_5424",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09565503182"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_333",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-25T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_152",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-24T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_5598",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-28T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "due": "2026-11-23T08:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Chuẩn bị số liệu doanh số Quận 1"
+   }
+  ]
+ }
+}

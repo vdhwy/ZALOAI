@@ -1,0 +1,322 @@
+{
+ "_meta": {
+  "question_id": "train_1479",
+  "current_time": "2026-11-10T10:30:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "library.reserve",
+   "library.search",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_380",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-10T09:30:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_918",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-11-09T06:30:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_8097",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-10T08:15:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_9658",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-09T21:15:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_7998",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-09T08:00:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_8134",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-09T23:15:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   }
+  ],
+  "saved": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_710",
+    "origin": "DAD",
+    "destination": "VCA",
+    "date": "2026-11-26",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_8296",
+    "origin": "DAD",
+    "destination": "VCA",
+    "date": "2026-11-26",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_6023",
+    "origin": "DAD",
+    "destination": "VCA",
+    "date": "2026-11-26",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_9312",
+    "origin": "DAD",
+    "destination": "VCA",
+    "date": "2026-11-26",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_4471",
+    "origin": "DAD",
+    "destination": "SIN",
+    "date": "2026-11-17",
+    "depart": "08:40",
+    "arrive": "12:55",
+    "airline": "Rồng Việt Air",
+    "price": 4350000
+   },
+   {
+    "id": "fl_5530",
+    "origin": "DAD",
+    "destination": "KUL",
+    "date": "2026-11-24",
+    "depart": "13:15",
+    "arrive": "17:05",
+    "airline": "JetXanh",
+    "price": 3890000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_207",
+    "flight_id": "fl_4471",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_381",
+    "flight_id": "fl_5530",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_39",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_1243",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_31",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_146",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_19",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_3827",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_450",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_619",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": false
+   },
+   {
+    "id": "book_610",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_6345",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_772",
+    "title": "Singapore Business Guide",
+    "author": "Grace Lim",
+    "available": true
+   },
+   {
+    "id": "book_2290",
+    "title": "Sống và làm việc ở Singapore",
+    "author": "Lê Thu Hà",
+    "available": false
+   },
+   {
+    "id": "book_5163",
+    "title": "Kuala Lumpur Street Food",
+    "author": "Aaron Tan",
+    "available": false
+   },
+   {
+    "id": "book_918",
+    "title": "Malaysia: Kuala Lumpur và Penang",
+    "author": "Nguyễn Minh Khoa",
+    "available": true
+   },
+   {
+    "id": "book_3054",
+    "title": "Kuala Lumpur Business Guide",
+    "author": "Grace Lim",
+    "available": false
+   }
+  ],
+  "reservations": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_320",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_9788",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_984",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_794",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 120
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ }
+}

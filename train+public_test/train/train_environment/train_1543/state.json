@@ -1,0 +1,375 @@
+{
+ "_meta": {
+  "question_id": "train_1543",
+  "current_time": "2026-11-28T21:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_9059",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_627",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_950",
+    "name": "Thằng Tí",
+    "type": "direct",
+    "members": [
+     "Thằng Tí"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_287",
+    "name": "Vợ Hồng",
+    "type": "direct",
+    "members": [
+     "Vợ Hồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_545",
+    "name": "Anh Mười",
+    "type": "direct",
+    "members": [
+     "Anh Mười"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_217",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09317662712"
+   },
+   {
+    "id": "c_814",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09298766311"
+   },
+   {
+    "id": "c_8010",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09120111083"
+   },
+   {
+    "id": "c_901",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09822417777"
+   },
+   {
+    "id": "c_6418",
+    "name": "Grace Nakamura",
+    "relation": "khách Nhật mua xoài",
+    "phone": "09038127465"
+   },
+   {
+    "id": "c_730",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09579258960"
+   },
+   {
+    "id": "c_983",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09154910694"
+   },
+   {
+    "id": "c_326",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09976086375"
+   },
+   {
+    "id": "c_811",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09932427882"
+   },
+   {
+    "id": "c_293",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09527162899"
+   },
+   {
+    "id": "c_256",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09547365885"
+   },
+   {
+    "id": "c_592",
+    "name": "Grace Nakamoto",
+    "relation": "khách Úc",
+    "phone": "09716645083"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_439",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 960,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_637",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_976",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 3000,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_890",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-09",
+    "used": false
+   },
+   {
+    "id": "vch_528",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-12-23",
+    "used": false
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_630",
+    "time": "2026-11-29T07:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_342",
+    "time": "2026-11-29T06:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_3791",
+    "time": "2026-11-29T06:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_801",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_997",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_628",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": true
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_144",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-30T15:30:00+07:00",
+    "end": "2026-11-30T16:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5095",
+    "title": "đá bóng",
+    "start": "2026-11-29T10:30:00+07:00",
+    "end": "2026-11-29T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_855",
+    "title": "họp phụ huynh",
+    "start": "2026-12-01T14:00:00+07:00",
+    "end": "2026-12-01T15:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_2184",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_4842",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_261",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Cái Răng",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_253",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_7730",
+    "name": "Xe đạp điện 105",
+    "station": "Trạm Cái Răng",
+    "available": false,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ }
+}

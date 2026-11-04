@@ -1,0 +1,396 @@
+{
+ "_meta": {
+  "question_id": "train_1322",
+  "current_time": "2026-11-10T16:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22100
+   },
+   {
+    "type": "e5",
+    "price": 20900
+   },
+   {
+    "type": "diesel",
+    "price": 19500
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_780",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 146000,
+    "due_date": "2026-11-13",
+    "paid": false
+   },
+   {
+    "id": "bill_217",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 848000,
+    "due_date": "2026-11-17",
+    "paid": false
+   },
+   {
+    "id": "bill_282",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 218000,
+    "due_date": "2026-11-15",
+    "paid": true,
+    "paid_with": "bank"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_3351",
+    "time": "2026-11-11T07:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_567",
+    "time": "2026-11-11T06:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_43",
+    "name": "Team Design",
+    "type": "direct",
+    "members": [
+     "Team Design"
+    ],
+    "messages": [
+     {
+      "from": "Team Design",
+      "content": "Anh Việt ơi mai mình review bản mockup lúc mười giờ nha.",
+      "time": "2026-11-10T11:05:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_345",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5631",
+    "name": "Sếp David",
+    "type": "direct",
+    "members": [
+     "Sếp David"
+    ],
+    "messages": [
+     {
+      "from": "Sếp David",
+      "content": "Lần sau đừng hẹn client ở Juniper Lane Bến Thành nữa nha Việt, ồn quá nói chuyện không được.",
+      "time": "2026-11-03T21:40:00+07:00"
+     },
+     {
+      "from": "Sếp David",
+      "content": "Việt ơi, bảy giờ tối nay dinner với client bên Kestrel Foods ở Juniper Lane chi nhánh Thảo Điền nhé, em đi cùng anh.",
+      "time": "2026-11-10T14:25:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_72",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_750",
+    "name": "Vợ Hằng",
+    "type": "direct",
+    "members": [
+     "Vợ Hằng"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Tối nay anh về trễ, có dinner với khách nha em."
+     }
+    ]
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_4873",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_6069",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_4309",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_9618",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_5155",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_67",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_2716",
+    "name": "Juniper Lane Bistro Thảo Điền",
+    "address": "18 Quốc Hương, Thảo Điền, TP. Thủ Đức",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_843",
+    "name": "Juniper Lane Bistro Bến Thành",
+    "address": "39 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_5590",
+    "name": "Juniper Lounge",
+    "address": "12 Ngô Đức Kế, Quận 1, TP.HCM",
+    "category": "bar"
+   }
+  ],
+  "saved_places": [],
+  "routes": [
+   {
+    "from": [
+     "tòa nhà nexora",
+     "5 tôn đức thắng",
+     "công ty"
+    ],
+    "to": [
+     "18 quốc hương",
+     "juniper lane bistro thảo điền",
+     "juniper lane thảo điền"
+    ],
+    "distance_km": 7.6,
+    "duration_min": {
+     "car": 26,
+     "motorbike": 21,
+     "walk": 95,
+     "transit": 40
+    }
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_5923",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_266",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_290",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_701",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_2639",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_479",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09754261374"
+   },
+   {
+    "id": "c_695",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09983843891"
+   },
+   {
+    "id": "c_9315",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09453693403"
+   },
+   {
+    "id": "c_540",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09111265847"
+   },
+   {
+    "id": "c_179",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09711836364"
+   },
+   {
+    "id": "c_9079",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09351057224"
+   },
+   {
+    "id": "c_909",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09788292173"
+   },
+   {
+    "id": "c_536",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09953332194"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_3278",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_498",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_436",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_8511",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_1331",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ }
+}

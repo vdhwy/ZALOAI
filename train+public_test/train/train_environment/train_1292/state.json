@@ -1,0 +1,275 @@
+{
+ "_meta": {
+  "question_id": "train_1292",
+  "current_time": "2026-11-03T17:30:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_315",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Bà nội",
+    "done": false
+   },
+   {
+    "id": "chore_610",
+    "name": "Rửa bát",
+    "assignee": "Ông Hải",
+    "done": true
+   },
+   {
+    "id": "chore_776",
+    "name": "Đổ rác",
+    "assignee": "Ông Hải",
+    "done": true
+   }
+  ],
+  "members": [
+   "Ông Hải",
+   "Bà nội",
+   "Tuấn"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_191",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_953",
+    "name": "Chú Tám",
+    "type": "direct",
+    "members": [
+     "Chú Tám"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_143",
+    "name": "Hằng",
+    "type": "direct",
+    "members": [
+     "Hằng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6434",
+    "name": "Thằng Út",
+    "type": "direct",
+    "members": [
+     "Thằng Út"
+    ],
+    "messages": [
+     {
+      "from": "Thằng Út",
+      "content": "Ba ơi thứ năm này con chở ba lên bệnh viện khám mắt nghen, đi từ sáng sớm tới chiều tối mới về.",
+      "time": "2026-11-03T16:50:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_812",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_8865",
+    "tracking_id": "MDXVN519320270",
+    "carrier": "MDX Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "out_for_delivery",
+    "eta": "2026-11-03T17:00:00+07:00"
+   },
+   {
+    "id": "shp_417",
+    "tracking_id": "GST416061720",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "in_transit",
+    "eta": "2026-11-05T10:00:00+07:00"
+   },
+   {
+    "id": "shp_949",
+    "tracking_id": "STP283383799",
+    "carrier": "SaoTel Post",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "delivered",
+    "eta": "2026-11-02T17:00:00+07:00"
+   },
+   {
+    "id": "shp_288",
+    "tracking_id": "EV602905643",
+    "carrier": "VNPost",
+    "name": "Nồi cơm điện Cuckoo",
+    "status": "in_transit",
+    "eta": "2026-11-05T15:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_280",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_404",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_279",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_7368",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_416",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_727",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09969548808"
+   },
+   {
+    "id": "c_1837",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09850955371"
+   },
+   {
+    "id": "c_123",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09801085292"
+   },
+   {
+    "id": "c_782",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09470678078"
+   },
+   {
+    "id": "c_417",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09685407931"
+   },
+   {
+    "id": "c_731",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09129532821"
+   },
+   {
+    "id": "c_2535",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09382699039"
+   },
+   {
+    "id": "c_3661",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09774301089"
+   },
+   {
+    "id": "c_50",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09141466067"
+   },
+   {
+    "id": "c_800",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09673975141"
+   },
+   {
+    "id": "c_1092",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09959562465"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

@@ -1,0 +1,316 @@
+{
+ "_meta": {
+  "question_id": "train_1590",
+  "current_time": "2026-11-23T17:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_589",
+    "name": "Giặt quần áo",
+    "assignee": "Bà nội",
+    "done": true
+   },
+   {
+    "id": "chore_607",
+    "name": "Đi chợ",
+    "assignee": "Anh Phúc",
+    "done": true
+   },
+   {
+    "id": "chore_975",
+    "name": "Tưới cây",
+    "assignee": "Bà nội",
+    "done": false
+   },
+   {
+    "id": "chore_478",
+    "name": "Lau nhà",
+    "assignee": "Anh Phúc",
+    "done": false
+   },
+   {
+    "id": "chore_812",
+    "name": "Nấu cơm tối",
+    "assignee": "Bà nội",
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Phúc",
+   "Bé Na",
+   "Bà nội"
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_984",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_53",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_49",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_52",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_5100",
+    "title": "đá bóng",
+    "start": "2026-11-25T19:00:00+07:00",
+    "end": "2026-11-25T20:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_8109",
+    "title": "khám răng",
+    "start": "2026-11-26T08:00:00+07:00",
+    "end": "2026-11-26T09:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6631",
+    "title": "Dẫn đoàn khách Hàn đi chợ đêm Sơn Trà",
+    "start": "2026-11-23T19:00:00+07:00",
+    "end": "2026-11-23T21:30:00+07:00",
+    "location": "Chợ đêm Sơn Trà",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_351",
+    "contact_id": null,
+    "name": "Anh Bình",
+    "phone_number": "09769040274",
+    "direction": "incoming",
+    "time": "2026-11-23T14:20:00+07:00",
+    "content": "Đoàn Hàn tối nay tập trung ở khách sạn lúc sáu giờ bốn lăm nghe Phúc."
+   },
+   {
+    "id": "msg_368",
+    "contact_id": null,
+    "name": "Bà nội",
+    "phone_number": "09356733725",
+    "direction": "incoming",
+    "time": "2026-11-23T16:40:00+07:00",
+    "content": "Phúc ơi bà mệt trong người, tối ni mấy việc nhà của bà con coi làm giùm bà nghe."
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_686",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 1600,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_455",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 7200,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_5343",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-12-01",
+    "used": false
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_174",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-25T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_57",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-22T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_173",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-22T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_3006",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-25T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ }
+}

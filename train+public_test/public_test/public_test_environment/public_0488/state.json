@@ -1,0 +1,432 @@
+{
+ "_meta": {
+  "question_id": "public_0488",
+  "current_time": "2026-10-21T14:40:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "bus_290",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   },
+   {
+    "id": "bus_920",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Khu Công nghệ cao",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   },
+   {
+    "id": "metro_2662",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Nguyễn Huệ",
+    "route": "bus_290",
+    "time": "2026-10-21T14:50:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "metro_2662",
+    "time": "2026-10-21T14:31:00+07:00"
+   },
+   {
+    "stop": "Hàng Xanh",
+    "route": "bus_920",
+    "time": "2026-10-21T15:11:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_920",
+    "time": "2026-10-21T14:44:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "metro_2662",
+    "time": "2026-10-21T14:53:00+07:00"
+   },
+   {
+    "stop": "Hàng Xanh",
+    "route": "bus_920",
+    "time": "2026-10-21T14:59:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "metro_2662",
+    "time": "2026-10-21T15:09:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Huệ",
+    "route": "bus_290",
+    "time": "2026-10-21T15:20:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_920",
+    "time": "2026-10-21T15:02:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Huệ",
+    "route": "bus_290",
+    "time": "2026-10-21T15:05:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_717",
+    "name": "Chạy bộ buổi sáng",
+    "streak": 5,
+    "last_logged": "2026-10-19"
+   },
+   {
+    "id": "habit_5216",
+    "name": "Thiền 10 phút",
+    "streak": 1,
+    "last_logged": "2026-10-19"
+   },
+   {
+    "id": "habit_133",
+    "name": "Ngủ trước 11 giờ",
+    "streak": 0
+   },
+   {
+    "id": "habit_84",
+    "name": "Học từ vựng tiếng Anh",
+    "streak": 0
+   },
+   {
+    "id": "habit_8608",
+    "name": "Không uống trà sữa",
+    "streak": 12,
+    "last_logged": "2026-10-19"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_8289",
+    "habit_id": "habit_8608",
+    "date": "2026-10-19"
+   },
+   {
+    "id": "log_4262",
+    "habit_id": "habit_5216",
+    "date": "2026-10-19"
+   },
+   {
+    "id": "log_305",
+    "habit_id": "habit_717",
+    "date": "2026-10-19"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_489",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-22",
+    "depart": "13:00",
+    "arrive": "20:00",
+    "price": 250000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_8922",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-22",
+    "depart": "19:00",
+    "arrive": "02:30",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_2777",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-10-22",
+    "depart": "08:00",
+    "arrive": "11:30",
+    "price": 320000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_27",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-22",
+    "depart": "19:00",
+    "arrive": "22:30",
+    "price": 320000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_314",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-10-22",
+    "depart": "13:00",
+    "arrive": "20:00",
+    "price": 250000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_549",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-22",
+    "depart": "08:00",
+    "arrive": "13:00",
+    "price": 680000,
+    "seats_left": 8
+   }
+  ],
+  "bookings": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_232",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_466",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_747",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_224",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_21",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

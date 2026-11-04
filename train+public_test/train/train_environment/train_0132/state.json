@@ -1,0 +1,245 @@
+{
+ "_meta": {
+  "question_id": "train_0132",
+  "current_time": "2026-11-02T08:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "time": "2026-11-03T07:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_02",
+    "time": "2026-11-03T08:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_03",
+    "time": "2026-11-03T06:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 24,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-02",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-03",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-04",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-05",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 31
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09155382171"
+   },
+   {
+    "id": "c_02",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09675674408"
+   },
+   {
+    "id": "c_03",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09243510903"
+   },
+   {
+    "id": "c_04",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09810801805"
+   },
+   {
+    "id": "c_05",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09918869707"
+   },
+   {
+    "id": "c_06",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09417065226"
+   },
+   {
+    "id": "c_07",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09855811478"
+   },
+   {
+    "id": "c_08",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09371967079"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "tv": {
+  "power": "on",
+  "channel": "S+ Sport",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 131300000,
+    "sell": 133300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 125300000,
+    "sell": 127300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4295
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ }
+}

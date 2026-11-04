@@ -1,0 +1,396 @@
+{
+ "_meta": {
+  "question_id": "public_0470",
+  "current_time": "2026-12-19T10:40:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "pantry.consume",
+   "pantry.list_items",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5271",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09422598605"
+   },
+   {
+    "id": "c_9312",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09999158280"
+   },
+   {
+    "id": "c_8103",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09167596250"
+   },
+   {
+    "id": "c_130",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09697258590"
+   },
+   {
+    "id": "c_424",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09217212071"
+   },
+   {
+    "id": "c_730",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09897724927"
+   },
+   {
+    "id": "c_88",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09456137050"
+   },
+   {
+    "id": "c_995",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09198190658"
+   },
+   {
+    "id": "c_411",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09222194717"
+   },
+   {
+    "id": "c_170",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09672843458"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_4002",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 223000,
+    "due_date": "2026-12-22",
+    "paid": false
+   },
+   {
+    "id": "bill_896",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 206000,
+    "due_date": "2026-12-25",
+    "paid": false
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 25,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-19",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 31
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_2944",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_2488",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_714",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 12
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_5130",
+    "lot_id": "lot_2944",
+    "from_time": "2026-12-05T08:30:00+07:00",
+    "hours": 2,
+    "end_time": "2026-12-05T10:30:00+07:00",
+    "total": 80000,
+    "status": "ended"
+   },
+   {
+    "id": "park_377",
+    "lot_id": "lot_714",
+    "from_time": "2026-12-12T09:00:00+07:00",
+    "hours": 2,
+    "end_time": "2026-12-12T11:00:00+07:00",
+    "total": 60000,
+    "status": "ended"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_589",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-12-26",
+    "depart": "21:00",
+    "arrive": "02:30",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_373",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-24",
+    "depart": "08:00",
+    "arrive": "11:30",
+    "price": 250000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_131",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-24",
+    "depart": "21:00",
+    "arrive": "07:30",
+    "price": 920000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_7978",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-12-26",
+    "depart": "08:00",
+    "arrive": "15:00",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_2516",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-24",
+    "depart": "13:00",
+    "arrive": "20:00",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_1979",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-12-26",
+    "depart": "13:00",
+    "arrive": "20:00",
+    "price": 400000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_201",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-12-26",
+    "depart": "13:00",
+    "arrive": "18:00",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_343",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-24",
+    "depart": "06:00",
+    "arrive": "16:00",
+    "price": 680000,
+    "seats_left": 2
+   }
+  ],
+  "bookings": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_339",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-20T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_974",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-23T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_6446",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-20T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_287",
+    "name": "bột mì",
+    "stock": 2,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_632",
+    "name": "dầu ăn",
+    "stock": 2,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_6980",
+    "name": "nước mắm",
+    "stock": 1,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_334",
+    "name": "gạo ST25",
+    "stock": 5,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_881",
+    "name": "sữa tươi",
+    "stock": 1,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_984",
+    "name": "yến mạch",
+    "stock": 2,
+    "unit": "túi"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 126800000,
+    "sell": 128800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 120800000,
+    "sell": 122800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3962
+   }
+  ]
+ }
+}

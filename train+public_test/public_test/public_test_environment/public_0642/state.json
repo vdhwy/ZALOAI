@@ -1,0 +1,413 @@
+{
+ "_meta": {
+  "question_id": "public_0642",
+  "current_time": "2026-10-21T08:20:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "fuel_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_122",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09470291046"
+   },
+   {
+    "id": "c_3587",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09307923889"
+   },
+   {
+    "id": "c_306",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09217308909"
+   },
+   {
+    "id": "c_755",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09138111431"
+   },
+   {
+    "id": "c_582",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09645318871"
+   },
+   {
+    "id": "c_171",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09937321194"
+   },
+   {
+    "id": "c_1763",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09575126915"
+   },
+   {
+    "id": "c_2450",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09199748546"
+   },
+   {
+    "id": "c_223",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09137468952"
+   },
+   {
+    "id": "c_9613",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09810710961"
+   },
+   {
+    "id": "c_304",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09274618771"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_7385",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_301",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_18",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_36",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_425",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-10-29",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_544",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-10-29",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_945",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-10-29",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_601",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-10-29",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   }
+  ],
+  "bookings": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_448",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-22",
+    "depart": "08:00",
+    "arrive": "11:00",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_829",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-22",
+    "depart": "06:00",
+    "arrive": "13:00",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_7615",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-28",
+    "depart": "08:00",
+    "arrive": "13:00",
+    "price": 450000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_920",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-28",
+    "depart": "21:00",
+    "arrive": "02:00",
+    "price": 450000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_634",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-22",
+    "depart": "21:00",
+    "arrive": "04:00",
+    "price": 250000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_738",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-28",
+    "depart": "21:00",
+    "arrive": "07:00",
+    "price": 320000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_590",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-28",
+    "depart": "19:00",
+    "arrive": "22:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_1491",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-22",
+    "depart": "13:00",
+    "arrive": "23:00",
+    "price": 400000,
+    "seats_left": 30
+   }
+  ],
+  "bookings": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_115",
+    "name": "Anh Lộc",
+    "type": "direct",
+    "members": [
+     "Anh Lộc"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_971",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_397",
+    "name": "Bé Na",
+    "type": "direct",
+    "members": [
+     "Bé Na"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_700",
+    "name": "Chú Năm",
+    "type": "direct",
+    "members": [
+     "Chú Năm"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_215",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_349",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_5930",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_275",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_803",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_573",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_2291",
+    "account_id": "acc_5930",
+    "time": "2026-10-20T18:10:00+07:00",
+    "amount": -300000,
+    "note": "Đổ dầu diesel xe tải giao hàng - Cây xăng Quốc lộ 1A, Bình Chánh"
+   },
+   {
+    "id": "tx_2307",
+    "account_id": "acc_5930",
+    "time": "2026-10-20T07:05:00+07:00",
+    "amount": -90000,
+    "note": "Đổ xăng E5 - Cây xăng số 7 Lê Văn Sỹ, Quận 3"
+   },
+   {
+    "id": "tx_2250",
+    "account_id": "acc_5930",
+    "time": "2026-10-19T16:40:00+07:00",
+    "amount": 1500000,
+    "note": "Anh Lộc thanh toán tiền hàng"
+   },
+   {
+    "id": "tx_2186",
+    "account_id": "acc_5930",
+    "time": "2026-10-17T07:30:00+07:00",
+    "amount": -120000,
+    "note": "Đổ xăng RON95 - Cây xăng số 7 Lê Văn Sỹ, Quận 3"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23400
+   },
+   {
+    "type": "e5",
+    "price": 22200
+   },
+   {
+    "type": "diesel",
+    "price": 20800
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ }
+}

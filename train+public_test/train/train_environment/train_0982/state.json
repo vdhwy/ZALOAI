@@ -1,0 +1,437 @@
+{
+ "_meta": {
+  "question_id": "train_0982",
+  "current_time": "2026-11-16T06:30:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_8215",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_238",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_5269",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_574",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_434",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_606",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-22T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_324",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-21T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_510",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-17T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_481",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-15T20:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_156",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09265828134"
+   },
+   {
+    "id": "c_228",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09570498125"
+   },
+   {
+    "id": "c_809",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09509902835"
+   },
+   {
+    "id": "c_8116",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09286275201"
+   },
+   {
+    "id": "c_6459",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09606582523"
+   },
+   {
+    "id": "c_554",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09760684606"
+   },
+   {
+    "id": "c_4780",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09777622426"
+   },
+   {
+    "id": "c_709",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09667278443"
+   },
+   {
+    "id": "c_680",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09901483161"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_4907",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_351",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_8392",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_578",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_897",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_5418",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_9344",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_5257",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_626",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_439",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_682",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_145",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5640",
+    "name": "Bé Bống",
+    "type": "direct",
+    "members": [
+     "Bé Bống"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_766",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_475",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_499",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_919",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 125600000,
+    "sell": 127600000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 119600000,
+    "sell": 121600000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3926
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_309",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_9981",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_689",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_46",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_856",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_509",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ }
+}

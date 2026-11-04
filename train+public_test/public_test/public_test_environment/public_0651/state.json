@@ -1,0 +1,580 @@
+{
+ "_meta": {
+  "question_id": "public_0651",
+  "current_time": "2026-11-24T15:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_669",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Đà Nẵng",
+    "destination": "Huế",
+    "date": "2026-11-27",
+    "depart": "13:00",
+    "arrive": "23:00",
+    "price": 320000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_4488",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Đà Nẵng",
+    "destination": "Nha Trang",
+    "date": "2026-11-25",
+    "depart": "21:00",
+    "arrive": "02:30",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_958",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Đà Nẵng",
+    "destination": "Huế",
+    "date": "2026-11-27",
+    "depart": "06:00",
+    "arrive": "09:00",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_510",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Đà Nẵng",
+    "destination": "Nha Trang",
+    "date": "2026-11-25",
+    "depart": "13:00",
+    "arrive": "23:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_798",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Đà Nẵng",
+    "destination": "Huế",
+    "date": "2026-11-27",
+    "depart": "21:00",
+    "arrive": "02:30",
+    "price": 250000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_2856",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Đà Nẵng",
+    "destination": "Nha Trang",
+    "date": "2026-11-25",
+    "depart": "19:00",
+    "arrive": "05:00",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_441",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Đà Nẵng",
+    "destination": "Huế",
+    "date": "2026-11-27",
+    "depart": "13:00",
+    "arrive": "16:00",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_89",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Đà Nẵng",
+    "destination": "Nha Trang",
+    "date": "2026-11-25",
+    "depart": "19:00",
+    "arrive": "02:00",
+    "price": 320000,
+    "seats_left": 2
+   }
+  ],
+  "bookings": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_4886",
+    "name": "Bãi đỗ xe Cầu Rồng",
+    "address": "Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
+    "area": "Cầu Rồng",
+    "price_per_hour": 20000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_856",
+    "name": "Bãi xe Sao Kim Plaza Ngô Quyền",
+    "address": "910 Ngô Quyền, Sơn Trà, Đà Nẵng",
+    "area": "Sơn Trà",
+    "price_per_hour": 25000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_8445",
+    "name": "Bãi đỗ chợ Hàn",
+    "address": "Trần Phú, Hải Châu, Đà Nẵng",
+    "area": "Chợ Hàn",
+    "price_per_hour": 20000,
+    "available_spots": 11
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_1535",
+    "lot_id": "lot_4886",
+    "from_time": "2026-11-24T14:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-11-24T17:00:00+07:00",
+    "total": 60000,
+    "status": "reserved"
+   },
+   {
+    "id": "park_02",
+    "lot_id": "lot_8445",
+    "from_time": "2026-11-25T08:00:00+07:00",
+    "hours": 2,
+    "end_time": "2026-11-25T10:00:00+07:00",
+    "total": 40000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_1983",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án\nGửi invoice cho Mr. Tanaka trước thứ sáu"
+   },
+   {
+    "id": "note_569",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_92",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_241",
+    "title": "họp team",
+    "start": "2026-11-26T18:00:00+07:00",
+    "end": "2026-11-26T19:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_456",
+    "title": "họp phụ huynh",
+    "start": "2026-11-27T08:00:00+07:00",
+    "end": "2026-11-27T09:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_508",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-25T09:30:00+07:00",
+    "end": "2026-11-25T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "status": "confirmed",
+    "title": "Gặp Sarah bàn lô hàng",
+    "start": "2026-11-26T10:00:00+07:00",
+    "end": "2026-11-26T11:00:00+07:00"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_481",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-24T12:30:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_968",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-24T12:30:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_1556",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-27T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_494",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-24T09:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_1803",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-26T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_309",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09714948620"
+   },
+   {
+    "id": "c_710",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09485565417"
+   },
+   {
+    "id": "c_3153",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09639115183"
+   },
+   {
+    "id": "c_3348",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09212663166"
+   },
+   {
+    "id": "c_528",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09923836156"
+   },
+   {
+    "id": "c_872",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09393061337"
+   },
+   {
+    "id": "c_57",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09861134945"
+   },
+   {
+    "id": "c_9150",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09431710555"
+   },
+   {
+    "id": "c_607",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09848092730"
+   },
+   {
+    "id": "c_2875",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09431052532"
+   },
+   {
+    "id": "c_886",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09804144199"
+   }
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_7159",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_662",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_9501",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_8585",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_7723",
+    "time": "2026-11-25T05:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_752",
+    "time": "2026-11-25T07:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_739",
+    "time": "2026-11-25T06:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 32,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-24",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 30
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-25",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 28
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-26",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-27",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   }
+  ]
+ }
+}

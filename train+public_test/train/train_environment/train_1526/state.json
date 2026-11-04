@@ -1,0 +1,439 @@
+{
+ "_meta": {
+  "question_id": "train_1526",
+  "current_time": "2026-11-08T17:20:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_689",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_3175",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_4127",
+    "name": "Sunrise Fitness Center",
+    "address": "Tầng 3 tòa Sky Park, 18 Phạm Hùng, Mỹ Đình, Nam Từ Liêm, Hà Nội",
+    "category": "gym"
+   },
+   {
+    "id": "place_918",
+    "name": "The Lemon Tree Café",
+    "address": "24 Phạm Hùng, Mỹ Đình, Nam Từ Liêm, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_2264",
+    "name": "Iron Lotus Gym",
+    "address": "35 Lê Đức Thọ, Mỹ Đình, Nam Từ Liêm, Hà Nội",
+    "category": "gym"
+   },
+   {
+    "id": "place_5531",
+    "name": "The Lemon Tea Café",
+    "address": "41 Lê Đức Thọ, Mỹ Đình, Nam Từ Liêm, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_377",
+    "name": "Phòng tập Thể hình Hàm Nghi",
+    "address": "8 Hàm Nghi, Mỹ Đình, Nam Từ Liêm, Hà Nội",
+    "category": "gym"
+   },
+   {
+    "id": "place_6402",
+    "name": "The Lemon Tree Café",
+    "address": "Ngõ 91 Chùa Láng, Đống Đa, Hà Nội",
+    "category": "cafe",
+    "detail": "Gần cổng Đại học Ngoại thương"
+   },
+   {
+    "id": "place_1739",
+    "name": "Cộng Đồng Café Chùa Láng",
+    "address": "60 Chùa Láng, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_837",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_640",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 28,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-08",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-09",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-10",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-11",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 29
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25709
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27765
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.4
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_339",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_579",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_294",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_212",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_738",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_516",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09866770418"
+   },
+   {
+    "id": "c_9965",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09523081389"
+   },
+   {
+    "id": "c_4179",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09895576403"
+   },
+   {
+    "id": "c_632",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09474404080"
+   },
+   {
+    "id": "c_344",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09352747322"
+   },
+   {
+    "id": "c_2683",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09131754730"
+   },
+   {
+    "id": "c_972",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09872000343"
+   },
+   {
+    "id": "c_629",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09365917246"
+   },
+   {
+    "id": "c_5653",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09186522564"
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-08",
+    "prizes": {
+     "special": "275282",
+     "first": "70689",
+     "eighth": "17"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-08",
+    "prizes": {
+     "special": "409127",
+     "first": "55676",
+     "eighth": "14"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-08",
+    "prizes": {
+     "special": "775995",
+     "first": "90473",
+     "eighth": "15"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-08",
+    "prizes": {
+     "special": "233308",
+     "first": "19726",
+     "eighth": "42"
+    }
+   }
+  ]
+ }
+}

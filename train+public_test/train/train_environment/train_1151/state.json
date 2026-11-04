@@ -1,0 +1,259 @@
+{
+ "_meta": {
+  "question_id": "train_1151",
+  "current_time": "2026-12-12T12:35:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 32,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-12",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-13",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-14",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-15",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 29
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_17",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-12-25",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_219",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-12-21",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_460",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-12-19",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_371",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-12-19",
+    "status": "paused",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_371",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_418",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_256",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_5567",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_463",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_7731",
+    "name": "Cà phê sách Mọt Sách",
+    "address": "12 Chùa Láng, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_2468",
+    "name": "Cà phê sách Nhã Văn",
+    "address": "59 Đỗ Quang, Cầu Giấy, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": [],
+  "routes": [
+   {
+    "from": [
+     "ktx my dinh",
+     "my dinh",
+     "ki tuc xa"
+    ],
+    "to": [
+     "nha van",
+     "59 do quang"
+    ],
+    "distance_km": 4.8,
+    "duration_min": {
+     "transit": 20,
+     "motorbike": 12,
+     "car": 14,
+     "walk": 58
+    }
+   },
+   {
+    "from": [
+     "ktx my dinh",
+     "my dinh",
+     "ki tuc xa"
+    ],
+    "to": [
+     "mot sach",
+     "12 chua lang"
+    ],
+    "distance_km": 7.3,
+    "duration_min": {
+     "transit": 25,
+     "motorbike": 16,
+     "car": 19,
+     "walk": 88
+    }
+   }
+  ]
+ },
+ "calculator": {},
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_9280",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-15T18:00:00+07:00",
+    "end": "2026-12-15T19:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_340",
+    "title": "đá bóng",
+    "start": "2026-12-13T18:00:00+07:00",
+    "end": "2026-12-13T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_94",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-13T18:00:00+07:00",
+    "end": "2026-12-13T19:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_750",
+    "title": "họp phụ huynh",
+    "start": "2026-12-14T19:30:00+07:00",
+    "end": "2026-12-14T20:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_216",
+    "title": "họp team",
+    "start": "2026-12-13T10:30:00+07:00",
+    "end": "2026-12-13T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

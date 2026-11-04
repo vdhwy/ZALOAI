@@ -1,0 +1,263 @@
+{
+ "_meta": {
+  "question_id": "public_0295",
+  "current_time": "2026-10-01T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "event_tickets.book",
+   "event_tickets.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "khám răng",
+    "start": "2026-10-02T19:30:00+07:00",
+    "end": "2026-10-02T20:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_01",
+    "name": "Đêm nhạc Jazz cuối tuần",
+    "category": "âm nhạc",
+    "date": "2026-10-15",
+    "time": "18:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 450000,
+    "available": 12
+   },
+   {
+    "id": "event_02",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-10-11",
+    "time": "20:00",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 600000,
+    "available": 30
+   },
+   {
+    "id": "event_03",
+    "name": "Stand-up comedy Sài Gòn Cười",
+    "category": "hài kịch",
+    "date": "2026-10-11",
+    "time": "19:30",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 300000,
+    "available": 12
+   },
+   {
+    "id": "event_04",
+    "name": "Hội chợ Sách mùa thu",
+    "category": "hội chợ",
+    "date": "2026-10-15",
+    "time": "15:00",
+    "venue": "Cung Văn hóa Hữu nghị Việt Xô",
+    "price": 50000,
+    "available": 198
+   },
+   {
+    "id": "event_05",
+    "name": "Hội chợ Sách mùa thu",
+    "category": "hội chợ",
+    "date": "2026-10-16",
+    "time": "09:00",
+    "venue": "Cung Văn hóa Hữu nghị Việt Xô",
+    "price": 50000,
+    "available": 200
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_01",
+    "event_id": "event_04",
+    "quantity": 2,
+    "total": 100000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_02",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_03",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-05T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-04T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-04T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-09-30T17:30:00+07:00",
+    "priority": "normal",
+    "done": true
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-09-30T00:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-09-29T03:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-09-28T08:30:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

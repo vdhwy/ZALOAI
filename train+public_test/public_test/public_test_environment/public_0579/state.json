@@ -1,0 +1,375 @@
+{
+ "_meta": {
+  "question_id": "public_0579",
+  "current_time": "2026-11-13T13:35:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_8812",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": true
+   },
+   {
+    "id": "item_937",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_859",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_8336",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_173",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_2955",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_7934",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_6634",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_835",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_146",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_546",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-16",
+    "depart": "13:00",
+    "arrive": "16:30",
+    "price": 920000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_157",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-16",
+    "depart": "21:00",
+    "arrive": "02:00",
+    "price": 920000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_8039",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-15",
+    "depart": "08:00",
+    "arrive": "18:30",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_7779",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-16",
+    "depart": "19:00",
+    "arrive": "22:30",
+    "price": 400000,
+    "seats_left": 5
+   },
+   {
+    "id": "trip_815",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-15",
+    "depart": "19:00",
+    "arrive": "05:30",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_927",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-15",
+    "depart": "06:00",
+    "arrive": "13:00",
+    "price": 920000,
+    "seats_left": 6
+   },
+   {
+    "id": "trip_555",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-16",
+    "depart": "08:00",
+    "arrive": "11:30",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_117",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-15",
+    "depart": "06:00",
+    "arrive": "13:00",
+    "price": 250000,
+    "seats_left": 8
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_01",
+    "trip_id": "trip_927",
+    "seats": 2,
+    "total": 1840000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_02",
+    "trip_id": "trip_7779",
+    "seats": 3,
+    "total": 1200000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_473",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-11-19",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_6087",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-11-19",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_9092",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-11-19",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_510",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-11-19",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   }
+  ],
+  "bookings": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 24,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-13",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-14",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-15",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-16",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 29
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_488",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_214",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_121",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_847",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_479",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ }
+}

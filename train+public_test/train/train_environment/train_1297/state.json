@@ -1,0 +1,228 @@
+{
+ "_meta": {
+  "question_id": "train_1297",
+  "current_time": "2026-11-02T17:30:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "gold_price.get_price",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track"
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_964",
+    "tracking_id": "MDXVN402945413",
+    "carrier": "MDX Express",
+    "name": "Áo khoác gió",
+    "status": "in_transit",
+    "eta": "2026-11-03T14:00:00+07:00"
+   },
+   {
+    "id": "shp_3388",
+    "tracking_id": "EV447807444",
+    "carrier": "VNPost",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "delivered",
+    "eta": "2026-11-01T17:00:00+07:00"
+   },
+   {
+    "id": "shp_1113",
+    "tracking_id": "JV331093830",
+    "carrier": "JetViệt Express",
+    "name": "Giày thể thao",
+    "status": "out_for_delivery",
+    "eta": "2026-11-02T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_4252",
+    "title": "họp team",
+    "start": "2026-11-03T18:30:00+07:00",
+    "end": "2026-11-03T19:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_384",
+    "title": "họp phụ huynh",
+    "start": "2026-11-03T08:00:00+07:00",
+    "end": "2026-11-03T09:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3503",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-04T14:00:00+07:00",
+    "end": "2026-11-04T15:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_111",
+    "title": "đi chơi công viên",
+    "start": "2026-11-03T10:30:00+07:00",
+    "end": "2026-11-03T11:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_552",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-04T19:00:00+07:00",
+    "end": "2026-11-04T20:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_455",
+    "name": "Rửa bát",
+    "assignee": "Chú Bảy",
+    "done": false
+   },
+   {
+    "id": "chore_812",
+    "name": "Lau nhà",
+    "assignee": "Chú Bảy",
+    "done": false
+   },
+   {
+    "id": "chore_595",
+    "name": "Phơi quần áo",
+    "assignee": "Bà nội",
+    "done": false
+   },
+   {
+    "id": "chore_570",
+    "name": "Nấu cơm tối",
+    "assignee": "Hồng",
+    "done": false
+   },
+   {
+    "id": "chore_93",
+    "name": "Tưới cây",
+    "assignee": "Tí",
+    "done": true
+   }
+  ],
+  "members": [
+   "Chú Bảy",
+   "Hồng",
+   "Tí",
+   "Bà nội"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_3064",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_38",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_786",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_916",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_440",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 129100000,
+    "sell": 131100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 123100000,
+    "sell": 125100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4189
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25890
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27961
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 172.6
+   }
+  ]
+ }
+}

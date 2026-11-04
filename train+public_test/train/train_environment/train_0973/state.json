@@ -1,0 +1,302 @@
+{
+ "_meta": {
+  "question_id": "train_0973",
+  "current_time": "2026-11-14T06:45:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_5454",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 214000,
+    "due_date": "2026-11-17",
+    "paid": false
+   },
+   {
+    "id": "bill_753",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 201000,
+    "due_date": "2026-11-17",
+    "paid": false
+   },
+   {
+    "id": "bill_926",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 848000,
+    "due_date": "2026-11-16",
+    "paid": false
+   }
+  ]
+ },
+ "calculator": {},
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 30,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-14",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-15",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-16",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-17",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_885",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_7299",
+    "name": "Xe đạp điện 105",
+    "station": "Trạm Chợ nổi Cái Răng",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_22",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Chợ nổi Cái Răng",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_764",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Chợ nổi Cái Răng",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_7417",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_156",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_1994",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-16T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_3598",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-20T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_911",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-13T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ }
+}

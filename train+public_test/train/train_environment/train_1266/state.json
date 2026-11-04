@@ -1,0 +1,452 @@
+{
+ "_meta": {
+  "question_id": "train_1266",
+  "current_time": "2026-11-06T19:00:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_231",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09709028432"
+   },
+   {
+    "id": "c_834",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09763516029"
+   },
+   {
+    "id": "c_677",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09231808270"
+   },
+   {
+    "id": "c_7821",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09708969031"
+   },
+   {
+    "id": "c_4390",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09303194368"
+   },
+   {
+    "id": "c_822",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09695542921"
+   },
+   {
+    "id": "c_8732",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09856626585"
+   },
+   {
+    "id": "c_467",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09164464790"
+   },
+   {
+    "id": "c_3395",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09582000330"
+   },
+   {
+    "id": "c_465",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09438020983"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_921",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_180",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_3584",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_702",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_2207",
+    "name": "Cao Nguyên Coffee Nhà Thờ",
+    "address": "6 Nhà Thờ, Hoàn Kiếm, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_341",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 600,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_651",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 2000,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_222",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 75,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_9512",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-08",
+    "used": false
+   },
+   {
+    "id": "vch_42",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-01",
+    "used": false
+   },
+   {
+    "id": "vch_4295",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-11-16",
+    "used": false
+   },
+   {
+    "id": "vch_617",
+    "merchant": "MinhMart",
+    "name": "Giảm 50.000đ đơn từ 300.000đ",
+    "value": 50000,
+    "expires": "2026-11-27",
+    "used": false
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_548",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_664",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_794",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_433",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_7790",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_6867",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_958",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_3470",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_271",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ }
+}

@@ -1,0 +1,315 @@
+{
+ "_meta": {
+  "question_id": "train_1422",
+  "current_time": "2026-11-22T14:50:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "fuel_price.get_price",
+   "library.reserve",
+   "library.search",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22700
+   },
+   {
+    "type": "e5",
+    "price": 21500
+   },
+   {
+    "type": "diesel",
+    "price": 20100
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_2998",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-22T09:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_6326",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-22T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_489",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-27T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_7490",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-28T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_269",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-28T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 100,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_8158",
+    "name": "phòng ngủ",
+    "area_m2": 8
+   },
+   {
+    "id": "room_758",
+    "name": "bếp",
+    "area_m2": 25
+   },
+   {
+    "id": "room_6904",
+    "name": "hành lang",
+    "area_m2": 22
+   },
+   {
+    "id": "room_455",
+    "name": "phòng khách",
+    "area_m2": 10
+   },
+   {
+    "id": "room_696",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 25
+   },
+   {
+    "id": "room_9453",
+    "name": "phòng ăn",
+    "area_m2": 12
+   }
+  ],
+  "current_job": null
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_925",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_4018",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_4396",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": false
+   },
+   {
+    "id": "book_9410",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_171",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_01",
+    "days": "daily",
+    "name": "Amoxicillin 500mg",
+    "times": [
+     "08:00",
+     "20:00"
+    ]
+   },
+   {
+    "id": "med_02",
+    "days": "daily",
+    "name": "Esomeprazole 20mg",
+    "times": [
+     "07:00"
+    ]
+   }
+  ],
+  "logs": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Order thêm hộp khẩu trang",
+    "time": "2026-11-22T20:00:00+07:00"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_922",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-22T03:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5163",
+    "from": "donthuoc@saigoncare.example.test",
+    "from_name": "Phòng khám Đa khoa Sài Gòn Care",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn thuốc sau khám ngày 21/11",
+    "snippet": "Gửi anh Việt đơn thuốc và giờ uống theo chỉ định của bác sĩ.",
+    "body": "Chào anh Việt, phòng khám gửi đơn thuốc sau buổi khám sáng 21/11. 1) Amoxicillin 500mg (kháng sinh): uống lúc 8 giờ sáng và 8 giờ tối, trong 7 ngày. 2) Loratadine 10mg (chống dị ứng): uống lúc 21 giờ mỗi tối. 3) Esomeprazole 20mg (dạ dày): uống lúc 7 giờ sáng trước ăn, bắt đầu từ thứ hai 30/11 sau khi hết kháng sinh. Chúc anh mau khỏe.",
+    "time": "2026-11-21T16:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_691",
+    "from": "vohang@nhaminh.example.test",
+    "from_name": "Vợ Hằng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-21T10:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_9340",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-21T01:20:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_224",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09285101084"
+   },
+   {
+    "id": "c_374",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09564969480"
+   },
+   {
+    "id": "c_760",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09715994161"
+   },
+   {
+    "id": "c_959",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09823251662"
+   },
+   {
+    "id": "c_680",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09381602515"
+   },
+   {
+    "id": "c_621",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09871695083"
+   },
+   {
+    "id": "c_3509",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09180335324"
+   },
+   {
+    "id": "c_3386",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09329760174"
+   },
+   {
+    "id": "c_838",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09100761699"
+   }
+  ]
+ }
+}

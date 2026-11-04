@@ -1,0 +1,135 @@
+{
+ "_meta": {
+  "question_id": "train_0593",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 147000,
+    "due_date": "2026-10-04",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "water",
+    "provider": "Nước sạch Hà Nội",
+    "amount": 186000,
+    "due_date": "2026-09-30",
+    "paid": false,
+    "period": "tháng 9/2026"
+   },
+   {
+    "id": "bill_03",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 194000,
+    "due_date": "2026-10-04",
+    "paid": true,
+    "paid_with": "bank"
+   },
+   {
+    "id": "bill_04",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 663000,
+    "due_date": "2026-09-30",
+    "paid": false,
+    "period": "quý 3/2026"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_01",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-10-06",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_02",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-10-04",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_03",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-10-09",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_04",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-10-18",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_02",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_03",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_04",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_05",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

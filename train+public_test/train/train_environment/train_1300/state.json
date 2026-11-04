@@ -1,0 +1,239 @@
+{
+ "_meta": {
+  "question_id": "train_1300",
+  "current_time": "2026-11-14T15:45:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "fuel_price.get_price",
+   "gold_price.get_price",
+   "library.reserve",
+   "library.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop"
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 75,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_868",
+    "name": "bếp",
+    "area_m2": 10
+   },
+   {
+    "id": "room_490",
+    "name": "phòng ngủ",
+    "area_m2": 22
+   },
+   {
+    "id": "room_2428",
+    "name": "phòng khách",
+    "area_m2": 12
+   }
+  ],
+  "current_job": null
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_3468",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_420",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_836",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_421",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_820",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_729",
+    "title": "Xe Vision",
+    "content": "Xe chạy xăng E5, bảo dưỡng định kỳ ở Honda Thảo Điền, lần tới tháng 12\nTuần rồi đã thay nhớt"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_375",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09528450902"
+   },
+   {
+    "id": "c_511",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09499132894"
+   },
+   {
+    "id": "c_942",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09131440068"
+   },
+   {
+    "id": "c_226",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09389019548"
+   },
+   {
+    "id": "c_276",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09479495614"
+   },
+   {
+    "id": "c_407",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09687007557"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_394",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-27",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_508",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-27",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_389",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-27",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_672",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-27",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   }
+  ],
+  "bookings": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22200
+   },
+   {
+    "type": "e5",
+    "price": 21000
+   },
+   {
+    "type": "diesel",
+    "price": 19600
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 122800000,
+    "sell": 124800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 116800000,
+    "sell": 118800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4051
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_877",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": false
+   },
+   {
+    "id": "book_3356",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_8873",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_457",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_922",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": false
+   }
+  ],
+  "reservations": []
+ }
+}

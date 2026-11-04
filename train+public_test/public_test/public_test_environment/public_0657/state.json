@@ -1,0 +1,506 @@
+{
+ "_meta": {
+  "question_id": "public_0657",
+  "current_time": "2026-11-24T18:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_3393",
+    "time": "2026-11-25T06:45:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_200",
+    "time": "2026-11-25T08:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": false
+   },
+   {
+    "id": "alm_03",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-25T05:30:00+07:00",
+    "label": "đi chợ"
+   },
+   {
+    "id": "alm_04",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-30T12:00:00+07:00",
+    "label": "ra sân bay"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_807",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_2747",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_506",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_598",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_731",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_4518",
+    "account_id": "acc_807",
+    "amount": 3500000,
+    "note": "Julia Romero chuyen tien phong thang 11",
+    "time": "2026-11-23T09:15:00+07:00"
+   },
+   {
+    "id": "tx_862",
+    "account_id": "acc_807",
+    "amount": 5000000,
+    "note": "Julia Moreno chuyen tien phong thang 12",
+    "time": "2026-11-24T07:40:00+07:00"
+   },
+   {
+    "id": "tx_3307",
+    "account_id": "acc_807",
+    "amount": -1200000,
+    "note": "Tien dien nuoc thang 10",
+    "time": "2026-11-20T16:05:00+07:00"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 27,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-24",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 34
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-26",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-27",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 30
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_9908",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_693",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_106",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_945",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_106",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 110000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_9908",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 39000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_6608",
+    "name": "Bãi xe Sao Kim Plaza Ngô Quyền",
+    "address": "910 Ngô Quyền, Sơn Trà, Đà Nẵng",
+    "area": "Sơn Trà",
+    "price_per_hour": 25000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_735",
+    "name": "Bãi đỗ xe Cầu Rồng",
+    "address": "Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
+    "area": "Cầu Rồng",
+    "price_per_hour": 20000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_1558",
+    "name": "Bãi đỗ chợ Hàn",
+    "address": "Trần Phú, Hải Châu, Đà Nẵng",
+    "area": "Chợ Hàn",
+    "price_per_hour": 20000,
+    "available_spots": 0
+   }
+  ],
+  "sessions": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_664",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_9437",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_4540",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_874",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_539",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_301",
+    "origin": "DAD",
+    "destination": "HUI",
+    "date": "2026-11-30",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_4275",
+    "origin": "DAD",
+    "destination": "HUI",
+    "date": "2026-11-30",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_6273",
+    "origin": "DAD",
+    "destination": "HUI",
+    "date": "2026-11-30",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_7521",
+    "origin": "DAD",
+    "destination": "HUI",
+    "date": "2026-11-30",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_155",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09645282792"
+   },
+   {
+    "id": "c_676",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09885762768"
+   },
+   {
+    "id": "c_907",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09386578310"
+   },
+   {
+    "id": "c_96",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09909188756"
+   },
+   {
+    "id": "c_1363",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09380577100"
+   },
+   {
+    "id": "c_383",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09303997246"
+   },
+   {
+    "id": "c_705",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09242744338"
+   },
+   {
+    "id": "c_34",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09457375718"
+   },
+   {
+    "id": "c_494",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09940434564"
+   }
+  ]
+ }
+}

@@ -1,0 +1,295 @@
+{
+ "_meta": {
+  "question_id": "train_1385",
+  "current_time": "2026-10-25T11:25:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_208",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_25",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_404",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": false,
+    "battery": 35
+   },
+   {
+    "id": "lock_438",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 80
+   }
+  ],
+  "guest_codes": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-25",
+    "to": "2026-10-25",
+    "kwh": 7.1,
+    "cost": 20600,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.2
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.4
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-19",
+    "to": "2026-10-25",
+    "kwh": 79.2,
+    "cost": 229700,
+    "days": [
+     {
+      "date": "2026-10-19",
+      "kwh": 8.5
+     },
+     {
+      "date": "2026-10-20",
+      "kwh": 13.2
+     },
+     {
+      "date": "2026-10-21",
+      "kwh": 15.6
+     },
+     {
+      "date": "2026-10-22",
+      "kwh": 15.5
+     },
+     {
+      "date": "2026-10-23",
+      "kwh": 9.4
+     },
+     {
+      "date": "2026-10-24",
+      "kwh": 9.9
+     },
+     {
+      "date": "2026-10-25",
+      "kwh": 7.1
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-25",
+    "kwh": 299.8,
+    "cost": 869400
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25383
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27413
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 169.2
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_987",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-28T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_83",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-24T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_489",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-24T09:30:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_8668",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-28T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_2321",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-26T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_6140",
+    "title": "Ra sân bay Cần Thơ đón Hằng từ Tokyo về",
+    "due": "2026-10-27T15:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_468",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_519",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_971",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ }
+}

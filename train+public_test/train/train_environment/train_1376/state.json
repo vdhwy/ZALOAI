@@ -1,0 +1,430 @@
+{
+ "_meta": {
+  "question_id": "train_1376",
+  "current_time": "2026-12-05T16:30:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "library.reserve",
+   "library.search",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_418",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_4611",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_729",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_4350",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_243",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_640",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_633",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09865340601"
+   },
+   {
+    "id": "c_491",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09874269050"
+   },
+   {
+    "id": "c_590",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09575487353"
+   },
+   {
+    "id": "c_98",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09891717080"
+   },
+   {
+    "id": "c_5935",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09317432672"
+   },
+   {
+    "id": "c_160",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09237161571"
+   },
+   {
+    "id": "c_408",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09796602414"
+   },
+   {
+    "id": "c_6657",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09120052087"
+   },
+   {
+    "id": "c_93",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09114229255"
+   },
+   {
+    "id": "c_502",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09153451031"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_926",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_1497",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_312",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_2540",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_582",
+    "restaurant_id": "rest_926",
+    "items": [
+     {
+      "item_id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 90000,
+    "address": "31 Hàng Bạc, Hoàn Kiếm, Hà Nội",
+    "payment": "cash",
+    "status": "delivered",
+    "placed_at": "2026-12-05T14:10:00+07:00",
+    "delivered_at": "2026-12-05T14:45:00+07:00"
+   },
+   {
+    "id": "ord_947",
+    "restaurant_id": "rest_1497",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 1,
+      "note": "ít mỡ hành"
+     },
+     {
+      "item_id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 65000,
+    "address": "31 Hàng Bạc, Hoàn Kiếm, Hà Nội",
+    "payment": "cash",
+    "status": "delivering",
+    "placed_at": "2026-12-05T16:05:00+07:00",
+    "eta": "2026-12-05T18:15:00+07:00"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_939",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 851000,
+    "due_date": "2026-12-10",
+    "paid": false
+   },
+   {
+    "id": "bill_4378",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 147000,
+    "due_date": "2026-12-09",
+    "paid": false
+   },
+   {
+    "id": "bill_1813",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 215000,
+    "due_date": "2026-12-14",
+    "paid": false
+   },
+   {
+    "id": "bill_1985",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 213000,
+    "due_date": "2026-12-07",
+    "paid": false
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_6971",
+    "title": "Cháu Bin học tiếng Anh với Mrs. Watanabe",
+    "start": "2026-12-05T18:00:00+07:00",
+    "link": "https://meet.example.test/sgq-mhnd-hbo",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_2048",
+    "title": "Cháu Bin học tiếng Anh với Mr. Watanabe",
+    "start": "2026-12-06T09:30:00+07:00",
+    "link": "https://meet.example.test/kom-jmvt-vrf",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_3315",
+    "title": "Gọi video với Thằng Tuấn",
+    "start": "2026-12-05T20:30:00+07:00",
+    "link": "https://meet.example.test/pvd-qrzk-ate",
+    "attendees": [
+     "c_5935"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-02": {
+    "steps": 7482,
+    "calories": 299,
+    "distance_km": 5.4
+   },
+   "2026-12-03": {
+    "steps": 3789,
+    "calories": 151,
+    "distance_km": 2.7
+   },
+   "2026-12-04": {
+    "steps": 3045,
+    "calories": 121,
+    "distance_km": 2.2
+   },
+   "2026-12-05": {
+    "steps": 4462,
+    "calories": 178,
+    "distance_km": 3.2
+   }
+  },
+  "goal_steps": 6000,
+  "workouts": [
+   {
+    "id": "wo_790",
+    "type": "walking",
+    "minutes": 30,
+    "time": "2026-12-02T17:30:00+07:00"
+   },
+   {
+    "id": "wo_9786",
+    "type": "running",
+    "minutes": 45,
+    "time": "2026-12-03T06:30:00+07:00"
+   },
+   {
+    "id": "wo_927",
+    "type": "cycling",
+    "minutes": 45,
+    "time": "2026-12-01T06:00:00+07:00"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_422",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_141",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_6254",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_285",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_423",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ }
+}

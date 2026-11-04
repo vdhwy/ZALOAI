@@ -1,0 +1,278 @@
+{
+ "_meta": {
+  "question_id": "train_0469",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_01",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_02",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_03",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_01",
+    "time": "2026-09-25T07:45:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_02",
+    "time": "2026-09-25T06:10:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_03",
+    "time": "2026-09-24T20:35:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_04",
+    "time": "2026-09-24T17:20:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_05",
+    "time": "2026-09-25T08:52:00+07:00",
+    "type": "window_open",
+    "location": "phòng làm việc",
+    "message": "Cảm biến báo cửa sổ phòng làm việc đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_06",
+    "time": "2026-09-24T22:15:00+07:00",
+    "type": "window_open",
+    "location": "phòng làm việc",
+    "message": "Cửa sổ phòng làm việc chưa đóng sau 22 giờ",
+    "acknowledged": true
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_02",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_03",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_01",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_02",
+    "device_id": "light_bedroom",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_03",
+    "device_id": "fan_living",
+    "action": "off",
+    "time": "06:00",
+    "title": "Tắt quạt phòng khách sáng sớm",
+    "enabled": false
+   }
+  ]
+ }
+}

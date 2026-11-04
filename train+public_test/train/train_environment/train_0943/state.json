@@ -1,0 +1,547 @@
+{
+ "_meta": {
+  "question_id": "train_0943",
+  "current_time": "2026-10-26T09:55:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "fuel_price.get_price",
+   "library.reserve",
+   "library.search",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-23": {
+    "steps": 4031,
+    "calories": 161,
+    "distance_km": 2.9
+   },
+   "2026-10-24": {
+    "steps": 4900,
+    "calories": 196,
+    "distance_km": 3.5
+   },
+   "2026-10-25": {
+    "steps": 8171,
+    "calories": 326,
+    "distance_km": 5.9
+   },
+   "2026-10-26": {
+    "steps": 5907,
+    "calories": 236,
+    "distance_km": 4.3
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_6215",
+    "type": "yoga",
+    "minutes": 30,
+    "time": "2026-10-25T18:00:00+07:00"
+   },
+   {
+    "id": "wo_7701",
+    "type": "cycling",
+    "minutes": 60,
+    "time": "2026-10-24T06:00:00+07:00"
+   },
+   {
+    "id": "wo_440",
+    "type": "walking",
+    "minutes": 60,
+    "time": "2026-10-23T17:30:00+07:00"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_3135",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_4914",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 80
+   },
+   {
+    "id": "lock_7201",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22800
+   },
+   {
+    "type": "e5",
+    "price": 21600
+   },
+   {
+    "type": "diesel",
+    "price": 20200
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_767",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09512712669"
+   },
+   {
+    "id": "c_873",
+    "name": "Lan",
+    "relation": "em gái",
+    "phone": "09289062062"
+   },
+   {
+    "id": "c_30",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09906620822"
+   },
+   {
+    "id": "c_821",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09391351988"
+   },
+   {
+    "id": "c_6199",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09195203313"
+   },
+   {
+    "id": "c_8159",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09971272300"
+   },
+   {
+    "id": "c_52",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09822248320"
+   },
+   {
+    "id": "c_1616",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09869532608"
+   },
+   {
+    "id": "c_280",
+    "name": "Chị Dung",
+    "relation": "bạn hàng",
+    "phone": "09544879961"
+   },
+   {
+    "id": "c_124",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09175773087"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 26,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-26",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-27",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-28",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-29",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 33
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_19",
+    "name": "Bé Na",
+    "type": "direct",
+    "members": [
+     "Bé Na"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_345",
+    "name": "Chú Năm",
+    "type": "direct",
+    "members": [
+     "Chú Năm"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_226",
+    "name": "Anh Lộc",
+    "type": "direct",
+    "members": [
+     "Anh Lộc"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9184",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_205",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_728",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 180,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   },
+   {
+    "id": "prog_15",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 1600,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_772",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-21",
+    "used": false
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_210",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-29T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_576",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-27T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_166",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-25T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_623",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_107",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_869",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_358",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_693",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_7837",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": false
+   },
+   {
+    "id": "book_867",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_857",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_695",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_189",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_208",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   }
+  ],
+  "reservations": []
+ }
+}

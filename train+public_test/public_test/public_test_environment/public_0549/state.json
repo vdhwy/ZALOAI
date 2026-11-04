@@ -1,0 +1,235 @@
+{
+ "_meta": {
+  "question_id": "public_0549",
+  "current_time": "2026-11-27T10:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "translator.translate"
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_460",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_408",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_703",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_7617",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_14",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_907",
+    "name": "Thiền 10 phút",
+    "streak": 3,
+    "last_logged": "2026-11-25"
+   },
+   {
+    "id": "habit_839",
+    "name": "Học từ vựng tiếng Anh",
+    "streak": 5,
+    "last_logged": "2026-11-25"
+   },
+   {
+    "id": "habit_891",
+    "name": "Không uống trà sữa",
+    "streak": 5,
+    "last_logged": "2026-11-26"
+   },
+   {
+    "id": "habit_845",
+    "name": "Uống đủ 2 lít nước",
+    "streak": 3,
+    "last_logged": "2026-11-26"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_6399",
+    "habit_id": "habit_845",
+    "date": "2026-11-26"
+   },
+   {
+    "id": "log_968",
+    "habit_id": "habit_891",
+    "date": "2026-11-26"
+   },
+   {
+    "id": "log_226",
+    "habit_id": "habit_839",
+    "date": "2026-11-25"
+   },
+   {
+    "id": "log_29",
+    "habit_id": "habit_907",
+    "date": "2026-11-25"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_4234",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_930",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_50",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_241",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_6117",
+    "title": "Meeting Lumina Tech",
+    "content": "Chốt timeline giai đoạn hai, xin thêm hai tuần để test, gửi lại báo giá trước thứ tư tuần sau"
+   },
+   {
+    "id": "note_382",
+    "title": "Meeting Lumina Studio",
+    "content": "Duyệt bản thiết kế logo mới, hỏi thêm chi phí in ấn bao bì"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_576",
+    "time": "2026-11-28T06:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_696",
+    "time": "2026-11-28T05:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_223",
+    "time": "2026-11-28T07:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   },
+   {
+    "text": "Chốt timeline giai đoạn hai, xin thêm hai tuần để test, gửi lại báo giá trước thứ tư tuần sau",
+    "to_lang": "en",
+    "translation": "Finalize the phase two timeline, ask for two more weeks for testing, and resend the quotation before Wednesday next week"
+   },
+   {
+    "text": "Duyệt bản thiết kế logo mới, hỏi thêm chi phí in ấn bao bì",
+    "to_lang": "en",
+    "translation": "Approve the new logo design and ask about the packaging printing cost"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_754",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_490",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ }
+}

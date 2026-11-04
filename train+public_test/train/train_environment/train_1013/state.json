@@ -1,0 +1,414 @@
+{
+ "_meta": {
+  "question_id": "train_1013",
+  "current_time": "2026-12-07T06:45:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_787",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 300,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   },
+   {
+    "id": "prog_762",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 400,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_191",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_686",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-12-18",
+    "used": false
+   },
+   {
+    "id": "vch_1339",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2027-01-05",
+    "used": false
+   },
+   {
+    "id": "vch_707",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2027-01-02",
+    "used": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6767",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09203013312"
+   },
+   {
+    "id": "c_6851",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09606192889"
+   },
+   {
+    "id": "c_1493",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09476154141"
+   },
+   {
+    "id": "c_5093",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09897612754"
+   },
+   {
+    "id": "c_185",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09118042498"
+   },
+   {
+    "id": "c_44",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09662404191"
+   },
+   {
+    "id": "c_119",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09240717033"
+   },
+   {
+    "id": "c_9847",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09511740692"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-04": {
+    "steps": 7911,
+    "calories": 316,
+    "distance_km": 5.7
+   },
+   "2026-12-05": {
+    "steps": 7723,
+    "calories": 308,
+    "distance_km": 5.6
+   },
+   "2026-12-06": {
+    "steps": 3858,
+    "calories": 154,
+    "distance_km": 2.8
+   },
+   "2026-12-07": {
+    "steps": 4352,
+    "calories": 174,
+    "distance_km": 3.1
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_3085",
+    "type": "cycling",
+    "minutes": 45,
+    "time": "2026-12-06T06:30:00+07:00"
+   },
+   {
+    "id": "wo_5779",
+    "type": "yoga",
+    "minutes": 30,
+    "time": "2026-12-03T18:30:00+07:00"
+   },
+   {
+    "id": "wo_330",
+    "type": "yoga",
+    "minutes": 30,
+    "time": "2026-12-05T18:00:00+07:00"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_102",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-08T19:00:00+07:00",
+    "end": "2026-12-08T20:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2054",
+    "title": "đi chơi công viên",
+    "start": "2026-12-08T15:30:00+07:00",
+    "end": "2026-12-08T16:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_849",
+    "title": "họp team",
+    "start": "2026-12-09T14:00:00+07:00",
+    "end": "2026-12-09T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_20",
+    "title": "khám răng",
+    "start": "2026-12-08T15:30:00+07:00",
+    "end": "2026-12-08T16:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_984",
+    "title": "đá bóng",
+    "start": "2026-12-08T08:00:00+07:00",
+    "end": "2026-12-08T09:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3316",
+    "title": "xem phim với anh Long",
+    "start": "2026-12-07T19:30:00+07:00",
+    "end": "2026-12-07T21:30:00+07:00",
+    "location": "CineViệt Sao Kim Plaza Thảo Điền",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_865",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_689",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_239",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_5864",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_745",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_298",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_304",
+    "from": "me@gmail.example.test",
+    "from_name": "Mẹ",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-12-06T11:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_7879",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-12-06T23:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_156",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-12-06T19:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_223",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_8178",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_570",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_2253",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_709",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   }
+  ]
+ }
+}

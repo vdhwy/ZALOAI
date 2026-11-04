@@ -1,0 +1,259 @@
+{
+ "_meta": {
+  "question_id": "train_0966",
+  "current_time": "2026-11-22T13:20:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 24,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-23",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-24",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_9673",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_142",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_3183",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_929",
+    "tracking_id": "MDXVN487086839",
+    "carrier": "MDX Express",
+    "name": "Bộ chăn ga gối",
+    "status": "out_for_delivery",
+    "eta": "2026-11-22T14:00:00+07:00"
+   },
+   {
+    "id": "shp_8835",
+    "tracking_id": "EV272319947",
+    "carrier": "VNPost",
+    "name": "Ốp lưng điện thoại",
+    "status": "out_for_delivery",
+    "eta": "2026-11-22T16:30:00+07:00"
+   },
+   {
+    "id": "shp_4471",
+    "tracking_id": "GST519337204",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Bình giữ nhiệt Lock&Lock",
+    "status": "out_for_delivery",
+    "eta": "2026-11-22T18:30:00+07:00"
+   },
+   {
+    "id": "shp_314",
+    "tracking_id": "GST730518842",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Nồi chiên không dầu",
+    "status": "in_transit",
+    "eta": "2026-11-23T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_01",
+    "contact_id": "c_837",
+    "phone_number": "09852127307",
+    "direction": "outgoing",
+    "content": "Chiều nay em đi họp lớp, sáu giờ mới về nhé."
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_699",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_4003",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_873",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_5346",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_1894",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_495",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_4824",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_5350",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1985",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09732317978"
+   },
+   {
+    "id": "c_952",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09318250424"
+   },
+   {
+    "id": "c_1587",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09864884096"
+   },
+   {
+    "id": "c_506",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09922881548"
+   },
+   {
+    "id": "c_837",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09852127307"
+   },
+   {
+    "id": "c_461",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09431186170"
+   },
+   {
+    "id": "c_492",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09991397625"
+   },
+   {
+    "id": "c_635",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09953024529"
+   },
+   {
+    "id": "c_7953",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09306539173"
+   },
+   {
+    "id": "c_2403",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09763857645"
+   }
+  ]
+ }
+}

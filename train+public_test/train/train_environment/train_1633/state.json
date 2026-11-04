@@ -1,0 +1,548 @@
+{
+ "_meta": {
+  "question_id": "train_1633",
+  "current_time": "2026-10-30T09:00:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_526",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09119661654"
+   },
+   {
+    "id": "c_765",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09523590812"
+   },
+   {
+    "id": "c_832",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09779720810"
+   },
+   {
+    "id": "c_438",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09157582401"
+   },
+   {
+    "id": "c_288",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09423883940"
+   },
+   {
+    "id": "c_824",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09221351249"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_966",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-01T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_1441",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-30T17:30:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_571",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-31T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_1706",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-02T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_472",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-05T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_2170",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_6569",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_452",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_4038",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_7518",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_137",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_4228",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": false
+   },
+   {
+    "id": "rule_704",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_2202",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 122700000,
+    "sell": 124700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 116700000,
+    "sell": 118700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3956
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_975",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_255",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_458",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_950",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_568",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": [
+   {
+    "id": "fav_01",
+    "place_id": "place_458",
+    "label": "chỗ họp team"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "nhà",
+    "dropoff": "công ty",
+    "vehicle": "car4"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 32,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-30",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-31",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 28
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-01",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-02",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 32
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_78",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_9751",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_9819",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_3096",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_282",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-11-20",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_795",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-04",
+    "status": "cancelled",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_176",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-11-12",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_258",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-11-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_6271",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-11-08",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ }
+}

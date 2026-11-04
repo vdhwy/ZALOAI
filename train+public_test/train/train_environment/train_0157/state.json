@@ -1,0 +1,420 @@
+{
+ "_meta": {
+  "question_id": "train_0157",
+  "current_time": "2026-11-26T11:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "gold_price.get_price",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "time": "2026-11-27T05:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_02",
+    "time": "2026-11-27T06:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "khám răng",
+    "start": "2026-11-29T08:30:00+07:00",
+    "end": "2026-11-29T09:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "đi chơi công viên",
+    "start": "2026-11-27T19:30:00+07:00",
+    "end": "2026-11-27T20:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-28T10:30:00+07:00",
+    "end": "2026-11-28T11:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 130700000,
+    "sell": 132700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 124700000,
+    "sell": 126700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4056
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23400
+   },
+   {
+    "type": "e5",
+    "price": 22200
+   },
+   {
+    "type": "diesel",
+    "price": 20800
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_01",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_02",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_03",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_04",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09977764953"
+   },
+   {
+    "id": "c_02",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09325178195"
+   },
+   {
+    "id": "c_03",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09872891116"
+   },
+   {
+    "id": "c_04",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09375812780"
+   },
+   {
+    "id": "c_05",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09243302294"
+   },
+   {
+    "id": "c_06",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09349181386"
+   },
+   {
+    "id": "c_07",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09608507230"
+   },
+   {
+    "id": "c_08",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09487088633"
+   }
+  ]
+ }
+}

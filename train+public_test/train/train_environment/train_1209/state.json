@@ -1,0 +1,393 @@
+{
+ "_meta": {
+  "question_id": "train_1209",
+  "current_time": "2026-12-14T21:15:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "library.reserve",
+   "library.search",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25618
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27667
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 170.8
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_118",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_1407",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_767",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_7071",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_887",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_2474",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_265",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_3946",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_321",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_141",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_640",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09933936079"
+   },
+   {
+    "id": "c_16",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09323723133"
+   },
+   {
+    "id": "c_713",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09388470054"
+   },
+   {
+    "id": "c_588",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09882323588"
+   },
+   {
+    "id": "c_4827",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09542688169"
+   },
+   {
+    "id": "c_159",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09621208547"
+   },
+   {
+    "id": "c_3780",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09685468185"
+   },
+   {
+    "id": "c_7972",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09495197970"
+   },
+   {
+    "id": "c_5000",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09720107220"
+   },
+   {
+    "id": "c_943",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09707554153"
+   },
+   {
+    "id": "c_8566",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09333566274"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_722",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_214",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_843",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_225",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_229",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_567",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_7885",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_143",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "sms": {
+  "messages": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_427",
+    "tracking_id": "MDXVN486946598",
+    "carrier": "MDX Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "in_transit",
+    "eta": "2026-12-15T10:00:00+07:00"
+   },
+   {
+    "id": "shp_725",
+    "tracking_id": "EV468680095",
+    "carrier": "VNPost",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "out_for_delivery",
+    "eta": "2026-12-14T14:00:00+07:00"
+   },
+   {
+    "id": "shp_6329",
+    "tracking_id": "JV220776484",
+    "carrier": "JetViệt Express",
+    "name": "Giày thể thao",
+    "status": "in_transit",
+    "eta": "2026-12-15T17:00:00+07:00"
+   },
+   {
+    "id": "shp_6682",
+    "tracking_id": "STP855761883",
+    "carrier": "SaoTel Post",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "delivered",
+    "eta": "2026-12-13T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_61",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_340",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ }
+}

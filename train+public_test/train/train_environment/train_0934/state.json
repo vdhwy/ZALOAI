@@ -1,0 +1,486 @@
+{
+ "_meta": {
+  "question_id": "train_0934",
+  "current_time": "2026-11-23T08:45:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 125000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 95000,
+    "eta_min": 6
+   },
+   {
+    "vehicle": "bike",
+    "price": 38000,
+    "eta_min": 3
+   }
+  ],
+  "rides": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_445",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_734",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_589",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_538",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_555",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_198",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_158",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_627",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_96",
+    "title": "Họp lớp online",
+    "start": "2026-11-23T09:00:00+07:00",
+    "link": "https://meet.example.test/hcx-vbvc-kov",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_584",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-24T10:00:00+07:00",
+    "link": "https://meet.example.test/rbt-hsqf-tsu",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_317",
+    "title": "Họp online với Anh Sáu về lịch chạy xe",
+    "start": "2026-11-23T15:00:00+07:00",
+    "link": "https://meet.example.test/qzt-mhwa-pel",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_139",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_453",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_434",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_536",
+    "show_id": "show_139",
+    "title": "Số 7: Nghề diễn và những áp lực",
+    "number": 7,
+    "duration_min": 18,
+    "published": "2026-11-16"
+   },
+   {
+    "id": "ep_302",
+    "show_id": "show_453",
+    "title": "Số 14: Nhà giả kim - phần 1",
+    "number": 14,
+    "duration_min": 32,
+    "published": "2026-11-09"
+   },
+   {
+    "id": "ep_240",
+    "show_id": "show_434",
+    "title": "Số 9: Đi xe đạp đi làm",
+    "number": 9,
+    "duration_min": 18,
+    "published": "2026-11-16"
+   },
+   {
+    "id": "ep_830",
+    "show_id": "show_453",
+    "title": "Số 15: Nhà giả kim - phần 2",
+    "number": 15,
+    "duration_min": 25,
+    "published": "2026-11-16"
+   },
+   {
+    "id": "ep_424",
+    "show_id": "show_139",
+    "title": "Số 6: Sống chậm giữa thành phố",
+    "number": 6,
+    "duration_min": 45,
+    "published": "2026-11-09"
+   },
+   {
+    "id": "ep_13",
+    "show_id": "show_434",
+    "title": "Số 8: Trồng cây trên sân thượng",
+    "number": 8,
+    "duration_min": 25,
+    "published": "2026-11-09"
+   },
+   {
+    "id": "ep_243",
+    "show_id": "show_434",
+    "title": "Số 7: Rác thải nhựa ở đô thị",
+    "number": 7,
+    "duration_min": 18,
+    "published": "2026-11-02"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_70",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_698",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_3020",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_2148",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_434"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_5856",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-25T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_802",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-24T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_986",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-25T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_28",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_748",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_562",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5354",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_944",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_1340",
+    "title": "đá bóng",
+    "start": "2026-11-25T19:00:00+07:00",
+    "end": "2026-11-25T20:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_523",
+    "title": "họp phụ huynh",
+    "start": "2026-11-25T08:30:00+07:00",
+    "end": "2026-11-25T09:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_790",
+    "title": "đi chơi công viên",
+    "start": "2026-11-26T14:00:00+07:00",
+    "end": "2026-11-26T15:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_689",
+    "title": "khám răng",
+    "start": "2026-11-24T09:30:00+07:00",
+    "end": "2026-11-24T10:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_661",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-24T18:30:00+07:00",
+    "end": "2026-11-24T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2207",
+    "title": "Gặp Anh Sáu bàn hợp đồng thuê xe",
+    "start": "2026-11-23T10:00:00+07:00",
+    "end": "2026-11-23T11:00:00+07:00",
+    "location": "Văn phòng Anh Sáu, 45 Hoàng Văn Thụ, Tân Bình",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

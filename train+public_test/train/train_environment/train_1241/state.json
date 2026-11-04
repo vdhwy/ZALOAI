@@ -1,0 +1,507 @@
+{
+ "_meta": {
+  "question_id": "train_1241",
+  "current_time": "2026-11-26T09:25:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_90",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_380",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_704",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_470",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_5594",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": false,
+    "battery": 35
+   },
+   {
+    "id": "lock_714",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_6081",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_443",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_7556",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_294",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_152",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_8891",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 960,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_7146",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 450,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_2810",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 12000,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_527",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-12-21",
+    "used": false
+   },
+   {
+    "id": "vch_634",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-06",
+    "used": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_18",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_2091",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_423",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_424",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_551",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-26",
+    "to": "2026-11-26",
+    "kwh": 5.2,
+    "cost": 15100,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 2.3
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.0
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-20",
+    "to": "2026-11-26",
+    "kwh": 72.8,
+    "cost": 211100,
+    "days": [
+     {
+      "date": "2026-11-20",
+      "kwh": 11.5
+     },
+     {
+      "date": "2026-11-21",
+      "kwh": 12.6
+     },
+     {
+      "date": "2026-11-22",
+      "kwh": 12.4
+     },
+     {
+      "date": "2026-11-23",
+      "kwh": 10.0
+     },
+     {
+      "date": "2026-11-24",
+      "kwh": 8.0
+     },
+     {
+      "date": "2026-11-25",
+      "kwh": 13.1
+     },
+     {
+      "date": "2026-11-26",
+      "kwh": 5.2
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-26",
+    "kwh": 310.0,
+    "cost": 899000
+   }
+  },
+  "alert_threshold_kwh": 350
+ }
+}

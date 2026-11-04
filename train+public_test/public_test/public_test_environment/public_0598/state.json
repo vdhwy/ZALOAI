@@ -1,0 +1,295 @@
+{
+ "_meta": {
+  "question_id": "public_0598",
+  "current_time": "2026-11-14T13:10:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_52",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_140",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_152",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_434",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 40
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_960",
+    "lot_id": "lot_140",
+    "from_time": "2026-11-14T12:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-11-14T15:00:00+07:00",
+    "total": 90000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 30,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-11-14",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-15",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 28
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-16",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 28
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 30
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_896",
+    "name": "Lucas",
+    "type": "direct",
+    "members": [
+     "Lucas"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_840",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_239",
+    "name": "Vợ Hà",
+    "type": "direct",
+    "members": [
+     "Vợ Hà"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_331",
+    "name": "Emily",
+    "type": "direct",
+    "members": [
+     "Emily"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_891",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9707",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09698734129"
+   },
+   {
+    "id": "c_281",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09272450885"
+   },
+   {
+    "id": "c_557",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09595732224"
+   },
+   {
+    "id": "c_491",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09378127928"
+   },
+   {
+    "id": "c_6190",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09106121460"
+   },
+   {
+    "id": "c_5847",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09102597058"
+   },
+   {
+    "id": "c_273",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09946518877"
+   },
+   {
+    "id": "c_7432",
+    "name": "Kevin Park",
+    "relation": "khách",
+    "phone": "09713368420"
+   },
+   {
+    "id": "c_855",
+    "name": "Kevin Parker",
+    "relation": "khách",
+    "phone": "09584027716"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_2741",
+    "name": "Bún bò O Thoa",
+    "address": "17 Lý Thường Kiệt, Phú Nhuận, Huế",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_386",
+    "name": "Bún bò O Thoa 2",
+    "address": "54 Nguyễn Công Trứ, Phú Hội, Huế",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_9150",
+    "name": "Cơm hến Bà Tý",
+    "address": "20 Trương Định, Vĩnh Ninh, Huế",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_573",
+    "name": "Cao Nguyên Coffee Lê Lợi",
+    "address": "45 Lê Lợi, Vĩnh Ninh, Huế",
+    "category": "cafe"
+   },
+   {
+    "id": "place_6688",
+    "name": "Chợ Đông Ba",
+    "address": "2 Trần Hưng Đạo, Phú Hòa, Huế",
+    "category": "market"
+   },
+   {
+    "id": "place_1204",
+    "name": "Bệnh viện Trung ương Huế",
+    "address": "16 Lê Lợi, Vĩnh Ninh, Huế",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": [
+   {
+    "id": "fav_412",
+    "place_id": "place_9150",
+    "label": "Cơm hến cho khách Emily"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ }
+}

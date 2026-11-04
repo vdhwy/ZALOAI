@@ -1,0 +1,254 @@
+{
+ "_meta": {
+  "question_id": "public_0560",
+  "current_time": "2026-11-07T18:20:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "gold_price.get_price",
+   "pantry.consume",
+   "pantry.list_items",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9827",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09809338549"
+   },
+   {
+    "id": "c_464",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09280017647"
+   },
+   {
+    "id": "c_9885",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09740466006"
+   },
+   {
+    "id": "c_128",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09105567148"
+   },
+   {
+    "id": "c_8167",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09190506763"
+   },
+   {
+    "id": "c_2025",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09241848826"
+   },
+   {
+    "id": "c_7630",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09668523773"
+   },
+   {
+    "id": "c_203",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09127192438"
+   },
+   {
+    "id": "c_1472",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09531135568"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 121300000,
+    "sell": 123300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 115300000,
+    "sell": 117300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3992
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_193",
+    "name": "nước mắm",
+    "stock": 2,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_185",
+    "name": "yến mạch",
+    "stock": 1,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_356",
+    "name": "cà phê G7",
+    "stock": 4,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_9333",
+    "name": "bột mì",
+    "stock": 1,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_865",
+    "name": "gạo ST25",
+    "stock": 2,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_6012",
+    "name": "sữa tươi",
+    "stock": 4,
+    "unit": "hộp"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22800
+   },
+   {
+    "type": "e5",
+    "price": 21600
+   },
+   {
+    "type": "diesel",
+    "price": 20200
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "public_transit": {
+  "card_balance": 0,
+  "routes": [
+   {
+    "id": "bus_r16",
+    "name": "Tuyến R16",
+    "type": "bus",
+    "stops": [
+     "Bến xe Trung tâm",
+     "Nguyễn Văn Linh",
+     "Cầu Rồng",
+     "Sơn Trà"
+    ],
+    "fare": 5000,
+    "duration_min": 40,
+    "headway_min": 20
+   },
+   {
+    "id": "bus_r1",
+    "name": "Tuyến R1",
+    "type": "bus",
+    "stops": [
+     "Hội An",
+     "Ngũ Hành Sơn",
+     "Hải Châu",
+     "Bến xe Trung tâm"
+    ],
+    "fare": 30000,
+    "duration_min": 70,
+    "headway_min": 30
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Bến xe Trung tâm",
+    "route": "bus_r16",
+    "time": "2026-11-07T18:28:00+07:00"
+   },
+   {
+    "stop": "Bến xe Trung tâm",
+    "route": "bus_r16",
+    "time": "2026-11-07T18:48:00+07:00"
+   },
+   {
+    "stop": "Bến xe Trung tâm",
+    "route": "bus_r16",
+    "time": "2026-11-07T19:08:00+07:00"
+   },
+   {
+    "stop": "Hội An",
+    "route": "bus_r1",
+    "time": "2026-11-07T19:41:00+07:00"
+   },
+   {
+    "stop": "Hội An",
+    "route": "bus_r1",
+    "time": "2026-11-07T19:11:00+07:00"
+   },
+   {
+    "stop": "Hội An",
+    "route": "bus_r1",
+    "time": "2026-11-07T18:41:00+07:00"
+   }
+  ],
+  "topups": []
+ }
+}

@@ -1,0 +1,229 @@
+{
+ "_meta": {
+  "question_id": "train_1310",
+  "current_time": "2026-10-15T07:10:00+07:00",
+  "tools": [
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_3672",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-10-16T20:00:00+07:00",
+    "link": "https://meet.example.test/bxx-asjf-hgx",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_9912",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-10-16T14:30:00+07:00",
+    "link": "https://meet.example.test/snr-jvtp-rnj",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_969",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-10-15T14:00:00+07:00",
+    "link": "https://meet.example.test/qsa-aqit-enu",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_291",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-10-16T09:00:00+07:00",
+    "link": "https://meet.example.test/lgt-tsah-gtr",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_1213",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_955",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_595",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_226",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_827",
+    "time": "2026-10-13T07:40:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_195",
+    "time": "2026-10-13T15:30:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_346",
+    "time": "2026-10-14T20:50:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_167",
+    "time": "2026-10-13T11:30:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_165",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 500,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_1738",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 12000,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_560",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 960,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_25",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-11-02",
+    "used": false
+   },
+   {
+    "id": "vch_387",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-13",
+    "used": false
+   },
+   {
+    "id": "vch_158",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-10-19",
+    "used": false
+   }
+  ]
+ }
+}

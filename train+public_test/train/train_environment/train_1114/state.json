@@ -1,0 +1,266 @@
+{
+ "_meta": {
+  "question_id": "train_1114",
+  "current_time": "2026-11-01T06:40:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "library.reserve",
+   "library.search",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_919",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_961",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_942",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": false
+   },
+   {
+    "id": "book_517",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_1759",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   }
+  ],
+  "reservations": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_1825",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_6583",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_158",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_8662",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 45
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_408",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_23",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_19",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_5485",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_67",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   }
+  ]
+ }
+}

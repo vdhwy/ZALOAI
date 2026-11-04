@@ -1,0 +1,656 @@
+{
+ "_meta": {
+  "question_id": "public_0421",
+  "current_time": "2026-11-10T14:00:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "fuel_price.get_price",
+   "gold_price.get_price",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_900",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_230",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_308",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_85",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_724",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_2708",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_925",
+    "items": [
+     {
+      "product_id": "gro_308",
+      "name": "Trứng gà ta hộp 10 quả",
+      "price": 42000,
+      "quantity": 2
+     }
+    ],
+    "total": 84000,
+    "status": "delivered",
+    "delivery_time": "2026-10-31T09:00:00+07:00"
+   }
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_4213",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_475",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_983",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_759",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_112",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_707",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_8649",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_35",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_440",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_278",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_549",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_909",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-12T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_7736",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-13T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_874",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-14T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_29",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-13T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_9386",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-16T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_791",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2275",
+    "name": "Chị Yến",
+    "type": "direct",
+    "members": [
+     "Chị Yến"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_722",
+    "name": "Anh Thành",
+    "type": "direct",
+    "members": [
+     "Anh Thành"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_447",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6981",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_38",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.5,
+    "in_stock": true
+   },
+   {
+    "id": "prod_82",
+    "name": "Bàn phím cơ AKKO 3068B",
+    "price": 1290000,
+    "seller": "AKKO Việt Nam",
+    "category": "máy tính",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_3147",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_149",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_376",
+    "name": "Đèn bàn LED chống cận Rạng Đông",
+    "price": 275000,
+    "seller": "Rạng Đông Official",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_110",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_414",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_925",
+    "items": [
+     {
+      "product_id": "prod_376",
+      "name": "Đèn bàn LED chống cận Rạng Đông",
+      "price": 275000,
+      "quantity": 1
+     }
+    ],
+    "total": 275000,
+    "status": "delivered",
+    "placed_at": "2026-11-02T08:00:00+07:00",
+    "seller": "Rạng Đông Official",
+    "delivered_at": "2026-11-05T08:00:00+07:00"
+   },
+   {
+    "id": "ord_1761",
+    "items": [
+     {
+      "product_id": "prod_110",
+      "name": "Chuột không dây Logitech M331",
+      "price": 349000,
+      "quantity": 1
+     }
+    ],
+    "total": 349000,
+    "status": "shipping",
+    "placed_at": "2026-11-07T09:00:00+07:00",
+    "seller": "Logitech Store"
+   }
+  ],
+  "returns": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 24100
+   },
+   {
+    "type": "e5",
+    "price": 22900
+   },
+   {
+    "type": "diesel",
+    "price": 21500
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 118800000,
+    "sell": 120800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 112800000,
+    "sell": 114800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4148
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2825",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09599427218"
+   },
+   {
+    "id": "c_3316",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09839053018"
+   },
+   {
+    "id": "c_350",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09149726110"
+   },
+   {
+    "id": "c_831",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09400675551"
+   },
+   {
+    "id": "c_6166",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09708590592"
+   },
+   {
+    "id": "c_338",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09180232601"
+   },
+   {
+    "id": "c_7953",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09158963696"
+   },
+   {
+    "id": "c_354",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09475702600"
+   },
+   {
+    "id": "c_6433",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09679276332"
+   },
+   {
+    "id": "c_788",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09634470755"
+   }
+  ]
+ }
+}

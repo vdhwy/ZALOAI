@@ -1,0 +1,220 @@
+{
+ "_meta": {
+  "question_id": "public_0213",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_01",
+    "flight_no": "RV153",
+    "origin": "HAN",
+    "destination": "DLI",
+    "date": "2026-09-30",
+    "depart": "06:00",
+    "arrive": "07:50",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_02",
+    "flight_no": "JX401",
+    "origin": "HAN",
+    "destination": "DLI",
+    "date": "2026-09-30",
+    "depart": "09:00",
+    "arrive": "10:50",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_03",
+    "flight_no": "SA1501",
+    "origin": "HAN",
+    "destination": "DLI",
+    "date": "2026-09-30",
+    "depart": "14:00",
+    "arrive": "15:50",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_04",
+    "flight_no": "JX405",
+    "origin": "HAN",
+    "destination": "DLI",
+    "date": "2026-09-30",
+    "depart": "19:00",
+    "arrive": "20:50",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_05",
+    "flight_no": "RV157",
+    "origin": "HAN",
+    "destination": "DLI",
+    "date": "2026-09-30",
+    "depart": "10:30",
+    "arrive": "12:20",
+    "airline": "Rồng Việt Air",
+    "price": 1650000
+   },
+   {
+    "id": "fl_06",
+    "flight_no": "RV157",
+    "origin": "HAN",
+    "destination": "DLI",
+    "date": "2026-10-01",
+    "depart": "10:30",
+    "arrive": "12:20",
+    "airline": "Rồng Việt Air",
+    "price": 1650000
+   }
+  ],
+  "bookings": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_01",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_02",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_03",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_04",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 0
+   },
+   {
+    "id": "lot_05",
+    "name": "Bãi đỗ ô tô Nội Bài khu D03",
+    "address": "Sân bay Nội Bài, Sóc Sơn, Hà Nội",
+    "area": "Nội Bài",
+    "price_per_hour": 20000,
+    "available_spots": 15
+   },
+   {
+    "id": "lot_06",
+    "name": "Bãi đỗ ô tô Nội Bài khu B05",
+    "address": "Sân bay Nội Bài, Sóc Sơn, Hà Nội",
+    "area": "Nội Bài",
+    "price_per_hour": 15000,
+    "available_spots": 30
+   }
+  ],
+  "sessions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_02",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_03",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_04",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "đá bóng",
+    "start": "2026-09-28T18:30:00+07:00",
+    "end": "2026-09-28T19:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

@@ -1,0 +1,397 @@
+{
+ "_meta": {
+  "question_id": "public_0066",
+  "current_time": "2026-11-26T17:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "gold_price.get_price",
+   "phone.call",
+   "phone.recent_calls",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "cool",
+     "temperature": 25
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09607526959"
+   },
+   {
+    "id": "c_02",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09315536192"
+   },
+   {
+    "id": "c_03",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09243181840"
+   },
+   {
+    "id": "c_04",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09104083005"
+   },
+   {
+    "id": "c_05",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09891775747"
+   },
+   {
+    "id": "c_06",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09760385435"
+   },
+   {
+    "id": "c_07",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09655401257"
+   },
+   {
+    "id": "c_08",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09940230995"
+   },
+   {
+    "id": "c_09",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09363951354"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 26,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-26",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-27",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-28",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-29",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 24200
+   },
+   {
+    "type": "e5",
+    "price": 23000
+   },
+   {
+    "type": "diesel",
+    "price": 21600
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "time": "2026-11-27T06:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_02",
+    "time": "2026-11-27T06:15:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_03",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-27T06:00:00+07:00"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 131600000,
+    "sell": 133600000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 125600000,
+    "sell": 127600000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3998
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "khám răng",
+    "start": "2026-11-29T10:30:00+07:00",
+    "end": "2026-11-29T11:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "họp phụ huynh",
+    "start": "2026-11-27T09:00:00+07:00",
+    "end": "2026-11-27T10:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-27T08:00:00+07:00",
+    "end": "2026-11-27T09:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "title": "họp team",
+    "start": "2026-11-27T18:00:00+07:00",
+    "end": "2026-11-27T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_05",
+    "title": "đá bóng",
+    "start": "2026-11-29T19:00:00+07:00",
+    "end": "2026-11-29T20:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

@@ -1,0 +1,354 @@
+{
+ "_meta": {
+  "question_id": "train_1030",
+  "current_time": "2026-11-29T22:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fuel_price.get_price",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_5616",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_334",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_698",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_219",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_5439",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_110",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09867194712"
+   },
+   {
+    "id": "c_3578",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09668692635"
+   },
+   {
+    "id": "c_5561",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09543408845"
+   },
+   {
+    "id": "c_172",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09571602213"
+   },
+   {
+    "id": "c_719",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09682016248"
+   },
+   {
+    "id": "c_9860",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09162823258"
+   },
+   {
+    "id": "c_997",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09347204931"
+   },
+   {
+    "id": "c_629",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09188775678"
+   },
+   {
+    "id": "c_6657",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09640237999"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_7548",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_60",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_913",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_182",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_572",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_8684",
+    "name": "Xe đạp điện 106",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_117",
+    "name": "Chị Hai",
+    "type": "direct",
+    "members": [
+     "Chị Hai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9255",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_496",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_32",
+    "name": "Huy",
+    "type": "direct",
+    "members": [
+     "Huy"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_879",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "calculator": {},
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_641",
+    "time": "2026-11-30T06:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23100
+   },
+   {
+    "type": "e5",
+    "price": 21900
+   },
+   {
+    "type": "diesel",
+    "price": 20500
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_169",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-04T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_738",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-02T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_785",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-02T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 26097
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28184
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 174.0
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_24",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-29T06:45:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_2785",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-29T14:45:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_192",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-28T22:30:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_157",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-11-28T21:00:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_1872",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-29T08:30:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_474",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-28T20:00:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   }
+  ],
+  "saved": []
+ }
+}

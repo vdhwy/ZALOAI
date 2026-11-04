@@ -1,0 +1,340 @@
+{
+ "_meta": {
+  "question_id": "train_0851",
+  "current_time": "2026-09-20T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 27,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-20",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-23",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 32
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "họp phụ huynh",
+    "start": "2026-09-21T09:30:00+07:00",
+    "end": "2026-09-21T10:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_02",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_03",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_04",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_05",
+    "name": "Cà phê Mộc Miên",
+    "address": "18 Quảng An, Tây Hồ, Hà Nội",
+    "category": "cafe",
+    "detail": "18 phố Quảng An, mở cửa đến 22:00"
+   },
+   {
+    "id": "place_06",
+    "name": "Cà phê Vườn Nhỏ",
+    "address": "42 Từ Hoa, Tây Hồ, Hà Nội",
+    "category": "cafe",
+    "detail": "42 phố Từ Hoa, mở cửa đến 21:30"
+   }
+  ],
+  "saved_places": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-09-24T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Đóng học phí cho con",
+    "due": "2026-09-26T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-09-25T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-09-26T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_02",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_03",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_04",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_01",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_02",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_03",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": true
+   }
+  ]
+ }
+}

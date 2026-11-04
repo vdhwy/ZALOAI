@@ -1,0 +1,120 @@
+{
+ "_meta": {
+  "question_id": "train_0597",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 216000,
+    "due_date": "2026-09-29",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 847000,
+    "due_date": "2026-10-01",
+    "paid": false
+   },
+   {
+    "id": "bill_03",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 211000,
+    "due_date": "2026-10-03",
+    "paid": false
+   },
+   {
+    "id": "bill_04",
+    "type": "tuition",
+    "provider": "Trung tâm Anh ngữ ILA",
+    "amount": 2400000,
+    "due_date": "2026-09-30",
+    "paid": false,
+    "name": "Học phí tháng 10"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_01",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-10-09",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_02",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-09-26",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_03",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-10-05",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_02",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_03",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_04",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

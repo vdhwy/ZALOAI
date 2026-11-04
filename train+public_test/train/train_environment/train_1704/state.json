@@ -1,0 +1,395 @@
+{
+ "_meta": {
+  "question_id": "train_1704",
+  "current_time": "2026-11-01T14:25:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_338",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_77",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_230",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_258",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_507",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 135
+   }
+  ],
+  "lessons": [],
+  "progress": [
+   {
+    "id": "prog_01",
+    "course_id": "course_507",
+    "minutes": 30
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25312
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27336
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 168.7
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi video với team Singapore",
+    "time": "2026-11-01T15:00:00+07:00"
+   },
+   {
+    "id": "rem_02",
+    "repeat": "once",
+    "done": false,
+    "content": "Chuyển tiền nhà",
+    "time": "2026-11-01T19:00:00+07:00"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_6064",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_726",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_898",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_7630",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_580",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_903",
+    "contact_id": "c_9352",
+    "name": "Vợ Hằng",
+    "phone_number": "09356135844",
+    "direction": "outgoing",
+    "status": "answered",
+    "time": "2026-11-01T08:15:00+07:00",
+    "duration_sec": 95
+   },
+   {
+    "id": "call_66",
+    "contact_id": "c_3385",
+    "name": "Mẹ",
+    "phone_number": "09905291612",
+    "direction": "incoming",
+    "status": "answered",
+    "time": "2026-11-01T10:30:00+07:00",
+    "duration_sec": 420
+   },
+   {
+    "id": "call_227",
+    "contact_id": "c_8019",
+    "name": "Hương",
+    "phone_number": "09642908637",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-11-01T12:35:00+07:00",
+    "duration_sec": 0
+   },
+   {
+    "id": "call_514",
+    "contact_id": "c_517",
+    "name": "Sếp David",
+    "phone_number": "09913207630",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-11-01T13:05:00+07:00",
+    "duration_sec": 0
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_796",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_58",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_348",
+    "name": "Team Design",
+    "type": "direct",
+    "members": [
+     "Team Design"
+    ],
+    "messages": [
+     {
+      "from": "Team Design",
+      "content": "Anh ơi bản mockup trang thanh toán xong rồi, anh review giúp tụi em trước thứ ba nhé.",
+      "time": "2026-11-01T09:20:00+07:00"
+     },
+     {
+      "from": "me",
+      "content": "Tối nay anh review, mai anh góp ý nha."
+     },
+     {
+      "from": "me",
+      "content": "Tối nay anh review, mai anh góp ý nha."
+     },
+     {
+      "from": "me",
+      "content": "Tối nay anh review, mai anh góp ý nha."
+     }
+    ]
+   },
+   {
+    "id": "chat_885",
+    "name": "Sếp David",
+    "type": "direct",
+    "members": [
+     "Sếp David"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_705",
+    "name": "Vợ Hằng",
+    "type": "direct",
+    "members": [
+     "Vợ Hằng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9352",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09356135844"
+   },
+   {
+    "id": "c_517",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09913207630"
+   },
+   {
+    "id": "c_8019",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09642908637"
+   },
+   {
+    "id": "c_408",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09927189803"
+   },
+   {
+    "id": "c_759",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09447218184"
+   },
+   {
+    "id": "c_3385",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09905291612"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_912",
+    "from": "vohang@gmail.example.test",
+    "from_name": "Vợ Hằng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-10-30T07:40:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_162",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-10-30T07:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_4522",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-01T00:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ }
+}

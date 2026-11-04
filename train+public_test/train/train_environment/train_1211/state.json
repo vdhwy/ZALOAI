@@ -1,0 +1,441 @@
+{
+ "_meta": {
+  "question_id": "train_1211",
+  "current_time": "2026-11-08T15:15:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_223",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_583",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_232",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_6812",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_4240",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_386",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_504",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_2291",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "20:00",
+    "title": "Bật điều hoà phòng ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_391",
+    "title": "gặp khách hàng",
+    "start": "2026-11-09T09:30:00+07:00",
+    "end": "2026-11-09T10:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_486",
+    "title": "ăn tối với Vy",
+    "start": "2026-11-09T19:30:00+07:00",
+    "end": "2026-11-09T21:00:00+07:00",
+    "location": "Nhà hàng Ngon, 160 Pasteur, Quận 1",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4841",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-10T19:00:00+07:00",
+    "end": "2026-11-10T20:00:00+07:00",
+    "location": "Công viên Tao Đàn",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_578",
+    "title": "họp với sếp Trân",
+    "start": "2026-11-09T17:30:00+07:00",
+    "end": "2026-11-09T19:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_550",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá\ncá lóc"
+   },
+   {
+    "id": "note_7544",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_836",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_527",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_42",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-14T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_3652",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-08T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_2041",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-11T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_3663",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-11T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_7879",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-14T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_187",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 222000,
+    "due_date": "2026-11-13",
+    "paid": false
+   },
+   {
+    "id": "bill_266",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 194000,
+    "due_date": "2026-11-17",
+    "paid": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_447",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09321427064"
+   },
+   {
+    "id": "c_9542",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09368587624"
+   },
+   {
+    "id": "c_70",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09488065549"
+   },
+   {
+    "id": "c_131",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09157498115"
+   },
+   {
+    "id": "c_4756",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09793355371"
+   },
+   {
+    "id": "c_383",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09926418571"
+   },
+   {
+    "id": "c_665",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09874443739"
+   },
+   {
+    "id": "c_6126",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09994587449"
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_2056",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-19",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_597",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-11-27",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_9806",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-12-02",
+    "status": "paused",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_7131",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-22",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_450",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-12-02",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ }
+}

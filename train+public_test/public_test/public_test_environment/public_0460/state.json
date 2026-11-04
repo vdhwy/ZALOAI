@@ -1,0 +1,288 @@
+{
+ "_meta": {
+  "question_id": "public_0460",
+  "current_time": "2026-10-17T15:50:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_267",
+    "title": "đá bóng",
+    "start": "2026-10-19T08:00:00+07:00",
+    "end": "2026-10-19T09:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_479",
+    "title": "đi chơi công viên",
+    "start": "2026-10-18T08:00:00+07:00",
+    "end": "2026-10-18T09:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_772",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-18T09:30:00+07:00",
+    "end": "2026-10-18T10:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 15000,
+  "routes": [
+   {
+    "id": "bus_256",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   },
+   {
+    "id": "bus_175",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Khu Công nghệ cao",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   },
+   {
+    "id": "metro_542",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Bến Thành",
+    "route": "bus_175",
+    "time": "2026-10-17T16:23:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_542",
+    "time": "2026-10-17T15:55:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_542",
+    "time": "2026-10-17T16:03:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_175",
+    "time": "2026-10-17T16:11:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_542",
+    "time": "2026-10-17T16:11:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Huệ",
+    "route": "bus_256",
+    "time": "2026-10-17T16:34:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Huệ",
+    "route": "bus_256",
+    "time": "2026-10-17T16:04:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Huệ",
+    "route": "bus_256",
+    "time": "2026-10-17T16:19:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_175",
+    "time": "2026-10-17T15:59:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_735",
+    "name": "Bàn phím cơ AKKO 3068B",
+    "price": 1290000,
+    "seller": "AKKO Việt Nam",
+    "category": "máy tính",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_106",
+    "name": "Đèn bàn LED chống cận Rạng Đông",
+    "price": 275000,
+    "seller": "Rạng Đông Official",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_3877",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_4051",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_345",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_761",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_21",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.5,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_6063",
+    "items": [
+     {
+      "product_id": "prod_761",
+      "name": "Tai nghe Bluetooth Soundcore R50i",
+      "price": 450000,
+      "quantity": 1
+     }
+    ],
+    "total": 450000,
+    "status": "shipping",
+    "placed_at": "2026-10-17T08:50:00+07:00",
+    "seller": "Anker Official Store"
+   },
+   {
+    "id": "ord_488",
+    "items": [
+     {
+      "product_id": "prod_3877",
+      "name": "Áo khoác gió nam CoolWear",
+      "price": 499000,
+      "quantity": 1
+     }
+    ],
+    "total": 499000,
+    "status": "delivered",
+    "placed_at": "2026-10-06T11:50:00+07:00",
+    "seller": "CoolWear",
+    "delivered_at": "2026-10-08T11:50:00+07:00"
+   },
+   {
+    "id": "ord_534",
+    "items": [
+     {
+      "product_id": "prod_4051",
+      "name": "Sạc dự phòng Xiaomi 10000mAh",
+      "price": 399000,
+      "quantity": 1
+     }
+    ],
+    "total": 399000,
+    "status": "delivered",
+    "placed_at": "2026-10-06T09:50:00+07:00",
+    "seller": "Xiaomi Official",
+    "delivered_at": "2026-10-09T09:50:00+07:00"
+   }
+  ],
+  "returns": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ }
+}

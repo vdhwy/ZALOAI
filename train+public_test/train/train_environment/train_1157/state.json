@@ -1,0 +1,518 @@
+{
+ "_meta": {
+  "question_id": "train_1157",
+  "current_time": "2026-11-10T07:00:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_323",
+    "name": "Rửa bát",
+    "assignee": "Bé Na",
+    "done": false
+   },
+   {
+    "id": "chore_9903",
+    "name": "Phơi quần áo",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_685",
+    "name": "Đổ rác",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_3698",
+    "name": "Nấu cơm tối",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_277",
+    "name": "Đi chợ",
+    "assignee": "Bố",
+    "done": false
+   }
+  ],
+  "members": [
+   "Em Quân",
+   "Bé Na",
+   "Lan",
+   "Bố"
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_598",
+    "tracking_id": "JV317194186",
+    "carrier": "JetViệt Express",
+    "name": "Giày thể thao",
+    "status": "delivered",
+    "eta": "2026-11-09T10:00:00+07:00"
+   },
+   {
+    "id": "shp_2887",
+    "tracking_id": "STP785806917",
+    "carrier": "SaoTel Post",
+    "name": "Hộp quà Trung thu",
+    "status": "in_transit",
+    "eta": "2026-11-11T14:00:00+07:00"
+   },
+   {
+    "id": "shp_971",
+    "tracking_id": "MDXVN232436115",
+    "carrier": "MDX Express",
+    "name": "Tai nghe Bluetooth",
+    "status": "out_for_delivery",
+    "eta": "2026-11-10T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21900
+   },
+   {
+    "type": "e5",
+    "price": 20700
+   },
+   {
+    "type": "diesel",
+    "price": 19300
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_1503",
+    "name": "Huy",
+    "type": "direct",
+    "members": [
+     "Huy"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_960",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6799",
+    "name": "Chị Hai",
+    "type": "direct",
+    "members": [
+     "Chị Hai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2837",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_54",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_389",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-13T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_649",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-15T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_865",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-14T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_931",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09676717586"
+   },
+   {
+    "id": "c_305",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09682124822"
+   },
+   {
+    "id": "c_326",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09861866442"
+   },
+   {
+    "id": "c_507",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09212855754"
+   },
+   {
+    "id": "c_236",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09428121557"
+   },
+   {
+    "id": "c_352",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09922841049"
+   },
+   {
+    "id": "c_2075",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09985279605"
+   },
+   {
+    "id": "c_517",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09948745703"
+   },
+   {
+    "id": "c_684",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09470940317"
+   },
+   {
+    "id": "c_1135",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09688596214"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_5461",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_7421",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_276",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_22",
+    "show_id": "show_5461",
+    "title": "Số 17: Sống chậm giữa thành phố",
+    "number": 17,
+    "duration_min": 45,
+    "published": "2026-10-27"
+   },
+   {
+    "id": "ep_455",
+    "show_id": "show_7421",
+    "title": "Số 7: Rác thải nhựa ở đô thị",
+    "number": 7,
+    "duration_min": 32,
+    "published": "2026-10-20"
+   },
+   {
+    "id": "ep_9684",
+    "show_id": "show_276",
+    "title": "Số 18: Quản lý chi tiêu gia đình",
+    "number": 18,
+    "duration_min": 45,
+    "published": "2026-11-03"
+   },
+   {
+    "id": "ep_89",
+    "show_id": "show_5461",
+    "title": "Số 18: Nghề diễn và những áp lực",
+    "number": 18,
+    "duration_min": 32,
+    "published": "2026-11-03"
+   },
+   {
+    "id": "ep_2878",
+    "show_id": "show_7421",
+    "title": "Số 9: Đi xe đạp đi làm",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-11-03"
+   },
+   {
+    "id": "ep_9269",
+    "show_id": "show_276",
+    "title": "Số 16: Lập quỹ khẩn cấp",
+    "number": 16,
+    "duration_min": 32,
+    "published": "2026-10-20"
+   },
+   {
+    "id": "ep_2648",
+    "show_id": "show_7421",
+    "title": "Số 8: Trồng cây trên sân thượng",
+    "number": 8,
+    "duration_min": 45,
+    "published": "2026-10-27"
+   },
+   {
+    "id": "ep_155",
+    "show_id": "show_276",
+    "title": "Số 17: Gửi tiết kiệm hay mua vàng",
+    "number": 17,
+    "duration_min": 32,
+    "published": "2026-10-27"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_1476",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_81",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_298",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_651",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": {
+   "station_id": "st_651",
+   "station": "VOV Giao thông",
+   "status": "playing"
+  }
+ }
+}

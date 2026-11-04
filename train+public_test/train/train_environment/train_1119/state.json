@@ -1,0 +1,450 @@
+{
+ "_meta": {
+  "question_id": "train_1119",
+  "current_time": "2026-11-26T16:00:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "phone.call",
+   "phone.recent_calls",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_2024",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-29T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_149",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-26T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_419",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-26T09:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_334",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-27T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_133",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_914",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_596",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_6127",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_1533",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_9501",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_1575",
+    "time": "2026-11-26T13:55:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_437",
+    "time": "2026-11-24T16:30:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_955",
+    "time": "2026-11-25T22:05:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_1901",
+    "time": "2026-11-26T15:15:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-23": {
+    "steps": 5780,
+    "calories": 231,
+    "distance_km": 4.2
+   },
+   "2026-11-24": {
+    "steps": 9666,
+    "calories": 386,
+    "distance_km": 7.0
+   },
+   "2026-11-25": {
+    "steps": 8747,
+    "calories": 349,
+    "distance_km": 6.3
+   },
+   "2026-11-26": {
+    "steps": 4316,
+    "calories": 172,
+    "distance_km": 3.1
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_139",
+    "type": "running",
+    "minutes": 60,
+    "time": "2026-11-23T17:30:00+07:00"
+   },
+   {
+    "id": "wo_410",
+    "type": "gym",
+    "minutes": 45,
+    "time": "2026-11-25T06:00:00+07:00"
+   },
+   {
+    "id": "wo_293",
+    "type": "walking",
+    "minutes": 45,
+    "time": "2026-11-22T06:00:00+07:00"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25810
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27874
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 172.1
+   }
+  ]
+ },
+ "calculator": {},
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 3
+    }
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_811",
+    "contact_id": null,
+    "phone_number": "+886912468035",
+    "from_name": "A Chen",
+    "direction": "incoming",
+    "time": "2026-11-24T15:20:00+07:00",
+    "content": "Anh Bảy, em chuyển trước 2.000 USD tiền xoài cát nha."
+   },
+   {
+    "id": "msg_812",
+    "contact_id": null,
+    "phone_number": "+886912468035",
+    "from_name": "A Chen",
+    "direction": "incoming",
+    "time": "2026-11-26T14:30:00+07:00",
+    "content": "Em chuyển nốt 2.500 USD còn lại rồi đó anh Bảy, anh kiểm tra giùm em."
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_244",
+    "contact_id": null,
+    "phone_number": "09185532070",
+    "name": "Vợ Hồng",
+    "status": "received",
+    "time": "2026-11-26T10:05:00+07:00"
+   },
+   {
+    "id": "call_517",
+    "contact_id": null,
+    "phone_number": "09394127858",
+    "name": "Anh Mười",
+    "status": "missed",
+    "time": "2026-11-26T12:40:00+07:00"
+   }
+  ]
+ }
+}

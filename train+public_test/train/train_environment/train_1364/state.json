@@ -1,0 +1,384 @@
+{
+ "_meta": {
+  "question_id": "train_1364",
+  "current_time": "2026-12-17T19:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-14": {
+    "steps": 4052,
+    "calories": 162,
+    "distance_km": 2.9
+   },
+   "2026-12-15": {
+    "steps": 8744,
+    "calories": 349,
+    "distance_km": 6.3
+   },
+   "2026-12-16": {
+    "steps": 9363,
+    "calories": 374,
+    "distance_km": 6.7
+   },
+   "2026-12-17": {
+    "steps": 5653,
+    "calories": 226,
+    "distance_km": 4.1
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_817",
+    "type": "walking",
+    "minutes": 60,
+    "time": "2026-12-15T18:00:00+07:00"
+   },
+   {
+    "id": "wo_878",
+    "type": "running",
+    "minutes": 30,
+    "time": "2026-12-13T17:30:00+07:00"
+   },
+   {
+    "id": "wo_157",
+    "type": "running",
+    "minutes": 60,
+    "time": "2026-12-14T06:30:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1922",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09524722023"
+   },
+   {
+    "id": "c_35",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09618670849"
+   },
+   {
+    "id": "c_5660",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09758296758"
+   },
+   {
+    "id": "c_218",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09874794884"
+   },
+   {
+    "id": "c_587",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09744927013"
+   },
+   {
+    "id": "c_865",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09888596418"
+   },
+   {
+    "id": "c_729",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09361664094"
+   },
+   {
+    "id": "c_6473",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09645629775"
+   },
+   {
+    "id": "c_88",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09745216127"
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_11",
+    "tracking_id": "MDXVN254332971",
+    "carrier": "MDX Express",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "delivered",
+    "eta": "2026-12-16T10:00:00+07:00"
+   },
+   {
+    "id": "shp_443",
+    "tracking_id": "GST695338082",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Ốp lưng điện thoại",
+    "status": "out_for_delivery",
+    "eta": "2026-12-17T10:00:00+07:00"
+   },
+   {
+    "id": "shp_346",
+    "tracking_id": "STP757149009",
+    "carrier": "SaoTel Post",
+    "name": "Tai nghe Bluetooth",
+    "status": "in_transit",
+    "eta": "2026-12-19T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_30",
+    "time": "2026-12-18T06:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_706",
+    "time": "2026-12-18T07:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-18",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-19",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_597",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2027-01-03",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_882",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2027-01-13",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_7940",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2027-01-07",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_593",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2027-01-09",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_435",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5701",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6042",
+    "name": "Kevin Walsh",
+    "type": "direct",
+    "members": [
+     "Kevin Walsh"
+    ],
+    "messages": [
+     {
+      "from": "Kevin Walsh",
+      "time": "2026-12-17T16:10:00+07:00",
+      "content": "Tối nay anh bơi bốn mươi lăm phút thôi nhé, đừng quá sức."
+     },
+     {
+      "from": "Kevin Walsh",
+      "time": "2026-12-17T16:12:00+07:00",
+      "content": "Sáng mai trời khô thì mình chạy ở hồ Tây, sáu giờ có mặt nhé."
+     }
+    ]
+   },
+   {
+    "id": "chat_232",
+    "name": "Bé Bống",
+    "type": "direct",
+    "members": [
+     "Bé Bống"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_911",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_541",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2718",
+    "name": "Kevin Welsh",
+    "type": "direct",
+    "members": [
+     "Kevin Welsh"
+    ],
+    "messages": [
+     {
+      "from": "Kevin Welsh",
+      "time": "2026-12-17T17:40:00+07:00",
+      "content": "Mai họp sprint lúc chín giờ, anh chuẩn bị demo giúp em nhé."
+     }
+    ]
+   }
+  ]
+ }
+}

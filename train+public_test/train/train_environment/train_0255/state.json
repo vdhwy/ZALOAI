@@ -1,0 +1,411 @@
+{
+ "_meta": {
+  "question_id": "train_0255",
+  "current_time": "2026-11-24T21:40:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "gold_price.get_price",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 119400000,
+    "sell": 121400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 113400000,
+    "sell": 115400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3964
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_01",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_02",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_01",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_02",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_03",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-25T14:00:00+07:00",
+    "end": "2026-11-25T15:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "đá bóng",
+    "start": "2026-11-25T14:30:00+07:00",
+    "end": "2026-11-25T15:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "khám răng",
+    "start": "2026-11-25T19:00:00+07:00",
+    "end": "2026-11-25T20:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "title": "họp team",
+    "start": "2026-11-25T08:30:00+07:00",
+    "end": "2026-11-25T09:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21700
+   },
+   {
+    "type": "e5",
+    "price": 20500
+   },
+   {
+    "type": "diesel",
+    "price": 19100
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09342368803"
+   },
+   {
+    "id": "c_02",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09710054309"
+   },
+   {
+    "id": "c_03",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09806172935"
+   },
+   {
+    "id": "c_04",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09910470493"
+   },
+   {
+    "id": "c_05",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09283306764"
+   },
+   {
+    "id": "c_06",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09523731763"
+   },
+   {
+    "id": "c_07",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09204427637"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 28,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-24",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-25",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-26",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-27",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 34
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_01",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_02",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_03",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_04",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_05",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_06",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_01",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_02",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_01",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_02",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_03",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_04",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ }
+}

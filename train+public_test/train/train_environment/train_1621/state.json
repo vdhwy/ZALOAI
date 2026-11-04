@@ -1,0 +1,467 @@
+{
+ "_meta": {
+  "question_id": "train_1621",
+  "current_time": "2026-11-25T15:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_35",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_213",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": false
+   },
+   {
+    "id": "rule_466",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_452",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_173",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_270",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_5173",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp\nNhắc các con nộp ảnh thẻ trước thứ sáu"
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_79",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_181",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_605",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_742",
+    "name": "Luyện nói giọng London",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 16,
+    "progress_minutes": 90
+   },
+   {
+    "id": "course_318",
+    "name": "Luyện nói giọng Sydney",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 16,
+    "progress_minutes": 60
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_547",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 849000,
+    "due_date": "2026-11-28",
+    "paid": false
+   },
+   {
+    "id": "bill_9431",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 150000,
+    "due_date": "2026-11-29",
+    "paid": false
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_2176",
+    "title": "đi chơi công viên",
+    "start": "2026-11-26T08:30:00+07:00",
+    "end": "2026-11-26T09:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_8147",
+    "title": "đá bóng",
+    "start": "2026-11-27T18:30:00+07:00",
+    "end": "2026-11-27T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_172",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-28T18:00:00+07:00",
+    "end": "2026-11-28T19:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2673",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-26T18:00:00+07:00",
+    "end": "2026-11-26T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6479",
+    "title": "họp team",
+    "start": "2026-11-27T08:30:00+07:00",
+    "end": "2026-11-27T09:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_06",
+    "status": "confirmed",
+    "title": "Chấm bài kiểm tra",
+    "start": "2026-11-27T14:00:00+07:00",
+    "end": "2026-11-27T15:00:00+07:00"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-22": {
+    "steps": 10812,
+    "calories": 432,
+    "distance_km": 7.8
+   },
+   "2026-11-23": {
+    "steps": 5348,
+    "calories": 213,
+    "distance_km": 3.9
+   },
+   "2026-11-24": {
+    "steps": 4746,
+    "calories": 189,
+    "distance_km": 3.4
+   },
+   "2026-11-25": {
+    "steps": 1667,
+    "calories": 66,
+    "distance_km": 1.2
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_740",
+    "type": "walking",
+    "minutes": 60,
+    "time": "2026-11-22T17:30:00+07:00"
+   },
+   {
+    "id": "wo_975",
+    "type": "running",
+    "minutes": 60,
+    "time": "2026-11-23T06:30:00+07:00"
+   },
+   {
+    "id": "wo_779",
+    "type": "running",
+    "minutes": 30,
+    "time": "2026-11-21T17:30:00+07:00"
+   },
+   {
+    "id": "wo_04",
+    "type": "walking",
+    "minutes": 30,
+    "time": "2026-11-25T15:55:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_884",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09731179210"
+   },
+   {
+    "id": "c_4182",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09279736159"
+   },
+   {
+    "id": "c_517",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09215179598"
+   },
+   {
+    "id": "c_5881",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09466320550"
+   },
+   {
+    "id": "c_7500",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09424531705"
+   },
+   {
+    "id": "c_392",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09541631223"
+   },
+   {
+    "id": "c_247",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09985322457"
+   },
+   {
+    "id": "c_109",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09952530957"
+   },
+   {
+    "id": "c_603",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09898602428"
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-25",
+    "to": "2026-11-25",
+    "kwh": 8.8,
+    "cost": 25500,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 4.0
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.8
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-19",
+    "to": "2026-11-25",
+    "kwh": 64.2,
+    "cost": 186200,
+    "days": [
+     {
+      "date": "2026-11-19",
+      "kwh": 8.3
+     },
+     {
+      "date": "2026-11-20",
+      "kwh": 8.1
+     },
+     {
+      "date": "2026-11-21",
+      "kwh": 10.3
+     },
+     {
+      "date": "2026-11-22",
+      "kwh": 9.1
+     },
+     {
+      "date": "2026-11-23",
+      "kwh": 12.1
+     },
+     {
+      "date": "2026-11-24",
+      "kwh": 7.5
+     },
+     {
+      "date": "2026-11-25",
+      "kwh": 8.8
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-25",
+    "kwh": 264.2,
+    "cost": 766200
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_290",
+    "time": "2026-11-26T07:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_5524",
+    "time": "2026-11-26T06:15:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_976",
+    "time": "2026-11-26T05:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_8536",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_339",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_698",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_04",
+    "checked": false,
+    "name": "thịt ba chỉ",
+    "quantity": 1
+   }
+  ]
+ }
+}

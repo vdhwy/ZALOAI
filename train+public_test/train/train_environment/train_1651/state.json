@@ -1,0 +1,370 @@
+{
+ "_meta": {
+  "question_id": "train_1651",
+  "current_time": "2026-12-03T09:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "gold_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe"
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_452",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-12-09",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_306",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-12-09",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_974",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-12-09",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_197",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-12-09",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_134",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_5034",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen\nmua thêm bó hoa hồng"
+   },
+   {
+    "id": "note_181",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_2826",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 124700000,
+    "sell": 126700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 118700000,
+    "sell": 120700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4121
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_427",
+    "name": "Tài khoản thanh toán",
+    "balance": 6500000
+   },
+   {
+    "id": "acc_5776",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_720",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_211",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_967",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_01",
+    "account_id": "acc_427",
+    "beneficiary_id": "ben_967",
+    "amount": -6000000,
+    "note": null
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_4278",
+    "time": "2026-12-04T08:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_303",
+    "name": "Lau nhà",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_596",
+    "name": "Đổ rác",
+    "assignee": "Chị Hoa",
+    "done": false
+   },
+   {
+    "id": "chore_326",
+    "name": "Giặt quần áo",
+    "assignee": "Chị Hoa",
+    "done": true
+   },
+   {
+    "id": "chore_939",
+    "name": "Tưới cây",
+    "assignee": "Lan",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị Hoa",
+   "Lan",
+   "Bé Na"
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_498",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_7077",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_8469",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_7346",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_2805",
+    "show_id": "show_7346",
+    "title": "Số 9: Lập quỹ khẩn cấp",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-11-12"
+   },
+   {
+    "id": "ep_700",
+    "show_id": "show_8469",
+    "title": "Số 16: Nhà giả kim - phần 2",
+    "number": 16,
+    "duration_min": 18,
+    "published": "2026-11-26"
+   },
+   {
+    "id": "ep_148",
+    "show_id": "show_498",
+    "title": "Số 9: Sống chậm giữa thành phố",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-11-19"
+   },
+   {
+    "id": "ep_617",
+    "show_id": "show_7077",
+    "title": "Số 14: Vì sao bầu trời màu xanh",
+    "number": 14,
+    "duration_min": 32,
+    "published": "2026-11-12"
+   },
+   {
+    "id": "ep_5512",
+    "show_id": "show_7346",
+    "title": "Số 11: Quản lý chi tiêu gia đình",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-11-26"
+   },
+   {
+    "id": "ep_9512",
+    "show_id": "show_7077",
+    "title": "Số 16: Lỗ đen là gì",
+    "number": 16,
+    "duration_min": 45,
+    "published": "2026-11-26"
+   },
+   {
+    "id": "ep_9028",
+    "show_id": "show_7077",
+    "title": "Số 15: Giấc ngủ và trí nhớ",
+    "number": 15,
+    "duration_min": 18,
+    "published": "2026-11-19"
+   },
+   {
+    "id": "ep_521",
+    "show_id": "show_498",
+    "title": "Số 10: Nghề diễn và những áp lực",
+    "number": 10,
+    "duration_min": 32,
+    "published": "2026-11-26"
+   },
+   {
+    "id": "ep_2918",
+    "show_id": "show_7346",
+    "title": "Số 10: Gửi tiết kiệm hay mua vàng",
+    "number": 10,
+    "duration_min": 45,
+    "published": "2026-11-19"
+   },
+   {
+    "id": "ep_966",
+    "show_id": "show_8469",
+    "title": "Số 15: Nhà giả kim - phần 1",
+    "number": 15,
+    "duration_min": 32,
+    "published": "2026-11-19"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_64",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_4470",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_648",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_315",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": {
+   "episode_id": "ep_5512",
+   "show_id": "show_7346",
+   "status": "playing"
+  }
+ },
+ "phone": {
+  "calls": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ }
+}

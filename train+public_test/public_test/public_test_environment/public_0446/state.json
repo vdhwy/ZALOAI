@@ -1,0 +1,441 @@
+{
+ "_meta": {
+  "question_id": "public_0446",
+  "current_time": "2026-12-20T08:35:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "translator.translate",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 26,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-21",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-22",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-23",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_6957",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-22T19:30:00+07:00",
+    "end": "2026-12-22T20:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9767",
+    "title": "họp phụ huynh",
+    "start": "2026-12-21T18:00:00+07:00",
+    "end": "2026-12-21T19:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_999",
+    "title": "họp team",
+    "start": "2026-12-21T08:30:00+07:00",
+    "end": "2026-12-21T09:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_473",
+    "title": "khám răng",
+    "start": "2026-12-23T08:30:00+07:00",
+    "end": "2026-12-23T09:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_665",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-21T10:00:00+07:00",
+    "end": "2026-12-21T11:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3184",
+    "title": "đón khách Yuki",
+    "start": "2026-12-20T11:30:00+07:00",
+    "end": "2026-12-20T12:30:00+07:00",
+    "location": "Sân bay Tân Sơn Nhất, ga quốc tế",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_969",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2027-01-01",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_757",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2027-01-01",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_8628",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2027-01-01",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_9865",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2027-01-01",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_8757",
+    "name": "Bãi đỗ Nam Đô Centre",
+    "address": "65 Lê Lợi, Quận 1, TP.HCM",
+    "area": "Lê Lợi",
+    "price_per_hour": 35000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_620",
+    "name": "Bãi xe Khu Công nghệ cao",
+    "address": "Xa lộ Hà Nội, TP. Thủ Đức, TP.HCM",
+    "area": "Khu Công nghệ cao",
+    "price_per_hour": 20000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_912",
+    "name": "Hầm xe Sao Kim Plaza Đồng Khởi",
+    "address": "72 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "area": "Nguyễn Huệ",
+    "price_per_hour": 40000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_5178",
+    "name": "Bãi đỗ xe Công viên 23/9",
+    "address": "Phạm Ngũ Lão, Quận 1, TP.HCM",
+    "area": "Bến Thành",
+    "price_per_hour": 30000,
+    "available_spots": 40
+   }
+  ],
+  "sessions": []
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Xin chào, rất vui được gặp bạn",
+    "to_lang": "ja",
+    "translation": "こんにちは、はじめまして"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Tôi là tài xế, tôi đứng chờ ở cột số 5 lúc 11 giờ 30",
+    "to_lang": "ja",
+    "translation": "私は運転手です。11時30分に5番の柱のところでお待ちしています。"
+   },
+   {
+    "text": "Tôi là tài xế, 11 giờ 30 tôi đứng chờ ở cột số 5",
+    "to_lang": "ja",
+    "translation": "私は運転手です。11時30分に5番の柱のところでお待ちしています。"
+   },
+   {
+    "text": "Tôi là tài xế, tôi sẽ đứng chờ bạn ở cột số 5 lúc 11 giờ 30",
+    "to_lang": "ja",
+    "translation": "私は運転手です。11時30分に5番の柱のところでお待ちしています。"
+   },
+   {
+    "text": "Tôi là tài xế, tôi đứng chờ ở cột số năm lúc mười một giờ rưỡi",
+    "to_lang": "ja",
+    "translation": "私は運転手です。11時30分に5番の柱のところでお待ちしています。"
+   },
+   {
+    "text": "Tôi là tài xế, tôi đứng chờ ở cột số 5 lúc 11 rưỡi",
+    "to_lang": "ja",
+    "translation": "私は運転手です。11時30分に5番の柱のところでお待ちしています。"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_5669",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-12-18T20:05:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_329",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-12-17T16:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_8592",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-12-17T11:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "public_transit": {
+  "card_balance": 120000,
+  "routes": [
+   {
+    "id": "bus_429",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Khu Công nghệ cao",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   },
+   {
+    "id": "bus_611",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   },
+   {
+    "id": "metro_6419",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_611",
+    "time": "2026-12-20T08:41:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_429",
+    "time": "2026-12-20T08:37:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_6419",
+    "time": "2026-12-20T08:37:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_6419",
+    "time": "2026-12-20T08:45:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_611",
+    "time": "2026-12-20T08:56:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_429",
+    "time": "2026-12-20T08:49:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_429",
+    "time": "2026-12-20T09:01:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_611",
+    "time": "2026-12-20T09:11:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_6419",
+    "time": "2026-12-20T08:53:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_942",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_346",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_9408",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_354",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_112",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ }
+}

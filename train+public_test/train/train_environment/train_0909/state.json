@@ -1,0 +1,293 @@
+{
+ "_meta": {
+  "question_id": "train_0909",
+  "current_time": "2026-09-21T09:00:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_02",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_03",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_04",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_05",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_06",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_07",
+    "name": "Cà phê Mộc Miên",
+    "address": "8 Quảng An, Tây Hồ, Hà Nội",
+    "category": "cafe",
+    "detail": "Ven Hồ Tây, mở cửa 7:00 đến 22:00"
+   },
+   {
+    "id": "place_08",
+    "name": "Cà phê Vườn Nhỏ",
+    "address": "29 Xuân Diệu, Tây Hồ, Hà Nội",
+    "category": "cafe",
+    "detail": "Ven Hồ Tây, mở cửa 7:00 đến 23:00"
+   },
+   {
+    "id": "place_09",
+    "name": "Cà phê Phố Cổ Hồ Tây",
+    "address": "14 Nhật Chiêu, Tây Hồ, Hà Nội",
+    "category": "cafe",
+    "detail": "Ven Hồ Tây, tạm đóng cửa sửa chữa đến hết 30/9"
+   }
+  ],
+  "saved_places": [],
+  "routes": [
+   {
+    "from": [
+     "nhà",
+     "25 Láng Hạ, Đống Đa, Hà Nội",
+     "25 Láng Hạ, Đống Đa",
+     "25 Láng Hạ",
+     "Láng Hạ"
+    ],
+    "to": [
+     "Cà phê Mộc Miên",
+     "Mộc Miên",
+     "8 Quảng An"
+    ],
+    "distance_km": 7.2,
+    "duration_min": {
+     "car": 28,
+     "motorbike": 24,
+     "walk": 90,
+     "transit": 45
+    }
+   },
+   {
+    "from": [
+     "nhà",
+     "25 Láng Hạ, Đống Đa, Hà Nội",
+     "25 Láng Hạ, Đống Đa",
+     "25 Láng Hạ",
+     "Láng Hạ"
+    ],
+    "to": [
+     "Cà phê Vườn Nhỏ",
+     "Vườn Nhỏ",
+     "29 Xuân Diệu"
+    ],
+    "distance_km": 5.8,
+    "duration_min": {
+     "car": 22,
+     "motorbike": 16,
+     "walk": 72,
+     "transit": 38
+    }
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_01",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_02",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_03",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_04",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 31,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-21",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-22",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-23",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-24",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 29
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "đá bóng",
+    "start": "2026-09-22T08:00:00+07:00",
+    "end": "2026-09-22T09:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

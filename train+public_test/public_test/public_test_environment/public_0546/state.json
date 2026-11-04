@@ -1,0 +1,326 @@
+{
+ "_meta": {
+  "question_id": "public_0546",
+  "current_time": "2026-10-21T13:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "phone.call",
+   "phone.recent_calls",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 500,
+    "avg_price": 93800,
+    "price": 90550
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "quantity": 200,
+    "avg_price": 23500,
+    "price": 23500
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 1000,
+    "avg_price": 60600,
+    "price": 58150
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 23500,
+    "change_pct": -1.0
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1647,
+    "change_pct": 1.3
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 58150,
+    "change_pct": 2.8
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 126600,
+    "change_pct": -1.7
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 90550,
+    "change_pct": 2.4
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 63500,
+    "change_pct": 3.1
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_35",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_392",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_367",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_9097",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_556",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_1985",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_7120",
+    "title": "Lời cuối cho em",
+    "artist": "Hoài Lâm"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_3109",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_8174",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_581",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_631",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_214",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_387",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_60",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_197",
+    "items": [
+     {
+      "product_id": "gro_214",
+      "name": "Trứng gà ta hộp 10 quả",
+      "price": 42000,
+      "quantity": 1
+     }
+    ],
+    "total": 42000,
+    "status": "delivered",
+    "delivery_time": "2026-10-13T09:00:00+07:00"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_833",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 208000,
+    "due_date": "2026-10-27",
+    "paid": false
+   },
+   {
+    "id": "bill_296",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 145000,
+    "due_date": "2026-10-25",
+    "paid": false
+   },
+   {
+    "id": "bill_1062",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 194000,
+    "due_date": "2026-10-25",
+    "paid": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_438",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09781603509"
+   },
+   {
+    "id": "c_8986",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09705862063"
+   },
+   {
+    "id": "c_9417",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09949240658"
+   },
+   {
+    "id": "c_141",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09437957262"
+   },
+   {
+    "id": "c_722",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09255486931"
+   },
+   {
+    "id": "c_851",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09757990983"
+   },
+   {
+    "id": "c_4440",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09702566993"
+   },
+   {
+    "id": "c_4184",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09350966378"
+   },
+   {
+    "id": "c_657",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09501831951"
+   },
+   {
+    "id": "c_214",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09563294772"
+   },
+   {
+    "id": "c_943",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09863780685"
+   },
+   {
+    "id": "c_856",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09400205796"
+   }
+  ]
+ }
+}

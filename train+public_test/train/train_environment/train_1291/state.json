@@ -1,0 +1,297 @@
+{
+ "_meta": {
+  "question_id": "train_1291",
+  "current_time": "2026-11-14T21:50:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_254",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_256",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_527",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_47",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Láng Hạ",
+    "available": false,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 75,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_489",
+    "name": "bếp",
+    "area_m2": 25
+   },
+   {
+    "id": "room_843",
+    "name": "phòng khách",
+    "area_m2": 12
+   },
+   {
+    "id": "room_119",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 18
+   },
+   {
+    "id": "room_706",
+    "name": "phòng ngủ",
+    "area_m2": 10
+   },
+   {
+    "id": "room_574",
+    "name": "phòng ăn",
+    "area_m2": 12
+   },
+   {
+    "id": "room_698",
+    "name": "hành lang",
+    "area_m2": 12
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng khách",
+    "hành lang"
+   ],
+   "whole_house": false,
+   "mode": "vacuum"
+  }
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_828",
+    "title": "khám răng",
+    "start": "2026-11-15T08:30:00+07:00",
+    "end": "2026-11-15T09:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_1120",
+    "name": "Nấu cơm tối",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_8625",
+    "name": "Phơi quần áo",
+    "assignee": "Bé Ngọc",
+    "done": false
+   },
+   {
+    "id": "chore_8316",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Bé Na",
+    "done": false
+   }
+  ],
+  "members": [
+   "Bé Ngọc",
+   "Bé Na",
+   "Lan"
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-14",
+    "to": "2026-11-14",
+    "kwh": 7.3,
+    "cost": 21200,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.3
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.5
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-08",
+    "to": "2026-11-14",
+    "kwh": 76.1,
+    "cost": 220700,
+    "days": [
+     {
+      "date": "2026-11-08",
+      "kwh": 8.5
+     },
+     {
+      "date": "2026-11-09",
+      "kwh": 9.6
+     },
+     {
+      "date": "2026-11-10",
+      "kwh": 10.8
+     },
+     {
+      "date": "2026-11-11",
+      "kwh": 15.2
+     },
+     {
+      "date": "2026-11-12",
+      "kwh": 9.0
+     },
+     {
+      "date": "2026-11-13",
+      "kwh": 15.7
+     },
+     {
+      "date": "2026-11-14",
+      "kwh": 7.3
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-14",
+    "kwh": 144.8,
+    "cost": 419900
+   }
+  },
+  "alert_threshold_kwh": 400
+ }
+}

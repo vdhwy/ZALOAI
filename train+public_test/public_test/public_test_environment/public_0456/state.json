@@ -1,0 +1,279 @@
+{
+ "_meta": {
+  "question_id": "public_0456",
+  "current_time": "2026-10-26T09:40:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_79",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_595",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_675",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_2484",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": true
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_8981",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_433",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_286",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_757",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_386",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 125400000,
+    "sell": 127400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 119400000,
+    "sell": 121400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3924
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 25,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-26",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-27",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-28",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-29",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 30
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_477",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_501",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_20",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_5020",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_5762",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_895",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09911843094"
+   },
+   {
+    "id": "c_547",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09900621344"
+   },
+   {
+    "id": "c_625",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09104895006"
+   },
+   {
+    "id": "c_914",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09735979841"
+   },
+   {
+    "id": "c_721",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09154852295"
+   },
+   {
+    "id": "c_456",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09178897739"
+   },
+   {
+    "id": "c_909",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09477750672"
+   },
+   {
+    "id": "c_745",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09829975436"
+   }
+  ]
+ }
+}

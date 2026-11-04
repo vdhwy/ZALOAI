@@ -1,0 +1,476 @@
+{
+ "_meta": {
+  "question_id": "public_0466",
+  "current_time": "2026-11-17T19:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "event_tickets.book",
+   "event_tickets.search",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "pantry.consume",
+   "pantry.list_items",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search"
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_2527",
+    "name": "mì tôm",
+    "stock": 12,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_442",
+    "name": "bột mì",
+    "stock": 2,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_616",
+    "name": "sữa tươi",
+    "stock": 1,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_743",
+    "name": "cà phê G7",
+    "stock": 4,
+    "unit": "hộp"
+   }
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_144",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_9928",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_83",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_383",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_229",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_6612",
+    "name": "Bò kho nồi áp suất",
+    "tags": [
+     "món kho",
+     "bò kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "bắp bò",
+      "quantity": 800,
+      "unit": "g"
+     },
+     {
+      "name": "cà rốt",
+      "quantity": 2,
+      "unit": "củ"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "gói gia vị bò kho",
+      "quantity": 1,
+      "unit": "gói"
+     }
+    ],
+    "steps": [
+     "Ướp bò với gia vị bò kho 20 phút",
+     "Xào săn bò với sả",
+     "Cho vào nồi áp suất hầm 25 phút",
+     "Thêm cà rốt, nêm lại"
+    ]
+   },
+   {
+    "id": "rcp_471",
+    "name": "Bò kho bánh mì",
+    "tags": [
+     "món kho",
+     "bò kho",
+     "ăn sáng"
+    ],
+    "servings": 4,
+    "time_min": 120,
+    "ingredients": [
+     {
+      "name": "nạm bò",
+      "quantity": 1000,
+      "unit": "g"
+     },
+     {
+      "name": "cà rốt",
+      "quantity": 2,
+      "unit": "củ"
+     },
+     {
+      "name": "hoa hồi",
+      "quantity": 3,
+      "unit": "cái"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Ướp bò với ngũ vị, hoa hồi",
+     "Xào săn bò",
+     "Hầm với nước dừa lửa nhỏ khoảng 90 phút",
+     "Cho cà rốt, ăn kèm bánh mì"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_609",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09200263923"
+   },
+   {
+    "id": "c_760",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09579378637"
+   },
+   {
+    "id": "c_700",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09292257905"
+   },
+   {
+    "id": "c_8647",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09471183126"
+   },
+   {
+    "id": "c_612",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09110370090"
+   },
+   {
+    "id": "c_159",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09198105766"
+   },
+   {
+    "id": "c_799",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09541416369"
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_828",
+    "name": "Đêm nhạc Jazz cuối tuần",
+    "category": "âm nhạc",
+    "date": "2026-11-26",
+    "time": "18:00",
+    "venue": "Bảo tàng Đà Nẵng",
+    "price": 450000,
+    "available": 12
+   },
+   {
+    "id": "event_465",
+    "name": "Liên hoan phim ngắn",
+    "category": "điện ảnh",
+    "date": "2026-11-28",
+    "time": "18:00",
+    "venue": "Nhà hát Trưng Vương",
+    "price": 120000,
+    "available": 80
+   },
+   {
+    "id": "event_797",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-11-25",
+    "time": "20:00",
+    "venue": "Nhà hát Trưng Vương",
+    "price": 600000,
+    "available": 80
+   }
+  ],
+  "bookings": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_949",
+    "time": "2026-11-18T06:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_616",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_3808",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_5622",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_689",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_7645",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_757",
+    "items": [
+     {
+      "product_id": "gro_689",
+      "name": "Trứng gà ta hộp 10 quả",
+      "price": 42000,
+      "quantity": 2
+     }
+    ],
+    "total": 84000,
+    "status": "delivered",
+    "delivery_time": "2026-11-07T09:00:00+07:00"
+   }
+  ]
+ }
+}

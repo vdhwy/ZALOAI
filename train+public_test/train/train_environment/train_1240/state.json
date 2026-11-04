@@ -1,0 +1,382 @@
+{
+ "_meta": {
+  "question_id": "train_1240",
+  "current_time": "2026-10-15T19:50:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_6860",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_463",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_263",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_242",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09514172188"
+   },
+   {
+    "id": "c_5487",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09840637265"
+   },
+   {
+    "id": "c_3790",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09704074618"
+   },
+   {
+    "id": "c_510",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09799271464"
+   },
+   {
+    "id": "c_9312",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09679219531"
+   },
+   {
+    "id": "c_7613",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09635388530"
+   },
+   {
+    "id": "c_856",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09704229036"
+   },
+   {
+    "id": "c_637",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09329642421"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_957",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_320",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_6449",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_842",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_741",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_587",
+    "name": "Anh Thành",
+    "type": "direct",
+    "members": [
+     "Anh Thành"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_673",
+    "name": "Chị Yến",
+    "type": "direct",
+    "members": [
+     "Chị Yến"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_754",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3378",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_75",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_453",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": [
+     {
+      "id": "pl_356",
+      "name": "Nhạc nhẹ cuối tuần"
+     }
+    ]
+   },
+   {
+    "id": "trk_1125",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm",
+    "playlists": [
+     {
+      "id": "pl_21",
+      "name": "Nhạc nhẹ chấm bài"
+     }
+    ]
+   },
+   {
+    "id": "trk_5216",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": [
+     {
+      "id": "pl_797",
+      "name": "Nhạc tập gym"
+     }
+    ]
+   },
+   {
+    "id": "trk_3604",
+    "title": "Diễm xưa",
+    "artist": "Khánh Ly",
+    "playlists": []
+   },
+   {
+    "id": "trk_1812",
+    "title": "Bước qua nhau",
+    "artist": "Vũ.",
+    "playlists": [
+     {
+      "id": "pl_21",
+      "name": "Nhạc nhẹ chấm bài"
+     }
+    ]
+   },
+   {
+    "id": "trk_8872",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": [
+     {
+      "id": "pl_797",
+      "name": "Nhạc tập gym"
+     }
+    ]
+   },
+   {
+    "id": "trk_952",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc",
+    "playlists": [
+     {
+      "id": "pl_356",
+      "name": "Nhạc nhẹ cuối tuần"
+     }
+    ]
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_21",
+    "name": "Nhạc nhẹ chấm bài",
+    "track_ids": [
+     "trk_1812",
+     "trk_1125"
+    ]
+   },
+   {
+    "id": "pl_797",
+    "name": "Nhạc tập gym",
+    "track_ids": [
+     "trk_5216",
+     "trk_8872"
+    ]
+   },
+   {
+    "id": "pl_356",
+    "name": "Nhạc nhẹ cuối tuần",
+    "track_ids": [
+     "trk_952",
+     "trk_453"
+    ]
+   }
+  ],
+  "now_playing": null
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_943",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_619",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_538",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_35",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ }
+}

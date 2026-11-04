@@ -1,0 +1,355 @@
+{
+ "_meta": {
+  "question_id": "train_0898",
+  "current_time": "2026-09-20T09:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 25,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-21",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-23",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 29
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "họp team",
+    "start": "2026-09-22T15:30:00+07:00",
+    "end": "2026-09-22T16:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 148000,
+    "due_date": "2026-09-27",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 210000,
+    "due_date": "2026-09-27",
+    "paid": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_01",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-10-14",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_02",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-09-26",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_03",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-10-12",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_04",
+    "name": "Gói Nhạc Premium",
+    "price": 59000,
+    "next_billing": "2026-09-25",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_01",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_02",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_03",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_04",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_05",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": true
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Đóng học phí cho con",
+    "due": "2026-09-23T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Trả sách thư viện",
+    "due": "2026-09-22T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-09-20T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-09-26T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_05",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-09-19T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_02",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_03",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_04",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-09-20T04:00:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-09-19T22:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-09-19T06:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ }
+}

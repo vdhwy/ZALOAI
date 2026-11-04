@@ -1,0 +1,380 @@
+{
+ "_meta": {
+  "question_id": "public_0238",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_01",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-09-27",
+    "depart": "06:00",
+    "arrive": "08:30",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_02",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-09-27",
+    "depart": "13:00",
+    "arrive": "16:00",
+    "price": 320000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_03",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-09-27",
+    "depart": "13:00",
+    "arrive": "15:30",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_04",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-09-27",
+    "depart": "19:00",
+    "arrive": "05:30",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_05",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-09-28",
+    "depart": "08:00",
+    "arrive": "00:30",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_06",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-09-28",
+    "depart": "19:00",
+    "arrive": "09:00",
+    "price": 320000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_07",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-09-28",
+    "depart": "19:00",
+    "arrive": "11:30",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_08",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-09-28",
+    "depart": "21:00",
+    "arrive": "07:00",
+    "price": 320000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_09",
+    "type": "train",
+    "operator": "Tàu LP6",
+    "origin": "Hà Nội",
+    "destination": "Lạng Sơn",
+    "date": "2026-09-26",
+    "depart": "06:00",
+    "arrive": "11:20",
+    "price": 150000,
+    "seats_left": 24
+   },
+   {
+    "id": "trip_10",
+    "type": "train",
+    "operator": "Tàu LP2",
+    "origin": "Hà Nội",
+    "destination": "Lạng Sơn",
+    "date": "2026-09-26",
+    "depart": "21:20",
+    "arrive": "03:10",
+    "price": 150000,
+    "seats_left": 18
+   },
+   {
+    "id": "trip_11",
+    "type": "bus",
+    "operator": "Xe khách Hưng Thành",
+    "origin": "Hà Nội",
+    "destination": "Lạng Sơn",
+    "date": "2026-09-26",
+    "depart": "07:30",
+    "arrive": "10:30",
+    "price": 180000,
+    "seats_left": 20
+   }
+  ],
+  "bookings": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_01",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_02",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_03",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_04",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_05",
+    "name": "Bãi xe A07 Ga Hà Nội",
+    "address": "120 Lê Duẩn, Hoàn Kiếm, Hà Nội",
+    "area": "Ga Hà Nội",
+    "price_per_hour": 20000,
+    "available_spots": 9
+   },
+   {
+    "id": "lot_06",
+    "name": "Bãi xe B12 Ga Hà Nội",
+    "address": "Trần Quý Cáp, Đống Đa, Hà Nội",
+    "area": "Ga Hà Nội",
+    "price_per_hour": 15000,
+    "available_spots": 25
+   }
+  ],
+  "sessions": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_02",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_03",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_04",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_05",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_06",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "metro_3",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_09",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Bờ Hồ",
+     "Láng Hạ",
+     "Cầu Giấy",
+     "Đại học Mỏ"
+    ],
+    "fare": 7000,
+    "duration_min": 45,
+    "headway_min": 15
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_3",
+    "time": "2026-09-25T09:09:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_3",
+    "time": "2026-09-25T09:19:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_3",
+    "time": "2026-09-25T09:29:00+07:00"
+   },
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:08:00+07:00"
+   },
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:16:00+07:00"
+   },
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:24:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_09",
+    "time": "2026-09-25T09:07:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_09",
+    "time": "2026-09-25T09:22:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_09",
+    "time": "2026-09-25T09:37:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

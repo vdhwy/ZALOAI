@@ -1,0 +1,239 @@
+{
+ "_meta": {
+  "question_id": "train_0908",
+  "current_time": "2026-09-21T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_02",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_03",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_04",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": [],
+  "routes": [
+   {
+    "from": [
+     "nhà",
+     "25 Láng Hạ, Đống Đa, Hà Nội",
+     "25 Láng Hạ, Đống Đa",
+     "25 Láng Hạ",
+     "Láng Hạ"
+    ],
+    "to": [
+     "Bệnh viện Bạch Mai",
+     "Bạch Mai",
+     "78 Giải Phóng"
+    ],
+    "distance_km": 4.6,
+    "duration_min": {
+     "car": 18,
+     "motorbike": 15,
+     "walk": 55,
+     "transit": 30
+    }
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "đi chơi công viên",
+    "start": "2026-09-24T19:00:00+07:00",
+    "end": "2026-09-24T20:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 27,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-21",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-22",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-23",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-24",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 32
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-09-21T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-09-22T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-09-26T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ }
+}

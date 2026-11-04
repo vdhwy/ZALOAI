@@ -1,0 +1,143 @@
+{
+ "_meta": {
+  "question_id": "train_0997",
+  "current_time": "2026-11-04T22:30:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_839",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_556",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_8587",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": false
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_2348",
+    "time": "2026-11-03T20:40:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_821",
+    "time": "2026-11-04T06:00:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_3044",
+    "time": "2026-11-04T05:45:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_296",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09925027903"
+   },
+   {
+    "id": "c_317",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09835611351"
+   },
+   {
+    "id": "c_279",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09606597068"
+   },
+   {
+    "id": "c_1306",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09681331876"
+   },
+   {
+    "id": "c_455",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09495326109"
+   },
+   {
+    "id": "c_788",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09367772955"
+   },
+   {
+    "id": "c_362",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09119629579"
+   },
+   {
+    "id": "c_7618",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09360577568"
+   }
+  ]
+ }
+}

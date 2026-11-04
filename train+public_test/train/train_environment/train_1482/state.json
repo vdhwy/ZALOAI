@@ -1,0 +1,423 @@
+{
+ "_meta": {
+  "question_id": "train_1482",
+  "current_time": "2026-12-09T19:00:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_452",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_316",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_164",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_915",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_233",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-14T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_871",
+    "title": "Đi buổi thực hành khoá sầu riêng ở trại Phong Điền, mang theo sách",
+    "due": "2026-12-11T07:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_65",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-11T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_2545",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-11T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_645",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-14T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_6849",
+    "time": "2026-12-10T08:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_437",
+    "time": "2026-12-10T06:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_4667",
+    "name": "Chú Tám",
+    "type": "direct",
+    "members": [
+     "Chú Tám"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_697",
+    "name": "Hằng",
+    "type": "direct",
+    "members": [
+     "Hằng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7593",
+    "name": "Thằng Út",
+    "type": "direct",
+    "members": [
+     "Thằng Út"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4840",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_154",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_828",
+    "tracking_id": "STP719640950",
+    "carrier": "SaoTel Post",
+    "name": "Tai nghe Bluetooth",
+    "status": "out_for_delivery",
+    "eta": "2026-12-09T17:00:00+07:00"
+   },
+   {
+    "id": "shp_182",
+    "tracking_id": "MDXVN788213574",
+    "carrier": "MDX Express",
+    "name": "Giày thể thao",
+    "status": "in_transit",
+    "eta": "2026-12-12T14:00:00+07:00"
+   },
+   {
+    "id": "shp_5521",
+    "tracking_id": "GST482019375",
+    "carrier": "GST",
+    "name": "Sách Kỹ thuật trồng sầu riêng Ri6",
+    "status": "in_transit",
+    "eta": "2026-12-11T10:00:00+07:00"
+   },
+   {
+    "id": "shp_5560",
+    "tracking_id": "GST482019418",
+    "carrier": "GST",
+    "name": "Sách Chăm sóc bưởi da xanh",
+    "status": "out_for_delivery",
+    "eta": "2026-12-10T15:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_212",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_3390",
+    "name": "Kỹ thuật trồng sầu riêng Ri6",
+    "provider": "Nông Gia Online",
+    "enrolled": true,
+    "lessons_total": 10,
+    "progress_minutes": 240
+   },
+   {
+    "id": "course_4051",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Học Mở",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_1975",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_3417",
+    "name": "Chăm sóc bưởi da xanh",
+    "provider": "Nông Gia Online",
+    "enrolled": false,
+    "lessons_total": 8,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_174",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09763258213"
+   },
+   {
+    "id": "c_6097",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09366569228"
+   },
+   {
+    "id": "c_6055",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09413785603"
+   },
+   {
+    "id": "c_176",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09190581856"
+   },
+   {
+    "id": "c_642",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09966592545"
+   },
+   {
+    "id": "c_379",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09253811975"
+   },
+   {
+    "id": "c_517",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09204273636"
+   },
+   {
+    "id": "c_3953",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09576242410"
+   },
+   {
+    "id": "c_6664",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09434040756"
+   },
+   {
+    "id": "c_413",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09366608840"
+   }
+  ]
+ }
+}

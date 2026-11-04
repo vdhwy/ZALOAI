@@ -1,0 +1,246 @@
+{
+ "_meta": {
+  "question_id": "public_0240",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list"
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_01",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_02",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_03",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_04",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_05",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_06",
+    "name": "Balo laptop Mikkor 15.6 inch",
+    "price": 650000,
+    "seller": "Mikkor Store",
+    "category": "thời trang",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_07",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.5,
+    "in_stock": true
+   },
+   {
+    "id": "prod_08",
+    "name": "Bàn phím cơ SlimKey 75",
+    "price": 890000,
+    "seller": "SlimKey Official",
+    "category": "máy tính",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_09",
+    "name": "Bàn phím cơ KeyGo 60",
+    "price": 690000,
+    "seller": "KeyGo Store",
+    "category": "máy tính",
+    "rating": 4.6,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_01",
+    "items": [
+     {
+      "product_id": "prod_05",
+      "name": "Tai nghe Bluetooth Soundcore R50i",
+      "price": 450000,
+      "quantity": 1
+     }
+    ],
+    "total": 450000,
+    "status": "delivered",
+    "placed_at": "2026-09-17T03:00:00+07:00",
+    "seller": "Anker Official Store",
+    "delivered_at": "2026-09-19T03:00:00+07:00"
+   },
+   {
+    "id": "ord_02",
+    "items": [
+     {
+      "product_id": "prod_06",
+      "name": "Balo laptop Mikkor 15.6 inch",
+      "price": 650000,
+      "quantity": 1
+     }
+    ],
+    "total": 650000,
+    "status": "shipping",
+    "placed_at": "2026-09-22T08:00:00+07:00",
+    "seller": "Mikkor Store"
+   },
+   {
+    "id": "ord_03",
+    "items": [
+     {
+      "product_id": "prod_07",
+      "name": "Cốc giữ nhiệt Elmich 500ml",
+      "price": 219000,
+      "quantity": 1
+     }
+    ],
+    "total": 219000,
+    "status": "placed",
+    "placed_at": "2026-09-24T02:00:00+07:00",
+    "seller": "Elmich Store"
+   }
+  ],
+  "returns": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_02",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_03",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-09-24T21:00:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-09-23T22:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-09-22T15:00:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_04",
+    "from": "dung.pham@congty.example.test",
+    "from_name": "Anh Dũng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-09-22T08:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

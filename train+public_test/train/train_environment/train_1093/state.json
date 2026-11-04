@@ -1,0 +1,414 @@
+{
+ "_meta": {
+  "question_id": "train_1093",
+  "current_time": "2026-10-19T12:25:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-19",
+    "to": "2026-10-19",
+    "kwh": 5.9,
+    "cost": 17100,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 2.7
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.2
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-13",
+    "to": "2026-10-19",
+    "kwh": 71.4,
+    "cost": 207100,
+    "days": [
+     {
+      "date": "2026-10-13",
+      "kwh": 9.9
+     },
+     {
+      "date": "2026-10-14",
+      "kwh": 7.6
+     },
+     {
+      "date": "2026-10-15",
+      "kwh": 15.5
+     },
+     {
+      "date": "2026-10-16",
+      "kwh": 8.8
+     },
+     {
+      "date": "2026-10-17",
+      "kwh": 10.2
+     },
+     {
+      "date": "2026-10-18",
+      "kwh": 13.5
+     },
+     {
+      "date": "2026-10-19",
+      "kwh": 5.9
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-19",
+    "kwh": 208.5,
+    "cost": 604600
+   }
+  },
+  "alert_threshold_kwh": 350
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_614",
+    "title": "đánh cờ với ông Ba",
+    "start": "2026-10-20T08:00:00+07:00",
+    "end": "2026-10-20T10:00:00+07:00",
+    "location": "Hồ Gươm",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1553",
+    "title": "đón cháu Bin đi học về",
+    "start": "2026-10-19T16:30:00+07:00",
+    "end": "2026-10-19T17:00:00+07:00",
+    "location": "Trường tiểu học Hàng Bạc",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_366",
+    "title": "thằng Tuấn qua ăn cơm",
+    "start": "2026-10-20T18:30:00+07:00",
+    "end": "2026-10-20T20:00:00+07:00",
+    "location": "Nhà",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 29,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-19",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-22",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_582",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 12000,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_568",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 2000,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_239",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-10-27",
+    "used": false
+   },
+   {
+    "id": "vch_6577",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-10-30",
+    "used": false
+   },
+   {
+    "id": "vch_4394",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-10-29",
+    "used": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_182",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_456",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_788",
+    "time": "2026-10-18T02:40:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_645",
+    "time": "2026-10-19T00:55:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_104",
+    "time": "2026-10-18T10:40:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_1515",
+    "time": "2026-10-19T10:25:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_17",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09865469377"
+   },
+   {
+    "id": "c_92",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09537623274"
+   },
+   {
+    "id": "c_933",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09431403105"
+   },
+   {
+    "id": "c_772",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09465212414"
+   },
+   {
+    "id": "c_222",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09292575234"
+   },
+   {
+    "id": "c_515",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09663673808"
+   },
+   {
+    "id": "c_9226",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09758917938"
+   },
+   {
+    "id": "c_616",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09196571705"
+   },
+   {
+    "id": "c_160",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09346029722"
+   },
+   {
+    "id": "c_878",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09352750067"
+   },
+   {
+    "id": "c_758",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09726385730"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_7899",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_9574",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_896",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ }
+}

@@ -1,0 +1,296 @@
+{
+ "_meta": {
+  "question_id": "train_1319",
+  "current_time": "2026-10-21T10:00:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "library.reserve",
+   "library.search",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_5403",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_1416",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_871",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_933",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": false
+   },
+   {
+    "id": "book_170",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_352",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09432266956"
+   },
+   {
+    "id": "c_9526",
+    "name": "Emily Carter",
+    "relation": "khách",
+    "phone": "09439805402",
+    "email": "emily.carter@mailbird.example.test"
+   },
+   {
+    "id": "c_314",
+    "name": "Lucas Moreau",
+    "relation": "khách",
+    "phone": "09995513540"
+   },
+   {
+    "id": "c_8081",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09119291305"
+   },
+   {
+    "id": "c_85",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09270164706"
+   },
+   {
+    "id": "c_376",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09867418036"
+   },
+   {
+    "id": "c_325",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09845933270"
+   },
+   {
+    "id": "c_737",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09496231464"
+   },
+   {
+    "id": "c_565",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09888442531"
+   },
+   {
+    "id": "c_569",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09888153068"
+   },
+   {
+    "id": "c_880",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09456263364"
+   },
+   {
+    "id": "c_6120",
+    "name": "Brightway Travel",
+    "relation": "đối tác lữ hành",
+    "phone": "09534281530",
+    "email": "accounts@brightway.example.test"
+   },
+   {
+    "id": "c_2047",
+    "name": "Brightway Tours",
+    "relation": "đối tác lữ hành",
+    "phone": "09280438802",
+    "email": "accounts@brightwaytours.example.test"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_7781",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-27T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_170",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-26T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_9126",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-27T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_388",
+    "contact_id": "c_314",
+    "phone_number": "09995513540",
+    "direction": "incoming",
+    "content": "Hi anh Đức, can I check in late tonight, around 9pm? Lucas"
+   },
+   {
+    "id": "msg_4410",
+    "contact_id": "c_9526",
+    "phone_number": "09439805402",
+    "direction": "incoming",
+    "content": "Hi anh Đức, I checked out early this morning. I transferred 1,800,000 but the room was only 1,600,000, could you refund the 200,000 difference? Sorry, I think I left the light on in the small bedroom upstairs. Emily"
+   }
+  ]
+ }
+}

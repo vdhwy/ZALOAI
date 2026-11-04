@@ -1,0 +1,407 @@
+{
+ "_meta": {
+  "question_id": "train_1541",
+  "current_time": "2026-12-20T08:50:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_668",
+    "name": "Anh Thành",
+    "type": "direct",
+    "members": [
+     "Anh Thành"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_738",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5671",
+    "name": "Chị Yến",
+    "type": "direct",
+    "members": [
+     "Chị Yến"
+    ],
+    "messages": [
+     {
+      "from": "Chị Yến",
+      "content": "Chị Hạnh ơi thứ Hai họp tổ chuyên môn lúc 2 giờ chiều nhé.",
+      "time": "2026-12-19T16:20:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_962",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": [
+     {
+      "from": "Minh",
+      "content": "Mẹ ơi tối nay con ăn cơm ở nhà bạn, mẹ đừng chờ nhé.",
+      "time": "2026-12-18T17:40:00+07:00"
+     },
+     {
+      "from": "Minh",
+      "content": "Mẹ ơi sáng thứ Hai câu lạc bộ tiếng Anh của con làm onboarding cho thành viên mới, mẹ mua giúp con 6 quả táo, 2 hộp sữa tươi với 1 gói kẹo dẻo nhé.",
+      "time": "2026-12-19T21:05:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_2815",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_7597",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-19T17:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_890",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-22T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_156",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-24T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_330",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-26T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_495",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-19T20:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_109",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09157616296"
+   },
+   {
+    "id": "c_9872",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09679723867"
+   },
+   {
+    "id": "c_466",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09866135514"
+   },
+   {
+    "id": "c_299",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09132643817"
+   },
+   {
+    "id": "c_3334",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09664547900"
+   },
+   {
+    "id": "c_501",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09707792113"
+   },
+   {
+    "id": "c_526",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09202069020"
+   },
+   {
+    "id": "c_130",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09384409726"
+   },
+   {
+    "id": "c_862",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09313996897"
+   },
+   {
+    "id": "c_446",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09404664788"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_755",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Láng Hạ",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_419",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_6474",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_9649",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 129800000,
+    "sell": 131800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 123800000,
+    "sell": 125800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3902
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_742",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_6254",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_318",
+    "name": "sữa tươi",
+    "quantity": 2,
+    "checked": true
+   },
+   {
+    "id": "item_5097",
+    "name": "kẹo gừng",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_7324",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_6732",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_155",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ }
+}

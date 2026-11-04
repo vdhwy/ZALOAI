@@ -1,0 +1,716 @@
+{
+ "_meta": {
+  "question_id": "public_0659",
+  "current_time": "2026-11-04T11:25:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_181",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_4745",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_7533",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_8214",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_8214",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 1,
+      "note": null
+     },
+     {
+      "item_id": "rest_01_m3",
+      "name": "Chả cua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 70000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_545",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Đà Nẵng",
+    "destination": "Huế",
+    "date": "2026-11-08",
+    "depart": "13:00",
+    "arrive": "23:30",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_486",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Đà Nẵng",
+    "destination": "Huế",
+    "date": "2026-11-08",
+    "depart": "13:00",
+    "arrive": "20:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_95",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Đà Nẵng",
+    "destination": "Quảng Ngãi",
+    "date": "2026-11-05",
+    "depart": "21:00",
+    "arrive": "04:30",
+    "price": 450000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_81",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Đà Nẵng",
+    "destination": "Quảng Ngãi",
+    "date": "2026-11-05",
+    "depart": "21:00",
+    "arrive": "04:30",
+    "price": 320000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_899",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Đà Nẵng",
+    "destination": "Quảng Ngãi",
+    "date": "2026-11-05",
+    "depart": "19:00",
+    "arrive": "02:00",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_587",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Đà Nẵng",
+    "destination": "Huế",
+    "date": "2026-11-08",
+    "depart": "19:00",
+    "arrive": "22:30",
+    "price": 250000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_196",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Đà Nẵng",
+    "destination": "Quảng Ngãi",
+    "date": "2026-11-05",
+    "depart": "19:00",
+    "arrive": "00:30",
+    "price": 250000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_832",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Đà Nẵng",
+    "destination": "Huế",
+    "date": "2026-11-08",
+    "depart": "19:00",
+    "arrive": "00:00",
+    "price": 680000,
+    "seats_left": 2
+   }
+  ],
+  "bookings": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_5211",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_454",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_523",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_197",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_415",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_1460",
+    "items": [
+     {
+      "product_id": "gro_197",
+      "name": "Thịt ba chỉ heo 500g",
+      "price": 79000,
+      "quantity": 1
+     }
+    ],
+    "total": 79000,
+    "status": "delivered",
+    "delivery_time": "2026-10-26T09:00:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_833",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09773314622"
+   },
+   {
+    "id": "c_694",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09886021149"
+   },
+   {
+    "id": "c_834",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09874811378"
+   },
+   {
+    "id": "c_2525",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09714723845"
+   },
+   {
+    "id": "c_1557",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09424116197"
+   },
+   {
+    "id": "c_92",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09295747384"
+   },
+   {
+    "id": "c_9213",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09480717297"
+   },
+   {
+    "id": "c_181",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09538582875"
+   },
+   {
+    "id": "c_447",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09615276590"
+   },
+   {
+    "id": "c_477",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09620233500"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_442",
+    "time": "2026-11-05T08:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_237",
+    "time": "2026-11-05T06:15:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_649",
+    "time": "2026-11-05T06:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 65000,
+  "routes": [
+   {
+    "id": "bus_r1",
+    "name": "Tuyến R1",
+    "type": "bus",
+    "stops": [
+     "Hội An",
+     "Ngũ Hành Sơn",
+     "Hải Châu",
+     "Bến xe Trung tâm"
+    ],
+    "fare": 30000,
+    "duration_min": 70,
+    "headway_min": 30
+   },
+   {
+    "id": "bus_r16",
+    "name": "Tuyến R16",
+    "type": "bus",
+    "stops": [
+     "Bến xe Trung tâm",
+     "Nguyễn Văn Linh",
+     "Cầu Rồng",
+     "Sơn Trà"
+    ],
+    "fare": 5000,
+    "duration_min": 40,
+    "headway_min": 20
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Ngũ Hành Sơn",
+    "route": "bus_r1",
+    "time": "2026-11-04T11:52:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Văn Linh",
+    "route": "bus_r16",
+    "time": "2026-11-04T12:09:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Văn Linh",
+    "route": "bus_r16",
+    "time": "2026-11-04T11:29:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Văn Linh",
+    "route": "bus_r16",
+    "time": "2026-11-04T11:49:00+07:00"
+   },
+   {
+    "stop": "Ngũ Hành Sơn",
+    "route": "bus_r1",
+    "time": "2026-11-04T12:52:00+07:00"
+   },
+   {
+    "stop": "Ngũ Hành Sơn",
+    "route": "bus_r1",
+    "time": "2026-11-04T12:22:00+07:00"
+   }
+  ],
+  "topups": [
+   {
+    "id": "top_01",
+    "amount": 50000,
+    "status": "done"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_973",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_5642",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_575",
+    "origin": "DAD",
+    "destination": "SGN",
+    "date": "2026-11-18",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_8846",
+    "origin": "DAD",
+    "destination": "SGN",
+    "date": "2026-11-18",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_287",
+    "origin": "DAD",
+    "destination": "SGN",
+    "date": "2026-11-18",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_4269",
+    "origin": "DAD",
+    "destination": "SGN",
+    "date": "2026-11-18",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_6120",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-11-12",
+    "depart": "07:30",
+    "arrive": "08:50",
+    "airline": "Sen Air",
+    "price": 1350000
+   },
+   {
+    "id": "fl_933",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-15",
+    "depart": "18:00",
+    "arrive": "19:20",
+    "airline": "Sen Air",
+    "price": 1290000
+   },
+   {
+    "id": "fl_2214",
+    "origin": "DAD",
+    "destination": "PQC",
+    "date": "2026-11-08",
+    "depart": "10:15",
+    "arrive": "12:05",
+    "airline": "Rồng Việt Air",
+    "price": 1650000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_455",
+    "flight_id": "fl_8846",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_129",
+    "flight_id": "fl_2214",
+    "passengers": 2,
+    "seat_class": "economy",
+    "status": "cancelled"
+   },
+   {
+    "id": "bk_318",
+    "flight_id": "fl_933",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_702",
+    "flight_id": "fl_6120",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

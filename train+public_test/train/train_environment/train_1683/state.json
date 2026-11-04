@@ -1,0 +1,458 @@
+{
+ "_meta": {
+  "question_id": "train_1683",
+  "current_time": "2026-12-02T16:20:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_787",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 209000,
+    "due_date": "2026-12-10",
+    "paid": false
+   },
+   {
+    "id": "bill_668",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 199000,
+    "due_date": "2026-12-08",
+    "paid": false
+   },
+   {
+    "id": "bill_231",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 853000,
+    "due_date": "2026-12-11",
+    "paid": false
+   },
+   {
+    "id": "bill_768",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 225000,
+    "due_date": "2026-12-05",
+    "paid": false
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_482",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_939",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_727",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_447",
+    "show_id": "show_939",
+    "title": "Số 16: Nhà giả kim - phần 2",
+    "number": 16,
+    "duration_min": 45,
+    "published": "2026-11-25"
+   },
+   {
+    "id": "ep_2025",
+    "show_id": "show_727",
+    "title": "Số 7: Rác thải nhựa ở đô thị",
+    "number": 7,
+    "duration_min": 25,
+    "published": "2026-11-11"
+   },
+   {
+    "id": "ep_5102",
+    "show_id": "show_482",
+    "title": "Số 11: Nghề diễn và những áp lực",
+    "number": 11,
+    "duration_min": 32,
+    "published": "2026-11-25"
+   },
+   {
+    "id": "ep_555",
+    "show_id": "show_939",
+    "title": "Số 15: Nhà giả kim - phần 1",
+    "number": 15,
+    "duration_min": 25,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_745",
+    "show_id": "show_482",
+    "title": "Số 10: Sống chậm giữa thành phố",
+    "number": 10,
+    "duration_min": 45,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_687",
+    "show_id": "show_727",
+    "title": "Số 9: Đi xe đạp đi làm",
+    "number": 9,
+    "duration_min": 32,
+    "published": "2026-11-25"
+   },
+   {
+    "id": "ep_8271",
+    "show_id": "show_727",
+    "title": "Số 8: Trồng cây trên sân thượng",
+    "number": 8,
+    "duration_min": 18,
+    "published": "2026-11-18"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_3751",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_2594",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_69",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_183",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_727"
+  ],
+  "queue": [],
+  "now_playing": {
+   "episode_id": "ep_447",
+   "show_id": "show_939",
+   "status": "playing"
+  }
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5019",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09386600653"
+   },
+   {
+    "id": "c_2485",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09297099005"
+   },
+   {
+    "id": "c_8470",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09383752074"
+   },
+   {
+    "id": "c_8500",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09623992864"
+   },
+   {
+    "id": "c_757",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09275098347"
+   },
+   {
+    "id": "c_8360",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09185389340"
+   },
+   {
+    "id": "c_996",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09658101976"
+   },
+   {
+    "id": "c_95",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09185263981"
+   },
+   {
+    "id": "c_1847",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09468689268"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_690",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2615",
+    "name": "Vợ Hà",
+    "type": "direct",
+    "members": [
+     "Vợ Hà"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_417",
+    "name": "Emily",
+    "type": "direct",
+    "members": [
+     "Emily"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_39",
+    "name": "Lucas",
+    "type": "direct",
+    "members": [
+     "Lucas"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_242",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 2200000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_996",
+    "amount": -1000000,
+    "note": null
+   },
+   {
+    "id": "tx_02",
+    "type": "topup_mobile",
+    "phone": "09185389340",
+    "amount": -200000
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_2560",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_772",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_3484",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_816",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_02",
+    "title": "",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "22:00",
+    "enabled": true
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "Homestay Garden House, 9 Nguyễn Sinh Cung, Huế",
+    "dropoff": "Ga Huế",
+    "vehicle": "car4"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_6729",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-12-02T00:05:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_3814",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-12-02T11:05:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_995",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-12-01T10:20:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_4725",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-12-01T14:50:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_5261",
+    "title": "Xe buýt sân bay Nội Bài tăng chuyến dịp cuối năm",
+    "topic": "general",
+    "source": "TinViệt",
+    "published_at": "2026-12-02T08:40:00+07:00",
+    "summary": "Tuyến buýt 86 chạy 20 phút một chuyến, giá vé 45.000 đồng."
+   }
+  ],
+  "saved": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_200",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_650",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_185",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_733",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ }
+}

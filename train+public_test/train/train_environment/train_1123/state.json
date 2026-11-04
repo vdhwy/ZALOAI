@@ -1,0 +1,532 @@
+{
+ "_meta": {
+  "question_id": "train_1123",
+  "current_time": "2026-11-18T16:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_124",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_494",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_586",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_191",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_7537",
+    "title": "khám răng",
+    "start": "2026-11-21T19:30:00+07:00",
+    "end": "2026-11-21T20:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6301",
+    "title": "đá bóng",
+    "start": "2026-11-21T14:30:00+07:00",
+    "end": "2026-11-21T15:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_954",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-19T15:30:00+07:00",
+    "end": "2026-11-19T16:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_89",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-20T14:30:00+07:00",
+    "end": "2026-11-20T15:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3764",
+    "title": "đi chơi công viên",
+    "start": "2026-11-19T14:00:00+07:00",
+    "end": "2026-11-19T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_800",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 3000,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_396",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 2000,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_945",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_1553",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-16",
+    "used": false
+   },
+   {
+    "id": "vch_245",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-24",
+    "used": false
+   },
+   {
+    "id": "vch_5655",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-11-27",
+    "used": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_9336",
+    "time": "2026-11-19T06:15:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_3159",
+    "time": "2026-11-19T08:00:00+07:00",
+    "label": "mở cửa vựa",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_236",
+    "time": "2026-11-19T06:30:00+07:00",
+    "label": "đưa cháu đi học",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "programs": [
+   {
+    "id": "prg_771",
+    "channel": "VTV6",
+    "title": "Trực tiếp V-League: Thép Xanh Nam Định - Hà Nội",
+    "start": "2026-11-18T16:00:00+07:00",
+    "end": "2026-11-18T18:00:00+07:00"
+   },
+   {
+    "id": "prg_1204",
+    "channel": "S+ Sport",
+    "title": "Trực tiếp V-League: Hải Phòng - Sông Lam Nghệ An",
+    "start": "2026-11-18T16:00:00+07:00",
+    "end": "2026-11-18T18:00:00+07:00"
+   },
+   {
+    "id": "prg_336",
+    "channel": "VTV3",
+    "title": "Phim truyện: Thương ngày nắng về",
+    "start": "2026-11-18T16:00:00+07:00",
+    "end": "2026-11-18T17:00:00+07:00"
+   },
+   {
+    "id": "prg_95",
+    "channel": "VTV1",
+    "title": "Thời sự",
+    "start": "2026-11-18T19:00:00+07:00",
+    "end": "2026-11-18T19:45:00+07:00"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_791",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-11-18T11:35:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_130",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-17T18:20:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_5331",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-17T11:50:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_64",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-18T10:20:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   }
+  ],
+  "saved": []
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_3468",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_3453",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_9016",
+    "time": "2026-11-18T13:45:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_1160",
+    "time": "2026-11-17T15:30:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_5019",
+    "time": "2026-11-18T07:25:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   }
+  ]
+ }
+}

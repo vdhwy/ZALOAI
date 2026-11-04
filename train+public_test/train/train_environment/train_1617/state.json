@@ -1,0 +1,489 @@
+{
+ "_meta": {
+  "question_id": "train_1617",
+  "current_time": "2026-11-23T16:20:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_4502",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-25T10:30:00+07:00",
+    "link": "https://meet.example.test/wjd-ebfi-pys",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_1002",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-24T15:00:00+07:00",
+    "link": "https://meet.example.test/xhm-adva-raj",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_418",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_6139",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": false
+   },
+   {
+    "id": "rule_5583",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-23",
+    "to": "2026-11-23",
+    "kwh": 8.7,
+    "cost": 25200,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.9
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.7
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-17",
+    "to": "2026-11-23",
+    "kwh": 80.9,
+    "cost": 234600,
+    "days": [
+     {
+      "date": "2026-11-17",
+      "kwh": 15.4
+     },
+     {
+      "date": "2026-11-18",
+      "kwh": 14.8
+     },
+     {
+      "date": "2026-11-19",
+      "kwh": 12.1
+     },
+     {
+      "date": "2026-11-20",
+      "kwh": 7.3
+     },
+     {
+      "date": "2026-11-21",
+      "kwh": 14.9
+     },
+     {
+      "date": "2026-11-22",
+      "kwh": 7.7
+     },
+     {
+      "date": "2026-11-23",
+      "kwh": 8.7
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-23",
+    "kwh": 256.1,
+    "cost": 742700
+   }
+  },
+  "alert_threshold_kwh": 350
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_302",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_567",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_988",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": "c_6646",
+    "phone_number": "09931474243",
+    "status": "dialing"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_804",
+    "title": "đá bóng",
+    "start": "2026-11-24T17:00:00+07:00",
+    "end": "2026-11-24T18:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_174",
+    "title": "họp phụ huynh",
+    "start": "2026-11-24T09:30:00+07:00",
+    "end": "2026-11-24T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_522",
+    "title": "họp team",
+    "start": "2026-11-24T18:00:00+07:00",
+    "end": "2026-11-24T19:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_533",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-04",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_151",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-04",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_452",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-04",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_362",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-04",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_8287",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09200076475"
+   },
+   {
+    "id": "c_6646",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09931474243"
+   },
+   {
+    "id": "c_3758",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09902113410"
+   },
+   {
+    "id": "c_1730",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09197709518"
+   },
+   {
+    "id": "c_31",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09235095193"
+   },
+   {
+    "id": "c_284",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09919269577"
+   },
+   {
+    "id": "c_795",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09527806883"
+   },
+   {
+    "id": "c_2677",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09178390298"
+   },
+   {
+    "id": "c_4500",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09331460848"
+   },
+   {
+    "id": "c_7191",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09143550490"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_317",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_262",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_2390",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_611",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_382",
+    "time": "2026-11-22T12:30:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_743",
+    "time": "2026-11-21T23:20:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_948",
+    "time": "2026-11-22T14:15:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_552",
+    "time": "2026-11-22T14:50:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_4415",
+    "time": "2026-11-23T12:20:00+07:00",
+    "type": "door_open",
+    "location": "cửa gara",
+    "message": "Cửa gara mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_6071",
+    "time": "2026-11-23T13:10:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_219",
+    "time": "2026-11-23T14:05:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_830",
+    "time": "2026-11-23T15:40:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 31,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-23",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-24",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-25",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-26",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 28
+   }
+  ]
+ }
+}

@@ -1,0 +1,406 @@
+{
+ "_meta": {
+  "question_id": "public_0504",
+  "current_time": "2026-12-15T16:40:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_1036",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-14T12:00:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_6120",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-20T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_6315",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-17T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_142",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-16T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_684",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-20T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_127",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": true
+   },
+   {
+    "id": "item_1647",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_768",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 100,
+    "avg_price": 27650,
+    "price": 27150
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 1000,
+    "avg_price": 92100,
+    "price": 90650
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 32650,
+    "change_pct": -2.1
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 90650,
+    "change_pct": -1.4
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1695,
+    "change_pct": 1.2
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 27150,
+    "change_pct": 0.7
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 63300,
+    "change_pct": -0.5
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 130700,
+    "change_pct": -2.7
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_67",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_22",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 0
+   },
+   {
+    "id": "lot_993",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 3
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_416",
+    "lot_id": "lot_67",
+    "from_time": "2026-12-15T13:00:00+07:00",
+    "hours": 4,
+    "end_time": "2026-12-15T17:00:00+07:00",
+    "total": 160000,
+    "status": "reserved"
+   },
+   {
+    "id": "park_95",
+    "lot_id": "lot_993",
+    "from_time": "2026-12-16T14:00:00+07:00",
+    "hours": 2,
+    "end_time": "2026-12-16T16:00:00+07:00",
+    "total": 50000,
+    "status": "reserved"
+   },
+   {
+    "id": "park_3301",
+    "lot_id": "lot_22",
+    "from_time": "2026-12-13T09:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-12-13T12:00:00+07:00",
+    "total": 90000,
+    "status": "ended"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_136",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_25",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_91",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_4523",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_654",
+    "title": "họp phụ huynh",
+    "start": "2026-12-18T09:00:00+07:00",
+    "end": "2026-12-18T10:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3540",
+    "title": "họp team",
+    "start": "2026-12-16T14:30:00+07:00",
+    "end": "2026-12-16T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_880",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-16T19:00:00+07:00",
+    "end": "2026-12-16T21:00:00+07:00",
+    "location": "Nhà",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_680",
+    "title": "đá bóng",
+    "start": "2026-12-16T10:00:00+07:00",
+    "end": "2026-12-16T11:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_114",
+    "title": "đi chơi công viên",
+    "start": "2026-12-18T18:30:00+07:00",
+    "end": "2026-12-18T19:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_364",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_777",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_924",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_800",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_128",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 201000,
+    "due_date": "2026-12-20",
+    "paid": false
+   },
+   {
+    "id": "bill_22",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 211000,
+    "due_date": "2026-12-24",
+    "paid": false
+   }
+  ]
+ }
+}

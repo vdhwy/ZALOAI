@@ -1,0 +1,333 @@
+{
+ "_meta": {
+  "question_id": "train_1392",
+  "current_time": "2026-10-17T15:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_804",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_346",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_5314",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_628",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_505",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_753",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ },
+ "calculator": {},
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_2435",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-11-13",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_443",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-10-30",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_727",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-10-26",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_4913",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-10-21",
+    "status": "paused",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_956",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-10-17T01:45:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_9864",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-10-14T16:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_8789",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-10-15T17:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_535",
+    "from": "dung.pham@congty.example.test",
+    "from_name": "Anh Dũng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-10-15T23:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_9059",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-10-14T23:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_867",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 194000,
+    "due_date": "2026-10-21",
+    "paid": false
+   },
+   {
+    "id": "bill_524",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 851000,
+    "due_date": "2026-10-24",
+    "paid": true,
+    "paid_with": "ewallet"
+   },
+   {
+    "id": "bill_3391",
+    "type": "internet",
+    "provider": "SaoTel",
+    "amount": 265000,
+    "due_date": "2026-10-28",
+    "paid": false
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "ewallet": {
+  "balance": 249000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "bill_payment",
+    "bill_id": "bill_524",
+    "amount": -851000
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_687",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-22T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_105",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-22T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_496",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-20T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_6258",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_703",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_816",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ }
+}

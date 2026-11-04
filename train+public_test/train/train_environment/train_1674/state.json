@@ -1,0 +1,497 @@
+{
+ "_meta": {
+  "question_id": "train_1674",
+  "current_time": "2026-12-11T18:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_8154",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_359",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 35
+   },
+   {
+    "id": "lock_187",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_86",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-12-18",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_667",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2027-01-02",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_770",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-12-23",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_20",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_771",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_265",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_460",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": [
+   {
+    "id": "brs_01",
+    "bike_id": "bike_265",
+    "station": "Trạm Hồ Tây",
+    "status": "reserved"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_1139",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_3116",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_151",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_2654",
+    "from": "phong.le@ftu.example.test",
+    "from_name": "Thầy Phong",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Nhắc nộp bản nháp khoá luận",
+    "snippet": "Em nộp bản nháp chương 2 trước thứ hai nhé.",
+    "body": "Linh ơi, em nộp bản nháp chương 2 khoá luận cho thầy trước sáng thứ hai nhé. Thầy góp ý trong tuần sau.",
+    "time": "2026-12-11T07:40:00+07:00",
+    "unread": false,
+    "folder": "inbox",
+    "replied": true
+   },
+   {
+    "id": "mail_8749",
+    "from": "clb.tienganh@ftu.example.test",
+    "from_name": "CLB Tiếng Anh FTU",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Mời tham gia workshop thuyết trình",
+    "snippet": "Workshop thuyết trình tiếng Anh sáng thứ bảy tại phòng A305.",
+    "body": "Chào bạn, CLB mời bạn tham gia workshop thuyết trình tiếng Anh lúc 9 giờ sáng thứ bảy tại phòng A305.",
+    "time": "2026-12-11T06:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5408",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-12-08T23:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_4092",
+    "from": "daotao@ftu.example.test",
+    "from_name": "Phòng Đào tạo",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch thi học kỳ I",
+    "snippet": "Lịch thi học kỳ I đã được cập nhật trên cổng thông tin.",
+    "body": "Phòng Đào tạo thông báo lịch thi học kỳ I đã được cập nhật, sinh viên kiểm tra trên cổng thông tin.",
+    "time": "2026-12-10T16:00:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [
+   {
+    "id": "sent_01",
+    "to": [
+     "phong.le@ftu.example.test"
+    ],
+    "cc": [],
+    "subject": "Re: Nhắc nộp bản nháp khoá luận",
+    "body": "Dạ em chào thầy, em sẽ nộp bản nháp chương 2 vào tối chủ nhật ạ. Em cảm ơn thầy.",
+    "in_reply_to": "mail_2654"
+   }
+  ],
+  "drafts": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_324",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09160296193"
+   },
+   {
+    "id": "c_974",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09476554303"
+   },
+   {
+    "id": "c_524",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09404323612"
+   },
+   {
+    "id": "c_758",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09665774532"
+   },
+   {
+    "id": "c_864",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09109051016"
+   },
+   {
+    "id": "c_850",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09138825253"
+   },
+   {
+    "id": "c_787",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09875996104"
+   },
+   {
+    "id": "c_678",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09417784651"
+   },
+   {
+    "id": "c_5931",
+    "name": "Michael Chen",
+    "relation": "bạn trao đổi sinh viên",
+    "phone": "09381247760"
+   },
+   {
+    "id": "c_2207",
+    "name": "Michael Cheng",
+    "relation": "bạn cùng lớp tiếng Trung",
+    "phone": "09724418356"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_818",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_81",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_736",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_2957",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_736",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 50000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_2957",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 39000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_01",
+    "contact_id": "c_758",
+    "phone_number": "09665774532",
+    "direction": "outgoing",
+    "content": "Trưa nay tớ về muộn, cậu cứ ăn trước đi nhé."
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_3328",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-10T09:30:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_1638",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-11T12:30:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_518",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-16T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_5492",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-13T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_743",
+    "time": "2026-12-12T06:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_6662",
+    "time": "2026-12-12T05:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_322",
+    "time": "2026-12-12T07:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ }
+}

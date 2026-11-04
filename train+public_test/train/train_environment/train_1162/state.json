@@ -1,0 +1,384 @@
+{
+ "_meta": {
+  "question_id": "train_1162",
+  "current_time": "2026-10-31T12:05:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_614",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_84",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_784",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_66",
+    "show_id": "show_84",
+    "title": "Số 8: Nhà giả kim - phần 1",
+    "number": 8,
+    "duration_min": 45,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_9222",
+    "show_id": "show_614",
+    "title": "Số 7: Sống chậm giữa thành phố",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_501",
+    "show_id": "show_784",
+    "title": "Số 9: Rác thải nhựa ở đô thị",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_9781",
+    "show_id": "show_784",
+    "title": "Số 10: Trồng cây trên sân thượng",
+    "number": 10,
+    "duration_min": 18,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_15",
+    "show_id": "show_614",
+    "title": "Số 8: Nghề diễn và những áp lực",
+    "number": 8,
+    "duration_min": 32,
+    "published": "2026-10-24"
+   },
+   {
+    "id": "ep_6383",
+    "show_id": "show_784",
+    "title": "Số 11: Đi xe đạp đi làm",
+    "number": 11,
+    "duration_min": 18,
+    "published": "2026-10-24"
+   },
+   {
+    "id": "ep_753",
+    "show_id": "show_84",
+    "title": "Số 9: Nhà giả kim - phần 2",
+    "number": 9,
+    "duration_min": 45,
+    "published": "2026-10-24"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_452",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_337",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_849",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_4439",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_784"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "sms": {
+  "messages": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_544",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-10-30T17:05:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_557",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-10-30T21:40:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_6031",
+    "title": "Thể Công SaoTel hòa Nam Định trên sân Thiên Trường",
+    "topic": "sports",
+    "source": "TinViệt",
+    "published_at": "2026-10-30T20:55:00+07:00",
+    "summary": "Hai đội chia điểm 1-1 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_5787",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-10-30T08:35:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_293",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-10-31T01:50:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_534",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-10-30T10:35:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   }
+  ],
+  "saved": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22100
+   },
+   {
+    "type": "e5",
+    "price": 20900
+   },
+   {
+    "type": "diesel",
+    "price": 19500
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 28,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-31",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-01",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-02",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-03",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-31",
+    "to": "2026-10-31",
+    "kwh": 5.2,
+    "cost": 15100,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 2.3
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.0
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-25",
+    "to": "2026-10-31",
+    "kwh": 75.7,
+    "cost": 219500,
+    "days": [
+     {
+      "date": "2026-10-25",
+      "kwh": 11.6
+     },
+     {
+      "date": "2026-10-26",
+      "kwh": 15.4
+     },
+     {
+      "date": "2026-10-27",
+      "kwh": 14.0
+     },
+     {
+      "date": "2026-10-28",
+      "kwh": 7.1
+     },
+     {
+      "date": "2026-10-29",
+      "kwh": 7.4
+     },
+     {
+      "date": "2026-10-30",
+      "kwh": 15.0
+     },
+     {
+      "date": "2026-10-31",
+      "kwh": 5.2
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-31",
+    "kwh": 340.8,
+    "cost": 988300
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_5999",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": false
+   },
+   {
+    "id": "rule_9070",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_935",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": false
+   },
+   {
+    "id": "rule_185",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_284",
+    "name": "Tuấn",
+    "relation": "con trai",
+    "phone": "09134277654"
+   },
+   {
+    "id": "c_51",
+    "name": "Hương",
+    "relation": "con dâu",
+    "phone": "09861304922"
+   },
+   {
+    "id": "c_733",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09045582171"
+   },
+   {
+    "id": "c_1690",
+    "name": "Bà Nụ",
+    "relation": "hàng xóm",
+    "phone": "03627044185"
+   }
+  ]
+ }
+}

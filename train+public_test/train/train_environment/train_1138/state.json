@@ -1,0 +1,403 @@
+{
+ "_meta": {
+  "question_id": "train_1138",
+  "current_time": "2026-10-29T22:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_828",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 214000,
+    "due_date": "2026-11-03",
+    "paid": false
+   },
+   {
+    "id": "bill_368",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 852000,
+    "due_date": "2026-11-01",
+    "paid": false
+   },
+   {
+    "id": "bill_1354",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 225000,
+    "due_date": "2026-11-03",
+    "paid": false
+   },
+   {
+    "id": "bill_854",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 155000,
+    "due_date": "2026-11-06",
+    "paid": false
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_567",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_420",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_584",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_177",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_702",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_866",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_781",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_29",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_687",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_520",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_704",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_898",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_3573",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-11-02",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_23",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-11-15",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_685",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-10-31",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_188",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-11-15",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_827",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_505",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1542",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_296",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_926",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_4611",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_936",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_194",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_2827",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-10-29",
+    "prizes": {
+     "special": "578782",
+     "first": "86486",
+     "eighth": "34"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-10-29",
+    "prizes": {
+     "special": "105575",
+     "first": "56959",
+     "eighth": "86"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-10-29",
+    "prizes": {
+     "special": "411726",
+     "first": "54882",
+     "eighth": "80"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-10-29",
+    "prizes": {
+     "special": "695109",
+     "first": "94327",
+     "eighth": "63"
+    }
+   }
+  ]
+ }
+}

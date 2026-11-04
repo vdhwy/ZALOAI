@@ -1,0 +1,519 @@
+{
+ "_meta": {
+  "question_id": "public_0595",
+  "current_time": "2026-10-28T15:00:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate"
+  ]
+ },
+ "ewallet": {
+  "balance": 420000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_837",
+    "amount": -200000,
+    "note": "tiền vé xem phim"
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_867",
+    "name": "Bãi đỗ xe Công viên 23/9",
+    "address": "Phạm Ngũ Lão, Quận 1, TP.HCM",
+    "area": "Bến Thành",
+    "price_per_hour": 30000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_4914",
+    "name": "Bãi đỗ Nam Đô Centre",
+    "address": "65 Lê Lợi, Quận 1, TP.HCM",
+    "area": "Lê Lợi",
+    "price_per_hour": 35000,
+    "available_spots": 0
+   },
+   {
+    "id": "lot_365",
+    "name": "Hầm xe Sao Kim Plaza Đồng Khởi",
+    "address": "72 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "area": "Nguyễn Huệ",
+    "price_per_hour": 40000,
+    "available_spots": 40
+   }
+  ],
+  "sessions": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_473",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-29T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_5626",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-31T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_92",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-01T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_508",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-02T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_7731",
+    "from": "billing@oriontech.example.test",
+    "from_name": "Orion Tech",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Invoice INV-2210 in standee sự kiện ra mắt",
+    "snippet": "Gửi chị My invoice đơn in standee tháng 10, chi tiết trong mail.",
+    "body": "Chào chị My, Orion Tech gửi invoice INV-2210 cho đơn in 6 standee sự kiện ra mắt. Tổng tiền cần thanh toán: 380.000đ, hạn thanh toán 30/10/2026, chuyển qua ví điện tử. Cảm ơn chị.",
+    "time": "2026-10-28T10:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_7768",
+    "from": "ketoan@orienttech.example.test",
+    "from_name": "Orient Tech",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Invoice INV-0937 thuê máy chiếu",
+    "snippet": "Invoice thuê máy chiếu cho buổi workshop tuần trước.",
+    "body": "Chào chị My, Orient Tech gửi invoice INV-0937 thuê máy chiếu 2 ngày cho workshop. Tổng tiền: 390.000đ, hạn 05/11/2026.",
+    "time": "2026-10-28T09:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_16",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-10-27T23:30:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_9297",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-10-27T16:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_2585",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-10-27T00:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_873",
+    "name": "Anh Long",
+    "type": "direct",
+    "members": [
+     "Anh Long"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7924",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_74",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_636",
+    "name": "Sếp Kim",
+    "type": "direct",
+    "members": [
+     "Sếp Kim"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_729",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_516",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Vũng Tàu",
+    "date": "2026-11-02",
+    "depart": "06:00",
+    "arrive": "16:30",
+    "price": 400000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_287",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-11-04",
+    "depart": "19:00",
+    "arrive": "05:30",
+    "price": 920000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_883",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-11-04",
+    "depart": "13:00",
+    "arrive": "23:00",
+    "price": 320000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_535",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Vũng Tàu",
+    "date": "2026-11-02",
+    "depart": "21:00",
+    "arrive": "04:00",
+    "price": 400000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_525",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-11-04",
+    "depart": "06:00",
+    "arrive": "09:00",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_283",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-11-04",
+    "depart": "06:00",
+    "arrive": "11:00",
+    "price": 920000,
+    "seats_left": 15
+   }
+  ],
+  "bookings": []
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   },
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_362",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09297195169"
+   },
+   {
+    "id": "c_200",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09725832927"
+   },
+   {
+    "id": "c_503",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09924966498"
+   },
+   {
+    "id": "c_961",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09459300358"
+   },
+   {
+    "id": "c_837",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09596465925"
+   },
+   {
+    "id": "c_706",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09114694790"
+   },
+   {
+    "id": "c_1928",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09131282769"
+   },
+   {
+    "id": "c_5604",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09423443683"
+   },
+   {
+    "id": "c_291",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09168818146"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_144",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-11",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_96",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-11",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_251",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-11",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_871",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-11",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_191",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_244",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_1844",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_691",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_824",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_531",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_2665",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_1006",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_825",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ }
+}

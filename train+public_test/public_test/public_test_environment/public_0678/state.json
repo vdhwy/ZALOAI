@@ -1,0 +1,497 @@
+{
+ "_meta": {
+  "question_id": "public_0678",
+  "current_time": "2026-11-25T08:45:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate"
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_4772",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-12-13",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_864",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-12-13",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_878",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-12-13",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_803",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-12-13",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_5318",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-26",
+    "depart": "09:00",
+    "arrive": "10:20",
+    "airline": "Sen Air",
+    "price": 1350000
+   },
+   {
+    "id": "fl_2964",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-26",
+    "depart": "17:00",
+    "arrive": "18:20",
+    "airline": "JetXanh",
+    "price": 1090000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_563",
+    "flight_id": "fl_5318",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_208",
+    "flight_id": "fl_4772",
+    "passengers": 2,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_4127",
+    "flight_id": "fl_2964",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   },
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_6953",
+    "title": "khám răng",
+    "start": "2026-11-26T10:30:00+07:00",
+    "end": "2026-11-26T11:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_791",
+    "title": "đá bóng",
+    "start": "2026-11-26T18:30:00+07:00",
+    "end": "2026-11-26T19:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_602",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_1707",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_971",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_875",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_636",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_4396",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": [
+   {
+    "id": "fav_01",
+    "place_id": "place_602",
+    "label": "nhà thuốc quen"
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 1000,
+    "avg_price": 129800,
+    "price": 129400
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "quantity": 200,
+    "avg_price": 68000,
+    "price": 63200
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 100,
+    "avg_price": 55300,
+    "price": 59000
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1631,
+    "change_pct": -1.2
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 63200,
+    "change_pct": 3.2
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 129400,
+    "change_pct": -0.6
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59000,
+    "change_pct": -2.4
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 27600,
+    "change_pct": -1.0
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24700,
+    "change_pct": 1.8
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_667",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_1881",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_775",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_6674",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_8482",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_7950",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_257",
+    "items": [
+     {
+      "product_id": "gro_775",
+      "name": "Trứng gà ta hộp 10 quả",
+      "price": 42000,
+      "quantity": 3
+     }
+    ],
+    "total": 126000,
+    "status": "delivered",
+    "delivery_time": "2026-11-22T09:00:00+07:00"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_3031",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 203000,
+    "due_date": "2026-12-01",
+    "paid": false
+   },
+   {
+    "id": "bill_654",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 845000,
+    "due_date": "2026-12-04",
+    "paid": false
+   },
+   {
+    "id": "bill_614",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 147000,
+    "due_date": "2026-12-03",
+    "paid": false
+   },
+   {
+    "id": "bill_355",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 208000,
+    "due_date": "2026-12-04",
+    "paid": false
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_8299",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-30",
+    "depart": "08:00",
+    "arrive": "13:00",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_9913",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-30",
+    "depart": "19:00",
+    "arrive": "00:00",
+    "price": 250000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_548",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-27",
+    "depart": "21:00",
+    "arrive": "07:00",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_436",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-27",
+    "depart": "21:00",
+    "arrive": "07:00",
+    "price": 320000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_556",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-27",
+    "depart": "19:00",
+    "arrive": "22:00",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_313",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-27",
+    "depart": "08:00",
+    "arrive": "15:30",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_77",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-30",
+    "depart": "08:00",
+    "arrive": "13:00",
+    "price": 920000,
+    "seats_left": 14
+   },
+   {
+    "id": "trip_851",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-30",
+    "depart": "13:00",
+    "arrive": "23:30",
+    "price": 920000,
+    "seats_left": 8
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_01",
+    "trip_id": "trip_77",
+    "seats": 1,
+    "total": 920000,
+    "status": "confirmed"
+   }
+  ]
+ }
+}

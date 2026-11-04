@@ -1,0 +1,268 @@
+{
+ "_meta": {
+  "question_id": "train_0778",
+  "current_time": "2026-10-01T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-02T15:00:00+07:00",
+    "end": "2026-10-02T16:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "họp phụ huynh",
+    "start": "2026-10-03T14:30:00+07:00",
+    "end": "2026-10-03T15:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "đá bóng",
+    "start": "2026-10-03T15:00:00+07:00",
+    "end": "2026-10-03T16:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-10-01T05:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-09-30T19:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "archived@minhha.example",
+    "from_name": "Minh Hà",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hồ sơ đã ngừng giao dịch",
+    "snippet": "Hộp thư này sẽ không còn được theo dõi.",
+    "body": "Công ty đã ngừng giao dịch theo mã số thuế 0101122334, hộp thư này sẽ không còn được theo dõi.",
+    "time": "2026-09-29T01:45:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_04",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-09-28T11:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Minh Hà",
+    "type": "direct",
+    "members": [
+     "Minh Hà"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Kỳ này bên em gửi đối soát qua email cũ nhé.",
+      "time": "2026-09-25T10:00:00+07:00"
+     },
+     {
+      "from": "Minh Hà",
+      "content": "Dạ từ kỳ sau anh chị gửi đối soát và thanh toán qua email mới billing@minhha.example giúp em nhé, MST bên em vẫn là 0109988776 ạ.",
+      "time": "2026-10-01T08:20:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_03",
+    "name": "Mai",
+    "type": "direct",
+    "members": [
+     "Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_02",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_03",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-07T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-06T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-07T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-01T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Minh Hà",
+    "relation": "nhà cung cấp đang giao dịch, MST 0109988776",
+    "phone": "09030010058",
+    "email": "old-billing@minhha.example"
+   },
+   {
+    "id": "c_02",
+    "name": "Minh Hà",
+    "relation": "nhà cung cấp cũ, đã ngừng giao dịch, MST 0101122334",
+    "phone": "09030010069",
+    "email": "archived@minhha.example"
+   },
+   {
+    "id": "c_03",
+    "name": "Mai",
+    "relation": "phụ trách mua hàng",
+    "phone": "09030010070",
+    "email": "mai.muahang@example.test"
+   },
+   {
+    "id": "c_04",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09719187394"
+   },
+   {
+    "id": "c_05",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09258074601"
+   }
+  ]
+ }
+}

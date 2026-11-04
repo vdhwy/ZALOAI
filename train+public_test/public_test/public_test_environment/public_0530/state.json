@@ -1,0 +1,477 @@
+{
+ "_meta": {
+  "question_id": "public_0530",
+  "current_time": "2026-10-13T16:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "pantry.consume",
+   "pantry.list_items",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_804",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_956",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_971",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_951",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_867",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_7703",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_2460",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-29",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_840",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-29",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_6329",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-29",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_832",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-29",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   }
+  ],
+  "bookings": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_164",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_777",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_246",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_3573",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 1000,
+    "avg_price": 30250,
+    "price": 32650
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 500,
+    "avg_price": 123300,
+    "price": 126850
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 1000,
+    "avg_price": 63950,
+    "price": 59750
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59750,
+    "change_pct": 2.7
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1645,
+    "change_pct": 1.2
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 23450,
+    "change_pct": 1.8
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 126850,
+    "change_pct": -0.3
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 32650,
+    "change_pct": 0.3
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26650,
+    "change_pct": -3.5
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_734",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09364475963"
+   },
+   {
+    "id": "c_641",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09604945175"
+   },
+   {
+    "id": "c_364",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09585263929"
+   },
+   {
+    "id": "c_618",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09949005062"
+   },
+   {
+    "id": "c_812",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09400854370"
+   },
+   {
+    "id": "c_400",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09767810884"
+   },
+   {
+    "id": "c_405",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09685906744"
+   },
+   {
+    "id": "c_755",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09774952902"
+   },
+   {
+    "id": "c_490",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09284242865"
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_1984",
+    "name": "mì tôm",
+    "stock": 5,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_8176",
+    "name": "trứng gà",
+    "stock": 8,
+    "unit": "quả"
+   },
+   {
+    "id": "pan_85",
+    "name": "bột mì",
+    "stock": 3,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_795",
+    "name": "gạo ST25",
+    "stock": 4,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_873",
+    "name": "yến mạch",
+    "stock": 2,
+    "unit": "túi"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_427",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_249",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_718",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_711",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_523",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_284",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_865",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_547",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_276",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_828",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_734",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_743",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_132",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ }
+}

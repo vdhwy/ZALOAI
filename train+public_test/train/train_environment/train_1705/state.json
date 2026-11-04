@@ -1,0 +1,420 @@
+{
+ "_meta": {
+  "question_id": "train_1705",
+  "current_time": "2026-11-29T14:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_861",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-01T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_2311",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-01T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_147",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-02T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_847",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 7200,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_8458",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 1600,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_15",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-16",
+    "used": false
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_15",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_47",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_55",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_176",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_599",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_513",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_2776",
+    "time": "2026-11-30T05:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_167",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09871502436"
+   },
+   {
+    "id": "c_7859",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09272761206"
+   },
+   {
+    "id": "c_5737",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09126237044"
+   },
+   {
+    "id": "c_8490",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09355378572"
+   },
+   {
+    "id": "c_257",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09494369835"
+   },
+   {
+    "id": "c_8845",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09409956518"
+   },
+   {
+    "id": "c_576",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09923411920"
+   },
+   {
+    "id": "c_189",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09606657289"
+   },
+   {
+    "id": "c_1883",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09247899839"
+   },
+   {
+    "id": "c_756",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09198833764"
+   },
+   {
+    "id": "c_790",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09666074064"
+   },
+   {
+    "id": "c_3312",
+    "name": "Lộc",
+    "relation": "thợ sửa máy lạnh",
+    "phone": "09538841270"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23100
+   },
+   {
+    "type": "e5",
+    "price": 21900
+   },
+   {
+    "type": "diesel",
+    "price": 20500
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_210",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_687",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_5463",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_491",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_687",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 100000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_5463",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 39000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_561",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_382",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ }
+}

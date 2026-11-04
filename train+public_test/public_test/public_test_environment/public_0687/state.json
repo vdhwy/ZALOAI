@@ -1,0 +1,482 @@
+{
+ "_meta": {
+  "question_id": "public_0687",
+  "current_time": "2026-10-21T18:10:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "event_tickets.book",
+   "event_tickets.search",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_4039",
+    "name": "Bãi xe Sao Kim Plaza Ngô Quyền",
+    "address": "910 Ngô Quyền, Sơn Trà, Đà Nẵng",
+    "area": "Sơn Trà",
+    "price_per_hour": 25000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_3208",
+    "name": "Bãi đỗ xe Cầu Rồng",
+    "address": "Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
+    "area": "Cầu Rồng",
+    "price_per_hour": 20000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_6283",
+    "name": "Bãi đỗ chợ Hàn",
+    "address": "Trần Phú, Hải Châu, Đà Nẵng",
+    "area": "Chợ Hàn",
+    "price_per_hour": 20000,
+    "available_spots": 3
+   }
+  ],
+  "sessions": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_8761",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_907",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá\nMột ký tôm sú"
+   },
+   {
+    "id": "note_684",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_4006",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_970",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_254",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09601008273"
+   },
+   {
+    "id": "c_124",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09234915788"
+   },
+   {
+    "id": "c_5043",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09742367930"
+   },
+   {
+    "id": "c_365",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09790037139"
+   },
+   {
+    "id": "c_156",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09712313477"
+   },
+   {
+    "id": "c_452",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09604977732"
+   },
+   {
+    "id": "c_215",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09443731607"
+   },
+   {
+    "id": "c_454",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09332474686"
+   },
+   {
+    "id": "c_160",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09341495319"
+   },
+   {
+    "id": "c_7047",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09306752642"
+   },
+   {
+    "id": "c_796",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09895400588"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_8555",
+    "name": "Sarah",
+    "type": "direct",
+    "members": [
+     "Sarah"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8254",
+    "name": "Anh Kha",
+    "type": "direct",
+    "members": [
+     "Anh Kha"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7690",
+    "name": "Mr. Tanaka",
+    "type": "direct",
+    "members": [
+     "Mr. Tanaka"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_138",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_171",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_734",
+    "contact_id": "c_452",
+    "phone_number": "09604977732",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-10-21T09:15:00+07:00"
+   },
+   {
+    "id": "call_259",
+    "contact_id": "c_215",
+    "phone_number": "09443731607",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-10-21T10:40:00+07:00"
+   },
+   {
+    "id": "call_861",
+    "contact_id": null,
+    "phone_number": "09058812347",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-10-21T11:05:00+07:00"
+   },
+   {
+    "id": "call_04",
+    "contact_id": "c_452",
+    "phone_number": "09604977732",
+    "status": "dialing"
+   },
+   {
+    "id": "call_05",
+    "contact_id": "c_215",
+    "phone_number": "09443731607",
+    "status": "dialing"
+   },
+   {
+    "id": "call_06",
+    "contact_id": null,
+    "phone_number": "09058812347",
+    "status": "dialing"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_366",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_844",
+    "name": "Tài khoản thanh toán",
+    "balance": 34700000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_2188",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_3772",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_504",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_01",
+    "account_id": "acc_844",
+    "beneficiary_id": "ben_504",
+    "amount": -500000,
+    "note": "Tiền góp quà"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "15 Trần Phú, Hải Châu, Đà Nẵng",
+    "dropoff": "Công ty BlueOrbit Logistics, 120 Nguyễn Văn Linh, Đà Nẵng",
+    "vehicle": "bike"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_2016",
+    "name": "Stand-up comedy Sài Gòn Cười",
+    "category": "hài kịch",
+    "date": "2026-10-26",
+    "time": "19:30",
+    "venue": "Bảo tàng Đà Nẵng",
+    "price": 300000,
+    "available": 12
+   },
+   {
+    "id": "event_941",
+    "name": "Triển lãm Ánh sáng Đô thị",
+    "category": "triển lãm",
+    "date": "2026-10-28",
+    "time": "20:00",
+    "venue": "Cung Thể thao Tiên Sơn",
+    "price": 80000,
+    "available": 30
+   },
+   {
+    "id": "event_126",
+    "name": "Vở kịch Ngày Mưa",
+    "category": "kịch",
+    "date": "2026-10-27",
+    "time": "19:30",
+    "venue": "Nhà hát Trưng Vương",
+    "price": 250000,
+    "available": 30
+   }
+  ],
+  "bookings": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ }
+}

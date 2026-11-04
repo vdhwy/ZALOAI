@@ -1,0 +1,447 @@
+{
+ "_meta": {
+  "question_id": "public_0454",
+  "current_time": "2026-11-20T10:10:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_5530",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-24T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_597",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-23T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_4149",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-26T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_739",
+    "name": "Không uống trà sữa",
+    "streak": 5,
+    "last_logged": "2026-11-19"
+   },
+   {
+    "id": "habit_157",
+    "name": "Ngủ trước 11 giờ",
+    "streak": 12,
+    "last_logged": "2026-11-18"
+   },
+   {
+    "id": "habit_9727",
+    "name": "Đọc sách 30 phút",
+    "streak": 5,
+    "last_logged": "2026-11-18"
+   },
+   {
+    "id": "habit_666",
+    "name": "Uống đủ 2 lít nước",
+    "streak": 0
+   },
+   {
+    "id": "habit_4083",
+    "name": "Tập yoga 15 phút",
+    "streak": 3,
+    "last_logged": "2026-11-18"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_786",
+    "habit_id": "habit_157",
+    "date": "2026-11-18"
+   },
+   {
+    "id": "log_713",
+    "habit_id": "habit_739",
+    "date": "2026-11-19"
+   },
+   {
+    "id": "log_210",
+    "habit_id": "habit_9727",
+    "date": "2026-11-18"
+   },
+   {
+    "id": "log_592",
+    "habit_id": "habit_4083",
+    "date": "2026-11-18"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Ra ga Kim Mã bắt metro chuyến 10 giờ 34",
+    "time": "2026-11-20T10:20:00+07:00"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 500,
+    "avg_price": 135400,
+    "price": 130700
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 100,
+    "avg_price": 93700,
+    "price": 91400
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "quantity": 100,
+    "avg_price": 24300,
+    "price": 23500
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 61050,
+    "change_pct": -2.3
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 23500,
+    "change_pct": 2.0
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 130700,
+    "change_pct": -0.3
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1680,
+    "change_pct": 1.2
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33500,
+    "change_pct": -1.5
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 91400,
+    "change_pct": -1.1
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_375",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_926",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_54",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_266",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_342",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 120000,
+  "routes": [
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   },
+   {
+    "id": "metro_64",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "bus_436",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Bờ Hồ",
+     "Láng Hạ",
+     "Cầu Giấy",
+     "Đại học Mỏ"
+    ],
+    "fare": 7000,
+    "duration_min": 45,
+    "headway_min": 15
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_436",
+    "time": "2026-11-20T10:19:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_64",
+    "time": "2026-11-20T10:14:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_64",
+    "time": "2026-11-20T10:34:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_64",
+    "time": "2026-11-20T10:24:00+07:00"
+   },
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_436",
+    "time": "2026-11-20T10:49:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-11-20T10:16:00+07:00"
+   },
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_436",
+    "time": "2026-11-20T10:34:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-11-20T10:32:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-11-20T10:24:00+07:00"
+   }
+  ],
+  "topups": []
+ }
+}

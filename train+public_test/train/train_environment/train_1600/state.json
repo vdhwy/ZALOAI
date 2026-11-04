@@ -1,0 +1,435 @@
+{
+ "_meta": {
+  "question_id": "train_1600",
+  "current_time": "2026-11-20T15:25:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_346",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_114",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_2502",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_663",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_8835",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_4471",
+    "name": "Bluewave Networks",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000887412"
+   },
+   {
+    "id": "ben_907",
+    "name": "Bluewave Media",
+    "bank": "An Phát Bank",
+    "account_number": "31410009921305"
+   }
+  ],
+  "transactions": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "cool",
+     "temperature": 26
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_203",
+    "time": "2026-11-21T05:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_891",
+    "time": "2026-11-21T07:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": false
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_235",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_1970",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_7656",
+    "name": "Xe đạp điện 106",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_693",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_934",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_887",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "ewallet": {
+  "balance": 520000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "topup_mobile",
+    "phone": "09570687765",
+    "amount": -100000
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_625",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-19T18:10:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_429",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-20T12:55:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_253",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-20T05:10:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_448",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-19T11:40:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_873",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-20T10:10:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_69",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-11-20T05:40:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   }
+  ],
+  "saved": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_703",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09294940849"
+   },
+   {
+    "id": "c_880",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09570687765"
+   },
+   {
+    "id": "c_7363",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09737072061"
+   },
+   {
+    "id": "c_729",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09469336101"
+   },
+   {
+    "id": "c_6486",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09258414182"
+   },
+   {
+    "id": "c_533",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09589261921"
+   },
+   {
+    "id": "c_7261",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09963494969"
+   },
+   {
+    "id": "c_385",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09953719216"
+   },
+   {
+    "id": "c_3644",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09395780933"
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": "c_729",
+    "phone_number": "09469336101",
+    "status": "dialing"
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_3692",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 345
+   },
+   {
+    "id": "course_195",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_88",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 120
+   }
+  ],
+  "lessons": [],
+  "progress": [
+   {
+    "id": "prog_01",
+    "course_id": "course_3692",
+    "minutes": 45
+   }
+  ]
+ }
+}

@@ -1,0 +1,340 @@
+{
+ "_meta": {
+  "question_id": "train_1509",
+  "current_time": "2026-11-24T09:40:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_488",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": false,
+    "battery": 95
+   },
+   {
+    "id": "lock_7572",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_274",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_497",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_3230",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_168",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_799",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_335",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_785",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "ewallet": {
+  "balance": 180000,
+  "transactions": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_9824",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ],
+    "merchant_id": "mch_4407"
+   },
+   {
+    "id": "rest_318",
+    "name": "Bluebird Bakery",
+    "tags": [
+     "bánh ngọt",
+     "bánh mì"
+    ],
+    "rating": 4.3,
+    "merchant_id": "mch_2290",
+    "menu": [
+     {
+      "id": "rest_318_m1",
+      "name": "Bánh sừng bò bơ",
+      "price": 30000
+     },
+     {
+      "id": "rest_318_m2",
+      "name": "Bánh mì hoa cúc",
+      "price": 65000
+     }
+    ]
+   },
+   {
+    "id": "rest_740",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ],
+    "merchant_id": "mch_912"
+   },
+   {
+    "id": "rest_5512",
+    "name": "Bluebird Café",
+    "tags": [
+     "cà phê",
+     "đồ uống"
+    ],
+    "rating": 4.6,
+    "merchant_id": "mch_6034",
+    "menu": [
+     {
+      "id": "rest_5512_m1",
+      "name": "Cà phê trứng",
+      "price": 45000
+     },
+     {
+      "id": "rest_5512_m2",
+      "name": "Bạc xỉu",
+      "price": 40000
+     },
+     {
+      "id": "rest_5512_m3",
+      "name": "Bánh sừng bò",
+      "price": 35000
+     }
+    ]
+   },
+   {
+    "id": "rest_7633",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ],
+    "merchant_id": "mch_5280"
+   },
+   {
+    "id": "rest_240",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ],
+    "merchant_id": "mch_387"
+   }
+  ],
+  "orders": []
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_836",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-11-23T23:10:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_128",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-23T07:40:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_6728",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-24T04:55:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_840",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-23T11:25:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   }
+  ],
+  "saved": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22200
+   },
+   {
+    "type": "e5",
+    "price": 21000
+   },
+   {
+    "type": "diesel",
+    "price": 19600
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ }
+}

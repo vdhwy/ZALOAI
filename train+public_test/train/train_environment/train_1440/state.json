@@ -1,0 +1,445 @@
+{
+ "_meta": {
+  "question_id": "train_1440",
+  "current_time": "2026-12-18T21:00:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_4470",
+    "contact_id": null,
+    "phone_number": "09718260354",
+    "direction": "incoming",
+    "content": "Chú Bảy ơi Marcus Hale đây. Con chốt 2 tấn sầu riêng Ri6 giá 85 nghìn một ký nha chú, cọc con chuyển khoản rồi đó."
+   },
+   {
+    "id": "msg_2291",
+    "contact_id": null,
+    "phone_number": "09865523107",
+    "direction": "incoming",
+    "content": "Chú Bảy, Marcus Webb nè. Chốt 1 tấn rưỡi xoài cát Hòa Lộc giá 60 nghìn một ký, cọc thứ hai con chuyển nha."
+   },
+   {
+    "id": "msg_838",
+    "contact_id": "c_52",
+    "phone_number": "09117702692",
+    "direction": "incoming",
+    "content": "Ba ơi tối nay con về trễ, ba khỏi chờ cơm."
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_493",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-19T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_234",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-17T09:30:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_838",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-24T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_422",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-19T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_224",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_926",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_492",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_7251",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_774",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_8143",
+    "account_id": "acc_926",
+    "amount": 50000000,
+    "note": "Marcus Hale chuyen coc sau rieng Ri6"
+   },
+   {
+    "id": "tx_3307",
+    "account_id": "acc_926",
+    "amount": 20000000,
+    "note": "Martin Hale dat coc mang cut"
+   },
+   {
+    "id": "tx_5591",
+    "account_id": "acc_926",
+    "amount": -3500000,
+    "note": "Tra tien thue xe tai cho hang"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_39",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09350189724"
+   },
+   {
+    "id": "c_785",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09534709513"
+   },
+   {
+    "id": "c_145",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09394421406"
+   },
+   {
+    "id": "c_37",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09263684200"
+   },
+   {
+    "id": "c_52",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09117702692"
+   },
+   {
+    "id": "c_2013",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09321365111"
+   },
+   {
+    "id": "c_412",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09320269191"
+   },
+   {
+    "id": "c_273",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09411798290"
+   },
+   {
+    "id": "c_6667",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09654075444"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 26,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-18",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 29
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-19",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 29
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_155",
+    "tracking_id": "JV776545860",
+    "carrier": "JetViệt Express",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "out_for_delivery",
+    "eta": "2026-12-18T17:00:00+07:00"
+   },
+   {
+    "id": "shp_3938",
+    "tracking_id": "STP809373285",
+    "carrier": "SaoTel Post",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "in_transit",
+    "eta": "2026-12-20T17:00:00+07:00"
+   },
+   {
+    "id": "shp_162",
+    "tracking_id": "GST264328674",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Ốp lưng điện thoại",
+    "status": "delivered",
+    "eta": "2026-12-17T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "calculator": {},
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_1181",
+    "time": "2026-12-19T06:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_464",
+    "time": "2026-12-19T06:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_461",
+    "time": "2026-12-19T08:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_7010",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_9014",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_177",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_691",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_960",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_758",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_474",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ }
+}

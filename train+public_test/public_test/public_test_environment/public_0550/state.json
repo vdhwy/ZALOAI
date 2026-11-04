@@ -1,0 +1,295 @@
+{
+ "_meta": {
+  "question_id": "public_0550",
+  "current_time": "2026-12-06T06:40:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "pantry.consume",
+   "pantry.list_items",
+   "phone.call",
+   "phone.recent_calls",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2883",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09999290850"
+   },
+   {
+    "id": "c_962",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09749923700"
+   },
+   {
+    "id": "c_1901",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09267779760"
+   },
+   {
+    "id": "c_405",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09139839125"
+   },
+   {
+    "id": "c_569",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09323419999"
+   },
+   {
+    "id": "c_337",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09340096203"
+   },
+   {
+    "id": "c_8143",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09101708220"
+   },
+   {
+    "id": "c_187",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09153016814"
+   },
+   {
+    "id": "c_971",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09490468156"
+   }
+  ]
+ },
+ "tv": {
+  "power": "on",
+  "channel": "VTV1",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "programs": [
+   {
+    "id": "prg_218",
+    "channel": "VTV1",
+    "title": "Bản tin Chào buổi sáng",
+    "start": "2026-12-06T06:00:00+07:00",
+    "end": "2026-12-06T08:00:00+07:00"
+   },
+   {
+    "id": "prg_574",
+    "channel": "HTV7",
+    "title": "Phim hoạt hình cuối tuần",
+    "start": "2026-12-06T06:30:00+07:00",
+    "end": "2026-12-06T07:30:00+07:00"
+   },
+   {
+    "id": "prg_633",
+    "channel": "VTV3",
+    "title": "Sáng phục hồi sức khoẻ",
+    "start": "2026-12-06T06:15:00+07:00",
+    "end": "2026-12-06T07:00:00+07:00"
+   },
+   {
+    "id": "prg_390",
+    "channel": "S+ Sport",
+    "title": "Highlights Ngoại hạng Anh",
+    "start": "2026-12-06T07:00:00+07:00",
+    "end": "2026-12-06T08:00:00+07:00"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_249",
+    "name": "yến mạch",
+    "stock": 0,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_903",
+    "name": "cà phê hoà tan",
+    "stock": 2,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_8401",
+    "name": "sữa tươi",
+    "stock": 2,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_459",
+    "name": "dầu ăn",
+    "stock": 2,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_640",
+    "name": "bột mì",
+    "stock": 1,
+    "unit": "gói"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_182",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": true
+   },
+   {
+    "id": "item_977",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_949",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_333",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ }
+}

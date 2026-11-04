@@ -1,0 +1,252 @@
+{
+ "_meta": {
+  "question_id": "train_1580",
+  "current_time": "2026-11-30T18:40:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_641",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-04T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_215",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-03T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_625",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-03T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "calculator": {},
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi Sếp David",
+    "time": "2026-11-30T20:00:00+07:00"
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25652
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27704
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.0
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_612",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_661",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_9878",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_593",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_484",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_770",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_630",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_3216",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_144",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_5873",
+    "name": "Mark Johnson",
+    "bank": "Harborline Bank",
+    "account_number": "884210377165",
+    "currency": "USD"
+   },
+   {
+    "id": "ben_2091",
+    "name": "Mark Johnston",
+    "bank": "Rheinfeld Bank",
+    "account_number": "DE44500105175407324931",
+    "currency": "EUR"
+   }
+  ],
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_625",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09146149408"
+   },
+   {
+    "id": "c_358",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09319117630"
+   },
+   {
+    "id": "c_954",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09352210776"
+   },
+   {
+    "id": "c_768",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09122846596"
+   },
+   {
+    "id": "c_1004",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09484856532"
+   },
+   {
+    "id": "c_7964",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09796979455"
+   },
+   {
+    "id": "c_6908",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09753614285"
+   },
+   {
+    "id": "c_237",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09238474142"
+   },
+   {
+    "id": "c_922",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09627949152"
+   },
+   {
+    "id": "c_185",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09253156090"
+   }
+  ]
+ }
+}

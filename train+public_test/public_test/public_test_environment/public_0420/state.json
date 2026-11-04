@@ -1,0 +1,376 @@
+{
+ "_meta": {
+  "question_id": "public_0420",
+  "current_time": "2026-10-10T21:30:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "translator.translate"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_882",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09608544017"
+   },
+   {
+    "id": "c_737",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09958540516"
+   },
+   {
+    "id": "c_955",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09866723720"
+   },
+   {
+    "id": "c_1875",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09691768916"
+   },
+   {
+    "id": "c_671",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09413723896"
+   },
+   {
+    "id": "c_9992",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09511579265"
+   },
+   {
+    "id": "c_914",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09106100726"
+   },
+   {
+    "id": "c_858",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09570613696"
+   },
+   {
+    "id": "c_7918",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09590903308"
+   },
+   {
+    "id": "c_620",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09488863556"
+   }
+  ]
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_3640",
+    "name": "Ngủ trước 11 giờ",
+    "streak": 5,
+    "last_logged": "2026-10-09"
+   },
+   {
+    "id": "habit_1690",
+    "name": "Học từ vựng tiếng Anh",
+    "streak": 1,
+    "last_logged": "2026-10-09"
+   },
+   {
+    "id": "habit_523",
+    "name": "Không uống trà sữa",
+    "streak": 12,
+    "last_logged": "2026-10-09"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_394",
+    "habit_id": "habit_3640",
+    "date": "2026-10-09"
+   },
+   {
+    "id": "log_16",
+    "habit_id": "habit_1690",
+    "date": "2026-10-09"
+   },
+   {
+    "id": "log_9865",
+    "habit_id": "habit_523",
+    "date": "2026-10-09"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_2913",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 214000,
+    "due_date": "2026-10-13",
+    "paid": false
+   },
+   {
+    "id": "bill_301",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 850000,
+    "due_date": "2026-10-15",
+    "paid": false
+   },
+   {
+    "id": "bill_1389",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 218000,
+    "due_date": "2026-10-16",
+    "paid": false
+   },
+   {
+    "id": "bill_5454",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 200000,
+    "due_date": "2026-10-15",
+    "paid": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_859",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_3178",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_999",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_8417",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Xin chào, rất vui được gặp bạn",
+    "to_lang": "ja",
+    "translation": "こんにちは、はじめまして"
+   },
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Xe sẽ tới sau 4 phút nữa",
+    "to_lang": "en",
+    "translation": "The motorbike will arrive in 4 minutes"
+   },
+   {
+    "text": "Xe máy sẽ tới đón bạn sau 4 phút nữa",
+    "to_lang": "en",
+    "translation": "The motorbike will arrive in 4 minutes"
+   },
+   {
+    "text": "Xe sẽ đến sau 4 phút",
+    "to_lang": "en",
+    "translation": "The motorbike will arrive in 4 minutes"
+   },
+   {
+    "text": "4 phút nữa xe tới",
+    "to_lang": "en",
+    "translation": "The motorbike will arrive in 4 minutes"
+   },
+   {
+    "text": "Xe sẽ đến trong 4 phút nữa",
+    "to_lang": "en",
+    "translation": "The motorbike will arrive in 4 minutes"
+   }
+  ]
+ }
+}

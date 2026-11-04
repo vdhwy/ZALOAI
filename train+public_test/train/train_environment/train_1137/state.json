@@ -1,0 +1,303 @@
+{
+ "_meta": {
+  "question_id": "train_1137",
+  "current_time": "2026-12-20T12:00:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_878",
+    "tracking_id": "STP647818153",
+    "carrier": "SaoTel Post",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "delivered",
+    "eta": "2026-12-19T14:00:00+07:00"
+   },
+   {
+    "id": "shp_2303",
+    "tracking_id": "MDXVN237679503",
+    "carrier": "MDX Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "in_transit",
+    "eta": "2026-12-23T17:00:00+07:00"
+   },
+   {
+    "id": "shp_98",
+    "tracking_id": "EV531328680",
+    "carrier": "VNPost",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "out_for_delivery",
+    "eta": "2026-12-20T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_216",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_17",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_9466",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_6418",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_766",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_481",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_766",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09313808361"
+   },
+   {
+    "id": "c_126",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09530188228"
+   },
+   {
+    "id": "c_925",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09433738221"
+   },
+   {
+    "id": "c_936",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09101096512"
+   },
+   {
+    "id": "c_98",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09402189519"
+   },
+   {
+    "id": "c_62",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09102113692"
+   },
+   {
+    "id": "c_1446",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09749986978"
+   },
+   {
+    "id": "c_57",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09949681062"
+   },
+   {
+    "id": "c_2652",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09370956515"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "tv": {
+  "power": "on",
+  "channel": "HTV7",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "programs": [
+   {
+    "id": "prg_524",
+    "channel": "S+ Sport",
+    "title": "Bình luận trước trận",
+    "start": "2026-12-20T15:00:00+07:00",
+    "end": "2026-12-20T16:00:00+07:00"
+   },
+   {
+    "id": "prg_561",
+    "channel": "S+ Sport",
+    "title": "Ngoại hạng Anh: Liverpool - Man City",
+    "start": "2026-12-20T19:00:00+07:00",
+    "end": "2026-12-20T21:00:00+07:00"
+   },
+   {
+    "id": "prg_587",
+    "channel": "S+ Sport",
+    "title": "La Liga: Real Madrid - Valencia",
+    "start": "2026-12-20T21:00:00+07:00",
+    "end": "2026-12-20T23:00:00+07:00"
+   },
+   {
+    "id": "prg_533",
+    "channel": "HTV7",
+    "title": "Phim: Gia đình là số một",
+    "start": "2026-12-20T20:00:00+07:00",
+    "end": "2026-12-20T21:00:00+07:00"
+   },
+   {
+    "id": "prg_549",
+    "channel": "VTV3",
+    "title": "Gameshow: Đấu trường 100",
+    "start": "2026-12-20T20:30:00+07:00",
+    "end": "2026-12-20T21:30:00+07:00"
+   }
+  ],
+  "recordings": [],
+  "volume": 15
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_373",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_250",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_192",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_309",
+    "time": "2026-12-19T16:30:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_910",
+    "time": "2026-12-20T04:05:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_421",
+    "time": "2026-12-18T18:05:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_619",
+    "time": "2026-12-18T18:25:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_2669",
+    "time": "2026-12-19T07:25:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   }
+  ]
+ }
+}

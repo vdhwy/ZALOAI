@@ -1,0 +1,220 @@
+{
+ "_meta": {
+  "question_id": "train_1343",
+  "current_time": "2026-11-17T13:20:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_318",
+    "name": "Amlodipin 5mg Clearwater Pharma",
+    "times": [
+     "07:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_5021",
+    "name": "Losartan 50mg Clearwell Pharma",
+    "times": [
+     "12:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_86",
+    "name": "Vitamin tổng hợp Maple Leaf Health",
+    "times": [
+     "20:00"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_156",
+    "name": "Lucas",
+    "type": "direct",
+    "members": [
+     "Lucas"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_569",
+    "name": "Vợ Hà",
+    "type": "direct",
+    "members": [
+     "Vợ Hà"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3592",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_235",
+    "name": "Emily",
+    "type": "direct",
+    "members": [
+     "Emily"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9187",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_4226",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09154203420"
+   },
+   {
+    "id": "c_210",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09519549125"
+   },
+   {
+    "id": "c_146",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09219503706"
+   },
+   {
+    "id": "c_9535",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09432749817"
+   },
+   {
+    "id": "c_1687",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09571159591"
+   },
+   {
+    "id": "c_5502",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09686932003"
+   },
+   {
+    "id": "c_7924",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09779114143"
+   }
+  ]
+ }
+}

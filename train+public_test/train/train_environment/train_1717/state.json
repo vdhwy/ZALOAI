@@ -1,0 +1,611 @@
+{
+ "_meta": {
+  "question_id": "train_1717",
+  "current_time": "2026-11-07T21:50:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_429",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_462",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_6222",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_3044",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_2293",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_614",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_425",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_8896",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1582",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09252588762"
+   },
+   {
+    "id": "c_590",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09984594828"
+   },
+   {
+    "id": "c_90",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09511657431"
+   },
+   {
+    "id": "c_731",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09965406021"
+   },
+   {
+    "id": "c_753",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09213657340"
+   },
+   {
+    "id": "c_259",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09190218651"
+   },
+   {
+    "id": "c_862",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09902614461"
+   },
+   {
+    "id": "c_4608",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09146861320"
+   },
+   {
+    "id": "c_316",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09267075848"
+   },
+   {
+    "id": "c_545",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09310819865"
+   },
+   {
+    "id": "c_328",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09238244710"
+   },
+   {
+    "id": "c_99",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09919231958"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_553",
+    "name": "Bé Na",
+    "type": "direct",
+    "members": [
+     "Bé Na"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5111",
+    "name": "Anh Lộc",
+    "type": "direct",
+    "members": [
+     "Anh Lộc"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Mai bảy giờ sáng anh giao giùm hai thùng nước suối với một bao gạo nha."
+     }
+    ]
+   },
+   {
+    "id": "chat_5509",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_389",
+    "name": "Chú Năm",
+    "type": "direct",
+    "members": [
+     "Chú Năm"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Tối nay về sớm ăn cơm nha, em nấu canh chua."
+     }
+    ]
+   },
+   {
+    "id": "chat_7838",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-04": {
+    "steps": 3345,
+    "calories": 133,
+    "distance_km": 2.4
+   },
+   "2026-11-05": {
+    "steps": 8400,
+    "calories": 336,
+    "distance_km": 6.0
+   },
+   "2026-11-06": {
+    "steps": 7310,
+    "calories": 292,
+    "distance_km": 5.3
+   },
+   "2026-11-07": {
+    "steps": 2312,
+    "calories": 92,
+    "distance_km": 1.7
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_778",
+    "type": "running",
+    "minutes": 60,
+    "time": "2026-11-04T18:30:00+07:00"
+   },
+   {
+    "id": "wo_647",
+    "type": "walking",
+    "minutes": 30,
+    "time": "2026-11-05T18:30:00+07:00"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_779",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_282",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_632",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_4837",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_8967",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_9858",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_632",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 100000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_4837",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 39000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 28,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-07",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-08",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-09",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-10",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_135",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-14",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_8218",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-14",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_900",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-14",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_295",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-14",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": []
+ }
+}

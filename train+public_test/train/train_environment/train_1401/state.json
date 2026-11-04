@@ -1,0 +1,320 @@
+{
+ "_meta": {
+  "question_id": "train_1401",
+  "current_time": "2026-11-30T21:00:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_385",
+    "name": "Bà Sáu",
+    "type": "direct",
+    "members": [
+     "Bà Sáu"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9277",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_332",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_923",
+    "name": "Ông xã",
+    "type": "direct",
+    "members": [
+     "Ông xã"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_336",
+    "name": "Thảo",
+    "type": "direct",
+    "members": [
+     "Thảo"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_312",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09482451148"
+   },
+   {
+    "id": "c_426",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09381640135"
+   },
+   {
+    "id": "c_715",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09118979060"
+   },
+   {
+    "id": "c_652",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09468162365"
+   },
+   {
+    "id": "c_5090",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09324879776"
+   },
+   {
+    "id": "c_3169",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09499901113"
+   },
+   {
+    "id": "c_414",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09856482989"
+   },
+   {
+    "id": "c_8019",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09761595811"
+   },
+   {
+    "id": "c_104",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09184081528"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_661",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-04T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_431",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-04T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_3675",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-29T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_451",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-04T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_573",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-01T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "calculator": {},
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_25",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_106",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_133",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_657",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_908",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_327",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_751",
+    "name": "Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_174",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_884",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_2638",
+    "name": "Margaret Wilson",
+    "bank": "Southbank Mutual",
+    "account_number": "06381442907"
+   },
+   {
+    "id": "ben_419",
+    "name": "Margaret Watson",
+    "bank": "Southbank Mutual",
+    "account_number": "06381442970"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_8813",
+    "account_id": "acc_327",
+    "beneficiary_id": "ben_2638",
+    "amount": -7800000,
+    "note": "Tiền nhà tháng 11 của Thảo"
+   },
+   {
+    "id": "tx_8790",
+    "account_id": "acc_327",
+    "beneficiary_id": "ben_174",
+    "amount": -650000,
+    "note": "Tiền điện nước"
+   },
+   {
+    "id": "tx_8751",
+    "account_id": "acc_908",
+    "beneficiary_id": "ben_419",
+    "amount": -2400000,
+    "note": "Học phí tiếng Anh của Thảo"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_5515",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_3347",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_5500",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_7965",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_2755",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ }
+}

@@ -1,0 +1,589 @@
+{
+ "_meta": {
+  "question_id": "public_0545",
+  "current_time": "2026-10-17T08:20:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "phone.call",
+   "phone.recent_calls",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5428",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09215939390"
+   },
+   {
+    "id": "c_986",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09364298551"
+   },
+   {
+    "id": "c_976",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09282927627"
+   },
+   {
+    "id": "c_994",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09905236936"
+   },
+   {
+    "id": "c_371",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09477115824"
+   },
+   {
+    "id": "c_9483",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09565689918"
+   },
+   {
+    "id": "c_6744",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09448816381"
+   },
+   {
+    "id": "c_5493",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09368654922"
+   },
+   {
+    "id": "c_121",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09817326635"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 29,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-10-17",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-19",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 32
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_190",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_76",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_508",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_785",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_404",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_1268",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_404",
+    "items": [
+     {
+      "product_id": "gro_508",
+      "name": "Trứng gà ta hộp 10 quả",
+      "price": 42000,
+      "quantity": 2
+     }
+    ],
+    "total": 84000,
+    "status": "delivered",
+    "delivery_time": "2026-10-13T09:00:00+07:00"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_2544",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_120",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_454",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_619",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_331",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_7720",
+    "name": "Bún bò Huế truyền thống",
+    "tags": [
+     "bún",
+     "món Huế"
+    ],
+    "servings": 6,
+    "time_min": 180,
+    "ingredients": [
+     {
+      "name": "bắp bò",
+      "quantity": 800,
+      "unit": "g"
+     },
+     {
+      "name": "giò heo",
+      "quantity": 1,
+      "unit": "cái"
+     },
+     {
+      "name": "sả",
+      "quantity": 6,
+      "unit": "cây"
+     },
+     {
+      "name": "mắm ruốc Huế",
+      "quantity": 2,
+      "unit": "thìa"
+     },
+     {
+      "name": "bún sợi to",
+      "quantity": 1,
+      "unit": "kg"
+     }
+    ],
+    "steps": [
+     "Chần giò và bắp bò",
+     "Hầm xương với sả ba tiếng",
+     "Phi sa tế, nêm mắm ruốc",
+     "Chan nước dùng lên bún"
+    ]
+   },
+   {
+    "id": "rcp_321",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_7731",
+    "name": "Bún bò Huế nồi áp suất",
+    "tags": [
+     "bún",
+     "món Huế",
+     "nấu nhanh"
+    ],
+    "servings": 4,
+    "time_min": 55,
+    "ingredients": [
+     {
+      "name": "bắp bò",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "giò heo",
+      "quantity": 1,
+      "unit": "cái"
+     },
+     {
+      "name": "sả",
+      "quantity": 5,
+      "unit": "cây"
+     },
+     {
+      "name": "mắm ruốc Huế",
+      "quantity": 1,
+      "unit": "thìa"
+     },
+     {
+      "name": "bún sợi to",
+      "quantity": 600,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Cho giò, bắp bò và sả vào nồi áp suất 30 phút",
+     "Phi sa tế, nêm mắm ruốc",
+     "Chan nước dùng lên bún"
+    ]
+   },
+   {
+    "id": "rcp_267",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_910",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_7748",
+    "name": "Bún bò Huế chay",
+    "tags": [
+     "bún",
+     "món chay",
+     "món Huế"
+    ],
+    "servings": 4,
+    "time_min": 70,
+    "ingredients": [
+     {
+      "name": "nấm đùi gà",
+      "quantity": 300,
+      "unit": "g"
+     },
+     {
+      "name": "đậu hũ",
+      "quantity": 2,
+      "unit": "bìa"
+     },
+     {
+      "name": "sả",
+      "quantity": 5,
+      "unit": "cây"
+     },
+     {
+      "name": "bún sợi to",
+      "quantity": 500,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Nấu nước dùng rau củ với sả",
+     "Chiên đậu hũ, xào nấm",
+     "Nêm sa tế chay",
+     "Chan lên bún"
+    ]
+   }
+  ],
+  "saved": []
+ }
+}

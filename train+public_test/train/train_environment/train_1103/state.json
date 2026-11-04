@@ -1,0 +1,477 @@
+{
+ "_meta": {
+  "question_id": "train_1103",
+  "current_time": "2026-10-12T07:25:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_635",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_502",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_720",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_743",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_290",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_5384",
+    "origin": "SGN",
+    "destination": "DLI",
+    "date": "2026-10-26",
+    "depart": "06:00",
+    "arrive": "06:55",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_941",
+    "origin": "SGN",
+    "destination": "DLI",
+    "date": "2026-10-26",
+    "depart": "14:00",
+    "arrive": "14:55",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_269",
+    "origin": "SGN",
+    "destination": "DLI",
+    "date": "2026-10-26",
+    "depart": "19:00",
+    "arrive": "19:55",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_62",
+    "origin": "SGN",
+    "destination": "DLI",
+    "date": "2026-10-26",
+    "depart": "09:00",
+    "arrive": "09:55",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_7302",
+    "origin": "SGN",
+    "destination": "DLI",
+    "date": "2026-11-02",
+    "depart": "07:15",
+    "arrive": "08:05",
+    "airline": "JetXanh",
+    "price": 890000
+   },
+   {
+    "id": "fl_3348",
+    "origin": "SGN",
+    "destination": "HAN",
+    "date": "2026-10-15",
+    "depart": "10:00",
+    "arrive": "12:10",
+    "airline": "Rồng Việt Air",
+    "price": 2150000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_157",
+    "flight_id": "fl_3348",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_418",
+    "flight_id": "fl_5384",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_806",
+    "flight_id": "fl_7302",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_383",
+    "name": "Tưới cây",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_1685",
+    "name": "Phơi quần áo",
+    "assignee": "Anh Khoa",
+    "done": false
+   },
+   {
+    "id": "chore_231",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_182",
+    "name": "Giặt quần áo",
+    "assignee": "Anh Khoa",
+    "done": true
+   }
+  ],
+  "members": [
+   "Anh Khoa",
+   "Lan",
+   "Bố",
+   "Mẹ"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_818",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-18T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_359",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-11T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_731",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-15T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_891",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-13T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_652",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-11T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_11",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09553917043"
+   },
+   {
+    "id": "c_57",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09913244901"
+   },
+   {
+    "id": "c_566",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09334140329"
+   },
+   {
+    "id": "c_223",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09477306343"
+   },
+   {
+    "id": "c_791",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09841899008"
+   },
+   {
+    "id": "c_65",
+    "name": "Lan",
+    "relation": "chị gái",
+    "phone": "09295092882"
+   },
+   {
+    "id": "c_6566",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09421449317"
+   },
+   {
+    "id": "c_698",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09980778503"
+   },
+   {
+    "id": "c_856",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09668267903"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_895",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_136",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_8578",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_275",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_912",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_716",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_901",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_696",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_915",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_4998",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_373",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_553",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_666",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_3685",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_695",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6253",
+    "name": "Vy",
+    "type": "direct",
+    "members": [
+     "Vy"
+    ],
+    "messages": [
+     {
+      "from": "Vy",
+      "time": "2026-10-12T07:10:00+07:00",
+      "content": "Tối nay đi ăn lẩu hông anh?"
+     },
+     {
+      "from": "me",
+      "content": "Tối nay ok em, bảy giờ anh qua đón nha"
+     }
+    ]
+   },
+   {
+    "id": "chat_983",
+    "name": "Sếp Trân",
+    "type": "direct",
+    "members": [
+     "Sếp Trân"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_999",
+    "name": "Má",
+    "type": "direct",
+    "members": [
+     "Má"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_908",
+    "time": "2026-10-13T07:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_598",
+    "time": "2026-10-13T08:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,231 @@
+{
+ "_meta": {
+  "question_id": "train_1275",
+  "current_time": "2026-12-11T14:30:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "calculator": {},
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_882",
+    "title": "đi chơi công viên",
+    "start": "2026-12-14T19:30:00+07:00",
+    "end": "2026-12-14T20:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5512",
+    "title": "họp team",
+    "start": "2026-12-13T08:00:00+07:00",
+    "end": "2026-12-13T09:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_778",
+    "title": "họp phụ huynh",
+    "start": "2026-12-14T14:30:00+07:00",
+    "end": "2026-12-14T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_586",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-12T19:00:00+07:00",
+    "end": "2026-12-12T20:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_4941",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09152531534"
+   },
+   {
+    "id": "c_615",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09890320641"
+   },
+   {
+    "id": "c_949",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09312415050"
+   },
+   {
+    "id": "c_8442",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09996133987"
+   },
+   {
+    "id": "c_674",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09338512012"
+   },
+   {
+    "id": "c_520",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09964684422"
+   },
+   {
+    "id": "c_3660",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09920058485"
+   },
+   {
+    "id": "c_687",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09132682764"
+   },
+   {
+    "id": "c_323",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09383654198"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_359",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_188",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_643",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_187",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_35",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_669",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_8290",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_162",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_216",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_333",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_9148",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_4455",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_469",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 80
+   }
+  ],
+  "guest_codes": []
+ }
+}

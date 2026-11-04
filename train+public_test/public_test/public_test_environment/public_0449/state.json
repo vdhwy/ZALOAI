@@ -1,0 +1,743 @@
+{
+ "_meta": {
+  "question_id": "public_0449",
+  "current_time": "2026-12-17T12:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "gold_price.get_price",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_931",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_5434",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_633",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_365",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_3879",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 127800000,
+    "sell": 129800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 121800000,
+    "sell": 123800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4042
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_751",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Huế",
+    "destination": "Lào Cai",
+    "date": "2026-12-18",
+    "depart": "06:00",
+    "arrive": "20:30",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_185",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Huế",
+    "destination": "Lào Cai",
+    "date": "2026-12-18",
+    "depart": "13:00",
+    "arrive": "08:40",
+    "price": 680000,
+    "seats_left": 29
+   },
+   {
+    "id": "trip_596",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Huế",
+    "destination": "Hải Phòng",
+    "date": "2026-12-21",
+    "depart": "06:00",
+    "arrive": "09:00",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_505",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Huế",
+    "destination": "Hải Phòng",
+    "date": "2026-12-21",
+    "depart": "13:00",
+    "arrive": "16:30",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_388",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Huế",
+    "destination": "Lào Cai",
+    "date": "2026-12-18",
+    "depart": "21:00",
+    "arrive": "02:30",
+    "price": 920000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_525",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Huế",
+    "destination": "Hải Phòng",
+    "date": "2026-12-21",
+    "depart": "21:00",
+    "arrive": "02:30",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_371",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Huế",
+    "destination": "Lào Cai",
+    "date": "2026-12-18",
+    "depart": "13:00",
+    "arrive": "20:00",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_240",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Huế",
+    "destination": "Hải Phòng",
+    "date": "2026-12-21",
+    "depart": "06:00",
+    "arrive": "16:30",
+    "price": 400000,
+    "seats_left": 8
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_14",
+    "trip_id": "trip_525",
+    "seats": 1,
+    "total": 400000,
+    "status": "cancelled"
+   },
+   {
+    "id": "tk_29",
+    "trip_id": "trip_185",
+    "seats": 1,
+    "total": 680000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 30,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-12-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-18",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 33
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-19",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 32
+   }
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_4806",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_548",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_602",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_1436",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_958",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_757",
+    "name": "Bàn phím cơ AKKO 3068B",
+    "price": 1290000,
+    "seller": "AKKO Việt Nam",
+    "category": "máy tính",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_859",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_8177",
+    "name": "Đèn bàn LED chống cận Rạng Đông",
+    "price": 275000,
+    "seller": "Rạng Đông Official",
+    "category": "gia dụng",
+    "rating": 4.8,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_829",
+    "items": [
+     {
+      "product_id": "prod_4806",
+      "name": "Áo khoác gió nam CoolWear",
+      "price": 499000,
+      "quantity": 1
+     }
+    ],
+    "total": 499000,
+    "status": "shipping",
+    "placed_at": "2026-12-14T05:05:00+07:00",
+    "seller": "CoolWear"
+   },
+   {
+    "id": "ord_964",
+    "items": [
+     {
+      "product_id": "prod_8177",
+      "name": "Đèn bàn LED chống cận Rạng Đông",
+      "price": 275000,
+      "quantity": 1
+     }
+    ],
+    "total": 275000,
+    "status": "delivered",
+    "placed_at": "2026-12-10T08:05:00+07:00",
+    "seller": "Rạng Đông Official",
+    "delivered_at": "2026-12-13T08:05:00+07:00"
+   },
+   {
+    "id": "ord_9780",
+    "items": [
+     {
+      "product_id": "prod_757",
+      "name": "Bàn phím cơ AKKO 3068B",
+      "price": 1290000,
+      "quantity": 1
+     }
+    ],
+    "total": 1290000,
+    "status": "shipping",
+    "placed_at": "2026-12-15T08:05:00+07:00",
+    "seller": "AKKO Việt Nam"
+   },
+   {
+    "id": "ord_5498",
+    "items": [
+     {
+      "product_id": "prod_859",
+      "name": "Sạc dự phòng Xiaomi 10000mAh",
+      "price": 399000,
+      "quantity": 1
+     }
+    ],
+    "total": 399000,
+    "status": "placed",
+    "placed_at": "2026-12-14T08:05:00+07:00",
+    "seller": "Xiaomi Official"
+   }
+  ],
+  "returns": []
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_3864",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_6125",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_69",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_832",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_207",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_142",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_132",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-19T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_8624",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-18T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_465",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-16T17:30:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_684",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-20T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_9597",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_557",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_597",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_124",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mạ",
+     "Ba",
+     "Ngọc"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_800",
+    "name": "Mạ",
+    "type": "direct",
+    "members": [
+     "Mạ"
+    ],
+    "messages": [
+     {
+      "from": "Mạ",
+      "content": "Con đặt vé tàu ra Lào Cai chưa? Hết bao nhiêu thì nhắn mạ, mạ chuyển khoản cho."
+     }
+    ]
+   },
+   {
+    "id": "chat_3318",
+    "name": "Nhi",
+    "type": "direct",
+    "members": [
+     "Nhi"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ }
+}

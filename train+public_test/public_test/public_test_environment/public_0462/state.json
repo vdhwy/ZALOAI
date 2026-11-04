@@ -1,0 +1,551 @@
+{
+ "_meta": {
+  "question_id": "public_0462",
+  "current_time": "2026-11-08T22:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "phone.call",
+   "phone.recent_calls",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_158",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_2294",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_663",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng vịt, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_698",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_327",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_2066",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_5005",
+    "time": "2026-11-09T07:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_435",
+    "time": "2026-11-09T05:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_667",
+    "time": "2026-11-09T07:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_9743",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_697",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_9223",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_31",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_7210",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_668",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_4410",
+    "name": "Trứng gà vỉ 10 quả",
+    "price": 32000,
+    "unit": "vỉ",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_582",
+    "name": "Trứng vịt vỉ 10 quả",
+    "price": 38000,
+    "unit": "vỉ",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_1937",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_409",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09986403379"
+   },
+   {
+    "id": "c_254",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09772934359"
+   },
+   {
+    "id": "c_155",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09395022044"
+   },
+   {
+    "id": "c_4486",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09524198963"
+   },
+   {
+    "id": "c_7929",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09701952339"
+   },
+   {
+    "id": "c_6778",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09375406745"
+   },
+   {
+    "id": "c_318",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09569670608"
+   },
+   {
+    "id": "c_2744",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09129391161"
+   },
+   {
+    "id": "c_5451",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09181742013"
+   },
+   {
+    "id": "c_805",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09394339257"
+   },
+   {
+    "id": "c_9268",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09973007083"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 15000,
+  "routes": [
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_208",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   },
+   {
+    "id": "bus_8924",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Bờ Hồ",
+     "Láng Hạ",
+     "Cầu Giấy",
+     "Đại học Mỏ"
+    ],
+    "fare": 7000,
+    "duration_min": 45,
+    "headway_min": 15
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-11-08T22:38:00+07:00"
+   },
+   {
+    "stop": "Bờ Hồ",
+    "route": "bus_8924",
+    "time": "2026-11-08T22:49:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_208",
+    "time": "2026-11-08T22:45:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_208",
+    "time": "2026-11-08T22:35:00+07:00"
+   },
+   {
+    "stop": "Bờ Hồ",
+    "route": "bus_8924",
+    "time": "2026-11-08T22:34:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_208",
+    "time": "2026-11-08T22:25:00+07:00"
+   },
+   {
+    "stop": "Bờ Hồ",
+    "route": "bus_8924",
+    "time": "2026-11-08T22:19:00+07:00"
+   },
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-11-08T22:30:00+07:00"
+   },
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-11-08T22:22:00+07:00"
+   }
+  ],
+  "topups": []
+ }
+}

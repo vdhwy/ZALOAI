@@ -1,0 +1,313 @@
+{
+ "_meta": {
+  "question_id": "train_1361",
+  "current_time": "2026-11-12T12:30:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_504",
+    "name": "Phơi quần áo",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_185",
+    "name": "Đổ rác",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_616",
+    "name": "Lau nhà",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Phúc",
+   "Bố",
+   "Bé Na"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_716",
+    "name": "Tài khoản lương",
+    "balance": 14000000
+   },
+   {
+    "id": "acc_740",
+    "name": "Tài khoản tour",
+    "balance": 5100000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_108",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_658",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_9177",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_8812",
+    "account_id": "acc_716",
+    "amount": 2000000,
+    "from": "Anh Bình",
+    "note": "Tạm ứng tour Hội An",
+    "date": "2026-11-05"
+   },
+   {
+    "id": "tx_8840",
+    "account_id": "acc_740",
+    "amount": -450000,
+    "note": "Mua nước suối cho đoàn",
+    "date": "2026-11-10"
+   },
+   {
+    "id": "tx_8857",
+    "account_id": "acc_740",
+    "amount": 3600000,
+    "from": "Anh Bình",
+    "note": "Tip đoàn khách Hàn",
+    "date": "2026-11-12"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_8880",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_32",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_818",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_9549",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_556",
+    "time": "2026-11-11T12:15:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_647",
+    "time": "2026-11-10T18:40:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_1845",
+    "time": "2026-11-11T07:10:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_938",
+    "time": "2026-11-10T14:10:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": true
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_999",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Codemy",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_416",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_970",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 120
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "Công ty du lịch Biển Xanh, 15 Bạch Đằng, Đà Nẵng",
+    "dropoff": "88 Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
+    "vehicle": "bike",
+    "schedule_time": "2026-11-12T17:00:00+07:00"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_486",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09972472088"
+   },
+   {
+    "id": "c_950",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09535796903"
+   },
+   {
+    "id": "c_915",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09630865759"
+   },
+   {
+    "id": "c_333",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09598618859"
+   },
+   {
+    "id": "c_8117",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09630028468"
+   },
+   {
+    "id": "c_764",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09996896501"
+   },
+   {
+    "id": "c_710",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09442943218"
+   },
+   {
+    "id": "c_221",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09597286534"
+   },
+   {
+    "id": "c_681",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09436789095"
+   }
+  ]
+ }
+}

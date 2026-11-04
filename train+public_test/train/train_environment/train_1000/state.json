@@ -1,0 +1,250 @@
+{
+ "_meta": {
+  "question_id": "train_1000",
+  "current_time": "2026-11-18T20:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "gold_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_2689",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_1862",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_124",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_371",
+    "time": "2026-11-19T07:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_217",
+    "time": "2026-11-19T06:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_147",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-16T22:20:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_1863",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-18T05:50:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_222",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-16T15:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_630",
+    "from": "dung.pham@congty.example.test",
+    "from_name": "Anh Dũng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-16T02:50:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 33,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-18",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-19",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 33
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-21",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 31
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 123900000,
+    "sell": 125900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 117900000,
+    "sell": 119900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3997
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_324",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_1113",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_3334",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_667",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_677",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ }
+}

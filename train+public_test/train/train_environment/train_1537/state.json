@@ -1,0 +1,481 @@
+{
+ "_meta": {
+  "question_id": "train_1537",
+  "current_time": "2026-10-17T13:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_5182",
+    "content": "Dò vé số Ryan Ford tặng hôm đi công tác, số 418275",
+    "time": "2026-10-17T18:30:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_5207",
+    "content": "Dò vé số Ryan Fordham tặng hôm đi công tác, số 730561",
+    "time": "2026-10-17T18:30:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_4960",
+    "content": "Gửi follow-up cho Team Design về bản mockup",
+    "time": "2026-10-19T09:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-17",
+    "to": "2026-10-17",
+    "kwh": 6.9,
+    "cost": 20000,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.1
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.4
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-11",
+    "to": "2026-10-17",
+    "kwh": 75.0,
+    "cost": 217500,
+    "days": [
+     {
+      "date": "2026-10-11",
+      "kwh": 7.9
+     },
+     {
+      "date": "2026-10-12",
+      "kwh": 11.8
+     },
+     {
+      "date": "2026-10-13",
+      "kwh": 9.1
+     },
+     {
+      "date": "2026-10-14",
+      "kwh": 7.7
+     },
+     {
+      "date": "2026-10-15",
+      "kwh": 15.7
+     },
+     {
+      "date": "2026-10-16",
+      "kwh": 15.9
+     },
+     {
+      "date": "2026-10-17",
+      "kwh": 6.9
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-17",
+    "kwh": 210.8,
+    "cost": 611300
+   }
+  },
+  "alert_threshold_kwh": 350
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_715",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_125",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_4449",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_8027",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_539",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09863310099"
+   },
+   {
+    "id": "c_743",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09969738023"
+   },
+   {
+    "id": "c_7441",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09780890090"
+   },
+   {
+    "id": "c_971",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09462490521"
+   },
+   {
+    "id": "c_233",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09731092988"
+   },
+   {
+    "id": "c_437",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09446449099"
+   },
+   {
+    "id": "c_19",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09739546430"
+   },
+   {
+    "id": "c_797",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09121114234"
+   },
+   {
+    "id": "c_415",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09564288675"
+   },
+   {
+    "id": "c_999",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09953928230"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-10-17",
+    "prizes": {
+     "special": "552012",
+     "first": "64948",
+     "eighth": "70"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-10-17",
+    "prizes": {
+     "special": "368338",
+     "first": "65584",
+     "eighth": "38"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-10-17",
+    "prizes": {
+     "special": "163184",
+     "first": "82008",
+     "eighth": "16"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-10-17",
+    "prizes": {
+     "special": "902518",
+     "first": "65916",
+     "eighth": "39"
+    }
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_2931",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_40",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_2497",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_598",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_673",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_371",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_2698",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-18T10:30:00+07:00",
+    "end": "2026-10-18T11:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_919",
+    "title": "đi chơi công viên",
+    "start": "2026-10-18T14:00:00+07:00",
+    "end": "2026-10-18T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_812",
+    "title": "họp phụ huynh",
+    "start": "2026-10-18T09:30:00+07:00",
+    "end": "2026-10-18T10:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6031",
+    "title": "Offsite team cùng Ryan Fordham",
+    "start": "2026-10-03T08:30:00+07:00",
+    "end": "2026-10-03T17:00:00+07:00",
+    "location": "Đà Nẵng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6158",
+    "title": "Thăm nhà máy cùng Ryan Ford",
+    "start": "2026-10-07T09:00:00+07:00",
+    "end": "2026-10-07T16:00:00+07:00",
+    "location": "KCN Biên Hòa, Đồng Nai",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6274",
+    "title": "Workshop khách hàng cùng Ryan Fordham",
+    "start": "2026-10-10T09:00:00+07:00",
+    "end": "2026-10-10T17:30:00+07:00",
+    "location": "Đà Nẵng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_767",
+    "time": "2026-10-18T07:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_347",
+    "time": "2026-10-18T06:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_1923",
+    "time": "2026-10-18T08:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,360 @@
+{
+ "_meta": {
+  "question_id": "train_1676",
+  "current_time": "2026-12-16T09:30:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "KTX khu B ĐHQG, Dĩ An",
+    "dropoff": "Đại học Bách khoa TP.HCM, 268 Lý Thường Kiệt",
+    "vehicle": "bike"
+   }
+  ]
+ },
+ "calculator": {},
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_01",
+    "days": "daily",
+    "name": "Vitamin C",
+    "times": [
+     "08:00"
+    ]
+   }
+  ],
+  "logs": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_7002",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-18T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_3087",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-15T12:30:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_3828",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-21T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_6897",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-12-15T20:15:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_268",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-12-15T19:45:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_6273",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-12-16T00:30:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_125",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-12-15T22:00:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_11",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-12-15T17:30:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   }
+  ],
+  "saved": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "speed": 1
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "cool",
+     "temperature": 28
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_132",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_355",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_4997",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_608",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_439",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09898423610"
+   },
+   {
+    "id": "c_775",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09804061299"
+   },
+   {
+    "id": "c_430",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09164322737"
+   },
+   {
+    "id": "c_518",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09702233691"
+   },
+   {
+    "id": "c_578",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09358221202"
+   },
+   {
+    "id": "c_8075",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09126952958"
+   },
+   {
+    "id": "c_338",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09948424707"
+   },
+   {
+    "id": "c_972",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09159912129"
+   },
+   {
+    "id": "c_463",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09522467690"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_8156",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 851000,
+    "due_date": "2026-12-24",
+    "paid": false
+   },
+   {
+    "id": "bill_792",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 206000,
+    "due_date": "2026-12-20",
+    "paid": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,561 @@
+{
+ "_meta": {
+  "question_id": "train_1324",
+  "current_time": "2026-11-21T19:45:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_441",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09900008691"
+   },
+   {
+    "id": "c_629",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09782521970"
+   },
+   {
+    "id": "c_568",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09257614576"
+   },
+   {
+    "id": "c_151",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09308282237"
+   },
+   {
+    "id": "c_5135",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09999357304"
+   },
+   {
+    "id": "c_1822",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09472457323"
+   },
+   {
+    "id": "c_4332",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09162188735"
+   },
+   {
+    "id": "c_792",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09388898823"
+   },
+   {
+    "id": "c_5482",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09559785288"
+   },
+   {
+    "id": "c_3808",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09263817578"
+   },
+   {
+    "id": "c_86",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09829847502"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_776",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-21T12:30:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_768",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Công Nghệ Số",
+    "published_at": "2026-11-21T12:45:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_29",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-20T21:15:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_417",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-21T00:00:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_317",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-20T21:45:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_5512",
+    "title": "Cước container tuyến Đà Nẵng – Bangkok tăng 15% từ tháng 12",
+    "topic": "business",
+    "source": "Hàng Hải Mới",
+    "published_at": "2026-11-21T08:10:00+07:00",
+    "summary": "Các hãng tàu áp phụ phí mùa cao điểm cho hàng xuất đi Thái Lan."
+   },
+   {
+    "id": "art_239",
+    "title": "Cước container tuyến Hải Phòng – Bangkok tăng 22%",
+    "topic": "business",
+    "source": "Thời Báo Cảng",
+    "published_at": "2026-11-21T09:40:00+07:00",
+    "summary": "Doanh nghiệp phía Bắc lo chi phí logistics cuối năm đội lên."
+   },
+   {
+    "id": "art_6071",
+    "title": "Bangkok mở lễ hội ẩm thực đường phố cuối năm",
+    "topic": "travel",
+    "source": "Du Lịch Mới",
+    "published_at": "2026-11-20T18:00:00+07:00",
+    "summary": "Lễ hội kéo dài hai tuần với hơn 300 gian hàng."
+   },
+   {
+    "id": "art_884",
+    "title": "Cước container tuyến Đà Nẵng – Kuala Lumpur tăng 9%",
+    "topic": "business",
+    "source": "Hàng Hải Mới",
+    "published_at": "2026-11-21T10:20:00+07:00",
+    "summary": "Mức tăng áp dụng cho lô hàng xuất đi Malaysia từ đầu tháng 12."
+   },
+   {
+    "id": "art_3140",
+    "title": "Kuala Lumpur siết kiểm dịch trái cây nhập khẩu",
+    "topic": "business",
+    "source": "Thời Báo Cảng",
+    "published_at": "2026-11-21T11:05:00+07:00",
+    "summary": "Lô hàng thiếu giấy chứng nhận sẽ bị trả về."
+   }
+  ],
+  "saved": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_4358",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_7761",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_23",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_608",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_946",
+    "show_id": "show_4358",
+    "title": "Số 18: Nhà giả kim - phần 1",
+    "number": 18,
+    "duration_min": 45,
+    "published": "2026-11-07"
+   },
+   {
+    "id": "ep_8406",
+    "show_id": "show_23",
+    "title": "Số 13: Lỗ đen là gì",
+    "number": 13,
+    "duration_min": 18,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_8832",
+    "show_id": "show_23",
+    "title": "Số 12: Giấc ngủ và trí nhớ",
+    "number": 12,
+    "duration_min": 18,
+    "published": "2026-11-07"
+   },
+   {
+    "id": "ep_330",
+    "show_id": "show_608",
+    "title": "Số 14: Lập quỹ khẩn cấp",
+    "number": 14,
+    "duration_min": 45,
+    "published": "2026-10-31"
+   },
+   {
+    "id": "ep_771",
+    "show_id": "show_608",
+    "title": "Số 16: Quản lý chi tiêu gia đình",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_6257",
+    "show_id": "show_608",
+    "title": "Số 15: Gửi tiết kiệm hay mua vàng",
+    "number": 15,
+    "duration_min": 18,
+    "published": "2026-11-07"
+   },
+   {
+    "id": "ep_652",
+    "show_id": "show_23",
+    "title": "Số 11: Vì sao bầu trời màu xanh",
+    "number": 11,
+    "duration_min": 18,
+    "published": "2026-10-31"
+   },
+   {
+    "id": "ep_918",
+    "show_id": "show_7761",
+    "title": "Số 17: Nghề diễn và những áp lực",
+    "number": 17,
+    "duration_min": 18,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_675",
+    "show_id": "show_4358",
+    "title": "Số 19: Nhà giả kim - phần 2",
+    "number": 19,
+    "duration_min": 45,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_540",
+    "show_id": "show_7761",
+    "title": "Số 16: Sống chậm giữa thành phố",
+    "number": 16,
+    "duration_min": 18,
+    "published": "2026-11-07"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_792",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_428",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_1189",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_48",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_395",
+    "name": "Rửa bát",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_9138",
+    "name": "Giặt quần áo",
+    "assignee": "Tuấn",
+    "done": true
+   },
+   {
+    "id": "chore_85",
+    "name": "Nấu cơm tối",
+    "assignee": "Tuấn",
+    "done": true
+   },
+   {
+    "id": "chore_184",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Chị Trâm",
+    "done": false
+   },
+   {
+    "id": "chore_360",
+    "name": "Phơi quần áo",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị Trâm",
+   "Lan",
+   "Tuấn"
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_1076",
+    "name": "bếp",
+    "area_m2": 25
+   },
+   {
+    "id": "room_8691",
+    "name": "phòng ăn",
+    "area_m2": 8
+   },
+   {
+    "id": "room_532",
+    "name": "phòng ngủ",
+    "area_m2": 12
+   },
+   {
+    "id": "room_132",
+    "name": "phòng khách",
+    "area_m2": 12
+   },
+   {
+    "id": "room_2113",
+    "name": "phòng làm việc",
+    "area_m2": 15
+   }
+  ],
+  "current_job": null
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_7693",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_516",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_861",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_478",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_434",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_288",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_3533",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_663",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_378",
+    "title": "đi chơi công viên",
+    "start": "2026-11-22T14:30:00+07:00",
+    "end": "2026-11-22T15:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7350",
+    "title": "khám răng",
+    "start": "2026-11-22T14:30:00+07:00",
+    "end": "2026-11-22T15:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_837",
+    "title": "đá bóng",
+    "start": "2026-11-23T19:30:00+07:00",
+    "end": "2026-11-23T20:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_919",
+    "title": "họp phụ huynh",
+    "start": "2026-11-23T19:30:00+07:00",
+    "end": "2026-11-23T20:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

@@ -1,0 +1,431 @@
+{
+ "_meta": {
+  "question_id": "public_0652",
+  "current_time": "2026-10-26T16:35:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "Homestay Garden House, 9 Nguyễn Sinh Cung, Huế",
+    "dropoff": "Ga Huế",
+    "vehicle": "car4",
+    "payment": "ewallet"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": null,
+    "phone_number": "09051234567",
+    "status": "dialing"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_690",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_506",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_829",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_734",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_4402",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_921",
+    "name": "Bãi xe chợ Đông Ba",
+    "address": "Trần Hưng Đạo, Phú Hòa, Huế",
+    "area": "Đông Ba",
+    "price_per_hour": 15000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_735",
+    "name": "Bãi đỗ Đại Nội",
+    "address": "23 Tháng 8, Thuận Hòa, Huế",
+    "area": "Đại Nội",
+    "price_per_hour": 20000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_535",
+    "name": "Bãi xe Ga Huế",
+    "address": "2 Bùi Thị Xuân, Huế",
+    "area": "Ga Huế",
+    "price_per_hour": 10000,
+    "available_spots": 8
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_417",
+    "lot_id": "lot_921",
+    "from_time": "2026-10-26T08:30:00+07:00",
+    "hours": 8,
+    "end_time": "2026-10-26T16:30:00+07:00",
+    "total": 120000,
+    "status": "active"
+   },
+   {
+    "id": "park_92",
+    "lot_id": "lot_735",
+    "from_time": "2026-10-26T13:00:00+07:00",
+    "hours": 5,
+    "end_time": "2026-10-26T18:00:00+07:00",
+    "total": 100000,
+    "status": "active"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_743",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_588",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_888",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_153",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_588",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 2,
+      "note": null
+     },
+     {
+      "item_id": "rest_01_m3",
+      "name": "Chả cua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 125000,
+    "address": "Homestay Garden House, 9 Nguyễn Sinh Cung, Huế",
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_188",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_701",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_909",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_257",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_317",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_414",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_743",
+    "name": "Nhạc chill buổi tối",
+    "track_ids": [
+     "trk_317"
+    ]
+   },
+   {
+    "id": "pl_52",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": {
+   "track_id": "trk_317",
+   "title": "Nơi này có anh",
+   "status": "playing"
+  },
+  "volume": 3
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_801",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-10-24T17:50:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_715",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-10-24T07:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_856",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-10-23T23:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_78",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-01T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_4710",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-31T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_3153",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-27T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_333",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-30T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,437 @@
+{
+ "_meta": {
+  "question_id": "public_0203",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "pantry.consume",
+   "pantry.list_items",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_01",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_02",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_03",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_04",
+    "name": "Đèn bàn LED chống cận Rạng Đông",
+    "price": 275000,
+    "seller": "Rạng Đông Official",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_05",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_06",
+    "name": "Bàn phím cơ AKKO 3068B",
+    "price": 1290000,
+    "seller": "AKKO Việt Nam",
+    "category": "máy tính",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_07",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.5,
+    "in_stock": true
+   },
+   {
+    "id": "prod_08",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_09",
+    "name": "Gạo thơm lài túi 2 kg",
+    "price": 89000,
+    "seller": "Gạo Ngon Store",
+    "category": "thực phẩm",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_10",
+    "name": "Gạo thơm Jasmine túi 5 kg",
+    "price": 159000,
+    "seller": "Gạo Ngon Store",
+    "category": "thực phẩm",
+    "rating": 4.6,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_01",
+    "items": [
+     {
+      "product_id": "prod_05",
+      "name": "Cốc giữ nhiệt Elmich 500ml",
+      "price": 219000,
+      "quantity": 1
+     }
+    ],
+    "total": 219000,
+    "status": "delivered",
+    "placed_at": "2026-09-21T02:00:00+07:00",
+    "seller": "Elmich Store",
+    "delivered_at": "2026-09-24T02:00:00+07:00"
+   },
+   {
+    "id": "ord_02",
+    "items": [
+     {
+      "product_id": "prod_06",
+      "name": "Bàn phím cơ AKKO 3068B",
+      "price": 1290000,
+      "quantity": 1
+     }
+    ],
+    "total": 1290000,
+    "status": "shipping",
+    "placed_at": "2026-09-25T07:00:00+07:00",
+    "seller": "AKKO Việt Nam"
+   },
+   {
+    "id": "ord_03",
+    "items": [
+     {
+      "product_id": "prod_07",
+      "name": "Nồi chiên không dầu Philips 4.1 lít",
+      "price": 1990000,
+      "quantity": 1
+     }
+    ],
+    "total": 1990000,
+    "status": "shipping",
+    "placed_at": "2026-09-23T08:00:00+07:00",
+    "seller": "Philips Official"
+   }
+  ],
+  "returns": []
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_01",
+    "name": "gạo thơm",
+    "stock": 1,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_02",
+    "name": "bột mì",
+    "stock": 3,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_03",
+    "name": "đường",
+    "stock": 2,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_04",
+    "name": "cà phê G7",
+    "stock": 2,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_05",
+    "name": "yến mạch",
+    "stock": 2,
+    "unit": "túi"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_01",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_02",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_03",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_04",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_05",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": true
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_01",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_02",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_03",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_04",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_05",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_01",
+    "items": [
+     {
+      "product_id": "gro_01",
+      "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+      "price": 35000,
+      "quantity": 1
+     }
+    ],
+    "total": 35000,
+    "status": "delivered",
+    "delivery_time": "2026-09-15T09:00:00+07:00"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_01",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_02",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_03",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_04",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_02",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_03",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_04",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_05",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ }
+}

@@ -1,0 +1,578 @@
+{
+ "_meta": {
+  "question_id": "train_1716",
+  "current_time": "2026-11-04T20:30:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_845",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_974",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_326",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_185",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_429",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_608",
+    "tracking_id": "EV723495863",
+    "carrier": "VNPost",
+    "name": "Hộp quà Trung thu",
+    "status": "out_for_delivery",
+    "eta": "2026-11-04T17:00:00+07:00"
+   },
+   {
+    "id": "shp_158",
+    "tracking_id": "GST966794192",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Ốp lưng điện thoại",
+    "status": "delivered",
+    "eta": "2026-11-03T17:00:00+07:00"
+   },
+   {
+    "id": "shp_7480",
+    "tracking_id": "JV240134283",
+    "carrier": "JetViệt Express",
+    "name": "Tai nghe Bluetooth",
+    "status": "in_transit",
+    "eta": "2026-11-05T17:00:00+07:00",
+    "scheduled_time": "2026-11-05T18:00:00+07:00"
+   }
+  ],
+  "pickups": [
+   {
+    "id": "pick_01",
+    "status": "scheduled",
+    "address": "17 Nguyễn Huệ",
+    "date": "2026-11-06"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_89",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_9132",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_712",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_3865",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_774",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-11-05T08:30:00+07:00",
+    "link": "https://meet.example.test/upt-qtsr-mil",
+    "attendees": [
+     "c_11",
+     "c_7784"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_4004",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-07T14:00:00+07:00",
+    "link": "https://meet.example.test/uwz-lqhi-gzc",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_702",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-05T08:00:00+07:00",
+    "link": "https://meet.example.test/esa-lycd-owq",
+    "attendees": [
+     "c_7784"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_944",
+    "title": "Họp lớp online",
+    "start": "2026-11-05T14:00:00+07:00",
+    "link": "https://meet.example.test/qpk-rosa-pja",
+    "attendees": [
+     "c_7784"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 100,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_13",
+    "name": "phòng khách",
+    "area_m2": 15
+   },
+   {
+    "id": "room_9101",
+    "name": "bếp",
+    "area_m2": 10
+   },
+   {
+    "id": "room_889",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 12
+   },
+   {
+    "id": "room_7178",
+    "name": "hành lang",
+    "area_m2": 25
+   },
+   {
+    "id": "room_946",
+    "name": "phòng ngủ",
+    "area_m2": 12
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng khách",
+    "bếp"
+   ],
+   "whole_house": false,
+   "mode": "mop"
+  }
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_124",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_744",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Chiều nay em về trễ nghe"
+     }
+    ]
+   },
+   {
+    "id": "chat_764",
+    "name": "Nhi",
+    "type": "direct",
+    "members": [
+     "Nhi"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Trưa nay mình đi ăn bún bò nghe"
+     }
+    ]
+   },
+   {
+    "id": "chat_7127",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_592",
+    "name": "Mạ",
+    "type": "direct",
+    "members": [
+     "Mạ"
+    ],
+    "messages": []
+   }
+  ],
+  "calls": [
+   {
+    "id": "ott_call_01",
+    "chat_id": "chat_592",
+    "video": false,
+    "status": "dialing"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_556",
+    "name": "Lau nhà",
+    "assignee": "Ba",
+    "done": false
+   },
+   {
+    "id": "chore_6093",
+    "name": "Rửa bát",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_741",
+    "name": "Hẹn Falcon Security sửa chuông cửa",
+    "assignee": "Ba",
+    "done": false
+   },
+   {
+    "id": "chore_586",
+    "name": "Tưới cây",
+    "assignee": "Bà nội",
+    "done": false
+   },
+   {
+    "id": "chore_319",
+    "name": "Gọi Falcon Cleaning tới giặt ghế sofa",
+    "assignee": "Mạ",
+    "done": false
+   }
+  ],
+  "members": [
+   "Bé Ngọc",
+   "Ba",
+   "Mạ",
+   "Bà nội"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_91",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_871",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_4834",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_492",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_915",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09970451049"
+   },
+   {
+    "id": "c_104",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09784855253"
+   },
+   {
+    "id": "c_384",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09791444783"
+   },
+   {
+    "id": "c_4463",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09828489176"
+   },
+   {
+    "id": "c_550",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09996559574"
+   },
+   {
+    "id": "c_11",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09631169320"
+   },
+   {
+    "id": "c_2793",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09991595636"
+   },
+   {
+    "id": "c_408",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09308712808"
+   },
+   {
+    "id": "c_7784",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09458433163"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ }
+}

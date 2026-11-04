@@ -1,0 +1,332 @@
+{
+ "_meta": {
+  "question_id": "public_0447",
+  "current_time": "2026-11-27T08:00:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 200,
+    "avg_price": 26450,
+    "price": 26100
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 1000,
+    "avg_price": 35350,
+    "price": 34350
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26100,
+    "change_pct": 2.6
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 61900,
+    "change_pct": -0.5
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1683,
+    "change_pct": 1.0
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 34350,
+    "change_pct": 2.5
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24150,
+    "change_pct": -2.6
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59850,
+    "change_pct": -2.9
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_225",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09542617600"
+   },
+   {
+    "id": "c_652",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09820369715"
+   },
+   {
+    "id": "c_48",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09262911729"
+   },
+   {
+    "id": "c_642",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09101208393"
+   },
+   {
+    "id": "c_8209",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09977246857"
+   },
+   {
+    "id": "c_833",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09763661514"
+   },
+   {
+    "id": "c_9503",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09510024012"
+   },
+   {
+    "id": "c_9598",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09575302146"
+   },
+   {
+    "id": "c_2872",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09359400796"
+   }
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_104",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_115",
+    "name": "Balo laptop Mikkor 15.6 inch",
+    "price": 650000,
+    "seller": "Mikkor Store",
+    "category": "thời trang",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_474",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_874",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_6367",
+    "name": "Đèn bàn LED chống cận Rạng Đông",
+    "price": 275000,
+    "seller": "Rạng Đông Official",
+    "category": "gia dụng",
+    "rating": 4.5,
+    "in_stock": true
+   },
+   {
+    "id": "prod_4827",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_4158",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.9,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_406",
+    "items": [
+     {
+      "product_id": "prod_4827",
+      "name": "Sạc dự phòng Xiaomi 10000mAh",
+      "price": 399000,
+      "quantity": 1
+     }
+    ],
+    "total": 399000,
+    "status": "delivered",
+    "placed_at": "2026-11-16T05:00:00+07:00",
+    "seller": "Xiaomi Official",
+    "delivered_at": "2026-11-18T05:00:00+07:00"
+   },
+   {
+    "id": "ord_4248",
+    "items": [
+     {
+      "product_id": "prod_474",
+      "name": "Cốc giữ nhiệt Elmich 500ml",
+      "price": 219000,
+      "quantity": 1
+     }
+    ],
+    "total": 219000,
+    "status": "shipping",
+    "placed_at": "2026-11-26T07:00:00+07:00",
+    "seller": "Elmich Store"
+   },
+   {
+    "id": "ord_543",
+    "items": [
+     {
+      "product_id": "prod_6367",
+      "name": "Đèn bàn LED chống cận Rạng Đông",
+      "price": 275000,
+      "quantity": 1
+     }
+    ],
+    "total": 275000,
+    "status": "delivered",
+    "placed_at": "2026-11-19T06:00:00+07:00",
+    "seller": "Rạng Đông Official",
+    "delivered_at": "2026-11-22T06:00:00+07:00"
+   }
+  ],
+  "returns": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_8236",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_476",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_643",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_7517",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_918",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_564",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_3606",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_3917",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_64",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_921",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ }
+}

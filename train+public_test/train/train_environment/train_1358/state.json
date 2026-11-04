@@ -1,0 +1,266 @@
+{
+ "_meta": {
+  "question_id": "train_1358",
+  "current_time": "2026-11-26T20:55:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_8319",
+    "name": "Tài khoản thanh toán",
+    "balance": 4670000
+   },
+   {
+    "id": "acc_894",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 12000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_3934",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_2468",
+    "name": "Đỗ Thu Trang",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000887412"
+   },
+   {
+    "id": "ben_837",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_872",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_01",
+    "account_id": "acc_8319",
+    "beneficiary_id": "ben_2468",
+    "amount": -180000,
+    "note": "tiền điện tháng này"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_259",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09813342505"
+   },
+   {
+    "id": "c_34",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09696258296"
+   },
+   {
+    "id": "c_824",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09227046202"
+   },
+   {
+    "id": "c_8701",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09544292128"
+   },
+   {
+    "id": "c_563",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09899137691"
+   },
+   {
+    "id": "c_696",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09427009045"
+   },
+   {
+    "id": "c_6259",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09520401405"
+   },
+   {
+    "id": "c_373",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09177196190"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_912",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_410",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_626",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_236",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_926",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_6358",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_612",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_694",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_614",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-28T20:30:00+07:00",
+    "link": "https://meet.example.test/ist-hkwj-njw",
+    "attendees": [
+     "c_696"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_749",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-27T08:00:00+07:00",
+    "link": "https://meet.example.test/oab-xxfi-chn",
+    "attendees": [
+     "c_824"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_8391",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 25
+   },
+   {
+    "id": "room_58",
+    "name": "bếp",
+    "area_m2": 8
+   },
+   {
+    "id": "room_3472",
+    "name": "hành lang",
+    "area_m2": 22
+   },
+   {
+    "id": "room_8172",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   },
+   {
+    "id": "room_632",
+    "name": "phòng ăn",
+    "area_m2": 25
+   },
+   {
+    "id": "room_2793",
+    "name": "phòng khách",
+    "area_m2": 12
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng khách"
+   ],
+   "whole_house": false,
+   "mode": "vacuum"
+  }
+ }
+}

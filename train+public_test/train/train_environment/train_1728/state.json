@@ -1,0 +1,356 @@
+{
+ "_meta": {
+  "question_id": "train_1728",
+  "current_time": "2026-10-12T09:15:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "fuel_price.get_price",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_105",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-10-10T07:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_252",
+    "from": "dung.pham@congty.example.test",
+    "from_name": "Anh Dũng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-10-09T13:45:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_233",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-10-09T09:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23100
+   },
+   {
+    "type": "e5",
+    "price": 21900
+   },
+   {
+    "type": "diesel",
+    "price": 20500
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_398",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_85",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9907",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_184",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_804",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_59",
+    "title": "Cà phê với Minh",
+    "start": "2026-10-15T19:30:00+07:00",
+    "end": "2026-10-15T20:30:00+07:00",
+    "location": "Nhà Cà Phê Nguyễn Huệ",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_189",
+    "title": "Tiệc sinh nhật Anh Long",
+    "start": "2026-10-17T19:00:00+07:00",
+    "end": "2026-10-17T22:00:00+07:00",
+    "location": "Skyline Rooftop Bar",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_604",
+    "title": "Họp team marketing",
+    "start": "2026-10-13T09:30:00+07:00",
+    "end": "2026-10-13T10:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_952",
+    "title": "Họp với Sếp Kim",
+    "start": "2026-10-14T15:30:00+07:00",
+    "end": "2026-10-14T16:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_554",
+    "title": "Ăn tối với gia đình",
+    "start": "2026-10-15T18:30:00+07:00",
+    "end": "2026-10-15T20:00:00+07:00",
+    "location": "Nhà mẹ",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_06",
+    "status": "confirmed",
+    "title": "Chạy bộ nhóm",
+    "start": "2026-10-14T06:00:00+07:00",
+    "end": "2026-10-14T07:00:00+07:00",
+    "location": "Skyline Park"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 75,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_2946",
+    "name": "phòng khách",
+    "area_m2": 22
+   },
+   {
+    "id": "room_445",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   },
+   {
+    "id": "room_6056",
+    "name": "bếp",
+    "area_m2": 22
+   },
+   {
+    "id": "room_233",
+    "name": "hành lang",
+    "area_m2": 8
+   },
+   {
+    "id": "room_796",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 18
+   },
+   {
+    "id": "room_8151",
+    "name": "phòng ăn",
+    "area_m2": 10
+   }
+  ],
+  "current_job": null
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-09": {
+    "steps": 3518,
+    "calories": 140,
+    "distance_km": 2.5
+   },
+   "2026-10-10": {
+    "steps": 3425,
+    "calories": 137,
+    "distance_km": 2.5
+   },
+   "2026-10-11": {
+    "steps": 2660,
+    "calories": 106,
+    "distance_km": 1.9
+   },
+   "2026-10-12": {
+    "steps": 3629,
+    "calories": 145,
+    "distance_km": 2.6
+   }
+  },
+  "goal_steps": 6000,
+  "workouts": [
+   {
+    "id": "wo_770",
+    "type": "cycling",
+    "minutes": 45,
+    "time": "2026-10-09T06:30:00+07:00"
+   },
+   {
+    "id": "wo_74",
+    "type": "running",
+    "minutes": 20,
+    "time": "2026-10-11T06:30:00+07:00"
+   },
+   {
+    "id": "wo_606",
+    "type": "yoga",
+    "minutes": 60,
+    "time": "2026-10-08T06:30:00+07:00"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_60",
+    "name": "Đi chợ",
+    "assignee": "Lan",
+    "done": true
+   },
+   {
+    "id": "chore_225",
+    "name": "Tưới cây",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_642",
+    "name": "Giặt quần áo",
+    "assignee": "Chị My",
+    "done": false
+   },
+   {
+    "id": "chore_2773",
+    "name": "Rửa bát",
+    "assignee": "Chị My",
+    "done": false
+   },
+   {
+    "id": "chore_362",
+    "name": "Phơi quần áo",
+    "assignee": "Chị My",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị My",
+   "Bà nội",
+   "Lan"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_686",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-13T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_969",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-16T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_474",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-11T20:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   }
+  ]
+ }
+}

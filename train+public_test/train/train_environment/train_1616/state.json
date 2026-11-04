@@ -1,0 +1,461 @@
+{
+ "_meta": {
+  "question_id": "train_1616",
+  "current_time": "2026-11-15T15:00:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_4868",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-11-14T23:15:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_8212",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-14T09:15:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_253",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-14T12:30:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_448",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-14T17:00:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   }
+  ],
+  "saved": [
+   {
+    "id": "saved_01",
+    "article_id": "art_253"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_450",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09446860041"
+   },
+   {
+    "id": "c_63",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09389435405"
+   },
+   {
+    "id": "c_2784",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09180564373"
+   },
+   {
+    "id": "c_423",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09247805218"
+   },
+   {
+    "id": "c_272",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09587148170"
+   },
+   {
+    "id": "c_916",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09854734392"
+   },
+   {
+    "id": "c_688",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09354973886"
+   },
+   {
+    "id": "c_968",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09525384567"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_461",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": true
+   },
+   {
+    "id": "item_347",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_167",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_1392",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_05",
+    "checked": false,
+    "name": "mì gói",
+    "quantity": 5
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_477",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_482",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_95",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_242",
+    "time": "2026-11-14T22:30:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_357",
+    "time": "2026-11-14T11:05:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_904",
+    "time": "2026-11-14T18:15:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25998
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28077
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 173.3
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_344",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_528",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_506",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_621",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_506",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 1,
+      "note": null
+     },
+     {
+      "item_id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 65000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_344",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 39000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_878",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-15T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_6243",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-16T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_539",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-21T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_783",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-15T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_5099",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": false,
+    "battery": 80
+   },
+   {
+    "id": "lock_122",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_225",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_405",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_657",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 80
+   }
+  ],
+  "guest_codes": []
+ }
+}

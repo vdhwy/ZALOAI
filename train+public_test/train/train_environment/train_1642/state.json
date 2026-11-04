@@ -1,0 +1,493 @@
+{
+ "_meta": {
+  "question_id": "train_1642",
+  "current_time": "2026-10-24T19:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_3958",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-23T17:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_2878",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-23T20:30:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_4845",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-30T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_7636",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_1536",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_838",
+    "time": "2026-10-24T12:15:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_344",
+    "time": "2026-10-23T16:20:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_5002",
+    "time": "2026-10-23T02:05:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_987",
+    "time": "2026-10-23T05:25:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_423",
+    "time": "2026-10-23T16:00:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_718",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_262",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_818",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_5956",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_703",
+    "time": "2026-10-25T07:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_763",
+    "time": "2026-10-25T07:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_730",
+    "time": "2026-10-25T06:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_896",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_713",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_630",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_45",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_896",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 100000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_841",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09635181520"
+   },
+   {
+    "id": "c_489",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09450043094"
+   },
+   {
+    "id": "c_967",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09910795482"
+   },
+   {
+    "id": "c_459",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09245325471"
+   },
+   {
+    "id": "c_886",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09380640033"
+   },
+   {
+    "id": "c_8938",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09425647041"
+   },
+   {
+    "id": "c_136",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09812827524"
+   },
+   {
+    "id": "c_932",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09945632604"
+   },
+   {
+    "id": "c_774",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09696527251"
+   },
+   {
+    "id": "c_9849",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09524040521"
+   },
+   {
+    "id": "c_3288",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09396459375"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 26,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-10-24",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-10-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 28
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-10-26",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-10-27",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 34
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_351",
+    "tracking_id": "GST960624338",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-10-25T14:00:00+07:00",
+    "scheduled_time": "2026-10-26T09:00:00+07:00"
+   },
+   {
+    "id": "shp_8330",
+    "tracking_id": "EV958818041",
+    "carrier": "VNPost",
+    "name": "Giày thể thao",
+    "status": "out_for_delivery",
+    "eta": "2026-10-24T14:00:00+07:00"
+   }
+  ],
+  "pickups": [
+   {
+    "id": "pick_01",
+    "status": "scheduled",
+    "address": "45 Trần Hưng Đạo, Ninh Kiều, Cần Thơ",
+    "date": "2026-10-26"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22500
+   },
+   {
+    "type": "e5",
+    "price": 21300
+   },
+   {
+    "type": "diesel",
+    "price": 19900
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_235",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 95
+   },
+   {
+    "id": "lock_439",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_612",
+    "name": "cửa sau",
+    "location": "sân sau",
+    "locked": false,
+    "battery": 70
+   },
+   {
+    "id": "lock_9437",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_9117",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ }
+}

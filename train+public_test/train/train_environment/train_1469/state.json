@@ -1,0 +1,345 @@
+{
+ "_meta": {
+  "question_id": "train_1469",
+  "current_time": "2026-11-15T09:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "library.reserve",
+   "library.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_8614",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_687",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_835",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_514",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_196",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_905",
+    "account_id": "acc_8614",
+    "amount": -1850000,
+    "note": "Tiền điện tháng 10",
+    "time": "2026-11-02T08:20:00+07:00"
+   },
+   {
+    "id": "tx_3108",
+    "account_id": "acc_8614",
+    "amount": 24000000,
+    "note": "NGUYEN ANH TUAN chuyen tien tu Frankfurt",
+    "time": "2026-11-03T15:10:00+07:00"
+   },
+   {
+    "id": "tx_2271",
+    "account_id": "acc_687",
+    "amount": 16000000,
+    "note": "NGUYEN ANH TUAN chuyen tien tu Freiburg",
+    "time": "2026-11-10T16:45:00+07:00"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_887",
+    "time": "2026-11-16T06:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_02",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-16T06:00:00+07:00",
+    "label": "đi tập dưỡng sinh"
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_842",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-12-13",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_653",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-11-20",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_2326",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-12-08",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_588",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-12-04",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_218",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-12-13",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_4994",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_4645",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_318",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_423",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": false
+   }
+  ],
+  "reservations": [
+   {
+    "id": "res_01",
+    "book_id": "book_423",
+    "status": "ready"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_237",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-21T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_805",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-18T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_89",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-20T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_502",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-20T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_382",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_604",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_6424",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_149",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_930",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_920",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_890",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_866",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_583",
+    "time": "2026-11-14T20:40:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_968",
+    "time": "2026-11-15T06:50:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_5417",
+    "time": "2026-11-15T08:00:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_554",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": false
+   },
+   {
+    "id": "rule_9295",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_1318",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": false
+   },
+   {
+    "id": "rule_674",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   }
+  ]
+ }
+}

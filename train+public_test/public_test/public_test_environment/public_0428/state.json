@@ -1,0 +1,255 @@
+{
+ "_meta": {
+  "question_id": "public_0428",
+  "current_time": "2026-10-25T22:30:00+07:00",
+  "tools": [
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "pantry.consume",
+   "pantry.list_items",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "translator.translate"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_355",
+    "name": "dầu ăn",
+    "stock": 1,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_212",
+    "name": "bột mì",
+    "stock": 3,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_127",
+    "name": "yến mạch",
+    "stock": 2,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_54",
+    "name": "nước mắm",
+    "stock": 2,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_477",
+    "name": "sữa tươi",
+    "stock": 3,
+    "unit": "hộp"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "bus_376",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   },
+   {
+    "id": "metro_48",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_48",
+    "time": "2026-10-25T22:59:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_48",
+    "time": "2026-10-25T22:49:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-10-25T22:49:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-10-25T22:33:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_376",
+    "time": "2026-10-25T22:42:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_48",
+    "time": "2026-10-25T22:39:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_376",
+    "time": "2026-10-25T22:52:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-10-25T22:41:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_376",
+    "time": "2026-10-25T22:32:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_2788",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-31T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_587",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-29T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_659",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-31T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_220",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-31T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_494",
+    "name": "Đi bộ buổi sáng",
+    "streak": 6,
+    "last_logged": "2026-10-25"
+   },
+   {
+    "id": "habit_8464",
+    "name": "Uống đủ 2 lít nước",
+    "streak": 4,
+    "last_logged": "2026-10-25"
+   },
+   {
+    "id": "habit_8117",
+    "name": "Đo huyết áp buổi tối",
+    "streak": 0
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_8802",
+    "habit_id": "habit_8464",
+    "date": "2026-10-25"
+   },
+   {
+    "id": "log_74",
+    "habit_id": "habit_494",
+    "date": "2026-10-25"
+   },
+   {
+    "id": "log_7729",
+    "habit_id": "habit_8464",
+    "date": "2026-10-24"
+   },
+   {
+    "id": "log_318",
+    "habit_id": "habit_494",
+    "date": "2026-10-24"
+   }
+  ]
+ }
+}

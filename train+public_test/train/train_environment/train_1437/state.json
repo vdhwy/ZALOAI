@@ -1,0 +1,321 @@
+{
+ "_meta": {
+  "question_id": "train_1437",
+  "current_time": "2026-10-31T14:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "phone.call",
+   "phone.recent_calls",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_132",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_915",
+    "name": "Team Design",
+    "type": "direct",
+    "members": [
+     "Team Design"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_460",
+    "name": "Sếp David",
+    "type": "direct",
+    "members": [
+     "Sếp David"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3695",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_582",
+    "name": "Vợ Hằng",
+    "type": "direct",
+    "members": [
+     "Vợ Hằng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 118000000,
+    "sell": 120000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 112000000,
+    "sell": 114000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4103
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_418",
+    "contact_id": "c_7731",
+    "name": "David Brennan",
+    "phone_number": "09631457208",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-10-31T09:05:00+07:00"
+   },
+   {
+    "id": "call_425",
+    "contact_id": "c_13",
+    "name": "Vợ Hằng",
+    "phone_number": "09366738686",
+    "direction": "incoming",
+    "status": "answered",
+    "time": "2026-10-31T10:40:00+07:00"
+   },
+   {
+    "id": "call_437",
+    "contact_id": "c_2096",
+    "name": "David Okafor",
+    "phone_number": "09784120365",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-10-31T11:30:00+07:00"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_550",
+    "time": "2026-11-01T06:15:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_4307",
+    "time": "2026-11-01T08:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_310",
+    "time": "2026-11-01T06:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1955",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09280068003"
+   },
+   {
+    "id": "c_497",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09546181273"
+   },
+   {
+    "id": "c_5294",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09586042464"
+   },
+   {
+    "id": "c_889",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09972018220"
+   },
+   {
+    "id": "c_412",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09536144743"
+   },
+   {
+    "id": "c_4608",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09133356820"
+   },
+   {
+    "id": "c_5142",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09129099650"
+   },
+   {
+    "id": "c_586",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09113667586"
+   },
+   {
+    "id": "c_13",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09366738686"
+   },
+   {
+    "id": "c_784",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09747443266"
+   },
+   {
+    "id": "c_7731",
+    "name": "David Brennan",
+    "relation": "khách hàng Corvane Labs",
+    "phone": "09631457208",
+    "email": "david.brennan@corvane.example.test"
+   },
+   {
+    "id": "c_2096",
+    "name": "David Okafor",
+    "relation": "đối tác Lumen Freight",
+    "phone": "09784120365",
+    "email": "d.okafor@lumenfreight.example.test"
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-31",
+    "to": "2026-10-31",
+    "kwh": 6.2,
+    "cost": 18000,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 2.8
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.2
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-25",
+    "to": "2026-10-31",
+    "kwh": 78.1,
+    "cost": 226500,
+    "days": [
+     {
+      "date": "2026-10-25",
+      "kwh": 7.0
+     },
+     {
+      "date": "2026-10-26",
+      "kwh": 12.9
+     },
+     {
+      "date": "2026-10-27",
+      "kwh": 11.8
+     },
+     {
+      "date": "2026-10-28",
+      "kwh": 11.5
+     },
+     {
+      "date": "2026-10-29",
+      "kwh": 12.9
+     },
+     {
+      "date": "2026-10-30",
+      "kwh": 15.8
+     },
+     {
+      "date": "2026-10-31",
+      "kwh": 6.2
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-31",
+    "kwh": 349.7,
+    "cost": 1014100
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_361",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-04T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_274",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-30T12:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_432",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-02T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,511 @@
+{
+ "_meta": {
+  "question_id": "public_0665",
+  "current_time": "2026-11-10T21:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 1000,
+    "avg_price": 52300,
+    "price": 58300
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 500,
+    "avg_price": 84400,
+    "price": 92550
+   },
+   {
+    "symbol": "ZSR",
+    "name": "CTCP Sunrise Retail",
+    "quantity": 800,
+    "avg_price": 39200,
+    "price": 42500
+   },
+   {
+    "symbol": "ZSY",
+    "name": "CTCP Sunrise Realty",
+    "quantity": 300,
+    "avg_price": 31000,
+    "price": 27800
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 60900,
+    "change_pct": -3.1
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 92550,
+    "change_pct": -0.3
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 129800,
+    "change_pct": -1.1
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1655,
+    "change_pct": 0.1
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33850,
+    "change_pct": -2.8
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 58300,
+    "change_pct": 1.2
+   },
+   {
+    "symbol": "ZSR",
+    "name": "CTCP Sunrise Retail",
+    "price": 42500,
+    "change_pct": 0.7
+   },
+   {
+    "symbol": "ZSY",
+    "name": "CTCP Sunrise Realty",
+    "price": 27800,
+    "change_pct": -1.4
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_648",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_670",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_794",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_3243",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_410",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_567",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_5737",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_784",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "203 Lê Văn Sỹ, Quận 3, TP.HCM",
+    "dropoff": "Chợ Bến Thành",
+    "vehicle": "bike"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_214",
+    "time": "2026-11-11T07:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_5413",
+    "time": "2026-11-11T05:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_6600",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-10T20:30:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_3103",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-10T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_959",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-16T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 127400000,
+    "sell": 129400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 121400000,
+    "sell": 123400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4194
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_598",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_268",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_198",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_967",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "sms_552",
+    "contact_id": "c_318",
+    "direction": "in",
+    "content": "Mai 7h anh giao 2 thùng nước suối với 1 bao gạo nha chị",
+    "time": "2026-11-10T14:05:00+07:00"
+   },
+   {
+    "id": "sms_87",
+    "contact_id": "c_904",
+    "direction": "in",
+    "content": "Tối nay anh về trễ, đi đám giỗ bên nội",
+    "time": "2026-11-10T15:30:00+07:00"
+   },
+   {
+    "id": "sms_1240",
+    "contact_id": "c_266",
+    "direction": "in",
+    "content": "Mẹ ơi mai con cần 200 nghìn đóng tiền photo",
+    "time": "2026-11-10T16:10:00+07:00"
+   },
+   {
+    "id": "msg_04",
+    "contact_id": "c_318",
+    "phone_number": null,
+    "direction": "outgoing",
+    "content": "Mai giao thêm năm thùng mì gói nha."
+   },
+   {
+    "id": "msg_05",
+    "contact_id": "c_904",
+    "phone_number": null,
+    "direction": "outgoing",
+    "content": "Đi đám giỗ về sớm, đừng uống nhiều."
+   },
+   {
+    "id": "msg_06",
+    "contact_id": "c_266",
+    "phone_number": null,
+    "direction": "outgoing",
+    "content": "Sáng mai mẹ đưa tiền cho."
+   },
+   {
+    "id": "msg_07",
+    "contact_id": null,
+    "phone_number": "09031234567",
+    "direction": "outgoing",
+    "content": "Tiệm cô còn gas, chiều mai giao được."
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_3584",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_8222",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_2631",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_197",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_814",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_264",
+    "name": "Học từ vựng tiếng Anh",
+    "streak": 1,
+    "last_logged": "2026-11-09"
+   },
+   {
+    "id": "habit_5292",
+    "name": "Chạy bộ buổi sáng",
+    "streak": 3,
+    "last_logged": "2026-11-09"
+   },
+   {
+    "id": "habit_8853",
+    "name": "Ngủ trước 11 giờ",
+    "streak": 5,
+    "last_logged": "2026-11-09"
+   },
+   {
+    "id": "habit_705",
+    "name": "Thiền 10 phút",
+    "streak": 12,
+    "last_logged": "2026-11-09"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_724",
+    "habit_id": "habit_705",
+    "date": "2026-11-09"
+   },
+   {
+    "id": "log_32",
+    "habit_id": "habit_264",
+    "date": "2026-11-09"
+   },
+   {
+    "id": "log_3066",
+    "habit_id": "habit_8853",
+    "date": "2026-11-09"
+   },
+   {
+    "id": "log_2127",
+    "habit_id": "habit_5292",
+    "date": "2026-11-09"
+   }
+  ]
+ }
+}

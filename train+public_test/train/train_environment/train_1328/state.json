@@ -1,0 +1,441 @@
+{
+ "_meta": {
+  "question_id": "train_1328",
+  "current_time": "2026-12-08T16:40:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_553",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-10T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_8147",
+    "title": "Chỉ đường cho Lucas tới Lantern Bay Hotel",
+    "due": "2026-12-08T19:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_358",
+    "title": "Đặt phòng Lantern Bay Hotel cho đoàn khách Hàn",
+    "due": "2026-12-11T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_2906",
+    "title": "Hỏi Emily giờ check-out",
+    "due": "2026-12-09T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_699",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-13T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_174",
+    "title": "Gửi Lucas hoá đơn tiền phòng",
+    "due": "2026-12-07T20:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 90,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_750",
+    "name": "phòng khách",
+    "area_m2": 8
+   },
+   {
+    "id": "room_977",
+    "name": "bếp",
+    "area_m2": 15
+   },
+   {
+    "id": "room_4571",
+    "name": "phòng làm việc",
+    "area_m2": 22
+   },
+   {
+    "id": "room_923",
+    "name": "hành lang",
+    "area_m2": 12
+   },
+   {
+    "id": "room_6985",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng khách"
+   ],
+   "whole_house": false,
+   "mode": "vacuum"
+  }
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_985",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09668451177"
+   },
+   {
+    "id": "c_2252",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09747327447"
+   },
+   {
+    "id": "c_6702",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09187373648"
+   },
+   {
+    "id": "c_977",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09599868576"
+   },
+   {
+    "id": "c_387",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09903589508"
+   },
+   {
+    "id": "c_9058",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09223816236"
+   },
+   {
+    "id": "c_280",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09781055218"
+   },
+   {
+    "id": "c_8222",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09439710924"
+   },
+   {
+    "id": "c_664",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09751046361"
+   },
+   {
+    "id": "c_399",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09444394850"
+   },
+   {
+    "id": "c_2203",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09617532902"
+   }
+  ]
+ },
+ "calculator": {},
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_802",
+    "name": "Lucas",
+    "type": "direct",
+    "members": [
+     "Lucas"
+    ],
+    "messages": [
+     {
+      "from": "Lucas",
+      "content": "Thanks for the invoice! See you tonight.",
+      "time": "2026-12-07T20:31:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_879",
+    "name": "Emily",
+    "type": "direct",
+    "members": [
+     "Emily"
+    ],
+    "messages": [
+     {
+      "from": "Emily",
+      "content": "Hi anh Đức, I will check out at 10am tomorrow. Could you call a taxi to the airport for me?",
+      "time": "2026-12-08T15:52:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_1893",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3400",
+    "name": "Vợ Hà",
+    "type": "direct",
+    "members": [
+     "Vợ Hà"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_178",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_43",
+    "name": "Lantern Bay Hotel",
+    "address": "12 Lê Lợi, Vĩnh Ninh, Huế",
+    "category": "hotel"
+   },
+   {
+    "id": "place_271",
+    "name": "Lantern Bay Hostel",
+    "address": "88 Kim Long, Kim Long, Huế",
+    "category": "hotel"
+   },
+   {
+    "id": "place_455",
+    "name": "Cao Nguyên Coffee Hùng Vương",
+    "address": "21 Hùng Vương, Phú Nhuận, Huế",
+    "category": "cafe"
+   },
+   {
+    "id": "place_844",
+    "name": "Bệnh viện Trung ương Huế",
+    "address": "16 Lê Lợi, Vĩnh Ninh, Huế",
+    "category": "hospital"
+   },
+   {
+    "id": "place_407",
+    "name": "Bún bò Mụ Rớt",
+    "address": "14 Trần Thúc Nhẫn, Vĩnh Ninh, Huế",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_495",
+    "name": "Ga Huế",
+    "address": "2 Bùi Thị Xuân, Đúc, Huế",
+    "category": "station"
+   }
+  ],
+  "saved_places": [],
+  "routes": [
+   {
+    "from": [
+     "homestay garden house",
+     "9 nguyễn sinh cung",
+     "homestay",
+     "nhà"
+    ],
+    "to": [
+     "lantern bay hotel",
+     "12 lê lợi"
+    ],
+    "distance_km": 1.2,
+    "duration_min": {
+     "walk": 15,
+     "motorbike": 5,
+     "car": 6,
+     "transit": 12
+    }
+   },
+   {
+    "from": [
+     "homestay garden house",
+     "9 nguyễn sinh cung",
+     "homestay",
+     "nhà"
+    ],
+    "to": [
+     "lantern bay hostel",
+     "88 kim long"
+    ],
+    "distance_km": 3.6,
+    "duration_min": {
+     "walk": 44,
+     "motorbike": 10,
+     "car": 11,
+     "transit": 25
+    }
+   }
+  ]
+ }
+}

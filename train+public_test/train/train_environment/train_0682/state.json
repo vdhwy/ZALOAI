@@ -1,0 +1,309 @@
+{
+ "_meta": {
+  "question_id": "train_0682",
+  "current_time": "2026-10-01T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Chị Ly",
+    "type": "direct",
+    "members": [
+     "Chị Ly"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_01",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 95
+   },
+   {
+    "id": "lock_02",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_03",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": false,
+    "battery": 35
+   },
+   {
+    "id": "lock_04",
+    "name": "cửa kho phía Bắc",
+    "location": "kho hàng",
+    "locked": true,
+    "battery": 72
+   },
+   {
+    "id": "lock_05",
+    "name": "cửa kho phía Nam",
+    "location": "kho hàng",
+    "locked": true,
+    "battery": 64
+   }
+  ],
+  "guest_codes": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_02",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_03",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-07T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-05T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-02T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-01T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "ly.storage@example.test",
+    "from_name": "Chị Ly",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch trực kho tuần này",
+    "snippet": "Em gửi bác lịch trực kho tuần này.",
+    "body": "Cháu gửi bác lịch trực kho tuần này, tối thứ năm cháu trực kho phía Bắc ạ.",
+    "time": "2026-09-30T23:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-09-30T01:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-09-29T14:30:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_04",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-09-28T13:00:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_05",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-09-28T11:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-02T18:30:00+07:00",
+    "end": "2026-10-02T20:00:00+07:00",
+    "location": "Nhà",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "họp team",
+    "start": "2026-10-04T09:30:00+07:00",
+    "end": "2026-10-04T10:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Chị Ly",
+    "relation": "trực kho",
+    "phone": "09889933223",
+    "email": "ly.storage@example.test"
+   },
+   {
+    "id": "c_02",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09155625856"
+   },
+   {
+    "id": "c_03",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09252275866"
+   },
+   {
+    "id": "c_04",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09452807296"
+   }
+  ]
+ }
+}

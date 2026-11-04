@@ -1,0 +1,409 @@
+{
+ "_meta": {
+  "question_id": "train_1514",
+  "current_time": "2026-10-28T21:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_1252",
+    "tracking_id": "JV836124804",
+    "carrier": "JetViệt Express",
+    "name": "Bộ nồi inox ba đáy",
+    "status": "in_transit",
+    "eta": "2026-10-30T14:00:00+07:00"
+   },
+   {
+    "id": "shp_1998",
+    "tracking_id": "STP780648783",
+    "carrier": "SaoTel Post",
+    "name": "Hộp quà Trung thu",
+    "status": "in_transit",
+    "eta": "2026-10-30T10:00:00+07:00"
+   },
+   {
+    "id": "shp_679",
+    "tracking_id": "MDXVN667231741",
+    "carrier": "MDX Express",
+    "name": "Áo khoác gió",
+    "status": "out_for_delivery",
+    "eta": "2026-10-28T17:00:00+07:00"
+   },
+   {
+    "id": "shp_12",
+    "tracking_id": "EV798586128",
+    "carrier": "VNPost",
+    "name": "Ốp lưng điện thoại",
+    "status": "delivered",
+    "eta": "2026-10-26T17:50:00+07:00"
+   },
+   {
+    "id": "shp_430",
+    "tracking_id": "EV512093847",
+    "carrier": "VNPost",
+    "name": "Kính lão gọng nhựa",
+    "status": "delivered",
+    "eta": "2026-10-27T09:15:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_922",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_810",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_249",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_458",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_292",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-25": {
+    "steps": 8789,
+    "calories": 351,
+    "distance_km": 6.3
+   },
+   "2026-10-26": {
+    "steps": 9721,
+    "calories": 388,
+    "distance_km": 7.0
+   },
+   "2026-10-27": {
+    "steps": 8052,
+    "calories": 322,
+    "distance_km": 5.8
+   },
+   "2026-10-28": {
+    "steps": 3786,
+    "calories": 151,
+    "distance_km": 2.7
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_931",
+    "type": "yoga",
+    "minutes": 45,
+    "time": "2026-10-26T17:30:00+07:00"
+   },
+   {
+    "id": "wo_617",
+    "type": "gym",
+    "minutes": 45,
+    "time": "2026-10-27T06:30:00+07:00"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_433",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_101",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_952",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_342",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 27,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-28",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-29",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-30",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-31",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 29
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_875",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09600242317"
+   },
+   {
+    "id": "c_245",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09551812719"
+   },
+   {
+    "id": "c_895",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09132064847"
+   },
+   {
+    "id": "c_4247",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09217230251"
+   },
+   {
+    "id": "c_612",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09101519860"
+   },
+   {
+    "id": "c_3652",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09790120019"
+   },
+   {
+    "id": "c_40",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09719016081"
+   },
+   {
+    "id": "c_5921",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09545756146"
+   },
+   {
+    "id": "c_14",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09371276948"
+   },
+   {
+    "id": "c_8200",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09560800413"
+   },
+   {
+    "id": "c_546",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09271895674"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_318",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 214000,
+    "due_date": "2026-10-30",
+    "paid": false
+   },
+   {
+    "id": "bill_885",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 151000,
+    "due_date": "2026-11-06",
+    "paid": false
+   },
+   {
+    "id": "bill_7329",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 221000,
+    "due_date": "2026-11-05",
+    "paid": false
+   },
+   {
+    "id": "bill_7227",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 199000,
+    "due_date": "2026-11-06",
+    "paid": false
+   }
+  ]
+ }
+}

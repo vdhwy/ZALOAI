@@ -1,0 +1,452 @@
+{
+ "_meta": {
+  "question_id": "train_1062",
+  "current_time": "2026-11-18T17:00:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_3005",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-20T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_2200",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-21T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_120",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-23T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_2490",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-24T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_558",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-17T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_4095",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Anh Phúc",
+    "done": false
+   },
+   {
+    "id": "chore_312",
+    "name": "Lau nhà",
+    "assignee": "Anh Phúc",
+    "done": true
+   },
+   {
+    "id": "chore_547",
+    "name": "Tưới cây",
+    "assignee": "Anh Phúc",
+    "done": false
+   },
+   {
+    "id": "chore_1789",
+    "name": "Nấu cơm tối",
+    "assignee": "Bà nội",
+    "done": true
+   }
+  ],
+  "members": [
+   "Anh Phúc",
+   "Mẹ",
+   "Bà nội"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_724",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Công viên Biển Đông",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_486",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Biển Mỹ Khê",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_650",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Biển Mỹ Khê",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_30",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Công viên Biển Đông",
+    "available": true,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_8477",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5886",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1238",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7722",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_666",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "robot_vacuum": {
+  "battery": 100,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_180",
+    "name": "bếp",
+    "area_m2": 8
+   },
+   {
+    "id": "room_226",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 22
+   },
+   {
+    "id": "room_869",
+    "name": "phòng khách",
+    "area_m2": 8
+   },
+   {
+    "id": "room_967",
+    "name": "hành lang",
+    "area_m2": 22
+   },
+   {
+    "id": "room_9411",
+    "name": "phòng làm việc",
+    "area_m2": 18
+   },
+   {
+    "id": "room_937",
+    "name": "phòng ngủ",
+    "area_m2": 10
+   }
+  ],
+  "current_job": null
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-18",
+    "to": "2026-11-18",
+    "kwh": 11.0,
+    "cost": 31900,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 5.0
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 2.2
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-12",
+    "to": "2026-11-18",
+    "kwh": 78.8,
+    "cost": 228500,
+    "days": [
+     {
+      "date": "2026-11-12",
+      "kwh": 14.2
+     },
+     {
+      "date": "2026-11-13",
+      "kwh": 10.5
+     },
+     {
+      "date": "2026-11-14",
+      "kwh": 8.6
+     },
+     {
+      "date": "2026-11-15",
+      "kwh": 14.6
+     },
+     {
+      "date": "2026-11-16",
+      "kwh": 8.7
+     },
+     {
+      "date": "2026-11-17",
+      "kwh": 11.2
+     },
+     {
+      "date": "2026-11-18",
+      "kwh": 11.0
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-18",
+    "kwh": 215.5,
+    "cost": 625000
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_9245",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": true
+   },
+   {
+    "id": "item_5696",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_223",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ }
+}

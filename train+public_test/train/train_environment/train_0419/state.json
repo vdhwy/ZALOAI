@@ -1,0 +1,130 @@
+{
+ "_meta": {
+  "question_id": "train_0419",
+  "current_time": "2026-11-10T11:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "gold_price.get_price",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "time": "2026-11-11T06:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_02",
+    "time": "2026-11-11T06:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_03",
+    "time": "2026-11-11T08:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "gọi cho khách",
+    "time": "2026-11-11T20:00:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09665768636"
+   },
+   {
+    "id": "c_02",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09149821756"
+   },
+   {
+    "id": "c_03",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09279886953"
+   },
+   {
+    "id": "c_04",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09668664072"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 127100000,
+    "sell": 129100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 121100000,
+    "sell": 123100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4136
+   }
+  ]
+ }
+}

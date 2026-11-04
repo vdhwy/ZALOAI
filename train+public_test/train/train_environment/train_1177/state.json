@@ -1,0 +1,373 @@
+{
+ "_meta": {
+  "question_id": "train_1177",
+  "current_time": "2026-11-02T17:25:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe"
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_361",
+    "time": "2026-11-03T06:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_634",
+    "time": "2026-11-03T05:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_7996",
+    "time": "2026-11-03T07:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_941",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-01T21:10:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_942",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-02T03:55:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_8762",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-02T07:55:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_872",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-11-01T18:10:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_142",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-02T06:25:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   }
+  ],
+  "saved": []
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_898",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_787",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_553",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_730",
+    "time": "2026-11-02T03:20:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_3798",
+    "time": "2026-11-01T14:45:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_101",
+    "time": "2026-11-01T08:15:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_8555",
+    "time": "2026-11-01T15:25:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_684",
+    "name": "Đổ rác",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_6156",
+    "name": "Nấu cơm tối",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_838",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Mẹ",
+    "done": false
+   },
+   {
+    "id": "chore_381",
+    "name": "Rửa bát",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_5785",
+    "name": "Phơi quần áo",
+    "assignee": "Bà nội",
+    "done": true
+   }
+  ],
+  "members": [
+   "Anh Tuấn",
+   "Bà nội",
+   "Mẹ",
+   "Bố"
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_950",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_691",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_19",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_60",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_642",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_25",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_881",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_9751",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_3430",
+    "show_id": "show_642",
+    "title": "Số 16: Đi xe đạp đi làm",
+    "number": 16,
+    "duration_min": 32,
+    "published": "2026-10-26"
+   },
+   {
+    "id": "ep_920",
+    "show_id": "show_9751",
+    "title": "Số 10: Nhà giả kim - phần 2",
+    "number": 10,
+    "duration_min": 25,
+    "published": "2026-10-26"
+   },
+   {
+    "id": "ep_247",
+    "show_id": "show_642",
+    "title": "Số 14: Rác thải nhựa ở đô thị",
+    "number": 14,
+    "duration_min": 45,
+    "published": "2026-10-12"
+   },
+   {
+    "id": "ep_167",
+    "show_id": "show_881",
+    "title": "Số 11: Lập quỹ khẩn cấp",
+    "number": 11,
+    "duration_min": 18,
+    "published": "2026-10-12"
+   },
+   {
+    "id": "ep_238",
+    "show_id": "show_25",
+    "title": "Số 20: Vì sao bầu trời màu xanh",
+    "number": 20,
+    "duration_min": 18,
+    "published": "2026-10-12"
+   },
+   {
+    "id": "ep_490",
+    "show_id": "show_25",
+    "title": "Số 22: Lỗ đen là gì",
+    "number": 22,
+    "duration_min": 32,
+    "published": "2026-10-26"
+   },
+   {
+    "id": "ep_875",
+    "show_id": "show_9751",
+    "title": "Số 9: Nhà giả kim - phần 1",
+    "number": 9,
+    "duration_min": 32,
+    "published": "2026-10-19"
+   },
+   {
+    "id": "ep_430",
+    "show_id": "show_881",
+    "title": "Số 12: Gửi tiết kiệm hay mua vàng",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-10-19"
+   },
+   {
+    "id": "ep_3358",
+    "show_id": "show_881",
+    "title": "Số 13: Quản lý chi tiêu gia đình",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-10-26"
+   },
+   {
+    "id": "ep_6293",
+    "show_id": "show_25",
+    "title": "Số 21: Giấc ngủ và trí nhớ",
+    "number": 21,
+    "duration_min": 25,
+    "published": "2026-10-19"
+   },
+   {
+    "id": "ep_198",
+    "show_id": "show_642",
+    "title": "Số 15: Trồng cây trên sân thượng",
+    "number": 15,
+    "duration_min": 32,
+    "published": "2026-10-19"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_1257",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_813",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_4804",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_497",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ }
+}

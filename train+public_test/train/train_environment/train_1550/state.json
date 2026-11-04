@@ -1,0 +1,399 @@
+{
+ "_meta": {
+  "question_id": "train_1550",
+  "current_time": "2026-10-26T11:25:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_315",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_8398",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_742",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_121",
+    "time": "2026-10-24T18:05:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_327",
+    "time": "2026-10-24T14:25:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_559",
+    "time": "2026-10-24T21:10:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_904",
+    "time": "2026-10-26T09:12:00+07:00",
+    "type": "person",
+    "location": "cổng",
+    "message": "Camera cổng nhận diện khách quen: Chloe Dupont",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_1736",
+    "time": "2026-10-26T10:48:00+07:00",
+    "type": "person",
+    "location": "cổng",
+    "message": "Camera cổng nhận diện khách quen: Chloe Dubois",
+    "acknowledged": false
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_600",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_8577",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_6286",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_65",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_5894",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_578",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_838",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_8598",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_442",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 22
+   },
+   {
+    "id": "room_1745",
+    "name": "phòng làm việc",
+    "area_m2": 25
+   },
+   {
+    "id": "room_423",
+    "name": "phòng ăn",
+    "area_m2": 25
+   },
+   {
+    "id": "room_537",
+    "name": "phòng ngủ",
+    "area_m2": 10
+   },
+   {
+    "id": "room_673",
+    "name": "phòng khách",
+    "area_m2": 15
+   },
+   {
+    "id": "room_243",
+    "name": "bếp",
+    "area_m2": 10
+   }
+  ],
+  "current_job": null
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_3506",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09951731386"
+   },
+   {
+    "id": "c_6087",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09692845968"
+   },
+   {
+    "id": "c_428",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09633714328"
+   },
+   {
+    "id": "c_7174",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09454320669"
+   },
+   {
+    "id": "c_67",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09744303471"
+   },
+   {
+    "id": "c_948",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09223457619"
+   },
+   {
+    "id": "c_266",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09102659462"
+   },
+   {
+    "id": "c_649",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09566600091"
+   }
+  ]
+ }
+}

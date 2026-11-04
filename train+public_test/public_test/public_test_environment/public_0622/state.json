@@ -1,0 +1,522 @@
+{
+ "_meta": {
+  "question_id": "public_0622",
+  "current_time": "2026-12-20T10:35:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "pantry.consume",
+   "pantry.list_items",
+   "phone.call",
+   "phone.recent_calls",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_816",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ],
+    "merchant_id": "mch_2194"
+   },
+   {
+    "id": "rest_5502",
+    "name": "Mekong Riverside Grill",
+    "tags": [
+     "nướng",
+     "món miền Tây"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_5502_m1",
+      "name": "Grilled snakehead fish",
+      "price": 185000
+     },
+     {
+      "id": "rest_5502_m2",
+      "name": "Hotpot for two",
+      "price": 320000
+     },
+     {
+      "id": "rest_5502_m3",
+      "name": "Iced lemon tea",
+      "price": 25000
+     }
+    ],
+    "merchant_id": "mch_7318"
+   },
+   {
+    "id": "rest_8406",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ],
+    "merchant_id": "mch_658"
+   },
+   {
+    "id": "rest_2290",
+    "name": "Mekong Riverside Café",
+    "tags": [
+     "cà phê",
+     "đồ uống"
+    ],
+    "rating": 4.3,
+    "menu": [
+     {
+      "id": "rest_2290_m1",
+      "name": "Cà phê sữa đá",
+      "price": 35000
+     },
+     {
+      "id": "rest_2290_m2",
+      "name": "Coconut coffee",
+      "price": 49000
+     }
+    ],
+    "merchant_id": "mch_4026"
+   },
+   {
+    "id": "rest_7336",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ],
+    "merchant_id": "mch_3047"
+   },
+   {
+    "id": "rest_927",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ],
+    "merchant_id": "mch_812"
+   }
+  ],
+  "orders": []
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Xin chào, rất vui được gặp bạn",
+    "to_lang": "ja",
+    "translation": "こんにちは、はじめまして"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   },
+   {
+    "text": "Grilled snakehead fish",
+    "to_lang": "vi",
+    "translation": "Cá lóc nướng"
+   },
+   {
+    "text": "Cảm ơn, đồ ăn ngon lắm",
+    "to_lang": "en",
+    "translation": "Thank you, the food was delicious"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 28,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-20",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 32
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-21",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-22",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-23",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": "c_576",
+    "phone_number": "09589542563",
+    "status": "dialing"
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_193",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Cần Thơ",
+    "destination": "Lào Cai",
+    "date": "2026-12-22",
+    "depart": "08:00",
+    "arrive": "11:00",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_8894",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Cần Thơ",
+    "destination": "Lào Cai",
+    "date": "2026-12-22",
+    "depart": "19:00",
+    "arrive": "22:00",
+    "price": 680000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_2445",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Cần Thơ",
+    "destination": "Vinh",
+    "date": "2026-12-27",
+    "depart": "19:00",
+    "arrive": "02:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_955",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Cần Thơ",
+    "destination": "Vinh",
+    "date": "2026-12-27",
+    "depart": "13:00",
+    "arrive": "18:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_694",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Cần Thơ",
+    "destination": "Vinh",
+    "date": "2026-12-27",
+    "depart": "19:00",
+    "arrive": "00:30",
+    "price": 680000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_367",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Cần Thơ",
+    "destination": "Lào Cai",
+    "date": "2026-12-22",
+    "depart": "06:00",
+    "arrive": "09:00",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_192",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Cần Thơ",
+    "destination": "Lào Cai",
+    "date": "2026-12-22",
+    "depart": "13:00",
+    "arrive": "23:30",
+    "price": 320000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_177",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Cần Thơ",
+    "destination": "Vinh",
+    "date": "2026-12-27",
+    "depart": "06:00",
+    "arrive": "16:00",
+    "price": 680000,
+    "seats_left": 2
+   }
+  ],
+  "bookings": []
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_639",
+    "name": "đường",
+    "stock": 2,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_6531",
+    "name": "cà phê G7",
+    "stock": 2,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_3875",
+    "name": "gạo ST25",
+    "stock": 6,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_504",
+    "name": "nước mắm",
+    "stock": 2,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_619",
+    "name": "mì tôm",
+    "stock": 14,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_226",
+    "name": "yến mạch",
+    "stock": 3,
+    "unit": "túi"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_2246",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_5066",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_1656",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_605",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_7526",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09277357213"
+   },
+   {
+    "id": "c_4101",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09692523062"
+   },
+   {
+    "id": "c_3788",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09316192191"
+   },
+   {
+    "id": "c_210",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09456592640"
+   },
+   {
+    "id": "c_873",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09660603831"
+   },
+   {
+    "id": "c_148",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09558727755"
+   },
+   {
+    "id": "c_7179",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09787691344"
+   },
+   {
+    "id": "c_736",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09895219935"
+   },
+   {
+    "id": "c_576",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09589542563"
+   },
+   {
+    "id": "c_71",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09441581596"
+   },
+   {
+    "id": "c_8427",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09248527456"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 700000,
+  "transactions": []
+ }
+}

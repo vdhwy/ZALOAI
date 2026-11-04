@@ -1,0 +1,764 @@
+{
+ "_meta": {
+  "question_id": "public_0390",
+  "current_time": "2026-09-21T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "pantry.consume",
+   "pantry.list_items",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_01",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_02",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_03",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_04",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_05",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_06",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_07",
+    "name": "Cá hồi áp chảo măng tây",
+    "tags": [
+     "áp chảo",
+     "món Âu"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "description": "Nguyên liệu chính: cá hồi phi lê và măng tây.",
+    "ingredients": [
+     {
+      "name": "cá hồi phi lê",
+      "quantity": 2,
+      "unit": "miếng"
+     },
+     {
+      "name": "măng tây",
+      "quantity": 1,
+      "unit": "bó"
+     },
+     {
+      "name": "bơ lạt",
+      "quantity": 20,
+      "unit": "g"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     }
+    ],
+    "steps": [
+     "Thấm khô cá, ướp muối tiêu",
+     "Áp chảo cá mỗi mặt 3 phút",
+     "Xào măng tây với bơ tỏi",
+     "Bày cá cùng măng tây, vắt chanh"
+    ]
+   },
+   {
+    "id": "rcp_08",
+    "name": "Cá basa áp chảo sốt đậu phộng",
+    "tags": [
+     "áp chảo",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 35,
+    "description": "Nguyên liệu chính: cá basa phi lê và đậu phộng rang.",
+    "ingredients": [
+     {
+      "name": "cá basa phi lê",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "đậu phộng rang",
+      "quantity": 80,
+      "unit": "g"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 2,
+      "unit": "củ"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 2,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Áp chảo cá vàng hai mặt",
+     "Giã đậu phộng, phi hành tím",
+     "Nấu sốt đậu phộng, rưới lên cá"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_01",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_02",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_03",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_04",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_05",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_06",
+    "name": "Cá hồi phi lê Na Uy miếng 200g",
+    "price": 89000,
+    "unit": "miếng",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_07",
+    "name": "Măng tây xanh Đà Lạt bó 300g",
+    "price": 45000,
+    "unit": "bó",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_08",
+    "name": "Cá hồi xông khói gói 100g",
+    "price": 75000,
+    "unit": "gói",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_09",
+    "name": "Măng tây trắng đóng hộp 430g",
+    "price": 52000,
+    "unit": "hộp",
+    "category": "đồ hộp",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_01",
+    "items": [
+     {
+      "product_id": "gro_01",
+      "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+      "price": 35000,
+      "quantity": 2
+     }
+    ],
+    "total": 70000,
+    "status": "delivered",
+    "delivery_time": "2026-09-11T09:00:00+07:00"
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_01",
+    "name": "bột mì",
+    "stock": 2,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_02",
+    "name": "nước mắm",
+    "stock": 1,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_03",
+    "name": "cà phê G7",
+    "stock": 1,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_04",
+    "name": "yến mạch",
+    "stock": 3,
+    "unit": "túi"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_01",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_02",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_03",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_04",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_05",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": true
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_01",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_02",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_03",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_04",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_01",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_02",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_03",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_04",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_05",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_06",
+    "name": "Balo laptop Mikkor 15.6 inch",
+    "price": 650000,
+    "seller": "Mikkor Store",
+    "category": "thời trang",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_07",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.6,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_01",
+    "items": [
+     {
+      "product_id": "prod_05",
+      "name": "Chuột không dây Logitech M331",
+      "price": 349000,
+      "quantity": 1
+     }
+    ],
+    "total": 349000,
+    "status": "delivered",
+    "placed_at": "2026-09-10T05:00:00+07:00",
+    "seller": "Logitech Store",
+    "delivered_at": "2026-09-13T05:00:00+07:00"
+   },
+   {
+    "id": "ord_02",
+    "items": [
+     {
+      "product_id": "prod_06",
+      "name": "Balo laptop Mikkor 15.6 inch",
+      "price": 650000,
+      "quantity": 1
+     }
+    ],
+    "total": 650000,
+    "status": "shipping",
+    "placed_at": "2026-09-20T02:00:00+07:00",
+    "seller": "Mikkor Store"
+   },
+   {
+    "id": "ord_03",
+    "items": [
+     {
+      "product_id": "prod_07",
+      "name": "Tai nghe Bluetooth Soundcore R50i",
+      "price": 450000,
+      "quantity": 1
+     }
+    ],
+    "total": 450000,
+    "status": "shipping",
+    "placed_at": "2026-09-18T05:00:00+07:00",
+    "seller": "Anker Official Store"
+   }
+  ],
+  "returns": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_02",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_03",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-09-23T18:30:00+07:00",
+    "end": "2026-09-23T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "đá bóng",
+    "start": "2026-09-22T10:30:00+07:00",
+    "end": "2026-09-22T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

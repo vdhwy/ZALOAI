@@ -1,0 +1,185 @@
+{
+ "_meta": {
+  "question_id": "train_0507",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_02",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_03",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_04",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 853000,
+    "due_date": "2026-10-04",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 150000,
+    "due_date": "2026-09-29",
+    "paid": false
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_01",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-09-29",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_02",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-10-17",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_03",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-10-05",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_04",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-09-30",
+    "status": "paused",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "họp phụ huynh",
+    "start": "2026-09-28T14:30:00+07:00",
+    "end": "2026-09-28T15:30:00+07:00",
+    "location": "Trường Tiểu học Kim Đồng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-09-28T16:30:00+07:00",
+    "end": "2026-09-28T17:30:00+07:00",
+    "location": "Cao Nguyên Coffee Láng Hạ",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "khám răng",
+    "start": "2026-09-28T10:30:00+07:00",
+    "end": "2026-09-28T11:30:00+07:00",
+    "location": "Nha khoa Việt Smile",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09880081352"
+   },
+   {
+    "id": "c_02",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09281924735"
+   },
+   {
+    "id": "c_03",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09861714376"
+   },
+   {
+    "id": "c_04",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09318174272"
+   },
+   {
+    "id": "c_05",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09638532714"
+   },
+   {
+    "id": "c_06",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09769775044"
+   },
+   {
+    "id": "c_07",
+    "name": "Phương",
+    "relation": "chủ nhà",
+    "phone": "09395901062"
+   }
+  ]
+ }
+}

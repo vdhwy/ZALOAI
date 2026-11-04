@@ -1,0 +1,554 @@
+{
+ "_meta": {
+  "question_id": "public_0523",
+  "current_time": "2026-12-14T21:05:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_9183",
+    "time": "2026-12-15T06:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_198",
+    "time": "2026-12-15T07:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_655",
+    "time": "2026-12-15T08:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_995",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Cần Thơ",
+    "destination": "Hải Phòng",
+    "date": "2026-12-21",
+    "depart": "19:00",
+    "arrive": "05:00",
+    "price": 450000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_28",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Cần Thơ",
+    "destination": "Vinh",
+    "date": "2026-12-19",
+    "depart": "19:00",
+    "arrive": "00:00",
+    "price": 250000,
+    "seats_left": 0
+   },
+   {
+    "id": "trip_295",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Cần Thơ",
+    "destination": "Vinh",
+    "date": "2026-12-19",
+    "depart": "06:00",
+    "arrive": "13:00",
+    "price": 920000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_906",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Cần Thơ",
+    "destination": "Hải Phòng",
+    "date": "2026-12-21",
+    "depart": "08:00",
+    "arrive": "15:00",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_9842",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Cần Thơ",
+    "destination": "Hải Phòng",
+    "date": "2026-12-21",
+    "depart": "06:00",
+    "arrive": "16:30",
+    "price": 250000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_2796",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Cần Thơ",
+    "destination": "Hải Phòng",
+    "date": "2026-12-21",
+    "depart": "19:00",
+    "arrive": "05:30",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_715",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Cần Thơ",
+    "destination": "Vinh",
+    "date": "2026-12-19",
+    "depart": "21:00",
+    "arrive": "07:30",
+    "price": 250000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_4073",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Cần Thơ",
+    "destination": "Vinh",
+    "date": "2026-12-19",
+    "depart": "08:00",
+    "arrive": "15:30",
+    "price": 450000,
+    "seats_left": 30
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_317",
+    "trip_id": "trip_906",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Cần Thơ",
+    "destination": "Hải Phòng",
+    "date": "2026-12-21",
+    "depart": "08:00",
+    "seats": 1,
+    "total": 680000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_88",
+    "trip_id": "trip_4073",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Cần Thơ",
+    "destination": "Vinh",
+    "date": "2026-12-19",
+    "depart": "08:00",
+    "seats": 1,
+    "total": 450000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_03",
+    "trip_id": "trip_28",
+    "seats": 2,
+    "total": 500000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_455",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09952753112"
+   },
+   {
+    "id": "c_323",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09450942801"
+   },
+   {
+    "id": "c_405",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09150961179"
+   },
+   {
+    "id": "c_54",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09240905885"
+   },
+   {
+    "id": "c_984",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09179311898"
+   },
+   {
+    "id": "c_838",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09121694169"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_5826",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_431",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_737",
+    "name": "Đèn bàn LED chống cận Rạng Đông",
+    "price": 275000,
+    "seller": "Rạng Đông Official",
+    "category": "gia dụng",
+    "rating": 4.5,
+    "in_stock": true
+   },
+   {
+    "id": "prod_317",
+    "name": "Bàn phím cơ AKKO 3068B",
+    "price": 1290000,
+    "seller": "AKKO Việt Nam",
+    "category": "máy tính",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_724",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_596",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_294",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_7027",
+    "name": "Balo laptop Mikkor 15.6 inch",
+    "price": 650000,
+    "seller": "Mikkor Store",
+    "category": "thời trang",
+    "rating": 4.9,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_8052",
+    "items": [
+     {
+      "product_id": "prod_294",
+      "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+      "price": 389000,
+      "quantity": 1
+     }
+    ],
+    "total": 389000,
+    "status": "shipping",
+    "placed_at": "2026-12-13T14:05:00+07:00",
+    "seller": "Lock&Lock Mall"
+   },
+   {
+    "id": "ord_3688",
+    "items": [
+     {
+      "product_id": "prod_317",
+      "name": "Bàn phím cơ AKKO 3068B",
+      "price": 1290000,
+      "quantity": 1
+     }
+    ],
+    "total": 1290000,
+    "status": "shipping",
+    "placed_at": "2026-12-13T13:05:00+07:00",
+    "seller": "AKKO Việt Nam"
+   },
+   {
+    "id": "ord_912",
+    "items": [
+     {
+      "product_id": "prod_596",
+      "name": "Cốc giữ nhiệt Elmich 500ml",
+      "price": 219000,
+      "quantity": 1
+     }
+    ],
+    "total": 219000,
+    "status": "delivered",
+    "placed_at": "2026-12-08T16:05:00+07:00",
+    "seller": "Elmich Store",
+    "delivered_at": "2026-12-10T16:05:00+07:00"
+   }
+  ],
+  "returns": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_1281",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_34",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_1825",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_299",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_354",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_1514",
+    "name": "Anh Mười",
+    "type": "direct",
+    "members": [
+     "Anh Mười"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1964",
+    "name": "Thằng Tí",
+    "type": "direct",
+    "members": [
+     "Thằng Tí"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_241",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_142",
+    "name": "Vợ Hồng",
+    "type": "direct",
+    "members": [
+     "Vợ Hồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_690",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

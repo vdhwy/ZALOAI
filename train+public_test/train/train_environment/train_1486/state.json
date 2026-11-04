@@ -1,0 +1,598 @@
+{
+ "_meta": {
+  "question_id": "train_1486",
+  "current_time": "2026-11-04T11:40:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "gold_price.get_price",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_290",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-11-20",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_566",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-11-20",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_926",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-11-20",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_634",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-11-20",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 120700000,
+    "sell": 122700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 114700000,
+    "sell": 116700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4032
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_81",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_195",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_879",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_406",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_8410",
+    "show_id": "show_195",
+    "title": "Số 17: Lỗ đen là gì",
+    "number": 17,
+    "duration_min": 18,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_376",
+    "show_id": "show_81",
+    "title": "Số 21: Nghề diễn và những áp lực",
+    "number": 21,
+    "duration_min": 32,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_728",
+    "show_id": "show_879",
+    "title": "Số 13: Trồng cây trên sân thượng",
+    "number": 13,
+    "duration_min": 32,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_6104",
+    "show_id": "show_406",
+    "title": "Số 14: Lập quỹ khẩn cấp",
+    "number": 14,
+    "duration_min": 45,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_971",
+    "show_id": "show_406",
+    "title": "Số 16: Quản lý chi tiêu gia đình",
+    "number": 16,
+    "duration_min": 45,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_440",
+    "show_id": "show_81",
+    "title": "Số 20: Sống chậm giữa thành phố",
+    "number": 20,
+    "duration_min": 25,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_833",
+    "show_id": "show_879",
+    "title": "Số 14: Đi xe đạp đi làm",
+    "number": 14,
+    "duration_min": 45,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_802",
+    "show_id": "show_406",
+    "title": "Số 15: Gửi tiết kiệm hay mua vàng",
+    "number": 15,
+    "duration_min": 32,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_898",
+    "show_id": "show_195",
+    "title": "Số 15: Vì sao bầu trời màu xanh",
+    "number": 15,
+    "duration_min": 25,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_5595",
+    "show_id": "show_879",
+    "title": "Số 12: Rác thải nhựa ở đô thị",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_472",
+    "show_id": "show_195",
+    "title": "Số 16: Giấc ngủ và trí nhớ",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-10-21"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_8224",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_975",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_15",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_215",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_195"
+  ],
+  "queue": [],
+  "now_playing": {
+   "episode_id": "ep_971",
+   "show_id": "show_406",
+   "status": "playing"
+  }
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_1820",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_854",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_4605",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_595",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_482",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09940680051"
+   },
+   {
+    "id": "c_603",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09786613213"
+   },
+   {
+    "id": "c_237",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09977495055"
+   },
+   {
+    "id": "c_161",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09306283528"
+   },
+   {
+    "id": "c_2773",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09521953868"
+   },
+   {
+    "id": "c_563",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09286021244"
+   },
+   {
+    "id": "c_510",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09529715446"
+   },
+   {
+    "id": "c_21",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09803088488"
+   },
+   {
+    "id": "c_215",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09737333476"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_99",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_424",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_548",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_303",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Thảo Điền",
+    "available": false,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23800
+   },
+   {
+    "type": "e5",
+    "price": 22600
+   },
+   {
+    "type": "diesel",
+    "price": 21200
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_458",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-05T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_572",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-04T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_673",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-07T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_604",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-07T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_32",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-04T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_572",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 95
+   },
+   {
+    "id": "lock_443",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_666",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_21",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7052",
+    "name": "Anh Long",
+    "type": "direct",
+    "members": [
+     "Anh Long"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Chiều nay em mượn xe anh đi Bình Dương gặp khách nha."
+     },
+     {
+      "from": "Anh Long",
+      "content": "Ok em, xe anh chỉ đổ xăng E5 thôi nha, nhớ đổ đầy giùm anh."
+     }
+    ]
+   },
+   {
+    "id": "chat_260",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_841",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_557",
+    "name": "Sếp Kim",
+    "type": "direct",
+    "members": [
+     "Sếp Kim"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

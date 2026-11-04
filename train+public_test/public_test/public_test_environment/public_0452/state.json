@@ -1,0 +1,482 @@
+{
+ "_meta": {
+  "question_id": "public_0452",
+  "current_time": "2026-12-14T14:30:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 24,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-14",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-15",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 29
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-16",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 32
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_5277",
+    "title": "đi chơi công viên",
+    "start": "2026-12-15T19:30:00+07:00",
+    "end": "2026-12-15T20:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7731",
+    "title": "đá bóng",
+    "start": "2026-12-16T08:30:00+07:00",
+    "end": "2026-12-16T09:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_548",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-17T14:30:00+07:00",
+    "end": "2026-12-17T15:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_586",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-17T14:00:00+07:00",
+    "end": "2026-12-17T15:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_281",
+    "title": "khám răng",
+    "start": "2026-12-15T09:30:00+07:00",
+    "end": "2026-12-15T10:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_422",
+    "name": "Uống đủ 2 lít nước",
+    "streak": 12,
+    "last_logged": "2026-12-13"
+   },
+   {
+    "id": "habit_3521",
+    "name": "Đọc sách 30 phút",
+    "streak": 1,
+    "last_logged": "2026-12-12"
+   },
+   {
+    "id": "habit_94",
+    "name": "Học từ vựng tiếng Anh",
+    "streak": 5,
+    "last_logged": "2026-12-12"
+   },
+   {
+    "id": "habit_6366",
+    "name": "Thiền 10 phút",
+    "streak": 12,
+    "last_logged": "2026-12-12"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_1266",
+    "habit_id": "habit_3521",
+    "date": "2026-12-12"
+   },
+   {
+    "id": "log_629",
+    "habit_id": "habit_422",
+    "date": "2026-12-13"
+   },
+   {
+    "id": "log_959",
+    "habit_id": "habit_6366",
+    "date": "2026-12-12"
+   },
+   {
+    "id": "log_1390",
+    "habit_id": "habit_94",
+    "date": "2026-12-12"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2292",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09245759236"
+   },
+   {
+    "id": "c_2603",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09313522601"
+   },
+   {
+    "id": "c_739",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09725298697"
+   },
+   {
+    "id": "c_470",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09707470307"
+   },
+   {
+    "id": "c_893",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09644313077"
+   },
+   {
+    "id": "c_890",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09667979148"
+   },
+   {
+    "id": "c_182",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09182843397"
+   },
+   {
+    "id": "c_655",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09930859452"
+   },
+   {
+    "id": "c_4813",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09373124537"
+   },
+   {
+    "id": "c_355",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09491312784"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_772",
+    "name": "Ông xã",
+    "type": "direct",
+    "members": [
+     "Ông xã"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_652",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1288",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1880",
+    "name": "Bà Sáu",
+    "type": "direct",
+    "members": [
+     "Bà Sáu"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_336",
+    "name": "Thảo",
+    "type": "direct",
+    "members": [
+     "Thảo"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_153",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_337",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_972",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_262",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_412",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.5,
+    "in_stock": true
+   },
+   {
+    "id": "prod_6621",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.5,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_297",
+    "items": [
+     {
+      "product_id": "prod_337",
+      "name": "Nồi chiên không dầu Philips 4.1 lít",
+      "price": 1990000,
+      "quantity": 1
+     }
+    ],
+    "total": 1990000,
+    "status": "delivered",
+    "placed_at": "2026-12-10T06:30:00+07:00",
+    "seller": "Philips Official",
+    "delivered_at": "2026-12-13T06:30:00+07:00"
+   },
+   {
+    "id": "ord_1719",
+    "items": [
+     {
+      "product_id": "prod_972",
+      "name": "Sạc dự phòng Xiaomi 10000mAh",
+      "price": 399000,
+      "quantity": 1
+     }
+    ],
+    "total": 399000,
+    "status": "shipping",
+    "placed_at": "2026-12-13T07:30:00+07:00",
+    "seller": "Xiaomi Official"
+   }
+  ],
+  "returns": []
+ }
+}

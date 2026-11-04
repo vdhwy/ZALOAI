@@ -1,0 +1,300 @@
+{
+ "_meta": {
+  "question_id": "train_1263",
+  "current_time": "2026-11-26T10:00:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_8265",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-29T15:30:00+07:00",
+    "link": "https://meet.example.test/csz-ewnu-vre",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_9940",
+    "title": "Họp lớp online",
+    "start": "2026-11-29T10:00:00+07:00",
+    "link": "https://meet.example.test/imj-upev-qhr",
+    "attendees": [
+     "c_2412",
+     "c_8609"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_8609",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09299218943"
+   },
+   {
+    "id": "c_369",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09849677448"
+   },
+   {
+    "id": "c_127",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09386658858"
+   },
+   {
+    "id": "c_564",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09429813220"
+   },
+   {
+    "id": "c_140",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09881606244"
+   },
+   {
+    "id": "c_738",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09255504279"
+   },
+   {
+    "id": "c_838",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09782604185"
+   },
+   {
+    "id": "c_712",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09797100014"
+   },
+   {
+    "id": "c_2412",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09201548515"
+   },
+   {
+    "id": "c_496",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09494663270"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_283",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_8790",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_585",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_440",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_4217",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-25T11:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_1000",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-24T15:30:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_140",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-25T13:45:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5430",
+    "from": "thao@gmail.example.test",
+    "from_name": "Thảo",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-26T00:00:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_4944",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-25T15:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 26,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-26",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-27",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 30
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-28",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-29",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_545",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": true
+   },
+   {
+    "id": "item_9803",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_148",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_3361",
+    "name": "khăn lụa",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ }
+}

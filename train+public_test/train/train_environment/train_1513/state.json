@@ -1,0 +1,201 @@
+{
+ "_meta": {
+  "question_id": "train_1513",
+  "current_time": "2026-11-18T13:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "gold_price.get_price",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_176",
+    "title": "đi chơi công viên",
+    "start": "2026-11-21T19:30:00+07:00",
+    "end": "2026-11-21T20:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4184",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-19T09:30:00+07:00",
+    "end": "2026-11-19T10:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_765",
+    "title": "họp team",
+    "start": "2026-11-21T18:30:00+07:00",
+    "end": "2026-11-21T19:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_96",
+    "title": "đá bóng",
+    "start": "2026-11-21T15:30:00+07:00",
+    "end": "2026-11-21T16:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_907",
+    "title": "họp phụ huynh",
+    "start": "2026-11-21T19:30:00+07:00",
+    "end": "2026-11-21T20:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5203",
+    "title": "gặp mặt lớp",
+    "start": "2026-11-20T17:30:00+07:00",
+    "end": "2026-11-20T20:00:00+07:00",
+    "location": "Westgate Mall, tầng 3",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_618",
+    "title": "phỏng vấn thực tập Orion Tech",
+    "start": "2026-11-20T10:00:00+07:00",
+    "end": "2026-11-20T11:00:00+07:00",
+    "location": "Westgate Plaza",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_7348",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-11-30",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_603",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-11-24",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_694",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-12-06",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_8590",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-12-12",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_999",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-12-12",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 119100000,
+    "sell": 121100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 113100000,
+    "sell": 115100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3903
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_7365",
+    "time": "2026-11-19T07:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_480",
+    "tracking_id": "EV760196979",
+    "carrier": "VNPost",
+    "name": "Áo khoác gió",
+    "status": "out_for_delivery",
+    "eta": "2026-11-18T17:00:00+07:00"
+   },
+   {
+    "id": "shp_174",
+    "tracking_id": "JV323555380",
+    "carrier": "JetViệt Express",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "in_transit",
+    "eta": "2026-11-20T17:00:00+07:00"
+   },
+   {
+    "id": "shp_26",
+    "tracking_id": "MDXVN994769220",
+    "carrier": "MDX Express",
+    "name": "Hộp quà Trung thu",
+    "status": "delivered",
+    "eta": "2026-11-17T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Mang theo loa bluetooth",
+    "time": "2026-11-20T16:30:00+07:00"
+   }
+  ]
+ }
+}

@@ -1,0 +1,489 @@
+{
+ "_meta": {
+  "question_id": "public_0647",
+  "current_time": "2026-10-17T08:20:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert"
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "quantity": 1000,
+    "avg_price": 60750,
+    "price": 63700
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 1000,
+    "avg_price": 90450,
+    "price": 92000
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 92000,
+    "change_pct": 2.5
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26800,
+    "change_pct": -3.2
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33250,
+    "change_pct": -3.3
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 63700,
+    "change_pct": 1.5
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1653,
+    "change_pct": 0.9
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 124300,
+    "change_pct": -2.1
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_731",
+    "contact_id": "c_8151",
+    "phone_number": "09900279859",
+    "direction": "incoming",
+    "content": "Ba ơi tối qua con nghe webinar của Chứng khoán Kim Ngân, họ khuyên gom mã ZDH thép Đại Hưng vì giá đang giảm sâu."
+   },
+   {
+    "id": "msg_736",
+    "contact_id": "c_8151",
+    "phone_number": "09900279859",
+    "direction": "incoming",
+    "content": "Còn mã ZKN thì họ nói nên đứng ngoài chờ thêm ba ạ."
+   },
+   {
+    "id": "msg_512",
+    "contact_id": "c_1011",
+    "phone_number": "09384916662",
+    "direction": "incoming",
+    "content": "Chiều mai ra quán ông Sáu nghen"
+   }
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_573",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.5,
+    "in_stock": true
+   },
+   {
+    "id": "prod_19",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_996",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_922",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_924",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.5,
+    "in_stock": true
+   },
+   {
+    "id": "prod_3856",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_574",
+    "name": "Bàn phím cơ AKKO 3068B",
+    "price": 1290000,
+    "seller": "AKKO Việt Nam",
+    "category": "máy tính",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_244",
+    "name": "Đèn bàn LED chống cận Rạng Đông",
+    "price": 275000,
+    "seller": "Rạng Đông Official",
+    "category": "gia dụng",
+    "rating": 4.5,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_8635",
+    "items": [
+     {
+      "product_id": "prod_573",
+      "name": "Chuột không dây Logitech M331",
+      "price": 349000,
+      "quantity": 1
+     }
+    ],
+    "total": 349000,
+    "status": "shipping",
+    "placed_at": "2026-10-17T00:20:00+07:00",
+    "seller": "Logitech Store"
+   },
+   {
+    "id": "ord_3138",
+    "items": [
+     {
+      "product_id": "prod_19",
+      "name": "Tai nghe Bluetooth Soundcore R50i",
+      "price": 450000,
+      "quantity": 1
+     }
+    ],
+    "total": 450000,
+    "status": "delivered",
+    "placed_at": "2026-10-09T06:20:00+07:00",
+    "seller": "Anker Official Store",
+    "delivered_at": "2026-10-11T06:20:00+07:00"
+   },
+   {
+    "id": "ord_2451",
+    "items": [
+     {
+      "product_id": "prod_574",
+      "name": "Bàn phím cơ AKKO 3068B",
+      "price": 1290000,
+      "quantity": 1
+     }
+    ],
+    "total": 1290000,
+    "status": "shipping",
+    "placed_at": "2026-10-14T02:20:00+07:00",
+    "seller": "AKKO Việt Nam"
+   }
+  ],
+  "returns": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_6762",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_917",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_218",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 25
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_978",
+    "lot_id": "lot_6762",
+    "from_time": "2026-10-17T07:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-10-17T10:00:00+07:00",
+    "total": 75000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_701",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09692196316"
+   },
+   {
+    "id": "c_7396",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09687809502"
+   },
+   {
+    "id": "c_2997",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09144178824"
+   },
+   {
+    "id": "c_882",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09878145169"
+   },
+   {
+    "id": "c_124",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09356381241"
+   },
+   {
+    "id": "c_336",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09469425144"
+   },
+   {
+    "id": "c_3085",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09535093295"
+   },
+   {
+    "id": "c_8436",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09503144938"
+   },
+   {
+    "id": "c_885",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09643782593"
+   },
+   {
+    "id": "c_5207",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09518104424"
+   },
+   {
+    "id": "c_1011",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09384916662"
+   },
+   {
+    "id": "c_8151",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09900279859"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 0,
+  "routes": [
+   {
+    "id": "bus_752",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_2619",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_2619",
+    "time": "2026-10-17T08:30:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_2619",
+    "time": "2026-10-17T08:50:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_752",
+    "time": "2026-10-17T08:47:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_752",
+    "time": "2026-10-17T08:37:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_2619",
+    "time": "2026-10-17T08:40:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_752",
+    "time": "2026-10-17T08:27:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_984",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_517",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_901",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_89",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_43",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ }
+}

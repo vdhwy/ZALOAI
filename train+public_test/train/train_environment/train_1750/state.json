@@ -1,0 +1,403 @@
+{
+ "_meta": {
+  "question_id": "train_1750",
+  "current_time": "2026-11-29T17:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "Chung cư An Thảo, Thảo Điền, TP. Thủ Đức",
+    "dropoff": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "vehicle": "bike"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_706",
+    "name": "Lau nhà",
+    "assignee": "Chị My",
+    "done": true
+   },
+   {
+    "id": "chore_3324",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_5761",
+    "name": "Phơi quần áo",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị My",
+   "Bố",
+   "Mẹ",
+   "Bà nội"
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_568",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_4747",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen\nMua bó hoa hồng"
+   },
+   {
+    "id": "note_1168",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_3837",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_05",
+    "title": "Gặp Priya Sharma",
+    "content": "Thứ ba gặp Priya Sharma bàn kế hoạch quảng bá phim Tết"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_5137",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-28T16:30:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_728",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-29T11:30:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_4673",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-28T22:30:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_1901",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-11-29T10:00:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_3390",
+    "title": "Phim Tết Nhà có hoa mai tung trailer, đặt mục tiêu trăm tỷ",
+    "topic": "entertainment",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-29T08:45:00+07:00",
+    "summary": "Đoàn phim dự kiến khởi chiếu mùng một Tết tại các rạp CineViệt."
+   },
+   {
+    "id": "art_612",
+    "title": "Ca sĩ Hòa Minzy công bố liveshow cuối năm ở TP.HCM",
+    "topic": "entertainment",
+    "source": "Dân Trí",
+    "published_at": "2026-11-28T20:15:00+07:00",
+    "summary": "Đêm nhạc diễn ra ngày 20/12 tại Nhà hát Hòa Bình, vé mở bán từ tuần sau."
+   }
+  ],
+  "saved": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "cool",
+     "temperature": 26
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_300",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_458",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_2566",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_66",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_449",
+    "time": "2026-11-30T07:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_565",
+    "time": "2026-11-30T07:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_448",
+    "time": "2026-11-30T06:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_321",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_639",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_478",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_908",
+    "show_id": "show_321",
+    "title": "Số 20: Trồng cây trên sân thượng",
+    "number": 20,
+    "duration_min": 25,
+    "published": "2026-11-15"
+   },
+   {
+    "id": "ep_53",
+    "show_id": "show_639",
+    "title": "Số 8: Sống chậm giữa thành phố",
+    "number": 8,
+    "duration_min": 45,
+    "published": "2026-11-15"
+   },
+   {
+    "id": "ep_563",
+    "show_id": "show_639",
+    "title": "Số 9: Nghề diễn và những áp lực",
+    "number": 9,
+    "duration_min": 32,
+    "published": "2026-11-22"
+   },
+   {
+    "id": "ep_395",
+    "show_id": "show_478",
+    "title": "Số 12: Nhà giả kim - phần 1",
+    "number": 12,
+    "duration_min": 18,
+    "published": "2026-11-15"
+   },
+   {
+    "id": "ep_435",
+    "show_id": "show_321",
+    "title": "Số 21: Đi xe đạp đi làm",
+    "number": 21,
+    "duration_min": 32,
+    "published": "2026-11-22"
+   },
+   {
+    "id": "ep_48",
+    "show_id": "show_478",
+    "title": "Số 13: Nhà giả kim - phần 2",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-11-22"
+   },
+   {
+    "id": "ep_3051",
+    "show_id": "show_321",
+    "title": "Số 19: Rác thải nhựa ở đô thị",
+    "number": 19,
+    "duration_min": 32,
+    "published": "2026-11-08"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_294",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_641",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_854",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_7876",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ }
+}

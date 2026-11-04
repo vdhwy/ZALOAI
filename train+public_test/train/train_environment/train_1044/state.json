@@ -1,0 +1,505 @@
+{
+ "_meta": {
+  "question_id": "train_1044",
+  "current_time": "2026-11-15T12:45:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_883",
+    "title": "đá bóng",
+    "start": "2026-11-18T19:00:00+07:00",
+    "end": "2026-11-18T20:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_407",
+    "title": "họp phụ huynh",
+    "start": "2026-11-16T10:30:00+07:00",
+    "end": "2026-11-16T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_293",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-18T10:00:00+07:00",
+    "end": "2026-11-18T11:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_101",
+    "title": "đi chơi công viên",
+    "start": "2026-11-18T19:30:00+07:00",
+    "end": "2026-11-18T20:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7416",
+    "title": "họp team",
+    "start": "2026-11-18T18:30:00+07:00",
+    "end": "2026-11-18T19:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_1963",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-16T08:30:00+07:00",
+    "link": "https://meet.example.test/kvy-xlla-ppv",
+    "attendees": [
+     "c_5730",
+     "c_530"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_297",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-11-18T09:30:00+07:00",
+    "link": "https://meet.example.test/msg-tnfb-acq",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_720",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-18T10:00:00+07:00",
+    "link": "https://meet.example.test/kwm-wydv-oki",
+    "attendees": [
+     "c_897",
+     "c_188"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_5584",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-16T15:00:00+07:00",
+    "link": "https://meet.example.test/uza-qcdd-hlf",
+    "attendees": [
+     "c_897"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_8142",
+    "title": "Họp nhóm soạn giáo án",
+    "start": "2026-11-15T13:00:00+07:00",
+    "link": "https://meet.example.test/tre-bnhx-alw",
+    "attendees": [
+     "c_188",
+     "c_903"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 33,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-11-15",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-16",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 29
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-17",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 29
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-18",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 30
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5730",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09519965082"
+   },
+   {
+    "id": "c_530",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09443596381"
+   },
+   {
+    "id": "c_426",
+    "name": "Lan",
+    "relation": "chị họ",
+    "phone": "09349981744"
+   },
+   {
+    "id": "c_14",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09222629394"
+   },
+   {
+    "id": "c_188",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09439124901"
+   },
+   {
+    "id": "c_662",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09375259954"
+   },
+   {
+    "id": "c_296",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09910007994"
+   },
+   {
+    "id": "c_897",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09231826786"
+   },
+   {
+    "id": "c_5207",
+    "name": "Hằng",
+    "relation": "bạn cùng lớp",
+    "phone": "09184207360"
+   },
+   {
+    "id": "c_741",
+    "name": "Thư",
+    "relation": "bạn cùng lớp",
+    "phone": "09651132849"
+   },
+   {
+    "id": "c_903",
+    "name": "Quyên",
+    "relation": "bạn cùng lớp",
+    "phone": "09772504194"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_266",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_829",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_473",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_8461",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "17 Nguyễn Huệ, Phú Nhuận, Huế",
+    "dropoff": "Đại học Sư phạm Huế, 34 Lê Lợi",
+    "vehicle": "bike",
+    "schedule_time": "2026-11-15T15:00:00+07:00"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_75",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-12T13:30:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_130",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-14T21:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_632",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-15T04:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_521",
+    "from": "ma@gmail.example.test",
+    "from_name": "Mạ",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-15T03:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_7600",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-13T02:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_58",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-16T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_571",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-14T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_335",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-20T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_37",
+    "contact_id": "c_296",
+    "phone_number": "09910007994",
+    "direction": "incoming",
+    "content": "Chiều con lên trường nhớ mang theo áo dài nghe.",
+    "time": "2026-11-15T12:20:00+07:00"
+   },
+   {
+    "id": "msg_02",
+    "contact_id": "c_296",
+    "phone_number": "09910007994",
+    "direction": "outgoing",
+    "content": "Con nhớ rồi mạ nghe."
+   }
+  ]
+ }
+}

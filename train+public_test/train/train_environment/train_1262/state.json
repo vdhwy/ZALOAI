@@ -1,0 +1,246 @@
+{
+ "_meta": {
+  "question_id": "train_1262",
+  "current_time": "2026-10-23T19:10:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "gold_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_6790",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-24T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_1411",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-22T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_918",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-22T12:30:00+07:00",
+    "priority": "normal",
+    "done": true
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_401",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09491819168"
+   },
+   {
+    "id": "c_222",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09536474660"
+   },
+   {
+    "id": "c_7123",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09945009309"
+   },
+   {
+    "id": "c_909",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09273053458"
+   },
+   {
+    "id": "c_2831",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09803787721"
+   },
+   {
+    "id": "c_184",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09613117929"
+   },
+   {
+    "id": "c_140",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09750363845"
+   },
+   {
+    "id": "c_810",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09533948719"
+   },
+   {
+    "id": "c_811",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09228384950"
+   },
+   {
+    "id": "c_68",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09143193022"
+   },
+   {
+    "id": "c_82",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09626659137"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-20": {
+    "steps": 6480,
+    "calories": 259,
+    "distance_km": 4.7
+   },
+   "2026-10-21": {
+    "steps": 6213,
+    "calories": 248,
+    "distance_km": 4.5
+   },
+   "2026-10-22": {
+    "steps": 8876,
+    "calories": 355,
+    "distance_km": 6.4
+   },
+   "2026-10-23": {
+    "steps": 5604,
+    "calories": 224,
+    "distance_km": 4.0
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_9035",
+    "type": "gym",
+    "minutes": 45,
+    "time": "2026-10-19T18:30:00+07:00"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_505",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-11-10",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_322",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-11-10",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_459",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-11-10",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_795",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-11-10",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 129100000,
+    "sell": 131100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 123100000,
+    "sell": 125100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4291
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_5974",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_8104",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_7258",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ }
+}

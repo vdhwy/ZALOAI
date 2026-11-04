@@ -1,0 +1,238 @@
+{
+ "_meta": {
+  "question_id": "public_0487",
+  "current_time": "2026-11-21T20:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "fuel_price.get_price",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_187",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-20T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_572",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-22T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_701",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-27T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "due": "",
+    "priority": "normal",
+    "done": false,
+    "title": "Thứ Sáu lên Sài Gòn giao xoài cho mối"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_745",
+    "time": "2026-11-22T07:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21400
+   },
+   {
+    "type": "e5",
+    "price": 20200
+   },
+   {
+    "type": "diesel",
+    "price": 18800
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_3460",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Cần Thơ",
+    "destination": "TP.HCM",
+    "date": "2026-11-27",
+    "depart": "04:30",
+    "arrive": "08:00",
+    "price": 165000,
+    "seats_left": 12
+   },
+   {
+    "id": "trip_7021",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Cần Thơ",
+    "destination": "TP.HCM",
+    "date": "2026-11-27",
+    "depart": "13:00",
+    "arrive": "16:30",
+    "price": 165000,
+    "seats_left": 20
+   },
+   {
+    "id": "trip_221",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Cần Thơ",
+    "destination": "TP.HCM",
+    "date": "2026-11-27",
+    "depart": "06:00",
+    "arrive": "09:30",
+    "price": 180000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_4253",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "TP.HCM",
+    "destination": "Cần Thơ",
+    "date": "2026-11-27",
+    "depart": "17:00",
+    "arrive": "20:30",
+    "price": 165000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_884",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Cần Thơ",
+    "destination": "TP.HCM",
+    "date": "2026-12-04",
+    "depart": "04:30",
+    "arrive": "08:00",
+    "price": 165000,
+    "seats_left": 25
+   },
+   {
+    "id": "trip_366",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Cần Thơ",
+    "destination": "Đà Lạt",
+    "date": "2026-11-28",
+    "depart": "19:00",
+    "arrive": "05:00",
+    "price": 350000,
+    "seats_left": 8
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_612",
+    "trip_id": "trip_3460",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Cần Thơ",
+    "destination": "TP.HCM",
+    "date": "2026-11-27",
+    "depart": "04:30",
+    "seats": 1,
+    "total": 165000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_38",
+    "trip_id": "trip_4253",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "TP.HCM",
+    "destination": "Cần Thơ",
+    "date": "2026-11-27",
+    "depart": "17:00",
+    "seats": 1,
+    "total": 165000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_270",
+    "trip_id": "trip_884",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Cần Thơ",
+    "destination": "TP.HCM",
+    "date": "2026-12-04",
+    "depart": "04:30",
+    "seats": 1,
+    "total": 165000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Xoài này ngọt lắm",
+    "to_lang": "ko",
+    "translation": "이 망고는 아주 달아요"
+   }
+  ]
+ }
+}

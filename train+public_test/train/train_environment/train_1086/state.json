@@ -1,0 +1,528 @@
+{
+ "_meta": {
+  "question_id": "train_1086",
+  "current_time": "2026-12-08T07:40:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "phone.call",
+   "phone.recent_calls",
+   "sms.read_recent",
+   "sms.send",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-12-08",
+    "prizes": {
+     "special": "151952",
+     "first": "22974",
+     "eighth": "20"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-12-08",
+    "prizes": {
+     "special": "423545",
+     "first": "96855",
+     "eighth": "43"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-12-08",
+    "prizes": {
+     "special": "163736",
+     "first": "11127",
+     "eighth": "36"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-12-08",
+    "prizes": {
+     "special": "597588",
+     "first": "23350",
+     "eighth": "43"
+    }
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_6216",
+    "tracking_id": "MDXVN791626914",
+    "carrier": "MDX Express",
+    "name": "Hộp quà Trung thu",
+    "status": "out_for_delivery",
+    "eta": "2026-12-08T17:00:00+07:00"
+   },
+   {
+    "id": "shp_962",
+    "tracking_id": "JV948120274",
+    "carrier": "JetViệt Express",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "delivered",
+    "eta": "2026-12-07T14:00:00+07:00"
+   },
+   {
+    "id": "shp_504",
+    "tracking_id": "STP994956237",
+    "carrier": "SaoTel Post",
+    "name": "Tai nghe Bluetooth",
+    "status": "in_transit",
+    "eta": "2026-12-11T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9002",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09273371990"
+   },
+   {
+    "id": "c_914",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09228830787"
+   },
+   {
+    "id": "c_670",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09501194920"
+   },
+   {
+    "id": "c_450",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09471989917"
+   },
+   {
+    "id": "c_133",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09828009411"
+   },
+   {
+    "id": "c_92",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09837348462"
+   },
+   {
+    "id": "c_926",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09403592350"
+   },
+   {
+    "id": "c_374",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09315581394"
+   },
+   {
+    "id": "c_8337",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09210239297"
+   },
+   {
+    "id": "c_120",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09264933006"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_488",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_610",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": false,
+    "battery": 80
+   },
+   {
+    "id": "lock_162",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_1983",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_175",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": false,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_97",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-12-09T09:30:00+07:00",
+    "link": "https://meet.example.test/vtq-qftw-zbq",
+    "attendees": [
+     "c_8337",
+     "c_374"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_288",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-12-10T14:30:00+07:00",
+    "link": "https://meet.example.test/ltz-eyfm-cfl",
+    "attendees": [
+     "c_120"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_94",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-12-09T15:30:00+07:00",
+    "link": "https://meet.example.test/ank-bgkk-kjy",
+    "attendees": [
+     "c_926",
+     "c_92"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_598",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_278",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_864",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_73",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_4216",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_613",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_2857",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_586",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_256",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_106",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_318",
+    "contact_id": "c_670",
+    "phone_number": "09501194920",
+    "direction": "incoming",
+    "content": "Má ơi con tới trường rồi nha.",
+    "time": "2026-12-08T07:05:00+07:00"
+   },
+   {
+    "id": "msg_207",
+    "contact_id": "c_914",
+    "phone_number": "09228830787",
+    "direction": "incoming",
+    "content": "Chị Thảo ơi, tiền hàng đợt này 3.650.000 nha chị, 9 giờ em giao tới tiệm.",
+    "time": "2026-12-08T06:50:00+07:00"
+   },
+   {
+    "id": "msg_96",
+    "contact_id": "c_914",
+    "phone_number": "09228830787",
+    "direction": "incoming",
+    "content": "Đợt trước chị trả đủ rồi nha, em cảm ơn.",
+    "time": "2026-12-01T18:20:00+07:00"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_1456",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_74",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 7200,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_729",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 2000,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_9953",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2027-01-05",
+    "used": false
+   },
+   {
+    "id": "vch_1043",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2027-01-01",
+    "used": false
+   },
+   {
+    "id": "vch_3562",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2027-01-03",
+    "used": false
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ }
+}

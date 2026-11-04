@@ -1,0 +1,587 @@
+{
+ "_meta": {
+  "question_id": "train_0992",
+  "current_time": "2026-12-03T12:05:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_762",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09850351146"
+   },
+   {
+    "id": "c_669",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09518774876"
+   },
+   {
+    "id": "c_6293",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09302112176"
+   },
+   {
+    "id": "c_353",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09874722649"
+   },
+   {
+    "id": "c_886",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09741634442"
+   },
+   {
+    "id": "c_506",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09894467478"
+   },
+   {
+    "id": "c_594",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09511215138"
+   },
+   {
+    "id": "c_362",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09598472598"
+   },
+   {
+    "id": "c_8883",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09549308840"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_53",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_990",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_808",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_7140",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_227",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-05T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_4342",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-05T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_5324",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-02T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_842",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_1507",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_4850",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_89",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_470",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_240",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_3316",
+    "title": "Lại nhớ người yêu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_2209",
+    "title": "Duyên phận",
+    "artist": "Như Quỳnh"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_373",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_614",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_575",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_915",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_5513",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_264",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_554",
+    "time": "2026-12-04T05:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_6833",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_854",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_152",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_1608",
+    "show_id": "show_854",
+    "title": "Số 21: Đi xe đạp đi làm",
+    "number": 21,
+    "duration_min": 18,
+    "published": "2026-11-26"
+   },
+   {
+    "id": "ep_684",
+    "show_id": "show_6833",
+    "title": "Số 15: Quản lý chi tiêu gia đình",
+    "number": 15,
+    "duration_min": 45,
+    "published": "2026-11-26"
+   },
+   {
+    "id": "ep_752",
+    "show_id": "show_152",
+    "title": "Số 13: Giấc ngủ và trí nhớ",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-11-19"
+   },
+   {
+    "id": "ep_553",
+    "show_id": "show_152",
+    "title": "Số 14: Lỗ đen là gì",
+    "number": 14,
+    "duration_min": 32,
+    "published": "2026-11-26"
+   },
+   {
+    "id": "ep_524",
+    "show_id": "show_152",
+    "title": "Số 12: Vì sao bầu trời màu xanh",
+    "number": 12,
+    "duration_min": 18,
+    "published": "2026-11-12"
+   },
+   {
+    "id": "ep_141",
+    "show_id": "show_854",
+    "title": "Số 19: Rác thải nhựa ở đô thị",
+    "number": 19,
+    "duration_min": 25,
+    "published": "2026-11-12"
+   },
+   {
+    "id": "ep_385",
+    "show_id": "show_854",
+    "title": "Số 20: Trồng cây trên sân thượng",
+    "number": 20,
+    "duration_min": 25,
+    "published": "2026-11-19"
+   },
+   {
+    "id": "ep_67",
+    "show_id": "show_6833",
+    "title": "Số 13: Lập quỹ khẩn cấp",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-11-12"
+   },
+   {
+    "id": "ep_662",
+    "show_id": "show_6833",
+    "title": "Số 14: Gửi tiết kiệm hay mua vàng",
+    "number": 14,
+    "duration_min": 45,
+    "published": "2026-11-19"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_767",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_274",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_324",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_871",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_152"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_185",
+    "name": "Thằng Tí",
+    "type": "direct",
+    "members": [
+     "Thằng Tí"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1687",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_243",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_612",
+    "name": "Vợ Hồng",
+    "type": "direct",
+    "members": [
+     "Vợ Hồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4398",
+    "name": "Anh Mười",
+    "type": "direct",
+    "members": [
+     "Anh Mười"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_8882",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 148000,
+    "due_date": "2026-12-05",
+    "paid": false
+   },
+   {
+    "id": "bill_2037",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 199000,
+    "due_date": "2026-12-07",
+    "paid": false
+   },
+   {
+    "id": "bill_334",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 207000,
+    "due_date": "2026-12-08",
+    "paid": false
+   }
+  ]
+ }
+}

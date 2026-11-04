@@ -1,0 +1,325 @@
+{
+ "_meta": {
+  "question_id": "train_1412",
+  "current_time": "2026-12-08T22:10:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_249",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_850",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_727",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_612",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_708",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 120100000,
+    "sell": 122100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 114100000,
+    "sell": 116100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3926
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_909",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09465438201"
+   },
+   {
+    "id": "c_522",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09664391244"
+   },
+   {
+    "id": "c_22",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09347166455"
+   },
+   {
+    "id": "c_6509",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09901960284"
+   },
+   {
+    "id": "c_186",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09815551767"
+   },
+   {
+    "id": "c_345",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09160190837"
+   },
+   {
+    "id": "c_415",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09269062251"
+   },
+   {
+    "id": "c_5880",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09115766353"
+   },
+   {
+    "id": "c_650",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09195885982"
+   },
+   {
+    "id": "c_556",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09719601845"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_459",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 199000,
+    "due_date": "2026-12-10",
+    "paid": false
+   },
+   {
+    "id": "bill_201",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 211000,
+    "due_date": "2026-12-17",
+    "paid": false
+   },
+   {
+    "id": "bill_494",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 217000,
+    "due_date": "2026-12-11",
+    "paid": false
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_976",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-11T10:00:00+07:00",
+    "end": "2026-12-11T11:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_433",
+    "title": "khám răng",
+    "start": "2026-12-09T14:00:00+07:00",
+    "end": "2026-12-09T15:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_666",
+    "title": "họp team",
+    "start": "2026-12-10T08:00:00+07:00",
+    "end": "2026-12-10T09:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_704",
+    "title": "đá bóng",
+    "start": "2026-12-09T09:00:00+07:00",
+    "end": "2026-12-09T10:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_346",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_262",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_5531",
+    "name": "Tiệm vàng Kim Phát Thái Hà",
+    "address": "35 Thái Hà, Đống Đa, Hà Nội",
+    "category": "jewelry"
+   },
+   {
+    "id": "place_9725",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_454",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_859",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_250",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_618",
+    "name": "Tiệm vàng Kim Phúc",
+    "address": "142 Thái Hà, Đống Đa, Hà Nội",
+    "category": "jewelry"
+   }
+  ],
+  "saved_places": [
+   {
+    "id": "fav_01",
+    "place_id": "place_618",
+    "label": "Chỗ mua nhẫn kỷ niệm cho Lan"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_4498",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_162",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_596",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_260",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_404",
+    "name": "Bé Bống",
+    "type": "direct",
+    "members": [
+     "Bé Bống"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

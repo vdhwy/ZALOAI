@@ -1,0 +1,276 @@
+{
+ "_meta": {
+  "question_id": "public_0630",
+  "current_time": "2026-12-13T21:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_220",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_139",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_851",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_980",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_968",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9984",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09797383590"
+   },
+   {
+    "id": "c_733",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09437681851"
+   },
+   {
+    "id": "c_776",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09313948142"
+   },
+   {
+    "id": "c_8833",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09924076771"
+   },
+   {
+    "id": "c_8422",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09406833755"
+   },
+   {
+    "id": "c_262",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09313724537"
+   },
+   {
+    "id": "c_787",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09209066282"
+   },
+   {
+    "id": "c_652",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09592575439"
+   },
+   {
+    "id": "c_2677",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09484295304"
+   },
+   {
+    "id": "c_505",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09650892324"
+   },
+   {
+    "id": "c_795",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09242118344"
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_629",
+    "name": "Bãi xe Đại Nội",
+    "address": "23 Tháng 8, Thuận Hoà, Huế",
+    "area": "Đại Nội",
+    "price_per_hour": 25000,
+    "available_spots": 6
+   },
+   {
+    "id": "lot_4796",
+    "name": "Bãi đỗ ga Huế",
+    "address": "2 Bùi Thị Xuân, Phường Đúc, Huế",
+    "area": "Ga Huế",
+    "price_per_hour": 35000,
+    "available_spots": 14
+   },
+   {
+    "id": "lot_669",
+    "name": "Bãi đỗ chợ Đông Ba",
+    "address": "Trần Hưng Đạo, Phú Hoà, Huế",
+    "area": "Đông Ba",
+    "price_per_hour": 20000,
+    "available_spots": 0
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_7716",
+    "lot_id": "lot_629",
+    "from_time": "2026-12-13T20:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-12-13T23:00:00+07:00",
+    "total": 75000,
+    "status": "reserved"
+   },
+   {
+    "id": "park_290",
+    "lot_id": "lot_4796",
+    "from_time": "2026-12-13T21:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-12-14T00:00:00+07:00",
+    "total": 105000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_827",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_970",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_2875",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-12-13T22:15:00+07:00",
+    "label": "ra Đại Nội đón Lucas"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 29,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-12-13",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-14",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 30
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-15",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 29
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-16",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 32
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 123900000,
+    "sell": 125900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 117900000,
+    "sell": 119900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4132
+   }
+  ]
+ }
+}

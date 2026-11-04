@@ -1,0 +1,106 @@
+{
+ "_meta": {
+  "question_id": "train_0050",
+  "current_time": "2026-11-20T20:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "gold_price.get_price",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 118300000,
+    "sell": 120300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 112300000,
+    "sell": 114300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3956
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "time": "2026-11-21T07:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_02",
+    "time": "2026-11-21T06:15:00+07:00",
+    "label": "họp sớm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_03",
+    "time": "2026-11-21T06:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "đá bóng",
+    "start": "2026-11-22T18:30:00+07:00",
+    "end": "2026-11-22T19:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

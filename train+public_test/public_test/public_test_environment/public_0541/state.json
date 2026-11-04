@@ -1,0 +1,426 @@
+{
+ "_meta": {
+  "question_id": "public_0541",
+  "current_time": "2026-10-31T20:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "gold_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 125800000,
+    "sell": 127800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 119800000,
+    "sell": 121800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4009
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9670",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09288325906"
+   },
+   {
+    "id": "c_580",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09243473091"
+   },
+   {
+    "id": "c_165",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09675157099"
+   },
+   {
+    "id": "c_350",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09584279307"
+   },
+   {
+    "id": "c_1142",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09581083813"
+   },
+   {
+    "id": "c_5444",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09985159512"
+   },
+   {
+    "id": "c_503",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09533681319"
+   },
+   {
+    "id": "c_854",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09231694161"
+   },
+   {
+    "id": "c_984",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09982932833"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_122",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-01T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_7776",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-06T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_1022",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-05T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_500",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-03T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_790",
+    "time": "2026-11-01T07:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_5851",
+    "time": "2026-11-01T08:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_404",
+    "time": "2026-11-01T06:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_04",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-01T06:00:00+07:00"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_5021",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_77",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_379",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_9564",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_01",
+    "contact_id": "c_9670",
+    "phone_number": "09288325906",
+    "direction": "outgoing",
+    "content": "Tiền điện anh trả rồi nhé."
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 500,
+    "avg_price": 81350,
+    "price": 89300
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 1000,
+    "avg_price": 28100,
+    "price": 26300
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26300,
+    "change_pct": 3.2
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59800,
+    "change_pct": -1.0
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 89300,
+    "change_pct": 2.4
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24850,
+    "change_pct": 0.9
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1634,
+    "change_pct": -0.9
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 125300,
+    "change_pct": 1.4
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_777",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 152000,
+    "due_date": "2026-11-02",
+    "paid": false
+   },
+   {
+    "id": "bill_6096",
+    "type": "water",
+    "provider": "Nước sạch Hà Nội",
+    "amount": 206000,
+    "due_date": "2026-11-07",
+    "paid": false
+   },
+   {
+    "id": "bill_3318",
+    "type": "electricity",
+    "provider": "EVN Hà Nội",
+    "amount": 1245000,
+    "due_date": "2026-11-06",
+    "paid": true,
+    "paid_with": "bank"
+   },
+   {
+    "id": "bill_852",
+    "type": "tuition",
+    "provider": "Lớp tiếng Anh Mrs. Patel",
+    "amount": 1850000,
+    "due_date": "2026-11-10",
+    "paid": false
+   },
+   {
+    "id": "bill_4127",
+    "type": "tuition",
+    "provider": "Lớp Toán tiếng Anh Mr. Patel",
+    "amount": 2100000,
+    "due_date": "2026-11-08",
+    "paid": false
+   },
+   {
+    "id": "bill_966",
+    "type": "tuition",
+    "provider": "CLB bơi Cá Heo Nhỏ",
+    "amount": 900000,
+    "due_date": "2026-11-05",
+    "paid": false
+   }
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_734",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_6672",
+    "name": "Đèn bàn LED chống cận Rạng Đông",
+    "price": 275000,
+    "seller": "Rạng Đông Official",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_847",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_519",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_2734",
+    "name": "Balo laptop Mikkor 15.6 inch",
+    "price": 650000,
+    "seller": "Mikkor Store",
+    "category": "thời trang",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_709",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.5,
+    "in_stock": true
+   },
+   {
+    "id": "prod_943",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.8,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_462",
+    "items": [
+     {
+      "product_id": "prod_2734",
+      "name": "Balo laptop Mikkor 15.6 inch",
+      "price": 650000,
+      "quantity": 1
+     }
+    ],
+    "total": 650000,
+    "status": "delivered",
+    "placed_at": "2026-10-22T14:35:00+07:00",
+    "seller": "Mikkor Store",
+    "delivered_at": "2026-10-25T14:35:00+07:00"
+   },
+   {
+    "id": "ord_40",
+    "items": [
+     {
+      "product_id": "prod_6672",
+      "name": "Đèn bàn LED chống cận Rạng Đông",
+      "price": 275000,
+      "quantity": 1
+     }
+    ],
+    "total": 275000,
+    "status": "shipping",
+    "placed_at": "2026-10-28T16:35:00+07:00",
+    "seller": "Rạng Đông Official"
+   }
+  ],
+  "returns": []
+ }
+}

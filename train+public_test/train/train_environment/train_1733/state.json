@@ -1,0 +1,496 @@
+{
+ "_meta": {
+  "question_id": "train_1733",
+  "current_time": "2026-11-06T13:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "phone.call",
+   "phone.recent_calls"
+  ]
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_172",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_207",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": false
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_1050",
+    "time": "2026-11-05T05:10:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_604",
+    "time": "2026-11-05T18:15:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_146",
+    "time": "2026-11-04T23:00:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_1625",
+    "time": "2026-11-04T14:45:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": true
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_1534",
+    "from": "comai@gmail.example.test",
+    "from_name": "Cô Mai",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-04T16:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_230",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-03T18:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_150",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-05T11:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_468",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-04T02:20:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_782",
+    "from": "sophie.martin@verdalis.example.test",
+    "from_name": "Sophie Martin",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch làm việc tại nhà máy Huế",
+    "snippet": "Hẹn chị buổi làm việc ở nhà máy Huế sáng thứ Hai.",
+    "body": "Chị Hoa thân mến, bên em hẹn chị buổi làm việc tại nhà máy Huế lúc 10 giờ sáng thứ Hai ngày 16/11. Chị xác nhận giúp em nhé.",
+    "time": "2026-11-06T08:40:00+07:00",
+    "unread": false,
+    "folder": "inbox",
+    "replied": true
+   },
+   {
+    "id": "mail_355",
+    "from": "sophie.marten@auditplus.example.test",
+    "from_name": "Sophie Marten",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Báo giá dịch vụ kiểm toán năm 2026",
+    "snippet": "Gửi chị báo giá dịch vụ kiểm toán báo cáo tài chính.",
+    "body": "Kính gửi chị Hoa, công ty em gửi báo giá dịch vụ kiểm toán báo cáo tài chính năm 2026 như file đính kèm.",
+    "time": "2026-11-06T09:15:00+07:00",
+    "unread": true,
+    "folder": "archive"
+   }
+  ],
+  "sent": [
+   {
+    "id": "sent_01",
+    "to": [
+     "sophie.martin@verdalis.example.test"
+    ],
+    "cc": [],
+    "subject": "Re: Lịch làm việc tại nhà máy Huế",
+    "body": "Chị xác nhận lịch làm việc, chị sẽ có mặt đúng giờ nhé.",
+    "in_reply_to": "mail_782"
+   }
+  ],
+  "drafts": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_721",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-11-16",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_141",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-11-16",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_699",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-11-16",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_8879",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-11-16",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_5318",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-11-15",
+    "depart": "07:15",
+    "arrive": "09:25",
+    "airline": "Sen Air",
+    "price": 1290000
+   },
+   {
+    "id": "fl_942",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-11-15",
+    "depart": "16:30",
+    "arrive": "18:40",
+    "airline": "JetXanh",
+    "price": 1050000
+   },
+   {
+    "id": "fl_2671",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-15",
+    "depart": "08:00",
+    "arrive": "09:20",
+    "airline": "Rồng Việt Air",
+    "price": 1650000
+   }
+  ],
+  "bookings": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_753",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_335",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_5943",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-05T10:20:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_385",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-05T08:50:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_310",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-05T06:50:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_673",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-11-06T05:20:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_19",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-05T23:20:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_457",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-05T19:05:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   }
+  ],
+  "saved": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_844",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 600,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_861",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 500,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_9720",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 5200,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_138",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-11-24",
+    "used": false
+   },
+   {
+    "id": "vch_814",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-12-02",
+    "used": false
+   },
+   {
+    "id": "vch_03",
+    "merchant": "Rồng Việt Air",
+    "name": "Voucher 200.000đ vé nội địa",
+    "value": 200000,
+    "program_id": "prog_9720",
+    "reward_id": "rw_03_2",
+    "used": false
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_440",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09876938291"
+   },
+   {
+    "id": "c_365",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09763654022"
+   },
+   {
+    "id": "c_157",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09140112053"
+   },
+   {
+    "id": "c_511",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09917815246"
+   },
+   {
+    "id": "c_7900",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09930728615"
+   },
+   {
+    "id": "c_127",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09199466903"
+   },
+   {
+    "id": "c_203",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09457470185"
+   },
+   {
+    "id": "c_9995",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09943761166"
+   }
+  ]
+ }
+}

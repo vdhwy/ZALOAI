@@ -1,0 +1,266 @@
+{
+ "_meta": {
+  "question_id": "train_1082",
+  "current_time": "2026-11-24T22:10:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "phone.call",
+   "phone.recent_calls"
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_814",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-23T00:10:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_878",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-22T22:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_13",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-24T09:40:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_845",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-24T03:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_7188",
+    "from": "dung.pham@congty.example.test",
+    "from_name": "Anh Dũng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-23T01:10:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_464",
+    "tracking_id": "GST986575323",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Tai nghe Bluetooth",
+    "status": "out_for_delivery",
+    "eta": "2026-11-24T14:00:00+07:00"
+   },
+   {
+    "id": "shp_576",
+    "tracking_id": "MDXVN794747739",
+    "carrier": "MDX Express",
+    "name": "Áo khoác gió",
+    "status": "delivered",
+    "eta": "2026-11-23T17:00:00+07:00"
+   },
+   {
+    "id": "shp_356",
+    "tracking_id": "EV743502206",
+    "carrier": "VNPost",
+    "name": "Giày thể thao",
+    "status": "in_transit",
+    "eta": "2026-11-25T10:00:00+07:00"
+   },
+   {
+    "id": "shp_359",
+    "tracking_id": "STP952077389",
+    "carrier": "SaoTel Post",
+    "name": "Ốp lưng điện thoại",
+    "status": "in_transit",
+    "eta": "2026-11-26T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_885",
+    "name": "Lau nhà",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_598",
+    "name": "Nấu cơm tối",
+    "assignee": "Anh Phúc",
+    "done": false
+   },
+   {
+    "id": "chore_644",
+    "name": "Giặt quần áo",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Phúc",
+   "Tuấn",
+   "Bé Na",
+   "Bà nội"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_1581",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": [
+     {
+      "from": "Cô giáo Mai",
+      "content": "Chào anh Phúc, mai lớp cho các bé đi dã ngoại nhé.",
+      "time": "2026-11-24T21:03:00+07:00"
+     },
+     {
+      "from": "Cô giáo Mai",
+      "content": "Anh nhớ cho bé mang theo nón và nước uống ạ.",
+      "time": "2026-11-24T21:05:00+07:00"
+     }
+    ],
+    "unread": 2,
+    "last_message_time": "2026-11-24T21:05:00+07:00"
+   },
+   {
+    "id": "chat_3923",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": [
+     {
+      "from": "Mẹ",
+      "content": "Cuối tuần con về ăn cơm nghe.",
+      "time": "2026-11-23T19:40:00+07:00"
+     }
+    ],
+    "unread": 0,
+    "last_message_time": "2026-11-23T19:40:00+07:00"
+   },
+   {
+    "id": "chat_697",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": [
+     {
+      "from": "Tuấn",
+      "content": "Đoàn khách Hàn tuần sau dời qua thứ Năm nha.",
+      "time": "2026-11-22T10:15:00+07:00"
+     }
+    ],
+    "unread": 0,
+    "last_message_time": "2026-11-22T10:15:00+07:00"
+   },
+   {
+    "id": "chat_463",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": [
+     {
+      "from": "Lan",
+      "content": "Ảnh đám giỗ ông nội đây cả nhà.",
+      "time": "2026-11-24T20:30:00+07:00"
+     }
+    ],
+    "unread": 4,
+    "last_message_time": "2026-11-24T20:30:00+07:00"
+   },
+   {
+    "id": "chat_6971",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": [
+     {
+      "from": "Bác Ba",
+      "content": "Sáng mai cúp nước nghe cháu.",
+      "time": "2026-11-20T08:00:00+07:00"
+     }
+    ],
+    "unread": 0,
+    "last_message_time": "2026-11-20T08:00:00+07:00"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ }
+}

@@ -1,0 +1,262 @@
+{
+ "_meta": {
+  "question_id": "train_1032",
+  "current_time": "2026-10-18T14:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_270",
+    "title": "đá bóng",
+    "start": "2026-10-20T14:00:00+07:00",
+    "end": "2026-10-20T15:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_603",
+    "title": "họp phụ huynh",
+    "start": "2026-10-21T08:30:00+07:00",
+    "end": "2026-10-21T09:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_177",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_125",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_6882",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_940",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_879",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 400,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_9887",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 300,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   },
+   {
+    "id": "prog_1012",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 1000,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_208",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-10-30",
+    "used": false
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_436",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_521",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_6790",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ }
+}

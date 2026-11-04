@@ -1,0 +1,381 @@
+{
+ "_meta": {
+  "question_id": "train_1121",
+  "current_time": "2026-11-04T21:30:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "gold_price.get_price",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "phone.call",
+   "phone.recent_calls",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_644",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4037",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7398",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4753",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_608",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_897",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 3000,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_5710",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 960,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_850",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 500,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_198",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-22",
+    "used": false
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 90,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_765",
+    "name": "hành lang",
+    "area_m2": 15
+   },
+   {
+    "id": "room_238",
+    "name": "phòng ăn",
+    "area_m2": 10
+   },
+   {
+    "id": "room_362",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 12
+   },
+   {
+    "id": "room_814",
+    "name": "phòng ngủ",
+    "area_m2": 12
+   },
+   {
+    "id": "room_660",
+    "name": "bếp",
+    "area_m2": 18
+   },
+   {
+    "id": "room_236",
+    "name": "phòng khách",
+    "area_m2": 22
+   }
+  ],
+  "current_job": null
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 24,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-04",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-05",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-06",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-07",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 33
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_544",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_788",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_431",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_297",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_772",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_3556",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 122100000,
+    "sell": 124100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 116100000,
+    "sell": 118100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4037
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-04",
+    "to": "2026-11-04",
+    "kwh": 15.1,
+    "cost": 43800,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 6.8
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 3.0
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-29",
+    "to": "2026-11-04",
+    "kwh": 83.8,
+    "cost": 243000,
+    "days": [
+     {
+      "date": "2026-10-29",
+      "kwh": 16.0
+     },
+     {
+      "date": "2026-10-30",
+      "kwh": 10.4
+     },
+     {
+      "date": "2026-10-31",
+      "kwh": 11.9
+     },
+     {
+      "date": "2026-11-01",
+      "kwh": 12.5
+     },
+     {
+      "date": "2026-11-02",
+      "kwh": 7.5
+     },
+     {
+      "date": "2026-11-03",
+      "kwh": 10.4
+     },
+     {
+      "date": "2026-11-04",
+      "kwh": 15.1
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-04",
+    "kwh": 45.5,
+    "cost": 132000
+   }
+  },
+  "alert_threshold_kwh": 350
+ }
+}

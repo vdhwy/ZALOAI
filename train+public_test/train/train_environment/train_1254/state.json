@@ -1,0 +1,246 @@
+{
+ "_meta": {
+  "question_id": "train_1254",
+  "current_time": "2026-11-30T08:00:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_255",
+    "name": "Giặt quần áo",
+    "assignee": "Anh Khoa",
+    "done": true
+   },
+   {
+    "id": "chore_2334",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_304",
+    "name": "Lau nhà",
+    "assignee": "Bà nội",
+    "done": false
+   },
+   {
+    "id": "chore_690",
+    "name": "Rửa bát",
+    "assignee": "Tuấn",
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Khoa",
+   "Tuấn",
+   "Bà nội"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_810",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09200511334"
+   },
+   {
+    "id": "c_577",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09509024526"
+   },
+   {
+    "id": "c_23",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09688219148"
+   },
+   {
+    "id": "c_272",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09958962198"
+   },
+   {
+    "id": "c_8057",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09778180976"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_732",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_294",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_66",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_5563",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_887",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-05T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_95",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-06T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_9815",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-06T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

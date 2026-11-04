@@ -1,0 +1,466 @@
+{
+ "_meta": {
+  "question_id": "train_1411",
+  "current_time": "2026-11-28T19:50:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "library.reserve",
+   "library.search",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_565",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_768",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_4973",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": false
+   },
+   {
+    "id": "book_1753",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_386",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_406",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_2217",
+    "title": "Khu vườn sau mưa",
+    "author": "Julia Moreno",
+    "available": true
+   },
+   {
+    "id": "book_839",
+    "title": "Mùa đông ở Lisbon",
+    "author": "Julia Moreno",
+    "available": false
+   },
+   {
+    "id": "book_5102",
+    "title": "Bản đồ những vì sao",
+    "author": "Julia Romero",
+    "available": true
+   },
+   {
+    "id": "book_917",
+    "title": "Tư duy như kỹ sư",
+    "author": "Ben Taylor",
+    "available": true
+   },
+   {
+    "id": "book_3364",
+    "title": "Nghệ thuật tối giản",
+    "author": "Ben Tyler",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_411",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_539",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_241",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_25",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 27,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-28",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-29",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-30",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-01",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_2902",
+    "name": "Đổ rác",
+    "assignee": "Bé Na",
+    "done": true
+   },
+   {
+    "id": "chore_705",
+    "name": "Giặt quần áo",
+    "assignee": "Anh Nam",
+    "done": true
+   },
+   {
+    "id": "chore_4460",
+    "name": "Rửa bát",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_155",
+    "name": "Phơi quần áo",
+    "assignee": "Anh Nam",
+    "done": false
+   },
+   {
+    "id": "chore_2478",
+    "name": "Tưới cây",
+    "assignee": "Anh Nam",
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Nam",
+   "Lan",
+   "Bé Na"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2909",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09168821544"
+   },
+   {
+    "id": "c_387",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09693319976"
+   },
+   {
+    "id": "c_151",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09269833257"
+   },
+   {
+    "id": "c_4218",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09204081330"
+   },
+   {
+    "id": "c_5026",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09530091333"
+   },
+   {
+    "id": "c_50",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09618065308"
+   },
+   {
+    "id": "c_1409",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09157839697"
+   },
+   {
+    "id": "c_862",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09392753873"
+   },
+   {
+    "id": "c_9317",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09337180102"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23000
+   },
+   {
+    "type": "e5",
+    "price": 21800
+   },
+   {
+    "type": "diesel",
+    "price": 20400
+   }
+  ]
+ }
+}

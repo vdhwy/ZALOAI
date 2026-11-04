@@ -1,0 +1,245 @@
+{
+ "_meta": {
+  "question_id": "train_1681",
+  "current_time": "2026-10-16T17:10:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "library.reserve",
+   "library.search",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_6829",
+    "tracking_id": "JV815624288",
+    "carrier": "JetViệt Express",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "in_transit",
+    "eta": "2026-10-19T14:00:00+07:00"
+   },
+   {
+    "id": "shp_600",
+    "tracking_id": "EV212556049",
+    "carrier": "VNPost",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-10-17T14:00:00+07:00"
+   },
+   {
+    "id": "shp_572",
+    "tracking_id": "STP412048458",
+    "carrier": "SaoTel Post",
+    "name": "Giày thể thao",
+    "status": "out_for_delivery",
+    "eta": "2026-10-16T14:00:00+07:00"
+   },
+   {
+    "id": "shp_543",
+    "tracking_id": "MDXVN591979230",
+    "carrier": "MDX Express",
+    "name": "Áo khoác gió",
+    "status": "delivered",
+    "eta": "2026-10-15T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_338",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_941",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": false
+   },
+   {
+    "id": "book_4678",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_391",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_714",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": false
+   }
+  ],
+  "reservations": [
+   {
+    "id": "res_01",
+    "book_id": "book_338",
+    "status": "ready"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_5640",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 215000,
+    "due_date": "2026-10-23",
+    "paid": true,
+    "paid_with": "ewallet"
+   },
+   {
+    "id": "bill_621",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 204000,
+    "due_date": "2026-10-20",
+    "paid": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3185000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "bill_payment",
+    "bill_id": "bill_5640",
+    "amount": -215000
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "nhà",
+    "dropoff": "ga Huế",
+    "vehicle": "car4",
+    "payment": "ewallet"
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_103",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-10-29",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_8547",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-10-28",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_4610",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-11-12",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 27,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-10-16",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 29
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-18",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 34
+   }
+  ]
+ }
+}

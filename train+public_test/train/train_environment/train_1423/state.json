@@ -1,0 +1,266 @@
+{
+ "_meta": {
+  "question_id": "train_1423",
+  "current_time": "2026-12-11T17:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list"
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi vợ Hồng",
+    "time": "2026-12-11T20:00:00+07:00"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_5623",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_7206",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_538",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_3318",
+    "title": "Đơn xoài đi Amstelveen",
+    "content": "1200 ký xoài cát Hòa Lộc, giá 52 nghìn một ký, xe container lấy hàng thứ Ba 15/12"
+   },
+   {
+    "id": "note_904",
+    "title": "Đơn xoài đi Amsterdam",
+    "content": "900 ký xoài cát Hòa Lộc, giá 48 nghìn một ký, xe container lấy hàng thứ Hai 14/12\nThêm 200 ký, tổng 1100 ký"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_210",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_3338",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_4791",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_370",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 80
+   }
+  ],
+  "guest_codes": []
+ },
+ "calculator": {},
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_2821",
+    "time": "2026-12-12T07:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_891",
+    "time": "2026-12-12T06:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_840",
+    "time": "2026-12-12T07:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_731",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 145000,
+    "due_date": "2026-12-14",
+    "paid": false
+   },
+   {
+    "id": "bill_136",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 198000,
+    "due_date": "2026-12-16",
+    "paid": false
+   },
+   {
+    "id": "bill_3166",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 213000,
+    "due_date": "2026-12-19",
+    "paid": false
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_716",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_309",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_355",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_294",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_821",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_655",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09401775799"
+   },
+   {
+    "id": "c_5766",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09243919614"
+   },
+   {
+    "id": "c_546",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09693627754"
+   },
+   {
+    "id": "c_42",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09194722824"
+   },
+   {
+    "id": "c_264",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09667623414"
+   },
+   {
+    "id": "c_415",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09477772250"
+   },
+   {
+    "id": "c_4095",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09537994499"
+   },
+   {
+    "id": "c_1838",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09962343231"
+   },
+   {
+    "id": "c_302",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09814224505"
+   },
+   {
+    "id": "c_803",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09125844777"
+   }
+  ]
+ }
+}

@@ -1,0 +1,625 @@
+{
+ "_meta": {
+  "question_id": "train_1696",
+  "current_time": "2026-12-05T20:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_654",
+    "name": "Đi chợ",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_81",
+    "name": "Nấu cơm tối",
+    "assignee": "Bà nội",
+    "done": true
+   },
+   {
+    "id": "chore_175",
+    "name": "Tưới cây",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_607",
+    "name": "Rửa bát",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_665",
+    "name": "Đổ rác",
+    "assignee": "Bà nội",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chú Bảy",
+   "Tuấn",
+   "Bà nội",
+   "Lan"
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_433",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_853",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_461",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_596",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_433",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 2,
+      "note": null
+     },
+     {
+      "item_id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 115000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_755",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_6143",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_86",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_715",
+    "show_id": "show_6143",
+    "title": "Số 9: Lỗ đen là gì",
+    "number": 9,
+    "duration_min": 45,
+    "published": "2026-11-28"
+   },
+   {
+    "id": "ep_740",
+    "show_id": "show_755",
+    "title": "Số 15: Lập quỹ khẩn cấp",
+    "number": 15,
+    "duration_min": 32,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_6992",
+    "show_id": "show_86",
+    "title": "Số 19: Sống chậm giữa thành phố",
+    "number": 19,
+    "duration_min": 18,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_517",
+    "show_id": "show_755",
+    "title": "Số 16: Gửi tiết kiệm hay mua vàng",
+    "number": 16,
+    "duration_min": 45,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_2404",
+    "show_id": "show_755",
+    "title": "Số 17: Quản lý chi tiêu gia đình",
+    "number": 17,
+    "duration_min": 18,
+    "published": "2026-11-28"
+   },
+   {
+    "id": "ep_26",
+    "show_id": "show_6143",
+    "title": "Số 8: Giấc ngủ và trí nhớ",
+    "number": 8,
+    "duration_min": 18,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_292",
+    "show_id": "show_6143",
+    "title": "Số 7: Vì sao bầu trời màu xanh",
+    "number": 7,
+    "duration_min": 32,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_355",
+    "show_id": "show_86",
+    "title": "Số 20: Nghề diễn và những áp lực",
+    "number": 20,
+    "duration_min": 32,
+    "published": "2026-11-28"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_280",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_96",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_3015",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_53",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_755"
+  ],
+  "queue": [],
+  "now_playing": {
+   "episode_id": "ep_517",
+   "show_id": "show_755",
+   "status": "playing"
+  }
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_120",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_8698",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_3940",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_556",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_53",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 32,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-05",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-06",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-07",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-08",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 31
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_329",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_858",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_559",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_313",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7450",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_878",
+    "name": "Tài khoản thanh toán",
+    "balance": 36000000
+   },
+   {
+    "id": "acc_8371",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_548",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_1977",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_3126",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_5531",
+    "account_id": "acc_878",
+    "amount": 18000000,
+    "counterparty": "Northwind Trading",
+    "note": "tiền hàng xoài cát",
+    "time": "2026-12-05T08:40:00+07:00"
+   },
+   {
+    "id": "tx_207",
+    "account_id": "acc_878",
+    "amount": 9500000,
+    "counterparty": "Northwind Traders",
+    "note": "tiền hàng bưởi da xanh",
+    "time": "2026-12-05T10:15:00+07:00"
+   },
+   {
+    "id": "tx_884",
+    "account_id": "acc_878",
+    "amount": -350000,
+    "counterparty": "Điện lực Cần Thơ",
+    "note": "tiền điện tháng 11",
+    "time": "2026-12-04T16:20:00+07:00"
+   },
+   {
+    "id": "tx_04",
+    "account_id": "acc_878",
+    "beneficiary_id": "ben_3126",
+    "amount": -2000000,
+    "note": "tiền chợ"
+   }
+  ]
+ }
+}

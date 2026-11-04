@@ -1,0 +1,577 @@
+{
+ "_meta": {
+  "question_id": "train_1748",
+  "current_time": "2026-12-02T07:40:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_139",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_756",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_790",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_8583",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_957",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": [
+   {
+    "id": "fav_01",
+    "place_id": "place_957",
+    "label": "nhà thuốc quen"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_304",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_878",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_6318",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_699",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_430",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_908",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_4452",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_04",
+    "title": "",
+    "device_id": "light_kitchen",
+    "action": "on",
+    "time": "05:45",
+    "enabled": true
+   },
+   {
+    "id": "rule_05",
+    "title": "",
+    "device_id": "light_bedroom",
+    "action": "off",
+    "time": "23:00",
+    "enabled": true
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 75,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_889",
+    "name": "bếp",
+    "area_m2": 15
+   },
+   {
+    "id": "room_887",
+    "name": "phòng làm việc",
+    "area_m2": 18
+   },
+   {
+    "id": "room_150",
+    "name": "phòng ngủ",
+    "area_m2": 22
+   },
+   {
+    "id": "room_2911",
+    "name": "phòng khách",
+    "area_m2": 25
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "bếp",
+    "phòng khách"
+   ],
+   "whole_house": false,
+   "mode": "vacuum"
+  }
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_956",
+    "tracking_id": "GST185177224",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Giày thể thao",
+    "status": "in_transit",
+    "eta": "2026-12-03T10:00:00+07:00"
+   },
+   {
+    "id": "shp_376",
+    "tracking_id": "EV343788749",
+    "carrier": "VNPost",
+    "name": "Ốp lưng điện thoại",
+    "status": "in_transit",
+    "eta": "2026-12-04T10:00:00+07:00"
+   },
+   {
+    "id": "shp_639",
+    "tracking_id": "JV563813544",
+    "carrier": "JetViệt Express",
+    "name": "Tai nghe Bluetooth",
+    "status": "out_for_delivery",
+    "eta": "2026-12-02T10:00:00+07:00"
+   },
+   {
+    "id": "shp_505",
+    "tracking_id": "MDXVN170576501",
+    "carrier": "MDX Express",
+    "name": "Áo khoác gió",
+    "status": "delivered",
+    "eta": "2026-12-01T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_584",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09247673121"
+   },
+   {
+    "id": "c_4329",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09176140301"
+   },
+   {
+    "id": "c_556",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09562752781"
+   },
+   {
+    "id": "c_8135",
+    "name": "Grace Nakamura",
+    "relation": "đối tác",
+    "phone": "09183527460"
+   },
+   {
+    "id": "c_5423",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09497006645"
+   },
+   {
+    "id": "c_617",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09676275697"
+   },
+   {
+    "id": "c_4472",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09875584242"
+   },
+   {
+    "id": "c_462",
+    "name": "Grace Nakamoto",
+    "relation": "khách hàng",
+    "phone": "09725106384"
+   },
+   {
+    "id": "c_7232",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09157479428"
+   },
+   {
+    "id": "c_241",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09936106835"
+   },
+   {
+    "id": "c_9776",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09568245492"
+   },
+   {
+    "id": "c_356",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09700468273"
+   },
+   {
+    "id": "c_96",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09246578315"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_460",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_292",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_685",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_7471",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_103",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_9357",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_23",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_8422",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-02T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_408",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-02T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_6024",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-06T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_5612",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-02T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_818",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-08T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   }
+  ]
+ }
+}

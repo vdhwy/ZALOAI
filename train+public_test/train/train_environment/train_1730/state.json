@@ -1,0 +1,340 @@
+{
+ "_meta": {
+  "question_id": "train_1730",
+  "current_time": "2026-10-20T12:15:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_295",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_568",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_234",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_477",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_175",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-21",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-22",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-23",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_703",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-10-20T06:30:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_6151",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-10-19T19:15:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_917",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-10-19T20:00:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_419",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-10-20T06:45:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   }
+  ],
+  "saved": [
+   {
+    "id": "saved_01",
+    "article_id": "art_419"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_787",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09776405064"
+   },
+   {
+    "id": "c_5579",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09713374486"
+   },
+   {
+    "id": "c_97",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09112198674"
+   },
+   {
+    "id": "c_419",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09947382406"
+   },
+   {
+    "id": "c_499",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09736003468"
+   },
+   {
+    "id": "c_413",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09396422544"
+   },
+   {
+    "id": "c_484",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09826490873"
+   },
+   {
+    "id": "c_848",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09973415288"
+   },
+   {
+    "id": "c_479",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09267959928"
+   },
+   {
+    "id": "c_4368",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09677270895"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 121000000,
+    "sell": 123000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 115000000,
+    "sell": 117000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4255
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_35",
+    "title": "họp phụ huynh",
+    "start": "2026-10-22T18:30:00+07:00",
+    "end": "2026-10-22T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1150",
+    "title": "đi chơi công viên",
+    "start": "2026-10-21T08:30:00+07:00",
+    "end": "2026-10-21T09:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_23",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-21T09:00:00+07:00",
+    "end": "2026-10-21T10:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_213",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-23T15:30:00+07:00",
+    "end": "2026-10-23T16:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_604",
+    "title": "đi chợ Sunrise Mart",
+    "start": "2026-10-20T10:30:00+07:00",
+    "end": "2026-10-20T11:30:00+07:00",
+    "location": "Sunrise Mart Lê Văn Sỹ",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_871",
+    "title": "gặp mối hàng Sunrise Market",
+    "start": "2026-10-22T09:00:00+07:00",
+    "end": "2026-10-22T10:00:00+07:00",
+    "location": "Sunrise Market Quận 10",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_665",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_610",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_8119",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_9972",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_892",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi anh Lộc lấy thêm hai thùng nước suối",
+    "time": "2026-10-20T15:00:00+07:00"
+   }
+  ]
+ }
+}

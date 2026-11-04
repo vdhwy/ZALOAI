@@ -1,0 +1,395 @@
+{
+ "_meta": {
+  "question_id": "public_0578",
+  "current_time": "2026-11-09T22:15:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "sms.read_recent",
+   "sms.send",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "public_transit": {
+  "card_balance": 0,
+  "routes": [
+   {
+    "id": "metro_50",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "bus_3207",
+    "name": "Tuyến 34",
+    "type": "bus",
+    "stops": [
+     "Bến xe Mỹ Đình",
+     "KTX Mỹ Đình",
+     "Cầu Giấy",
+     "Chùa Láng",
+     "Ga Hà Nội"
+    ],
+    "fare": 8000,
+    "duration_min": 40,
+    "headway_min": 10,
+    "aliases": {
+     "nhà": "KTX Mỹ Đình",
+     "kí túc xá": "KTX Mỹ Đình",
+     "ký túc xá": "KTX Mỹ Đình",
+     "Đại học Ngoại thương": "Chùa Láng",
+     "trường": "Chùa Láng"
+    }
+   },
+   {
+    "id": "bus_5512",
+    "name": "Tuyến 49",
+    "type": "bus",
+    "stops": [
+     "KTX Mỹ Đình",
+     "Trần Duy Hưng",
+     "Ngã Tư Sở",
+     "Chùa Láng",
+     "Kim Liên"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 15,
+    "aliases": {
+     "nhà": "KTX Mỹ Đình",
+     "kí túc xá": "KTX Mỹ Đình",
+     "ký túc xá": "KTX Mỹ Đình",
+     "Đại học Ngoại thương": "Chùa Láng",
+     "trường": "Chùa Láng"
+    }
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Kim Mã",
+    "route": "metro_50",
+    "time": "2026-11-09T22:38:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_50",
+    "time": "2026-11-09T22:28:00+07:00"
+   },
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-11-09T22:25:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_50",
+    "time": "2026-11-09T22:18:00+07:00"
+   },
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-11-09T22:17:00+07:00"
+   },
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-11-09T22:33:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_416",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_269",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_670",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_3874",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_150",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09444575525"
+   },
+   {
+    "id": "c_9759",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09670983147"
+   },
+   {
+    "id": "c_3439",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09357664561"
+   },
+   {
+    "id": "c_183",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09160345918"
+   },
+   {
+    "id": "c_677",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09560530301"
+   },
+   {
+    "id": "c_349",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09793917713"
+   },
+   {
+    "id": "c_90",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09534883426"
+   },
+   {
+    "id": "c_653",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09808133822"
+   },
+   {
+    "id": "c_6317",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09475825291"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_414",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_883",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_2604",
+    "title": "Lịch lên trường tuần này",
+    "content": "Thứ Hai: Kinh tế lượng. Thứ Tư: Marketing quốc tế. Thứ Năm: Tiếng Anh thương mại. Thứ Bảy: gặp thầy Phong về khoá luận."
+   },
+   {
+    "id": "note_1057",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_348",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_70",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 24,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-09",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-10",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-11",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-12",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 33
+   }
+  ]
+ }
+}

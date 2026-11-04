@@ -1,0 +1,374 @@
+{
+ "_meta": {
+  "question_id": "train_1650",
+  "current_time": "2026-12-08T21:35:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_02",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi cho mẹ",
+    "time": "2026-12-08T22:00:00+07:00"
+   },
+   {
+    "id": "rem_03",
+    "repeat": "weekly",
+    "done": false,
+    "content": "Đi chạy bộ",
+    "time": "2026-12-12T06:00:00+07:00"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_593",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_904",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_5549",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_624",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_05",
+    "title": "Sprint mười hai",
+    "content": "Chốt danh sách tính năng trước thứ sáu"
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25643
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27694
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.0
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_332",
+    "title": "họp team",
+    "start": "2026-12-09T16:00:00+07:00",
+    "end": "2026-12-09T17:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_235",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-11T08:30:00+07:00",
+    "end": "2026-12-11T09:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2487",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-09T09:00:00+07:00",
+    "end": "2026-12-09T10:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_567",
+    "title": "họp phụ huynh",
+    "start": "2026-12-11T09:00:00+07:00",
+    "end": "2026-12-11T10:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_212",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-12-10T20:30:00+07:00",
+    "link": "https://meet.example.test/zpv-zohc-mzr",
+    "attendees": [
+     "c_848",
+     "c_7611"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_896",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-12-09T15:00:00+07:00",
+    "link": "https://meet.example.test/vdr-fyds-mpu",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_927",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_2324",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_6829",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_952",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6234",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09691076761"
+   },
+   {
+    "id": "c_761",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09967115693"
+   },
+   {
+    "id": "c_565",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09189387948"
+   },
+   {
+    "id": "c_7611",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09906074713"
+   },
+   {
+    "id": "c_3902",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09238874405"
+   },
+   {
+    "id": "c_606",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09218075899"
+   },
+   {
+    "id": "c_6739",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09341858479"
+   },
+   {
+    "id": "c_420",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09170584060"
+   },
+   {
+    "id": "c_848",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09266847529"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_833",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-21",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_7807",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-21",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_609",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-21",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_14",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-21",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ }
+}

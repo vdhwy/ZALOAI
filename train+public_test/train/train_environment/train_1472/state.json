@@ -1,0 +1,299 @@
+{
+ "_meta": {
+  "question_id": "train_1472",
+  "current_time": "2026-12-16T21:25:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi chị Priya Shah chốt lịch demo",
+    "time": "2026-12-17T08:00:00+07:00"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_971",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_603",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_1103",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_460",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_3419",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_384",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_742",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09697396436"
+   },
+   {
+    "id": "c_7445",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09973210124"
+   },
+   {
+    "id": "c_925",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09247403672"
+   },
+   {
+    "id": "c_394",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09327120509"
+   },
+   {
+    "id": "c_269",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09470777933"
+   },
+   {
+    "id": "c_746",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09329882157"
+   },
+   {
+    "id": "c_986",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09734235643"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 25,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-16",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-17",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 28
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-19",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_7422",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-12-13T23:40:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_409",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-12-15T06:25:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_858",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-12-15T20:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5318",
+    "from": "priya.sharma@vantorasystems.example.test",
+    "from_name": "Priya Sharma",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Return of demo units",
+    "snippet": "Please send the two demo units back to our office by Friday.",
+    "body": "Hi Khoa, could you please send the two demo units back to our Saigon office? We need to receive them no later than Friday, December 18. Thank you! Priya Sharma, Vantora Systems",
+    "time": "2026-12-16T16:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_2276",
+    "from": "priya.shah@kestrel.example.test",
+    "from_name": "Priya Shah",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Demo schedule",
+    "snippet": "Can we move our product demo to next Monday?",
+    "body": "Hi Khoa, can we move our product demo to Monday, December 21 at 10am? Best regards, Priya Shah, Kestrel Analytics",
+    "time": "2026-12-16T18:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_473",
+    "tracking_id": "JV697414579",
+    "carrier": "JetViệt Express",
+    "name": "Áo khoác gió",
+    "status": "in_transit",
+    "eta": "2026-12-18T17:00:00+07:00"
+   },
+   {
+    "id": "shp_100",
+    "tracking_id": "GST616581134",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Giày thể thao",
+    "status": "out_for_delivery",
+    "eta": "2026-12-16T17:00:00+07:00"
+   },
+   {
+    "id": "shp_452",
+    "tracking_id": "STP916473396",
+    "carrier": "SaoTel Post",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "delivered",
+    "eta": "2026-12-15T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ }
+}

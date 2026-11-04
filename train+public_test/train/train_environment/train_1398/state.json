@@ -1,0 +1,294 @@
+{
+ "_meta": {
+  "question_id": "train_1398",
+  "current_time": "2026-12-05T12:40:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "calculator": {},
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_473",
+    "name": "Rửa bát",
+    "assignee": "Chú Bảy",
+    "done": false
+   },
+   {
+    "id": "chore_194",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Cô Hồng",
+    "done": true
+   },
+   {
+    "id": "chore_753",
+    "name": "Phơi quần áo",
+    "assignee": "Chú Bảy",
+    "done": true
+   },
+   {
+    "id": "chore_628",
+    "name": "Lau nhà dưới",
+    "assignee": "James Wong",
+    "done": true
+   },
+   {
+    "id": "chore_305",
+    "name": "Lau cầu thang",
+    "assignee": "Jason Wong",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chú Bảy",
+   "Cô Hồng",
+   "Bố",
+   "James Wong",
+   "Jason Wong"
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5819",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09931864235"
+   },
+   {
+    "id": "c_822",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09280148440"
+   },
+   {
+    "id": "c_474",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09821735386"
+   },
+   {
+    "id": "c_491",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09613020191"
+   },
+   {
+    "id": "c_776",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09262272897"
+   },
+   {
+    "id": "c_102",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09795162188"
+   },
+   {
+    "id": "c_802",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09191136606"
+   },
+   {
+    "id": "c_72",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09488398616"
+   },
+   {
+    "id": "c_787",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09332065086"
+   },
+   {
+    "id": "c_253",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09534634284"
+   },
+   {
+    "id": "c_5209",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09781860852"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "cleaning",
+  "mode": "mop",
+  "rooms": [
+   {
+    "id": "room_7173",
+    "name": "hành lang",
+    "area_m2": 8
+   },
+   {
+    "id": "room_921",
+    "name": "bếp",
+    "area_m2": 10
+   },
+   {
+    "id": "room_111",
+    "name": "phòng khách",
+    "area_m2": 18
+   },
+   {
+    "id": "room_414",
+    "name": "phòng ngủ",
+    "area_m2": 25
+   },
+   {
+    "id": "room_83",
+    "name": "phòng làm việc",
+    "area_m2": 18
+   },
+   {
+    "id": "room_952",
+    "name": "phòng ăn",
+    "area_m2": 18
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng khách",
+    "phòng ăn"
+   ],
+   "whole_house": false,
+   "mode": "mop"
+  }
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_586",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-10T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_248",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-10T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_489",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-11T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_244",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-08T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_631",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_716",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_5741",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_9050",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_871",
+    "time": "2026-12-04T09:05:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_522",
+    "time": "2026-12-03T19:25:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_881",
+    "time": "2026-12-04T09:50:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_854",
+    "time": "2026-12-03T21:30:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": true
+   }
+  ]
+ }
+}

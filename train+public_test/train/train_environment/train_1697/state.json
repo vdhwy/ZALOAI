@@ -1,0 +1,409 @@
+{
+ "_meta": {
+  "question_id": "train_1697",
+  "current_time": "2026-11-20T13:50:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "phone.call",
+   "phone.recent_calls",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 75,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_268",
+    "name": "phòng khách",
+    "area_m2": 25
+   },
+   {
+    "id": "room_629",
+    "name": "bếp",
+    "area_m2": 25
+   },
+   {
+    "id": "room_733",
+    "name": "phòng ngủ",
+    "area_m2": 22
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng khách",
+    "bếp"
+   ],
+   "whole_house": false,
+   "mode": "vacuum"
+  }
+ },
+ "phone": {
+  "calls": []
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_800",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_9136",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_4964",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_4996",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_602",
+    "name": "Lau nhà",
+    "assignee": "Bà nội",
+    "done": false
+   },
+   {
+    "id": "chore_685",
+    "name": "Phơi quần áo",
+    "assignee": "Anh Nam",
+    "done": false
+   },
+   {
+    "id": "chore_51",
+    "name": "Giặt quần áo",
+    "assignee": null,
+    "done": true
+   },
+   {
+    "id": "chore_181",
+    "name": "Tưới cây",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_130",
+    "name": "Đổ rác",
+    "assignee": "Tuấn",
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Nam",
+   "Tuấn",
+   "Bố",
+   "Bà nội"
+  ]
+ },
+ "ewallet": {
+  "balance": 1035000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "bill_payment",
+    "bill_id": "bill_456",
+    "amount": -215000
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_5694",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-24T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_7863",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-26T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_4426",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-22T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-20",
+    "prizes": {
+     "special": "384657",
+     "first": "17287",
+     "eighth": "41"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-20",
+    "prizes": {
+     "special": "337095",
+     "first": "43020",
+     "eighth": "29"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-20",
+    "prizes": {
+     "special": "269379",
+     "first": "14524",
+     "eighth": "23"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-20",
+    "prizes": {
+     "special": "916302",
+     "first": "77648",
+     "eighth": "87"
+    }
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_73",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_657",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_699",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_434",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_188",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_276",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 202000,
+    "due_date": "2026-11-27",
+    "paid": true,
+    "paid_with": "bank"
+   },
+   {
+    "id": "bill_456",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 215000,
+    "due_date": "2026-11-26",
+    "paid": true,
+    "paid_with": "ewallet"
+   }
+  ],
+  "autopays": [
+   {
+    "id": "ap_01",
+    "type": "water",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_742",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09138349692"
+   },
+   {
+    "id": "c_3901",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09234121361"
+   },
+   {
+    "id": "c_826",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09559624897"
+   },
+   {
+    "id": "c_91",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09724680365"
+   },
+   {
+    "id": "c_5318",
+    "name": "Andrew Scott",
+    "relation": "đối tác",
+    "phone": "09461728305"
+   },
+   {
+    "id": "c_612",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09707864843"
+   },
+   {
+    "id": "c_898",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09280742237"
+   },
+   {
+    "id": "c_44",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09856157450"
+   },
+   {
+    "id": "c_4043",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09794812246"
+   },
+   {
+    "id": "c_3975",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09564782360"
+   },
+   {
+    "id": "c_629",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09939869429"
+   },
+   {
+    "id": "c_2207",
+    "name": "Andrew Stott",
+    "relation": "bạn",
+    "phone": "09318264751"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_5274",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_1434",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_966",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_515",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_958",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_478",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_2441",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_879",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ }
+}

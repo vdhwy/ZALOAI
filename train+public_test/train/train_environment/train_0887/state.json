@@ -1,0 +1,330 @@
+{
+ "_meta": {
+  "question_id": "train_0887",
+  "current_time": "2026-09-20T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 24,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-20",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-21",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-09-23",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 31
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "họp team",
+    "start": "2026-09-23T18:30:00+07:00",
+    "end": "2026-09-23T19:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-09-21T15:30:00+07:00",
+    "end": "2026-09-21T16:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_02",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_03",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_04",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_05",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_06",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_01",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-03",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000,
+    "flight_no": "RV157"
+   },
+   {
+    "id": "fl_02",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-03",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000,
+    "flight_no": "JX513"
+   },
+   {
+    "id": "fl_03",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-03",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000,
+    "flight_no": "SA1525"
+   },
+   {
+    "id": "fl_04",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-03",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000,
+    "flight_no": "JX527"
+   },
+   {
+    "id": "fl_05",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-09-25",
+    "depart": "07:00",
+    "arrive": "08:20",
+    "airline": "Rồng Việt Air",
+    "price": 1850000,
+    "flight_no": "RV151"
+   },
+   {
+    "id": "fl_06",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-09-25",
+    "depart": "09:00",
+    "arrive": "10:20",
+    "airline": "Rồng Việt Air",
+    "price": 1650000,
+    "flight_no": "RV155"
+   },
+   {
+    "id": "fl_07",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-09-25",
+    "depart": "15:30",
+    "arrive": "16:50",
+    "airline": "JetXanh",
+    "price": 1090000,
+    "flight_no": "JX521"
+   }
+  ],
+  "bookings": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-09-21T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-09-19T20:00:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_03",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-09-20T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "title": "Trả sách thư viện",
+    "due": "2026-09-22T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,301 @@
+{
+ "_meta": {
+  "question_id": "train_1054",
+  "current_time": "2026-10-25T06:30:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "library.reserve",
+   "library.search",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_2504",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_997",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_1627",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_266",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_3067",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_153",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_9589",
+    "name": "Anh Lộc",
+    "type": "direct",
+    "members": [
+     "Anh Lộc"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4391",
+    "name": "Bé Na",
+    "type": "direct",
+    "members": [
+     "Bé Na"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4567",
+    "name": "Chú Năm",
+    "type": "direct",
+    "members": [
+     "Chú Năm"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_467",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_322",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-25",
+    "to": "2026-10-25",
+    "kwh": 3.2,
+    "cost": 9300,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 1.4
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 0.6
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-19",
+    "to": "2026-10-25",
+    "kwh": 61.5,
+    "cost": 178400,
+    "days": [
+     {
+      "date": "2026-10-19",
+      "kwh": 7.0
+     },
+     {
+      "date": "2026-10-20",
+      "kwh": 15.1
+     },
+     {
+      "date": "2026-10-21",
+      "kwh": 8.4
+     },
+     {
+      "date": "2026-10-22",
+      "kwh": 7.4
+     },
+     {
+      "date": "2026-10-23",
+      "kwh": 7.7
+     },
+     {
+      "date": "2026-10-24",
+      "kwh": 12.7
+     },
+     {
+      "date": "2026-10-25",
+      "kwh": 3.2
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-25",
+    "kwh": 273.8,
+    "cost": 794000
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_638",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09142854654"
+   },
+   {
+    "id": "c_948",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09464139411"
+   },
+   {
+    "id": "c_983",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09566862608"
+   },
+   {
+    "id": "c_2556",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09474432519"
+   },
+   {
+    "id": "c_315",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09290770756"
+   },
+   {
+    "id": "c_406",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09372600658"
+   },
+   {
+    "id": "c_804",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09315991704"
+   },
+   {
+    "id": "c_1114",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09470515326"
+   }
+  ]
+ }
+}

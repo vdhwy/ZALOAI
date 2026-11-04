@@ -1,0 +1,459 @@
+{
+ "_meta": {
+  "question_id": "train_1195",
+  "current_time": "2026-10-25T20:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "library.reserve",
+   "library.search",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_676",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_5541",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_1465",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_454",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": false
+   },
+   {
+    "id": "book_366",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": false
+   }
+  ],
+  "reservations": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_297",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_471",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_938",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_1094",
+    "show_id": "show_471",
+    "title": "Số 16: Vì sao bầu trời màu xanh",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-10-04"
+   },
+   {
+    "id": "ep_460",
+    "show_id": "show_471",
+    "title": "Số 18: Lỗ đen là gì",
+    "number": 18,
+    "duration_min": 45,
+    "published": "2026-10-18"
+   },
+   {
+    "id": "ep_346",
+    "show_id": "show_471",
+    "title": "Số 17: Giấc ngủ và trí nhớ",
+    "number": 17,
+    "duration_min": 18,
+    "published": "2026-10-11"
+   },
+   {
+    "id": "ep_667",
+    "show_id": "show_297",
+    "title": "Số 9: Trồng cây trên sân thượng",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-10-11"
+   },
+   {
+    "id": "ep_4286",
+    "show_id": "show_938",
+    "title": "Số 12: Gửi tiết kiệm hay mua vàng",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-10-11"
+   },
+   {
+    "id": "ep_106",
+    "show_id": "show_297",
+    "title": "Số 8: Rác thải nhựa ở đô thị",
+    "number": 8,
+    "duration_min": 18,
+    "published": "2026-10-04"
+   },
+   {
+    "id": "ep_289",
+    "show_id": "show_938",
+    "title": "Số 11: Lập quỹ khẩn cấp",
+    "number": 11,
+    "duration_min": 18,
+    "published": "2026-10-04"
+   },
+   {
+    "id": "ep_9937",
+    "show_id": "show_297",
+    "title": "Số 10: Đi xe đạp đi làm",
+    "number": 10,
+    "duration_min": 18,
+    "published": "2026-10-18"
+   },
+   {
+    "id": "ep_320",
+    "show_id": "show_938",
+    "title": "Số 13: Quản lý chi tiêu gia đình",
+    "number": 13,
+    "duration_min": 18,
+    "published": "2026-10-18"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_413",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_607",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_422",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_447",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "phone": {
+  "calls": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_447",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_141",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_958",
+    "name": "Sếp Kim",
+    "type": "direct",
+    "members": [
+     "Sếp Kim"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_680",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_95",
+    "name": "Anh Long",
+    "type": "direct",
+    "members": [
+     "Anh Long"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6315",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09536791404"
+   },
+   {
+    "id": "c_377",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09194648012"
+   },
+   {
+    "id": "c_474",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09624734836"
+   },
+   {
+    "id": "c_960",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09759060983"
+   },
+   {
+    "id": "c_791",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09663051651"
+   },
+   {
+    "id": "c_192",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09651854828"
+   },
+   {
+    "id": "c_406",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09813446342"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 27,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-26",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-27",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-28",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 29
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "tv_living",
+    "name": "TV phòng khách",
+    "type": "tv",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on"
+    }
+   },
+   {
+    "id": "tv_bedroom",
+    "name": "TV phòng ngủ",
+    "type": "tv",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "_meta": {
+  "question_id": "train_1207",
+  "current_time": "2026-11-30T08:10:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "gold_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_4881",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_343",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_886",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_147",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_54",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "calculator": {},
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 26,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-30",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-01",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-02",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-03",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 34
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_505",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-12-01T10:00:00+07:00",
+    "link": "https://meet.example.test/vai-gxep-dah",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_7022",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-12-03T10:30:00+07:00",
+    "link": "https://meet.example.test/dxj-egqk-ozi",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_437",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-12-02T09:00:00+07:00",
+    "link": "https://meet.example.test/apj-bdlo-ola",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_308",
+    "title": "Họp lớp online",
+    "start": "2026-11-30T09:30:00+07:00",
+    "link": "https://meet.example.test/bmy-lozr-kfq",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25852
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27920
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 172.3
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 129900000,
+    "sell": 131900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 123900000,
+    "sell": 125900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4282
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_923",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_348",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_796",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_953",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_848",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ }
+}

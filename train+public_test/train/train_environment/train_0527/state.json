@@ -1,0 +1,144 @@
+{
+ "_meta": {
+  "question_id": "train_0527",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 145000,
+    "due_date": "2026-09-30",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 213000,
+    "due_date": "2026-09-29",
+    "paid": false
+   },
+   {
+    "id": "bill_03",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 849000,
+    "due_date": "2026-09-27",
+    "paid": false
+   },
+   {
+    "id": "bill_04",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 203000,
+    "due_date": "2026-10-04",
+    "paid": false
+   },
+   {
+    "id": "bill_05",
+    "type": "tuition",
+    "provider": "Trường Tiểu học Kim Đồng",
+    "name": "Học phí tháng 10",
+    "amount": 3500000,
+    "due_date": "2026-09-30",
+    "paid": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_01",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-10-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_02",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-10-13",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_03",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-09-26",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_04",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-10-14",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_05",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-10-22",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_02",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_03",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_04",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

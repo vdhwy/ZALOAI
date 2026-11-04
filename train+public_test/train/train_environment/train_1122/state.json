@@ -1,0 +1,514 @@
+{
+ "_meta": {
+  "question_id": "train_1122",
+  "current_time": "2026-12-07T07:00:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_592",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_933",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_166",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_5603",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-12-07T01:15:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_944",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-12-07T00:45:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_79",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-12-06T07:15:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_411",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-12-06T12:30:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_3486",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-12-06T19:30:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_6172",
+    "title": "Lịch cắt điện Hà Nội ngày 7/12: phố Láng Hạ, Thái Hà mất điện cả buổi sáng",
+    "topic": "general",
+    "source": "TinViệt",
+    "published_at": "2026-12-07T05:40:00+07:00",
+    "summary": "Điện lực Đống Đa tạm ngừng cấp điện từ 8 giờ đến 11 giờ 30 tại phố Láng Hạ, Thái Hà để bảo dưỡng đường dây."
+   },
+   {
+    "id": "art_2259",
+    "title": "Cắt điện luân phiên ở Cầu Giấy ngày 8/12",
+    "topic": "general",
+    "source": "Nhịp Sống",
+    "published_at": "2026-12-06T20:10:00+07:00",
+    "summary": "Khu vực Dịch Vọng, Cầu Giấy mất điện từ 13 giờ đến 16 giờ ngày 8/12."
+   }
+  ],
+  "saved": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_9489",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_5435",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_112",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_3815",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "normal",
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_638",
+    "tracking_id": "MDXVN719539549",
+    "carrier": "MDX Express",
+    "name": "Giày thể thao",
+    "status": "out_for_delivery",
+    "eta": "2026-12-07T14:00:00+07:00"
+   },
+   {
+    "id": "shp_170",
+    "tracking_id": "JV511198482",
+    "carrier": "JetViệt Express",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "in_transit",
+    "eta": "2026-12-10T10:00:00+07:00"
+   },
+   {
+    "id": "shp_1687",
+    "tracking_id": "STP726817872",
+    "carrier": "SaoTel Post",
+    "name": "Áo khoác gió",
+    "status": "delivered",
+    "eta": "2026-12-06T17:00:00+07:00"
+   },
+   {
+    "id": "shp_73",
+    "tracking_id": "GST211004109",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Hộp quà Trung thu",
+    "status": "in_transit",
+    "eta": "2026-12-09T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-04": {
+    "steps": 10267,
+    "calories": 410,
+    "distance_km": 7.4
+   },
+   "2026-12-05": {
+    "steps": 9093,
+    "calories": 363,
+    "distance_km": 6.5
+   },
+   "2026-12-06": {
+    "steps": 3666,
+    "calories": 146,
+    "distance_km": 2.6
+   },
+   "2026-12-07": {
+    "steps": 5483,
+    "calories": 219,
+    "distance_km": 3.9
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_702",
+    "type": "yoga",
+    "minutes": 20,
+    "time": "2026-12-05T17:30:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_845",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09980813682"
+   },
+   {
+    "id": "c_857",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09849140566"
+   },
+   {
+    "id": "c_269",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09915515342"
+   },
+   {
+    "id": "c_908",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09266313099"
+   },
+   {
+    "id": "c_2931",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09528060819"
+   },
+   {
+    "id": "c_207",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09132803927"
+   },
+   {
+    "id": "c_825",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09622452640"
+   },
+   {
+    "id": "c_325",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09809406769"
+   },
+   {
+    "id": "c_144",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09856251523"
+   },
+   {
+    "id": "c_3768",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09620288106"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_859",
+    "name": "Rửa bát",
+    "assignee": "Bé Na",
+    "done": false
+   },
+   {
+    "id": "chore_669",
+    "name": "Đi chợ",
+    "assignee": "Bé Na",
+    "done": false
+   },
+   {
+    "id": "chore_894",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Anh Nam",
+    "done": false
+   },
+   {
+    "id": "chore_332",
+    "name": "Tưới cây",
+    "assignee": "Bé Na",
+    "done": true
+   },
+   {
+    "id": "chore_5521",
+    "name": "Đổ rác",
+    "assignee": null,
+    "done": true
+   }
+  ],
+  "members": [
+   "Anh Nam",
+   "Bố",
+   "Bé Na"
+  ]
+ }
+}

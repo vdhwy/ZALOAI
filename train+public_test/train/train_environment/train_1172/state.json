@@ -1,0 +1,403 @@
+{
+ "_meta": {
+  "question_id": "train_1172",
+  "current_time": "2026-10-12T10:45:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_374",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_580",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_794",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_346",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_142",
+    "name": "Chị Hai",
+    "type": "direct",
+    "members": [
+     "Chị Hai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1471",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8102",
+    "name": "Huy",
+    "type": "direct",
+    "members": [
+     "Huy"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_713",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_181",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_53",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-10-14T14:00:00+07:00",
+    "link": "https://meet.example.test/quw-ignl-qpi",
+    "attendees": [
+     "c_2213",
+     "c_552"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_1922",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-10-14T14:00:00+07:00",
+    "link": "https://meet.example.test/dmb-oujy-szg",
+    "attendees": [
+     "c_9948",
+     "c_552"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_552",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09516570890"
+   },
+   {
+    "id": "c_9948",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09854733458"
+   },
+   {
+    "id": "c_829",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09316281145"
+   },
+   {
+    "id": "c_412",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09663067906"
+   },
+   {
+    "id": "c_2213",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09800417751"
+   },
+   {
+    "id": "c_654",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09490734118"
+   },
+   {
+    "id": "c_6808",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09476789662"
+   },
+   {
+    "id": "c_891",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09694916420"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_29",
+    "tracking_id": "EV451665132",
+    "carrier": "VNPost",
+    "name": "Giày thể thao",
+    "status": "in_transit",
+    "eta": "2026-10-13T14:00:00+07:00"
+   },
+   {
+    "id": "shp_891",
+    "tracking_id": "GST986712361",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Ốp lưng điện thoại",
+    "status": "in_transit",
+    "eta": "2026-10-13T14:00:00+07:00"
+   },
+   {
+    "id": "shp_759",
+    "tracking_id": "JV435409857",
+    "carrier": "JetViệt Express",
+    "name": "Áo khoác gió",
+    "status": "delivered",
+    "eta": "2026-10-11T17:00:00+07:00"
+   },
+   {
+    "id": "shp_473",
+    "tracking_id": "STP698657298",
+    "carrier": "SaoTel Post",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "out_for_delivery",
+    "eta": "2026-10-12T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_495",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_957",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_7817",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_3868",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_2457",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_896",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_455",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_916",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-12",
+    "to": "2026-10-12",
+    "kwh": 8.7,
+    "cost": 25200,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.9
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.7
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-06",
+    "to": "2026-10-12",
+    "kwh": 76.3,
+    "cost": 221300,
+    "days": [
+     {
+      "date": "2026-10-06",
+      "kwh": 13.0
+     },
+     {
+      "date": "2026-10-07",
+      "kwh": 14.4
+     },
+     {
+      "date": "2026-10-08",
+      "kwh": 8.2
+     },
+     {
+      "date": "2026-10-09",
+      "kwh": 8.5
+     },
+     {
+      "date": "2026-10-10",
+      "kwh": 14.9
+     },
+     {
+      "date": "2026-10-11",
+      "kwh": 8.6
+     },
+     {
+      "date": "2026-10-12",
+      "kwh": 8.7
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-12",
+    "kwh": 125.7,
+    "cost": 364500
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_490",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_862",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_5610",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_187",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_8592",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_7574",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ }
+}

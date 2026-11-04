@@ -1,0 +1,301 @@
+{
+ "_meta": {
+  "question_id": "train_1026",
+  "current_time": "2026-12-06T10:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_169",
+    "tracking_id": "GST436979899",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Giá đỡ điện thoại ô tô",
+    "status": "out_for_delivery",
+    "eta": "2026-12-06T10:00:00+07:00"
+   },
+   {
+    "id": "shp_9361",
+    "tracking_id": "JV641425925",
+    "carrier": "JetViệt Express",
+    "name": "Giày thể thao",
+    "status": "delivered",
+    "eta": "2026-12-05T17:00:00+07:00"
+   },
+   {
+    "id": "shp_591",
+    "tracking_id": "MDXVN651954650",
+    "carrier": "MDX Express",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "in_transit",
+    "eta": "2026-12-08T10:00:00+07:00"
+   },
+   {
+    "id": "shp_8127",
+    "tracking_id": "EV671502255",
+    "carrier": "VNPost",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-12-09T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_220",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_793",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_1623",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_8776",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_4691",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_75",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-15",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_94",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-15",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_223",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-15",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_671",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-15",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_866",
+    "title": "họp team",
+    "start": "2026-12-08T14:00:00+07:00",
+    "end": "2026-12-08T15:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7179",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-07T14:30:00+07:00",
+    "end": "2026-12-07T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_558",
+    "title": "đá bóng",
+    "start": "2026-12-08T14:30:00+07:00",
+    "end": "2026-12-08T15:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_348",
+    "title": "họp phụ huynh",
+    "start": "2026-12-08T10:00:00+07:00",
+    "end": "2026-12-08T11:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_874",
+    "title": "khám răng",
+    "start": "2026-12-09T09:30:00+07:00",
+    "end": "2026-12-09T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_835",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09288656879"
+   },
+   {
+    "id": "c_5943",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09966603717"
+   },
+   {
+    "id": "c_562",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09682415858"
+   },
+   {
+    "id": "c_616",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09923752489"
+   },
+   {
+    "id": "c_763",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09976956786"
+   },
+   {
+    "id": "c_8415",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09571502166"
+   },
+   {
+    "id": "c_429",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09474973700"
+   },
+   {
+    "id": "c_738",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09318684560"
+   },
+   {
+    "id": "c_36",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09247150952"
+   },
+   {
+    "id": "c_993",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09399336811"
+   },
+   {
+    "id": "c_9018",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09639070846"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_7488",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-10T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_425",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-09T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_422",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-08T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_913",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-11T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_8017",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-05T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,389 @@
+{
+ "_meta": {
+  "question_id": "public_0553",
+  "current_time": "2026-11-29T20:15:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate"
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   },
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_627",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_2075",
+    "name": "Tài khoản thanh toán",
+    "balance": 28200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_1801",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_958",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_1053",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_01",
+    "account_id": "acc_2075",
+    "beneficiary_id": "ben_1801",
+    "amount": -7000000,
+    "note": "tiền nhà tháng 12"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_423",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-29T19:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_2361",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-28T02:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_285",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-29T08:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5450",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-27T10:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_6465",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-27T12:45:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_1049",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-02",
+    "depart": "08:00",
+    "arrive": "15:30",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_8231",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-30",
+    "depart": "06:00",
+    "arrive": "16:30",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_230",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-02",
+    "depart": "06:00",
+    "arrive": "12:00",
+    "price": 400000,
+    "seats_left": 7
+   },
+   {
+    "id": "trip_7716",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-30",
+    "depart": "08:00",
+    "arrive": "18:30",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_795",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-30",
+    "depart": "21:00",
+    "arrive": "04:00",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_309",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-02",
+    "depart": "06:00",
+    "arrive": "16:00",
+    "price": 450000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_140",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-30",
+    "depart": "13:00",
+    "arrive": "18:30",
+    "price": 320000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_2948",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-02",
+    "depart": "13:00",
+    "arrive": "19:00",
+    "price": 400000,
+    "seats_left": 14
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_57",
+    "trip_id": "trip_2948",
+    "seats": 1,
+    "total": 400000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_204",
+    "trip_id": "trip_8231",
+    "seats": 1,
+    "total": 920000,
+    "status": "cancelled"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_9668",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7713",
+    "name": "Anh Hùng",
+    "type": "direct",
+    "members": [
+     "Anh Hùng"
+    ],
+    "messages": [
+     {
+      "from": "Anh Hùng",
+      "content": "Anh về Vinh trước với mẹ nhé, mai anh đi sớm",
+      "time": "2026-11-28T21:05:00+07:00"
+     },
+     {
+      "from": "me",
+      "content": "Vâng anh, thứ tư em về sau",
+      "time": "2026-11-28T21:07:00+07:00"
+     },
+     {
+      "from": "Anh Hùng",
+      "content": "Thứ tư anh ra bến xe Vinh đón em lúc 4 giờ chiều nhé",
+      "time": "2026-11-29T18:40:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_2640",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_608",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_431",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_659",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3390",
+    "name": "Hùng phó phòng",
+    "type": "direct",
+    "members": [
+     "Hùng phó phòng"
+    ],
+    "messages": [
+     {
+      "from": "Hùng phó phòng",
+      "content": "Chị Hoa ơi 8 giờ sáng thứ hai họp giao ban nhé",
+      "time": "2026-11-29T17:00:00+07:00"
+     }
+    ]
+   }
+  ]
+ }
+}

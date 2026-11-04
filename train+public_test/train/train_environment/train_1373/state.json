@@ -1,0 +1,435 @@
+{
+ "_meta": {
+  "question_id": "train_1373",
+  "current_time": "2026-10-13T15:30:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_262",
+    "name": "Con dâu Hương",
+    "type": "direct",
+    "members": [
+     "Con dâu Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_826",
+    "name": "Thằng Tuấn",
+    "type": "direct",
+    "members": [
+     "Thằng Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4417",
+    "name": "Nathan Reed",
+    "type": "direct",
+    "members": [
+     "Nathan Reed"
+    ],
+    "messages": [
+     {
+      "from": "Nathan Reed",
+      "content": "Chào bác, chiều nay năm giờ cháu dạy Bin ở vườn hoa Lý Thái Tổ được không ạ? Nếu trời mưa thì cháu qua nhà bác dạy nhé.",
+      "time": "2026-10-13T14:52:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_937",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_582",
+    "name": "Nathan Reid",
+    "type": "direct",
+    "members": [
+     "Nathan Reid"
+    ],
+    "messages": [
+     {
+      "from": "Nathan Reid",
+      "content": "Chào bác, chủ nhật này câu lạc bộ cờ tướng giao lưu ở Văn Miếu, bác có đi không ạ?",
+      "time": "2026-10-13T11:20:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_103",
+    "name": "Ông Ba",
+    "type": "direct",
+    "members": [
+     "Ông Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_23",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_5327",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_8357",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_2278",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_815",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_8670",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_6972",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 30,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-13",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-14",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-15",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-16",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_800",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09209753511"
+   },
+   {
+    "id": "c_7970",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09797793663"
+   },
+   {
+    "id": "c_5178",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09824383221"
+   },
+   {
+    "id": "c_277",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09781421260"
+   },
+   {
+    "id": "c_183",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09293212301"
+   },
+   {
+    "id": "c_6464",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09518643523"
+   },
+   {
+    "id": "c_15",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09973651167"
+   },
+   {
+    "id": "c_2432",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09902378772"
+   },
+   {
+    "id": "c_368",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09740333852"
+   },
+   {
+    "id": "c_926",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09347906503"
+   },
+   {
+    "id": "c_24",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09354132355"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_893",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_444",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_5333",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_8764",
+    "time": "2026-10-11T18:55:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_2051",
+    "time": "2026-10-12T01:25:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_7925",
+    "time": "2026-10-11T23:40:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_5932",
+    "time": "2026-10-11T16:00:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_9447",
+    "time": "2026-10-12T04:00:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": true
+   }
+  ]
+ }
+}

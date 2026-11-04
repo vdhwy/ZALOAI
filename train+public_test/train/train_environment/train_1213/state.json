@@ -1,0 +1,471 @@
+{
+ "_meta": {
+  "question_id": "train_1213",
+  "current_time": "2026-10-13T22:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22700
+   },
+   {
+    "type": "e5",
+    "price": 21500
+   },
+   {
+    "type": "diesel",
+    "price": 20100
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "đổ xăng",
+    "time": "2026-10-14T04:30:00+07:00"
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_1823",
+    "tracking_id": "EV538477550",
+    "carrier": "VNPost",
+    "name": "Giày thể thao",
+    "status": "in_transit",
+    "eta": "2026-10-15T10:00:00+07:00"
+   },
+   {
+    "id": "shp_539",
+    "tracking_id": "GST539180805",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Ốp lưng điện thoại",
+    "status": "delivered",
+    "eta": "2026-10-12T17:00:00+07:00"
+   },
+   {
+    "id": "shp_5341",
+    "tracking_id": "STP211371956",
+    "carrier": "SaoTel Post",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-10-15T10:00:00+07:00"
+   },
+   {
+    "id": "shp_1696",
+    "tracking_id": "JV571791571",
+    "carrier": "JetViệt Express",
+    "name": "Hộp quà Trung thu",
+    "status": "out_for_delivery",
+    "eta": "2026-10-13T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_652",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09998038613"
+   },
+   {
+    "id": "c_8001",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09631907375"
+   },
+   {
+    "id": "c_402",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09926776657"
+   },
+   {
+    "id": "c_787",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09882551031"
+   },
+   {
+    "id": "c_344",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09772685228"
+   },
+   {
+    "id": "c_752",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09976392791"
+   },
+   {
+    "id": "c_273",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09287031044"
+   },
+   {
+    "id": "c_46",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09988701046"
+   },
+   {
+    "id": "c_541",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09369542806"
+   },
+   {
+    "id": "c_129",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09482456514"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_338",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-14T15:00:00+07:00",
+    "end": "2026-10-14T16:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2914",
+    "title": "chở khách đi Vũng Tàu",
+    "start": "2026-10-14T05:00:00+07:00",
+    "end": "2026-10-14T11:30:00+07:00",
+    "location": "Bến xe Miền Đông",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_530",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-16T15:30:00+07:00",
+    "end": "2026-10-16T16:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_258",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_874",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_114",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_852",
+    "show_id": "show_114",
+    "title": "Số 15: Rác thải nhựa ở đô thị",
+    "number": 15,
+    "duration_min": 32,
+    "published": "2026-09-22"
+   },
+   {
+    "id": "ep_992",
+    "show_id": "show_258",
+    "title": "Số 14: Giấc ngủ và trí nhớ",
+    "number": 14,
+    "duration_min": 45,
+    "published": "2026-09-29"
+   },
+   {
+    "id": "ep_490",
+    "show_id": "show_114",
+    "title": "Số 17: Đi xe đạp đi làm",
+    "number": 17,
+    "duration_min": 45,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_9493",
+    "show_id": "show_258",
+    "title": "Số 15: Lỗ đen là gì",
+    "number": 15,
+    "duration_min": 25,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_900",
+    "show_id": "show_874",
+    "title": "Số 8: Quản lý chi tiêu gia đình",
+    "number": 8,
+    "duration_min": 18,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_479",
+    "show_id": "show_874",
+    "title": "Số 6: Lập quỹ khẩn cấp",
+    "number": 6,
+    "duration_min": 32,
+    "published": "2026-09-22"
+   },
+   {
+    "id": "ep_7730",
+    "show_id": "show_258",
+    "title": "Số 13: Vì sao bầu trời màu xanh",
+    "number": 13,
+    "duration_min": 32,
+    "published": "2026-09-22"
+   },
+   {
+    "id": "ep_964",
+    "show_id": "show_874",
+    "title": "Số 7: Gửi tiết kiệm hay mua vàng",
+    "number": 7,
+    "duration_min": 25,
+    "published": "2026-09-29"
+   },
+   {
+    "id": "ep_888",
+    "show_id": "show_114",
+    "title": "Số 16: Trồng cây trên sân thượng",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-09-29"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_129",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_31",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_94",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_180",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_999",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_726",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_392",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_706",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_696",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ }
+}

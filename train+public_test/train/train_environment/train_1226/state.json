@@ -1,0 +1,380 @@
+{
+ "_meta": {
+  "question_id": "train_1226",
+  "current_time": "2026-12-17T11:55:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_2187",
+    "contact_id": null,
+    "phone_number": "09352604188",
+    "direction": "incoming",
+    "time": "2026-12-17T08:20:00+07:00",
+    "content": "Lan ơi chiều tui qua lấy rổ trứng gà nghe. Bà Sáu"
+   },
+   {
+    "id": "msg_4410",
+    "contact_id": null,
+    "phone_number": "09053182749",
+    "direction": "incoming",
+    "time": "2026-12-17T10:42:00+07:00",
+    "content": "Mạ ơi chiều ni con với tụi bạn ra biển, mạ giữ giùm con một chiếc xe đạp ở trạm Mỹ Khê nghe. Con Thảo"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_31",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 196000,
+    "due_date": "2026-12-25",
+    "paid": false
+   },
+   {
+    "id": "bill_465",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 221000,
+    "due_date": "2026-12-25",
+    "paid": false
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_489",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Biển Mỹ Khê",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_1824",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Cầu Rồng",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_476",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Cầu Rồng",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_174",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Biển Mỹ Khê",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_7302",
+    "name": "Xe đạp thường 107",
+    "station": "Trạm Biển Mỹ Khê",
+    "available": false,
+    "price_per_hour": 8000
+   }
+  ],
+  "reservations": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_570",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_498",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_332",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_75",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_853",
+    "name": "Nguyễn Phương Thảo",
+    "bank": "Đại Việt Bank",
+    "account_number": "0041000398271"
+   }
+  ],
+  "transactions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-14": {
+    "steps": 6289,
+    "calories": 251,
+    "distance_km": 4.5
+   },
+   "2026-12-15": {
+    "steps": 4122,
+    "calories": 164,
+    "distance_km": 3.0
+   },
+   "2026-12-16": {
+    "steps": 8594,
+    "calories": 343,
+    "distance_km": 6.2
+   },
+   "2026-12-17": {
+    "steps": 4958,
+    "calories": 198,
+    "distance_km": 3.6
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_2472",
+    "type": "walking",
+    "minutes": 60,
+    "time": "2026-12-14T06:30:00+07:00"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 32,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-17",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 28
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-20",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_182",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-18T15:00:00+07:00",
+    "end": "2026-12-18T16:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_614",
+    "title": "họp phụ huynh",
+    "start": "2026-12-20T15:30:00+07:00",
+    "end": "2026-12-20T16:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_864",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-20T18:30:00+07:00",
+    "end": "2026-12-20T19:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

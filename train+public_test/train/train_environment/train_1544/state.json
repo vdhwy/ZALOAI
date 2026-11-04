@@ -1,0 +1,334 @@
+{
+ "_meta": {
+  "question_id": "train_1544",
+  "current_time": "2026-11-22T12:20:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_31",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 600,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_451",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 500,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_7940",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-12-03",
+    "used": false
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_250",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09384563435"
+   },
+   {
+    "id": "c_679",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09937015532"
+   },
+   {
+    "id": "c_3513",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09696691455"
+   },
+   {
+    "id": "c_904",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09943779659"
+   },
+   {
+    "id": "c_9818",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09751552644"
+   },
+   {
+    "id": "c_604",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09982575353"
+   },
+   {
+    "id": "c_331",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09781970630"
+   },
+   {
+    "id": "c_612",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09871707627"
+   },
+   {
+    "id": "c_544",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09220090585"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_116",
+    "title": "đá bóng",
+    "start": "2026-11-23T14:30:00+07:00",
+    "end": "2026-11-23T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7302",
+    "title": "họp onboarding Nexora Labs",
+    "start": "2026-11-24T14:00:00+07:00",
+    "end": "2026-11-24T15:30:00+07:00",
+    "location": "Văn phòng Nexora Labs, Quận 7",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_856",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-23T18:00:00+07:00",
+    "end": "2026-11-23T19:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_292",
+    "title": "đi chơi công viên",
+    "start": "2026-11-25T15:30:00+07:00",
+    "end": "2026-11-25T16:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_655",
+    "title": "demo sản phẩm Nexora Studio",
+    "start": "2026-11-23T10:00:00+07:00",
+    "end": "2026-11-23T11:00:00+07:00",
+    "location": "Nexora Studio, Quận 3",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 30,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-22",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-23",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-24",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 33
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_1497",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-25T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_812",
+    "title": "Gửi slide onboarding cho Nexora Labs",
+    "due": "2026-11-23T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_57",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-24T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_239",
+    "title": "Gửi slide demo cho Nexora Studio",
+    "due": "2026-11-23T11:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_177",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-23T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_3307",
+    "title": "Cập nhật portfolio gửi Nexora Labs",
+    "due": "2026-11-24T10:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_1361",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-23T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_96",
+    "title": "Kiểm tra wifi phòng họp cho Nexora Labs",
+    "due": "2026-11-24T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_570",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-28T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_4518",
+    "title": "Gửi biên bản họp cho Nexora Labs",
+    "due": "2026-11-25T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "_meta": {
+  "question_id": "train_1163",
+  "current_time": "2026-11-03T13:45:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-31": {
+    "steps": 5752,
+    "calories": 230,
+    "distance_km": 4.1
+   },
+   "2026-11-01": {
+    "steps": 5670,
+    "calories": 226,
+    "distance_km": 4.1
+   },
+   "2026-11-02": {
+    "steps": 4837,
+    "calories": 193,
+    "distance_km": 3.5
+   },
+   "2026-11-03": {
+    "steps": 6120,
+    "calories": 245,
+    "distance_km": 4.4
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_945",
+    "type": "walking",
+    "minutes": 45,
+    "time": "2026-10-31T06:30:00+07:00"
+   },
+   {
+    "id": "wo_734",
+    "type": "walking",
+    "minutes": 20,
+    "time": "2026-11-02T18:00:00+07:00"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_6066",
+    "title": "đi chơi công viên",
+    "start": "2026-11-04T18:00:00+07:00",
+    "end": "2026-11-04T19:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_3704",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_176",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": false
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_4264",
+    "time": "2026-11-02T07:40:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_160",
+    "time": "2026-11-02T13:10:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_345",
+    "time": "2026-11-03T08:05:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ }
+}

@@ -1,0 +1,309 @@
+{
+ "_meta": {
+  "question_id": "train_0577",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_bedroom",
+    "name": "quạt phòng ngủ",
+    "type": "fan",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_01",
+    "name": "phòng khách",
+    "area_m2": 15
+   },
+   {
+    "id": "room_02",
+    "name": "bếp",
+    "area_m2": 10
+   },
+   {
+    "id": "room_03",
+    "name": "phòng ngủ",
+    "area_m2": 18
+   },
+   {
+    "id": "room_04",
+    "name": "phòng làm việc",
+    "area_m2": 15
+   },
+   {
+    "id": "room_05",
+    "name": "hành lang",
+    "area_m2": 15
+   },
+   {
+    "id": "room_06",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 10
+   }
+  ],
+  "current_job": null
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-09-25",
+    "to": "2026-09-25",
+    "kwh": 4.0,
+    "cost": 11600,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 1.8
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 0.8
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-09-19",
+    "to": "2026-09-25",
+    "kwh": 69.2,
+    "cost": 200700,
+    "days": [
+     {
+      "date": "2026-09-19",
+      "kwh": 10.1
+     },
+     {
+      "date": "2026-09-20",
+      "kwh": 10.2
+     },
+     {
+      "date": "2026-09-21",
+      "kwh": 10.7
+     },
+     {
+      "date": "2026-09-22",
+      "kwh": 9.1
+     },
+     {
+      "date": "2026-09-23",
+      "kwh": 10.0
+     },
+     {
+      "date": "2026-09-24",
+      "kwh": 15.1
+     },
+     {
+      "date": "2026-09-25",
+      "kwh": 4.0
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-09-01",
+    "to": "2026-09-25",
+    "kwh": 268.9,
+    "cost": 779800
+   }
+  },
+  "alert_threshold_kwh": 400
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_01",
+    "name": "Đi chợ",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_02",
+    "name": "Tưới cây",
+    "assignee": "Em Linh",
+    "done": false
+   },
+   {
+    "id": "chore_03",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_04",
+    "name": "Nấu cơm tối",
+    "assignee": "Lan",
+    "done": true
+   },
+   {
+    "id": "chore_05",
+    "name": "Lau nhà",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Em Linh",
+   "Lan",
+   "Tuấn",
+   "Bố"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_01",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_02",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_03",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_04",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   }
+  ]
+ }
+}

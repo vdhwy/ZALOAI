@@ -1,0 +1,458 @@
+{
+ "_meta": {
+  "question_id": "public_0574",
+  "current_time": "2026-12-20T08:35:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_8655",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_179",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_443",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_1305",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_177",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_535",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_9120",
+    "name": "Nước suối Đỉnh Lam 500ml",
+    "price": 6000,
+    "unit": "chai",
+    "category": "nước uống",
+    "in_stock": true
+   },
+   {
+    "id": "gro_9137",
+    "name": "Nước suối Đỉnh Lam thùng 24 chai 500ml",
+    "price": 125000,
+    "unit": "thùng",
+    "category": "nước uống",
+    "in_stock": true
+   },
+   {
+    "id": "gro_9164",
+    "name": "Nước suối Đỉnh Lam 1,5 lít",
+    "price": 11000,
+    "unit": "chai",
+    "category": "nước uống",
+    "in_stock": true
+   }
+  ],
+  "cart": [
+   {
+    "product_id": "gro_9120",
+    "name": "Nước suối Đỉnh Lam 500ml",
+    "price": 6000,
+    "quantity": 8
+   }
+  ],
+  "orders": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_447",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-26",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_5631",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-26",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_2191",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-26",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_666",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-26",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 30,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-20",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-21",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-22",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-23",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 33
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_166",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_844",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_319",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_80",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_3534",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_174",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_663",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-23T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_162",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-21T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_473",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-22T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_520",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-19T09:30:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_7302",
+    "title": "Live stream xả hàng Tết (cô, Bé Na, Chú Năm, Anh Lộc)",
+    "due": "2026-12-20T19:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_7345",
+    "title": "Live stream thử với Bé Na",
+    "due": "2026-12-19T20:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_7381",
+    "title": "Đặt nước uống cho buổi live stream",
+    "due": "2026-12-20T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_757",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_577",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_4566",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_9983",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_759",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_5649",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_5372",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_647",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_1454",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_385",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_281",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_6208",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_558",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09590943931"
+   },
+   {
+    "id": "c_886",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09702509169"
+   },
+   {
+    "id": "c_820",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09732952636"
+   },
+   {
+    "id": "c_155",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09852085355"
+   },
+   {
+    "id": "c_2559",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09216128166"
+   },
+   {
+    "id": "c_350",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09456450935"
+   },
+   {
+    "id": "c_952",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09173335450"
+   },
+   {
+    "id": "c_583",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09650694762"
+   },
+   {
+    "id": "c_9523",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09378938131"
+   },
+   {
+    "id": "c_4449",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09413970058"
+   }
+  ]
+ }
+}

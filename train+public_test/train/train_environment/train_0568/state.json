@@ -1,0 +1,122 @@
+{
+ "_meta": {
+  "question_id": "train_0568",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 205000,
+    "due_date": "2026-10-02",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 151000,
+    "due_date": "2026-10-02",
+    "paid": false
+   },
+   {
+    "id": "bill_03",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 812000,
+    "due_date": "2026-09-30",
+    "paid": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_01",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-09-27",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_02",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-10-22",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_03",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-10-21",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_04",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-10-03",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_05",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-10-03",
+    "status": "paused",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_02",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_03",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

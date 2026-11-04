@@ -1,0 +1,330 @@
+{
+ "_meta": {
+  "question_id": "train_1585",
+  "current_time": "2026-10-16T07:05:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_953",
+    "time": "2026-10-17T07:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_935",
+    "time": "2026-10-17T06:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5447",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09534821686"
+   },
+   {
+    "id": "c_496",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09935622590"
+   },
+   {
+    "id": "c_4569",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09987772593"
+   },
+   {
+    "id": "c_63",
+    "name": "Sarah Lâm",
+    "relation": "đồng nghiệp",
+    "phone": "09966486806"
+   },
+   {
+    "id": "c_4811",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09997911870"
+   },
+   {
+    "id": "c_275",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09337129082"
+   },
+   {
+    "id": "c_534",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09169037780"
+   },
+   {
+    "id": "c_825",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09833639539"
+   },
+   {
+    "id": "c_227",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09463823139"
+   },
+   {
+    "id": "c_8026",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09500116529"
+   },
+   {
+    "id": "c_7130",
+    "name": "Sarah Phan",
+    "relation": "đồng nghiệp",
+    "phone": "09218843370"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_469",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_6230",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_2741",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_4094",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_208",
+    "restaurant_id": "rest_6230",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 55000,
+    "address": "15 Trần Phú, Hải Châu, Đà Nẵng",
+    "payment": "cash",
+    "status": "delivered"
+   },
+   {
+    "id": "ord_5512",
+    "restaurant_id": "rest_4094",
+    "items": [
+     {
+      "item_id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "quantity": 2,
+      "note": null
+     },
+     {
+      "item_id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "quantity": 1,
+      "note": null
+     },
+     {
+      "item_id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 795000,
+    "address": "Công ty Tidewater Freight, 120 Nguyễn Văn Linh, Đà Nẵng",
+    "payment": "cash",
+    "status": "delivered"
+   }
+  ]
+ },
+ "calculator": {},
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_6828",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_859",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_560",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": true
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_484",
+    "name": "phòng làm việc",
+    "area_m2": 22
+   },
+   {
+    "id": "room_3305",
+    "name": "phòng ngủ",
+    "area_m2": 8
+   },
+   {
+    "id": "room_6260",
+    "name": "bếp",
+    "area_m2": 15
+   },
+   {
+    "id": "room_547",
+    "name": "hành lang",
+    "area_m2": 22
+   },
+   {
+    "id": "room_7942",
+    "name": "phòng khách",
+    "area_m2": 25
+   }
+  ],
+  "current_job": null
+ }
+}

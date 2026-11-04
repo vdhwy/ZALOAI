@@ -1,0 +1,454 @@
+{
+ "_meta": {
+  "question_id": "train_1111",
+  "current_time": "2026-10-14T18:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_953",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09779840565"
+   },
+   {
+    "id": "c_441",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09405266170"
+   },
+   {
+    "id": "c_320",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09519126632"
+   },
+   {
+    "id": "c_3692",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09556571288"
+   },
+   {
+    "id": "c_1450",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09819893489"
+   },
+   {
+    "id": "c_639",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09949609994"
+   },
+   {
+    "id": "c_2541",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09942942313"
+   },
+   {
+    "id": "c_703",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09267212762"
+   },
+   {
+    "id": "c_644",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09178454075"
+   },
+   {
+    "id": "c_16",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09845871169"
+   },
+   {
+    "id": "c_351",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09108647612"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_621",
+    "from": "htx@phongdien.example.test",
+    "from_name": "HTX Trái cây Phong Điền",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Báo giá xoài cát Hoà Lộc tuần này",
+    "snippet": "Hợp tác xã gửi bảng giá trái cây giao trong tuần.",
+    "body": "Kính gửi anh Bảy, tuần này xoài cát Hoà Lộc loại một giá 45 nghìn một ký, giao từ thứ Sáu. Anh cần bao nhiêu thì báo trước thứ Năm.",
+    "time": "2026-10-14T07:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_90",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Ấm siêu tốc Lock&Lock 1.7 lít đã được giao.",
+    "body": "Đơn hàng Ấm siêu tốc Lock&Lock 1.7 lít đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-10-14T10:20:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5512",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đèn bàn LED chống cận Rạng Đông đã được giao.",
+    "body": "Đơn hàng Đèn bàn LED chống cận Rạng Đông đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-10-14T15:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_338",
+    "from": "thongbao@nongthinhbank.example.test",
+    "from_name": "Nông Thịnh Bank",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thông báo biến động số dư",
+    "snippet": "Tài khoản của quý khách vừa nhận 3.200.000 đồng.",
+    "body": "Tài khoản của quý khách vừa nhận 3.200.000 đồng, nội dung: Anh Muoi tra tien cam.",
+    "time": "2026-10-14T16:30:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_940",
+    "time": "2026-10-15T06:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_201",
+    "time": "2026-10-15T06:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_712",
+    "time": "2026-10-15T07:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_281",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_887",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_734",
+    "name": "Anh Mười",
+    "type": "direct",
+    "members": [
+     "Anh Mười"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_126",
+    "name": "Vợ Hồng",
+    "type": "direct",
+    "members": [
+     "Vợ Hồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_762",
+    "name": "Thằng Tí",
+    "type": "direct",
+    "members": [
+     "Thằng Tí"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_948",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_153",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_4326",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_180",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_747",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_06",
+    "title": "Giá xoài HTX Phong Điền",
+    "content": "Xoài cát Hoà Lộc loại một 45 nghìn/ký, giao từ thứ Sáu, báo số lượng trước thứ Năm"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_315",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_412",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_602",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_120",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_1421",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_605",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_2786",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_16",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ }
+}

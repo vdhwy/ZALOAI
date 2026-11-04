@@ -1,0 +1,235 @@
+{
+ "_meta": {
+  "question_id": "train_1589",
+  "current_time": "2026-10-18T14:05:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_4347",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 195000,
+    "due_date": "2026-10-26",
+    "paid": false
+   },
+   {
+    "id": "bill_7261",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 212000,
+    "due_date": "2026-10-26",
+    "paid": false
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_596",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_1600",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_455",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_887",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 300
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_721",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09486165380"
+   },
+   {
+    "id": "c_681",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09286501360"
+   },
+   {
+    "id": "c_4017",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09505886180"
+   },
+   {
+    "id": "c_447",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09393615017"
+   },
+   {
+    "id": "c_4958",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09482990999"
+   },
+   {
+    "id": "c_1097",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09378991466"
+   },
+   {
+    "id": "c_716",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09436010306"
+   },
+   {
+    "id": "c_476",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09874558792"
+   },
+   {
+    "id": "c_265",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09279717822"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_181",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_281",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_4608",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_208",
+    "content": "Gửi báo cáo tuần cho sếp Kim",
+    "time": "2026-10-19T17:00:00+07:00",
+    "repeat": "weekly",
+    "done": false
+   },
+   {
+    "id": "rem_342",
+    "content": "Đóng tiền điện tháng 10",
+    "time": "2026-10-20T08:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_517",
+    "content": "Thi thử cuối khoá bên Speako",
+    "time": "2026-10-24T09:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 27,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-18",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-20",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-21",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 32
+   }
+  ]
+ }
+}

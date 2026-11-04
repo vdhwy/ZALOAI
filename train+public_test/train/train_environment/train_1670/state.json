@@ -1,0 +1,487 @@
+{
+ "_meta": {
+  "question_id": "train_1670",
+  "current_time": "2026-11-24T22:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_5223",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_5900",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_435",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_831",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_5219",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá\nCá lóc, me"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_159",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-24T06:30:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_303",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-24T00:00:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_123",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-24T11:45:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_923",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-23T23:45:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_617",
+    "title": "Cao Nguyên Coffee ký hợp đồng xuất khẩu cà phê sang Sydney",
+    "topic": "business",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-24T16:40:00+07:00",
+    "summary": "Lô hàng đầu tiên dự kiến lên tàu trong tháng mười hai."
+   },
+   {
+    "id": "art_2208",
+    "title": "Giá vàng trong nước giảm phiên thứ ba liên tiếp",
+    "topic": "business",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-24T19:10:00+07:00",
+    "summary": "Vàng miếng giảm 400 nghìn đồng mỗi lượng so với hôm qua."
+   },
+   {
+    "id": "art_481",
+    "title": "Sydney FC sang Hà Nội đá giao hữu cuối tháng",
+    "topic": "sports",
+    "source": "Thể Thao Số",
+    "published_at": "2026-11-24T07:20:00+07:00",
+    "summary": "Trận đấu diễn ra tại sân Hàng Đẫy ngày 29 tháng 11."
+   }
+  ],
+  "saved": [
+   {
+    "id": "saved_01",
+    "article_id": "art_159"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_879",
+    "title": "khám răng",
+    "start": "2026-11-25T08:00:00+07:00",
+    "end": "2026-11-25T09:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_584",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-25T18:00:00+07:00",
+    "end": "2026-11-25T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_345",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Láng Hạ",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_565",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_665",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_534",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_2222",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_28",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_987",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_4253",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_2422",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-26T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_4726",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-27T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_239",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-25T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_7481",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-28T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_270",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_840",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_12",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_1938",
+    "show_id": "show_12",
+    "title": "Số 18: Giấc ngủ và trí nhớ",
+    "number": 18,
+    "duration_min": 32,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_7718",
+    "show_id": "show_12",
+    "title": "Số 19: Lỗ đen là gì",
+    "number": 19,
+    "duration_min": 45,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_7412",
+    "show_id": "show_270",
+    "title": "Số 11: Đi xe đạp đi làm",
+    "number": 11,
+    "duration_min": 45,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_384",
+    "show_id": "show_270",
+    "title": "Số 10: Trồng cây trên sân thượng",
+    "number": 10,
+    "duration_min": 18,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_7449",
+    "show_id": "show_12",
+    "title": "Số 17: Vì sao bầu trời màu xanh",
+    "number": 17,
+    "duration_min": 25,
+    "published": "2026-11-03"
+   },
+   {
+    "id": "ep_473",
+    "show_id": "show_840",
+    "title": "Số 8: Nhà giả kim - phần 2",
+    "number": 8,
+    "duration_min": 25,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_648",
+    "show_id": "show_840",
+    "title": "Số 7: Nhà giả kim - phần 1",
+    "number": 7,
+    "duration_min": 32,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_472",
+    "show_id": "show_270",
+    "title": "Số 9: Rác thải nhựa ở đô thị",
+    "number": 9,
+    "duration_min": 18,
+    "published": "2026-11-03"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_302",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_511",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_538",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_294",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_12"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": true,
+    "content": "Đón Bống ở trường",
+    "time": "2026-11-24T17:00:00+07:00"
+   },
+   {
+    "id": "rem_02",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi Sếp Dũng bàn đơn hàng Sydney",
+    "time": "2026-11-25T09:00:00+07:00"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_896",
+    "time": "2026-11-25T06:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_975",
+    "time": "2026-11-25T07:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ }
+}

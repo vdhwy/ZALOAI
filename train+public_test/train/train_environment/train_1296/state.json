@@ -1,0 +1,383 @@
+{
+ "_meta": {
+  "question_id": "train_1296",
+  "current_time": "2026-12-14T09:30:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_458",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-12-11T22:45:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_196",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-12-13T14:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_1959",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-12-14T02:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_5350",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   },
+   {
+    "id": "room_339",
+    "name": "phòng khách",
+    "area_m2": 18
+   },
+   {
+    "id": "room_136",
+    "name": "phòng làm việc",
+    "area_m2": 12
+   },
+   {
+    "id": "room_6074",
+    "name": "hành lang",
+    "area_m2": 8
+   },
+   {
+    "id": "room_493",
+    "name": "bếp",
+    "area_m2": 15
+   }
+  ],
+  "current_job": null
+ },
+ "sms": {
+  "messages": []
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_556",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "normal",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_187",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_6121",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "heavy",
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_863",
+    "tracking_id": "STP375514539",
+    "carrier": "SaoTel Post",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "in_transit",
+    "eta": "2026-12-16T10:00:00+07:00"
+   },
+   {
+    "id": "shp_91",
+    "tracking_id": "GST930909490",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Áo khoác gió",
+    "status": "out_for_delivery",
+    "eta": "2026-12-14T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_761",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09312785263"
+   },
+   {
+    "id": "c_941",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09211707647"
+   },
+   {
+    "id": "c_714",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09933751502"
+   },
+   {
+    "id": "c_361",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09871544222"
+   },
+   {
+    "id": "c_659",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09642257421"
+   },
+   {
+    "id": "c_174",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09442573947"
+   },
+   {
+    "id": "c_311",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09179850638"
+   },
+   {
+    "id": "c_896",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09623398864"
+   },
+   {
+    "id": "c_3194",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09731633473"
+   },
+   {
+    "id": "c_5256",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09168118217"
+   }
+  ]
+ }
+}

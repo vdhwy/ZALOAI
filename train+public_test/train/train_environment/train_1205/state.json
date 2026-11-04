@@ -1,0 +1,260 @@
+{
+ "_meta": {
+  "question_id": "train_1205",
+  "current_time": "2026-12-13T21:20:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "phone.call",
+   "phone.recent_calls"
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_1234",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-22",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_644",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-22",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_591",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-22",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_5156",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-22",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_4732",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_132",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_71",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_954",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_896",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_1168",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_243",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_1565",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": {
+   "track_id": "trk_1168",
+   "title": "Có chắc yêu là đây",
+   "status": "playing"
+  },
+  "volume": 80
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_977",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-14T08:30:00+07:00",
+    "end": "2026-12-14T09:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6487",
+    "title": "họp phụ huynh",
+    "start": "2026-12-14T18:30:00+07:00",
+    "end": "2026-12-14T19:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_261",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09166623777"
+   },
+   {
+    "id": "c_829",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09876406976"
+   },
+   {
+    "id": "c_8076",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09752132177"
+   },
+   {
+    "id": "c_4053",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09573396169"
+   },
+   {
+    "id": "c_716",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09754766284"
+   },
+   {
+    "id": "c_655",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09492065577"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_2511",
+    "from": "chihai@gmail.example.test",
+    "from_name": "Chị Hai",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-12-12T14:05:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_4461",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-12-10T22:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_9902",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-12-12T16:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5736",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-12-13T08:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ }
+}

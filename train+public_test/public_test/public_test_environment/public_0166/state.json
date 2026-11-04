@@ -1,0 +1,337 @@
+{
+ "_meta": {
+  "question_id": "public_0166",
+  "current_time": "2026-11-10T08:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "gold_price.get_price",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09809645393"
+   },
+   {
+    "id": "c_02",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09848952892"
+   },
+   {
+    "id": "c_03",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09749430040"
+   },
+   {
+    "id": "c_04",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09551738941"
+   },
+   {
+    "id": "c_05",
+    "name": "Minh",
+    "relation": "bạn cũ",
+    "phone": "09267202806"
+   },
+   {
+    "id": "c_06",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09844757251"
+   },
+   {
+    "id": "c_07",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09859343214"
+   },
+   {
+    "id": "c_08",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09943630576"
+   },
+   {
+    "id": "c_09",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09978240526"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23100
+   },
+   {
+    "type": "e5",
+    "price": 21900
+   },
+   {
+    "type": "diesel",
+    "price": 20500
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "time": "2026-11-11T05:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 119900000,
+    "sell": 121900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 113900000,
+    "sell": 115900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4296
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_01",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_02",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_01",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_02",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_03",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 24,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-10",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-11",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-12",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-13",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_01",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_02",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_03",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_04",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_05",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_06",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_01",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_02",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "họp team",
+    "start": "2026-11-11T15:30:00+07:00",
+    "end": "2026-11-11T16:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "họp phụ huynh",
+    "start": "2026-11-11T19:30:00+07:00",
+    "end": "2026-11-11T20:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-11T15:30:00+07:00",
+    "end": "2026-11-11T16:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "title": "đá bóng",
+    "start": "2026-11-11T09:30:00+07:00",
+    "end": "2026-11-11T10:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

@@ -1,0 +1,483 @@
+{
+ "_meta": {
+  "question_id": "train_1330",
+  "current_time": "2026-12-10T22:30:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "library.reserve",
+   "library.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_1865",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_948",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_453",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_189",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_4472",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_688",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_790",
+    "name": "Nấu cơm tối",
+    "assignee": "Mẹ",
+    "done": true
+   },
+   {
+    "id": "chore_589",
+    "name": "Giặt quần áo",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_7924",
+    "name": "Đi chợ",
+    "assignee": "Mẹ",
+    "done": true
+   },
+   {
+    "id": "chore_186",
+    "name": "Đổ rác",
+    "assignee": "Chú Bảy",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chú Bảy",
+   "Mẹ",
+   "Bà nội"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_529",
+    "title": "đi chơi công viên",
+    "start": "2026-12-13T08:30:00+07:00",
+    "end": "2026-12-13T09:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_490",
+    "title": "họp team",
+    "start": "2026-12-11T08:00:00+07:00",
+    "end": "2026-12-11T09:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_830",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-12T14:00:00+07:00",
+    "end": "2026-12-12T15:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "Chợ nổi Cái Răng, Cần Thơ",
+    "dropoff": "Vựa trái cây Bảy Hồng, Cái Răng, Cần Thơ",
+    "vehicle": "car4",
+    "schedule_time": "2026-12-11T05:30:00+07:00"
+   },
+   {
+    "id": "ride_02",
+    "status": "booked",
+    "pickup": "Chợ nổi Cái Răng, Cần Thơ",
+    "dropoff": "Bến xe Cần Thơ",
+    "vehicle": "bike",
+    "schedule_time": "2026-12-11T08:00:00+07:00"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_685",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_592",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_18",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_663",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_597",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_5485",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-11T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_813",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-09T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_44",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-14T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_63",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-09T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_905",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09289670270"
+   },
+   {
+    "id": "c_120",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09962683159"
+   },
+   {
+    "id": "c_981",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09352268476"
+   },
+   {
+    "id": "c_7226",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09895275410"
+   },
+   {
+    "id": "c_6840",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09312074578"
+   },
+   {
+    "id": "c_396",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09863442455"
+   },
+   {
+    "id": "c_3714",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09179364762"
+   },
+   {
+    "id": "c_764",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09478377577"
+   },
+   {
+    "id": "c_155",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09440269284"
+   },
+   {
+    "id": "c_6885",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09357272960"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_519",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_832",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_773",
+    "time": "2026-12-10T13:40:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_682",
+    "time": "2026-12-09T20:35:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_47",
+    "time": "2026-12-09T13:55:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_690",
+    "time": "2026-12-09T03:25:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_912",
+    "time": "2026-12-09T07:35:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_821",
+    "title": "Chốt giá xoài với Anh Mười",
+    "start": "2026-12-11T07:00:00+07:00",
+    "link": "https://meet.example.test/rgj-kqjn-log",
+    "attendees": [
+     "c_7226"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_6420",
+    "title": "Họp bạn hàng chợ đầu mối Cái Răng",
+    "start": "2026-12-12T09:30:00+07:00",
+    "link": "https://meet.example.test/haf-atsz-xoc",
+    "attendees": [
+     "c_6840"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-07": {
+    "steps": 7862,
+    "calories": 314,
+    "distance_km": 5.7
+   },
+   "2026-12-08": {
+    "steps": 7709,
+    "calories": 308,
+    "distance_km": 5.6
+   },
+   "2026-12-09": {
+    "steps": 4236,
+    "calories": 169,
+    "distance_km": 3.0
+   },
+   "2026-12-10": {
+    "steps": 1834,
+    "calories": 73,
+    "distance_km": 1.3
+   }
+  },
+  "goal_steps": 6000,
+  "workouts": [
+   {
+    "id": "wo_1820",
+    "type": "yoga",
+    "minutes": 45,
+    "time": "2026-12-06T17:00:00+07:00"
+   },
+   {
+    "id": "wo_849",
+    "type": "walking",
+    "minutes": 60,
+    "time": "2026-12-07T18:30:00+07:00"
+   },
+   {
+    "id": "wo_456",
+    "type": "walking",
+    "minutes": 30,
+    "time": "2026-12-09T18:30:00+07:00"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 24,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-10",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-11",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-12",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 34
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-13",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 30
+   }
+  ]
+ }
+}

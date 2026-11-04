@@ -1,0 +1,244 @@
+{
+ "_meta": {
+  "question_id": "public_0625",
+  "current_time": "2026-12-05T18:10:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_1533",
+    "name": "Bãi đỗ xe Công viên 23/9",
+    "address": "Phạm Ngũ Lão, Quận 1, TP.HCM",
+    "area": "Bến Thành",
+    "price_per_hour": 30000,
+    "available_spots": 0
+   },
+   {
+    "id": "lot_4435",
+    "name": "Hầm xe Sao Kim Plaza Đồng Khởi",
+    "address": "72 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "area": "Nguyễn Huệ",
+    "price_per_hour": 40000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_68",
+    "name": "Bãi xe Khu Công nghệ cao",
+    "address": "Xa lộ Hà Nội, TP. Thủ Đức, TP.HCM",
+    "area": "Khu Công nghệ cao",
+    "price_per_hour": 20000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_6939",
+    "name": "Bãi đỗ Nam Đô Centre",
+    "address": "65 Lê Lợi, Quận 1, TP.HCM",
+    "area": "Lê Lợi",
+    "price_per_hour": 35000,
+    "available_spots": 40
+   }
+  ],
+  "sessions": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_722",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_9006",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_9135",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_412",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_111",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_3105",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_7731",
+    "name": "The Copper Kettle Café",
+    "address": "14 Tôn Thất Thiệp, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_2096",
+    "name": "Copper Kettle Bistro",
+    "address": "52 Tú Xương, Quận 3, TP.HCM",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_179",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_373",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_223",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_301",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_1311",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_716",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_8443",
+    "items": [
+     {
+      "product_id": "gro_716",
+      "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+      "price": 35000,
+      "quantity": 3
+     }
+    ],
+    "total": 105000,
+    "status": "delivered",
+    "delivery_time": "2026-11-29T09:00:00+07:00"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2126",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09757416896"
+   },
+   {
+    "id": "c_731",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09713347970"
+   },
+   {
+    "id": "c_868",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09153781633"
+   },
+   {
+    "id": "c_843",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09922131984"
+   },
+   {
+    "id": "c_198",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09124339999"
+   },
+   {
+    "id": "c_822",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09132040852"
+   }
+  ]
+ }
+}

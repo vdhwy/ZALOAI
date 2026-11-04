@@ -1,0 +1,242 @@
+{
+ "_meta": {
+  "question_id": "public_0672",
+  "current_time": "2026-11-08T13:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fuel_price.get_price",
+   "pantry.consume",
+   "pantry.list_items",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_4417",
+    "repeat": "once",
+    "done": false,
+    "content": "Gặp khách Northwind Logistics ở Vũng Tàu",
+    "time": "2026-11-10T10:00:00+07:00"
+   },
+   {
+    "id": "rem_219",
+    "repeat": "once",
+    "done": true,
+    "content": "Lấy đồ giặt",
+    "time": "2026-11-08T18:00:00+07:00"
+   },
+   {
+    "id": "rem_04",
+    "repeat": "once",
+    "done": false,
+    "content": "Gặp khách Northwind Trading ở Phan Thiết",
+    "time": "2026-11-13T15:00:00+07:00"
+   },
+   {
+    "id": "rem_05",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi Má",
+    "time": "2026-11-08T20:00:00+07:00"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23700
+   },
+   {
+    "type": "e5",
+    "price": 22500
+   },
+   {
+    "type": "diesel",
+    "price": 21100
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_378",
+    "name": "dầu ăn",
+    "stock": 1,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_41",
+    "name": "đường",
+    "stock": 2,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_787",
+    "name": "trứng gà",
+    "stock": 0,
+    "unit": "quả"
+   },
+   {
+    "id": "pan_962",
+    "name": "gạo ST25",
+    "stock": 6,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_745",
+    "name": "bột mì",
+    "stock": 1,
+    "unit": "gói"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_6066",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-11-13",
+    "depart": "21:00",
+    "arrive": "02:30",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_1898",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-11-13",
+    "depart": "19:00",
+    "arrive": "00:30",
+    "price": 400000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_454",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "TP.HCM",
+    "destination": "Vũng Tàu",
+    "date": "2026-11-10",
+    "depart": "08:00",
+    "arrive": "18:30",
+    "price": 250000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_3318",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-11-13",
+    "depart": "08:00",
+    "arrive": "13:30",
+    "price": 450000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_587",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-11-13",
+    "depart": "21:00",
+    "arrive": "04:30",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_1789",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Vũng Tàu",
+    "date": "2026-11-10",
+    "depart": "21:00",
+    "arrive": "07:30",
+    "price": 320000,
+    "seats_left": 8
+   }
+  ],
+  "bookings": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_324",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09778260043"
+   },
+   {
+    "id": "c_380",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09406999174"
+   },
+   {
+    "id": "c_888",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09770435308"
+   },
+   {
+    "id": "c_980",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09347124639"
+   },
+   {
+    "id": "c_510",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09966353674"
+   },
+   {
+    "id": "c_488",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09384298407"
+   },
+   {
+    "id": "c_634",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09204669747"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ }
+}

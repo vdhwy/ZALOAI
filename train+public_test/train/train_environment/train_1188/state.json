@@ -1,0 +1,260 @@
+{
+ "_meta": {
+  "question_id": "train_1188",
+  "current_time": "2026-11-25T21:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_200",
+    "time": "2026-11-26T08:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_285",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09780853291"
+   },
+   {
+    "id": "c_4841",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09166041614"
+   },
+   {
+    "id": "c_217",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09699716489"
+   },
+   {
+    "id": "c_6560",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09374886533"
+   },
+   {
+    "id": "c_4054",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09196135330"
+   },
+   {
+    "id": "c_410",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09927383304"
+   },
+   {
+    "id": "c_239",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09806530090"
+   },
+   {
+    "id": "c_816",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09331506513"
+   },
+   {
+    "id": "c_348",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09698401401"
+   },
+   {
+    "id": "c_210",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09129937044"
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_9854",
+    "tracking_id": "MDXVN213907780",
+    "carrier": "MDX Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "in_transit",
+    "eta": "2026-11-28T17:00:00+07:00"
+   },
+   {
+    "id": "shp_1998",
+    "tracking_id": "JV930018371",
+    "carrier": "JetViệt Express",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "out_for_delivery",
+    "eta": "2026-11-25T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-25",
+    "to": "2026-11-25",
+    "kwh": 11.8,
+    "cost": 34200,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 5.3
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 2.4
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-19",
+    "to": "2026-11-25",
+    "kwh": 88.3,
+    "cost": 256100,
+    "days": [
+     {
+      "date": "2026-11-19",
+      "kwh": 14.6
+     },
+     {
+      "date": "2026-11-20",
+      "kwh": 13.2
+     },
+     {
+      "date": "2026-11-21",
+      "kwh": 10.7
+     },
+     {
+      "date": "2026-11-22",
+      "kwh": 14.7
+     },
+     {
+      "date": "2026-11-23",
+      "kwh": 12.2
+     },
+     {
+      "date": "2026-11-24",
+      "kwh": 11.1
+     },
+     {
+      "date": "2026-11-25",
+      "kwh": 11.8
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-25",
+    "kwh": 283.7,
+    "cost": 822700
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_562",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_694",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_24",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_648",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_35",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_254",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_4096",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_549",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ }
+}

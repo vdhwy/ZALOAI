@@ -1,0 +1,458 @@
+{
+ "_meta": {
+  "question_id": "public_0699",
+  "current_time": "2026-12-17T07:35:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "event_tickets.book",
+   "event_tickets.search",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_279",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09910471012"
+   },
+   {
+    "id": "c_71",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09536352999"
+   },
+   {
+    "id": "c_321",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09274128351"
+   },
+   {
+    "id": "c_1960",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09508351865"
+   },
+   {
+    "id": "c_5251",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09468140923"
+   },
+   {
+    "id": "c_147",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09596939909"
+   },
+   {
+    "id": "c_716",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09747721412"
+   },
+   {
+    "id": "c_411",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09278210188"
+   },
+   {
+    "id": "c_837",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09183184082"
+   },
+   {
+    "id": "c_550",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09947696055"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_6314",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_620",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_383",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_324",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_557",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_1114",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_3318",
+    "name": "Cây xăng Vinaco Phạm Văn Đồng",
+    "address": "118 Phạm Văn Đồng, Gò Vấp, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_693",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_947",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_725",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_4047",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_2091",
+    "name": "Cây xăng PetroHưng Phạm Văn Đồng",
+    "address": "58 Phạm Văn Đồng, Gò Vấp, TP.HCM",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "ewallet": {
+  "balance": 650000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_71",
+    "amount": -500000,
+    "note": "Tiền thuê xe tuần này"
+   },
+   {
+    "id": "tx_02",
+    "type": "topup_mobile",
+    "phone": "09508351865",
+    "amount": -100000
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_9580",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_4850",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_876",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_711",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   }
+  ],
+  "saved": [
+   {
+    "id": "sav_01",
+    "recipe_id": "rcp_9580"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-19",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 29
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_5488",
+    "name": "Chung kết bóng đá V-League",
+    "category": "thể thao",
+    "date": "2026-12-23",
+    "time": "18:00",
+    "venue": "Sân vận động Thống Nhất",
+    "price": 200000,
+    "available": 12
+   },
+   {
+    "id": "event_11",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-12-26",
+    "time": "18:00",
+    "venue": "Saigon Opera House",
+    "price": 600000,
+    "available": 80
+   },
+   {
+    "id": "event_841",
+    "name": "Liên hoan phim ngắn",
+    "category": "điện ảnh",
+    "date": "2026-12-21",
+    "time": "20:00",
+    "venue": "Nhà hát Hòa Bình",
+    "price": 120000,
+    "available": 80
+   },
+   {
+    "id": "event_7218",
+    "name": "Vở kịch Ngày Mưa",
+    "category": "kịch",
+    "date": "2026-12-23",
+    "time": "18:00",
+    "venue": "Saigon Opera House",
+    "price": 250000,
+    "available": 30
+   }
+  ],
+  "bookings": []
+ }
+}

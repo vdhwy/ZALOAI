@@ -1,0 +1,265 @@
+{
+ "_meta": {
+  "question_id": "train_1094",
+  "current_time": "2026-12-09T19:30:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "library.reserve",
+   "library.search",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "45 Trần Hưng Đạo, Ninh Kiều, Cần Thơ",
+    "dropoff": "Bệnh viện Đa khoa Trung ương Cần Thơ",
+    "vehicle": "car4",
+    "schedule_time": "2026-12-10T06:30:00+07:00"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_432",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_828",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_255",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_386",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_496",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": false
+   },
+   {
+    "id": "book_135",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_211",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-08T17:30:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_384",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-14T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_68",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-12T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_174",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_63",
+    "name": "Hằng",
+    "type": "direct",
+    "members": [
+     "Hằng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_404",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_180",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_499",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_146",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_829",
+    "name": "Út",
+    "type": "direct",
+    "members": [
+     "Út"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_45",
+    "name": "thuốc huyết áp",
+    "times": [
+     "06:00",
+     "18:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_218",
+    "name": "thuốc tiểu đường",
+    "times": [
+     "07:30",
+     "19:30"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 27,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-09",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 29
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-10",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 29
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-11",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 32
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-12",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 31
+   }
+  ]
+ }
+}

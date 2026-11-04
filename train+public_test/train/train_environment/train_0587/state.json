@@ -1,0 +1,143 @@
+{
+ "_meta": {
+  "question_id": "train_0587",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_01",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-10-07",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_02",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-10-20",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_03",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-10-08",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_04",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-10-20",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_05",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-09-27",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_06",
+    "name": "Gói Sao lưu 500GB",
+    "price": 99000,
+    "next_billing": "2026-09-30",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 217000,
+    "due_date": "2026-09-30",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 152000,
+    "due_date": "2026-10-04",
+    "paid": false
+   },
+   {
+    "id": "bill_03",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 212000,
+    "due_date": "2026-10-02",
+    "paid": false
+   },
+   {
+    "id": "bill_04",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 201000,
+    "due_date": "2026-09-30",
+    "paid": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_02",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_03",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_04",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

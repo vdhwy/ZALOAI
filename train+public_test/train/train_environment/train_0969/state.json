@@ -1,0 +1,603 @@
+{
+ "_meta": {
+  "question_id": "train_0969",
+  "current_time": "2026-10-18T13:50:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_998",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_133",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_407",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_617",
+    "phone_number": "09832159063",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-10-17T19:42:00+07:00"
+   },
+   {
+    "id": "call_5204",
+    "phone_number": "09124473808",
+    "direction": "outgoing",
+    "status": "answered",
+    "time": "2026-10-18T08:05:00+07:00"
+   },
+   {
+    "id": "call_908",
+    "phone_number": "09124473808",
+    "direction": "incoming",
+    "status": "answered",
+    "time": "2026-10-18T10:15:00+07:00"
+   },
+   {
+    "id": "call_3388",
+    "phone_number": "09046612750",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-10-18T12:20:00+07:00"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_5618",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_106",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_589",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_6018",
+    "show_id": "show_5618",
+    "title": "Số 14: Sống chậm giữa thành phố",
+    "number": 14,
+    "duration_min": 32,
+    "published": "2026-10-04"
+   },
+   {
+    "id": "ep_4767",
+    "show_id": "show_589",
+    "title": "Số 18: Quản lý chi tiêu gia đình",
+    "number": 18,
+    "duration_min": 32,
+    "published": "2026-10-11"
+   },
+   {
+    "id": "ep_340",
+    "show_id": "show_589",
+    "title": "Số 17: Gửi tiết kiệm hay mua vàng",
+    "number": 17,
+    "duration_min": 45,
+    "published": "2026-10-04"
+   },
+   {
+    "id": "ep_5756",
+    "show_id": "show_106",
+    "title": "Số 18: Trồng cây trên sân thượng",
+    "number": 18,
+    "duration_min": 18,
+    "published": "2026-10-04"
+   },
+   {
+    "id": "ep_440",
+    "show_id": "show_106",
+    "title": "Số 19: Đi xe đạp đi làm",
+    "number": 19,
+    "duration_min": 18,
+    "published": "2026-10-11"
+   },
+   {
+    "id": "ep_8534",
+    "show_id": "show_5618",
+    "title": "Số 15: Nghề diễn và những áp lực",
+    "number": 15,
+    "duration_min": 45,
+    "published": "2026-10-11"
+   },
+   {
+    "id": "ep_630",
+    "show_id": "show_589",
+    "title": "Số 16: Lập quỹ khẩn cấp",
+    "number": 16,
+    "duration_min": 45,
+    "published": "2026-09-27"
+   },
+   {
+    "id": "ep_931",
+    "show_id": "show_106",
+    "title": "Số 17: Rác thải nhựa ở đô thị",
+    "number": 17,
+    "duration_min": 25,
+    "published": "2026-09-27"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_390",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_52",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_7832",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_6026",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-18",
+    "to": "2026-10-18",
+    "kwh": 6.0,
+    "cost": 17400,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 2.7
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.2
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-12",
+    "to": "2026-10-18",
+    "kwh": 81.3,
+    "cost": 235800,
+    "days": [
+     {
+      "date": "2026-10-12",
+      "kwh": 10.7
+     },
+     {
+      "date": "2026-10-13",
+      "kwh": 13.5
+     },
+     {
+      "date": "2026-10-14",
+      "kwh": 14.3
+     },
+     {
+      "date": "2026-10-15",
+      "kwh": 10.6
+     },
+     {
+      "date": "2026-10-16",
+      "kwh": 11.7
+     },
+     {
+      "date": "2026-10-17",
+      "kwh": 14.5
+     },
+     {
+      "date": "2026-10-18",
+      "kwh": 6.0
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-18",
+    "kwh": 218.4,
+    "cost": 633400
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_877",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_6962",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_51",
+    "name": "Xe đạp điện 106",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_698",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_903",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_261",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_1843",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_8184",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_635",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_371",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_164",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_479",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_571",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ }
+}

@@ -1,0 +1,372 @@
+{
+ "_meta": {
+  "question_id": "train_1113",
+  "current_time": "2026-12-08T21:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list"
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_613",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-12-06T07:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_391",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-12-08T10:20:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5512",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-12-07T23:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_476",
+    "time": "2026-12-09T07:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_628",
+    "time": "2026-12-09T06:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_999",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-12-17",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_58",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-12-17",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_834",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-12-09",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_237",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-12-17",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_5092",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-12-09",
+    "depart": "07:30",
+    "arrive": "09:40",
+    "airline": "JetXanh",
+    "price": 1290000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_316",
+    "flight_id": "fl_834",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_4071",
+    "flight_id": "fl_5092",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_26",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_3946",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_135",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_168",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_225",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_3445",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_7834",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_137",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_218",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_141",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_813",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_699",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09901719972"
+   },
+   {
+    "id": "c_241",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09851810529"
+   },
+   {
+    "id": "c_298",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09655607446"
+   },
+   {
+    "id": "c_4917",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09887100340"
+   },
+   {
+    "id": "c_127",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09602648038"
+   },
+   {
+    "id": "c_983",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09447324621"
+   },
+   {
+    "id": "c_567",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09858114095"
+   },
+   {
+    "id": "c_737",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09897863752"
+   },
+   {
+    "id": "c_895",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09453607857"
+   },
+   {
+    "id": "c_1017",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09982920447"
+   },
+   {
+    "id": "c_1759",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09957509341"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_689",
+    "name": "Anh Hùng",
+    "type": "direct",
+    "members": [
+     "Anh Hùng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1173",
+    "name": "Cô Mai",
+    "type": "direct",
+    "members": [
+     "Cô Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_140",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9944",
+    "name": "Mẹ chồng",
+    "type": "direct",
+    "members": [
+     "Mẹ chồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_427",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

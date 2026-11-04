@@ -1,0 +1,232 @@
+{
+ "_meta": {
+  "question_id": "public_0589",
+  "current_time": "2026-12-13T06:40:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "event_tickets.book",
+   "event_tickets.search",
+   "gold_price.get_price",
+   "phone.call",
+   "phone.recent_calls",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 28,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-13",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-14",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-15",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-16",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 34
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_500",
+    "name": "Đêm nhạc Jazz cuối tuần",
+    "category": "âm nhạc",
+    "date": "2026-12-17",
+    "time": "18:00",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 450000,
+    "available": 12
+   },
+   {
+    "id": "event_91",
+    "name": "Chung kết bóng đá V-League",
+    "category": "thể thao",
+    "date": "2026-12-18",
+    "time": "18:00",
+    "venue": "Sân vận động Hàng Đẫy",
+    "price": 200000,
+    "available": 80
+   },
+   {
+    "id": "event_7623",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-12-19",
+    "time": "18:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 600000,
+    "available": 80
+   },
+   {
+    "id": "event_4696",
+    "name": "Triển lãm Ánh sáng Đô thị",
+    "category": "triển lãm",
+    "date": "2026-12-17",
+    "time": "18:00",
+    "venue": "Nhà hát Tuổi Trẻ",
+    "price": 80000,
+    "available": 80
+   },
+   {
+    "id": "event_9071",
+    "name": "Liên hoan phim ngắn",
+    "category": "điện ảnh",
+    "date": "2026-12-26",
+    "time": "18:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 120000,
+    "available": 30
+   }
+  ],
+  "bookings": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 124700000,
+    "sell": 126700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 118700000,
+    "sell": 120700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3904
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_9490",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 222000,
+    "due_date": "2026-12-15",
+    "paid": false
+   },
+   {
+    "id": "bill_5317",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 154000,
+    "due_date": "2026-12-20",
+    "paid": false
+   },
+   {
+    "id": "bill_182",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 845000,
+    "due_date": "2026-12-19",
+    "paid": false
+   },
+   {
+    "id": "bill_6030",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 213000,
+    "due_date": "2026-12-17",
+    "paid": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_318",
+    "contact_id": null,
+    "phone_number": "09412870356",
+    "direction": "incoming",
+    "time": "2026-12-12T22:14:00+07:00",
+    "content": "Linh ơi chị Ngân đây, chín giờ sáng mai cả nhóm họp ở Cà phê Gác Xép để chốt slide Bangkok nha em."
+   },
+   {
+    "id": "msg_77",
+    "contact_id": null,
+    "phone_number": "09867204513",
+    "direction": "incoming",
+    "time": "2026-12-13T06:02:00+07:00",
+    "content": "SaoTel: Goi cuoc data cua quy khach se het han vao ngay 16/12."
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_4873",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-13T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_2051",
+    "title": "Làm slide thuyết trình Bangkok",
+    "due": "2026-12-14T08:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_706",
+    "title": "Viết báo cáo khảo sát Bangalore",
+    "due": "2026-12-16T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_195",
+    "title": "Mua quà sinh nhật Trang",
+    "due": "2026-12-18T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

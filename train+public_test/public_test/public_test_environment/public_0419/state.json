@@ -1,0 +1,529 @@
+{
+ "_meta": {
+  "question_id": "public_0419",
+  "current_time": "2026-10-20T08:30:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_673",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09771845494"
+   },
+   {
+    "id": "c_519",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09570445767"
+   },
+   {
+    "id": "c_360",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09481281980"
+   },
+   {
+    "id": "c_2006",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09360159564"
+   },
+   {
+    "id": "c_566",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09587957842"
+   },
+   {
+    "id": "c_5419",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09851484706"
+   },
+   {
+    "id": "c_584",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09159752109"
+   },
+   {
+    "id": "c_475",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09281668842"
+   },
+   {
+    "id": "c_71",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09459262221"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_142",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_2192",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_912",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_537",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_7505",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_776",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_156",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_2261",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_318",
+    "content": "Họp tổ chuyên môn",
+    "time": "2026-10-20T14:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_57",
+    "content": "Nộp giáo án tuần sau",
+    "time": "2026-10-23T17:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_746",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_666",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_118",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_6635",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_572",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_3310",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_60",
+    "items": [
+     {
+      "product_id": "gro_6635",
+      "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+      "price": 35000,
+      "quantity": 3
+     }
+    ],
+    "total": 105000,
+    "status": "delivered",
+    "delivery_time": "2026-10-16T09:00:00+07:00"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21700
+   },
+   {
+    "type": "e5",
+    "price": 20500
+   },
+   {
+    "type": "diesel",
+    "price": 19100
+   }
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_132",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_2653",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_263",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_7818",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_359",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_665",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5404",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1786",
+    "name": "Chị Yến",
+    "type": "direct",
+    "members": [
+     "Chị Yến"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8793",
+    "name": "Anh Thành",
+    "type": "direct",
+    "members": [
+     "Anh Thành"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

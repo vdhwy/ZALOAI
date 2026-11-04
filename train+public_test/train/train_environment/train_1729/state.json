@@ -1,0 +1,461 @@
+{
+ "_meta": {
+  "question_id": "train_1729",
+  "current_time": "2026-12-07T09:15:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_298",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-12-30",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_349",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-12-24",
+    "status": "cancelled",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_552",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-12-28",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_617",
+    "name": "Lumina Studio",
+    "price": 349000,
+    "next_billing": "2026-12-09",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_4083",
+    "name": "Lumina Stream",
+    "price": 89000,
+    "next_billing": "2026-12-19",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_4767",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09987434903"
+   },
+   {
+    "id": "c_9326",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09499128215"
+   },
+   {
+    "id": "c_103",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09526398293"
+   },
+   {
+    "id": "c_147",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09933892058"
+   },
+   {
+    "id": "c_4987",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09101656604"
+   },
+   {
+    "id": "c_2313",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09913091226"
+   },
+   {
+    "id": "c_187",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09571851758"
+   },
+   {
+    "id": "c_938",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09123130357"
+   },
+   {
+    "id": "c_7472",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09992584051"
+   },
+   {
+    "id": "c_156",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09613496244"
+   },
+   {
+    "id": "c_668",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09374048465"
+   },
+   {
+    "id": "c_233",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09499037832"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_14",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 852000,
+    "due_date": "2026-12-10",
+    "paid": false
+   },
+   {
+    "id": "bill_565",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 217000,
+    "due_date": "2026-12-14",
+    "paid": false
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_103",
+    "tracking_id": "EV697311253",
+    "carrier": "VNPost",
+    "name": "Giày thể thao",
+    "status": "delivered",
+    "eta": "2026-12-06T14:00:00+07:00"
+   },
+   {
+    "id": "shp_553",
+    "tracking_id": "MDXVN502237732",
+    "carrier": "MDX Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "out_for_delivery",
+    "eta": "2026-12-07T14:00:00+07:00"
+   },
+   {
+    "id": "shp_141",
+    "tracking_id": "STP232791366",
+    "carrier": "SaoTel Post",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-12-08T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_215",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_547",
+    "name": "Tài khoản thanh toán",
+    "balance": 412000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_941",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_886",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_98",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "45 Trần Hưng Đạo, Ninh Kiều, Cần Thơ",
+    "dropoff": "Bến Ninh Kiều",
+    "vehicle": "car4"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_150",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_534",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_389",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_8318",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_227",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_471",
+    "show_id": "show_389",
+    "title": "Số 13: Gửi tiết kiệm hay mua vàng",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-11-23"
+   },
+   {
+    "id": "ep_191",
+    "show_id": "show_227",
+    "title": "Số 17: Trồng cây trên sân thượng",
+    "number": 17,
+    "duration_min": 25,
+    "published": "2026-11-23"
+   },
+   {
+    "id": "ep_8496",
+    "show_id": "show_534",
+    "title": "Số 13: Nghề diễn và những áp lực",
+    "number": 13,
+    "duration_min": 18,
+    "published": "2026-11-30"
+   },
+   {
+    "id": "ep_1581",
+    "show_id": "show_8318",
+    "title": "Số 21: Nhà giả kim - phần 2",
+    "number": 21,
+    "duration_min": 25,
+    "published": "2026-11-30"
+   },
+   {
+    "id": "ep_3557",
+    "show_id": "show_389",
+    "title": "Số 12: Lập quỹ khẩn cấp",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-11-16"
+   },
+   {
+    "id": "ep_72",
+    "show_id": "show_389",
+    "title": "Số 14: Quản lý chi tiêu gia đình",
+    "number": 14,
+    "duration_min": 32,
+    "published": "2026-11-30"
+   },
+   {
+    "id": "ep_781",
+    "show_id": "show_227",
+    "title": "Số 16: Rác thải nhựa ở đô thị",
+    "number": 16,
+    "duration_min": 18,
+    "published": "2026-11-16"
+   },
+   {
+    "id": "ep_932",
+    "show_id": "show_8318",
+    "title": "Số 20: Nhà giả kim - phần 1",
+    "number": 20,
+    "duration_min": 25,
+    "published": "2026-11-23"
+   },
+   {
+    "id": "ep_921",
+    "show_id": "show_227",
+    "title": "Số 18: Đi xe đạp đi làm",
+    "number": 18,
+    "duration_min": 45,
+    "published": "2026-11-30"
+   },
+   {
+    "id": "ep_8516",
+    "show_id": "show_534",
+    "title": "Số 12: Sống chậm giữa thành phố",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-11-23"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_539",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_3525",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_666",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_4634",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_227"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_1725",
+    "title": "họp team",
+    "start": "2026-12-09T15:30:00+07:00",
+    "end": "2026-12-09T16:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4935",
+    "title": "đi chơi công viên",
+    "start": "2026-12-08T14:00:00+07:00",
+    "end": "2026-12-08T15:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_8690",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-10T18:00:00+07:00",
+    "end": "2026-12-10T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_465",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-10T15:30:00+07:00",
+    "end": "2026-12-10T16:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

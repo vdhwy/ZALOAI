@@ -1,0 +1,492 @@
+{
+ "_meta": {
+  "question_id": "train_0332",
+  "current_time": "2026-11-03T08:45:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fuel_price.get_price",
+   "gold_price.get_price",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 225000,
+    "due_date": "2026-11-09",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 197000,
+    "due_date": "2026-11-10",
+    "paid": false
+   },
+   {
+    "id": "bill_03",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 854000,
+    "due_date": "2026-11-06",
+    "paid": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 114896,
+  "transactions": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_01",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_02",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_01",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_02",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_03",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 24,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-03",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-04",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-05",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-06",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 31
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "khám răng",
+    "start": "2026-11-04T15:30:00+07:00",
+    "end": "2026-11-04T16:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "họp phụ huynh",
+    "start": "2026-11-04T18:30:00+07:00",
+    "end": "2026-11-04T19:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "họp team",
+    "start": "2026-11-04T18:30:00+07:00",
+    "end": "2026-11-04T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-06T18:00:00+07:00",
+    "end": "2026-11-06T19:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_05",
+    "title": "đi chơi công viên",
+    "start": "2026-11-06T18:30:00+07:00",
+    "end": "2026-11-06T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 124500000,
+    "sell": 126500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 118500000,
+    "sell": 120500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4191
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23200
+   },
+   {
+    "type": "e5",
+    "price": 22000
+   },
+   {
+    "type": "diesel",
+    "price": 20600
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09135547970"
+   },
+   {
+    "id": "c_02",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09290161255"
+   },
+   {
+    "id": "c_03",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09549855397"
+   },
+   {
+    "id": "c_04",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09872632658"
+   },
+   {
+    "id": "c_05",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09340595993"
+   },
+   {
+    "id": "c_06",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09629163613"
+   },
+   {
+    "id": "c_07",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09458944610"
+   },
+   {
+    "id": "c_08",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09192818356"
+   },
+   {
+    "id": "c_09",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09936142701"
+   }
+  ]
+ }
+}

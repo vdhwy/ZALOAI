@@ -1,0 +1,366 @@
+{
+ "_meta": {
+  "question_id": "train_1593",
+  "current_time": "2026-12-02T11:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_180",
+    "title": "họp team",
+    "start": "2026-12-05T19:30:00+07:00",
+    "end": "2026-12-05T20:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2321",
+    "title": "đi chơi công viên",
+    "start": "2026-12-04T19:30:00+07:00",
+    "end": "2026-12-04T20:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_203",
+    "title": "khám răng",
+    "start": "2026-12-03T09:00:00+07:00",
+    "end": "2026-12-03T10:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_413",
+    "time": "2026-12-03T06:15:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_2145",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_287",
+    "name": "Cô Mai",
+    "type": "direct",
+    "members": [
+     "Cô Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_108",
+    "name": "Anh Hùng",
+    "type": "direct",
+    "members": [
+     "Anh Hùng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5260",
+    "name": "Mẹ chồng",
+    "type": "direct",
+    "members": [
+     "Mẹ chồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_482",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_7895",
+    "name": "Nấu cơm tối",
+    "assignee": "Chị Hoa",
+    "done": false
+   },
+   {
+    "id": "chore_360",
+    "name": "Rửa bát",
+    "assignee": "Anh Hùng",
+    "done": false
+   },
+   {
+    "id": "chore_506",
+    "name": "Lau nhà",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_349",
+    "name": "Phơi quần áo",
+    "assignee": "Bà nội",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị Hoa",
+   "Anh Hùng",
+   "Bà nội"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_67",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09879266355"
+   },
+   {
+    "id": "c_251",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09358903007"
+   },
+   {
+    "id": "c_106",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09989411304"
+   },
+   {
+    "id": "c_4138",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09870641409"
+   },
+   {
+    "id": "c_652",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09369569333"
+   },
+   {
+    "id": "c_949",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09464397226"
+   },
+   {
+    "id": "c_235",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09931080347"
+   },
+   {
+    "id": "c_5594",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09678437172"
+   },
+   {
+    "id": "c_4900",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09215463235"
+   },
+   {
+    "id": "c_523",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09525797105"
+   },
+   {
+    "id": "c_540",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09345963087"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_411",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_2274",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_529",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_329",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_945",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_418",
+    "content": "Đóng học phí kỳ hai cho Bin 16.500.000đ",
+    "time": "2026-12-04T08:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_93",
+    "content": "Gọi điện hỏi thăm mẹ chồng",
+    "time": "2026-12-06T19:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-29": {
+    "steps": 4585,
+    "calories": 183,
+    "distance_km": 3.3
+   },
+   "2026-11-30": {
+    "steps": 7566,
+    "calories": 302,
+    "distance_km": 5.4
+   },
+   "2026-12-01": {
+    "steps": 10792,
+    "calories": 431,
+    "distance_km": 7.8
+   },
+   "2026-12-02": {
+    "steps": 5949,
+    "calories": 237,
+    "distance_km": 4.3
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_9103",
+    "type": "running",
+    "minutes": 45,
+    "time": "2026-11-30T06:00:00+07:00"
+   },
+   {
+    "id": "wo_139",
+    "type": "yoga",
+    "minutes": 20,
+    "time": "2026-11-28T18:00:00+07:00"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_979",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_482",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_7694",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_65",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ }
+}

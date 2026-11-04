@@ -1,0 +1,461 @@
+{
+ "_meta": {
+  "question_id": "train_0993",
+  "current_time": "2026-12-05T15:35:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 26,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-05",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-06",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-07",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-08",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 32
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_283",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_9042",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_266",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_773",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_9426",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_5950",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_637",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_9171",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_146",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_4860",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_204",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_371",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_915",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09693555776"
+   },
+   {
+    "id": "c_90",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09146357106"
+   },
+   {
+    "id": "c_198",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09434071334"
+   },
+   {
+    "id": "c_433",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09156475759"
+   },
+   {
+    "id": "c_605",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09119279952"
+   },
+   {
+    "id": "c_938",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09800401664"
+   },
+   {
+    "id": "c_559",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09271030226"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_788",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_9290",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_5674",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_166",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_611",
+    "show_id": "show_788",
+    "title": "Số 15: Gửi tiết kiệm hay mua vàng",
+    "number": 15,
+    "duration_min": 18,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_9367",
+    "show_id": "show_5674",
+    "title": "Số 12: Nhà giả kim - phần 1",
+    "number": 12,
+    "duration_min": 45,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_654",
+    "show_id": "show_166",
+    "title": "Số 16: Vì sao bầu trời màu xanh",
+    "number": 16,
+    "duration_min": 18,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_299",
+    "show_id": "show_166",
+    "title": "Số 17: Giấc ngủ và trí nhớ",
+    "number": 17,
+    "duration_min": 32,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_376",
+    "show_id": "show_166",
+    "title": "Số 18: Lỗ đen là gì",
+    "number": 18,
+    "duration_min": 32,
+    "published": "2026-11-28"
+   },
+   {
+    "id": "ep_701",
+    "show_id": "show_788",
+    "title": "Số 14: Lập quỹ khẩn cấp",
+    "number": 14,
+    "duration_min": 25,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_650",
+    "show_id": "show_9290",
+    "title": "Số 7: Trồng cây trên sân thượng",
+    "number": 7,
+    "duration_min": 32,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_1485",
+    "show_id": "show_5674",
+    "title": "Số 13: Nhà giả kim - phần 2",
+    "number": 13,
+    "duration_min": 45,
+    "published": "2026-11-28"
+   },
+   {
+    "id": "ep_5908",
+    "show_id": "show_9290",
+    "title": "Số 6: Rác thải nhựa ở đô thị",
+    "number": 6,
+    "duration_min": 45,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_595",
+    "show_id": "show_9290",
+    "title": "Số 8: Đi xe đạp đi làm",
+    "number": 8,
+    "duration_min": 45,
+    "published": "2026-11-28"
+   },
+   {
+    "id": "ep_70",
+    "show_id": "show_788",
+    "title": "Số 16: Quản lý chi tiêu gia đình",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-11-28"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_761",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_415",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_797",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_3624",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_166"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_499",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_662",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_8953",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_68",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 15
+   },
+   {
+    "id": "room_1124",
+    "name": "hành lang",
+    "area_m2": 12
+   },
+   {
+    "id": "room_647",
+    "name": "bếp",
+    "area_m2": 18
+   },
+   {
+    "id": "room_7155",
+    "name": "phòng khách",
+    "area_m2": 12
+   },
+   {
+    "id": "room_7698",
+    "name": "phòng làm việc",
+    "area_m2": 12
+   },
+   {
+    "id": "room_467",
+    "name": "phòng ngủ",
+    "area_m2": 25
+   }
+  ],
+  "current_job": null
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_674",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_62",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_917",
+    "name": "Huy",
+    "type": "direct",
+    "members": [
+     "Huy"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_893",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_228",
+    "name": "Chị Hai",
+    "type": "direct",
+    "members": [
+     "Chị Hai"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

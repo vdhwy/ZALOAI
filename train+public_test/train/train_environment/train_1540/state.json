@@ -1,0 +1,296 @@
+{
+ "_meta": {
+  "question_id": "train_1540",
+  "current_time": "2026-11-17T22:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_805",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_5427",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_954",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_685",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_292",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09736386811"
+   },
+   {
+    "id": "c_617",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09779527118"
+   },
+   {
+    "id": "c_884",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09913453048"
+   },
+   {
+    "id": "c_234",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09736716414"
+   },
+   {
+    "id": "c_3298",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09559821649"
+   },
+   {
+    "id": "c_904",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09265445500"
+   },
+   {
+    "id": "c_363",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09930738111"
+   },
+   {
+    "id": "c_229",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09445848125"
+   },
+   {
+    "id": "c_201",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09171125961"
+   },
+   {
+    "id": "c_8198",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09693902132"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_518",
+    "time": "2026-11-18T06:30:00+07:00",
+    "label": "dậy đi làm",
+    "repeat": "weekdays",
+    "enabled": false
+   },
+   {
+    "id": "alm_2207",
+    "time": "2026-11-18T07:00:00+07:00",
+    "label": "tập yoga",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_96",
+    "time": "2026-11-18T05:45:00+07:00",
+    "label": "nấu cơm sáng",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25929
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28003
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 172.9
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_145",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_922",
+    "name": "Anh Hùng",
+    "type": "direct",
+    "members": [
+     "Anh Hùng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_321",
+    "name": "Cô Mai",
+    "type": "direct",
+    "members": [
+     "Cô Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_905",
+    "name": "Mẹ chồng",
+    "type": "direct",
+    "members": [
+     "Mẹ chồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_137",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_783",
+    "name": "Marcus Hale",
+    "type": "direct",
+    "members": [
+     "Marcus Hale"
+    ],
+    "messages": [
+     {
+      "from": "Marcus Hale",
+      "content": "Hi chị Hoa, 8:30 sáng mai em qua công ty mình bắt đầu buổi audit nhé.",
+      "time": "2026-11-17T20:05:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_2046",
+    "name": "Marcus Bell",
+    "type": "direct",
+    "members": [
+     "Marcus Bell"
+    ],
+    "messages": [
+     {
+      "from": "Marcus Bell",
+      "content": "Chị Hoa ơi, 9 giờ sáng mai mình họp online chốt invoice quý ba nhé.",
+      "time": "2026-11-17T21:40:00+07:00"
+     }
+    ]
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_288",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_807",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_4929",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_966",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ }
+}

@@ -1,0 +1,491 @@
+{
+ "_meta": {
+  "question_id": "train_1199",
+  "current_time": "2026-11-25T08:10:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "library.reserve",
+   "library.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_6220",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_146",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_971",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_26",
+    "time": "2026-11-23T23:20:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_2062",
+    "time": "2026-11-24T10:55:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_2189",
+    "time": "2026-11-24T12:10:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_5681",
+    "time": "2026-11-25T00:20:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_5001",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_487",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_853",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_33",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_1471",
+    "show_id": "show_487",
+    "title": "Số 21: Giấc ngủ và trí nhớ",
+    "number": 21,
+    "duration_min": 32,
+    "published": "2026-11-11"
+   },
+   {
+    "id": "ep_100",
+    "show_id": "show_487",
+    "title": "Số 20: Vì sao bầu trời màu xanh",
+    "number": 20,
+    "duration_min": 18,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_636",
+    "show_id": "show_5001",
+    "title": "Số 13: Trồng cây trên sân thượng",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-11-11"
+   },
+   {
+    "id": "ep_871",
+    "show_id": "show_853",
+    "title": "Số 19: Nhà giả kim - phần 1",
+    "number": 19,
+    "duration_min": 18,
+    "published": "2026-11-11"
+   },
+   {
+    "id": "ep_800",
+    "show_id": "show_5001",
+    "title": "Số 12: Rác thải nhựa ở đô thị",
+    "number": 12,
+    "duration_min": 45,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_682",
+    "show_id": "show_5001",
+    "title": "Số 14: Đi xe đạp đi làm",
+    "number": 14,
+    "duration_min": 32,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_4856",
+    "show_id": "show_33",
+    "title": "Số 16: Gửi tiết kiệm hay mua vàng",
+    "number": 16,
+    "duration_min": 32,
+    "published": "2026-11-11"
+   },
+   {
+    "id": "ep_360",
+    "show_id": "show_853",
+    "title": "Số 20: Nhà giả kim - phần 2",
+    "number": 20,
+    "duration_min": 45,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_3122",
+    "show_id": "show_33",
+    "title": "Số 17: Quản lý chi tiêu gia đình",
+    "number": 17,
+    "duration_min": 18,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_751",
+    "show_id": "show_33",
+    "title": "Số 15: Lập quỹ khẩn cấp",
+    "number": 15,
+    "duration_min": 25,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_354",
+    "show_id": "show_487",
+    "title": "Số 22: Lỗ đen là gì",
+    "number": 22,
+    "duration_min": 45,
+    "published": "2026-11-18"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_736",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_876",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_4305",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_1067",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_157",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-01T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_123",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-26T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_7083",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-01T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_2370",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_57",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_120",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_35",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_83",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_815",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_759",
+    "name": "Chú Năm",
+    "type": "direct",
+    "members": [
+     "Chú Năm"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8009",
+    "name": "Bé Na",
+    "type": "direct",
+    "members": [
+     "Bé Na"
+    ],
+    "messages": [
+     {
+      "from": "Bé Na",
+      "content": "Mẹ ơi cô giáo dặn tuần sau đọc Tắt đèn với Mắt biếc, mẹ mua sách giùm con nha.",
+      "time": "2026-11-25T06:50:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_3544",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_50",
+    "name": "Anh Lộc",
+    "type": "direct",
+    "members": [
+     "Anh Lộc"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6695",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09650360032"
+   },
+   {
+    "id": "c_999",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09290685054"
+   },
+   {
+    "id": "c_444",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09299675153"
+   },
+   {
+    "id": "c_867",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09431296431"
+   },
+   {
+    "id": "c_688",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09975763815"
+   },
+   {
+    "id": "c_498",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09795419497"
+   },
+   {
+    "id": "c_991",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09129960107"
+   },
+   {
+    "id": "c_334",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09809592619"
+   },
+   {
+    "id": "c_776",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09531414872"
+   },
+   {
+    "id": "c_2267",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09315842541"
+   },
+   {
+    "id": "c_1712",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09280219258"
+   },
+   {
+    "id": "c_654",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09262353730"
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_439",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-26T14:00:00+07:00",
+    "link": "https://meet.example.test/niv-rtlt-hec",
+    "attendees": [
+     "c_1712"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_745",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-28T08:00:00+07:00",
+    "link": "https://meet.example.test/jsg-supy-whv",
+    "attendees": [
+     "c_867",
+     "c_991"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_5223",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_531",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_3862",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_505",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_597",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ }
+}

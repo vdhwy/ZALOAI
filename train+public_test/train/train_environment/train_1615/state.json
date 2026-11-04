@@ -1,0 +1,287 @@
+{
+ "_meta": {
+  "question_id": "train_1615",
+  "current_time": "2026-11-19T15:35:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_465",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 206000,
+    "due_date": "2026-11-22",
+    "paid": true,
+    "paid_with": "bank"
+   },
+   {
+    "id": "bill_9264",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 145000,
+    "due_date": "2026-11-22",
+    "paid": false
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_941",
+    "title": "đá bóng",
+    "start": "2026-11-20T14:30:00+07:00",
+    "end": "2026-11-20T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_111",
+    "title": "đi chơi công viên",
+    "start": "2026-11-22T14:00:00+07:00",
+    "end": "2026-11-22T15:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_655",
+    "title": "họp team",
+    "start": "2026-11-20T18:30:00+07:00",
+    "end": "2026-11-20T19:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_3236",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09766902593"
+   },
+   {
+    "id": "c_4843",
+    "name": "Sarah Kim",
+    "relation": "đồng nghiệp",
+    "phone": "09268781405"
+   },
+   {
+    "id": "c_983",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09267834458"
+   },
+   {
+    "id": "c_887",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09564283939"
+   },
+   {
+    "id": "c_472",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09854104382"
+   },
+   {
+    "id": "c_3965",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09169385281"
+   },
+   {
+    "id": "c_921",
+    "name": "Lan",
+    "relation": "em gái",
+    "phone": "09196829420"
+   },
+   {
+    "id": "c_366",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09745462254"
+   },
+   {
+    "id": "c_992",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09637563256"
+   },
+   {
+    "id": "c_230",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09155193957"
+   },
+   {
+    "id": "c_5310",
+    "name": "Sarah Kang",
+    "relation": "khách hàng",
+    "phone": "09372615840"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_499",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_557",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_472",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "calculator": {},
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_663",
+    "name": "Anh Kha",
+    "type": "direct",
+    "members": [
+     "Anh Kha"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9474",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_431",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3633",
+    "name": "Sarah Kim",
+    "type": "direct",
+    "members": [
+     "Sarah Kim"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_878",
+    "name": "Mr. Tanaka",
+    "type": "direct",
+    "members": [
+     "Mr. Tanaka"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 32,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-20",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 34
+   }
+  ]
+ }
+}

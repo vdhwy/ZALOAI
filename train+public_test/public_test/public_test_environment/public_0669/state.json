@@ -1,0 +1,763 @@
+{
+ "_meta": {
+  "question_id": "public_0669",
+  "current_time": "2026-11-22T08:40:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send",
+   "translator.translate",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_142",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-23T19:30:00+07:00",
+    "end": "2026-11-23T20:30:00+07:00",
+    "location": "Nhà mẹ, Phú Hội",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9593",
+    "title": "khám răng",
+    "start": "2026-11-25T08:00:00+07:00",
+    "end": "2026-11-25T09:00:00+07:00",
+    "location": "Nha khoa Thuận Hoá",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9539",
+    "title": "đi chơi công viên",
+    "start": "2026-11-23T14:00:00+07:00",
+    "end": "2026-11-23T15:00:00+07:00",
+    "location": "Công viên Thương Bạc",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "status": "confirmed",
+    "title": "Đón khách Emily",
+    "start": "2026-11-22T11:00:00+07:00",
+    "end": "2026-11-22T12:00:00+07:00",
+    "location": "ga Huế"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   },
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 2900000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_3793",
+    "amount": -500000,
+    "note": "hoàn tiền cọc phòng"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 124600000,
+    "sell": 126600000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 118600000,
+    "sell": 120600000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4114
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_784",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_714",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_149",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_337",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_376",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_8878",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_582",
+    "contact_id": "c_417",
+    "phone_number": "09810115094",
+    "direction": "incoming",
+    "content": "Hi anh Đức, tàu của em tới ga Huế lúc 11 giờ trưa nay nhé.",
+    "time": "2026-11-22T06:55:00+07:00"
+   },
+   {
+    "id": "msg_02",
+    "contact_id": "c_116",
+    "phone_number": "09930417867",
+    "direction": "outgoing",
+    "content": "Trưa nay anh đi đón khách, khỏi đợi cơm nhé"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_3793",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09124307848"
+   },
+   {
+    "id": "c_417",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09810115094"
+   },
+   {
+    "id": "c_9135",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09941648584"
+   },
+   {
+    "id": "c_582",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09297849918"
+   },
+   {
+    "id": "c_374",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09646303258"
+   },
+   {
+    "id": "c_116",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09930417867"
+   },
+   {
+    "id": "c_436",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09860569171"
+   },
+   {
+    "id": "c_89",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09448067637"
+   },
+   {
+    "id": "c_2041",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09877583096"
+   },
+   {
+    "id": "c_558",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09530991905"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_341",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_692",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_785",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_333",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_5128",
+    "name": "Bánh pancake chuối kiểu Bluebird Cafe",
+    "tags": [
+     "bánh",
+     "ăn sáng",
+     "Bluebird Cafe"
+    ],
+    "servings": 4,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 250,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 300,
+      "unit": "ml"
+     },
+     {
+      "name": "mật ong",
+      "quantity": 40,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, đánh cùng trứng và sữa",
+     "Rây bột mì vào, khuấy mịn, để nghỉ 10 phút",
+     "Đổ bánh nhỏ trên chảo, ăn kèm mật ong"
+    ]
+   },
+   {
+    "id": "rcp_5170",
+    "name": "Bánh pancake chuối kiểu Bluebird Bakery",
+    "tags": [
+     "bánh",
+     "ăn sáng",
+     "Bluebird Bakery"
+    ],
+    "servings": 4,
+    "time_min": 35,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 250,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "bơ",
+      "quantity": 30,
+      "unit": "g"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 250,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Đun chảy bơ, trộn với sữa",
+     "Cho bột và chuối nghiền vào",
+     "Nướng bánh trên chảo gang"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_844",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_8553",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_711",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_584",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "public_transit": {
+  "card_balance": 120000,
+  "routes": [
+   {
+    "id": "metro_6160",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "bus_98",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Láng",
+    "route": "metro_2a",
+    "time": "2026-11-22T08:42:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_6160",
+    "time": "2026-11-22T08:43:00+07:00"
+   },
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_98",
+    "time": "2026-11-22T09:04:00+07:00"
+   },
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_98",
+    "time": "2026-11-22T08:54:00+07:00"
+   },
+   {
+    "stop": "Láng",
+    "route": "metro_2a",
+    "time": "2026-11-22T08:50:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_6160",
+    "time": "2026-11-22T09:03:00+07:00"
+   },
+   {
+    "stop": "Láng",
+    "route": "metro_2a",
+    "time": "2026-11-22T08:58:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_6160",
+    "time": "2026-11-22T08:53:00+07:00"
+   },
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_98",
+    "time": "2026-11-22T08:44:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 26,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-11-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-23",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-24",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 34
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-25",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 34
+   }
+  ]
+ }
+}

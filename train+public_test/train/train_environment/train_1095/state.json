@@ -1,0 +1,501 @@
+{
+ "_meta": {
+  "question_id": "train_1095",
+  "current_time": "2026-10-29T16:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_374",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_990",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4196",
+    "name": "Chú Năm",
+    "type": "direct",
+    "members": [
+     "Chú Năm"
+    ],
+    "messages": [
+     {
+      "from": "Chú Năm",
+      "content": "Tối nay anh về ăn cơm nha.",
+      "time": "2026-10-29T11:02:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_6932",
+    "name": "Anh Lộc",
+    "type": "direct",
+    "members": [
+     "Anh Lộc"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_352",
+    "name": "Bé Na",
+    "type": "direct",
+    "members": [
+     "Bé Na"
+    ],
+    "messages": [
+     {
+      "from": "Bé Na",
+      "content": "Mẹ ơi chiều nay con học nhóm, về trễ chút nha.",
+      "time": "2026-10-27T13:20:00+07:00"
+     },
+     {
+      "from": "me",
+      "content": "Ừ, về sớm sớm nha con.",
+      "time": "2026-10-27T13:31:00+07:00"
+     },
+     {
+      "from": "Bé Na",
+      "content": "Mẹ ơi con đăng ký ở ký túc xá luôn rồi nha, sáng con tự dậy đi học, cuối tuần con mới về.",
+      "time": "2026-10-29T14:55:00+07:00"
+     }
+    ]
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_847",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_3416",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 80
+   },
+   {
+    "id": "lock_645",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 35
+   },
+   {
+    "id": "lock_7168",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": false,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_2271",
+    "phone_number": "09533063717",
+    "direction": "outgoing",
+    "status": "answered",
+    "time": "2026-10-29T09:40:00+07:00"
+   },
+   {
+    "id": "call_86",
+    "phone_number": "09302685700",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-10-29T12:10:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_4102",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09533063717"
+   },
+   {
+    "id": "c_617",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09588653879"
+   },
+   {
+    "id": "c_987",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09379427540"
+   },
+   {
+    "id": "c_559",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09342088598"
+   },
+   {
+    "id": "c_332",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09894923116"
+   },
+   {
+    "id": "c_508",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09302685700"
+   },
+   {
+    "id": "c_130",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09185036237"
+   },
+   {
+    "id": "c_416",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09891290895"
+   },
+   {
+    "id": "c_372",
+    "name": "Lan",
+    "relation": "em gái",
+    "phone": "09650435608"
+   },
+   {
+    "id": "c_432",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09717541374"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_134",
+    "time": "2026-10-30T07:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_9279",
+    "time": "2026-10-30T06:15:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_602",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_3079",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_5521",
+    "device_id": "light_bedroom2",
+    "action": "on",
+    "time": "05:45",
+    "title": "Bật đèn phòng bé Na buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_7612",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_177",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_295",
+    "name": "Rửa bát",
+    "assignee": "Tuấn",
+    "done": true
+   },
+   {
+    "id": "chore_223",
+    "name": "Phơi quần áo",
+    "assignee": "Mẹ",
+    "done": true
+   },
+   {
+    "id": "chore_3972",
+    "name": "Đổ rác",
+    "assignee": "Mẹ",
+    "done": false
+   },
+   {
+    "id": "chore_9354",
+    "name": "Giặt quần áo",
+    "assignee": "Cô Thảo",
+    "done": false
+   }
+  ],
+  "members": [
+   "Cô Thảo",
+   "Tuấn",
+   "Lan",
+   "Mẹ"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_11",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-30T08:30:00+07:00",
+    "end": "2026-10-30T09:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_346",
+    "title": "khám răng",
+    "start": "2026-11-01T09:30:00+07:00",
+    "end": "2026-11-01T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_455",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-01T19:00:00+07:00",
+    "end": "2026-11-01T20:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_85",
+    "title": "đá bóng",
+    "start": "2026-10-30T19:30:00+07:00",
+    "end": "2026-10-30T20:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4224",
+    "title": "họp phụ huynh",
+    "start": "2026-10-30T10:00:00+07:00",
+    "end": "2026-10-30T11:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

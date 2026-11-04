@@ -1,0 +1,332 @@
+{
+ "_meta": {
+  "question_id": "train_1620",
+  "current_time": "2026-11-02T14:25:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi Sếp Trân báo doanh số",
+    "time": "2026-11-02T17:00:00+07:00"
+   },
+   {
+    "id": "rem_02",
+    "repeat": "once",
+    "done": false,
+    "content": "Mang hợp đồng theo",
+    "time": "2026-11-03T07:00:00+07:00"
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 26081
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28167
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 173.9
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "completed",
+    "pickup": "12 Nguyễn Huệ, Quận 1, TP.HCM",
+    "dropoff": "Khu Công nghệ cao, TP. Thủ Đức, TP.HCM",
+    "vehicle": "bike",
+    "schedule_time": "2026-11-02T07:30:00+07:00"
+   },
+   {
+    "id": "ride_02",
+    "status": "booked",
+    "pickup": "Khu Công nghệ cao, TP. Thủ Đức, TP.HCM",
+    "dropoff": "12 Nguyễn Huệ, Quận 1, TP.HCM",
+    "vehicle": "car4",
+    "schedule_time": "2026-11-02T18:00:00+07:00"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_2511",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_406",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_68",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_5189",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_8129",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_949",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-11-05T10:00:00+07:00",
+    "link": "https://meet.example.test/vyb-huje-yfz",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_795",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-04T15:00:00+07:00",
+    "link": "https://meet.example.test/cyr-etgb-inc",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_7873",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-03T10:30:00+07:00",
+    "link": "https://meet.example.test/ccz-djdh-oxq",
+    "attendees": [
+     "c_2621"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_7935",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-05T09:00:00+07:00",
+    "link": "https://meet.example.test/cgc-bggr-nfd",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_317",
+    "name": "Má",
+    "type": "direct",
+    "members": [
+     "Má"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2937",
+    "name": "Sếp Trân",
+    "type": "direct",
+    "members": [
+     "Sếp Trân"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_461",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_982",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4353",
+    "name": "Vy",
+    "type": "direct",
+    "members": [
+     "Vy"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_349",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09902583848"
+   },
+   {
+    "id": "c_757",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09292143943"
+   },
+   {
+    "id": "c_394",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09460639254"
+   },
+   {
+    "id": "c_2800",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09754676677"
+   },
+   {
+    "id": "c_514",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09211839687"
+   },
+   {
+    "id": "c_9336",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09123456789"
+   },
+   {
+    "id": "c_2621",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09863852786"
+   },
+   {
+    "id": "c_981",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09238273037"
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_7604",
+    "tracking_id": "MDXVN115172555",
+    "carrier": "MDX Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "out_for_delivery",
+    "eta": "2026-11-02T17:00:00+07:00"
+   },
+   {
+    "id": "shp_567",
+    "tracking_id": "STP324227103",
+    "carrier": "SaoTel Post",
+    "name": "Hộp quà Trung thu",
+    "status": "delivered",
+    "eta": "2026-11-01T17:00:00+07:00"
+   },
+   {
+    "id": "shp_4960",
+    "tracking_id": "JV499216913",
+    "carrier": "JetViệt Express",
+    "name": "Tai nghe Bluetooth",
+    "status": "in_transit",
+    "eta": "2026-11-03T14:00:00+07:00"
+   },
+   {
+    "id": "shp_876",
+    "tracking_id": "EV237816362",
+    "carrier": "VNPost",
+    "name": "Áo khoác gió",
+    "status": "in_transit",
+    "eta": "2026-11-03T14:00:00+07:00"
+   },
+   {
+    "id": "shp_2318",
+    "tracking_id": "EV518204377",
+    "carrier": "VNPost",
+    "name": "Tai nghe chụp tai",
+    "status": "in_transit",
+    "eta": "2026-11-03T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ }
+}

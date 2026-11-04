@@ -1,0 +1,398 @@
+{
+ "_meta": {
+  "question_id": "public_0638",
+  "current_time": "2026-12-16T17:45:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "pantry.consume",
+   "pantry.list_items",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_277",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_901",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_384",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_1283",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_219",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_379",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-18T14:30:00+07:00",
+    "end": "2026-12-18T15:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6676",
+    "title": "khám răng",
+    "start": "2026-12-17T08:30:00+07:00",
+    "end": "2026-12-17T09:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_117",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-18T14:00:00+07:00",
+    "end": "2026-12-18T15:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_729",
+    "name": "mì tôm chua cay",
+    "stock": 6,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_3173",
+    "name": "gạo ST25",
+    "stock": 4,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_4418",
+    "name": "mì tôm thịt bằm",
+    "stock": 5,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_5260",
+    "name": "cà phê hòa tan",
+    "stock": 3,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_108",
+    "name": "dầu ăn",
+    "stock": 1,
+    "unit": "chai"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_248",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_671",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_198",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_286",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_2802",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_06",
+    "checked": false,
+    "name": "nấm kim châm",
+    "quantity": 2
+   },
+   {
+    "id": "item_07",
+    "checked": false,
+    "name": "thịt bò",
+    "quantity": 1
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "Tòa nhà Kim Cương, Nam Từ Liêm, Hà Nội",
+    "dropoff": "25 Láng Hạ, Đống Đa, Hà Nội",
+    "vehicle": "car7"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_843",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09176849497"
+   },
+   {
+    "id": "c_768",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09342522175"
+   },
+   {
+    "id": "c_760",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09227571935"
+   },
+   {
+    "id": "c_922",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09320096638"
+   },
+   {
+    "id": "c_455",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09995859026"
+   },
+   {
+    "id": "c_494",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09988437468"
+   },
+   {
+    "id": "c_694",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09111476403"
+   },
+   {
+    "id": "c_652",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09646685598"
+   },
+   {
+    "id": "c_985",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09275785823"
+   },
+   {
+    "id": "c_692",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09237760778"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_925",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-19T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_7572",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-22T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_196",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-16T17:00:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_8417",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-22T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_1472",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-18T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 500,
+    "avg_price": 23750,
+    "price": 26300
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "quantity": 1000,
+    "avg_price": 21600,
+    "price": 23900
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 100,
+    "avg_price": 29500,
+    "price": 32600
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1630,
+    "change_pct": 1.0
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26300,
+    "change_pct": -0.8
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 32600,
+    "change_pct": -3.3
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 125300,
+    "change_pct": 2.2
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 23900,
+    "change_pct": 3.4
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 60900,
+    "change_pct": -1.5
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ }
+}

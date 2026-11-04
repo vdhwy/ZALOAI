@@ -1,0 +1,282 @@
+{
+ "_meta": {
+  "question_id": "public_0684",
+  "current_time": "2026-12-05T14:15:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "event_tickets.book",
+   "event_tickets.search",
+   "fuel_price.get_price",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_8441",
+    "name": "Liên hoan phim ngắn",
+    "category": "điện ảnh",
+    "date": "2026-12-14",
+    "time": "18:00",
+    "venue": "Nhà hát Tuổi Trẻ",
+    "price": 120000,
+    "available": 80
+   },
+   {
+    "id": "event_6261",
+    "name": "Chung kết bóng đá V-League",
+    "category": "thể thao",
+    "date": "2026-12-08",
+    "time": "18:00",
+    "venue": "Sân vận động Hàng Đẫy",
+    "price": 200000,
+    "available": 80
+   },
+   {
+    "id": "event_785",
+    "name": "Triển lãm Ánh sáng Đô thị",
+    "category": "triển lãm",
+    "date": "2026-12-16",
+    "time": "18:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 80000,
+    "available": 80
+   },
+   {
+    "id": "event_236",
+    "name": "Vở kịch Ngày Mưa",
+    "category": "kịch",
+    "date": "2026-12-07",
+    "time": "20:00",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 250000,
+    "available": 80
+   },
+   {
+    "id": "event_5170",
+    "name": "Workshop Báo cáo tài chính trực quan - Pinnacle Design",
+    "category": "workshop",
+    "date": "2026-12-06",
+    "time": "08:30",
+    "venue": "Khu nghỉ dưỡng Đồi Thông, Ba Vì",
+    "price": 350000,
+    "available": 38
+   },
+   {
+    "id": "event_3492",
+    "name": "Workshop Nhận diện thương hiệu - Pinnacle Designs",
+    "category": "workshop",
+    "date": "2026-12-13",
+    "time": "09:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 300000,
+    "available": 40
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_01",
+    "event_id": "event_5170",
+    "quantity": 2,
+    "total": 700000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_1921",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-08T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_3985",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-06T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_108",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-05T12:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_04",
+    "due": "2026-12-06T06:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Đổ xăng"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22400
+   },
+   {
+    "type": "e5",
+    "price": 21200
+   },
+   {
+    "type": "diesel",
+    "price": 19800
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_450",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09390217786"
+   },
+   {
+    "id": "c_4384",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09237063987"
+   },
+   {
+    "id": "c_744",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09101943265"
+   },
+   {
+    "id": "c_515",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09644763795"
+   },
+   {
+    "id": "c_4699",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09935550152"
+   },
+   {
+    "id": "c_864",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09490224695"
+   },
+   {
+    "id": "c_5199",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09849606916"
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 500,
+    "avg_price": 59000,
+    "price": 56850
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "quantity": 1000,
+    "avg_price": 23300,
+    "price": 24600
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 1000,
+    "avg_price": 30900,
+    "price": 32600
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1702,
+    "change_pct": -0.7
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 93750,
+    "change_pct": -2.1
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26500,
+    "change_pct": 2.3
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24600,
+    "change_pct": -2.3
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 32600,
+    "change_pct": -2.4
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 56850,
+    "change_pct": -1.4
+   }
+  ]
+ }
+}

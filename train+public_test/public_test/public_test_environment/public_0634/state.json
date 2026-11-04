@@ -1,0 +1,286 @@
+{
+ "_meta": {
+  "question_id": "public_0634",
+  "current_time": "2026-12-08T06:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_342",
+    "time": "2026-12-09T06:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_180",
+    "time": "2026-12-09T06:15:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_826",
+    "time": "2026-12-09T05:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_4417",
+    "time": "2026-12-09T06:30:00+07:00",
+    "label": "nấu xôi cho khách",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_659",
+    "time": "2026-12-09T06:30:00+07:00",
+    "label": "gọi xe ra ga cho khách",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_591",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-12T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_638",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-14T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_5846",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-07T12:00:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_775",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-09T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_2380",
+    "title": "Tiễn khách Lucas check-out",
+    "due": "2026-12-09T07:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_4061",
+    "title": "Đón Emily check-in",
+    "due": "2026-12-10T14:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_7309",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09815781964"
+   },
+   {
+    "id": "c_3613",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09724316068"
+   },
+   {
+    "id": "c_972",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09405139843"
+   },
+   {
+    "id": "c_744",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09414805001"
+   },
+   {
+    "id": "c_911",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09171243131"
+   },
+   {
+    "id": "c_92",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09340431970"
+   },
+   {
+    "id": "c_634",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09791054500"
+   },
+   {
+    "id": "c_603",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09163179387"
+   },
+   {
+    "id": "c_866",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09945161511"
+   },
+   {
+    "id": "c_619",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09325049282"
+   },
+   {
+    "id": "c_716",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09429952617"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_247",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_991",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_300",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_9164",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_2201",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_7774",
+    "name": "Không uống trà sữa",
+    "streak": 5,
+    "last_logged": "2026-12-07"
+   },
+   {
+    "id": "habit_71",
+    "name": "Học từ vựng tiếng Anh",
+    "streak": 1,
+    "last_logged": "2026-12-07"
+   },
+   {
+    "id": "habit_773",
+    "name": "Đọc sách 30 phút",
+    "streak": 0
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_943",
+    "habit_id": "habit_71",
+    "date": "2026-12-07"
+   },
+   {
+    "id": "log_901",
+    "habit_id": "habit_7774",
+    "date": "2026-12-07"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_681",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_8381",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_5675",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_986",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_612",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ }
+}

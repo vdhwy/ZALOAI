@@ -1,0 +1,185 @@
+{
+ "_meta": {
+  "question_id": "train_1135",
+  "current_time": "2026-10-28T07:50:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "library.reserve",
+   "library.search",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_9894",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_388",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_2573",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_19",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_2830",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_8926",
+    "name": "Tưới cây",
+    "assignee": null,
+    "done": true
+   },
+   {
+    "id": "chore_747",
+    "name": "Rửa bát",
+    "assignee": "Bé Na",
+    "done": true
+   },
+   {
+    "id": "chore_642",
+    "name": "Đổ rác",
+    "assignee": "Chị My",
+    "done": true
+   },
+   {
+    "id": "chore_1642",
+    "name": "Đi chợ",
+    "assignee": "Chị My",
+    "done": false
+   },
+   {
+    "id": "chore_716",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị My",
+   "Bé Na",
+   "Tuấn"
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_4643",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_94",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_598",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_3388",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_3450",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_624",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 1200,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_2088",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 3000,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_955",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-11-26",
+    "used": false
+   }
+  ]
+ }
+}

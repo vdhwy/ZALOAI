@@ -1,0 +1,357 @@
+{
+ "_meta": {
+  "question_id": "train_1141",
+  "current_time": "2026-10-22T08:40:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_204",
+    "contact_id": "c_158",
+    "time": "2026-10-21T19:10:00+07:00",
+    "missed": false
+   },
+   {
+    "id": "call_517",
+    "contact_id": "c_328",
+    "time": "2026-10-22T07:52:00+07:00",
+    "missed": true
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_183",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 75,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   },
+   {
+    "id": "prog_215",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 600,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_6447",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-11-09",
+    "used": false
+   },
+   {
+    "id": "vch_985",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-10-26",
+    "used": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_7494",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09306443548"
+   },
+   {
+    "id": "c_667",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09390037113"
+   },
+   {
+    "id": "c_9833",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09613473137"
+   },
+   {
+    "id": "c_328",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09723248926"
+   },
+   {
+    "id": "c_4234",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09332803581"
+   },
+   {
+    "id": "c_345",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09918854206"
+   },
+   {
+    "id": "c_789",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09669242727"
+   },
+   {
+    "id": "c_824",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09303842740"
+   },
+   {
+    "id": "c_158",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09363176544"
+   },
+   {
+    "id": "c_7033",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09735229490"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 30,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-10-22",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 34
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-23",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 29
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-24",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 32
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_841",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_991",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_4870",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_57",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_6022",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ }
+}

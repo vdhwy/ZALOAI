@@ -1,0 +1,616 @@
+{
+ "_meta": {
+  "question_id": "train_1538",
+  "current_time": "2026-10-27T12:50:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_503",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_1698",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_859",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_399",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "Công ty CP Dược Sơn Hà, 10 Quang Trung, Hà Đông",
+    "dropoff": "Cao Nguyên Coffee Láng Hạ, 88 Láng Hạ, Đống Đa, Hà Nội",
+    "vehicle": "car4",
+    "schedule_time": "2026-10-27T15:00:00+07:00"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 29,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-27",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-28",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-29",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-30",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 28
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-10-27",
+    "prizes": {
+     "special": "133852",
+     "first": "89320",
+     "eighth": "50"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-10-27",
+    "prizes": {
+     "special": "757426",
+     "first": "46356",
+     "eighth": "94"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-10-27",
+    "prizes": {
+     "special": "221062",
+     "first": "89572",
+     "eighth": "22"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-10-27",
+    "prizes": {
+     "special": "298647",
+     "first": "95452",
+     "eighth": "80"
+    }
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_550",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_125",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_251",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_109",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_9947",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_9689",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_252",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 205000,
+    "due_date": "2026-10-31",
+    "paid": false
+   },
+   {
+    "id": "bill_26",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 147000,
+    "due_date": "2026-11-05",
+    "paid": false
+   },
+   {
+    "id": "bill_747",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 200000,
+    "due_date": "2026-11-02",
+    "paid": false
+   },
+   {
+    "id": "bill_606",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 220000,
+    "due_date": "2026-10-29",
+    "paid": false
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_7480",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-10-31",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_537",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-10-31",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_502",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-10-31",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_594",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-10-31",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_3320",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_4513",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_3815",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_9847",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_282",
+    "show_id": "show_4513",
+    "title": "Số 10: Sống chậm giữa thành phố",
+    "number": 10,
+    "duration_min": 32,
+    "published": "2026-10-13"
+   },
+   {
+    "id": "ep_946",
+    "show_id": "show_3320",
+    "title": "Số 22: Đi xe đạp đi làm",
+    "number": 22,
+    "duration_min": 18,
+    "published": "2026-10-20"
+   },
+   {
+    "id": "ep_71",
+    "show_id": "show_9847",
+    "title": "Số 15: Giấc ngủ và trí nhớ",
+    "number": 15,
+    "duration_min": 32,
+    "published": "2026-10-13"
+   },
+   {
+    "id": "ep_198",
+    "show_id": "show_4513",
+    "title": "Số 11: Nghề diễn và những áp lực",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-10-20"
+   },
+   {
+    "id": "ep_1003",
+    "show_id": "show_9847",
+    "title": "Số 14: Vì sao bầu trời màu xanh",
+    "number": 14,
+    "duration_min": 18,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_7416",
+    "show_id": "show_3815",
+    "title": "Số 13: Gửi tiết kiệm hay mua vàng",
+    "number": 13,
+    "duration_min": 45,
+    "published": "2026-10-13"
+   },
+   {
+    "id": "ep_50",
+    "show_id": "show_3815",
+    "title": "Số 14: Quản lý chi tiêu gia đình",
+    "number": 14,
+    "duration_min": 45,
+    "published": "2026-10-20"
+   },
+   {
+    "id": "ep_711",
+    "show_id": "show_3320",
+    "title": "Số 20: Rác thải nhựa ở đô thị",
+    "number": 20,
+    "duration_min": 32,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_357",
+    "show_id": "show_3815",
+    "title": "Số 12: Lập quỹ khẩn cấp",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_704",
+    "show_id": "show_9847",
+    "title": "Số 16: Lỗ đen là gì",
+    "number": 16,
+    "duration_min": 18,
+    "published": "2026-10-20"
+   },
+   {
+    "id": "ep_6058",
+    "show_id": "show_3320",
+    "title": "Số 21: Trồng cây trên sân thượng",
+    "number": 21,
+    "duration_min": 32,
+    "published": "2026-10-13"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_67",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_207",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_6278",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_887",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_9847"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_51",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_504",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_740",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_1891",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_200",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 300
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_717",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09254087375"
+   },
+   {
+    "id": "c_789",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09549378702"
+   },
+   {
+    "id": "c_9686",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09150441464"
+   },
+   {
+    "id": "c_34",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09680977321"
+   },
+   {
+    "id": "c_793",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09256368931"
+   },
+   {
+    "id": "c_496",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09251731244"
+   },
+   {
+    "id": "c_377",
+    "name": "Lan",
+    "relation": "bạn",
+    "phone": "09462413144"
+   },
+   {
+    "id": "c_5291",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09950595417"
+   },
+   {
+    "id": "c_198",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09967558010"
+   },
+   {
+    "id": "c_210",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09219494457"
+   },
+   {
+    "id": "c_4402",
+    "name": "Jonas Berg",
+    "relation": "đối tác",
+    "phone": "09816275043",
+    "email": "peter.hansen@nordvik.example.test"
+   },
+   {
+    "id": "c_617",
+    "name": "Jonas Borg",
+    "relation": "khách hàng",
+    "phone": "09725830169"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_334",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_777",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_2859",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_212",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_7614",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_756",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ }
+}

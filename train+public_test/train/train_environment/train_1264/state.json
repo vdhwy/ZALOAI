@@ -1,0 +1,570 @@
+{
+ "_meta": {
+  "question_id": "train_1264",
+  "current_time": "2026-11-28T15:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 30,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-28",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 34
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-29",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 28
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-30",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 30
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-01",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_2196",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-26T20:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_289",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-26T13:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_831",
+    "from": "basau@gmail.example.test",
+    "from_name": "Bà Sáu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-26T15:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_189",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-26T00:50:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_8795",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-27T12:00:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_170",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-28T12:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_956",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-03T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_969",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-01T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_9607",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-03T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_596",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09445656391"
+   },
+   {
+    "id": "c_3426",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09240706378"
+   },
+   {
+    "id": "c_582",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09529970292"
+   },
+   {
+    "id": "c_9046",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09351690643"
+   },
+   {
+    "id": "c_878",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09823282880"
+   },
+   {
+    "id": "c_332",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09836485755"
+   },
+   {
+    "id": "c_681",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09731069735"
+   },
+   {
+    "id": "c_9381",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09197152464"
+   },
+   {
+    "id": "c_9768",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09181446519"
+   },
+   {
+    "id": "c_183",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09513925925"
+   },
+   {
+    "id": "c_1662",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09868996791"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_8600",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_606",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_875",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_31",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_492",
+    "name": "Sống khỏe mỗi ngày",
+    "host": "Bác sĩ Hạnh",
+    "category": "sức khỏe"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_88",
+    "show_id": "show_875",
+    "title": "Số 17: Lỗ đen là gì",
+    "number": 17,
+    "duration_min": 18,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_834",
+    "show_id": "show_606",
+    "title": "Số 20: Đi xe đạp đi làm",
+    "number": 20,
+    "duration_min": 18,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_144",
+    "show_id": "show_875",
+    "title": "Số 16: Giấc ngủ và trí nhớ",
+    "number": 16,
+    "duration_min": 32,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_726",
+    "show_id": "show_606",
+    "title": "Số 18: Rác thải nhựa ở đô thị",
+    "number": 18,
+    "duration_min": 45,
+    "published": "2026-11-07"
+   },
+   {
+    "id": "ep_730",
+    "show_id": "show_31",
+    "title": "Số 21: Nghề diễn và những áp lực",
+    "number": 21,
+    "duration_min": 25,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_43",
+    "show_id": "show_875",
+    "title": "Số 15: Vì sao bầu trời màu xanh",
+    "number": 15,
+    "duration_min": 45,
+    "published": "2026-11-07"
+   },
+   {
+    "id": "ep_57",
+    "show_id": "show_606",
+    "title": "Số 19: Trồng cây trên sân thượng",
+    "number": 19,
+    "duration_min": 45,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_974",
+    "show_id": "show_31",
+    "title": "Số 20: Sống chậm giữa thành phố",
+    "number": 20,
+    "duration_min": 18,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_2759",
+    "show_id": "show_8600",
+    "title": "Số 12: Nhà giả kim - phần 2",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_938",
+    "show_id": "show_8600",
+    "title": "Số 11: Nhà giả kim - phần 1",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_3071",
+    "show_id": "show_492",
+    "title": "Số 33: Uống canxi lúc nào cho đúng",
+    "number": 33,
+    "duration_min": 22,
+    "published": "2026-11-27"
+   },
+   {
+    "id": "ep_615",
+    "show_id": "show_492",
+    "title": "Số 32: Ngủ trưa bao lâu là đủ",
+    "number": 32,
+    "duration_min": 20,
+    "published": "2026-11-20"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_2886",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_9822",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_8179",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_6651",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_875"
+  ],
+  "queue": [],
+  "now_playing": {
+   "episode_id": "ep_3071",
+   "show_id": "show_492",
+   "status": "playing"
+  }
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_208",
+    "name": "Amlodipin huyết áp",
+    "times": [
+     "07:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_57",
+    "name": "Canxi D3",
+    "times": [
+     "15:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_734",
+    "name": "Omega 3",
+    "times": [
+     "15:00"
+    ],
+    "days": "weekdays"
+   }
+  ],
+  "logs": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ }
+}

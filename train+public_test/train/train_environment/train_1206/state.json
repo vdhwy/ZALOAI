@@ -1,0 +1,377 @@
+{
+ "_meta": {
+  "question_id": "train_1206",
+  "current_time": "2026-10-31T11:10:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_7835",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_3030",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_3185",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_780",
+    "show_id": "show_3030",
+    "title": "Số 19: Nhà giả kim - phần 1",
+    "number": 19,
+    "duration_min": 32,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_2755",
+    "show_id": "show_3030",
+    "title": "Số 20: Nhà giả kim - phần 2",
+    "number": 20,
+    "duration_min": 18,
+    "published": "2026-10-24"
+   },
+   {
+    "id": "ep_435",
+    "show_id": "show_7835",
+    "title": "Số 7: Lập quỹ khẩn cấp",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_749",
+    "show_id": "show_7835",
+    "title": "Số 9: Quản lý chi tiêu gia đình",
+    "number": 9,
+    "duration_min": 45,
+    "published": "2026-10-24"
+   },
+   {
+    "id": "ep_48",
+    "show_id": "show_7835",
+    "title": "Số 8: Gửi tiết kiệm hay mua vàng",
+    "number": 8,
+    "duration_min": 25,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_1650",
+    "show_id": "show_3185",
+    "title": "Số 8: Lỗ đen là gì",
+    "number": 8,
+    "duration_min": 18,
+    "published": "2026-10-24"
+   },
+   {
+    "id": "ep_304",
+    "show_id": "show_3185",
+    "title": "Số 6: Vì sao bầu trời màu xanh",
+    "number": 6,
+    "duration_min": 32,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_735",
+    "show_id": "show_3185",
+    "title": "Số 7: Giấc ngủ và trí nhớ",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-17"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_509",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_3265",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_576",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_195",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_2684",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_504",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_9691",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_136",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_6536",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_5321",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_478",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_327",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_9077",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_307",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_2035",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_6269",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-31",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-01",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-02",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-03",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_140",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09622174034"
+   },
+   {
+    "id": "c_107",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09977918651"
+   },
+   {
+    "id": "c_4347",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09117459040"
+   },
+   {
+    "id": "c_7015",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09658962623"
+   },
+   {
+    "id": "c_115",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09616079772"
+   },
+   {
+    "id": "c_903",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09453161188"
+   },
+   {
+    "id": "c_577",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09199166821"
+   }
+  ]
+ }
+}

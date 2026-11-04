@@ -1,0 +1,210 @@
+{
+ "_meta": {
+  "question_id": "train_0991",
+  "current_time": "2026-10-25T16:35:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "library.reserve",
+   "library.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_289",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_5883",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_471",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_712",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_8161",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_167",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_790",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_900",
+    "time": "2026-10-25T05:15:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_9558",
+    "time": "2026-10-25T15:55:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_5290",
+    "time": "2026-10-23T21:05:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_6444",
+    "title": "họp team",
+    "start": "2026-10-26T15:00:00+07:00",
+    "end": "2026-10-26T16:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_273",
+    "title": "họp phụ huynh",
+    "start": "2026-10-26T14:00:00+07:00",
+    "end": "2026-10-26T15:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_74",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 205000,
+    "due_date": "2026-11-03",
+    "paid": false
+   },
+   {
+    "id": "bill_885",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 218000,
+    "due_date": "2026-10-31",
+    "paid": false
+   },
+   {
+    "id": "bill_2061",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 153000,
+    "due_date": "2026-10-31",
+    "paid": false
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_2954",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_8212",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_594",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_777",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   }
+  ],
+  "reservations": []
+ }
+}

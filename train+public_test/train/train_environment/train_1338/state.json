@@ -1,0 +1,400 @@
+{
+ "_meta": {
+  "question_id": "train_1338",
+  "current_time": "2026-11-14T10:35:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_932",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_7214",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_4514",
+    "name": "phòng ngủ",
+    "area_m2": 18
+   },
+   {
+    "id": "room_333",
+    "name": "phòng ăn",
+    "area_m2": 22
+   },
+   {
+    "id": "room_923",
+    "name": "phòng khách",
+    "area_m2": 10
+   },
+   {
+    "id": "room_412",
+    "name": "bếp",
+    "area_m2": 15
+   }
+  ],
+  "current_job": null
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_868",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-17T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_305",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-18T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_971",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-13T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "due": "",
+    "priority": "normal",
+    "done": false,
+    "title": "Mua ba chỉ vàng nhẫn tròn tặng mẹ"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 131700000,
+    "sell": 133700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 125700000,
+    "sell": 127700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4239
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_410",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09532870475"
+   },
+   {
+    "id": "c_890",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09199584645"
+   },
+   {
+    "id": "c_4836",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09160565080"
+   },
+   {
+    "id": "c_3317",
+    "name": "Liam Porter",
+    "relation": "đồng nghiệp bên Singapore",
+    "phone": "09271846035"
+   },
+   {
+    "id": "c_5268",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09568585994"
+   },
+   {
+    "id": "c_9792",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09494424411"
+   },
+   {
+    "id": "c_662",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09538596825"
+   },
+   {
+    "id": "c_4536",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09665602015"
+   },
+   {
+    "id": "c_879",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09819535246"
+   },
+   {
+    "id": "c_218",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09636881483"
+   },
+   {
+    "id": "c_5902",
+    "name": "Liam Potter",
+    "relation": "đối tác",
+    "phone": "09384417260"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "calculator": {},
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_873",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-11-15T15:00:00+07:00",
+    "link": "https://meet.example.test/fvr-wznb-dan",
+    "attendees": [
+     "c_890"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_407",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-17T20:00:00+07:00",
+    "link": "https://meet.example.test/wpp-eehi-wcz",
+    "attendees": [
+     "c_410",
+     "c_662"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_506",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-15T20:30:00+07:00",
+    "link": "https://meet.example.test/hol-qfew-qeo",
+    "attendees": [
+     "c_890"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_3092",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-17T14:30:00+07:00",
+    "link": "https://meet.example.test/mka-bvwa-xtt",
+    "attendees": [
+     "c_662"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_05",
+    "title": "Rehearsal demo",
+    "start": "2026-11-15T19:00:00+07:00",
+    "link": "https://meet.example.test/hmr-htee-oex",
+    "attendees": [
+     "c_3317"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_496",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_275",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_243",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_270",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ }
+}

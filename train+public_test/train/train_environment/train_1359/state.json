@@ -1,0 +1,264 @@
+{
+ "_meta": {
+  "question_id": "train_1359",
+  "current_time": "2026-11-01T08:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem"
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_7714",
+    "name": "Product Discovery thực chiến",
+    "provider": "Quantum Leap Labs",
+    "enrolled": true,
+    "lessons_total": 10,
+    "progress_minutes": 90
+   },
+   {
+    "id": "course_5586",
+    "name": "Lập trình Python cho người mới",
+    "provider": "CodeViệt",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_983",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_643",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_2093",
+    "name": "Product Discovery thực chiến",
+    "provider": "Quantum Leap Academy",
+    "enrolled": true,
+    "lessons_total": 8,
+    "progress_minutes": 45
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_993",
+    "name": "Nấu cơm tối",
+    "assignee": "Bé Na",
+    "done": false
+   },
+   {
+    "id": "chore_2674",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Anh Việt",
+    "done": true
+   },
+   {
+    "id": "chore_179",
+    "name": "Giặt quần áo",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_197",
+    "name": "Phơi quần áo",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Việt",
+   "Bé Na",
+   "Bà nội"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_231",
+    "title": "họp team",
+    "start": "2026-11-02T19:30:00+07:00",
+    "end": "2026-11-02T20:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_8805",
+    "title": "webinar Product Discovery",
+    "start": "2026-10-31T20:00:00+07:00",
+    "end": "2026-10-31T21:15:00+07:00",
+    "location": "online",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1460",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-02T08:30:00+07:00",
+    "end": "2026-11-02T09:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5127",
+    "title": "webinar Product Discovery - buổi 1",
+    "start": "2026-10-28T20:00:00+07:00",
+    "end": "2026-10-28T21:00:00+07:00",
+    "location": "online",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9320",
+    "title": "khám răng",
+    "start": "2026-11-02T10:00:00+07:00",
+    "end": "2026-11-02T11:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_467",
+    "title": "họp phụ huynh",
+    "start": "2026-11-02T10:00:00+07:00",
+    "end": "2026-11-02T11:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3376",
+    "title": "chạy bộ cùng team",
+    "start": "2026-10-31T06:30:00+07:00",
+    "end": "2026-10-31T07:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_944",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 75,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   },
+   {
+    "id": "prog_958",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 500,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_568",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-11-14",
+    "used": false
+   },
+   {
+    "id": "vch_4840",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-11-22",
+    "used": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_121",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_839",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_450",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_488",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_785",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ }
+}

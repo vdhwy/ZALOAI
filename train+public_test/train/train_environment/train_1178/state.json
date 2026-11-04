@@ -1,0 +1,382 @@
+{
+ "_meta": {
+  "question_id": "train_1178",
+  "current_time": "2026-10-27T19:25:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "library.reserve",
+   "library.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_192",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09730441660"
+   },
+   {
+    "id": "c_611",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09673897807"
+   },
+   {
+    "id": "c_508",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09438640644"
+   },
+   {
+    "id": "c_4772",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09912104578"
+   },
+   {
+    "id": "c_2614",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09999950965"
+   },
+   {
+    "id": "c_5351",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09309026379"
+   },
+   {
+    "id": "c_92",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09238027337"
+   },
+   {
+    "id": "c_6224",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09354981795"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_6262",
+    "title": "họp phụ huynh",
+    "start": "2026-10-30T09:00:00+07:00",
+    "end": "2026-10-30T10:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_185",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-30T09:00:00+07:00",
+    "end": "2026-10-30T10:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_175",
+    "title": "đá bóng",
+    "start": "2026-10-28T15:00:00+07:00",
+    "end": "2026-10-28T16:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_581",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_859",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_197",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_5882",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-10-31",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_189",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-10-31",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_42",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-10-31",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_211",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-10-31",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 24,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-27",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-28",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-29",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-30",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 32
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_637",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_8284",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_2890",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_5061",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_443",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_361",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-10-28",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_682",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-11-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_236",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-11-23",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_7326",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-11",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_4624",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-11-04",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_733",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_1848",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_3897",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_15",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_5354",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ }
+}

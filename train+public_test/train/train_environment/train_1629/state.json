@@ -1,0 +1,520 @@
+{
+ "_meta": {
+  "question_id": "train_1629",
+  "current_time": "2026-11-24T18:00:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "calculator": {},
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-24",
+    "to": "2026-11-24",
+    "kwh": 8.8,
+    "cost": 25500,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 4.0
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.8
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-18",
+    "to": "2026-11-24",
+    "kwh": 78.7,
+    "cost": 228200,
+    "days": [
+     {
+      "date": "2026-11-18",
+      "kwh": 15.3
+     },
+     {
+      "date": "2026-11-19",
+      "kwh": 13.6
+     },
+     {
+      "date": "2026-11-20",
+      "kwh": 8.8
+     },
+     {
+      "date": "2026-11-21",
+      "kwh": 12.9
+     },
+     {
+      "date": "2026-11-22",
+      "kwh": 8.9
+     },
+     {
+      "date": "2026-11-23",
+      "kwh": 10.4
+     },
+     {
+      "date": "2026-11-24",
+      "kwh": 8.8
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-24",
+    "kwh": 274.0,
+    "cost": 794600
+   }
+  },
+  "alert_threshold_kwh": 300
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_108",
+    "time": "2026-11-25T06:15:00+07:00",
+    "label": "họp sớm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_02",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-25T05:45:00+07:00",
+    "label": "đi chạy bộ"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_997",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09900966021"
+   },
+   {
+    "id": "c_812",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09210198550"
+   },
+   {
+    "id": "c_714",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09558527562"
+   },
+   {
+    "id": "c_7780",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09250287407"
+   },
+   {
+    "id": "c_7905",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09832783673"
+   },
+   {
+    "id": "c_284",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09962646608"
+   },
+   {
+    "id": "c_627",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09223022932"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "tv": {
+  "power": "on",
+  "channel": "VTV1",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "volume": 15
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_395",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_25",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_8407",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá\nHai hộp sữa tươi"
+   },
+   {
+    "id": "note_04",
+    "title": "Follow-up khách hàng",
+    "content": "Follow-up khách hàng về bản demo trước thứ sáu"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_971",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 1600,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_171",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 500,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_5281",
+    "name": "Sen Points",
+    "merchant": "Sen Air",
+    "points": 9500,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_07_1",
+      "name": "Voucher 1.000.000đ vé chặng TP.HCM - Taipei",
+      "cost": 8000,
+      "value": 1000000
+     },
+     {
+      "id": "rw_07_2",
+      "name": "Voucher 1.000.000đ vé chặng TP.HCM - Taichung",
+      "cost": 8000,
+      "value": 1000000
+     },
+     {
+      "id": "rw_07_3",
+      "name": "Vé phòng chờ thương gia",
+      "cost": 3000,
+      "value": 450000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_246",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-15",
+    "used": false
+   },
+   {
+    "id": "vch_4851",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-12-05",
+    "used": false
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_547",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-23T18:15:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_237",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-23T19:00:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_346",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-24T05:15:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_113",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-24T03:30:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_140",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-23T13:00:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_123",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-23T13:15:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   }
+  ],
+  "saved": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_610",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_78",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_496",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_806",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_46",
+    "show_id": "show_806",
+    "title": "Số 16: Gửi tiết kiệm hay mua vàng",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_8160",
+    "show_id": "show_610",
+    "title": "Số 22: Đi xe đạp đi làm",
+    "number": 22,
+    "duration_min": 32,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_170",
+    "show_id": "show_78",
+    "title": "Số 16: Giấc ngủ và trí nhớ",
+    "number": 16,
+    "duration_min": 18,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_6174",
+    "show_id": "show_78",
+    "title": "Số 15: Vì sao bầu trời màu xanh",
+    "number": 15,
+    "duration_min": 45,
+    "published": "2026-11-03"
+   },
+   {
+    "id": "ep_4611",
+    "show_id": "show_496",
+    "title": "Số 13: Sống chậm giữa thành phố",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_243",
+    "show_id": "show_78",
+    "title": "Số 17: Lỗ đen là gì",
+    "number": 17,
+    "duration_min": 32,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_311",
+    "show_id": "show_610",
+    "title": "Số 20: Rác thải nhựa ở đô thị",
+    "number": 20,
+    "duration_min": 45,
+    "published": "2026-11-03"
+   },
+   {
+    "id": "ep_281",
+    "show_id": "show_610",
+    "title": "Số 21: Trồng cây trên sân thượng",
+    "number": 21,
+    "duration_min": 32,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_107",
+    "show_id": "show_806",
+    "title": "Số 15: Lập quỹ khẩn cấp",
+    "number": 15,
+    "duration_min": 45,
+    "published": "2026-11-03"
+   },
+   {
+    "id": "ep_5165",
+    "show_id": "show_496",
+    "title": "Số 14: Nghề diễn và những áp lực",
+    "number": 14,
+    "duration_min": 32,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_1858",
+    "show_id": "show_806",
+    "title": "Số 17: Quản lý chi tiêu gia đình",
+    "number": 17,
+    "duration_min": 32,
+    "published": "2026-11-17"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_198",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_365",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_6007",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_375",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ }
+}

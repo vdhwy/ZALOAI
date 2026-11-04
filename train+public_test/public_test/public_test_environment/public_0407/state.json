@@ -1,0 +1,379 @@
+{
+ "_meta": {
+  "question_id": "public_0407",
+  "current_time": "2026-11-10T21:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_414",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-12",
+    "depart": "21:00",
+    "arrive": "04:00",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_457",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-12",
+    "depart": "06:00",
+    "arrive": "16:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_590",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-12",
+    "depart": "06:00",
+    "arrive": "09:30",
+    "price": 450000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_5514",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-13",
+    "depart": "21:00",
+    "arrive": "07:30",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_941",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-13",
+    "depart": "06:00",
+    "arrive": "12:10",
+    "price": 920000,
+    "seats_left": 29
+   },
+   {
+    "id": "trip_60",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-12",
+    "depart": "13:00",
+    "arrive": "18:30",
+    "price": 250000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_853",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-13",
+    "depart": "08:00",
+    "arrive": "13:30",
+    "price": 920000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_975",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-13",
+    "depart": "06:00",
+    "arrive": "09:00",
+    "price": 320000,
+    "seats_left": 30
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_37",
+    "trip_id": "trip_941",
+    "seats": 1,
+    "total": 920000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_961",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_78",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_995",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_1336",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_350",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_830",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09879174768"
+   },
+   {
+    "id": "c_982",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09886211555"
+   },
+   {
+    "id": "c_7948",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09567658231"
+   },
+   {
+    "id": "c_5806",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09836074591"
+   },
+   {
+    "id": "c_298",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09227592590"
+   },
+   {
+    "id": "c_9627",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09450436326"
+   },
+   {
+    "id": "c_511",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09547565225"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_470",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_4397",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_658",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_7776",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_592",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-11-30",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_6612",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-11-30",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_544",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-11-30",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_7143",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-11-30",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_812",
+    "flight_id": "fl_592",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

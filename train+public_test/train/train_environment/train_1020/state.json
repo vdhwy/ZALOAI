@@ -1,0 +1,306 @@
+{
+ "_meta": {
+  "question_id": "train_1020",
+  "current_time": "2026-10-16T12:25:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_694",
+    "time": "2026-10-17T08:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_556",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_187",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_5448",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": true
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 168000,
+    "eta_min": 10
+   },
+   {
+    "vehicle": "bike",
+    "price": 52000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 129000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 32,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-16",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-17",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-18",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 29
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_119",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09150698930"
+   },
+   {
+    "id": "c_539",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09974404748"
+   },
+   {
+    "id": "c_784",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09199101796"
+   },
+   {
+    "id": "c_5866",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09710822111"
+   },
+   {
+    "id": "c_618",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09716355523"
+   },
+   {
+    "id": "c_384",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09524745770"
+   },
+   {
+    "id": "c_4271",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09978648977"
+   },
+   {
+    "id": "c_61",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09219761320"
+   },
+   {
+    "id": "c_657",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09490596901"
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-10-16",
+    "prizes": {
+     "special": "901766",
+     "first": "98496",
+     "eighth": "21"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-10-16",
+    "prizes": {
+     "special": "697470",
+     "first": "61485",
+     "eighth": "42"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-10-16",
+    "prizes": {
+     "special": "716725",
+     "first": "19915",
+     "eighth": "19"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-10-16",
+    "prizes": {
+     "special": "769507",
+     "first": "81834",
+     "eighth": "50"
+    }
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_376",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-11-02",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_460",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-11-08",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_50",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-10-21",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_465",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-17T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_3337",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-18T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_601",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-20T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_2017",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-18T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_7412",
+    "title": "Gặp khách Sữa Mộc Xanh duyệt kế hoạch quảng cáo, 10 Tân Trào, Quận 7",
+    "due": "2026-10-16T14:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ }
+}

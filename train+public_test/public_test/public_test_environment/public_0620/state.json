@@ -1,0 +1,531 @@
+{
+ "_meta": {
+  "question_id": "public_0620",
+  "current_time": "2026-11-23T08:40:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "pantry.consume",
+   "pantry.list_items",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_463",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_582",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_9047",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_228",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_148",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_428",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-20T18:55:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_3573",
+    "from": "emily@gmail.example.test",
+    "from_name": "Emily",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-21T03:40:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_3260",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-20T20:55:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_547",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-20T16:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_288",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-22T11:25:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_8154",
+    "from": "emily.carter@wanderly.example.test",
+    "from_name": "Emily",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Live stream tour Đại Nội ngày mai",
+    "snippet": "Our live stream tour is tomorrow at 9am.",
+    "body": "Hi Duc, our live stream tour at the Imperial City is tomorrow at 9am. Lucas will be our cameraman, please remind him to bring the gimbal.",
+    "time": "2026-11-22T21:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_2290",
+    "from": "minh.le@hoihomestay.example.test",
+    "from_name": "Minh",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Webinar quảng bá homestay mùa mưa",
+    "snippet": "Webinar tối thứ tư, em làm host.",
+    "body": "Anh Đức ơi, webinar quảng bá homestay mùa mưa diễn ra lúc 20 giờ thứ tư 25/11, em làm host, anh chuẩn bị giúp em năm phút chia sẻ nhé.",
+    "time": "2026-11-22T19:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_213",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2026-12-07",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_2411",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2026-12-07",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_2427",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2026-12-07",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_566",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2026-12-07",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_9790",
+    "name": "dầu ăn",
+    "stock": 1,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_449",
+    "name": "bột mì",
+    "stock": 1,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_770",
+    "name": "trứng gà",
+    "stock": 2,
+    "unit": "quả"
+   },
+   {
+    "id": "pan_572",
+    "name": "yến mạch",
+    "stock": 3,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_263",
+    "name": "nước mắm",
+    "stock": 1,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_532",
+    "name": "sữa tươi",
+    "stock": 2,
+    "unit": "hộp"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_539",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09702987978"
+   },
+   {
+    "id": "c_807",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09506208493"
+   },
+   {
+    "id": "c_118",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09621530837"
+   },
+   {
+    "id": "c_8725",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09327079951"
+   },
+   {
+    "id": "c_6351",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09461673264"
+   },
+   {
+    "id": "c_4883",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09523210978"
+   },
+   {
+    "id": "c_9323",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09856882387"
+   },
+   {
+    "id": "c_174",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09457923481"
+   },
+   {
+    "id": "c_2845",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09567064456"
+   },
+   {
+    "id": "c_2942",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09228949924"
+   },
+   {
+    "id": "c_52",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09119915375"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_369",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_449",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_675",
+    "name": "Vợ Hà",
+    "type": "direct",
+    "members": [
+     "Vợ Hà"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_532",
+    "name": "Lucas",
+    "type": "direct",
+    "members": [
+     "Lucas"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_630",
+    "name": "Emily",
+    "type": "direct",
+    "members": [
+     "Emily"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_583",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_7032",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_4032",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_411",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 28,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-11-23",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 28
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-24",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 34
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-26",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 31
+   }
+  ]
+ }
+}

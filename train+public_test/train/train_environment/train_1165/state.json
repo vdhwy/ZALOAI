@@ -1,0 +1,486 @@
+{
+ "_meta": {
+  "question_id": "train_1165",
+  "current_time": "2026-11-30T13:35:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "library.reserve",
+   "library.search",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-27": {
+    "steps": 3260,
+    "calories": 130,
+    "distance_km": 2.3
+   },
+   "2026-11-28": {
+    "steps": 5524,
+    "calories": 220,
+    "distance_km": 4.0
+   },
+   "2026-11-29": {
+    "steps": 4627,
+    "calories": 185,
+    "distance_km": 3.3
+   },
+   "2026-11-30": {
+    "steps": 4048,
+    "calories": 161,
+    "distance_km": 2.9
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_2529",
+    "type": "yoga",
+    "minutes": 20,
+    "time": "2026-11-27T06:00:00+07:00"
+   },
+   {
+    "id": "wo_2219",
+    "type": "walking",
+    "minutes": 60,
+    "time": "2026-11-26T18:00:00+07:00"
+   },
+   {
+    "id": "wo_9554",
+    "type": "cycling",
+    "minutes": 30,
+    "time": "2026-11-29T18:00:00+07:00"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 27,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-30",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 29
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-01",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 34
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-02",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 28
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-03",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 29
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_636",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1554",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2106",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1588",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_111",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_2093",
+    "from": "hang.le@gmail.example.test",
+    "from_name": "Hằng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Ba ơi",
+    "snippet": "Ba ơi, con báo ba chuyện nhà mình nè.",
+    "body": "Ba ơi, trưa nay con xin nghỉ, khoảng hai giờ chiều con với hai đứa nhỏ về tới nhà. Ba đừng đi đâu nghen, tụi nhỏ nhớ ông lắm.",
+    "time": "2026-11-30T11:20:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_658",
+    "from": "thongbao@nongthinhbank.example.test",
+    "from_name": "Nông Thịnh Bank",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 11",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 11 đính kèm email này.",
+    "time": "2026-11-30T08:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_481",
+    "from": "htx.phongdien@example.test",
+    "from_name": "Hợp tác xã Phong Điền",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch họp xã viên tháng 12",
+    "snippet": "Kính mời xã viên dự họp đầu tháng.",
+    "body": "Kính mời bà con xã viên dự họp tổng kết vụ lúa thu đông lúc 8 giờ sáng thứ bảy tại hội trường hợp tác xã.",
+    "time": "2026-11-29T16:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_338",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-28T11:50:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_148",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_274",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_603",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_302",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_226",
+    "title": "Xịt thuốc ruộng lúa",
+    "due": "2026-12-02T07:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_901",
+    "title": "Đóng tiền điện",
+    "due": "2026-12-05T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_7131",
+    "title": "Mua phân bón",
+    "due": "2026-12-06T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_831",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-30T12:30:00+07:00",
+    "priority": "normal",
+    "done": true
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-30",
+    "prizes": {
+     "special": "997775",
+     "first": "88309",
+     "eighth": "48"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-30",
+    "prizes": {
+     "special": "259035",
+     "first": "88733",
+     "eighth": "11"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-30",
+    "prizes": {
+     "special": "680434",
+     "first": "82868",
+     "eighth": "60"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-30",
+    "prizes": {
+     "special": "691435",
+     "first": "99283",
+     "eighth": "94"
+    }
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_405",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_868",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_551",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ }
+}

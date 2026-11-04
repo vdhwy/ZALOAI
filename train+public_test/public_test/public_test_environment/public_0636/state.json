@@ -1,0 +1,474 @@
+{
+ "_meta": {
+  "question_id": "public_0636",
+  "current_time": "2026-12-02T20:50:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_200",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_29",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_279",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_789",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_418",
+    "title": "Đón Lucas ở ga Huế",
+    "start": "2026-12-02T21:45:00+07:00",
+    "end": "2026-12-02T22:15:00+07:00",
+    "location": "Ga Huế",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_533",
+    "title": "Gọi Emily hỏi review",
+    "start": "2026-12-02T22:30:00+07:00",
+    "end": "2026-12-02T22:45:00+07:00",
+    "location": "Homestay Garden House",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_23",
+    "title": "đi chơi công viên",
+    "start": "2026-12-05T14:00:00+07:00",
+    "end": "2026-12-05T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_290",
+    "title": "khám răng",
+    "start": "2026-12-04T08:00:00+07:00",
+    "end": "2026-12-04T09:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_926",
+    "title": "đá bóng",
+    "start": "2026-12-05T08:00:00+07:00",
+    "end": "2026-12-05T09:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 15000,
+  "routes": [
+   {
+    "id": "bus_hue12",
+    "name": "Tuyến 12",
+    "type": "bus",
+    "stops": [
+     "Nguyễn Sinh Cung",
+     "Cầu Trường Tiền",
+     "Lê Lợi",
+     "Ga Huế"
+    ],
+    "fare": 7000,
+    "duration_min": 24,
+    "headway_min": 15,
+    "aliases": {
+     "Homestay Garden House": "Nguyễn Sinh Cung",
+     "nhà": "Nguyễn Sinh Cung"
+    }
+   },
+   {
+    "id": "bus_hue05",
+    "name": "Tuyến 05",
+    "type": "bus",
+    "stops": [
+     "Vĩ Dạ",
+     "Đông Ba",
+     "Kinh thành Huế"
+    ],
+    "fare": 7000,
+    "duration_min": 20,
+    "headway_min": 20
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Nguyễn Sinh Cung",
+    "route": "bus_hue12",
+    "time": "2026-12-02T21:26:00+07:00"
+   },
+   {
+    "stop": "Vĩ Dạ",
+    "route": "bus_hue05",
+    "time": "2026-12-02T21:00:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Sinh Cung",
+    "route": "bus_hue12",
+    "time": "2026-12-02T20:41:00+07:00"
+   },
+   {
+    "stop": "Ga Huế",
+    "route": "bus_hue12",
+    "time": "2026-12-02T21:10:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Sinh Cung",
+    "route": "bus_hue12",
+    "time": "2026-12-02T21:41:00+07:00"
+   },
+   {
+    "stop": "Vĩ Dạ",
+    "route": "bus_hue05",
+    "time": "2026-12-02T21:20:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Đón Lucas ở ga Huế",
+    "time": "2026-12-02T21:30:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_4162",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09850869713"
+   },
+   {
+    "id": "c_836",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09603668367"
+   },
+   {
+    "id": "c_3986",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09154400216"
+   },
+   {
+    "id": "c_1103",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09585099027"
+   },
+   {
+    "id": "c_4149",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09809185123"
+   },
+   {
+    "id": "c_886",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09621768313"
+   },
+   {
+    "id": "c_713",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09858019112"
+   },
+   {
+    "id": "c_9473",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09769636837"
+   },
+   {
+    "id": "c_610",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09408576223"
+   },
+   {
+    "id": "c_371",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09566644178"
+   },
+   {
+    "id": "c_502",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09852448033"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_312",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9695",
+    "name": "Vợ Hà",
+    "type": "direct",
+    "members": [
+     "Vợ Hà"
+    ],
+    "messages": [
+     {
+      "from": "Vợ Hà",
+      "content": "Anh ơi em chạy xe máy qua bên mạ rồi, mười giờ rưỡi em mới về nghe.",
+      "time": "2026-12-02T20:32:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_260",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_281",
+    "name": "Emily",
+    "type": "direct",
+    "members": [
+     "Emily"
+    ],
+    "messages": [
+     {
+      "from": "Emily",
+      "content": "Thank you anh Đức, tối nay em sẽ viết review nha.",
+      "time": "2026-12-02T19:05:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_8476",
+    "name": "Lucas",
+    "type": "direct",
+    "members": [
+     "Lucas"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

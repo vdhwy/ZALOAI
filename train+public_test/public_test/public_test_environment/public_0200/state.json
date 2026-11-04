@@ -1,0 +1,296 @@
+{
+ "_meta": {
+  "question_id": "public_0200",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "gold_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_02",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_03",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_04",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_05",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_06",
+    "name": "Không gian Nghệ thuật Mới",
+    "address": "29 Tràng Tiền, Hoàn Kiếm, Hà Nội",
+    "category": "gallery"
+   },
+   {
+    "id": "place_07",
+    "name": "Kem Phố Cổ",
+    "address": "35 Tràng Tiền, Hoàn Kiếm, Hà Nội",
+    "category": "dessert"
+   }
+  ],
+  "saved_places": [],
+  "routes": [
+   {
+    "from": [
+     "nhà",
+     "25 Láng Hạ"
+    ],
+    "to": [
+     "Không gian Nghệ thuật Mới",
+     "29 Tràng Tiền"
+    ],
+    "distance_km": 5.9,
+    "duration_min": {
+     "car": 24,
+     "motorbike": 19,
+     "walk": 74,
+     "transit": 38
+    }
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 120000,
+  "routes": [
+   {
+    "id": "metro_3",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "bus_32",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_09",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Láng Hạ",
+     "Thái Hà",
+     "Hàng Bài",
+     "Tràng Tiền"
+    ],
+    "fare": 7000,
+    "duration_min": 36,
+    "headway_min": 12,
+    "aliases": {
+     "25 Láng Hạ": "Láng Hạ",
+     "nhà": "Láng Hạ",
+     "Không gian Nghệ thuật Mới": "Tràng Tiền",
+     "29 Tràng Tiền": "Tràng Tiền"
+    }
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Kim Mã",
+    "route": "metro_3",
+    "time": "2026-09-25T09:07:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_3",
+    "time": "2026-09-25T09:17:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_3",
+    "time": "2026-09-25T09:27:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_32",
+    "time": "2026-09-25T09:04:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_32",
+    "time": "2026-09-25T09:14:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_32",
+    "time": "2026-09-25T09:24:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:02:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:10:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:18:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_01",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_02",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_03",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 0
+   }
+  ],
+  "sessions": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 124800000,
+    "sell": 126800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 118800000,
+    "sell": 120800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4272
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": []
+ }
+}

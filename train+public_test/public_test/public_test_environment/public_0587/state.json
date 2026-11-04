@@ -1,0 +1,313 @@
+{
+ "_meta": {
+  "question_id": "public_0587",
+  "current_time": "2026-11-26T08:35:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert"
+  ]
+ },
+ "public_transit": {
+  "card_balance": 120000,
+  "routes": [
+   {
+    "id": "bus_614",
+    "name": "Tuyến 6",
+    "type": "bus",
+    "stops": [
+     "Ga Huế",
+     "Nguyễn Sinh Cung",
+     "Vỹ Dạ",
+     "Thuận An",
+     "Greenhill Golf Club"
+    ],
+    "aliases": {
+     "nhà": "Nguyễn Sinh Cung",
+     "Homestay Garden House": "Nguyễn Sinh Cung",
+     "9 Nguyễn Sinh Cung": "Nguyễn Sinh Cung"
+    },
+    "fare": 12000,
+    "duration_min": 48,
+    "headway_min": 20
+   },
+   {
+    "id": "bus_157",
+    "name": "Tuyến 15",
+    "type": "bus",
+    "stops": [
+     "Ga Huế",
+     "Nguyễn Sinh Cung",
+     "Bao Vinh",
+     "Hương Phong",
+     "Greenhill Golf Club"
+    ],
+    "aliases": {
+     "nhà": "Nguyễn Sinh Cung",
+     "Homestay Garden House": "Nguyễn Sinh Cung",
+     "9 Nguyễn Sinh Cung": "Nguyễn Sinh Cung"
+    },
+    "fare": 9000,
+    "duration_min": 66,
+    "headway_min": 30
+   },
+   {
+    "id": "bus_403",
+    "name": "Tuyến 4",
+    "type": "bus",
+    "stops": [
+     "Nguyễn Sinh Cung",
+     "An Cựu",
+     "Thủy Dương",
+     "Greenfield Golf Club"
+    ],
+    "aliases": {
+     "nhà": "Nguyễn Sinh Cung",
+     "Homestay Garden House": "Nguyễn Sinh Cung",
+     "9 Nguyễn Sinh Cung": "Nguyễn Sinh Cung"
+    },
+    "fare": 7000,
+    "duration_min": 40,
+    "headway_min": 15
+   },
+   {
+    "id": "bus_279",
+    "name": "Tuyến 2",
+    "type": "bus",
+    "stops": [
+     "Nguyễn Sinh Cung",
+     "Kim Long",
+     "Greenhill Golf Club"
+    ],
+    "aliases": {
+     "nhà": "Nguyễn Sinh Cung",
+     "Homestay Garden House": "Nguyễn Sinh Cung",
+     "9 Nguyễn Sinh Cung": "Nguyễn Sinh Cung"
+    },
+    "fare": 8000,
+    "duration_min": 30,
+    "headway_min": 25
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Nguyễn Sinh Cung",
+    "route": "bus_614",
+    "time": "2026-11-26T08:50:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Sinh Cung",
+    "route": "bus_157",
+    "time": "2026-11-26T09:05:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Sinh Cung",
+    "route": "bus_403",
+    "time": "2026-11-26T08:45:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Sinh Cung",
+    "route": "bus_279",
+    "time": "2026-11-26T09:15:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_98",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-23T08:50:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_878",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-24T14:20:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_891",
+    "from": "lucas.reed@harbourline.example.test",
+    "from_name": "Lucas Reed",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Golf sáng thứ bảy",
+    "snippet": "Sáng thứ bảy tám giờ mình gặp nhau ở Greenhill Golf Club nhé.",
+    "body": "Anh Đức ơi, sáng thứ bảy tám giờ mình gặp nhau ở Greenhill Golf Club nhé, anh đi bằng gì thì báo em một tiếng.",
+    "time": "2026-11-26T07:20:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_3305",
+    "from": "booking@stayhue.example.test",
+    "from_name": "StayHuế Booking",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Xác nhận đặt phòng của khách Emily",
+    "snippet": "Khách Emily nhận phòng chiều thứ sáu.",
+    "body": "Homestay Garden House có một đặt phòng mới: khách Emily, nhận phòng chiều thứ sáu, trả phòng chủ nhật.",
+    "time": "2026-11-25T21:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 500,
+    "avg_price": 27150,
+    "price": 26950
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "quantity": 1000,
+    "avg_price": 21200,
+    "price": 24050
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1658,
+    "change_pct": -0.6
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26950,
+    "change_pct": -2.7
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 127850,
+    "change_pct": 2.0
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24050,
+    "change_pct": -0.3
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59650,
+    "change_pct": 1.4
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 61250,
+    "change_pct": -2.6
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_796",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09663766441"
+   },
+   {
+    "id": "c_823",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09950326947"
+   },
+   {
+    "id": "c_457",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09996255139"
+   },
+   {
+    "id": "c_551",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09140923648"
+   },
+   {
+    "id": "c_667",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09909763867"
+   },
+   {
+    "id": "c_665",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09809764698"
+   },
+   {
+    "id": "c_588",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09441432434",
+    "email": "lucas.reed@harbourline.example.test"
+   },
+   {
+    "id": "c_422",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09681096650"
+   },
+   {
+    "id": "c_382",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09220582727"
+   }
+  ]
+ }
+}

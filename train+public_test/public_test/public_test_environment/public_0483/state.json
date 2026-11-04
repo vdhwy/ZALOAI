@@ -1,0 +1,377 @@
+{
+ "_meta": {
+  "question_id": "public_0483",
+  "current_time": "2026-12-11T20:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_4346",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_8317",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_770",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_9805",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_262",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_595",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_708",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-12T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_2925",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-16T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_324",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-16T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_591",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-17T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "quantity": 500,
+    "avg_price": 57800,
+    "price": 63800
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 1000,
+    "avg_price": 25500,
+    "price": 26250
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 1000,
+    "avg_price": 29900,
+    "price": 33350
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 23850,
+    "change_pct": 2.7
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33350,
+    "change_pct": 2.1
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1712,
+    "change_pct": -1.1
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 63800,
+    "change_pct": -3.2
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 89850,
+    "change_pct": -2.8
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26250,
+    "change_pct": 0.0
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_7305",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 209000,
+    "due_date": "2026-12-14",
+    "paid": false
+   },
+   {
+    "id": "bill_3212",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 851000,
+    "due_date": "2026-12-17",
+    "paid": false
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_265",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm",
+    "playlists": []
+   },
+   {
+    "id": "trk_9549",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": [
+     {
+      "id": "pl_3224",
+      "name": "Nhạc tập gym"
+     }
+    ]
+   },
+   {
+    "id": "trk_8303",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc",
+    "playlists": [
+     {
+      "id": "pl_773",
+      "name": "Nhạc chill buổi tối"
+     }
+    ]
+   },
+   {
+    "id": "trk_5415",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": [
+     {
+      "id": "pl_3224",
+      "name": "Nhạc tập gym"
+     }
+    ]
+   },
+   {
+    "id": "trk_5700",
+    "title": "Bước qua nhau",
+    "artist": "Vũ.",
+    "playlists": [
+     {
+      "id": "pl_773",
+      "name": "Nhạc chill buổi tối"
+     }
+    ]
+   },
+   {
+    "id": "trk_1901",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": []
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_3224",
+    "name": "Nhạc tập gym",
+    "track_ids": [
+     "trk_9549",
+     "trk_5415"
+    ]
+   },
+   {
+    "id": "pl_773",
+    "name": "Nhạc chill buổi tối",
+    "track_ids": [
+     "trk_8303",
+     "trk_5700"
+    ]
+   }
+  ],
+  "now_playing": {
+   "track_id": "trk_265",
+   "title": "Hoa nở không màu",
+   "status": "playing"
+  }
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_926",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09929870385"
+   },
+   {
+    "id": "c_356",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09504598730"
+   },
+   {
+    "id": "c_299",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09970963070"
+   },
+   {
+    "id": "c_5400",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09616632272"
+   },
+   {
+    "id": "c_1411",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09961808540"
+   },
+   {
+    "id": "c_692",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09893295320"
+   },
+   {
+    "id": "c_200",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09987537671"
+   },
+   {
+    "id": "c_166",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09277938139"
+   },
+   {
+    "id": "c_1940",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09699245677"
+   }
+  ]
+ }
+}

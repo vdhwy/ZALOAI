@@ -1,0 +1,380 @@
+{
+ "_meta": {
+  "question_id": "train_1495",
+  "current_time": "2026-12-11T20:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "fuel_price.get_price",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_805",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_621",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_874",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_320",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_672",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_93",
+    "time": "2026-12-12T07:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_02",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-12-12T05:30:00+07:00"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_4896",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-17T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_283",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-16T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_401",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-15T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-08": {
+    "steps": 5112,
+    "calories": 204,
+    "distance_km": 3.7
+   },
+   "2026-12-09": {
+    "steps": 4607,
+    "calories": 184,
+    "distance_km": 3.3
+   },
+   "2026-12-10": {
+    "steps": 5371,
+    "calories": 214,
+    "distance_km": 3.9
+   },
+   "2026-12-11": {
+    "steps": 3003,
+    "calories": 120,
+    "distance_km": 2.2
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_105",
+    "type": "gym",
+    "minutes": 60,
+    "time": "2026-12-07T06:30:00+07:00"
+   },
+   {
+    "id": "wo_822",
+    "type": "cycling",
+    "minutes": 45,
+    "time": "2026-12-09T17:00:00+07:00"
+   },
+   {
+    "id": "wo_969",
+    "type": "gym",
+    "minutes": 20,
+    "time": "2026-12-10T17:30:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_3848",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09547030165"
+   },
+   {
+    "id": "c_481",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09452524034"
+   },
+   {
+    "id": "c_778",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09607098672"
+   },
+   {
+    "id": "c_462",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09597738930"
+   },
+   {
+    "id": "c_678",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09495673812"
+   },
+   {
+    "id": "c_3171",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09856144568"
+   },
+   {
+    "id": "c_947",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09990971868"
+   },
+   {
+    "id": "c_9578",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09360868808"
+   },
+   {
+    "id": "c_157",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09385424061"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 24200
+   },
+   {
+    "type": "e5",
+    "price": 23000
+   },
+   {
+    "type": "diesel",
+    "price": 21600
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_896",
+    "from": "lucas@hopthu.example.test",
+    "from_name": "Lucas",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-12-11T00:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_342",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-12-11T12:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_355",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-12-11T15:55:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_95",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-12-11T18:55:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_6127",
+    "from": "emily.carter@wanderly.example.test",
+    "from_name": "Emily Carter",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Walking tour route for tomorrow",
+    "snippet": "Sharing the route for our walking tour tomorrow.",
+    "body": "Hi Duc, sharing the route for our walking tour tomorrow: Imperial City to Dong Ba Market and back along the river, about 12000 steps in total. See you at 7am!",
+    "time": "2026-12-11T17:20:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_7340",
+    "from": "lucas.moreau@wanderly.example.test",
+    "from_name": "Lucas Moreau",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Bike tour Tam Giang",
+    "snippet": "Route for the bike tour on Sunday.",
+    "body": "Hey Duc, here is the bike tour route to Tam Giang lagoon on Sunday, 25 km by bike plus about 9000 steps of walking at the stops.",
+    "time": "2026-12-11T18:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 27,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-12-11",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-12",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-13",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-14",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 34
+   }
+  ]
+ }
+}

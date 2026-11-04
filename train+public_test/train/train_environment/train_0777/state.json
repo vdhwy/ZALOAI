@@ -1,0 +1,324 @@
+{
+ "_meta": {
+  "question_id": "train_0777",
+  "current_time": "2026-10-17T09:00:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-18",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-20",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 30
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_01",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_02",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_03",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_04",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Láng Hạ",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_05",
+    "name": "Xe đạp điện 105",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": false,
+    "price_per_hour": 25000,
+    "battery": 92
+   },
+   {
+    "id": "bike_06",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_07",
+    "name": "Xe đạp điện B12",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 25000,
+    "battery": 55
+   },
+   {
+    "id": "bike_08",
+    "name": "Xe đạp điện B27",
+    "station": "Trạm Yên Phụ",
+    "available": true,
+    "price_per_hour": 25000,
+    "battery": 78
+   }
+  ],
+  "reservations": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-18T19:00:00+07:00",
+    "end": "2026-10-18T20:00:00+07:00",
+    "location": "Nhà",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "đá bóng",
+    "start": "2026-10-18T15:00:00+07:00",
+    "end": "2026-10-18T16:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "khám răng",
+    "start": "2026-10-20T18:00:00+07:00",
+    "end": "2026-10-20T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "title": "Đưa con đi học vẽ",
+    "start": "2026-10-18T07:30:00+07:00",
+    "end": "2026-10-18T08:30:00+07:00",
+    "location": "Nhà văn hoá phường",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_05",
+    "title": "Chụp ảnh ngoại cảnh",
+    "start": "2026-10-18T10:00:00+07:00",
+    "end": "2026-10-18T12:00:00+07:00",
+    "location": "Hồ Tây",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_02",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_03",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_04",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_05",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_06",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_02",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_03",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-22T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-21T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-20T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

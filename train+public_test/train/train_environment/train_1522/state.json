@@ -1,0 +1,337 @@
+{
+ "_meta": {
+  "question_id": "train_1522",
+  "current_time": "2026-10-21T19:30:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls"
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25690
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27745
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.3
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_106",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 600,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_65",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 1200,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_411",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 180,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_410",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-11-05",
+    "used": false
+   },
+   {
+    "id": "vch_580",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-14",
+    "used": false
+   },
+   {
+    "id": "vch_8818",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-20",
+    "used": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_857",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_839",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_549",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_750",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_968",
+    "name": "Thằng Tuấn",
+    "type": "direct",
+    "members": [
+     "Thằng Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_431",
+    "name": "Ông Ba",
+    "type": "direct",
+    "members": [
+     "Ông Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_516",
+    "name": "Con dâu Hương",
+    "type": "direct",
+    "members": [
+     "Con dâu Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_246",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_286",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_978",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09989682539"
+   },
+   {
+    "id": "c_333",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09116407121"
+   },
+   {
+    "id": "c_2035",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09369120404"
+   },
+   {
+    "id": "c_57",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09747594421"
+   },
+   {
+    "id": "c_564",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09123172128"
+   },
+   {
+    "id": "c_452",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09815551183"
+   },
+   {
+    "id": "c_874",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09581636682"
+   },
+   {
+    "id": "c_1642",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09910409192"
+   },
+   {
+    "id": "c_724",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09224527012"
+   },
+   {
+    "id": "c_727",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09855600878"
+   },
+   {
+    "id": "c_291",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09977723273"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_318",
+    "name": "Amlodipin 5mg (huyết áp)",
+    "times": [
+     "07:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_742",
+    "name": "Metformin 500mg (tiểu đường)",
+    "times": [
+     "07:00",
+     "19:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_96",
+    "name": "Canxi D3",
+    "times": [
+     "19:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_4410",
+    "name": "Rotundin 30mg (uống trước khi ngủ)",
+    "times": [
+     "21:30"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": [
+   {
+    "schedule_id": "med_318",
+    "time": "2026-10-21T07:05:00+07:00"
+   },
+   {
+    "schedule_id": "med_742",
+    "time": "2026-10-21T07:05:00+07:00"
+   }
+  ]
+ }
+}

@@ -1,0 +1,545 @@
+{
+ "_meta": {
+  "question_id": "public_0631",
+  "current_time": "2026-10-26T13:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_4667",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_294",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_592",
+    "name": "Team Design",
+    "type": "direct",
+    "members": [
+     "Team Design"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_741",
+    "name": "Sếp David",
+    "type": "direct",
+    "members": [
+     "Sếp David"
+    ],
+    "messages": [
+     {
+      "from": "Sếp David",
+      "content": "Việt, chiều nay team Design demo lúc 3 giờ nhé.",
+      "time": "2026-10-26T09:10:00+07:00"
+     },
+     {
+      "from": "Sếp David",
+      "content": "Hai quỹ muốn mua lại cổ phiếu Halvorsen Robotics mã ZHR: bên Singapore trả 64.000 một cổ, bên Jakarta trả 61.500. Em check giá thị trường trước meeting 9 giờ sáng mai nha.",
+      "time": "2026-10-26T12:40:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_595",
+    "name": "Vợ Hằng",
+    "type": "direct",
+    "members": [
+     "Vợ Hằng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-10-27T07:00:00+07:00"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "metro_7654",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_450",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Bến Thành",
+    "route": "bus_450",
+    "time": "2026-10-26T13:25:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_450",
+    "time": "2026-10-26T13:55:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "metro_7654",
+    "time": "2026-10-26T13:30:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_450",
+    "time": "2026-10-26T13:40:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "metro_7654",
+    "time": "2026-10-26T13:22:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "metro_7654",
+    "time": "2026-10-26T13:14:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 32,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-26",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-27",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-28",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-29",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 30
+   }
+  ]
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_784",
+    "name": "Đọc sách 30 phút",
+    "streak": 3,
+    "last_logged": "2026-10-25"
+   },
+   {
+    "id": "habit_2059",
+    "name": "Ngủ trước 11 giờ",
+    "streak": 12,
+    "last_logged": "2026-10-25"
+   },
+   {
+    "id": "habit_7725",
+    "name": "Học từ vựng tiếng Anh",
+    "streak": 12,
+    "last_logged": "2026-10-24"
+   },
+   {
+    "id": "habit_340",
+    "name": "Uống đủ 2 lít nước",
+    "streak": 0
+   },
+   {
+    "id": "habit_85",
+    "name": "Chạy bộ buổi sáng",
+    "streak": 12,
+    "last_logged": "2026-10-25"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_7393",
+    "habit_id": "habit_784",
+    "date": "2026-10-25"
+   },
+   {
+    "id": "log_3876",
+    "habit_id": "habit_7725",
+    "date": "2026-10-24"
+   },
+   {
+    "id": "log_808",
+    "habit_id": "habit_2059",
+    "date": "2026-10-25"
+   },
+   {
+    "id": "log_95",
+    "habit_id": "habit_85",
+    "date": "2026-10-25"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2201",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09231277416"
+   },
+   {
+    "id": "c_864",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09439817449"
+   },
+   {
+    "id": "c_648",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09292441584"
+   },
+   {
+    "id": "c_36",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09522899857"
+   },
+   {
+    "id": "c_667",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09582662952"
+   },
+   {
+    "id": "c_813",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09297524446"
+   },
+   {
+    "id": "c_958",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09663338558"
+   },
+   {
+    "id": "c_1533",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09568944623"
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_207",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-31",
+    "depart": "08:00",
+    "arrive": "13:30",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_702",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-11-02",
+    "depart": "06:00",
+    "arrive": "09:30",
+    "price": 250000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_595",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-31",
+    "depart": "21:00",
+    "arrive": "02:00",
+    "price": 250000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_51",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-31",
+    "depart": "06:00",
+    "arrive": "16:30",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_487",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-11-02",
+    "depart": "21:00",
+    "arrive": "02:30",
+    "price": 250000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_104",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-31",
+    "depart": "06:00",
+    "arrive": "13:00",
+    "price": 400000,
+    "seats_left": 30
+   }
+  ],
+  "bookings": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_5320",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_6688",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_312",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_1206",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_397",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "Tòa nhà Nexora, 5 Tôn Đức Thắng, Quận 1",
+    "dropoff": "Căn hộ Riverside Garden, Quận 7, TP.HCM",
+    "vehicle": "car4",
+    "schedule_time": "2026-10-26T17:30:00+07:00"
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 100,
+    "avg_price": 87800,
+    "price": 91950
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 1000,
+    "avg_price": 118550,
+    "price": 125200
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26750,
+    "change_pct": -2.6
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 125200,
+    "change_pct": 2.2
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59600,
+    "change_pct": -2.6
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33550,
+    "change_pct": 0.0
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 91950,
+    "change_pct": 2.6
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1622,
+    "change_pct": 0.7
+   },
+   {
+    "symbol": "ZHR",
+    "name": "CTCP Halvorsen Robotics",
+    "price": 62300,
+    "change_pct": 1.1
+   },
+   {
+    "symbol": "ZHM",
+    "name": "CTCP Halvorsen Marine",
+    "price": 66000,
+    "change_pct": -0.5
+   }
+  ]
+ }
+}

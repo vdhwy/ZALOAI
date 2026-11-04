@@ -1,0 +1,261 @@
+{
+ "_meta": {
+  "question_id": "train_1046",
+  "current_time": "2026-10-21T19:45:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_1308",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_814",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_850",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_408",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_6746",
+    "origin": "HUI",
+    "destination": "SGN",
+    "date": "2026-11-04",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_351",
+    "origin": "HUI",
+    "destination": "SGN",
+    "date": "2026-11-04",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_854",
+    "origin": "HUI",
+    "destination": "SGN",
+    "date": "2026-11-04",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_785",
+    "origin": "HUI",
+    "destination": "SGN",
+    "date": "2026-11-04",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 24,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-10-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 33
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-22",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 28
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-23",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-24",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 28
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_874",
+    "name": "Cao Nguyên Coffee Bến Nghé",
+    "address": "2 Bến Nghé, Phú Hội, Huế",
+    "category": "cafe"
+   },
+   {
+    "id": "place_3307",
+    "name": "Bến xe phía Bắc Huế",
+    "address": "97 Lý Thái Tổ, Phú Hậu, Huế",
+    "category": "bến xe"
+   },
+   {
+    "id": "place_792",
+    "name": "Bệnh viện Trung ương Huế",
+    "address": "16 Lê Lợi, Vĩnh Ninh, Huế",
+    "category": "hospital"
+   },
+   {
+    "id": "place_1460",
+    "name": "Bến xe phía Nam Huế",
+    "address": "97 An Dương Vương, An Đông, Huế",
+    "category": "bến xe"
+   },
+   {
+    "id": "place_8285",
+    "name": "Bún bò Mụ Rơi",
+    "address": "2 Nguyễn Du, Phú Cát, Huế",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": [],
+  "routes": [
+   {
+    "from": [
+     "17 nguyen hue"
+    ],
+    "to": [
+     "ben xe phia bac"
+    ],
+    "distance_km": 5.6,
+    "duration_min": {
+     "motorbike": 15,
+     "car": 17
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5546",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09992294510"
+   },
+   {
+    "id": "c_313",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09511404251"
+   },
+   {
+    "id": "c_8003",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09741306505"
+   },
+   {
+    "id": "c_70",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09155229025"
+   },
+   {
+    "id": "c_401",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09677317325"
+   },
+   {
+    "id": "c_945",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09551662060"
+   },
+   {
+    "id": "c_903",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09212644761"
+   },
+   {
+    "id": "c_720",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09742521055"
+   },
+   {
+    "id": "c_285",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09343735802"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ }
+}

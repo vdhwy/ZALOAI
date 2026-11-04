@@ -1,0 +1,476 @@
+{
+ "_meta": {
+  "question_id": "train_0962",
+  "current_time": "2026-11-10T14:25:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "library.reserve",
+   "library.search",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_7384",
+    "name": "Thằng Tuấn",
+    "type": "direct",
+    "members": [
+     "Thằng Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_235",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_17",
+    "name": "Con dâu Hương",
+    "type": "direct",
+    "members": [
+     "Con dâu Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8603",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1334",
+    "name": "Ông Ba",
+    "type": "direct",
+    "members": [
+     "Ông Ba"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 90,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_9800",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 15
+   },
+   {
+    "id": "room_4315",
+    "name": "phòng khách",
+    "area_m2": 25
+   },
+   {
+    "id": "room_623",
+    "name": "phòng ngủ",
+    "area_m2": 10
+   },
+   {
+    "id": "room_328",
+    "name": "bếp",
+    "area_m2": 8
+   },
+   {
+    "id": "room_3195",
+    "name": "phòng làm việc",
+    "area_m2": 25
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng ngủ nhỏ",
+    "phòng khách",
+    "phòng ngủ",
+    "bếp",
+    "phòng làm việc"
+   ],
+   "whole_house": true,
+   "mode": "vacuum"
+  }
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_575",
+    "name": "Lau nhà",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_304",
+    "name": "Đi chợ",
+    "assignee": "Bác Tư",
+    "done": false
+   },
+   {
+    "id": "chore_650",
+    "name": "Đổ rác",
+    "assignee": "Bà nội",
+    "done": false
+   },
+   {
+    "id": "chore_298",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Bác Tư",
+    "done": false
+   }
+  ],
+  "members": [
+   "Bác Tư",
+   "Lan",
+   "Bà nội"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_663",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_472",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_743",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_246",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 126500000,
+    "sell": 128500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 120500000,
+    "sell": 122500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4186
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_9334",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-16T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_882",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-14T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_610",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-11T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_522",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09867468749"
+   },
+   {
+    "id": "c_7172",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09948309260"
+   },
+   {
+    "id": "c_334",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09422156953"
+   },
+   {
+    "id": "c_566",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09531630355"
+   },
+   {
+    "id": "c_613",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09409833725"
+   },
+   {
+    "id": "c_7367",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09288959404"
+   },
+   {
+    "id": "c_105",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09153251781"
+   },
+   {
+    "id": "c_456",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09610089126"
+   },
+   {
+    "id": "c_7457",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09513312611"
+   },
+   {
+    "id": "c_132",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09632676649"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_8650",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_378",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_607",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_2228",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_1062",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_483",
+    "time": "2026-11-11T07:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_3615",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_227",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": false
+   },
+   {
+    "id": "book_545",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_517",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_18",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_420",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": false
+   }
+  ],
+  "reservations": []
+ }
+}

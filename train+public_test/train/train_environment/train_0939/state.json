@@ -1,0 +1,424 @@
+{
+ "_meta": {
+  "question_id": "train_0939",
+  "current_time": "2026-11-04T12:35:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_988",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09657185034"
+   },
+   {
+    "id": "c_356",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09139697835"
+   },
+   {
+    "id": "c_75",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09564183130"
+   },
+   {
+    "id": "c_653",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09961956757"
+   },
+   {
+    "id": "c_7698",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09898858308"
+   },
+   {
+    "id": "c_205",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09125197688"
+   },
+   {
+    "id": "c_603",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09500074960"
+   },
+   {
+    "id": "c_267",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09473192870"
+   },
+   {
+    "id": "c_504",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09573637279"
+   },
+   {
+    "id": "c_943",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09125285192"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 29,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-04",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-05",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-06",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-07",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_2785",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_277",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_6269",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_358",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_264",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_338",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_470",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_4330",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_854",
+    "show_id": "show_4330",
+    "title": "Số 15: Rác thải nhựa ở đô thị",
+    "number": 15,
+    "duration_min": 25,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_765",
+    "show_id": "show_338",
+    "title": "Số 14: Quản lý chi tiêu gia đình",
+    "number": 14,
+    "duration_min": 18,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_893",
+    "show_id": "show_338",
+    "title": "Số 12: Lập quỹ khẩn cấp",
+    "number": 12,
+    "duration_min": 18,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_9030",
+    "show_id": "show_264",
+    "title": "Số 8: Nhà giả kim - phần 1",
+    "number": 8,
+    "duration_min": 25,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_6454",
+    "show_id": "show_470",
+    "title": "Số 19: Vì sao bầu trời màu xanh",
+    "number": 19,
+    "duration_min": 25,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_822",
+    "show_id": "show_4330",
+    "title": "Số 16: Trồng cây trên sân thượng",
+    "number": 16,
+    "duration_min": 18,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_4729",
+    "show_id": "show_264",
+    "title": "Số 9: Nhà giả kim - phần 2",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_928",
+    "show_id": "show_4330",
+    "title": "Số 17: Đi xe đạp đi làm",
+    "number": 17,
+    "duration_min": 32,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_3609",
+    "show_id": "show_470",
+    "title": "Số 20: Giấc ngủ và trí nhớ",
+    "number": 20,
+    "duration_min": 32,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_887",
+    "show_id": "show_338",
+    "title": "Số 13: Gửi tiết kiệm hay mua vàng",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_833",
+    "show_id": "show_470",
+    "title": "Số 21: Lỗ đen là gì",
+    "number": 21,
+    "duration_min": 45,
+    "published": "2026-10-28"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_7459",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_6800",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_4053",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_707",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_3707",
+    "title": "Họp tổ dân phố số 3 phường Hàng Bạc",
+    "start": "2026-11-04T12:45:00+07:00",
+    "link": "https://meet.example.test/myg-movo-dpg",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_545",
+    "title": "Họp Mặt trận Tổ quốc phường Hàng Bạc",
+    "start": "2026-11-04T12:45:00+07:00",
+    "link": "https://meet.example.test/dgs-rmpr-umc",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_619",
+    "title": "Giao hữu câu lạc bộ cờ tướng phường Hàng Bạc",
+    "start": "2026-11-04T12:45:00+07:00",
+    "link": "https://meet.example.test/hob-twre-kla",
+    "attendees": [
+     "c_205"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_92",
+    "title": "Họp tổ dân phố phường Hàng Đào",
+    "start": "2026-11-04T12:45:00+07:00",
+    "link": "https://meet.example.test/vua-pmqe-zdn",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_2481",
+    "title": "Họp lớp online",
+    "start": "2026-11-07T14:00:00+07:00",
+    "link": "https://meet.example.test/qar-pssz-tkj",
+    "attendees": [
+     "c_943"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_7945",
+    "title": "đi chơi công viên",
+    "start": "2026-11-05T14:00:00+07:00",
+    "end": "2026-11-05T15:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_132",
+    "title": "khám răng",
+    "start": "2026-11-06T15:30:00+07:00",
+    "end": "2026-11-06T16:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_494",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-06T19:00:00+07:00",
+    "end": "2026-11-06T20:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_8265",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-07T18:00:00+07:00",
+    "end": "2026-11-07T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_988",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_616",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   }
+  ]
+ }
+}

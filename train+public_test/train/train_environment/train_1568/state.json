@@ -1,0 +1,264 @@
+{
+ "_meta": {
+  "question_id": "train_1568",
+  "current_time": "2026-11-13T07:25:00+07:00",
+  "tools": [
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "library.reserve",
+   "library.search",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_57",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-12-01",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_358",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-12-09",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_569",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-11-17",
+    "status": "cancelled",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_857",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-12-04",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_309",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-13T14:00:00+07:00",
+    "link": "https://meet.example.test/xdd-jhnf-orb",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_2750",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-11-15T09:00:00+07:00",
+    "link": "https://meet.example.test/lvr-nbul-bte",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_914",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-14T15:00:00+07:00",
+    "link": "https://meet.example.test/hlp-quip-pql",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_2283",
+    "title": "Họp lớp online",
+    "start": "2026-11-13T20:30:00+07:00",
+    "link": "https://meet.example.test/btv-rudk-gbm",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_704",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_874",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_464",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_945",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_907",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": false
+   }
+  ],
+  "reservations": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 29,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-13",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 29
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-14",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 29
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-15",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-16",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 30
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_6869",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_780",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_2717",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_324",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_5336",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_9667",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_116",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_647",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_6063",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ }
+}

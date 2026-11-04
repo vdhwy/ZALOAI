@@ -1,0 +1,370 @@
+{
+ "_meta": {
+  "question_id": "train_0998",
+  "current_time": "2026-10-31T09:35:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop"
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-31",
+    "to": "2026-10-31",
+    "kwh": 7.7,
+    "cost": 22300,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.5
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.5
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-25",
+    "to": "2026-10-31",
+    "kwh": 74.6,
+    "cost": 216300,
+    "days": [
+     {
+      "date": "2026-10-25",
+      "kwh": 14.2
+     },
+     {
+      "date": "2026-10-26",
+      "kwh": 15.2
+     },
+     {
+      "date": "2026-10-27",
+      "kwh": 8.9
+     },
+     {
+      "date": "2026-10-28",
+      "kwh": 11.4
+     },
+     {
+      "date": "2026-10-29",
+      "kwh": 7.4
+     },
+     {
+      "date": "2026-10-30",
+      "kwh": 9.8
+     },
+     {
+      "date": "2026-10-31",
+      "kwh": 7.7
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-31",
+    "kwh": 339.4,
+    "cost": 984300
+   }
+  },
+  "alert_threshold_kwh": 380
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_784",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_637",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_940",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_595",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_843",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_343",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_990",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_808",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_862",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_5771",
+    "name": "Tưới cây",
+    "assignee": "Mẹ",
+    "done": false
+   },
+   {
+    "id": "chore_20",
+    "name": "Nấu cơm tối",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_1502",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Bé Na",
+    "done": false
+   },
+   {
+    "id": "chore_7904",
+    "name": "Đổ rác",
+    "assignee": "Bé Na",
+    "done": true
+   },
+   {
+    "id": "chore_972",
+    "name": "Lau nhà",
+    "assignee": "Chị Hạnh",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị Hạnh",
+   "Bé Na",
+   "Mẹ"
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "cleaning",
+  "mode": "mop",
+  "rooms": [
+   {
+    "id": "room_217",
+    "name": "phòng khách",
+    "area_m2": 18
+   },
+   {
+    "id": "room_2048",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 15
+   },
+   {
+    "id": "room_5331",
+    "name": "bếp",
+    "area_m2": 25
+   },
+   {
+    "id": "room_8555",
+    "name": "phòng ngủ",
+    "area_m2": 22
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng khách",
+    "phòng ngủ nhỏ",
+    "bếp",
+    "phòng ngủ"
+   ],
+   "whole_house": true,
+   "mode": "mop"
+  }
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_241",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_570",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_729",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_679",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_517",
+    "restaurant_id": "rest_729",
+    "items": [
+     {
+      "item_id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 219000,
+    "address": "12 Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "payment": "cash",
+    "status": "delivered",
+    "time": "2026-10-30T19:10:00+07:00"
+   },
+   {
+    "id": "ord_548",
+    "restaurant_id": "rest_679",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 110000,
+    "address": "12 Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "payment": "cash",
+    "status": "delivering",
+    "time": "2026-10-31T09:05:00+07:00"
+   }
+  ]
+ }
+}

@@ -1,0 +1,349 @@
+{
+ "_meta": {
+  "question_id": "public_0115",
+  "current_time": "2026-11-28T09:45:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "gold_price.get_price",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 780000,
+    "due_date": "2026-11-30",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 210000,
+    "due_date": "2026-12-01",
+    "paid": false
+   },
+   {
+    "id": "bill_03",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 220000,
+    "due_date": "2026-12-02",
+    "paid": false
+   },
+   {
+    "id": "bill_04",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 150000,
+    "due_date": "2026-12-06",
+    "paid": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_01",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_02",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_01",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_02",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_03",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 120800000,
+    "sell": 122800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 114800000,
+    "sell": 116800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4297
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_01",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_02",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_03",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_04",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_05",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_06",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_01",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_02",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "phone": {
+  "calls": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09377563471"
+   },
+   {
+    "id": "c_02",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09769958485"
+   },
+   {
+    "id": "c_03",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09313734392"
+   },
+   {
+    "id": "c_04",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09781737631"
+   },
+   {
+    "id": "c_05",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09638037534"
+   },
+   {
+    "id": "c_06",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09533110989"
+   },
+   {
+    "id": "c_07",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09945557251"
+   },
+   {
+    "id": "c_08",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09319293185"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 25,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-28",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-29",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-30",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-01",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 32
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

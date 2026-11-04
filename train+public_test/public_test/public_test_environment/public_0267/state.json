@@ -1,0 +1,407 @@
+{
+ "_meta": {
+  "question_id": "public_0267",
+  "current_time": "2026-10-01T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_02",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_03",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_04",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_05",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_06",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": [],
+  "routes": [
+   {
+    "from": [
+     "nhà",
+     "25 Láng Hạ, Đống Đa, Hà Nội",
+     "25 Láng Hạ, Đống Đa",
+     "25 Láng Hạ",
+     "Láng Hạ"
+    ],
+    "to": [
+     "Trung tâm Văn hóa Tây Hồ",
+     "Trung tâm Văn hóa Tây Hồ, Hà Nội",
+     "TTVH Tây Hồ"
+    ],
+    "distance_km": 6.5,
+    "duration_min": {
+     "car": 25,
+     "motorbike": 20,
+     "walk": 80,
+     "transit": 40
+    }
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 120000,
+  "routes": [
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   },
+   {
+    "id": "metro_3",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "bus_09",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Bờ Hồ",
+     "Láng Hạ",
+     "Cầu Giấy",
+     "Đại học Mỏ"
+    ],
+    "fare": 7000,
+    "duration_min": 45,
+    "headway_min": 15
+   },
+   {
+    "id": "bus_50",
+    "name": "Tuyến 50",
+    "type": "bus",
+    "stops": [
+     "Láng Hạ",
+     "Liễu Giai",
+     "Thụy Khuê",
+     "Lạc Long Quân",
+     "Trung tâm Văn hóa Tây Hồ"
+    ],
+    "fare": 7000,
+    "duration_min": 40,
+    "headway_min": 15,
+    "aliases": {
+     "nhà": "Láng Hạ",
+     "25 Láng Hạ, Đống Đa, Hà Nội": "Láng Hạ",
+     "TTVH Tây Hồ": "Trung tâm Văn hóa Tây Hồ"
+    }
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-10-01T09:05:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-10-01T09:13:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-10-01T09:21:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_3",
+    "time": "2026-10-01T09:08:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_3",
+    "time": "2026-10-01T09:18:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_3",
+    "time": "2026-10-01T09:28:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_09",
+    "time": "2026-10-01T09:11:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_09",
+    "time": "2026-10-01T09:26:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_09",
+    "time": "2026-10-01T09:41:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_02",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_03",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-02T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-07T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-05T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "dung.pham@congty.example.test",
+    "from_name": "Anh Dũng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-10-01T05:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-09-30T09:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-09-30T03:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_04",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-09-29T12:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "họp phụ huynh",
+    "start": "2026-10-02T09:30:00+07:00",
+    "end": "2026-10-02T10:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-03T14:30:00+07:00",
+    "end": "2026-10-03T15:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "đi chơi công viên",
+    "start": "2026-10-04T15:00:00+07:00",
+    "end": "2026-10-04T16:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

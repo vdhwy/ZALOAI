@@ -1,0 +1,370 @@
+{
+ "_meta": {
+  "question_id": "train_1347",
+  "current_time": "2026-11-08T17:30:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "gold_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25744
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27803
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.6
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_768",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_4692",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_794",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_946",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 118500000,
+    "sell": 120500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 112500000,
+    "sell": 114500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3984
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_485",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09449809801"
+   },
+   {
+    "id": "c_307",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09369758502"
+   },
+   {
+    "id": "c_285",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09892330374"
+   },
+   {
+    "id": "c_5798",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09856135579"
+   },
+   {
+    "id": "c_7654",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09714261246"
+   },
+   {
+    "id": "c_549",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09344035727"
+   },
+   {
+    "id": "c_6924",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09763700530"
+   },
+   {
+    "id": "c_565",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09627606725"
+   },
+   {
+    "id": "c_82",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09340997832"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_203",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-07T22:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_640",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-07T17:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_733",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-07T20:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_9152",
+    "from": "ma.ngoc@giadinh.example.test",
+    "from_name": "Mạ",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Chuyện mua nhẫn",
+    "snippet": "Ngọc ơi, tối ni Mạ rảnh lúc bảy giờ hoặc chín giờ.",
+    "body": "Ngọc ơi, tối ni Mạ rảnh lúc bảy giờ hoặc chín giờ, con gọi video cho Mạ để bàn chuyện mua nhẫn nghe con.",
+    "time": "2026-11-08T16:55:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_1512",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-11-09T10:30:00+07:00",
+    "link": "https://meet.example.test/egz-lyjt-kpb",
+    "attendees": [
+     "c_565",
+     "c_549"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_844",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-10T20:30:00+07:00",
+    "link": "https://meet.example.test/tly-jshc-llx",
+    "attendees": [
+     "c_5798",
+     "c_285"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_7025",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-11T09:00:00+07:00",
+    "link": "https://meet.example.test/lxz-uifg-qmz",
+    "attendees": [
+     "c_565"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_3745",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-11T09:30:00+07:00",
+    "link": "https://meet.example.test/bqw-fesz-tgd",
+    "attendees": [
+     "c_82"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_5273",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 213000,
+    "due_date": "2026-11-13",
+    "paid": false
+   },
+   {
+    "id": "bill_905",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 197000,
+    "due_date": "2026-11-13",
+    "paid": false
+   },
+   {
+    "id": "bill_9308",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 224000,
+    "due_date": "2026-11-14",
+    "paid": false
+   },
+   {
+    "id": "bill_786",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 850000,
+    "due_date": "2026-11-11",
+    "paid": false
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_361",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_551",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_67",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,327 @@
+{
+ "_meta": {
+  "question_id": "train_1450",
+  "current_time": "2026-11-15T08:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_696",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09237420197"
+   },
+   {
+    "id": "c_662",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09164439466"
+   },
+   {
+    "id": "c_9134",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09336281608"
+   },
+   {
+    "id": "c_4816",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09215748264"
+   },
+   {
+    "id": "c_1236",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09963891836"
+   },
+   {
+    "id": "c_5653",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09378107847"
+   },
+   {
+    "id": "c_8531",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09649312138"
+   },
+   {
+    "id": "c_622",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09585694040"
+   },
+   {
+    "id": "c_621",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09189392607"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_3318",
+    "title": "Đưa Emily ra sân bay Phú Bài",
+    "start": "2026-11-15T14:00:00+07:00",
+    "end": "2026-11-15T15:00:00+07:00",
+    "location": "Sân bay Phú Bài",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_741",
+    "title": "Dẫn Lucas đạp xe quanh Thành nội",
+    "start": "2026-11-15T16:00:00+07:00",
+    "end": "2026-11-15T18:00:00+07:00",
+    "location": "Đại Nội Huế",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_995",
+    "title": "Ăn tối với gia đình",
+    "start": "2026-11-16T18:00:00+07:00",
+    "end": "2026-11-16T19:30:00+07:00",
+    "location": "Nhà",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_906",
+    "title": "Khám răng",
+    "start": "2026-11-17T19:30:00+07:00",
+    "end": "2026-11-17T20:30:00+07:00",
+    "location": "Nha khoa Thuận Hóa",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_854",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_1164",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_168",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_849",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_7242",
+    "time": "2026-11-13T15:00:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_989",
+    "time": "2026-11-14T19:15:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_6402",
+    "time": "2026-11-14T23:40:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_660",
+    "time": "2026-11-13T22:30:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_753",
+    "time": "2026-11-14T19:30:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-12": {
+    "steps": 8723,
+    "calories": 348,
+    "distance_km": 6.3
+   },
+   "2026-11-13": {
+    "steps": 10783,
+    "calories": 431,
+    "distance_km": 7.8
+   },
+   "2026-11-14": {
+    "steps": 2594,
+    "calories": 103,
+    "distance_km": 1.9
+   },
+   "2026-11-15": {
+    "steps": 2898,
+    "calories": 115,
+    "distance_km": 2.1
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_895",
+    "type": "walking",
+    "minutes": 45,
+    "time": "2026-11-14T06:30:00+07:00"
+   },
+   {
+    "id": "wo_917",
+    "type": "running",
+    "minutes": 60,
+    "time": "2026-11-13T06:00:00+07:00"
+   },
+   {
+    "id": "wo_4088",
+    "type": "walking",
+    "minutes": 30,
+    "time": "2026-11-11T18:00:00+07:00"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-15",
+    "prizes": {
+     "special": "474143",
+     "first": "74312",
+     "eighth": "72"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-15",
+    "prizes": {
+     "special": "169017",
+     "first": "86207",
+     "eighth": "74"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-15",
+    "prizes": {
+     "special": "422145",
+     "first": "34370",
+     "eighth": "26"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-15",
+    "prizes": {
+     "special": "834431",
+     "first": "11135",
+     "eighth": "56"
+    }
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "sms": {
+  "messages": []
+ }
+}

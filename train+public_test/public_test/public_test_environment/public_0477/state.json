@@ -1,0 +1,301 @@
+{
+ "_meta": {
+  "question_id": "public_0477",
+  "current_time": "2026-10-19T11:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "translator.translate"
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_569",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1078",
+    "name": "Anh Mười",
+    "type": "direct",
+    "members": [
+     "Anh Mười"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7185",
+    "name": "Vợ Hồng",
+    "type": "direct",
+    "members": [
+     "Vợ Hồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_135",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_450",
+    "name": "Thằng Tí",
+    "type": "direct",
+    "members": [
+     "Thằng Tí"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_709",
+    "time": "2026-10-20T07:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 500,
+    "avg_price": 23450,
+    "price": 26000
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "quantity": 200,
+    "avg_price": 21550,
+    "price": 23550
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1646,
+    "change_pct": 0.2
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33050,
+    "change_pct": 1.8
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 91450,
+    "change_pct": 0.0
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 23550,
+    "change_pct": -3.1
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26000,
+    "change_pct": -1.9
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 124650,
+    "change_pct": 0.9
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_3149",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_631",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_5654",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_3989",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_849",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_623",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_678",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2053",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09590091227"
+   },
+   {
+    "id": "c_656",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09348686419"
+   },
+   {
+    "id": "c_6544",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09299899959"
+   },
+   {
+    "id": "c_963",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09720927343"
+   },
+   {
+    "id": "c_372",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09484555527"
+   },
+   {
+    "id": "c_291",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09585053599"
+   },
+   {
+    "id": "c_835",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09362766436"
+   },
+   {
+    "id": "c_686",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09819580572"
+   },
+   {
+    "id": "c_993",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09743423361"
+   },
+   {
+    "id": "c_879",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09842289372"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   }
+  ]
+ }
+}

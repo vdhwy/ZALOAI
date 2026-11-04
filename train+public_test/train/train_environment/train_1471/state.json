@@ -1,0 +1,395 @@
+{
+ "_meta": {
+  "question_id": "train_1471",
+  "current_time": "2026-12-10T21:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_50",
+    "type": "water",
+    "provider": "Nước sạch Hà Nội",
+    "amount": 210000,
+    "due_date": "2026-12-13",
+    "paid": false
+   },
+   {
+    "id": "bill_878",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 155000,
+    "due_date": "2026-12-16",
+    "paid": false
+   },
+   {
+    "id": "bill_5108",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 198000,
+    "due_date": "2026-12-18",
+    "paid": false
+   },
+   {
+    "id": "bill_712",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 221000,
+    "due_date": "2026-12-12",
+    "paid": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_518",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_3268",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_5083",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_888",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_128",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_562",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2027-01-07",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_942",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-12-15",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_406",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-12-25",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_8163",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-12-13",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_87",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-10T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_9182",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-10T09:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_3306",
+    "title": "Đón khách Tainan ở Nội Bài",
+    "due": "2026-12-12T19:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_578",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-10T09:00:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_673",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-09T20:30:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_1887",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-11T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_741",
+    "title": "Bay đi Taipei",
+    "due": "2026-12-14T07:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-12-10",
+    "prizes": {
+     "special": "248568",
+     "first": "16479",
+     "eighth": "36"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-12-10",
+    "prizes": {
+     "special": "629234",
+     "first": "90398",
+     "eighth": "65"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-12-10",
+    "prizes": {
+     "special": "357731",
+     "first": "96184",
+     "eighth": "50"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-12-10",
+    "prizes": {
+     "special": "896357",
+     "first": "70568",
+     "eighth": "30"
+    }
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_304",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_811",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_6078",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_7237",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_398",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_4502",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_178",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_2500",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ }
+}

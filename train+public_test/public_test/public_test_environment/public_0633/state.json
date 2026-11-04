@@ -1,0 +1,477 @@
+{
+ "_meta": {
+  "question_id": "public_0633",
+  "current_time": "2026-11-10T19:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_701",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_8178",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_777",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_2396",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_907",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_5277",
+    "items": [
+     {
+      "product_id": "gro_8178",
+      "name": "Gạo ST25 túi 5kg",
+      "price": 185000,
+      "quantity": 2
+     }
+    ],
+    "total": 370000,
+    "status": "delivered",
+    "delivery_time": "2026-11-01T09:00:00+07:00"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_874",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09273007020"
+   },
+   {
+    "id": "c_90",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09993420545"
+   },
+   {
+    "id": "c_3614",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09285892261"
+   },
+   {
+    "id": "c_453",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09239630866"
+   },
+   {
+    "id": "c_3639",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09499703427"
+   },
+   {
+    "id": "c_7246",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09492726683"
+   },
+   {
+    "id": "c_40",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09452256755"
+   },
+   {
+    "id": "c_623",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09982420431"
+   },
+   {
+    "id": "c_762",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09421681595"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_303",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_897",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_307",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_8044",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_341",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_533",
+    "name": "Balo laptop Mikkor 15.6 inch",
+    "price": 650000,
+    "seller": "Mikkor Store",
+    "category": "thời trang",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_288",
+    "name": "Đèn bàn LED chống cận Rạng Đông",
+    "price": 275000,
+    "seller": "Rạng Đông Official",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_697",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.5,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_5277",
+    "items": [
+     {
+      "product_id": "prod_303",
+      "name": "Áo khoác gió nam CoolWear",
+      "price": 499000,
+      "quantity": 1
+     }
+    ],
+    "total": 499000,
+    "status": "delivered",
+    "placed_at": "2026-11-06T11:15:00+07:00",
+    "seller": "CoolWear",
+    "delivered_at": "2026-11-09T11:15:00+07:00"
+   },
+   {
+    "id": "ord_373",
+    "items": [
+     {
+      "product_id": "prod_697",
+      "name": "Tai nghe Bluetooth Soundcore R50i",
+      "price": 450000,
+      "quantity": 1
+     }
+    ],
+    "total": 450000,
+    "status": "shipping",
+    "placed_at": "2026-11-10T15:15:00+07:00",
+    "seller": "Anker Official Store"
+   },
+   {
+    "id": "ord_242",
+    "items": [
+     {
+      "product_id": "prod_533",
+      "name": "Balo laptop Mikkor 15.6 inch",
+      "price": 650000,
+      "quantity": 1
+     }
+    ],
+    "total": 650000,
+    "status": "placed",
+    "placed_at": "2026-11-07T16:15:00+07:00",
+    "seller": "Mikkor Store"
+   },
+   {
+    "id": "ord_331",
+    "items": [
+     {
+      "product_id": "prod_897",
+      "name": "Chuột không dây Logitech M331",
+      "price": 349000,
+      "quantity": 1
+     }
+    ],
+    "total": 349000,
+    "status": "shipping",
+    "placed_at": "2026-11-08T14:15:00+07:00",
+    "seller": "Logitech Store"
+   }
+  ],
+  "returns": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_433",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_6029",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_182",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_8008",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_4988",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": true
+   },
+   {
+    "id": "item_2207",
+    "name": "cốc giữ nhiệt",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_3318",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": true
+   },
+   {
+    "id": "item_659",
+    "name": "đèn bàn chống cận",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_441",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_1730",
+    "name": "ấm siêu tốc",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_604",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_433",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_2193",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_803",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ }
+}

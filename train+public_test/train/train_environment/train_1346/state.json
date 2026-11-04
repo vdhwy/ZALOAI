@@ -1,0 +1,456 @@
+{
+ "_meta": {
+  "question_id": "train_1346",
+  "current_time": "2026-11-29T17:55:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_905",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_272",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_7542",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_589",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-29",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-30",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-01",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-02",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 28
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_5427",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-29T07:40:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_605",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-28T18:25:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_15",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-11-29T06:40:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_51",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-11-29T14:55:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_89",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-29T03:25:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_881",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-29T06:25:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   }
+  ],
+  "saved": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_7469",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_40",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_842",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_154",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_919",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_24",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-29",
+    "prizes": {
+     "special": "652756",
+     "first": "28047",
+     "eighth": "55"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-29",
+    "prizes": {
+     "special": "877932",
+     "first": "60564",
+     "eighth": "75"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-29",
+    "prizes": {
+     "special": "995104",
+     "first": "97454",
+     "eighth": "20"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-29",
+    "prizes": {
+     "special": "794496",
+     "first": "91919",
+     "eighth": "40"
+    }
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_670",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-04T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_597",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-30T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_2209",
+    "title": "Đưa vé số cho Laura Castro",
+    "due": "2026-11-30T18:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_817",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-29T17:00:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_138",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-03T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_06",
+    "due": "",
+    "priority": "normal",
+    "done": false,
+    "title": "Đưa vé số cho Laura Costa"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_263",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09853976265"
+   },
+   {
+    "id": "c_603",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09226082896"
+   },
+   {
+    "id": "c_553",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09360714022"
+   },
+   {
+    "id": "c_821",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09628660636"
+   },
+   {
+    "id": "c_9398",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09687685469"
+   },
+   {
+    "id": "c_23",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09644720013"
+   },
+   {
+    "id": "c_2583",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09303043192"
+   },
+   {
+    "id": "c_739",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09187218343"
+   },
+   {
+    "id": "c_951",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09815016583"
+   },
+   {
+    "id": "c_3223",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09924010768"
+   },
+   {
+    "id": "c_520",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09414811299"
+   },
+   {
+    "id": "c_278",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09807191982"
+   }
+  ]
+ }
+}

@@ -1,0 +1,446 @@
+{
+ "_meta": {
+  "question_id": "train_1231",
+  "current_time": "2026-11-12T10:45:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_3772",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": false,
+    "battery": 80
+   },
+   {
+    "id": "lock_1156",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_311",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_57",
+    "content": "Gọi Sếp Trân chốt hợp đồng bên Tân Phú",
+    "time": "2026-11-12T14:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_214",
+    "content": "Nghe tập Rác thải nhựa ở đô thị Vy gửi",
+    "time": "2026-11-12T21:30:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_903",
+    "content": "Nghe tập Lỗ đen là gì",
+    "time": "2026-11-16T22:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25657
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27709
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.0
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_202",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_220",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_595",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_215",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_350",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_130",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_9967",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_540",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_479",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_832",
+    "show_id": "show_130",
+    "title": "Số 12: Nhà giả kim - phần 2",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-11-05"
+   },
+   {
+    "id": "ep_368",
+    "show_id": "show_540",
+    "title": "Số 12: Lỗ đen là gì",
+    "number": 12,
+    "duration_min": 45,
+    "published": "2026-11-05"
+   },
+   {
+    "id": "ep_4245",
+    "show_id": "show_479",
+    "title": "Số 20: Đi xe đạp đi làm",
+    "number": 20,
+    "duration_min": 25,
+    "published": "2026-11-05"
+   },
+   {
+    "id": "ep_6073",
+    "show_id": "show_479",
+    "title": "Số 18: Rác thải nhựa ở đô thị",
+    "number": 18,
+    "duration_min": 45,
+    "published": "2026-10-22"
+   },
+   {
+    "id": "ep_2365",
+    "show_id": "show_540",
+    "title": "Số 10: Vì sao bầu trời màu xanh",
+    "number": 10,
+    "duration_min": 45,
+    "published": "2026-10-22"
+   },
+   {
+    "id": "ep_378",
+    "show_id": "show_540",
+    "title": "Số 11: Giấc ngủ và trí nhớ",
+    "number": 11,
+    "duration_min": 18,
+    "published": "2026-10-29"
+   },
+   {
+    "id": "ep_7619",
+    "show_id": "show_479",
+    "title": "Số 19: Trồng cây trên sân thượng",
+    "number": 19,
+    "duration_min": 18,
+    "published": "2026-10-29"
+   },
+   {
+    "id": "ep_685",
+    "show_id": "show_9967",
+    "title": "Số 15: Nghề diễn và những áp lực",
+    "number": 15,
+    "duration_min": 18,
+    "published": "2026-11-05"
+   },
+   {
+    "id": "ep_5949",
+    "show_id": "show_130",
+    "title": "Số 11: Nhà giả kim - phần 1",
+    "number": 11,
+    "duration_min": 32,
+    "published": "2026-10-29"
+   },
+   {
+    "id": "ep_2510",
+    "show_id": "show_9967",
+    "title": "Số 14: Sống chậm giữa thành phố",
+    "number": 14,
+    "duration_min": 25,
+    "published": "2026-10-29"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_115",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_895",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_2562",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_787",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_405",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_5235",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_692",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_591",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_6056",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_885",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_4646",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_1019",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ }
+}

@@ -1,0 +1,490 @@
+{
+ "_meta": {
+  "question_id": "train_1638",
+  "current_time": "2026-11-16T19:30:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_30",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_6731",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_615",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": false
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 127200000,
+    "sell": 129200000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 121200000,
+    "sell": 123200000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4211
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_360",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_202",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_457",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_8008",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_483",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_7278",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_575",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_614",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": {
+   "track_id": "trk_483",
+   "title": "Hoa nở không màu",
+   "status": "playing"
+  }
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2130",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09591078605"
+   },
+   {
+    "id": "c_2023",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09791765240"
+   },
+   {
+    "id": "c_734",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09270735193"
+   },
+   {
+    "id": "c_6840",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09779765178"
+   },
+   {
+    "id": "c_755",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09399580823"
+   },
+   {
+    "id": "c_4645",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09210449526"
+   },
+   {
+    "id": "c_39",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09443847964"
+   },
+   {
+    "id": "c_554",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09950274882"
+   },
+   {
+    "id": "c_644",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09208182932"
+   },
+   {
+    "id": "c_5479",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09593522173"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_5690",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-23",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_9134",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-23",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_325",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-23",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_4882",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-23",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_868",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-15T20:00:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_124",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-20T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_341",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-17T17:30:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_782",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-19T17:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_958",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-20T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_06",
+    "due": "2026-11-18T17:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Gửi invoice cho Anh Lộc"
+   },
+   {
+    "id": "task_07",
+    "due": "2026-11-20T09:00:00+07:00",
+    "priority": "high",
+    "done": false,
+    "title": "Kiểm hàng tồn kho"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_96",
+    "title": "đi chơi công viên",
+    "start": "2026-11-17T18:00:00+07:00",
+    "end": "2026-11-17T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_714",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-17T10:00:00+07:00",
+    "end": "2026-11-17T11:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_367",
+    "title": "khám răng",
+    "start": "2026-11-19T18:00:00+07:00",
+    "end": "2026-11-19T19:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_572",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_497",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_8340",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 345
+   }
+  ],
+  "lessons": [],
+  "progress": [
+   {
+    "id": "prog_01",
+    "course_id": "course_8340",
+    "minutes": 45
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_7155",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_7457",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_260",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_279",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ }
+}

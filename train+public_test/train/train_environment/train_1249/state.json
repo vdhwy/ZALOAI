@@ -1,0 +1,385 @@
+{
+ "_meta": {
+  "question_id": "train_1249",
+  "current_time": "2026-10-20T21:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "sms.read_recent",
+   "sms.send",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_8186",
+    "time": "2026-10-21T06:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_164",
+    "time": "2026-10-21T07:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_690",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-10-20T08:25:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_720",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-10-19T18:10:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_667",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-10-20T18:10:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_4074",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-10-19T18:55:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_8145",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-10-20T19:40:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   }
+  ],
+  "saved": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_320",
+    "title": "cà phê với chú Tám",
+    "start": "2026-10-21T07:00:00+07:00",
+    "end": "2026-10-21T08:30:00+07:00",
+    "location": "Quán cà phê Bến Ninh Kiều",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3562",
+    "title": "đám giỗ ông Năm",
+    "start": "2026-10-23T10:00:00+07:00",
+    "end": "2026-10-23T13:00:00+07:00",
+    "location": "Cái Răng, Cần Thơ",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2836",
+    "title": "tái khám huyết áp",
+    "start": "2026-10-26T08:00:00+07:00",
+    "end": "2026-10-26T09:00:00+07:00",
+    "location": "Bệnh viện Đa khoa Trung ương Cần Thơ",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_658",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-10-17T20:55:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_887",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-10-17T21:40:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_931",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-10-18T15:25:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_373",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-10-22T09:00:00+07:00",
+    "link": "https://meet.example.test/dpx-hnvt-nie",
+    "attendees": [
+     "c_406",
+     "c_8659"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_87",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-10-21T14:00:00+07:00",
+    "link": "https://meet.example.test/vzz-ixwt-uwh",
+    "attendees": [
+     "c_213"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_608",
+    "title": "Họp lớp online",
+    "start": "2026-10-21T15:00:00+07:00",
+    "link": "https://meet.example.test/obk-bczt-hyb",
+    "attendees": [
+     "c_905",
+     "c_8361"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25919
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27992
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 172.8
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_803",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09828503038"
+   },
+   {
+    "id": "c_8361",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09129881165"
+   },
+   {
+    "id": "c_4195",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09705866539"
+   },
+   {
+    "id": "c_213",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09669604448"
+   },
+   {
+    "id": "c_425",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09448195303"
+   },
+   {
+    "id": "c_8659",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09308039103"
+   },
+   {
+    "id": "c_406",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09387510104"
+   },
+   {
+    "id": "c_905",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09961636246"
+   },
+   {
+    "id": "c_755",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09696111216"
+   },
+   {
+    "id": "c_695",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09428684461"
+   },
+   {
+    "id": "c_245",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09840195961"
+   },
+   {
+    "id": "c_923",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09912307720"
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-10-20",
+    "prizes": {
+     "special": "226433",
+     "first": "74027",
+     "eighth": "63"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-10-20",
+    "prizes": {
+     "special": "555126",
+     "first": "51650",
+     "eighth": "60"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-10-20",
+    "prizes": {
+     "special": "998633",
+     "first": "32052",
+     "eighth": "75"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-10-20",
+    "prizes": {
+     "special": "209177",
+     "first": "40267",
+     "eighth": "15"
+    }
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_446",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_8149",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_9042",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_116",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ }
+}

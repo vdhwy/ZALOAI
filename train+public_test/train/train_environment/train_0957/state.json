@@ -1,0 +1,420 @@
+{
+ "_meta": {
+  "question_id": "train_0957",
+  "current_time": "2026-10-26T17:25:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "fuel_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-23": {
+    "steps": 2858,
+    "calories": 114,
+    "distance_km": 2.1
+   },
+   "2026-10-24": {
+    "steps": 10417,
+    "calories": 416,
+    "distance_km": 7.5
+   },
+   "2026-10-25": {
+    "steps": 7262,
+    "calories": 290,
+    "distance_km": 5.2
+   },
+   "2026-10-26": {
+    "steps": 3326,
+    "calories": 133,
+    "distance_km": 2.4
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_289",
+    "type": "gym",
+    "minutes": 30,
+    "time": "2026-10-23T18:30:00+07:00"
+   },
+   {
+    "id": "wo_2033",
+    "type": "cycling",
+    "minutes": 45,
+    "time": "2026-10-25T17:00:00+07:00"
+   },
+   {
+    "id": "wo_332",
+    "type": "yoga",
+    "minutes": 45,
+    "time": "2026-10-24T17:00:00+07:00"
+   },
+   {
+    "id": "wo_04",
+    "type": "gym",
+    "minutes": 45,
+    "time": "2026-10-26T12:00:00+07:00"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21600
+   },
+   {
+    "type": "e5",
+    "price": 20400
+   },
+   {
+    "type": "diesel",
+    "price": 19000
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_346",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_917",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_332",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_874",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_190",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_7633",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_7869",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09709657766"
+   },
+   {
+    "id": "c_166",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09586543011"
+   },
+   {
+    "id": "c_411",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09904328948"
+   },
+   {
+    "id": "c_674",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09289589471"
+   },
+   {
+    "id": "c_861",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09958073742"
+   },
+   {
+    "id": "c_616",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09203945350"
+   },
+   {
+    "id": "c_2191",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09459752933"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_140",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-26T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_557",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-29T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_668",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-31T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_82",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-26T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_543",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_759",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_3105",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_775",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_946",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8902",
+    "name": "Vy",
+    "type": "direct",
+    "members": [
+     "Vy"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_698",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2666",
+    "name": "Má",
+    "type": "direct",
+    "members": [
+     "Má"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3511",
+    "name": "Sếp Trân",
+    "type": "direct",
+    "members": [
+     "Sếp Trân"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Đi chạy bộ",
+    "time": "2026-10-26T18:00:00+07:00"
+   }
+  ]
+ }
+}

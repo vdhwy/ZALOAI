@@ -1,0 +1,289 @@
+{
+ "_meta": {
+  "question_id": "train_0965",
+  "current_time": "2026-11-09T10:35:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_8009",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Lê Văn Sỹ",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_303",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_860",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_251",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Lê Văn Sỹ",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2841",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09148031062"
+   },
+   {
+    "id": "c_749",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09649641559"
+   },
+   {
+    "id": "c_374",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09722686561"
+   },
+   {
+    "id": "c_731",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09876361077"
+   },
+   {
+    "id": "c_4178",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09741906792"
+   },
+   {
+    "id": "c_114",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09648035791"
+   },
+   {
+    "id": "c_373",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09916659757"
+   },
+   {
+    "id": "c_225",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09674666857"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_256",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_685",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_226",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_155",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_951",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_274",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_153",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_620",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_2557",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ }
+}

@@ -1,0 +1,280 @@
+{
+ "_meta": {
+  "question_id": "train_1154",
+  "current_time": "2026-12-08T06:40:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_317",
+    "name": "Thuốc dạ dày Omeprazol",
+    "times": [
+     "06:00",
+     "18:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_42",
+    "name": "Viên sắt Ferrovit",
+    "times": [
+     "06:30"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_1590",
+    "name": "Vitamin C",
+    "times": [
+     "12:00"
+    ],
+    "days": "weekdays"
+   }
+  ],
+  "logs": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_193",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09315571595"
+   },
+   {
+    "id": "c_9856",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09740887362"
+   },
+   {
+    "id": "c_639",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09685732415"
+   },
+   {
+    "id": "c_582",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09315432063"
+   },
+   {
+    "id": "c_194",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09906640295"
+   },
+   {
+    "id": "c_4379",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09962460107"
+   },
+   {
+    "id": "c_1552",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09404417896"
+   },
+   {
+    "id": "c_870",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09994050433"
+   },
+   {
+    "id": "c_121",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09897562882"
+   },
+   {
+    "id": "c_911",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09281667379"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_349",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_50",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_3455",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "calculator": {}
+}

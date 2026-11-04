@@ -1,0 +1,416 @@
+{
+ "_meta": {
+  "question_id": "train_1753",
+  "current_time": "2026-10-13T11:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_325",
+    "time": "2026-10-14T06:15:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25368
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27397
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 169.1
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 122400000,
+    "sell": 124400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 116400000,
+    "sell": 118400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3937
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_392",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09974941980"
+   },
+   {
+    "id": "c_402",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09603586467"
+   },
+   {
+    "id": "c_9445",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09522858548"
+   },
+   {
+    "id": "c_362",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09389884807"
+   },
+   {
+    "id": "c_839",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09770721722"
+   },
+   {
+    "id": "c_436",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09627106595"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_5717",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_3293",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_4953",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_6348",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_7135",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_541",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_2814",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-14T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_889",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-16T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_268",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-18T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "due": "2026-10-15T17:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Chấm bài kiểm tra lớp tám"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "calculator": {},
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_226",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-10-14T08:30:00+07:00",
+    "link": "https://meet.example.test/hdu-cbms-sew",
+    "attendees": [
+     "c_839"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_326",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-10-14T09:00:00+07:00",
+    "link": "https://meet.example.test/isx-xkay-dip",
+    "attendees": [
+     "c_436",
+     "c_402"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_266",
+    "title": "Họp lớp online",
+    "start": "2026-10-16T10:00:00+07:00",
+    "link": "https://meet.example.test/tnw-vxmx-wif",
+    "attendees": [
+     "c_839",
+     "c_392"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_7409",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-10-14T14:30:00+07:00",
+    "link": "https://meet.example.test/jov-luvk-xlo",
+    "attendees": [
+     "c_392"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_5487",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_530",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_648",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_4743",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_4743",
+    "items": [
+     {
+      "item_id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "quantity": 2,
+      "note": null
+     },
+     {
+      "item_id": "rest_01_m3",
+      "name": "Chả cua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 105000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_5487",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 78000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ }
+}

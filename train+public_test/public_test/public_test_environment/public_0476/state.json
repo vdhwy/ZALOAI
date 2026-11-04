@@ -1,0 +1,341 @@
+{
+ "_meta": {
+  "question_id": "public_0476",
+  "current_time": "2026-11-20T08:00:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "pantry.consume",
+   "pantry.list_items",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_43",
+    "name": "yến mạch",
+    "stock": 2,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_3482",
+    "name": "nước mắm",
+    "stock": 1,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_85",
+    "name": "sữa tươi",
+    "stock": 5,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_3555",
+    "name": "bột mì",
+    "stock": 2,
+    "unit": "gói"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2123",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09800221125"
+   },
+   {
+    "id": "c_283",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09121429581"
+   },
+   {
+    "id": "c_363",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09398201754"
+   },
+   {
+    "id": "c_2362",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09330321955"
+   },
+   {
+    "id": "c_6917",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09572768093"
+   },
+   {
+    "id": "c_897",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09336469820"
+   },
+   {
+    "id": "c_387",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09415094439"
+   },
+   {
+    "id": "c_670",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09772233788"
+   },
+   {
+    "id": "c_342",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09284649608"
+   },
+   {
+    "id": "c_442",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09211341809"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_646",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-19T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_3333",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-24T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_1758",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-26T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_358",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-25T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_6701",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 0
+   },
+   {
+    "id": "lot_731",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_7247",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 2
+   },
+   {
+    "id": "lot_86",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 40
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_6012",
+    "lot_id": "lot_6701",
+    "from_time": "2026-11-20T11:30:00+07:00",
+    "hours": 2,
+    "end_time": "2026-11-20T13:30:00+07:00",
+    "total": 70000,
+    "status": "reserved"
+   },
+   {
+    "id": "park_418",
+    "lot_id": "lot_7247",
+    "from_time": "2026-11-22T09:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-11-22T12:00:00+07:00",
+    "total": 120000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-22T06:00:00+07:00"
+   }
+  ]
+ }
+}

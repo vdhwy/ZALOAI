@@ -1,0 +1,496 @@
+{
+ "_meta": {
+  "question_id": "public_0629",
+  "current_time": "2026-11-21T12:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "phone.call",
+   "phone.recent_calls",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_451",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09717457695"
+   },
+   {
+    "id": "c_510",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09531000851"
+   },
+   {
+    "id": "c_668",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09576271287"
+   },
+   {
+    "id": "c_196",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09254647849"
+   },
+   {
+    "id": "c_475",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09863698346"
+   },
+   {
+    "id": "c_8843",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09128996521"
+   },
+   {
+    "id": "c_4655",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09846893243"
+   },
+   {
+    "id": "c_373",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09878103893"
+   },
+   {
+    "id": "c_90",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09940262204"
+   },
+   {
+    "id": "c_950",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09896346500"
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_382",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_1819",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_745",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_8061",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_6151",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_874",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_342",
+    "items": [
+     {
+      "product_id": "gro_6151",
+      "name": "Trứng gà ta hộp 10 quả",
+      "price": 42000,
+      "quantity": 1
+     }
+    ],
+    "total": 42000,
+    "status": "delivered",
+    "delivery_time": "2026-11-16T09:00:00+07:00"
+   }
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_173",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_242",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_1840",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_5126",
+    "name": "Cơm chiên trứng lạp xưởng",
+    "tags": [
+     "cơm",
+     "món nhanh"
+    ],
+    "servings": 1,
+    "time_min": 20,
+    "ingredients": [
+     {
+      "name": "cơm nguội",
+      "quantity": 1,
+      "unit": "chén"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "lạp xưởng",
+      "quantity": 1,
+      "unit": "cây"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Thái lạp xưởng, chiên sơ",
+     "Cho cơm vào đảo tơi",
+     "Đập trứng vào đảo đều, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_378",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_689",
+    "name": "Trứng hấp thịt bằm",
+    "tags": [
+     "món hấp",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "thịt heo bằm",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "nấm mèo",
+      "quantity": 2,
+      "unit": "tai"
+     }
+    ],
+    "steps": [
+     "Trộn trứng với thịt bằm, nấm mèo",
+     "Hấp cách thuỷ 25 phút"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_844",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_945",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_3991",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_2427",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_720",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_455",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_603",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_290",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 31,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-22",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-23",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-24",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 32
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ }
+}

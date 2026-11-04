@@ -1,0 +1,621 @@
+{
+ "_meta": {
+  "question_id": "public_0570",
+  "current_time": "2026-12-17T12:05:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_809",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_825",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_4352",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_2716",
+    "name": "Canh chua tôm",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "tôm",
+      "quantity": 300,
+      "unit": "g"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "me chua",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Lột tôm, ướp chút muối",
+     "Nấu nước me với dứa, cà chua",
+     "Thả tôm vào, nêm vừa ăn, rắc ngò om"
+    ]
+   },
+   {
+    "id": "rcp_339",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_576",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_550",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_918",
+    "name": "Canh chua cá bông lau",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "cá bông lau",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "bạc hà",
+      "quantity": 2,
+      "unit": "cây"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Làm sạch cá, cắt khúc",
+     "Nấu nước me, cho cá vào",
+     "Thêm bạc hà, đậu bắp, nêm vừa ăn"
+    ]
+   },
+   {
+    "id": "rcp_4405",
+    "name": "Canh chua cá kèo",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 3,
+    "time_min": 35,
+    "ingredients": [
+     {
+      "name": "cá kèo",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "lá giang",
+      "quantity": 1,
+      "unit": "nắm"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 1,
+      "unit": "quả"
+     }
+    ],
+    "steps": [
+     "Rửa cá kèo với muối",
+     "Nấu nước sôi với lá giang",
+     "Thả cá, nêm chua ngọt"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_20",
+    "name": "Vợ Hồng",
+    "type": "direct",
+    "members": [
+     "Vợ Hồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_557",
+    "name": "Anh Mười",
+    "type": "direct",
+    "members": [
+     "Anh Mười"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_638",
+    "name": "Thằng Tí",
+    "type": "direct",
+    "members": [
+     "Thằng Tí"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8624",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_556",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_253",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09541954287"
+   },
+   {
+    "id": "c_483",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09753627751"
+   },
+   {
+    "id": "c_6039",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09487525549"
+   },
+   {
+    "id": "c_28",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09818670807"
+   },
+   {
+    "id": "c_3132",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09247640585"
+   },
+   {
+    "id": "c_980",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09726558530"
+   },
+   {
+    "id": "c_26",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09499675874"
+   },
+   {
+    "id": "c_186",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09475950032"
+   },
+   {
+    "id": "c_82",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09844325869"
+   },
+   {
+    "id": "c_910",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09375492908"
+   },
+   {
+    "id": "c_897",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09139648246"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 26,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-17",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 30
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-19",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-20",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 15000,
+  "routes": [
+   {
+    "id": "bus_711",
+    "name": "Xe buýt số 11 Cái Răng - Ninh Kiều",
+    "type": "bus",
+    "stops": [
+     "Chợ Cái Răng",
+     "Cầu Hưng Lợi",
+     "Đại học Cần Thơ",
+     "Bến Ninh Kiều"
+    ],
+    "fare": 8000,
+    "duration_min": 30,
+    "headway_min": 20
+   },
+   {
+    "id": "bus_293",
+    "name": "Xe buýt số 3 Bến xe Trung tâm - Ô Môn",
+    "type": "bus",
+    "stops": [
+     "Bến xe Trung tâm Cần Thơ",
+     "Bình Thủy",
+     "Ô Môn"
+    ],
+    "fare": 12000,
+    "duration_min": 40,
+    "headway_min": 30
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Chợ Cái Răng",
+    "route": "bus_711",
+    "time": "2026-12-17T13:10:00+07:00"
+   },
+   {
+    "stop": "Chợ Cái Răng",
+    "route": "bus_711",
+    "time": "2026-12-17T13:30:00+07:00"
+   },
+   {
+    "stop": "Bến xe Trung tâm Cần Thơ",
+    "route": "bus_293",
+    "time": "2026-12-17T12:40:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_8091",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_289",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_927",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_59",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_24",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ }
+}

@@ -1,0 +1,350 @@
+{
+ "_meta": {
+  "question_id": "train_1434",
+  "current_time": "2026-12-07T16:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "library.reserve",
+   "library.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_524",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_957",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_4130",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_318",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": false
+   },
+   {
+    "id": "book_7058",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_5866",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_6865",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-12-09T10:00:00+07:00",
+    "link": "https://meet.example.test/qxi-dezf-lxw",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_6796",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-12-08T20:00:00+07:00",
+    "link": "https://meet.example.test/vax-aiyw-lbf",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_7261",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-12-09T15:00:00+07:00",
+    "link": "https://meet.example.test/eri-zwbf-eio",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_294",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_7303",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_4182",
+    "name": "Melbourne Bakehouse",
+    "address": "35 Xuân Thủy, Thảo Điền, TP. Thủ Đức",
+    "category": "bakery",
+    "detail": "Cách Trạm Thảo Điền 200 m"
+   },
+   {
+    "id": "place_617",
+    "name": "The Melbourne Brunch Club",
+    "address": "18 Trương Định, Quận 1, TP.HCM",
+    "category": "restaurant",
+    "detail": "Quán brunch, cách Trạm Công viên Tao Đàn 150 m"
+   },
+   {
+    "id": "place_160",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_765",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_574",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_866",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_3390",
+    "name": "Công viên Tao Đàn",
+    "address": "55C Nguyễn Thị Minh Khai, Quận 1, TP.HCM",
+    "category": "park"
+   },
+   {
+    "id": "place_1275",
+    "name": "Trạm Công viên Tao Đàn",
+    "address": "Cổng Trương Định, Công viên Tao Đàn, Quận 1, TP.HCM",
+    "category": "bike_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "calculator": {},
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_4448",
+    "tracking_id": "STP717326952",
+    "carrier": "SaoTel Post",
+    "name": "Giày thể thao",
+    "status": "delivered",
+    "eta": "2026-12-06T10:00:00+07:00"
+   },
+   {
+    "id": "shp_24",
+    "tracking_id": "JV903755446",
+    "carrier": "JetViệt Express",
+    "name": "Hộp quà Trung thu",
+    "status": "in_transit",
+    "eta": "2026-12-08T17:00:00+07:00"
+   },
+   {
+    "id": "shp_162",
+    "tracking_id": "EV737273845",
+    "carrier": "VNPost",
+    "name": "Tai nghe Bluetooth",
+    "status": "in_transit",
+    "eta": "2026-12-10T17:00:00+07:00"
+   },
+   {
+    "id": "shp_577",
+    "tracking_id": "GST948412312",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Ốp lưng điện thoại",
+    "status": "out_for_delivery",
+    "eta": "2026-12-07T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_626",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_614",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_118",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_415",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_670",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_369",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_9901",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_215",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_5747",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_466",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_156",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_1373",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_55",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_2920",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_6537",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_853",
+    "name": "Xe đạp thường 107",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_716",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_415",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Thảo Điền",
+    "available": false,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ }
+}

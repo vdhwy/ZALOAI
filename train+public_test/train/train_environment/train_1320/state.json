@@ -1,0 +1,505 @@
+{
+ "_meta": {
+  "question_id": "train_1320",
+  "current_time": "2026-11-06T10:35:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "phone.call",
+   "phone.recent_calls",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 24,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-06",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-07",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-08",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-09",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 31
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_555",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09807323866"
+   },
+   {
+    "id": "c_8040",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09415688944"
+   },
+   {
+    "id": "c_507",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09605847683"
+   },
+   {
+    "id": "c_5965",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09238023355"
+   },
+   {
+    "id": "c_1824",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09438698513"
+   },
+   {
+    "id": "c_926",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09160331430"
+   },
+   {
+    "id": "c_856",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09627215068"
+   },
+   {
+    "id": "c_828",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09643768698"
+   },
+   {
+    "id": "c_48",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09673937206"
+   },
+   {
+    "id": "c_2939",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09349046218"
+   },
+   {
+    "id": "c_5822",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09181905047"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "cool",
+     "temperature": 26
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_301",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_314",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_437",
+    "name": "khăn rằn",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_495",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_382",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_06",
+    "checked": false,
+    "name": "nón lá",
+    "quantity": 4
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_8870",
+    "tracking_id": "MDXVN972651513",
+    "carrier": "MDX Express",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "out_for_delivery",
+    "eta": "2026-11-06T10:00:00+07:00"
+   },
+   {
+    "id": "shp_5448",
+    "tracking_id": "JV641782622",
+    "carrier": "JetViệt Express",
+    "name": "Giày thể thao",
+    "status": "in_transit",
+    "eta": "2026-11-07T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_6225",
+    "name": "Thằng Tí",
+    "type": "direct",
+    "members": [
+     "Thằng Tí"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_159",
+    "name": "Vợ Hồng",
+    "type": "direct",
+    "members": [
+     "Vợ Hồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_919",
+    "name": "Anh Mười",
+    "type": "direct",
+    "members": [
+     "Anh Mười"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7718",
+    "name": "Khách Nhật mua xoài",
+    "type": "group",
+    "members": [
+     "Mrs. Watanabe",
+     "Mr. Watanabe",
+     "Kenji Sato",
+     "Anh Mười"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_135",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_900",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_482",
+    "name": "Bạn hàng chợ Cái Răng",
+    "type": "group",
+    "members": [
+     "Anh Mười",
+     "Bác Ba",
+     "Vợ Hồng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "calculator": {},
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_5647",
+    "title": "họp team",
+    "start": "2026-11-07T14:00:00+07:00",
+    "end": "2026-11-07T15:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4845",
+    "title": "họp phụ huynh",
+    "start": "2026-11-09T09:00:00+07:00",
+    "end": "2026-11-09T10:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_326",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-08T15:30:00+07:00",
+    "end": "2026-11-08T16:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_405",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_745",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_2615",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_1447",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_2240",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_3609",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-17",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_640",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-11-30",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_724",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-11-24",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_955",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-12-04",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_3159",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-11-21",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ }
+}

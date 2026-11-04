@@ -1,0 +1,186 @@
+{
+ "_meta": {
+  "question_id": "public_0455",
+  "current_time": "2026-11-13T11:50:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_8621",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-15T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_9257",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-14T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_550",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-12T09:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_740",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-18T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_870",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-19T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "bus_r1",
+    "name": "Tuyến R1",
+    "type": "bus",
+    "stops": [
+     "Hội An",
+     "Ngũ Hành Sơn",
+     "Hải Châu",
+     "Bến xe Trung tâm"
+    ],
+    "fare": 30000,
+    "duration_min": 70,
+    "headway_min": 30,
+    "aliases": {
+     "Lê Duẩn": "Hải Châu"
+    }
+   },
+   {
+    "id": "bus_r16",
+    "name": "Tuyến R16",
+    "type": "bus",
+    "stops": [
+     "Bến xe Trung tâm",
+     "Nguyễn Văn Linh",
+     "Cầu Rồng",
+     "Sơn Trà"
+    ],
+    "fare": 5000,
+    "duration_min": 40,
+    "headway_min": 20
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Hải Châu",
+    "route": "bus_r1",
+    "time": "2026-11-13T12:25:00+07:00"
+   },
+   {
+    "stop": "Cầu Rồng",
+    "route": "bus_r16",
+    "time": "2026-11-13T12:13:00+07:00"
+   },
+   {
+    "stop": "Hải Châu",
+    "route": "bus_r1",
+    "time": "2026-11-13T11:55:00+07:00"
+   },
+   {
+    "stop": "Cầu Rồng",
+    "route": "bus_r16",
+    "time": "2026-11-13T11:53:00+07:00"
+   },
+   {
+    "stop": "Cầu Rồng",
+    "route": "bus_r16",
+    "time": "2026-11-13T12:33:00+07:00"
+   },
+   {
+    "stop": "Hải Châu",
+    "route": "bus_r1",
+    "time": "2026-11-13T12:55:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_5369",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_1169",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_204",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_71",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_137",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ }
+}

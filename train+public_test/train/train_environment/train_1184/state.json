@@ -1,0 +1,402 @@
+{
+ "_meta": {
+  "question_id": "train_1184",
+  "current_time": "2026-10-31T10:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_893",
+    "time": "2026-11-01T05:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_538",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": true
+   },
+   {
+    "id": "item_938",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_5048",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_907",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09659102967"
+   },
+   {
+    "id": "c_848",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09894812450"
+   },
+   {
+    "id": "c_406",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09114449620"
+   },
+   {
+    "id": "c_147",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09684667231"
+   },
+   {
+    "id": "c_5160",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09861023964"
+   },
+   {
+    "id": "c_357",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09292061100"
+   },
+   {
+    "id": "c_55",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09891899036"
+   },
+   {
+    "id": "c_7354",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09618591650"
+   },
+   {
+    "id": "c_647",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09719378969"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_525",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_159",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_2642",
+    "time": "2026-10-30T22:35:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_635",
+    "time": "2026-10-29T17:10:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_443",
+    "time": "2026-10-30T02:45:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_733",
+    "time": "2026-10-31T00:45:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": true
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_874",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_803",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_297",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_23",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_368",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_3254",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_801",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_343",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_6967",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_850",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-11-23",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_9394",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-08",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_6994",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-11-13",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 118400000,
+    "sell": 120400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 112400000,
+    "sell": 114400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3960
+   }
+  ]
+ }
+}

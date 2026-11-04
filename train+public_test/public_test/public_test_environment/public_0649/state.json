@@ -1,0 +1,219 @@
+{
+ "_meta": {
+  "question_id": "public_0649",
+  "current_time": "2026-12-13T21:25:00+07:00",
+  "tools": [
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "bus_r1",
+    "name": "Tuyến R1",
+    "type": "bus",
+    "stops": [
+     "Hội An",
+     "Ngũ Hành Sơn",
+     "Hải Châu",
+     "Bến xe Trung tâm"
+    ],
+    "fare": 30000,
+    "duration_min": 70,
+    "headway_min": 30
+   },
+   {
+    "id": "bus_r16",
+    "name": "Tuyến R16",
+    "type": "bus",
+    "stops": [
+     "Bến xe Trung tâm",
+     "Nguyễn Văn Linh",
+     "Cầu Rồng",
+     "Sơn Trà"
+    ],
+    "fare": 5000,
+    "duration_min": 40,
+    "headway_min": 20
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Ngũ Hành Sơn",
+    "route": "bus_r1",
+    "time": "2026-12-13T22:03:00+07:00"
+   },
+   {
+    "stop": "Cầu Rồng",
+    "route": "bus_r16",
+    "time": "2026-12-13T22:01:00+07:00"
+   },
+   {
+    "stop": "Ngũ Hành Sơn",
+    "route": "bus_r1",
+    "time": "2026-12-13T21:58:00+07:00"
+   },
+   {
+    "stop": "Cầu Rồng",
+    "route": "bus_r16",
+    "time": "2026-12-13T22:21:00+07:00"
+   },
+   {
+    "stop": "Ngũ Hành Sơn",
+    "route": "bus_r1",
+    "time": "2026-12-13T22:33:00+07:00"
+   },
+   {
+    "stop": "Cầu Rồng",
+    "route": "bus_r16",
+    "time": "2026-12-13T21:41:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_9873",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_7258",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_279",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_866",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_376",
+    "contact_id": null,
+    "phone_number": "09735186204",
+    "from": "Sarah",
+    "direction": "incoming",
+    "time": "2026-12-13T20:50:00+07:00",
+    "content": "Chị ơi booking lô hàng đi Osaka em confirm rồi nha, mai em gửi invoice."
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_4617",
+    "name": "Nhà thuốc Minh Khang Lê Duẩn",
+    "address": "210 Lê Duẩn, Hải Châu, Đà Nẵng",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_17",
+    "name": "Cây xăng PetroHưng Nguyễn Văn Linh",
+    "address": "150 Nguyễn Văn Linh, Thanh Khê, Đà Nẵng",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_7342",
+    "name": "Crestview Hotels",
+    "address": "12 Võ Văn Kiệt, chân Cầu Rồng, phường An Hải, Đà Nẵng",
+    "category": "hotel"
+   },
+   {
+    "id": "place_268",
+    "name": "Crestview Hotel & Residences",
+    "address": "88 Trường Sa, Ngũ Hành Sơn, Đà Nẵng",
+    "category": "hotel"
+   },
+   {
+    "id": "place_431",
+    "name": "Ký Ức Cà Phê Bạch Đằng",
+    "address": "98 Bạch Đằng, Hải Châu, Đà Nẵng",
+    "category": "cafe"
+   },
+   {
+    "id": "place_981",
+    "name": "Bệnh viện Đà Nẵng",
+    "address": "124 Hải Phòng, Hải Châu, Đà Nẵng",
+    "category": "hospital"
+   },
+   {
+    "id": "place_5904",
+    "name": "Lotus Mart Đà Nẵng",
+    "address": "6 Nại Nam, Hải Châu, Đà Nẵng",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_969",
+    "name": "Mì Quảng Bà Mùi",
+    "address": "19 Trần Bình Trọng, Hải Châu, Đà Nẵng",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ }
+}

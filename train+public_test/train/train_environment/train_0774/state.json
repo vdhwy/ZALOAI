@@ -1,0 +1,346 @@
+{
+ "_meta": {
+  "question_id": "train_0774",
+  "current_time": "2026-10-14T15:05:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "heater_kids",
+    "name": "máy sưởi sàn phòng trẻ em",
+    "type": "climate",
+    "room": "phòng trẻ em",
+    "floor": 1,
+    "state": {
+     "mode": "heat",
+     "temperature": 26
+    }
+   },
+   {
+    "id": "heater_office",
+    "name": "máy sưởi sàn phòng làm việc",
+    "type": "climate",
+    "room": "phòng làm việc",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_01",
+    "name": "phòng khách",
+    "area_m2": 15
+   },
+   {
+    "id": "room_02",
+    "name": "bếp",
+    "area_m2": 15
+   },
+   {
+    "id": "room_03",
+    "name": "phòng ngủ",
+    "area_m2": 10
+   },
+   {
+    "id": "room_04",
+    "name": "hành lang",
+    "area_m2": 18
+   },
+   {
+    "id": "room_05",
+    "name": "phòng làm việc",
+    "area_m2": 22
+   },
+   {
+    "id": "room_06",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 10
+   },
+   {
+    "id": "room_07",
+    "name": "phòng trẻ em",
+    "area_m2": 12
+   }
+  ],
+  "current_job": null
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Cô Hòa",
+    "type": "direct",
+    "members": [
+     "Cô Hòa"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_01",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_02",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_01",
+    "time": "2026-10-14T08:00:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_02",
+    "time": "2026-10-14T02:45:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_03",
+    "time": "2026-10-13T21:45:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_01",
+    "name": "Lau nhà",
+    "assignee": "Tuấn",
+    "done": true
+   },
+   {
+    "id": "chore_02",
+    "name": "Rửa bát",
+    "assignee": null,
+    "done": true
+   },
+   {
+    "id": "chore_03",
+    "name": "Đi chợ",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_04",
+    "name": "Đổ rác",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_05",
+    "name": "Nấu cơm tối",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Khoa",
+   "Bố",
+   "Tuấn"
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_02",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_03",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_04",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Cô Hòa",
+    "relation": "người trông nhà",
+    "phone": "09030010025",
+    "email": "hoa@example.test"
+   },
+   {
+    "id": "c_02",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09949442517"
+   },
+   {
+    "id": "c_03",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09402855902"
+   }
+  ]
+ }
+}

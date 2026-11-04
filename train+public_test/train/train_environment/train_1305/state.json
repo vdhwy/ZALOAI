@@ -1,0 +1,273 @@
+{
+ "_meta": {
+  "question_id": "train_1305",
+  "current_time": "2026-11-22T15:30:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_886",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09570926851"
+   },
+   {
+    "id": "c_7960",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09123000634"
+   },
+   {
+    "id": "c_7659",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09784491901"
+   },
+   {
+    "id": "c_928",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09267934022"
+   },
+   {
+    "id": "c_703",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09883633156"
+   },
+   {
+    "id": "c_159",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09938023633"
+   },
+   {
+    "id": "c_456",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09950656987"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "programs": [
+   {
+    "id": "prg_514",
+    "channel": "VTV3",
+    "title": "Phim truyện: Hoa sữa về trong gió (tập 23)",
+    "start": "2026-11-22T20:00:00+07:00",
+    "end": "2026-11-22T21:00:00+07:00"
+   },
+   {
+    "id": "prg_537",
+    "channel": "VTV3",
+    "title": "Sao nhập ngũ",
+    "start": "2026-11-22T21:30:00+07:00",
+    "end": "2026-11-22T23:00:00+07:00"
+   },
+   {
+    "id": "prg_562",
+    "channel": "VTV3",
+    "title": "Phim truyện: Hoa sữa về trong gió (tập 24)",
+    "start": "2026-11-23T20:00:00+07:00",
+    "end": "2026-11-23T21:00:00+07:00"
+   },
+   {
+    "id": "prg_581",
+    "channel": "VTV1",
+    "title": "Thời sự",
+    "start": "2026-11-22T19:00:00+07:00",
+    "end": "2026-11-22T19:45:00+07:00"
+   },
+   {
+    "id": "prg_596",
+    "channel": "HTV7",
+    "title": "Gameshow: Ký ức vui vẻ",
+    "start": "2026-11-22T20:00:00+07:00",
+    "end": "2026-11-22T21:30:00+07:00"
+   }
+  ],
+  "recordings": []
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_6215",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-21T12:00:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_1948",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-22T14:00:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_8553",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-21T12:15:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_838",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-11-21T14:30:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_967",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-11-21T23:45:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   }
+  ],
+  "saved": []
+ }
+}

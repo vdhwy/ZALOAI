@@ -1,0 +1,573 @@
+{
+ "_meta": {
+  "question_id": "public_0426",
+  "current_time": "2026-11-25T21:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_654",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_7146",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_5142",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_30",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_2136",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_984",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_594",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_754",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_598",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_3317",
+    "name": "Mì Quảng tôm thịt",
+    "tags": [
+     "mì",
+     "đặc sản Đà Nẵng"
+    ],
+    "servings": 4,
+    "time_min": 50,
+    "ingredients": [
+     {
+      "name": "mì Quảng",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "tôm",
+      "quantity": 300,
+      "unit": "g"
+     },
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 300,
+      "unit": "g"
+     },
+     {
+      "name": "đậu phộng rang",
+      "quantity": 50,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Ướp tôm thịt với hành tỏi, nghệ",
+     "Xào săn rồi chế ít nước dùng",
+     "Trụng mì, chan nước, rắc đậu phộng và bánh tráng"
+    ]
+   },
+   {
+    "id": "rcp_806",
+    "name": "Bún chả cá",
+    "tags": [
+     "bún",
+     "đặc sản Đà Nẵng"
+    ],
+    "servings": 4,
+    "time_min": 100,
+    "ingredients": [
+     {
+      "name": "chả cá",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "bún tươi",
+      "quantity": 800,
+      "unit": "g"
+     },
+     {
+      "name": "xương heo",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "bí đỏ",
+      "quantity": 300,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Hầm xương lấy nước dùng",
+     "Cho bí đỏ và chả cá vào nấu",
+     "Chan nước lên bún, thêm rau sống"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_8620",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09668993561"
+   },
+   {
+    "id": "c_829",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09907946813"
+   },
+   {
+    "id": "c_416",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09635789939"
+   },
+   {
+    "id": "c_932",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09163498055"
+   },
+   {
+    "id": "c_825",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09298028020"
+   },
+   {
+    "id": "c_6131",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09703786280"
+   },
+   {
+    "id": "c_284",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09114131561"
+   },
+   {
+    "id": "c_287",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09155850542"
+   },
+   {
+    "id": "c_898",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09510604409"
+   },
+   {
+    "id": "c_770",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09327594076"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_207",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_4693",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_122",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_875",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_665",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_757",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_59",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_1148",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_05",
+    "checked": false,
+    "name": "thịt bò",
+    "quantity": 2
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Đi chợ mua đồ đãi khách Hàn",
+    "time": "2026-11-26T17:00:00+07:00"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_968",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-29T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_363",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-30T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_8422",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-28T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ }
+}

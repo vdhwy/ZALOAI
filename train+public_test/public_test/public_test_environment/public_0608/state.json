@@ -1,0 +1,253 @@
+{
+ "_meta": {
+  "question_id": "public_0608",
+  "current_time": "2026-12-13T15:25:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "event_tickets.book",
+   "event_tickets.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_923",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_339",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_727",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_281",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_517",
+    "restaurant_id": "rest_727",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 50000,
+    "address": "25 Láng Hạ, Đống Đa, Hà Nội",
+    "payment": "cash",
+    "status": "delivered"
+   },
+   {
+    "id": "ord_436",
+    "restaurant_id": "rest_281",
+    "items": [
+     {
+      "item_id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 45000,
+    "address": "12 Kim Mã, Ba Đình, Hà Nội",
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_03",
+    "restaurant_id": "rest_281",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 110000,
+    "address": "25 Láng Hạ, Đống Đa, Hà Nội",
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_9572",
+    "name": "Đêm nhạc Jazz cuối tuần",
+    "category": "âm nhạc",
+    "date": "2026-12-15",
+    "time": "19:30",
+    "venue": "Nhà hát Tuổi Trẻ",
+    "price": 450000,
+    "available": 12
+   },
+   {
+    "id": "event_820",
+    "name": "Triển lãm Ánh sáng Đô thị",
+    "category": "triển lãm",
+    "date": "2026-12-20",
+    "time": "19:30",
+    "venue": "Nhà hát Tuổi Trẻ",
+    "price": 80000,
+    "available": 80
+   },
+   {
+    "id": "event_307",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-12-25",
+    "time": "20:00",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 600000,
+    "available": 30
+   },
+   {
+    "id": "event_406",
+    "name": "Liên hoan phim ngắn",
+    "category": "điện ảnh",
+    "date": "2026-12-15",
+    "time": "19:30",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 120000,
+    "available": 12
+   }
+  ],
+  "bookings": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_542",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_952",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_2458",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_2453",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_9780",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ }
+}

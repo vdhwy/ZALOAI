@@ -1,0 +1,649 @@
+{
+ "_meta": {
+  "question_id": "train_1672",
+  "current_time": "2026-10-16T13:00:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_154",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09356232415"
+   },
+   {
+    "id": "c_58",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09340784364"
+   },
+   {
+    "id": "c_7227",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09340132585"
+   },
+   {
+    "id": "c_602",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09195223607"
+   },
+   {
+    "id": "c_499",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09408482847"
+   },
+   {
+    "id": "c_124",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09982338732"
+   },
+   {
+    "id": "c_3870",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09575823548"
+   },
+   {
+    "id": "c_870",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09347138229"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_6807",
+    "name": "Anh Long",
+    "type": "direct",
+    "members": [
+     "Anh Long"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2264",
+    "name": "Sếp Kim",
+    "type": "direct",
+    "members": [
+     "Sếp Kim"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_517",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_237",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_807",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_2989",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_869",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_6898",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_539",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "quick",
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_289",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_788",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_263",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_478",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_550",
+    "show_id": "show_788",
+    "title": "Số 21: Nhà giả kim - phần 2",
+    "number": 21,
+    "duration_min": 32,
+    "published": "2026-10-09"
+   },
+   {
+    "id": "ep_88",
+    "show_id": "show_289",
+    "title": "Số 12: Giấc ngủ và trí nhớ",
+    "number": 12,
+    "duration_min": 45,
+    "published": "2026-10-02"
+   },
+   {
+    "id": "ep_351",
+    "show_id": "show_263",
+    "title": "Số 8: Lập quỹ khẩn cấp",
+    "number": 8,
+    "duration_min": 25,
+    "published": "2026-09-25"
+   },
+   {
+    "id": "ep_893",
+    "show_id": "show_289",
+    "title": "Số 13: Lỗ đen là gì",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-10-09"
+   },
+   {
+    "id": "ep_101",
+    "show_id": "show_478",
+    "title": "Số 21: Trồng cây trên sân thượng",
+    "number": 21,
+    "duration_min": 32,
+    "published": "2026-10-02"
+   },
+   {
+    "id": "ep_9390",
+    "show_id": "show_478",
+    "title": "Số 20: Rác thải nhựa ở đô thị",
+    "number": 20,
+    "duration_min": 25,
+    "published": "2026-09-25"
+   },
+   {
+    "id": "ep_59",
+    "show_id": "show_263",
+    "title": "Số 10: Quản lý chi tiêu gia đình",
+    "number": 10,
+    "duration_min": 25,
+    "published": "2026-10-09"
+   },
+   {
+    "id": "ep_792",
+    "show_id": "show_478",
+    "title": "Số 22: Đi xe đạp đi làm",
+    "number": 22,
+    "duration_min": 25,
+    "published": "2026-10-09"
+   },
+   {
+    "id": "ep_372",
+    "show_id": "show_289",
+    "title": "Số 11: Vì sao bầu trời màu xanh",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-09-25"
+   },
+   {
+    "id": "ep_632",
+    "show_id": "show_263",
+    "title": "Số 9: Gửi tiết kiệm hay mua vàng",
+    "number": 9,
+    "duration_min": 32,
+    "published": "2026-10-02"
+   },
+   {
+    "id": "ep_514",
+    "show_id": "show_788",
+    "title": "Số 20: Nhà giả kim - phần 1",
+    "number": 20,
+    "duration_min": 45,
+    "published": "2026-10-02"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_5642",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_244",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_431",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_737",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [
+   "ep_550"
+  ],
+  "now_playing": {
+   "episode_id": "ep_514",
+   "show_id": "show_788",
+   "status": "playing"
+  }
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_717",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-17T08:30:00+07:00",
+    "end": "2026-10-17T09:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_122",
+    "title": "đá bóng",
+    "start": "2026-10-19T15:00:00+07:00",
+    "end": "2026-10-19T16:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3383",
+    "title": "họp phụ huynh",
+    "start": "2026-10-17T15:30:00+07:00",
+    "end": "2026-10-17T16:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_634",
+    "title": "họp team",
+    "start": "2026-10-19T08:00:00+07:00",
+    "end": "2026-10-19T09:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_876",
+    "title": "khám răng",
+    "start": "2026-10-19T14:00:00+07:00",
+    "end": "2026-10-19T15:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5208",
+    "title": "Họp review report tháng với Sếp Kim",
+    "start": "2026-10-16T15:00:00+07:00",
+    "end": "2026-10-16T16:00:00+07:00",
+    "location": "Phòng họp tầng 5",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_961",
+    "title": "Gửi report tuần cho team",
+    "start": "2026-10-19T09:00:00+07:00",
+    "end": "2026-10-19T09:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-16",
+    "to": "2026-10-16",
+    "kwh": 11.7,
+    "cost": 33900,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 5.3
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 2.3
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-10",
+    "to": "2026-10-16",
+    "kwh": 79.1,
+    "cost": 229400,
+    "days": [
+     {
+      "date": "2026-10-10",
+      "kwh": 7.7
+     },
+     {
+      "date": "2026-10-11",
+      "kwh": 14.2
+     },
+     {
+      "date": "2026-10-12",
+      "kwh": 11.2
+     },
+     {
+      "date": "2026-10-13",
+      "kwh": 13.1
+     },
+     {
+      "date": "2026-10-14",
+      "kwh": 14.1
+     },
+     {
+      "date": "2026-10-15",
+      "kwh": 7.1
+     },
+     {
+      "date": "2026-10-16",
+      "kwh": 11.7
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-16",
+    "kwh": 184.4,
+    "cost": 534800
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_267",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_478",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_2725",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_5908",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_884",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_465",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_442",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_690",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_360",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 30,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-16",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-19",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 28
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_309",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-19T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_1213",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-22T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_999",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-18T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

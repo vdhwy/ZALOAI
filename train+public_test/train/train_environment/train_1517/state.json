@@ -1,0 +1,420 @@
+{
+ "_meta": {
+  "question_id": "train_1517",
+  "current_time": "2026-12-11T14:25:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_209",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_646",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_9242",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_13",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": false,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-12-11",
+    "prizes": {
+     "special": "372832",
+     "first": "55313",
+     "eighth": "74"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-12-11",
+    "prizes": {
+     "special": "954642",
+     "first": "97331",
+     "eighth": "66"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-12-11",
+    "prizes": {
+     "special": "622123",
+     "first": "13642",
+     "eighth": "13"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-12-11",
+    "prizes": {
+     "special": "752939",
+     "first": "67945",
+     "eighth": "27"
+    }
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_522",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-12T10:30:00+07:00",
+    "end": "2026-12-12T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_417",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-12T09:00:00+07:00",
+    "end": "2026-12-12T10:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_776",
+    "title": "khám răng",
+    "start": "2026-12-12T09:30:00+07:00",
+    "end": "2026-12-12T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_159",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-14",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_1451",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-14",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_689",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-14",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_326",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-14",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_5993",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_504",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_597",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_830",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09616766933"
+   },
+   {
+    "id": "c_2891",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09822264441"
+   },
+   {
+    "id": "c_812",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09206404005"
+   },
+   {
+    "id": "c_510",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09761929159"
+   },
+   {
+    "id": "c_921",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09978229455"
+   },
+   {
+    "id": "c_6314",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09392621697"
+   },
+   {
+    "id": "c_589",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09169228096"
+   },
+   {
+    "id": "c_6697",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09272437824"
+   },
+   {
+    "id": "c_175",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09447457291"
+   },
+   {
+    "id": "c_851",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09178778232"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_1517",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": true
+   },
+   {
+    "id": "item_700",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_5178",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_61",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_8302",
+    "name": "bánh quy bơ",
+    "quantity": 2,
+    "checked": false
+   }
+  ]
+ },
+ "calculator": {},
+ "notes": {
+  "notes": [
+   {
+    "id": "note_711",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_935",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_4442",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_368",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_2087",
+    "title": "Sprint Review thứ Hai",
+    "content": "Demo bản app mới cho khách, phòng họp tầng 12. Cả team 9 người tính luôn mình, chuẩn bị nước với đồ ăn nhẹ."
+   },
+   {
+    "id": "note_559",
+    "title": "Sprint Planning thứ Tư",
+    "content": "Chốt backlog quý một, 6 người dự, đặt phòng nhỏ tầng 10."
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_427",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_106",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_3639",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_75",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ }
+}

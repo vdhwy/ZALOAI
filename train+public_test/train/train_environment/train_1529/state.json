@@ -1,0 +1,376 @@
+{
+ "_meta": {
+  "question_id": "train_1529",
+  "current_time": "2026-11-25T17:50:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "library.reserve",
+   "library.search",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_771",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09138613438"
+   },
+   {
+    "id": "c_2008",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09498779957"
+   },
+   {
+    "id": "c_4373",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09324719713"
+   },
+   {
+    "id": "c_5321",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09370059092"
+   },
+   {
+    "id": "c_525",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09247541035"
+   },
+   {
+    "id": "c_628",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09729235816"
+   },
+   {
+    "id": "c_584",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09579002855"
+   },
+   {
+    "id": "c_6507",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09868210655"
+   },
+   {
+    "id": "c_499",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09447227230"
+   },
+   {
+    "id": "c_976",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09225987057"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_165",
+    "title": "họp team",
+    "start": "2026-11-26T15:30:00+07:00",
+    "end": "2026-11-26T16:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_971",
+    "title": "khám răng",
+    "start": "2026-11-26T14:30:00+07:00",
+    "end": "2026-11-26T15:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2773",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-28T10:30:00+07:00",
+    "end": "2026-11-28T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_904",
+    "title": "đi chơi công viên",
+    "start": "2026-11-26T15:30:00+07:00",
+    "end": "2026-11-26T16:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_629",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_2137",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_5689",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_273",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_9980",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_263",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_402",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_4590",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_44",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_899",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_241",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_320",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_9800",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_344",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": false
+   },
+   {
+    "id": "book_5108",
+    "title": "Lớp học đảo ngược",
+    "author": "Mark Johnson",
+    "available": true
+   },
+   {
+    "id": "book_726",
+    "title": "Kỷ luật mềm cho tuổi teen",
+    "author": "Mark Johnson",
+    "available": false
+   },
+   {
+    "id": "book_3391",
+    "title": "Dạy con tự học",
+    "author": "Mike Johnson",
+    "available": false
+   },
+   {
+    "id": "book_4470",
+    "title": "Quản lý lớp học hiệu quả",
+    "author": "Mark Johnston",
+    "available": true
+   }
+  ],
+  "reservations": [
+   {
+    "id": "res_01",
+    "book_id": "book_3391",
+    "status": "ready"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_370",
+    "name": "Tưới cây",
+    "assignee": "Bố",
+    "done": true
+   },
+   {
+    "id": "chore_954",
+    "name": "Nấu cơm tối",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_673",
+    "name": "Lau nhà",
+    "assignee": "Bé Na",
+    "done": false
+   },
+   {
+    "id": "chore_9385",
+    "name": "Rửa bát",
+    "assignee": null,
+    "done": true
+   },
+   {
+    "id": "chore_874",
+    "name": "Giặt quần áo",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị Hạnh",
+   "Bé Na",
+   "Bố"
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-25",
+    "prizes": {
+     "special": "961952",
+     "first": "24107",
+     "eighth": "92"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-25",
+    "prizes": {
+     "special": "521390",
+     "first": "36449",
+     "eighth": "48"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-25",
+    "prizes": {
+     "special": "592230",
+     "first": "24483",
+     "eighth": "43"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-25",
+    "prizes": {
+     "special": "309233",
+     "first": "86368",
+     "eighth": "66"
+    }
+   }
+  ]
+ }
+}

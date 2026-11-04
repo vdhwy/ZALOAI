@@ -1,0 +1,383 @@
+{
+ "_meta": {
+  "question_id": "train_1038",
+  "current_time": "2026-10-20T12:10:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_280",
+    "title": "đá bóng",
+    "start": "2026-10-21T09:00:00+07:00",
+    "end": "2026-10-21T10:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_135",
+    "title": "đi chơi công viên",
+    "start": "2026-10-21T15:00:00+07:00",
+    "end": "2026-10-21T16:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9565",
+    "title": "họp team",
+    "start": "2026-10-22T08:00:00+07:00",
+    "end": "2026-10-22T09:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "203 Lê Văn Sỹ, Quận 3, TP.HCM",
+    "dropoff": "Chợ Tân Định",
+    "vehicle": "bike"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1354",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09615978735"
+   },
+   {
+    "id": "c_940",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09760330817"
+   },
+   {
+    "id": "c_335",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09866389975"
+   },
+   {
+    "id": "c_120",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09681921433"
+   },
+   {
+    "id": "c_173",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09219875045"
+   },
+   {
+    "id": "c_445",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09467491774"
+   },
+   {
+    "id": "c_745",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09420068324"
+   },
+   {
+    "id": "c_9783",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09845191007"
+   },
+   {
+    "id": "c_537",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09362982043"
+   },
+   {
+    "id": "c_96",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09957655422"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-17": {
+    "steps": 7683,
+    "calories": 307,
+    "distance_km": 5.5
+   },
+   "2026-10-18": {
+    "steps": 8181,
+    "calories": 327,
+    "distance_km": 5.9
+   },
+   "2026-10-19": {
+    "steps": 5148,
+    "calories": 205,
+    "distance_km": 3.7
+   },
+   "2026-10-20": {
+    "steps": 4927,
+    "calories": 197,
+    "distance_km": 3.5
+   }
+  },
+  "goal_steps": 6000,
+  "workouts": [
+   {
+    "id": "wo_5885",
+    "type": "yoga",
+    "minutes": 45,
+    "time": "2026-10-18T06:00:00+07:00"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_743",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_445",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_632",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_5486",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_8042",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_552",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-10-19T17:25:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_458",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-10-19T14:55:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_8941",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-10-19T11:55:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_1958",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-10-20T07:25:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_786",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-10-20T07:55:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_122",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-10-19T21:25:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   }
+  ],
+  "saved": []
+ }
+}

@@ -1,0 +1,214 @@
+{
+ "_meta": {
+  "question_id": "public_0590",
+  "current_time": "2026-10-21T11:10:00+07:00",
+  "tools": [
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "translator.translate"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_2057",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-25T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_950",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-20T20:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_43",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-27T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_747",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-23T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_482",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-25T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "bus_4927",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_4927",
+    "time": "2026-10-21T11:35:00+07:00"
+   },
+   {
+    "stop": "Láng",
+    "route": "metro_2a",
+    "time": "2026-10-21T11:20:00+07:00"
+   },
+   {
+    "stop": "Láng",
+    "route": "metro_2a",
+    "time": "2026-10-21T11:12:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_4927",
+    "time": "2026-10-21T11:15:00+07:00"
+   },
+   {
+    "stop": "Láng",
+    "route": "metro_2a",
+    "time": "2026-10-21T11:28:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_4927",
+    "time": "2026-10-21T11:25:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Xin chào, rất vui được gặp bạn",
+    "to_lang": "ja",
+    "translation": "こんにちは、はじめまして"
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_821",
+    "name": "Bãi xe nhà hàng Bangkok Garden",
+    "address": "12 Hai Bà Trưng, Ninh Kiều, Cần Thơ",
+    "area": "Ninh Kiều",
+    "price_per_hour": 20000,
+    "available_spots": 14
+   },
+   {
+    "id": "lot_4908",
+    "name": "Bãi xe khách sạn Bangkok Palace",
+    "address": "88 Phan Đình Phùng, Ninh Kiều, Cần Thơ",
+    "area": "Ninh Kiều",
+    "price_per_hour": 25000,
+    "available_spots": 9
+   },
+   {
+    "id": "lot_163",
+    "name": "Bãi xe chợ Xuân Khánh",
+    "address": "Đường 30 Tháng 4, Xuân Khánh, Ninh Kiều, Cần Thơ",
+    "area": "Xuân Khánh",
+    "price_per_hour": 15000,
+    "available_spots": 22
+   },
+   {
+    "id": "lot_785",
+    "name": "Bãi xe Bến Ninh Kiều",
+    "address": "Hai Bà Trưng, Ninh Kiều, Cần Thơ",
+    "area": "Bến Ninh Kiều",
+    "price_per_hour": 30000,
+    "available_spots": 0
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_586",
+    "lot_id": "lot_821",
+    "from_time": "2026-10-21T10:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-10-21T13:00:00+07:00",
+    "total": 60000,
+    "status": "reserved"
+   },
+   {
+    "id": "park_2417",
+    "lot_id": "lot_4908",
+    "from_time": "2026-10-21T09:30:00+07:00",
+    "hours": 4,
+    "end_time": "2026-10-21T13:30:00+07:00",
+    "total": 100000,
+    "status": "reserved"
+   },
+   {
+    "id": "park_93",
+    "lot_id": "lot_163",
+    "from_time": "2026-10-20T07:00:00+07:00",
+    "hours": 2,
+    "end_time": "2026-10-20T09:00:00+07:00",
+    "total": 30000,
+    "status": "ended"
+   }
+  ]
+ }
+}

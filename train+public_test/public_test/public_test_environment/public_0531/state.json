@@ -1,0 +1,222 @@
+{
+ "_meta": {
+  "question_id": "public_0531",
+  "current_time": "2026-12-03T20:30:00+07:00",
+  "tools": [
+   "gold_price.get_price",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 33,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-03",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-04",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-05",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-06",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 30
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_798",
+    "name": "Bãi đỗ Nam Đô Centre",
+    "address": "65 Lê Lợi, Quận 1, TP.HCM",
+    "area": "Lê Lợi",
+    "price_per_hour": 35000,
+    "available_spots": 0
+   },
+   {
+    "id": "lot_9271",
+    "name": "Bãi xe Khu Công nghệ cao",
+    "address": "Xa lộ Hà Nội, TP. Thủ Đức, TP.HCM",
+    "area": "Khu Công nghệ cao",
+    "price_per_hour": 20000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_28",
+    "name": "Hầm xe Sao Kim Plaza Đồng Khởi",
+    "address": "72 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "area": "Nguyễn Huệ",
+    "price_per_hour": 40000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_970",
+    "name": "Bãi đỗ xe Công viên 23/9",
+    "address": "Phạm Ngũ Lão, Quận 1, TP.HCM",
+    "area": "Bến Thành",
+    "price_per_hour": 30000,
+    "available_spots": 12
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_3712",
+    "lot_id": "lot_970",
+    "from_time": "2026-12-01T18:00:00+07:00",
+    "hours": 2,
+    "end_time": "2026-12-01T20:00:00+07:00",
+    "total": 60000,
+    "status": "ended"
+   },
+   {
+    "id": "park_4090",
+    "lot_id": "lot_798",
+    "from_time": "2026-12-03T19:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-12-03T22:00:00+07:00",
+    "total": 105000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 132000000,
+    "sell": 134000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 126000000,
+    "sell": 128000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4047
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_8260",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_865",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_980",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_4364",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_6857",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_9242",
+    "items": [
+     {
+      "product_id": "gro_4364",
+      "name": "Yến mạch Quaker 500g",
+      "price": 89000,
+      "quantity": 1
+     }
+    ],
+    "total": 89000,
+    "status": "delivered",
+    "delivery_time": "2026-11-29T09:00:00+07:00"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ }
+}

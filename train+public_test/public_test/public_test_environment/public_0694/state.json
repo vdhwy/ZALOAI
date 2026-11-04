@@ -1,0 +1,368 @@
+{
+ "_meta": {
+  "question_id": "public_0694",
+  "current_time": "2026-12-08T08:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_4585",
+    "name": "Tài khoản thanh toán",
+    "balance": 5400000
+   },
+   {
+    "id": "acc_676",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_63",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_778",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_431",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_01",
+    "account_id": "acc_4585",
+    "beneficiary_id": "ben_431",
+    "amount": -3500000,
+    "note": "tiền nhà tháng mười hai"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_8475",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_738",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5129",
+    "name": "Chị Yến",
+    "type": "direct",
+    "members": [
+     "Chị Yến"
+    ],
+    "messages": [
+     {
+      "from": "Chị Yến",
+      "time": "2026-12-08T07:40:00+07:00",
+      "text": "Hạnh ơi, chín rưỡi sáng nay tổ mình họp ở trường THCS Dịch Vọng nhé, em đi tàu điện xuống ga Cầu Giấy thì chị ra đón."
+     },
+     {
+      "from": "me",
+      "content": "Vâng chị, em sẽ đến đúng giờ ạ."
+     }
+    ]
+   },
+   {
+    "id": "chat_30",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": [
+     {
+      "from": "Minh",
+      "time": "2026-12-08T07:15:00+07:00",
+      "text": "Mẹ ơi con để quên áo khoác ở nhà rồi."
+     },
+     {
+      "from": "me",
+      "content": "Trưa mẹ mang áo khoác qua cho, con đừng lo nhé."
+     }
+    ]
+   },
+   {
+    "id": "chat_364",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_687",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": [
+     {
+      "from": "Bố",
+      "time": "2026-12-08T07:50:00+07:00",
+      "text": "Tối nay cả nhà qua ông bà ăn cơm nhé."
+     },
+     {
+      "from": "me",
+      "content": "Tối nay con về muộn, khoảng bảy giờ mới qua được ạ."
+     }
+    ]
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_134",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_446",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_4206",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_717",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 40
+   }
+  ],
+  "sessions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_988",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_73",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_911",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_153",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_179",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "public_transit": {
+  "card_balance": 0,
+  "routes": [
+   {
+    "id": "metro_137",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_6215",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-12-08T09:11:00+07:00"
+   },
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-12-08T09:03:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_6215",
+    "time": "2026-12-08T08:58:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_137",
+    "time": "2026-12-08T09:21:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_137",
+    "time": "2026-12-08T09:11:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_6215",
+    "time": "2026-12-08T09:18:00+07:00"
+   },
+   {
+    "stop": "Thượng Đình",
+    "route": "metro_2a",
+    "time": "2026-12-08T09:19:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_137",
+    "time": "2026-12-08T09:01:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_6215",
+    "time": "2026-12-08T09:08:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_1505",
+    "time": "2026-12-09T06:15:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ }
+}

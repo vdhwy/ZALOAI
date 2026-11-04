@@ -1,0 +1,602 @@
+{
+ "_meta": {
+  "question_id": "train_1175",
+  "current_time": "2026-12-05T19:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_9977",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_7639",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_6998",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_828",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_4824",
+    "show_id": "show_6998",
+    "title": "Số 9: Vì sao bầu trời màu xanh",
+    "number": 9,
+    "duration_min": 32,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_5871",
+    "show_id": "show_7639",
+    "title": "Số 6: Nghề diễn và những áp lực",
+    "number": 6,
+    "duration_min": 45,
+    "published": "2026-11-28"
+   },
+   {
+    "id": "ep_167",
+    "show_id": "show_6998",
+    "title": "Số 10: Giấc ngủ và trí nhớ",
+    "number": 10,
+    "duration_min": 45,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_702",
+    "show_id": "show_828",
+    "title": "Số 8: Lập quỹ khẩn cấp",
+    "number": 8,
+    "duration_min": 32,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_5680",
+    "show_id": "show_828",
+    "title": "Số 9: Gửi tiết kiệm hay mua vàng",
+    "number": 9,
+    "duration_min": 32,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_461",
+    "show_id": "show_7639",
+    "title": "Số 5: Sống chậm giữa thành phố",
+    "number": 5,
+    "duration_min": 45,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_714",
+    "show_id": "show_6998",
+    "title": "Số 11: Lỗ đen là gì",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-11-28"
+   },
+   {
+    "id": "ep_626",
+    "show_id": "show_9977",
+    "title": "Số 8: Nhà giả kim - phần 2",
+    "number": 8,
+    "duration_min": 25,
+    "published": "2026-11-28"
+   },
+   {
+    "id": "ep_9834",
+    "show_id": "show_9977",
+    "title": "Số 7: Nhà giả kim - phần 1",
+    "number": 7,
+    "duration_min": 18,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_798",
+    "show_id": "show_828",
+    "title": "Số 10: Quản lý chi tiêu gia đình",
+    "number": 10,
+    "duration_min": 18,
+    "published": "2026-11-28"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_330",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_965",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_107",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_701",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_6998"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 32,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-05",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 34
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-06",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-07",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-08",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 32
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_998",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_791",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_3191",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_349",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_897",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "robot_vacuum": {
+  "battery": 90,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_160",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 18
+   },
+   {
+    "id": "room_133",
+    "name": "bếp",
+    "area_m2": 10
+   },
+   {
+    "id": "room_625",
+    "name": "phòng ngủ",
+    "area_m2": 12
+   },
+   {
+    "id": "room_433",
+    "name": "phòng khách",
+    "area_m2": 22
+   },
+   {
+    "id": "room_941",
+    "name": "hành lang",
+    "area_m2": 18
+   }
+  ],
+  "current_job": null
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_321",
+    "time": "2026-12-06T05:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_3388",
+    "time": "2026-12-06T06:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_358",
+    "time": "2026-12-06T08:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_710",
+    "origin": "VCA",
+    "destination": "DAD",
+    "date": "2026-12-19",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_426",
+    "origin": "VCA",
+    "destination": "DAD",
+    "date": "2026-12-19",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_4125",
+    "origin": "VCA",
+    "destination": "DAD",
+    "date": "2026-12-19",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_788",
+    "origin": "VCA",
+    "destination": "DAD",
+    "date": "2026-12-19",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_85",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09794299650"
+   },
+   {
+    "id": "c_3863",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09479710355"
+   },
+   {
+    "id": "c_554",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09747903144"
+   },
+   {
+    "id": "c_661",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09664700428"
+   },
+   {
+    "id": "c_750",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09444504178"
+   },
+   {
+    "id": "c_755",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09648693601"
+   },
+   {
+    "id": "c_9973",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09221796219"
+   },
+   {
+    "id": "c_8662",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09631531985"
+   },
+   {
+    "id": "c_988",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09235635395"
+   },
+   {
+    "id": "c_638",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09267018788"
+   },
+   {
+    "id": "c_5149",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09510381579"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_36",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-12-04T13:20:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_952",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-12-04T20:35:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_1572",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-12-05T07:05:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_495",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-12-04T14:50:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_164",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-12-05T02:20:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_349",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-12-05T17:35:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   }
+  ],
+  "saved": []
+ }
+}

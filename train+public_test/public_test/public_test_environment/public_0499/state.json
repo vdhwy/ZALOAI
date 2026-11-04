@@ -1,0 +1,303 @@
+{
+ "_meta": {
+  "question_id": "public_0499",
+  "current_time": "2026-11-23T07:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "event_tickets.book",
+   "event_tickets.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_11",
+    "time": "2026-11-24T05:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_7687",
+    "time": "2026-11-24T07:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_40",
+    "time": "2026-11-24T06:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 25,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-11-23",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-24",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-26",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 28
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_5267",
+    "name": "Stand-up comedy Sài Gòn Cười",
+    "category": "hài kịch",
+    "date": "2026-11-30",
+    "time": "20:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 300000,
+    "available": 80
+   },
+   {
+    "id": "event_7226",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-11-27",
+    "time": "19:30",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 600000,
+    "available": 80
+   },
+   {
+    "id": "event_7873",
+    "name": "Vở kịch Ngày Mưa",
+    "category": "kịch",
+    "date": "2026-11-28",
+    "time": "19:30",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 250000,
+    "available": 30
+   },
+   {
+    "id": "event_488",
+    "name": "Chung kết bóng đá V-League",
+    "category": "thể thao",
+    "date": "2026-11-27",
+    "time": "18:00",
+    "venue": "Sân vận động Hàng Đẫy",
+    "price": 200000,
+    "available": 12
+   }
+  ],
+  "bookings": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_8480",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09576816585"
+   },
+   {
+    "id": "c_9845",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09372593794"
+   },
+   {
+    "id": "c_947",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09851892686"
+   },
+   {
+    "id": "c_611",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09349577251"
+   },
+   {
+    "id": "c_8828",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09613390056"
+   },
+   {
+    "id": "c_558",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09605208369"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_774",
+    "from": "daotao@dhsphue.example.test",
+    "from_name": "Phòng Đào tạo ĐHSP Huế",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch thi học kỳ I năm học 2026-2027",
+    "snippet": "Phòng Đào tạo thông báo lịch thi kết thúc học kỳ I.",
+    "body": "Phòng Đào tạo thông báo lịch thi kết thúc học kỳ I bắt đầu từ ngày 28/12. Sinh viên xem chi tiết trên cổng đào tạo.",
+    "time": "2026-11-21T14:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_352",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-22T00:35:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_1033",
+    "from": "ba@gmail.example.test",
+    "from_name": "Ba",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Ảnh đám giỗ ông nội",
+    "snippet": "Ba gửi con mấy tấm ảnh đám giỗ hôm qua.",
+    "body": "Ba gửi con mấy tấm ảnh đám giỗ ông nội ở quê, con giữ lại làm kỷ niệm nghe. Học hành cho tốt.",
+    "time": "2026-11-22T15:05:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_4416",
+    "from": "ba@gmail.example.test",
+    "from_name": "Ba",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Tiền sinh hoạt tháng 11",
+    "snippet": "Ba chuyển tiền sinh hoạt tháng này rồi nghe con.",
+    "body": "Ba chuyển con tiền sinh hoạt tháng 11 rồi, con kiểm tra tài khoản nghe.",
+    "time": "2026-11-17T20:10:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_522",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2992",
+    "name": "Nhi",
+    "type": "direct",
+    "members": [
+     "Nhi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_502",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9165",
+    "name": "Mạ",
+    "type": "direct",
+    "members": [
+     "Mạ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_558",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

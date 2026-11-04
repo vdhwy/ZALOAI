@@ -1,0 +1,268 @@
+{
+ "_meta": {
+  "question_id": "train_1110",
+  "current_time": "2026-12-18T10:00:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_180",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09164742340"
+   },
+   {
+    "id": "c_771",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09742773166"
+   },
+   {
+    "id": "c_522",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09443752767"
+   },
+   {
+    "id": "c_14",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09824633061"
+   },
+   {
+    "id": "c_2302",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09276004086"
+   },
+   {
+    "id": "c_9776",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09311504092"
+   },
+   {
+    "id": "c_8613",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09391862187"
+   },
+   {
+    "id": "c_4429",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09146121475"
+   },
+   {
+    "id": "c_278",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09437595338"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_38",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 960,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_90",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 180,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_324",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2027-01-07",
+    "used": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 29,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-18",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-19",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 28
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_165",
+    "time": "2026-12-19T06:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_575",
+    "name": "Cô Mai",
+    "type": "direct",
+    "members": [
+     "Cô Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_481",
+    "name": "Mẹ chồng",
+    "type": "direct",
+    "members": [
+     "Mẹ chồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8546",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_699",
+    "name": "Anh Hùng",
+    "type": "direct",
+    "members": [
+     "Anh Hùng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_759",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,176 @@
+{
+ "_meta": {
+  "question_id": "public_0517",
+  "current_time": "2026-11-29T11:35:00+07:00",
+  "tools": [
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_594",
+    "name": "Bãi xe Sao Kim Plaza Huế",
+    "address": "50A Hùng Vương, TP. Huế",
+    "area": "Hùng Vương",
+    "price_per_hour": 15000,
+    "available_spots": 24
+   },
+   {
+    "id": "lot_763",
+    "name": "Bãi đỗ xe chợ Đông Ba",
+    "address": "Trần Hưng Đạo, TP. Huế",
+    "area": "Đông Ba",
+    "price_per_hour": 10000,
+    "available_spots": 39
+   },
+   {
+    "id": "lot_341",
+    "name": "Bãi xe Đại Nội",
+    "address": "23 Tháng 8, TP. Huế",
+    "area": "Đại Nội",
+    "price_per_hour": 20000,
+    "available_spots": 12
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_2618",
+    "lot_id": "lot_594",
+    "from_time": "2026-11-29T09:00:00+07:00",
+    "hours": 4,
+    "end_time": "2026-11-29T13:00:00+07:00",
+    "total": 60000,
+    "status": "reserved"
+   },
+   {
+    "id": "park_417",
+    "lot_id": "lot_763",
+    "from_time": "2026-11-29T10:30:00+07:00",
+    "hours": 2,
+    "end_time": "2026-11-29T12:30:00+07:00",
+    "total": 20000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_3987",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-04T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_393",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-29T12:30:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_859",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-01T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_790",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-04T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_949",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-05T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "quantity": 100,
+    "avg_price": 65200,
+    "price": 62450
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 200,
+    "avg_price": 24050,
+    "price": 26850
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 500,
+    "avg_price": 53700,
+    "price": 59850
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59850,
+    "change_pct": 1.4
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 23500,
+    "change_pct": -1.2
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 62450,
+    "change_pct": 0.1
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 131700,
+    "change_pct": 1.8
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1653,
+    "change_pct": -1.0
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26850,
+    "change_pct": -1.5
+   }
+  ]
+ }
+}

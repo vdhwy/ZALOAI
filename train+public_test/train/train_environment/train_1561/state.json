@@ -1,0 +1,332 @@
+{
+ "_meta": {
+  "question_id": "train_1561",
+  "current_time": "2026-12-15T21:40:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "sms.read_recent",
+   "sms.send",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_903",
+    "name": "Mr. Okafor",
+    "relation": "đối tác",
+    "phone": "09127037986"
+   },
+   {
+    "id": "c_8253",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09177477091"
+   },
+   {
+    "id": "c_4543",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09358209983"
+   },
+   {
+    "id": "c_573",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09418231424"
+   },
+   {
+    "id": "c_1214",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09668553350"
+   },
+   {
+    "id": "c_3253",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09183344596"
+   },
+   {
+    "id": "c_762",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09873894154"
+   },
+   {
+    "id": "c_249",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09419589274"
+   },
+   {
+    "id": "c_817",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09752707995"
+   },
+   {
+    "id": "c_935",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09728584957"
+   },
+   {
+    "id": "c_309",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09372614732"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_61",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-16T18:30:00+07:00",
+    "end": "2026-12-16T19:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7211",
+    "title": "đá bóng",
+    "start": "2026-12-16T15:00:00+07:00",
+    "end": "2026-12-16T16:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_200",
+    "title": "họp phụ huynh",
+    "start": "2026-12-18T09:00:00+07:00",
+    "end": "2026-12-18T10:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3454",
+    "title": "họp team",
+    "start": "2026-12-17T19:00:00+07:00",
+    "end": "2026-12-17T20:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_2014",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-12-16T08:00:00+07:00",
+    "link": "https://meet.example.test/jzz-eckr-diz",
+    "attendees": [
+     "c_1214"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_736",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-12-18T09:00:00+07:00",
+    "link": "https://meet.example.test/ocd-lohe-ukp",
+    "attendees": [
+     "c_935",
+     "c_573"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_216",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-12-16T20:30:00+07:00",
+    "link": "https://meet.example.test/vdf-xzyd-dte",
+    "attendees": [
+     "c_903",
+     "c_249"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_04",
+    "title": "chốt booking tàu",
+    "start": "2026-12-15T22:00:00+07:00",
+    "link": "https://meet.example.test/lxq-jnpn-lga",
+    "attendees": [
+     "c_903"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_05",
+    "title": "đối chiếu invoice",
+    "start": "2026-12-16T09:00:00+07:00",
+    "link": "https://meet.example.test/hvy-pkwl-ukq",
+    "attendees": [
+     "c_8253"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 33,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-15",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-16",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-17",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 29
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-18",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 28
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 100,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_4148",
+    "name": "phòng khách",
+    "area_m2": 15
+   },
+   {
+    "id": "room_4309",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 8
+   },
+   {
+    "id": "room_6181",
+    "name": "bếp",
+    "area_m2": 10
+   },
+   {
+    "id": "room_28",
+    "name": "phòng ngủ",
+    "area_m2": 10
+   }
+  ],
+  "current_job": null
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_914",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_976",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_606",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_6957",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_4659",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "sms": {
+  "messages": []
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "_meta": {
+  "question_id": "train_0554",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_01",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_02",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_03",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_04",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_05",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_06",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_07",
+    "name": "Xe đạp xanh số 24",
+    "station": "Trạm Giảng Võ",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_08",
+    "name": "Xe đạp cam số 18",
+    "station": "Trạm Giảng Võ",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_09",
+    "name": "Xe đạp điện số 31",
+    "station": "Trạm Giảng Võ",
+    "available": false,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_02",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_03",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_04",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

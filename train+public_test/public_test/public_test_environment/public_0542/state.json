@@ -1,0 +1,352 @@
+{
+ "_meta": {
+  "question_id": "public_0542",
+  "current_time": "2026-10-23T08:15:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "fuel_price.get_price",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate"
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_729",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-27",
+    "depart": "13:00",
+    "arrive": "23:30",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_812",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-26",
+    "depart": "21:00",
+    "arrive": "07:00",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_9747",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-26",
+    "depart": "06:00",
+    "arrive": "16:00",
+    "price": 320000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_62",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-27",
+    "depart": "06:00",
+    "arrive": "09:00",
+    "price": 250000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_570",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-27",
+    "depart": "08:00",
+    "arrive": "11:00",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_878",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-27",
+    "depart": "21:00",
+    "arrive": "02:30",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_926",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-26",
+    "depart": "13:00",
+    "arrive": "23:30",
+    "price": 920000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_352",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-26",
+    "depart": "08:00",
+    "arrive": "13:00",
+    "price": 450000,
+    "seats_left": 30
+   }
+  ],
+  "bookings": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21700
+   },
+   {
+    "type": "e5",
+    "price": 20500
+   },
+   {
+    "type": "diesel",
+    "price": 19100
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_288",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-24T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_820",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-27T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_581",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-27T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_3911",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-27T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_286",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-06",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_348",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-06",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_912",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-06",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_6884",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-11-06",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_4471",
+    "origin": "DAD",
+    "destination": "SGN",
+    "date": "2026-11-07",
+    "depart": "18:30",
+    "arrive": "20:00",
+    "airline": "JetXanh",
+    "price": 1050000
+   },
+   {
+    "id": "fl_5520",
+    "origin": "SGN",
+    "destination": "HAN",
+    "date": "2026-11-13",
+    "depart": "07:00",
+    "arrive": "09:10",
+    "airline": "Sen Air",
+    "price": 1650000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_520",
+    "flight_id": "fl_5520",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_77",
+    "flight_id": "fl_4471",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_314",
+    "flight_id": "fl_912",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   },
+   {
+    "text": "Xin chào, rất vui được gặp bạn",
+    "to_lang": "ja",
+    "translation": "こんにちは、はじめまして"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5513",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09674108588"
+   },
+   {
+    "id": "c_527",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09557935058"
+   },
+   {
+    "id": "c_693",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09179957221"
+   },
+   {
+    "id": "c_237",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09578589933"
+   },
+   {
+    "id": "c_944",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09877473487"
+   },
+   {
+    "id": "c_304",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09147483400"
+   },
+   {
+    "id": "c_8169",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09887096300"
+   },
+   {
+    "id": "c_719",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09342726643"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

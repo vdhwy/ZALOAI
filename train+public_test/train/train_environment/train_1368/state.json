@@ -1,0 +1,431 @@
+{
+ "_meta": {
+  "question_id": "train_1368",
+  "current_time": "2026-11-11T14:25:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "fuel_price.get_price",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_257",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09598478729"
+   },
+   {
+    "id": "c_344",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09297848489"
+   },
+   {
+    "id": "c_771",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09783073344"
+   },
+   {
+    "id": "c_3401",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09721648265"
+   },
+   {
+    "id": "c_1977",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09208108783"
+   },
+   {
+    "id": "c_608",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09490126708"
+   },
+   {
+    "id": "c_214",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09909621141"
+   },
+   {
+    "id": "c_871",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09192265903"
+   },
+   {
+    "id": "c_8690",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09335457040"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_562",
+    "title": "họp team",
+    "start": "2026-11-13T08:00:00+07:00",
+    "end": "2026-11-13T09:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_299",
+    "title": "khám răng",
+    "start": "2026-11-14T08:00:00+07:00",
+    "end": "2026-11-14T09:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6127",
+    "title": "gặp Peter Hansen - Nordwind Systems",
+    "start": "2026-11-13T10:00:00+07:00",
+    "end": "2026-11-13T11:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "cancelled"
+   },
+   {
+    "id": "evt_391",
+    "title": "họp phụ huynh",
+    "start": "2026-11-12T09:00:00+07:00",
+    "end": "2026-11-12T10:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_464",
+    "title": "đi chơi công viên",
+    "start": "2026-11-13T15:00:00+07:00",
+    "end": "2026-11-13T16:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3453",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-12T09:30:00+07:00",
+    "end": "2026-11-12T10:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_905",
+    "title": "demo hệ thống Nordwind",
+    "start": "2026-11-17T14:00:00+07:00",
+    "end": "2026-11-17T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23300
+   },
+   {
+    "type": "e5",
+    "price": 22100
+   },
+   {
+    "type": "diesel",
+    "price": 20700
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_666",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-09T13:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_7302",
+    "from": "peter.hansen@nordwind.example.test",
+    "from_name": "Peter Hansen",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Confirm meeting Friday 13/11",
+    "snippet": "Xác nhận buổi gặp 10 giờ sáng thứ sáu tại văn phòng anh Khoa.",
+    "body": "Hi Khoa, xác nhận buổi gặp 10 giờ sáng thứ sáu 13/11 tại văn phòng bên anh để bàn hợp đồng phân phối. Best, Peter Hansen",
+    "time": "2026-11-09T09:40:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_476",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-10T21:55:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5591",
+    "from": "peter.hanson@bluecrest.example.test",
+    "from_name": "Peter Hanson",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Meeting Friday 13/11 - báo giá",
+    "snippet": "Hẹn gặp chiều thứ sáu để chốt báo giá.",
+    "body": "Chào anh Khoa, mình hẹn 3 giờ chiều thứ sáu 13/11 ở quán cà phê gần công ty anh để chốt báo giá nhé. Peter Hanson",
+    "time": "2026-11-10T11:20:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_854",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-09T01:10:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_2858",
+    "from": "septran@vmail.example.test",
+    "from_name": "Sếp Trân",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-10T22:25:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_418",
+    "from": "peter.hansen@nordwind.example.test",
+    "from_name": "Peter Hansen",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Demo schedule Tuesday 17/11",
+    "snippet": "Lịch demo hệ thống cho team anh vào thứ ba tuần sau.",
+    "body": "Hi Khoa, bên mình demo hệ thống cho team anh lúc 2 giờ chiều thứ ba 17/11 nhé. Peter Hansen",
+    "time": "2026-11-10T16:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_8190",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-13T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_582",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-13T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_57",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-14T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_493",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-10T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_6142",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_3715",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_192",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_7720",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_8855",
+    "time": "2026-11-10T18:15:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_361",
+    "time": "2026-11-10T14:05:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_163",
+    "time": "2026-11-10T20:25:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_736",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 199000,
+    "due_date": "2026-11-18",
+    "paid": false
+   },
+   {
+    "id": "bill_7812",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 849000,
+    "due_date": "2026-11-17",
+    "paid": false
+   },
+   {
+    "id": "bill_669",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 217000,
+    "due_date": "2026-11-14",
+    "paid": false
+   },
+   {
+    "id": "bill_498",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 149000,
+    "due_date": "2026-11-18",
+    "paid": false
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_199",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-11-13T09:00:00+07:00",
+    "link": "https://meet.example.test/fvq-kvjh-dlh",
+    "attendees": [
+     "c_771",
+     "c_608"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_759",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-12T10:30:00+07:00",
+    "link": "https://meet.example.test/wxe-fije-mko",
+    "attendees": [
+     "c_871",
+     "c_257"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ }
+}

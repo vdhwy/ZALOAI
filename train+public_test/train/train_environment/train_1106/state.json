@@ -1,0 +1,305 @@
+{
+ "_meta": {
+  "question_id": "train_1106",
+  "current_time": "2026-12-15T19:25:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "library.reserve",
+   "library.search",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_799",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_1577",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_250",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_24",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_173",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_390",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_89",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_215",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": false
+   }
+  ],
+  "reservations": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_19",
+    "time": "2026-12-16T05:30:00+07:00",
+    "label": "tập dưỡng sinh",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_803",
+    "time": "2026-12-16T16:30:00+07:00",
+    "label": "đón cháu",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_472",
+    "time": "2026-12-15T21:00:00+07:00",
+    "label": "uống thuốc tối",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-12": {
+    "steps": 3624,
+    "calories": 144,
+    "distance_km": 2.6
+   },
+   "2026-12-13": {
+    "steps": 6676,
+    "calories": 267,
+    "distance_km": 4.8
+   },
+   "2026-12-14": {
+    "steps": 4307,
+    "calories": 172,
+    "distance_km": 3.1
+   },
+   "2026-12-15": {
+    "steps": 1147,
+    "calories": 45,
+    "distance_km": 0.8
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_646",
+    "type": "cycling",
+    "minutes": 20,
+    "time": "2026-12-11T17:00:00+07:00"
+   },
+   {
+    "id": "wo_1380",
+    "type": "running",
+    "minutes": 20,
+    "time": "2026-12-14T06:30:00+07:00"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_318",
+    "name": "thuốc huyết áp",
+    "times": [
+     "06:30",
+     "18:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_75",
+    "name": "thuốc dạ dày",
+    "times": [
+     "21:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_2041",
+    "name": "thuốc an thần",
+    "times": [
+     "21:00"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_650",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_158",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_9470",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_21",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_283",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ }
+}

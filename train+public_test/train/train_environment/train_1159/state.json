@@ -1,0 +1,406 @@
+{
+ "_meta": {
+  "question_id": "train_1159",
+  "current_time": "2026-11-02T18:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ewallet": {
+  "balance": 145000,
+  "transactions": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_718",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-11-22",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_120",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-11-20",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_882",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-11",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_769",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-08",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_330",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 211000,
+    "due_date": "2026-11-09",
+    "paid": false
+   },
+   {
+    "id": "bill_39",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 154000,
+    "due_date": "2026-11-10",
+    "paid": false
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_389",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3397",
+    "name": "Mạ",
+    "type": "direct",
+    "members": [
+     "Mạ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_588",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_63",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_564",
+    "name": "Nhi",
+    "type": "direct",
+    "members": [
+     "Nhi"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-11-02",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 32
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-03",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-04",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-05",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_303",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09339149255"
+   },
+   {
+    "id": "c_847",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09500881944"
+   },
+   {
+    "id": "c_388",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09774599381"
+   },
+   {
+    "id": "c_185",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09884830099"
+   },
+   {
+    "id": "c_890",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09815439559"
+   },
+   {
+    "id": "c_331",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09958451102"
+   },
+   {
+    "id": "c_619",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09382700021"
+   },
+   {
+    "id": "c_867",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09176055867"
+   },
+   {
+    "id": "c_211",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09700468835"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_996",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_3713",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_489",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_928",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_3783",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_421",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_9165",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_504",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ }
+}

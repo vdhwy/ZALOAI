@@ -1,0 +1,298 @@
+{
+ "_meta": {
+  "question_id": "train_1438",
+  "current_time": "2026-11-15T12:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "phone.call",
+   "phone.recent_calls",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_851",
+    "tracking_id": "GST188608512",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Hộp quà Trung thu",
+    "status": "in_transit",
+    "eta": "2026-11-16T17:00:00+07:00"
+   },
+   {
+    "id": "shp_9761",
+    "tracking_id": "STP956041586",
+    "carrier": "SaoTel Post",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "out_for_delivery",
+    "eta": "2026-11-15T10:00:00+07:00"
+   },
+   {
+    "id": "shp_850",
+    "tracking_id": "MDXVN778590598",
+    "carrier": "MDX Express",
+    "name": "Giày thể thao",
+    "status": "delivered",
+    "eta": "2026-11-14T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 128000000,
+    "sell": 130000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 122000000,
+    "sell": 124000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3996
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6299",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09558864690"
+   },
+   {
+    "id": "c_477",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09947229754"
+   },
+   {
+    "id": "c_774",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09157561138"
+   },
+   {
+    "id": "c_237",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09279992838"
+   },
+   {
+    "id": "c_900",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09190324378"
+   },
+   {
+    "id": "c_588",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09394680469"
+   },
+   {
+    "id": "c_9993",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09644130456"
+   },
+   {
+    "id": "c_539",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09493736012"
+   },
+   {
+    "id": "c_557",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09641624833"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_16",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2109",
+    "name": "Sếp David",
+    "type": "direct",
+    "members": [
+     "Sếp David"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4897",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_859",
+    "name": "Team Design",
+    "type": "direct",
+    "members": [
+     "Team Design"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9323",
+    "name": "Vợ Hằng",
+    "type": "direct",
+    "members": [
+     "Vợ Hằng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_5983",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 205000,
+    "due_date": "2026-11-21",
+    "paid": false
+   },
+   {
+    "id": "bill_472",
+    "type": "internet",
+    "provider": "Kestrel Fiber",
+    "amount": 218000,
+    "due_date": "2026-11-19",
+    "paid": false
+   },
+   {
+    "id": "bill_394",
+    "type": "tv",
+    "provider": "Kestrel Media",
+    "amount": 151000,
+    "due_date": "2026-11-24",
+    "paid": false
+   },
+   {
+    "id": "bill_466",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 845000,
+    "due_date": "2026-11-19",
+    "paid": true,
+    "paid_with": "bank"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 30,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-15",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-16",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 28
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-18",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_9534",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-12-11",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_4074",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-12-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_9709",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-12-05",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ }
+}

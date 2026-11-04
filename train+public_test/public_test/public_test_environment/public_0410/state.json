@@ -1,0 +1,194 @@
+{
+ "_meta": {
+  "question_id": "public_0410",
+  "current_time": "2026-11-07T09:00:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer"
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_998",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09114427435"
+   },
+   {
+    "id": "c_3973",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09641922564"
+   },
+   {
+    "id": "c_1399",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09568099107"
+   },
+   {
+    "id": "c_1660",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09935269924"
+   },
+   {
+    "id": "c_106",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09695028919"
+   },
+   {
+    "id": "c_369",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09879730621"
+   },
+   {
+    "id": "c_299",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09623977104"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_4684",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8603",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8136",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_459",
+    "name": "Thầy Phong",
+    "type": "direct",
+    "members": [
+     "Thầy Phong"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_616",
+    "name": "Trang",
+    "type": "direct",
+    "members": [
+     "Trang"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_9973",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_353",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_835",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_12",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_762",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_5512",
+    "account_id": "acc_353",
+    "time": "2026-11-06T20:10:00+07:00",
+    "amount": 3500000,
+    "counterparty": "Nguyễn Thị Hạnh",
+    "note": "Mẹ gửi tiết kiệm cho Linh"
+   },
+   {
+    "id": "tx_871",
+    "account_id": "acc_9973",
+    "time": "2026-11-05T11:30:00+07:00",
+    "amount": -1200000,
+    "counterparty": "Ban quản lý KTX Mỹ Đình",
+    "note": "Đóng tiền KTX tháng 11"
+   },
+   {
+    "id": "tx_2264",
+    "account_id": "acc_9973",
+    "time": "2026-11-03T21:45:00+07:00",
+    "amount": -150000,
+    "counterparty": "Muado",
+    "note": "Thanh toán đơn hàng Muado"
+   },
+   {
+    "id": "tx_3302",
+    "account_id": "acc_9973",
+    "time": "2026-11-01T17:00:00+07:00",
+    "amount": 2000000,
+    "counterparty": "Phạm Thu Hà",
+    "note": "Tiền gia sư tháng 10"
+   }
+  ]
+ }
+}

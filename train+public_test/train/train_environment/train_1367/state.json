@@ -1,0 +1,299 @@
+{
+ "_meta": {
+  "question_id": "train_1367",
+  "current_time": "2026-11-11T09:15:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "gold_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6793",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09870692775"
+   },
+   {
+    "id": "c_21",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09102492579"
+   },
+   {
+    "id": "c_564",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09460642157"
+   },
+   {
+    "id": "c_198",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09288278734"
+   },
+   {
+    "id": "c_601",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09128643654"
+   },
+   {
+    "id": "c_615",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09893851597"
+   },
+   {
+    "id": "c_3271",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09388627272"
+   },
+   {
+    "id": "c_9043",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09497007950"
+   },
+   {
+    "id": "c_144",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09377861898"
+   },
+   {
+    "id": "c_166",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09396209390"
+   },
+   {
+    "id": "c_7720",
+    "name": "Sarah Kim",
+    "relation": "giáo viên tiếng Anh ở trường",
+    "phone": "09731845206"
+   },
+   {
+    "id": "c_418",
+    "name": "Sara Kim",
+    "relation": "phụ huynh lớp 8A",
+    "phone": "09852170394"
+   },
+   {
+    "id": "c_2093",
+    "name": "Julian Ward",
+    "relation": "giáo viên bản ngữ ở trường",
+    "phone": "09614093827"
+   },
+   {
+    "id": "c_865",
+    "name": "Julian Warde",
+    "relation": "phụ huynh lớp 9C",
+    "phone": "09583326041"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 125200000,
+    "sell": 127200000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 119200000,
+    "sell": 121200000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4179
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_9862",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_652",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_860",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_1157",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_101",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25703
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27759
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.4
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_589",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_806",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": false
+   },
+   {
+    "id": "rule_7726",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_400",
+    "name": "hành lang",
+    "area_m2": 22
+   },
+   {
+    "id": "room_5335",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   },
+   {
+    "id": "room_26",
+    "name": "bếp",
+    "area_m2": 22
+   },
+   {
+    "id": "room_438",
+    "name": "phòng làm việc",
+    "area_m2": 10
+   },
+   {
+    "id": "room_676",
+    "name": "phòng khách",
+    "area_m2": 12
+   }
+  ],
+  "current_job": null
+ },
+ "ewallet": {
+  "balance": 150000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "topup_mobile",
+    "phone": "09731845206",
+    "amount": -100000
+   }
+  ]
+ }
+}

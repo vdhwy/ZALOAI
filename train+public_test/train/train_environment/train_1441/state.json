@@ -1,0 +1,196 @@
+{
+ "_meta": {
+  "question_id": "train_1441",
+  "current_time": "2026-11-02T21:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "gold_price.get_price",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_548",
+    "time": "2026-11-03T07:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_5599",
+    "time": "2026-11-03T06:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_357",
+    "time": "2026-11-03T05:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_462",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_6648",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_828",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_245",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_180",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_6015",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_618",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-30": {
+    "steps": 7392,
+    "calories": 295,
+    "distance_km": 5.3
+   },
+   "2026-10-31": {
+    "steps": 3681,
+    "calories": 147,
+    "distance_km": 2.7
+   },
+   "2026-11-01": {
+    "steps": 7166,
+    "calories": 286,
+    "distance_km": 5.2
+   },
+   "2026-11-02": {
+    "steps": 1224,
+    "calories": 48,
+    "distance_km": 0.9
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_441",
+    "type": "gym",
+    "minutes": 45,
+    "time": "2026-10-30T18:30:00+07:00"
+   },
+   {
+    "id": "wo_318",
+    "type": "walking",
+    "minutes": 45,
+    "time": "2026-11-01T17:00:00+07:00"
+   },
+   {
+    "id": "wo_576",
+    "type": "yoga",
+    "minutes": 30,
+    "time": "2026-10-29T18:00:00+07:00"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 125300000,
+    "sell": 127300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 119300000,
+    "sell": 121300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4211
+   }
+  ]
+ }
+}

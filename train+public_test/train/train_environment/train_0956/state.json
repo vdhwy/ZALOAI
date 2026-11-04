@@ -1,0 +1,387 @@
+{
+ "_meta": {
+  "question_id": "train_0956",
+  "current_time": "2026-11-16T10:20:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "gold_price.get_price",
+   "library.reserve",
+   "library.search",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_991",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_214",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_590",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": false
+   },
+   {
+    "id": "book_2524",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_7943",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_1131",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_6188",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-15T11:50:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_7848",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-11-16T09:20:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_129",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-15T10:20:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_172",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-15T19:20:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_9463",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-15T16:35:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_435",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-16T02:50:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   }
+  ],
+  "saved": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-16",
+    "prizes": {
+     "special": "937446",
+     "first": "34825",
+     "eighth": "34"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-16",
+    "prizes": {
+     "special": "358727",
+     "first": "61805",
+     "eighth": "75"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-16",
+    "prizes": {
+     "special": "115113",
+     "first": "95466",
+     "eighth": "94"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-16",
+    "prizes": {
+     "special": "357581",
+     "first": "71348",
+     "eighth": "85"
+    }
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 126500000,
+    "sell": 128500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 120500000,
+    "sell": 122500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4269
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_827",
+    "title": "họp team",
+    "start": "2026-11-18T14:00:00+07:00",
+    "end": "2026-11-18T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_866",
+    "title": "đi chơi công viên",
+    "start": "2026-11-17T10:00:00+07:00",
+    "end": "2026-11-17T11:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_713",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_561",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_6632",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_359",
+    "show_id": "show_561",
+    "title": "Số 16: Quản lý chi tiêu gia đình",
+    "number": 16,
+    "duration_min": 32,
+    "published": "2026-11-09"
+   },
+   {
+    "id": "ep_277",
+    "show_id": "show_6632",
+    "title": "Số 20: Nghề diễn và những áp lực",
+    "number": 20,
+    "duration_min": 25,
+    "published": "2026-11-09"
+   },
+   {
+    "id": "ep_147",
+    "show_id": "show_713",
+    "title": "Số 7: Đi xe đạp đi làm",
+    "number": 7,
+    "duration_min": 25,
+    "published": "2026-11-09"
+   },
+   {
+    "id": "ep_9959",
+    "show_id": "show_713",
+    "title": "Số 5: Rác thải nhựa ở đô thị",
+    "number": 5,
+    "duration_min": 18,
+    "published": "2026-10-26"
+   },
+   {
+    "id": "ep_918",
+    "show_id": "show_713",
+    "title": "Số 6: Trồng cây trên sân thượng",
+    "number": 6,
+    "duration_min": 32,
+    "published": "2026-11-02"
+   },
+   {
+    "id": "ep_1096",
+    "show_id": "show_561",
+    "title": "Số 15: Gửi tiết kiệm hay mua vàng",
+    "number": 15,
+    "duration_min": 45,
+    "published": "2026-11-02"
+   },
+   {
+    "id": "ep_6288",
+    "show_id": "show_561",
+    "title": "Số 14: Lập quỹ khẩn cấp",
+    "number": 14,
+    "duration_min": 18,
+    "published": "2026-10-26"
+   },
+   {
+    "id": "ep_7049",
+    "show_id": "show_6632",
+    "title": "Số 19: Sống chậm giữa thành phố",
+    "number": 19,
+    "duration_min": 45,
+    "published": "2026-11-02"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_13",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_916",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_536",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_46",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_713"
+  ],
+  "queue": [],
+  "now_playing": null
+ }
+}

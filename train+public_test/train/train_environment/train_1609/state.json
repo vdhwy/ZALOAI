@@ -1,0 +1,461 @@
+{
+ "_meta": {
+  "question_id": "train_1609",
+  "current_time": "2026-11-21T22:05:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop"
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_324",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_808",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_3792",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_246",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_511",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 80
+   }
+  ],
+  "guest_codes": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-21",
+    "prizes": {
+     "special": "664721",
+     "first": "46276",
+     "eighth": "27"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-21",
+    "prizes": {
+     "special": "254860",
+     "first": "12609",
+     "eighth": "69"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-21",
+    "prizes": {
+     "special": "956352",
+     "first": "95686",
+     "eighth": "96"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-21",
+    "prizes": {
+     "special": "298643",
+     "first": "23248",
+     "eighth": "50"
+    }
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-21",
+    "to": "2026-11-21",
+    "kwh": 15.1,
+    "cost": 43800,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 6.8
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 3.0
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-15",
+    "to": "2026-11-21",
+    "kwh": 94.9,
+    "cost": 275200,
+    "days": [
+     {
+      "date": "2026-11-15",
+      "kwh": 7.8
+     },
+     {
+      "date": "2026-11-16",
+      "kwh": 13.3
+     },
+     {
+      "date": "2026-11-17",
+      "kwh": 15.5
+     },
+     {
+      "date": "2026-11-18",
+      "kwh": 14.1
+     },
+     {
+      "date": "2026-11-19",
+      "kwh": 13.2
+     },
+     {
+      "date": "2026-11-20",
+      "kwh": 15.9
+     },
+     {
+      "date": "2026-11-21",
+      "kwh": 15.1
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-21",
+    "kwh": 248.5,
+    "cost": 720600
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_116",
+    "name": "Cao Nguyên Coffee Đinh Tiên Hoàng",
+    "address": "52 Đinh Tiên Hoàng, Huế",
+    "category": "cafe",
+    "detail": "quán cà phê yên tĩnh, gần Đại Nội"
+   },
+   {
+    "id": "place_8135",
+    "name": "Bún bò Mụ Rớt",
+    "address": "2 Nguyễn Du, Huế",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_4869",
+    "name": "Thư viện Tổng hợp Thừa Thiên Huế",
+    "address": "25 Lê Lợi, Huế",
+    "category": "library"
+   },
+   {
+    "id": "place_920",
+    "name": "Bệnh viện Trung ương Huế",
+    "address": "16 Lê Lợi, Huế",
+    "category": "hospital"
+   },
+   {
+    "id": "place_7127",
+    "name": "Siêu thị MinhMart Huế",
+    "address": "174 Bà Triệu, Huế",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": [
+   {
+    "id": "fav_01",
+    "place_id": "place_116",
+    "label": "quán học bài"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_169",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_82",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_414",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_622",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_5521",
+    "restaurant_id": "rest_414",
+    "items": [
+     {
+      "item_id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 189000,
+    "address": "17 Nguyễn Huệ, Phú Nhuận, Huế",
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_3307",
+    "restaurant_id": "rest_414",
+    "items": [
+     {
+      "item_id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 219000,
+    "address": "45 Đống Đa, Huế",
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_872",
+    "restaurant_id": "rest_169",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 78000,
+    "address": "17 Nguyễn Huệ, Phú Nhuận, Huế",
+    "payment": "cash",
+    "status": "delivered"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1320",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09460833182"
+   },
+   {
+    "id": "c_3901",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09509491490"
+   },
+   {
+    "id": "c_7764",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09121870110"
+   },
+   {
+    "id": "c_3728",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09779229094"
+   },
+   {
+    "id": "c_6203",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09710892961"
+   },
+   {
+    "id": "c_909",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09182012654"
+   },
+   {
+    "id": "c_613",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09892303037"
+   },
+   {
+    "id": "c_669",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09184377773"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_4389",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 25
+   },
+   {
+    "id": "room_815",
+    "name": "bếp",
+    "area_m2": 10
+   },
+   {
+    "id": "room_250",
+    "name": "phòng ngủ",
+    "area_m2": 18
+   },
+   {
+    "id": "room_587",
+    "name": "phòng khách",
+    "area_m2": 8
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng ngủ"
+   ],
+   "whole_house": false,
+   "mode": "mop"
+  }
+ }
+}

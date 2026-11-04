@@ -1,0 +1,414 @@
+{
+ "_meta": {
+  "question_id": "public_0686",
+  "current_time": "2026-12-06T08:50:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "fuel_price.get_price",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_1750",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-26",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_124",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-26",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_531",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-26",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_1971",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-26",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_2264",
+    "origin": "SGN",
+    "destination": "TPE",
+    "date": "2026-12-06",
+    "depart": "13:30",
+    "arrive": "18:05",
+    "airline": "JetXanh",
+    "price": 3450000
+   },
+   {
+    "id": "fl_3917",
+    "origin": "SGN",
+    "destination": "KHH",
+    "date": "2026-12-18",
+    "depart": "10:15",
+    "arrive": "14:30",
+    "airline": "Sen Air",
+    "price": 3180000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_317",
+    "flight_id": "fl_2264",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed",
+    "checked_in": true
+   },
+   {
+    "id": "bk_582",
+    "flight_id": "fl_3917",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_4967",
+    "name": "Anh Lộc",
+    "type": "direct",
+    "members": [
+     "Anh Lộc"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_374",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_112",
+    "name": "Bé Na",
+    "type": "direct",
+    "members": [
+     "Bé Na"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4944",
+    "name": "Chú Năm",
+    "type": "direct",
+    "members": [
+     "Chú Năm"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_439",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "203 Lê Văn Sỹ, Quận 3, TP.HCM",
+    "dropoff": "Sân bay Tân Sơn Nhất",
+    "vehicle": "car4",
+    "schedule_time": "2026-12-06T10:30:00+07:00"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 32,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-06",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-07",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-08",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-09",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 29
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5155",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09203850793"
+   },
+   {
+    "id": "c_4050",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09484084489"
+   },
+   {
+    "id": "c_1080",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09274560238"
+   },
+   {
+    "id": "c_1170",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09880237186"
+   },
+   {
+    "id": "c_434",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09683208185"
+   },
+   {
+    "id": "c_60",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09180824282"
+   },
+   {
+    "id": "c_59",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09667649018"
+   },
+   {
+    "id": "c_7739",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09445556727"
+   },
+   {
+    "id": "c_2773",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09139231255"
+   },
+   {
+    "id": "c_137",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09560383767"
+   },
+   {
+    "id": "c_288",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09959739821"
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_902",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Vũng Tàu",
+    "date": "2026-12-12",
+    "depart": "21:00",
+    "arrive": "07:30",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_142",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-09",
+    "depart": "08:00",
+    "arrive": "15:00",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_818",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-09",
+    "depart": "21:00",
+    "arrive": "00:00",
+    "price": 680000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_4041",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-09",
+    "depart": "21:00",
+    "arrive": "02:00",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_918",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Vũng Tàu",
+    "date": "2026-12-12",
+    "depart": "13:00",
+    "arrive": "20:00",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_225",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-09",
+    "depart": "13:00",
+    "arrive": "23:30",
+    "price": 250000,
+    "seats_left": 2
+   }
+  ],
+  "bookings": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22100
+   },
+   {
+    "type": "e5",
+    "price": 20900
+   },
+   {
+    "type": "diesel",
+    "price": 19500
+   }
+  ]
+ }
+}

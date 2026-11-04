@@ -1,0 +1,368 @@
+{
+ "_meta": {
+  "question_id": "train_1380",
+  "current_time": "2026-10-29T09:00:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_511",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_4503",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": true
+   },
+   {
+    "id": "item_871",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": true
+   },
+   {
+    "id": "item_158",
+    "name": "táo",
+    "quantity": 4,
+    "checked": true
+   },
+   {
+    "id": "item_7164",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_524",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_54",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_277",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "Ga Huế",
+    "dropoff": "Homestay Garden House, 9 Nguyễn Sinh Cung, Huế",
+    "vehicle": "car7",
+    "schedule_time": "2026-10-29T10:00:00+07:00"
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_163",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-11-04",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_2488",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-07",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_290",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-11-25",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_4901",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-11-06",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_9419",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-11-15",
+    "status": "paused",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5809",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09112833063"
+   },
+   {
+    "id": "c_331",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09264126864"
+   },
+   {
+    "id": "c_167",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09502454661"
+   },
+   {
+    "id": "c_322",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09890643111"
+   },
+   {
+    "id": "c_218",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09648695209"
+   },
+   {
+    "id": "c_781",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09265942175"
+   },
+   {
+    "id": "c_5788",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09988390264"
+   },
+   {
+    "id": "c_378",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09508446455"
+   },
+   {
+    "id": "c_3422",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09958036943"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 75,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_286",
+    "name": "bếp",
+    "area_m2": 10
+   },
+   {
+    "id": "room_5284",
+    "name": "phòng ngủ",
+    "area_m2": 12
+   },
+   {
+    "id": "room_448",
+    "name": "phòng khách",
+    "area_m2": 8
+   },
+   {
+    "id": "room_119",
+    "name": "phòng ăn",
+    "area_m2": 8
+   }
+  ],
+  "current_job": null
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23800
+   },
+   {
+    "type": "e5",
+    "price": 22600
+   },
+   {
+    "type": "diesel",
+    "price": 21200
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_7446",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_875",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_4928",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_500",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_4385",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ }
+}

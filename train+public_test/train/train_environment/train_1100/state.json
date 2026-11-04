@@ -1,0 +1,202 @@
+{
+ "_meta": {
+  "question_id": "train_1100",
+  "current_time": "2026-11-07T22:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_8488",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": false
+   },
+   {
+    "id": "rule_3737",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_918",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": false
+   },
+   {
+    "id": "rule_767",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_944",
+    "time": "2026-11-08T06:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_315",
+    "time": "2026-11-08T05:45:00+07:00",
+    "label": "dậy mở tiệm",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_958",
+    "tracking_id": "STP589738248",
+    "carrier": "SaoTel Post",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "out_for_delivery",
+    "eta": "2026-11-07T17:00:00+07:00"
+   },
+   {
+    "id": "shp_739",
+    "tracking_id": "EV632063990",
+    "carrier": "VNPost",
+    "name": "Ốp lưng điện thoại",
+    "status": "in_transit",
+    "eta": "2026-11-10T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "calculator": {},
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25910
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27982
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 172.7
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_992",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_626",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_244",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_6480",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_765",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_389",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_65",
+    "time": "2026-11-06T09:25:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_8948",
+    "time": "2026-11-06T11:25:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_558",
+    "time": "2026-11-07T01:30:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   }
+  ]
+ }
+}

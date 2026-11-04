@@ -1,0 +1,180 @@
+{
+ "_meta": {
+  "question_id": "train_1191",
+  "current_time": "2026-12-14T13:10:00+07:00",
+  "tools": [
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "fuel_price.get_price",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_2741",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2027-01-02",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_457",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-12-30",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_183",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2027-01-04",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_661",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-20",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_1096",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-20",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_626",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-20",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_348",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-20",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_5521",
+    "origin": "SGN",
+    "destination": "HAN",
+    "date": "2026-12-15",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "JetXanh",
+    "price": 1390000
+   },
+   {
+    "id": "fl_934",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-12-20",
+    "depart": "19:30",
+    "arrive": "21:40",
+    "airline": "JetXanh",
+    "price": 1290000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_86",
+    "flight_id": "fl_934",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_1203",
+    "flight_id": "fl_5521",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_421",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-12-13T07:10:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_204",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-12-14T07:40:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_498",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-12-14T02:55:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_2337",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-12-14T10:40:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   }
+  ],
+  "saved": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22800
+   },
+   {
+    "type": "e5",
+    "price": 21600
+   },
+   {
+    "type": "diesel",
+    "price": 20200
+   }
+  ]
+ }
+}

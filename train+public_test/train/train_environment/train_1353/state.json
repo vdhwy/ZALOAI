@@ -1,0 +1,206 @@
+{
+ "_meta": {
+  "question_id": "train_1353",
+  "current_time": "2026-10-26T10:35:00+07:00",
+  "tools": [
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_152",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_920",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_755",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_180",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_6631",
+    "name": "The Olive Branch Café",
+    "address": "25 Hai Bà Trưng, Ninh Kiều, Cần Thơ",
+    "category": "cafe"
+   },
+   {
+    "id": "place_418",
+    "name": "The Olive Tree Café",
+    "address": "40 Võ Văn Kiệt, Cái Răng, Cần Thơ",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_7816",
+    "tracking_id": "JV209186465",
+    "carrier": "JetViệt Express",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-10-28T17:00:00+07:00"
+   },
+   {
+    "id": "shp_1059",
+    "tracking_id": "GST567240306",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Áo khoác gió",
+    "status": "out_for_delivery",
+    "eta": "2026-10-26T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_505",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_979",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_587",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_322",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_277",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 120
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_339",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_506",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 7200,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_4913",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-15",
+    "used": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_5170",
+    "contact_id": null,
+    "phone_number": "09217735064",
+    "direction": "incoming",
+    "content": "Ba ơi thùng bưởi con gửi ở quán The Olive Branch Café, 25 Hai Bà Trưng, Ninh Kiều, chứ không phải The Olive Tree Café bên Cái Răng nha. Ba hẹn bưu tá tới đó lấy gửi lên Sài Gòn giùm con. Thứ Năm này con bay ra Hà Nội công tác rồi. Tí"
+   }
+  ]
+ }
+}

@@ -1,0 +1,431 @@
+{
+ "_meta": {
+  "question_id": "train_1372",
+  "current_time": "2026-10-12T14:50:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_837",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_309",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_6841",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 120
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_347",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 8000000
+   },
+   {
+    "id": "acc_38",
+    "name": "Tài khoản thanh toán",
+    "balance": 2150000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_6338",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_429",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_2786",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_8812",
+    "account_id": "acc_38",
+    "amount": 350000,
+    "from_name": "Trang",
+    "note": "Trang gop the tap Sunrise Fitness Center",
+    "time": "2026-10-12T09:14:00+07:00"
+   },
+   {
+    "id": "tx_8930",
+    "account_id": "acc_38",
+    "amount": 200000,
+    "from_name": "Quân",
+    "note": "Quan dong lop yoga Sunrise Fitness Studio",
+    "time": "2026-10-12T10:02:00+07:00"
+   },
+   {
+    "id": "tx_9047",
+    "account_id": "acc_38",
+    "amount": 350000,
+    "from_name": "Phương Hà",
+    "note": "Ha gop the tap Sunrise Fitness Center",
+    "time": "2026-10-12T11:40:00+07:00"
+   },
+   {
+    "id": "tx_7713",
+    "account_id": "acc_38",
+    "amount": -120000,
+    "from_name": null,
+    "note": "Mua sach giao trinh",
+    "time": "2026-10-10T16:22:00+07:00"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_368",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-10-10T23:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_904",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-10-11T13:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_902",
+    "from": "trang@gmail.example.test",
+    "from_name": "Trang",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-10-12T12:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_546",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-14T18:30:00+07:00",
+    "end": "2026-10-14T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3146",
+    "title": "họp phụ huynh",
+    "start": "2026-10-13T19:30:00+07:00",
+    "end": "2026-10-13T20:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_913",
+    "title": "họp team",
+    "start": "2026-10-13T19:00:00+07:00",
+    "end": "2026-10-13T20:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_182",
+    "title": "đá bóng",
+    "start": "2026-10-13T15:30:00+07:00",
+    "end": "2026-10-13T16:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6625",
+    "title": "tập thử gym",
+    "start": "2026-10-12T17:00:00+07:00",
+    "end": "2026-10-12T18:30:00+07:00",
+    "location": "Sunrise Fitness Center, 18 Trần Duy Hưng, Cầu Giấy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9281",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09604696101"
+   },
+   {
+    "id": "c_268",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09230117249"
+   },
+   {
+    "id": "c_823",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09289419002"
+   },
+   {
+    "id": "c_119",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09886158881"
+   },
+   {
+    "id": "c_502",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09648733785"
+   },
+   {
+    "id": "c_683",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09384543792"
+   },
+   {
+    "id": "c_669",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09515248138"
+   },
+   {
+    "id": "c_8323",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09439768129"
+   },
+   {
+    "id": "c_5855",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09871833223"
+   },
+   {
+    "id": "c_413",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09874470559"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_290",
+    "name": "Trang",
+    "type": "direct",
+    "members": [
+     "Trang"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Tớ sắp làm xong bài rồi nha."
+     }
+    ]
+   },
+   {
+    "id": "chat_6143",
+    "name": "Phương Hà",
+    "type": "direct",
+    "members": [
+     "Phương Hà"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2817",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_772",
+    "name": "Quân",
+    "type": "direct",
+    "members": [
+     "Quân"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_158",
+    "name": "Thầy Phong",
+    "type": "direct",
+    "members": [
+     "Thầy Phong"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_309",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 27,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-12",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-13",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-14",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-15",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 29
+   }
+  ]
+ }
+}

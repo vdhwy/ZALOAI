@@ -1,0 +1,287 @@
+{
+ "_meta": {
+  "question_id": "train_1070",
+  "current_time": "2026-12-15T22:05:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21300
+   },
+   {
+    "type": "e5",
+    "price": 20100
+   },
+   {
+    "type": "diesel",
+    "price": 18700
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_8479",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-12-19",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_791",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2027-01-04",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_776",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-12-22",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_114",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_535",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_9544",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_2101",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_25",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_807",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-12-15",
+    "to": "2026-12-15",
+    "kwh": 8.5,
+    "cost": 24600,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.8
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.7
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-12-09",
+    "to": "2026-12-15",
+    "kwh": 68.2,
+    "cost": 197800,
+    "days": [
+     {
+      "date": "2026-12-09",
+      "kwh": 12.0
+     },
+     {
+      "date": "2026-12-10",
+      "kwh": 8.5
+     },
+     {
+      "date": "2026-12-11",
+      "kwh": 8.2
+     },
+     {
+      "date": "2026-12-12",
+      "kwh": 9.9
+     },
+     {
+      "date": "2026-12-13",
+      "kwh": 12.6
+     },
+     {
+      "date": "2026-12-14",
+      "kwh": 8.5
+     },
+     {
+      "date": "2026-12-15",
+      "kwh": 8.5
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-12-01",
+    "to": "2026-12-15",
+    "kwh": 157.4,
+    "cost": 456500
+   }
+  },
+  "alert_threshold_kwh": 300
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_8184",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09353809052"
+   },
+   {
+    "id": "c_5107",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09261705167"
+   },
+   {
+    "id": "c_716",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09119216784"
+   },
+   {
+    "id": "c_9809",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09601458834"
+   },
+   {
+    "id": "c_258",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09759430940"
+   },
+   {
+    "id": "c_281",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09797910361"
+   },
+   {
+    "id": "c_781",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09160143992"
+   },
+   {
+    "id": "c_4835",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09168024077"
+   },
+   {
+    "id": "c_1267",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09707645389"
+   },
+   {
+    "id": "c_182",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09432968641"
+   },
+   {
+    "id": "c_393",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09617474637"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 31,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-15",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-16",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-17",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 29
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 28
+   }
+  ]
+ }
+}

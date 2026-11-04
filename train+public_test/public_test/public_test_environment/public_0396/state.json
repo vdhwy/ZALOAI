@@ -1,0 +1,277 @@
+{
+ "_meta": {
+  "question_id": "public_0396",
+  "current_time": "2026-11-12T15:40:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": "c_2323",
+    "phone_number": "09308526159",
+    "status": "dialing"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2323",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09308526159"
+   },
+   {
+    "id": "c_718",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09680964967"
+   },
+   {
+    "id": "c_9069",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09702763622"
+   },
+   {
+    "id": "c_350",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09113094704"
+   },
+   {
+    "id": "c_463",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09679063369"
+   },
+   {
+    "id": "c_408",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09215567779"
+   },
+   {
+    "id": "c_733",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09995988580"
+   },
+   {
+    "id": "c_180",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09561580307"
+   },
+   {
+    "id": "c_737",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09752561612"
+   },
+   {
+    "id": "c_36",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09755867153"
+   },
+   {
+    "id": "c_69",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09201450450"
+   },
+   {
+    "id": "c_820",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09988103895"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 15000,
+  "routes": [
+   {
+    "id": "metro_503",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_204",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   },
+   {
+    "id": "bus_842",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Khu Công nghệ cao",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_503",
+    "time": "2026-11-12T15:51:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_204",
+    "time": "2026-11-12T15:52:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_503",
+    "time": "2026-11-12T15:43:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_842",
+    "time": "2026-11-12T15:48:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_204",
+    "time": "2026-11-12T16:22:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_503",
+    "time": "2026-11-12T15:59:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_204",
+    "time": "2026-11-12T16:07:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_842",
+    "time": "2026-11-12T16:00:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_842",
+    "time": "2026-11-12T16:12:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 33,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-12",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-13",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-14",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-15",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 33
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_174",
+    "name": "Hầm xe Sao Kim Plaza Đồng Khởi",
+    "address": "72 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "area": "Nguyễn Huệ",
+    "price_per_hour": 40000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_1348",
+    "name": "Bãi đỗ xe Công viên 23/9",
+    "address": "Phạm Ngũ Lão, Quận 1, TP.HCM",
+    "area": "Bến Thành",
+    "price_per_hour": 30000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_7443",
+    "name": "Bãi xe Khu Công nghệ cao",
+    "address": "Xa lộ Hà Nội, TP. Thủ Đức, TP.HCM",
+    "area": "Khu Công nghệ cao",
+    "price_per_hour": 20000,
+    "available_spots": 40
+   }
+  ],
+  "sessions": []
+ }
+}

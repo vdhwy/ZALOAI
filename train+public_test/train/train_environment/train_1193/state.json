@@ -1,0 +1,295 @@
+{
+ "_meta": {
+  "question_id": "train_1193",
+  "current_time": "2026-11-10T20:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_534",
+    "time": "2026-11-11T06:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_136",
+    "time": "2026-11-11T06:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_177",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_925",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_564",
+    "title": "Wifi quán cà phê",
+    "content": "Quán Cộng gần trường: pass congcaphe2026"
+   },
+   {
+    "id": "note_9155",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa hoặc máy massage cầm tay"
+   },
+   {
+    "id": "note_7410",
+    "title": "Phim muốn coi",
+    "content": "Mắt biếc, Lật mặt 7, Nhà bà Nữ"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_495",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_236",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_318",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_513",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_895",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-13T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_6300",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-14T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_9475",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-15T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_2718",
+    "title": "Nộp bài tập Giải tích",
+    "due": "2026-11-09T23:00:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_5164",
+    "title": "Đăng ký học phần học kỳ sau",
+    "due": "2026-11-19T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_3810",
+    "content": "Đi Vũng Tàu với Huy",
+    "time": "2026-11-14T06:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_267",
+    "name": "Cô giáo Mai",
+    "relation": "cô chủ nhiệm",
+    "phone": "09252466060"
+   },
+   {
+    "id": "c_35",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09144091143"
+   },
+   {
+    "id": "c_844",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09403056401"
+   },
+   {
+    "id": "c_752",
+    "name": "Lan",
+    "relation": "bạn cùng lớp",
+    "phone": "09777087511"
+   },
+   {
+    "id": "c_285",
+    "name": "Sếp Dũng",
+    "relation": "quản lý quán làm thêm",
+    "phone": "09281412119"
+   },
+   {
+    "id": "c_346",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09345523360"
+   }
+  ]
+ }
+}

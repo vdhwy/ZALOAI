@@ -1,0 +1,285 @@
+{
+ "_meta": {
+  "question_id": "public_0626",
+  "current_time": "2026-12-03T18:35:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_554",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-04T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_724",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-06T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_8076",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-08T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_647",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-09T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1097000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "bill_payment",
+    "bill_id": "bill_501",
+    "amount": -153000
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_179",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09341647307"
+   },
+   {
+    "id": "c_411",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09255919606"
+   },
+   {
+    "id": "c_846",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09378136546"
+   },
+   {
+    "id": "c_635",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09977815589"
+   },
+   {
+    "id": "c_732",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09929441053"
+   },
+   {
+    "id": "c_7279",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09425992268"
+   },
+   {
+    "id": "c_2185",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09904829731"
+   },
+   {
+    "id": "c_42",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09958758472"
+   },
+   {
+    "id": "c_385",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09644736492"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_501",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 153000,
+    "due_date": "2026-12-08",
+    "paid": true,
+    "paid_with": "ewallet"
+   },
+   {
+    "id": "bill_821",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 846000,
+    "due_date": "2026-12-10",
+    "paid": false
+   },
+   {
+    "id": "bill_822",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 198000,
+    "due_date": "2026-12-11",
+    "paid": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_389",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_844",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_6142",
+    "title": "Chia tiền nhà với Evan Walsh",
+    "content": "Phòng tầng ba, Evan Walsh chuyển đi cuối tháng chín, đã tất toán điện nước"
+   },
+   {
+    "id": "note_805",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_7607",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_228",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_517",
+    "title": "Chia tiền nhà với Ethan Walsh",
+    "content": "Ethan Walsh thuê phòng tầng ba từ tháng mười, chia đôi tiền điện và tiền điện thoại bàn"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_595",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_956",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_7145",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_52",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_7558",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_593",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_680",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_352",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_759",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_224",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_3334",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_65",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_387",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ }
+}

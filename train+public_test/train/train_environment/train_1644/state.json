@@ -1,0 +1,464 @@
+{
+ "_meta": {
+  "question_id": "train_1644",
+  "current_time": "2026-11-09T08:05:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_352",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_525",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_5129",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_213",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_3287",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-13T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_652",
+    "title": "Gửi invoice cho khách Hưng Thịnh",
+    "due": "2026-11-09T10:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_17",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-14T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_415",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-15T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_208",
+    "title": "Gửi invoice cho khách Minh Long",
+    "due": "2026-11-11T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_939",
+    "title": "Nộp báo cáo tuần cho sếp Trân",
+    "due": "2026-11-10T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_189",
+    "title": "khám răng",
+    "start": "2026-11-12T19:00:00+07:00",
+    "end": "2026-11-12T20:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_17",
+    "title": "đá bóng",
+    "start": "2026-11-12T19:00:00+07:00",
+    "end": "2026-11-12T20:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7665",
+    "title": "đi chơi công viên",
+    "start": "2026-11-10T14:30:00+07:00",
+    "end": "2026-11-10T15:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_168",
+    "title": "họp phụ huynh",
+    "start": "2026-11-11T19:00:00+07:00",
+    "end": "2026-11-11T20:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_922",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_31",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_516",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_9270",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_5494",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23700
+   },
+   {
+    "type": "e5",
+    "price": 22500
+   },
+   {
+    "type": "diesel",
+    "price": 21100
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Đóng tiền điện",
+    "time": "2026-11-09T19:00:00+07:00"
+   },
+   {
+    "id": "rem_02",
+    "repeat": "once",
+    "done": false,
+    "content": "Chở má đi khám",
+    "time": "2026-11-10T08:00:00+07:00"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_631",
+    "name": "Sếp Trân",
+    "type": "direct",
+    "members": [
+     "Sếp Trân"
+    ],
+    "messages": [
+     {
+      "from": "Sếp Trân",
+      "content": "Khoa ơi, invoice bên Hưng Thịnh em gửi khách trước mười giờ sáng nay nha.",
+      "time": "2026-11-09T07:10:00+07:00"
+     },
+     {
+      "from": "Sếp Trân",
+      "content": "Chín giờ rưỡi họp giao ban, em lên sớm chút.",
+      "time": "2026-11-09T07:12:00+07:00"
+     },
+     {
+      "from": "me",
+      "content": "Dạ em biết rồi, em lên liền."
+     },
+     {
+      "from": "me",
+      "content": "Dạ em biết rồi, em lên liền."
+     },
+     {
+      "from": "me",
+      "content": "Dạ em biết rồi, em lên liền."
+     }
+    ]
+   },
+   {
+    "id": "chat_5504",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_823",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_274",
+    "name": "Vy",
+    "type": "direct",
+    "members": [
+     "Vy"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Trưa nay anh qua đón em đi ăn nha."
+     },
+     {
+      "from": "me",
+      "content": "Trưa nay anh qua đón em đi ăn nha."
+     },
+     {
+      "from": "me",
+      "content": "Trưa nay anh qua đón em đi ăn nha."
+     }
+    ]
+   },
+   {
+    "id": "chat_79",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8559",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_945",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_4954",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 210
+   },
+   {
+    "id": "course_9648",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_4029",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_1658",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_1711",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": [
+   {
+    "id": "prog_01",
+    "course_id": "course_4954",
+    "minutes": 30
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25994
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28073
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 173.3
+   }
+  ]
+ }
+}

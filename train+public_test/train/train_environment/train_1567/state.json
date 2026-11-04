@@ -1,0 +1,404 @@
+{
+ "_meta": {
+  "question_id": "train_1567",
+  "current_time": "2026-11-25T17:05:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_9703",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_713",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_415",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_601",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_561",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_133",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_271",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_875",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_554",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_491",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_181",
+    "title": "họp team",
+    "start": "2026-11-26T09:00:00+07:00",
+    "end": "2026-11-26T10:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_318",
+    "title": "đi chơi công viên",
+    "start": "2026-11-28T08:30:00+07:00",
+    "end": "2026-11-28T09:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2186",
+    "title": "họp phụ huynh",
+    "start": "2026-11-26T15:30:00+07:00",
+    "end": "2026-11-26T16:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "status": "confirmed",
+    "title": "Học nhóm với Trang",
+    "start": "2026-11-25T19:30:00+07:00",
+    "end": "2026-11-25T20:30:00+07:00",
+    "location": "thư viện"
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_190",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_202",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_684",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_800",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_5297",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-26T08:00:00+07:00",
+    "link": "https://meet.example.test/snq-icup-mxx",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_631",
+    "title": "Họp lớp online",
+    "start": "2026-11-28T10:30:00+07:00",
+    "link": "https://meet.example.test/ckx-baec-lir",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 31,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-25",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-26",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-27",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-28",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 33
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_492",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_3567",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_672",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_800",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_2605",
+    "name": "Xe đạp điện 205",
+    "station": "Trạm Chùa Láng",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_2071",
+    "name": "Xe đạp thường 207",
+    "station": "Trạm Chùa Láng",
+    "available": false,
+    "price_per_hour": 12000
+   },
+   {
+    "id": "bike_3182",
+    "name": "Xe đạp điện 318",
+    "station": "Trạm Mỹ Đình",
+    "available": true,
+    "price_per_hour": 30000
+   },
+   {
+    "id": "bike_3158",
+    "name": "Xe đạp thường 315",
+    "station": "Trạm Mỹ Đình",
+    "available": false,
+    "price_per_hour": 12000
+   },
+   {
+    "id": "bike_3114",
+    "name": "Xe đạp điện 311",
+    "station": "Trạm Mỹ Đình",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": [
+   {
+    "id": "brs_01",
+    "bike_id": "bike_2071",
+    "station": "Trạm Chùa Láng",
+    "status": "reserved"
+   }
+  ]
+ }
+}

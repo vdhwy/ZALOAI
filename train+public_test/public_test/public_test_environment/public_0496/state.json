@@ -1,0 +1,421 @@
+{
+ "_meta": {
+  "question_id": "public_0496",
+  "current_time": "2026-11-01T10:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "fuel_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23100
+   },
+   {
+    "type": "e5",
+    "price": 21900
+   },
+   {
+    "type": "diesel",
+    "price": 20500
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 15000,
+  "routes": [
+   {
+    "id": "bus_629",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Bờ Hồ",
+     "Láng Hạ",
+     "Cầu Giấy",
+     "Đại học Mỏ"
+    ],
+    "fare": 7000,
+    "duration_min": 45,
+    "headway_min": 15
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_736",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_736",
+    "time": "2026-11-01T10:49:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-11-01T10:53:00+07:00"
+   },
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_736",
+    "time": "2026-11-01T10:59:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-11-01T11:01:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-11-01T10:45:00+07:00"
+   },
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_736",
+    "time": "2026-11-01T11:09:00+07:00"
+   },
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_629",
+    "time": "2026-11-01T11:14:00+07:00"
+   },
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_629",
+    "time": "2026-11-01T10:59:00+07:00"
+   },
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_629",
+    "time": "2026-11-01T10:44:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_893",
+    "name": "Cây xăng PetroHưng Cái Răng",
+    "address": "Quốc lộ 1A, Cái Răng, Cần Thơ",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_882",
+    "name": "Nhà thuốc Phúc Khang Cái Răng",
+    "address": "12 Lê Bình, Cái Răng, Cần Thơ",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_5126",
+    "name": "Cơ khí sửa máy ghe Út Hiền",
+    "address": "88 Lê Bình, Cái Răng, Cần Thơ",
+    "category": "repair"
+   },
+   {
+    "id": "place_837",
+    "name": "Tiệm sửa máy ghe Hai Lúa",
+    "address": "Bến tàu Ba Láng, Cái Răng, Cần Thơ",
+    "category": "repair"
+   },
+   {
+    "id": "place_4694",
+    "name": "Bánh cống Cô Út",
+    "address": "45 Hai Bà Trưng, Ninh Kiều, Cần Thơ",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_5403",
+    "name": "Bệnh viện Đa khoa Trung ương Cần Thơ",
+    "address": "315 Nguyễn Văn Linh, Ninh Kiều, Cần Thơ",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": [],
+  "routes": [
+   {
+    "from": [
+     "vựa trái cây bảy hồng",
+     "vựa bảy hồng",
+     "vựa",
+     "công ty",
+     "chỗ làm"
+    ],
+    "to": [
+     "cơ khí sửa máy ghe út hiền",
+     "út hiền",
+     "88 lê bình",
+     "place_5126"
+    ],
+    "distance_km": 4.3
+   },
+   {
+    "from": [
+     "vựa trái cây bảy hồng",
+     "vựa bảy hồng",
+     "vựa",
+     "công ty",
+     "chỗ làm"
+    ],
+    "to": [
+     "tiệm sửa máy ghe hai lúa",
+     "hai lúa",
+     "bến tàu ba láng",
+     "place_837"
+    ],
+    "distance_km": 1.8
+   }
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_8278",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_760",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_171",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_718",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_753",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_6406",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.6,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_537",
+    "items": [
+     {
+      "product_id": "prod_171",
+      "name": "Nồi chiên không dầu Philips 4.1 lít",
+      "price": 1990000,
+      "quantity": 1
+     }
+    ],
+    "total": 1990000,
+    "status": "delivered",
+    "placed_at": "2026-10-26T03:40:00+07:00",
+    "seller": "Philips Official",
+    "delivered_at": "2026-10-29T03:40:00+07:00"
+   },
+   {
+    "id": "ord_1580",
+    "items": [
+     {
+      "product_id": "prod_718",
+      "name": "Áo khoác gió nam CoolWear",
+      "price": 499000,
+      "quantity": 1
+     }
+    ],
+    "total": 499000,
+    "status": "shipping",
+    "placed_at": "2026-10-31T08:40:00+07:00",
+    "seller": "CoolWear"
+   }
+  ],
+  "returns": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_600",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_3215",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_645",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_316",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_704",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_5235",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_860",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_171",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_5014",
+    "title": "đi chơi công viên",
+    "start": "2026-11-03T18:00:00+07:00",
+    "end": "2026-11-03T19:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_8277",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-04T14:00:00+07:00",
+    "end": "2026-11-04T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1607",
+    "title": "khám răng",
+    "start": "2026-11-03T14:00:00+07:00",
+    "end": "2026-11-03T15:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_131",
+    "title": "đá bóng",
+    "start": "2026-11-02T14:00:00+07:00",
+    "end": "2026-11-02T15:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

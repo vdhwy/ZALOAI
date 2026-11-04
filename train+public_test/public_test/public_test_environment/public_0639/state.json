@@ -1,0 +1,525 @@
+{
+ "_meta": {
+  "question_id": "public_0639",
+  "current_time": "2026-11-20T09:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_5650",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-17T12:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_1137",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-19T10:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_133",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-19T23:50:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_814",
+    "name": "Đọc sách 30 phút",
+    "streak": 12,
+    "last_logged": "2026-11-19"
+   },
+   {
+    "id": "habit_176",
+    "name": "Thiền 10 phút",
+    "streak": 12,
+    "last_logged": "2026-11-18"
+   },
+   {
+    "id": "habit_201",
+    "name": "Ngủ trước 11 giờ",
+    "streak": 3,
+    "last_logged": "2026-11-19"
+   },
+   {
+    "id": "habit_570",
+    "name": "Uống đủ 2 lít nước",
+    "streak": 1,
+    "last_logged": "2026-11-19"
+   },
+   {
+    "id": "habit_337",
+    "name": "Học speaking với James Wong",
+    "streak": 3,
+    "last_logged": "2026-11-16"
+   },
+   {
+    "id": "habit_3390",
+    "name": "Học writing với James Wang",
+    "streak": 2,
+    "last_logged": "2026-11-19"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_708",
+    "habit_id": "habit_570",
+    "date": "2026-11-19"
+   },
+   {
+    "id": "log_318",
+    "habit_id": "habit_201",
+    "date": "2026-11-19"
+   },
+   {
+    "id": "log_213",
+    "habit_id": "habit_814",
+    "date": "2026-11-19"
+   },
+   {
+    "id": "log_2358",
+    "habit_id": "habit_176",
+    "date": "2026-11-18"
+   },
+   {
+    "id": "log_6612",
+    "habit_id": "habit_337",
+    "date": "2026-11-16"
+   },
+   {
+    "id": "log_7041",
+    "habit_id": "habit_3390",
+    "date": "2026-11-19"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23900
+   },
+   {
+    "type": "e5",
+    "price": 22700
+   },
+   {
+    "type": "diesel",
+    "price": 21300
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5361",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09346513630"
+   },
+   {
+    "id": "c_168",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09606643127"
+   },
+   {
+    "id": "c_9326",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09994892066"
+   },
+   {
+    "id": "c_9623",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09879030871"
+   },
+   {
+    "id": "c_766",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09553071695"
+   },
+   {
+    "id": "c_3714",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09253602692"
+   },
+   {
+    "id": "c_923",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09387704727"
+   },
+   {
+    "id": "c_159",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09918927162"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_6464",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_33",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_6375",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_738",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_4382",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_274",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_7906",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_592",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_948",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_723",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_4189",
+    "title": "khám răng",
+    "start": "2026-11-21T14:00:00+07:00",
+    "end": "2026-11-21T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_182",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-21T19:00:00+07:00",
+    "end": "2026-11-21T20:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3670",
+    "title": "đi chơi công viên",
+    "start": "2026-11-23T09:30:00+07:00",
+    "end": "2026-11-23T10:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5528",
+    "title": "Học speaking với James Wong",
+    "start": "2026-11-18T19:00:00+07:00",
+    "end": "2026-11-18T20:30:00+07:00",
+    "location": "Phòng tự học KTX khu B",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6017",
+    "title": "Học writing với James Wang",
+    "start": "2026-11-19T19:30:00+07:00",
+    "end": "2026-11-19T21:00:00+07:00",
+    "location": "Thư viện Bách khoa",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_6154",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_6279",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_868",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_191",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_4980",
+    "restaurant_id": "rest_6154",
+    "items": [
+     {
+      "item_id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 40000,
+    "address": "KTX khu B ĐHQG, Dĩ An",
+    "payment": "cash",
+    "status": "delivered",
+    "placed_at": "2026-11-14T12:10:00+07:00"
+   },
+   {
+    "id": "ord_5521",
+    "restaurant_id": "rest_868",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 1,
+      "note": null
+     },
+     {
+      "item_id": "rest_01_m3",
+      "name": "Chả cua",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 85000,
+    "address": "KTX khu B ĐHQG, Dĩ An",
+    "payment": "cash",
+    "status": "delivered",
+    "placed_at": "2026-11-18T18:40:00+07:00"
+   },
+   {
+    "id": "ord_5604",
+    "restaurant_id": "rest_6279",
+    "items": [
+     {
+      "item_id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 90000,
+    "address": "KTX khu B ĐHQG, Dĩ An",
+    "payment": "cash",
+    "status": "delivered",
+    "placed_at": "2026-11-18T21:05:00+07:00"
+   }
+  ]
+ }
+}

@@ -1,0 +1,457 @@
+{
+ "_meta": {
+  "question_id": "train_1547",
+  "current_time": "2026-11-16T21:45:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_1289",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_7130",
+    "name": "Lumina Kitchen",
+    "tags": [
+     "cơm văn phòng",
+     "món Âu"
+    ],
+    "rating": 4.6,
+    "menu": [
+     {
+      "id": "rest_7130_m1",
+      "name": "Cơm gà nướng mật ong",
+      "price": 69000
+     },
+     {
+      "id": "rest_7130_m2",
+      "name": "Salad cá ngừ",
+      "price": 59000
+     },
+     {
+      "id": "rest_7130_m3",
+      "name": "Mì Ý bò bằm",
+      "price": 79000
+     }
+    ]
+   },
+   {
+    "id": "rest_259",
+    "name": "Lumina Kitchen & Bar",
+    "tags": [
+     "món Âu",
+     "đồ uống"
+    ],
+    "rating": 4.3,
+    "menu": [
+     {
+      "id": "rest_259_m1",
+      "name": "Bò bít tết sốt tiêu",
+      "price": 189000
+     },
+     {
+      "id": "rest_259_m2",
+      "name": "Khoai tây chiên",
+      "price": 45000
+     }
+    ]
+   },
+   {
+    "id": "rest_344",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_484",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_5605",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_5512",
+    "restaurant_id": "rest_7130",
+    "items": [
+     {
+      "item_id": "rest_7130_m1",
+      "name": "Cơm gà nướng mật ong",
+      "quantity": 2,
+      "note": null
+     },
+     {
+      "item_id": "rest_7130_m2",
+      "name": "Salad cá ngừ",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 197000,
+    "address": "Tòa nhà Kim Cương, Nam Từ Liêm, Hà Nội",
+    "payment": "ewallet",
+    "status": "delivered",
+    "ordered_at": "2026-11-11T11:40:00+07:00"
+   },
+   {
+    "id": "ord_903",
+    "restaurant_id": "rest_259",
+    "items": [
+     {
+      "item_id": "rest_259_m1",
+      "name": "Bò bít tết sốt tiêu",
+      "quantity": 2,
+      "note": null
+     },
+     {
+      "item_id": "rest_259_m2",
+      "name": "Khoai tây chiên",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 423000,
+    "address": "Tòa nhà Kim Cương, Nam Từ Liêm, Hà Nội",
+    "payment": "ewallet",
+    "status": "delivered",
+    "ordered_at": "2026-11-11T17:55:00+07:00"
+   },
+   {
+    "id": "ord_7741",
+    "restaurant_id": "rest_7130",
+    "items": [
+     {
+      "item_id": "rest_7130_m3",
+      "name": "Mì Ý bò bằm",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 158000,
+    "address": "25 Láng Hạ, Đống Đa, Hà Nội",
+    "payment": "cash",
+    "status": "delivered",
+    "ordered_at": "2026-11-11T19:20:00+07:00"
+   },
+   {
+    "id": "ord_268",
+    "restaurant_id": "rest_7130",
+    "items": [
+     {
+      "item_id": "rest_7130_m1",
+      "name": "Cơm gà nướng mật ong",
+      "quantity": 3,
+      "note": null
+     }
+    ],
+    "total": 207000,
+    "address": "Tòa nhà Kim Cương, Nam Từ Liêm, Hà Nội",
+    "payment": "ewallet",
+    "status": "delivered",
+    "ordered_at": "2026-11-13T11:50:00+07:00"
+   },
+   {
+    "id": "ord_47",
+    "restaurant_id": "rest_344",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 110000,
+    "address": "25 Láng Hạ, Đống Đa, Hà Nội",
+    "payment": "cash",
+    "status": "delivered",
+    "ordered_at": "2026-11-15T08:10:00+07:00"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_872",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_9680",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_157",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_509",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_619",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_4271",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_933",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_149",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_5739",
+    "tracking_id": "STP141915135",
+    "carrier": "SaoTel Post",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "delivered",
+    "eta": "2026-11-15T14:00:00+07:00"
+   },
+   {
+    "id": "shp_82",
+    "tracking_id": "JV150774591",
+    "carrier": "JetViệt Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "in_transit",
+    "eta": "2026-11-17T10:00:00+07:00"
+   },
+   {
+    "id": "shp_379",
+    "tracking_id": "MDXVN238165993",
+    "carrier": "MDX Express",
+    "name": "Hộp quà Trung thu",
+    "status": "out_for_delivery",
+    "eta": "2026-11-16T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_6771",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-20T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_162",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-18T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_615",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-21T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_2553",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-17T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_52",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-19T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_482",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09869466277"
+   },
+   {
+    "id": "c_380",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09894702728"
+   },
+   {
+    "id": "c_896",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09913442248"
+   },
+   {
+    "id": "c_4884",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09155983976"
+   },
+   {
+    "id": "c_40",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09575195045"
+   },
+   {
+    "id": "c_6319",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09401788399"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ }
+}

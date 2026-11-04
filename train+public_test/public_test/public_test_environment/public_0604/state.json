@@ -1,0 +1,244 @@
+{
+ "_meta": {
+  "question_id": "public_0604",
+  "current_time": "2026-11-21T17:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_722",
+    "time": "2026-11-22T05:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_483",
+    "time": "2026-11-22T06:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_647",
+    "time": "2026-11-22T06:15:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_3193",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-28",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_6845",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-28",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_175",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-28",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_3112",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-28",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_4471",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-11-30",
+    "depart": "18:40",
+    "arrive": "20:00",
+    "airline": "JetXanh",
+    "price": 1090000
+   },
+   {
+    "id": "fl_5208",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-11-30",
+    "depart": "07:15",
+    "arrive": "08:35",
+    "airline": "Sen Air",
+    "price": 1260000
+   },
+   {
+    "id": "fl_962",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-12-19",
+    "depart": "10:30",
+    "arrive": "12:40",
+    "airline": "Rồng Việt Air",
+    "price": 1650000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_318",
+    "flight_id": "fl_3193",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_327",
+    "flight_id": "fl_4471",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_354",
+    "flight_id": "fl_962",
+    "passengers": 3,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_424",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-23",
+    "depart": "08:00",
+    "arrive": "18:30",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_169",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-23",
+    "depart": "06:00",
+    "arrive": "16:00",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_2243",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-24",
+    "depart": "21:00",
+    "arrive": "07:30",
+    "price": 920000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_5018",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-24",
+    "depart": "08:00",
+    "arrive": "18:00",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_805",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-23",
+    "depart": "13:00",
+    "arrive": "16:30",
+    "price": 320000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_2509",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-23",
+    "depart": "21:00",
+    "arrive": "02:00",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_548",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-24",
+    "depart": "06:00",
+    "arrive": "13:00",
+    "price": 250000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_898",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-11-24",
+    "depart": "08:00",
+    "arrive": "18:00",
+    "price": 920000,
+    "seats_left": 2
+   }
+  ],
+  "bookings": []
+ }
+}

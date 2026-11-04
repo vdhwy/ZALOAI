@@ -1,0 +1,244 @@
+{
+ "_meta": {
+  "question_id": "train_0919",
+  "current_time": "2026-11-06T21:20:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_9913",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 400,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_2450",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_969",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 3000,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_207",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-06",
+    "used": false
+   },
+   {
+    "id": "vch_4688",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-13",
+    "used": false
+   },
+   {
+    "id": "vch_740",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-11",
+    "used": false
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_928",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_987",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1146",
+    "name": "Vợ",
+    "type": "direct",
+    "members": [
+     "Vợ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_340",
+    "name": "Thằng Bi",
+    "type": "direct",
+    "members": [
+     "Thằng Bi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_625",
+    "name": "Anh Sáu",
+    "type": "direct",
+    "members": [
+     "Anh Sáu"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1097",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09132372625"
+   },
+   {
+    "id": "c_458",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09365384851"
+   },
+   {
+    "id": "c_774",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09159702249"
+   },
+   {
+    "id": "c_912",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09777017738"
+   },
+   {
+    "id": "c_164",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09985816400"
+   },
+   {
+    "id": "c_615",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09632026389"
+   },
+   {
+    "id": "c_720",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09672131313"
+   },
+   {
+    "id": "c_7338",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09543395299"
+   }
+  ]
+ }
+}

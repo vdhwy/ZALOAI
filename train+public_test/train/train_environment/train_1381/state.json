@@ -1,0 +1,296 @@
+{
+ "_meta": {
+  "question_id": "train_1381",
+  "current_time": "2026-12-12T22:05:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "calculator": {},
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_711",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-12-13T15:30:00+07:00",
+    "link": "https://meet.example.test/kqg-segd-ety",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_249",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-12-13T15:30:00+07:00",
+    "link": "https://meet.example.test/vzt-xbom-wch",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_971",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_989",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_791",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_883",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_9812",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_652",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_482",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 35
+   },
+   {
+    "id": "lock_509",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_640",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": false,
+    "battery": 80
+   }
+  ],
+  "guest_codes": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_6215",
+    "name": "Bệnh viện Đà Nẵng",
+    "address": "124 Hải Phòng, Hải Châu, Đà Nẵng",
+    "category": "hospital"
+   },
+   {
+    "id": "place_907",
+    "name": "Cây xăng PetroHưng Nguyễn Văn Linh",
+    "address": "150 Nguyễn Văn Linh, Thanh Khê, Đà Nẵng",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_35",
+    "name": "Ký Ức Cà Phê Bạch Đằng",
+    "address": "98 Bạch Đằng, Hải Châu, Đà Nẵng",
+    "category": "cafe"
+   },
+   {
+    "id": "place_406",
+    "name": "Lotus Mart Đà Nẵng",
+    "address": "6 Nại Nam, Hải Châu, Đà Nẵng",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_526",
+    "name": "Nhà thuốc Minh Khang Lê Duẩn",
+    "address": "210 Lê Duẩn, Hải Châu, Đà Nẵng",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_4506",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_940",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_887",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_912",
+    "time": "2026-12-11T14:15:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_8256",
+    "time": "2026-12-12T01:55:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_908",
+    "time": "2026-12-12T04:05:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_348",
+    "time": "2026-12-11T10:15:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_742",
+    "time": "2026-12-12T07:25:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_5307",
+    "time": "2026-12-12T21:10:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Camera cổng phát hiện có người",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_2219",
+    "time": "2026-12-12T21:25:00+07:00",
+    "type": "window_open",
+    "location": "phòng khách",
+    "message": "Cửa sổ phòng khách đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_76",
+    "time": "2026-12-12T21:40:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện có người",
+    "acknowledged": false
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-12-12",
+    "prizes": {
+     "special": "788999",
+     "first": "74528",
+     "eighth": "27"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-12-12",
+    "prizes": {
+     "special": "869708",
+     "first": "55937",
+     "eighth": "17"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-12-12",
+    "prizes": {
+     "special": "550731",
+     "first": "50941",
+     "eighth": "24"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-12-12",
+    "prizes": {
+     "special": "846116",
+     "first": "24731",
+     "eighth": "13"
+    }
+   }
+  ]
+ }
+}

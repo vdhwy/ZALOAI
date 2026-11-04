@@ -1,0 +1,249 @@
+{
+ "_meta": {
+  "question_id": "public_0580",
+  "current_time": "2026-10-14T16:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_58",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_2275",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_335",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_438",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_150",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_526",
+    "name": "Thằng Bi",
+    "type": "direct",
+    "members": [
+     "Thằng Bi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_546",
+    "name": "Anh Sáu",
+    "type": "direct",
+    "members": [
+     "Anh Sáu"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Mai bốn giờ bốn lăm sáng em lấy xe nha anh."
+     }
+    ]
+   },
+   {
+    "id": "chat_994",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7680",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_748",
+    "name": "Vợ",
+    "type": "direct",
+    "members": [
+     "Vợ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1022",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09411520967"
+   },
+   {
+    "id": "c_988",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09366169921"
+   },
+   {
+    "id": "c_729",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09996044180"
+   },
+   {
+    "id": "c_9760",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09561456523"
+   },
+   {
+    "id": "c_725",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09898396934"
+   },
+   {
+    "id": "c_608",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09548907822"
+   },
+   {
+    "id": "c_713",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09678562711"
+   },
+   {
+    "id": "c_9778",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09916341632"
+   },
+   {
+    "id": "c_3107",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09899007046"
+   },
+   {
+    "id": "c_1475",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09228155732"
+   },
+   {
+    "id": "c_101",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09298932833"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_875",
+    "time": "2026-10-15T06:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_127",
+    "time": "2026-10-15T06:15:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_3390",
+    "time": "2026-10-15T07:00:00+07:00",
+    "label": "gọi Alex Tanner",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_611",
+    "time": "2026-10-15T06:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_05",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-10-15T04:30:00+07:00",
+    "label": "chở khách Alex Turner ra sân bay"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22500
+   },
+   {
+    "type": "e5",
+    "price": 21300
+   },
+   {
+    "type": "diesel",
+    "price": 19900
+   }
+  ]
+ }
+}

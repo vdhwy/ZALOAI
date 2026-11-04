@@ -1,0 +1,379 @@
+{
+ "_meta": {
+  "question_id": "public_0673",
+  "current_time": "2026-10-20T20:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate"
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_192",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-23",
+    "depart": "08:00",
+    "arrive": "18:00",
+    "price": 320000,
+    "seats_left": 13
+   },
+   {
+    "id": "trip_459",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-23",
+    "depart": "08:00",
+    "arrive": "11:00",
+    "price": 920000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_245",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-10-26",
+    "depart": "19:00",
+    "arrive": "22:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_212",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-23",
+    "depart": "06:00",
+    "arrive": "13:00",
+    "price": 320000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_741",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-23",
+    "depart": "13:00",
+    "arrive": "23:00",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_7097",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-10-26",
+    "depart": "21:00",
+    "arrive": "07:00",
+    "price": 320000,
+    "seats_left": 30
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_01",
+    "trip_id": "trip_192",
+    "seats": 2,
+    "total": 640000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_252",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_994",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_901",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_6865",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_171",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_6750",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 218000,
+    "due_date": "2026-10-29",
+    "paid": false
+   },
+   {
+    "id": "bill_501",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 194000,
+    "due_date": "2026-10-22",
+    "paid": false
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Bảy giờ tôi tới khách sạn đón anh",
+    "to_lang": "en",
+    "translation": "I will pick you up at the hotel at seven"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_55",
+    "title": "khám răng",
+    "start": "2026-10-22T18:00:00+07:00",
+    "end": "2026-10-22T19:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5451",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-21T08:30:00+07:00",
+    "end": "2026-10-21T09:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_303",
+    "title": "họp team",
+    "start": "2026-10-21T08:30:00+07:00",
+    "end": "2026-10-21T09:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_507",
+    "title": "họp phụ huynh",
+    "start": "2026-10-21T19:30:00+07:00",
+    "end": "2026-10-21T20:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_05",
+    "status": "confirmed",
+    "title": "Rửa xe",
+    "start": "2026-10-24T09:00:00+07:00",
+    "end": "2026-10-24T10:00:00+07:00"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_522",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_442",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_6063",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_3638",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_362",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09963995257"
+   },
+   {
+    "id": "c_931",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09805330468"
+   },
+   {
+    "id": "c_785",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09858820796"
+   },
+   {
+    "id": "c_882",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09854104775"
+   },
+   {
+    "id": "c_196",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09323414972"
+   },
+   {
+    "id": "c_407",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09968339063"
+   },
+   {
+    "id": "c_529",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09845512076"
+   },
+   {
+    "id": "c_11",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09305586253"
+   },
+   {
+    "id": "c_871",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09702117287"
+   },
+   {
+    "id": "c_128",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09399145561"
+   },
+   {
+    "id": "c_5502",
+    "name": "Mark Johnson",
+    "relation": "khách quen",
+    "phone": "09137264815"
+   },
+   {
+    "id": "c_618",
+    "name": "Mark Jensen",
+    "relation": "khách",
+    "phone": "09382057164"
+   }
+  ]
+ }
+}

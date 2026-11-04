@@ -1,0 +1,356 @@
+{
+ "_meta": {
+  "question_id": "train_0946",
+  "current_time": "2026-11-13T08:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_860",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 215000,
+    "due_date": "2026-11-20",
+    "paid": false
+   },
+   {
+    "id": "bill_778",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 213000,
+    "due_date": "2026-11-22",
+    "paid": false
+   },
+   {
+    "id": "bill_6306",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 200000,
+    "due_date": "2026-11-15",
+    "paid": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_2256",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_7109",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_903",
+    "name": "kháng sinh Augmentin",
+    "times": [
+     "08:00",
+     "20:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_57",
+    "name": "thuốc dạ dày Omeprazol",
+    "times": [
+     "07:30",
+     "19:30"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_211",
+    "name": "vitamin D",
+    "times": [
+     "12:00"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6178",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09343357172"
+   },
+   {
+    "id": "c_836",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09512985290"
+   },
+   {
+    "id": "c_315",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09413959527"
+   },
+   {
+    "id": "c_452",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09377873756"
+   },
+   {
+    "id": "c_990",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09250529169"
+   },
+   {
+    "id": "c_566",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09550947762"
+   },
+   {
+    "id": "c_562",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09527943863"
+   },
+   {
+    "id": "c_8916",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09590353712"
+   },
+   {
+    "id": "c_623",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09356484661"
+   },
+   {
+    "id": "c_730",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09849171919"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_671",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": false,
+    "battery": 35
+   },
+   {
+    "id": "lock_6934",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_824",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 35
+   },
+   {
+    "id": "lock_6718",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_389",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_693",
+    "name": "Tài khoản thanh toán",
+    "balance": 2350000
+   },
+   {
+    "id": "acc_100",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 5000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_368",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_971",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_825",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_4417",
+    "account_id": "acc_693",
+    "amount": -1200000,
+    "note": "Chuyển tiền phòng tháng 11 cho chủ nhà"
+   },
+   {
+    "id": "tx_582",
+    "account_id": "acc_693",
+    "amount": 500000,
+    "note": "Mẹ chuyển tiền mua thuốc dạ dày cho Linh"
+   },
+   {
+    "id": "tx_96",
+    "account_id": "acc_693",
+    "amount": -85000,
+    "note": "Thanh toán Muado"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_4693",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-12T14:45:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_338",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-12T14:30:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_90",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-12T12:45:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_4444",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-12T03:30:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_389",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-12T19:15:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_985",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-12T12:30:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   }
+  ],
+  "saved": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_694",
+    "time": "2026-11-14T07:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_227",
+    "time": "2026-11-14T07:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ }
+}

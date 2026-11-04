@@ -1,0 +1,533 @@
+{
+ "_meta": {
+  "question_id": "public_0564",
+  "current_time": "2026-10-23T06:55:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "gold_price.get_price",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "sms.read_recent",
+   "sms.send",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 118000000,
+    "sell": 120000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 112000000,
+    "sell": 114000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4203
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 29,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-23",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-24",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-25",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-26",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 32
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_542",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09704111878"
+   },
+   {
+    "id": "c_5716",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09736765485"
+   },
+   {
+    "id": "c_507",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09462706936"
+   },
+   {
+    "id": "c_30",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09202586990"
+   },
+   {
+    "id": "c_7301",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09655002052"
+   },
+   {
+    "id": "c_5734",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09133247975"
+   },
+   {
+    "id": "c_45",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09391368560"
+   },
+   {
+    "id": "c_495",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09840147317"
+   },
+   {
+    "id": "c_9766",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09783341083"
+   },
+   {
+    "id": "c_665",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09303545368"
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_8137",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 0
+   },
+   {
+    "id": "lot_6896",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_97",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_5402",
+    "name": "Bãi đỗ Maple Grove Hotel",
+    "address": "17 Trần Thái Tông, Cầu Giấy, Hà Nội",
+    "area": "Cầu Giấy",
+    "price_per_hour": 20000,
+    "available_spots": 9
+   },
+   {
+    "id": "lot_731",
+    "name": "Bãi xe Maple Grove Residence",
+    "address": "28 Quảng An, Tây Hồ, Hà Nội",
+    "area": "Tây Hồ",
+    "price_per_hour": 15000,
+    "available_spots": 14
+   }
+  ],
+  "sessions": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_586",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-12",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_395",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-12",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_264",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-12",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_64",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-12",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_7096",
+    "title": "đi chơi công viên",
+    "start": "2026-10-26T19:30:00+07:00",
+    "end": "2026-10-26T20:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4851",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-24T10:30:00+07:00",
+    "end": "2026-10-24T11:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_543",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-24T08:00:00+07:00",
+    "end": "2026-10-24T09:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_447",
+    "title": "họp team",
+    "start": "2026-10-25T10:00:00+07:00",
+    "end": "2026-10-25T11:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_124",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_785",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_9088",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_156",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_537",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_414",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_133",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_2427",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_953",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_306",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_339",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_2088",
+    "name": "Bến xe Gia Lâm",
+    "address": "9 Ngô Gia Khảm, Long Biên, Hà Nội",
+    "category": "bus_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_642",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-25",
+    "depart": "13:00",
+    "arrive": "16:00",
+    "price": 320000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_5014",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-10-27",
+    "depart": "06:00",
+    "arrive": "09:00",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_1034",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-10-27",
+    "depart": "19:00",
+    "arrive": "05:30",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_740",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-10-27",
+    "depart": "19:00",
+    "arrive": "02:30",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_551",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-25",
+    "depart": "08:00",
+    "arrive": "18:00",
+    "price": 450000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_472",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-25",
+    "depart": "21:00",
+    "arrive": "00:00",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_2167",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-25",
+    "depart": "06:00",
+    "arrive": "16:00",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_9021",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-10-27",
+    "depart": "08:00",
+    "arrive": "11:00",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_3318",
+    "type": "train",
+    "operator": "Tàu HP1",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-10-24",
+    "depart": "06:00",
+    "arrive": "08:30",
+    "price": 105000,
+    "seats_left": 40
+   },
+   {
+    "id": "trip_786",
+    "type": "bus",
+    "operator": "Xe khách Đông Hải",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-10-24",
+    "depart": "07:30",
+    "arrive": "09:30",
+    "price": 150000,
+    "seats_left": 10
+   },
+   {
+    "id": "trip_2459",
+    "type": "bus",
+    "operator": "Xe khách Cát Bà Xanh",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-10-24",
+    "depart": "09:00",
+    "arrive": "11:00",
+    "price": 180000,
+    "seats_left": 20
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_01",
+    "trip_id": "trip_786",
+    "seats": 2,
+    "total": 300000,
+    "status": "confirmed"
+   }
+  ]
+ }
+}

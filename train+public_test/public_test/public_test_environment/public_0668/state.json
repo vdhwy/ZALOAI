@@ -1,0 +1,660 @@
+{
+ "_meta": {
+  "question_id": "public_0668",
+  "current_time": "2026-12-05T07:15:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "pantry.consume",
+   "pantry.list_items",
+   "phone.call",
+   "phone.recent_calls",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_844",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_6985",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_882",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_991",
+    "name": "mì tôm",
+    "stock": 7,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_153",
+    "name": "trứng gà",
+    "stock": 5,
+    "unit": "quả"
+   },
+   {
+    "id": "pan_3157",
+    "name": "dầu ăn",
+    "stock": 1,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_355",
+    "name": "đường",
+    "stock": 1,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_624",
+    "name": "bột mì",
+    "stock": 2,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_8258",
+    "name": "sữa tươi",
+    "stock": 0,
+    "unit": "hộp"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_947",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09323714661"
+   },
+   {
+    "id": "c_384",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09214729330"
+   },
+   {
+    "id": "c_7568",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09313032326"
+   },
+   {
+    "id": "c_7535",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09825711283"
+   },
+   {
+    "id": "c_5650",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09668172278"
+   },
+   {
+    "id": "c_378",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09943133710"
+   },
+   {
+    "id": "c_135",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09560040161"
+   },
+   {
+    "id": "c_418",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09169062496"
+   },
+   {
+    "id": "c_237",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09755803399"
+   },
+   {
+    "id": "c_417",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09522572967"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   }
+  ],
+  "scenes": [
+   {
+    "id": "scene_271",
+    "name": "Ra khỏi nhà",
+    "actions": [
+     {
+      "device_id": "light_kitchen",
+      "state": {
+       "power": "off"
+      }
+     },
+     {
+      "device_id": "light_living",
+      "state": {
+       "power": "off"
+      }
+     },
+     {
+      "device_id": "light_office",
+      "state": {
+       "power": "off"
+      }
+     },
+     {
+      "device_id": "light_bedroom",
+      "state": {
+       "power": "off"
+      }
+     },
+     {
+      "device_id": "ac_living",
+      "state": {
+       "mode": "off"
+      }
+     },
+     {
+      "device_id": "fan_living",
+      "state": {
+       "power": "off"
+      }
+     }
+    ]
+   },
+   {
+    "id": "scene_58",
+    "name": "Đi ngủ",
+    "actions": [
+     {
+      "device_id": "light_living",
+      "state": {
+       "power": "off"
+      }
+     },
+     {
+      "device_id": "light_kitchen",
+      "state": {
+       "power": "off"
+      }
+     },
+     {
+      "device_id": "ac_bedroom",
+      "state": {
+       "mode": "cool",
+       "temperature": 26
+      }
+     }
+    ]
+   },
+   {
+    "id": "scene_903",
+    "name": "Chào buổi sáng",
+    "actions": [
+     {
+      "device_id": "light_kitchen",
+      "state": {
+       "power": "on",
+       "brightness": 100
+      }
+     },
+     {
+      "device_id": "light_living",
+      "state": {
+       "power": "on",
+       "brightness": 80
+      }
+     },
+     {
+      "device_id": "fan_living",
+      "state": {
+       "power": "on"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_340",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_248",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_67",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_3212",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_399",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_4537",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_825",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_464",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_646",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_202",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_3026",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_373",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_5571",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_950",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_381",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_7731",
+    "name": "Bluebird Cafe",
+    "address": "24 Phạm Ngũ Lão, Phú Hội, Huế",
+    "category": "cafe"
+   },
+   {
+    "id": "place_418",
+    "name": "Bluebird Bakery",
+    "address": "5 Chu Văn An, Phú Hội, Huế",
+    "category": "bakery"
+   },
+   {
+    "id": "place_2290",
+    "name": "Ga Huế",
+    "address": "2 Bùi Thị Xuân, Phường Đúc, Huế",
+    "category": "train_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_766",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_362",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_03",
+    "checked": false,
+    "name": "bánh mì",
+    "quantity": 10
+   }
+  ]
+ }
+}

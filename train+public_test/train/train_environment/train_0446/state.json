@@ -1,0 +1,159 @@
+{
+ "_meta": {
+  "question_id": "train_0446",
+  "current_time": "2026-09-24T09:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 219000,
+    "due_date": "2026-10-03",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 199000,
+    "due_date": "2026-10-01",
+    "paid": false
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "ăn tối với gia đình",
+    "start": "2026-09-25T18:30:00+07:00",
+    "end": "2026-09-25T19:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "họp phụ huynh",
+    "start": "2026-09-25T09:30:00+07:00",
+    "end": "2026-09-25T10:30:00+07:00",
+    "location": "Trường Tiểu học Kim Đồng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_02",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_03",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_04",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_01",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-10-02",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_02",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-10-05",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_03",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-10-16",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_04",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-10-09",
+    "status": "paused",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09834172655"
+   },
+   {
+    "id": "c_02",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09127305489"
+   },
+   {
+    "id": "c_03",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09041863922"
+   },
+   {
+    "id": "c_04",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09782516345"
+   }
+  ]
+ }
+}

@@ -1,0 +1,491 @@
+{
+ "_meta": {
+  "question_id": "train_1147",
+  "current_time": "2026-11-05T09:40:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_50",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_854",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_428",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_7620",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-05",
+    "to": "2026-11-05",
+    "kwh": 8.1,
+    "cost": 23500,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.6
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.6
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-30",
+    "to": "2026-11-05",
+    "kwh": 74.2,
+    "cost": 215200,
+    "days": [
+     {
+      "date": "2026-10-30",
+      "kwh": 10.0
+     },
+     {
+      "date": "2026-10-31",
+      "kwh": 11.4
+     },
+     {
+      "date": "2026-11-01",
+      "kwh": 12.1
+     },
+     {
+      "date": "2026-11-02",
+      "kwh": 11.4
+     },
+     {
+      "date": "2026-11-03",
+      "kwh": 12.8
+     },
+     {
+      "date": "2026-11-04",
+      "kwh": 8.4
+     },
+     {
+      "date": "2026-11-05",
+      "kwh": 8.1
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-05",
+    "kwh": 52.8,
+    "cost": 153100
+   }
+  },
+  "alert_threshold_kwh": 350
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_800",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_702",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_295",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_5174",
+    "name": "Đầu tư cho người mới",
+    "host": "Quốc Bảo",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_862",
+    "show_id": "show_295",
+    "title": "Số 21: Quản lý chi tiêu gia đình",
+    "number": 21,
+    "duration_min": 18,
+    "published": "2026-10-29"
+   },
+   {
+    "id": "ep_3409",
+    "show_id": "show_702",
+    "title": "Số 7: Rác thải nhựa ở đô thị",
+    "number": 7,
+    "duration_min": 18,
+    "published": "2026-10-15"
+   },
+   {
+    "id": "ep_359",
+    "show_id": "show_295",
+    "title": "Số 20: Gửi tiết kiệm hay mua vàng",
+    "number": 20,
+    "duration_min": 18,
+    "published": "2026-10-22"
+   },
+   {
+    "id": "ep_577",
+    "show_id": "show_800",
+    "title": "Số 11: Sống chậm giữa thành phố",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-10-22"
+   },
+   {
+    "id": "ep_851",
+    "show_id": "show_702",
+    "title": "Số 8: Trồng cây trên sân thượng",
+    "number": 8,
+    "duration_min": 18,
+    "published": "2026-10-22"
+   },
+   {
+    "id": "ep_936",
+    "show_id": "show_295",
+    "title": "Số 19: Lập quỹ khẩn cấp",
+    "number": 19,
+    "duration_min": 32,
+    "published": "2026-10-15"
+   },
+   {
+    "id": "ep_797",
+    "show_id": "show_702",
+    "title": "Số 9: Đi xe đạp đi làm",
+    "number": 9,
+    "duration_min": 45,
+    "published": "2026-10-29"
+   },
+   {
+    "id": "ep_519",
+    "show_id": "show_800",
+    "title": "Số 12: Nghề diễn và những áp lực",
+    "number": 12,
+    "duration_min": 32,
+    "published": "2026-10-29"
+   },
+   {
+    "id": "ep_7046",
+    "show_id": "show_5174",
+    "title": "Số 4: Mua vàng hay mua đất",
+    "number": 4,
+    "duration_min": 25,
+    "published": "2026-11-02"
+   },
+   {
+    "id": "ep_2253",
+    "show_id": "show_5174",
+    "title": "Số 3: Tiền nhàn rỗi để đâu",
+    "number": 3,
+    "duration_min": 32,
+    "published": "2026-10-26"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_431",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_2968",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_480",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_401",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_702"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_906",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-06T08:30:00+07:00",
+    "end": "2026-11-06T09:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_948",
+    "title": "đi chơi công viên",
+    "start": "2026-11-07T10:30:00+07:00",
+    "end": "2026-11-07T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_852",
+    "title": "họp phụ huynh",
+    "start": "2026-11-08T08:00:00+07:00",
+    "end": "2026-11-08T09:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1881",
+    "title": "họp team",
+    "start": "2026-11-06T08:00:00+07:00",
+    "end": "2026-11-06T09:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_960",
+    "title": "đá bóng",
+    "start": "2026-11-07T18:30:00+07:00",
+    "end": "2026-11-07T19:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_799",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09459776007"
+   },
+   {
+    "id": "c_5317",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09405387488"
+   },
+   {
+    "id": "c_362",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09131613497"
+   },
+   {
+    "id": "c_105",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09231162576"
+   },
+   {
+    "id": "c_2034",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09800572944"
+   },
+   {
+    "id": "c_842",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09675841156"
+   },
+   {
+    "id": "c_459",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09341893894"
+   },
+   {
+    "id": "c_266",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09635405428"
+   },
+   {
+    "id": "c_607",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09161827352"
+   },
+   {
+    "id": "c_920",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09420726639"
+   },
+   {
+    "id": "c_608",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09608285907"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_138",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_128",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Bến Thành",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_485",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_563",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_76",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_8686",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Bến Thành",
+    "available": false,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_3812",
+    "contact_id": "c_799",
+    "phone_number": "09459776007",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-11-05T08:12:00+07:00"
+   },
+   {
+    "id": "call_967",
+    "contact_id": "c_607",
+    "phone_number": "09161827352",
+    "direction": "outgoing",
+    "status": "ended",
+    "time": "2026-11-04T19:30:00+07:00"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 28,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-05",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-06",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-07",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-08",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 32
+   }
+  ]
+ }
+}

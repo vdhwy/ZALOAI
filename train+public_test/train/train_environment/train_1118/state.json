@@ -1,0 +1,564 @@
+{
+ "_meta": {
+  "question_id": "train_1118",
+  "current_time": "2026-10-24T10:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_52",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_582",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_390",
+    "name": "Vợ",
+    "type": "direct",
+    "members": [
+     "Vợ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_42",
+    "name": "Anh Sáu",
+    "type": "direct",
+    "members": [
+     "Anh Sáu"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5933",
+    "name": "Thằng Bi",
+    "type": "direct",
+    "members": [
+     "Thằng Bi"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_548",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_845",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_9682",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_823",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": true,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-10-24",
+    "prizes": {
+     "special": "452642",
+     "first": "70602",
+     "eighth": "11"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-10-24",
+    "prizes": {
+     "special": "992899",
+     "first": "64536",
+     "eighth": "84"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-10-24",
+    "prizes": {
+     "special": "648855",
+     "first": "57307",
+     "eighth": "77"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-10-24",
+    "prizes": {
+     "special": "228819",
+     "first": "90056",
+     "eighth": "59"
+    }
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_1044",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_86",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_805",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_2807",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_357",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09580933254"
+   },
+   {
+    "id": "c_978",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09244211632"
+   },
+   {
+    "id": "c_936",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09768095015"
+   },
+   {
+    "id": "c_2362",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09415697090"
+   },
+   {
+    "id": "c_294",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09258329749"
+   },
+   {
+    "id": "c_8465",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09689498924"
+   },
+   {
+    "id": "c_187",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09404021796"
+   },
+   {
+    "id": "c_3492",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09870623881"
+   },
+   {
+    "id": "c_710",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09506595593"
+   },
+   {
+    "id": "c_704",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09341239461"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_871",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-10-23T10:05:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_675",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-10-23T16:35:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_644",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-10-23T03:50:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_269",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-10-23T15:05:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_669",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-10-23T04:50:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   }
+  ],
+  "saved": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_615",
+    "time": "2026-10-25T06:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_981",
+    "time": "2026-10-25T06:15:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_2169",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-26T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_685",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-28T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_716",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-27T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_713",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_678",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_706",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_3316",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_790",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ }
+}

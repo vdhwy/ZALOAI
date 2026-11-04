@@ -1,0 +1,447 @@
+{
+ "_meta": {
+  "question_id": "public_0471",
+  "current_time": "2026-10-13T07:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "translator.translate"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_575",
+    "time": "2026-10-14T08:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_371",
+    "time": "2026-10-14T06:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": false
+   },
+   {
+    "id": "alm_584",
+    "time": "2026-10-14T07:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_04",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-10-13T09:15:00+07:00"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_4192",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_3809",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_868",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_839",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_775",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_64",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_551",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_231",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_352",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_648",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_321",
+    "items": [
+     {
+      "product_id": "gro_352",
+      "name": "Trứng gà ta hộp 10 quả",
+      "price": 42000,
+      "quantity": 2
+     }
+    ],
+    "total": 84000,
+    "status": "delivered",
+    "delivery_time": "2026-10-10T09:00:00+07:00"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_587",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-19T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_625",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-19T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_995",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-12T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_9539",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_327",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_631",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_840",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_99",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09661042378"
+   },
+   {
+    "id": "c_759",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09615425800"
+   },
+   {
+    "id": "c_238",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09961020434"
+   },
+   {
+    "id": "c_326",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09948683018"
+   },
+   {
+    "id": "c_3340",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09149580815"
+   },
+   {
+    "id": "c_697",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09750505854"
+   },
+   {
+    "id": "c_549",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09610523837"
+   },
+   {
+    "id": "c_243",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09897619997"
+   },
+   {
+    "id": "c_840",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09493385146"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_437",
+    "title": "Họp với đối tác Hàn Quốc",
+    "start": "2026-10-13T09:30:00+07:00",
+    "end": "2026-10-13T11:00:00+07:00",
+    "location": "Phòng họp tầng tám",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_922",
+    "title": "họp phụ huynh",
+    "start": "2026-10-16T14:30:00+07:00",
+    "end": "2026-10-16T15:30:00+07:00",
+    "location": "Trường tiểu học Kim Liên",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_128",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-14T19:30:00+07:00",
+    "end": "2026-10-14T20:30:00+07:00",
+    "location": "Ký Ức Cà Phê Láng Hạ",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_908",
+    "title": "khám răng",
+    "start": "2026-10-14T14:00:00+07:00",
+    "end": "2026-10-14T15:00:00+07:00",
+    "location": "Nha khoa Ngọc, Tôn Thất Tùng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Mời anh trưa mai ăn bún chả",
+    "to_lang": "ko",
+    "translation": "내일 점심에 분짜 드시러 가시죠"
+   },
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   },
+   {
+    "text": "Xin chào, rất vui được gặp bạn",
+    "to_lang": "ja",
+    "translation": "こんにちは、はじめまして"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   }
+  ]
+ }
+}

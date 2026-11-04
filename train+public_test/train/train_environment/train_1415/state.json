@@ -1,0 +1,531 @@
+{
+ "_meta": {
+  "question_id": "train_1415",
+  "current_time": "2026-10-25T19:05:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "library.reserve",
+   "library.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop"
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_6378",
+    "name": "Nấu cơm tối",
+    "assignee": "Bà nội",
+    "done": true
+   },
+   {
+    "id": "chore_448",
+    "name": "Đổ rác",
+    "assignee": "Bé Na",
+    "done": false
+   },
+   {
+    "id": "chore_2391",
+    "name": "Dùng voucher đặt bánh kem",
+    "assignee": "Bé Na",
+    "done": false
+   },
+   {
+    "id": "chore_517",
+    "name": "Dùng voucher đặt hoa",
+    "assignee": "Bé Ngọc",
+    "done": false
+   },
+   {
+    "id": "chore_854",
+    "name": "Rửa xe máy",
+    "assignee": "Ba",
+    "done": true
+   },
+   {
+    "id": "chore_730",
+    "name": "Soạn playlist nhạc tiệc",
+    "assignee": "Bé Ngọc",
+    "done": false
+   }
+  ],
+  "members": [
+   "Bé Ngọc",
+   "Bà nội",
+   "Bé Na",
+   "Ba"
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-22": {
+    "steps": 8924,
+    "calories": 356,
+    "distance_km": 6.4
+   },
+   "2026-10-23": {
+    "steps": 9062,
+    "calories": 362,
+    "distance_km": 6.5
+   },
+   "2026-10-24": {
+    "steps": 7729,
+    "calories": 309,
+    "distance_km": 5.6
+   },
+   "2026-10-25": {
+    "steps": 2228,
+    "calories": 89,
+    "distance_km": 1.6
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_612",
+    "type": "walking",
+    "minutes": 20,
+    "time": "2026-10-21T17:00:00+07:00"
+   },
+   {
+    "id": "wo_196",
+    "type": "running",
+    "minutes": 20,
+    "time": "2026-10-22T17:30:00+07:00"
+   },
+   {
+    "id": "wo_8536",
+    "type": "gym",
+    "minutes": 60,
+    "time": "2026-10-23T18:00:00+07:00"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_5004",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_5380",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_7900",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_4118",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 145000,
+    "due_date": "2026-10-27",
+    "paid": false
+   },
+   {
+    "id": "bill_2181",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 847000,
+    "due_date": "2026-10-27",
+    "paid": false
+   },
+   {
+    "id": "bill_521",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 202000,
+    "due_date": "2026-11-01",
+    "paid": false
+   },
+   {
+    "id": "bill_599",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 220000,
+    "due_date": "2026-11-01",
+    "paid": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_811",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09827676162"
+   },
+   {
+    "id": "c_760",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09708895398"
+   },
+   {
+    "id": "c_267",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09752139871"
+   },
+   {
+    "id": "c_69",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09626281677"
+   },
+   {
+    "id": "c_118",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09261843766"
+   },
+   {
+    "id": "c_157",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09610708113"
+   },
+   {
+    "id": "c_481",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09219332100"
+   },
+   {
+    "id": "c_87",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09953268787"
+   },
+   {
+    "id": "c_889",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09753467168"
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_3305",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_692",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_135",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_477",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_7386",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_402",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   }
+  ],
+  "reservations": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_454",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_970",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_406",
+    "name": "phòng khách",
+    "area_m2": 25
+   },
+   {
+    "id": "room_328",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   },
+   {
+    "id": "room_729",
+    "name": "bếp",
+    "area_m2": 22
+   }
+  ],
+  "current_job": null
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_733",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6810",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3105",
+    "name": "Mạ",
+    "type": "direct",
+    "members": [
+     "Mạ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_678",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_346",
+    "name": "Nhi",
+    "type": "direct",
+    "members": [
+     "Nhi"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_451",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-26T10:30:00+07:00",
+    "end": "2026-10-26T11:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7244",
+    "title": "họp phụ huynh",
+    "start": "2026-10-26T19:30:00+07:00",
+    "end": "2026-10-26T20:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7523",
+    "title": "họp team",
+    "start": "2026-10-26T19:00:00+07:00",
+    "end": "2026-10-26T20:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_292",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-27T09:30:00+07:00",
+    "end": "2026-10-27T10:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_896",
+    "title": "đi chơi công viên",
+    "start": "2026-10-28T08:00:00+07:00",
+    "end": "2026-10-28T09:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_6769",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_3965",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_887",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_8919",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ }
+}

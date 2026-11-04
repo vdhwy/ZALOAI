@@ -1,0 +1,361 @@
+{
+ "_meta": {
+  "question_id": "train_1335",
+  "current_time": "2026-11-07T13:20:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Gửi minutes cho Sếp Dũng",
+    "time": "2026-11-07T20:00:00+07:00"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_959",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_3833",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_1035",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_355",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09970657766"
+   },
+   {
+    "id": "c_659",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09978811722"
+   },
+   {
+    "id": "c_8015",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09792917420"
+   },
+   {
+    "id": "c_2832",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09803526722"
+   },
+   {
+    "id": "c_277",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09682014819"
+   },
+   {
+    "id": "c_2824",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09556507636"
+   },
+   {
+    "id": "c_931",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09975189244"
+   },
+   {
+    "id": "c_889",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09691437223"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_517",
+    "name": "Cefuroxim 500mg",
+    "times": [
+     "08:00",
+     "20:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_283",
+    "name": "Acetylcystein 200mg",
+    "times": [
+     "07:00",
+     "12:30",
+     "19:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_946",
+    "name": "Vitamin C 500mg",
+    "times": [
+     "09:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_738",
+    "name": "Men vi sinh",
+    "times": [
+     "12:00",
+     "18:00"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": [
+   {
+    "schedule_id": "med_517",
+    "time": "2026-11-07T08:05:00+07:00"
+   },
+   {
+    "schedule_id": "med_283",
+    "time": "2026-11-07T07:10:00+07:00"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_429",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_6827",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_591",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_3613",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_2864",
+    "title": "họp team",
+    "start": "2026-11-09T08:00:00+07:00",
+    "end": "2026-11-09T09:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_25",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-08T14:30:00+07:00",
+    "end": "2026-11-08T15:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9482",
+    "title": "họp phụ huynh",
+    "start": "2026-11-10T10:30:00+07:00",
+    "end": "2026-11-10T11:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_165",
+    "title": "khám răng",
+    "start": "2026-11-09T10:30:00+07:00",
+    "end": "2026-11-09T11:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_748",
+    "title": "đá bóng",
+    "start": "2026-11-09T14:30:00+07:00",
+    "end": "2026-11-09T15:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5172",
+    "title": "Họp review release note v3.2",
+    "start": "2026-11-07T11:30:00+07:00",
+    "end": "2026-11-07T12:45:00+07:00",
+    "location": "Online",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_618",
+    "title": "Sync release plan với Sếp Dũng",
+    "start": "2026-11-09T09:30:00+07:00",
+    "end": "2026-11-09T10:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

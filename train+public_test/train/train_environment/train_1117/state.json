@@ -1,0 +1,355 @@
+{
+ "_meta": {
+  "question_id": "train_1117",
+  "current_time": "2026-11-20T09:00:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-17": {
+    "steps": 10521,
+    "calories": 420,
+    "distance_km": 7.6
+   },
+   "2026-11-18": {
+    "steps": 3597,
+    "calories": 143,
+    "distance_km": 2.6
+   },
+   "2026-11-19": {
+    "steps": 9476,
+    "calories": 379,
+    "distance_km": 6.8
+   },
+   "2026-11-20": {
+    "steps": 2720,
+    "calories": 108,
+    "distance_km": 2.0
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_90",
+    "type": "gym",
+    "minutes": 60,
+    "time": "2026-11-16T18:30:00+07:00"
+   },
+   {
+    "id": "wo_953",
+    "type": "running",
+    "minutes": 20,
+    "time": "2026-11-18T06:00:00+07:00"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_415",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_4560",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_9703",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_341",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_70",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-25T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_613",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-24T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_9825",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-22T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_816",
+    "title": "Họp lớp online",
+    "start": "2026-11-23T09:30:00+07:00",
+    "link": "https://meet.example.test/dqr-mryq-jvq",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_5299",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-22T08:00:00+07:00",
+    "link": "https://meet.example.test/pxi-jeep-taw",
+    "attendees": [
+     "c_485",
+     "c_1574"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_386",
+    "title": "Chốt lịch tour với khách Hàn",
+    "start": "2026-11-21T10:00:00+07:00",
+    "link": "https://meet.example.test/dpk-zbtj-xwp",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_160",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-22T09:00:00+07:00",
+    "link": "https://meet.example.test/dej-pdvf-pnl",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "calculator": {},
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_91",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_3587",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_351",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_931",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_391",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09403062778"
+   },
+   {
+    "id": "c_485",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09613190436"
+   },
+   {
+    "id": "c_654",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09816708661"
+   },
+   {
+    "id": "c_557",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09838125398"
+   },
+   {
+    "id": "c_1574",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09834776497"
+   },
+   {
+    "id": "c_541",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09860862706"
+   },
+   {
+    "id": "c_437",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09961737888"
+   },
+   {
+    "id": "c_871",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09593322070"
+   },
+   {
+    "id": "c_8382",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09541166787"
+   },
+   {
+    "id": "c_2064",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09520679288"
+   }
+  ]
+ }
+}

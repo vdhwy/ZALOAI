@@ -1,0 +1,301 @@
+{
+ "_meta": {
+  "question_id": "train_0757",
+  "current_time": "2026-10-01T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_01",
+    "flight_no": "RV157",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-02",
+    "depart": "06:00",
+    "arrive": "07:20",
+    "airline": "Rồng Việt Air",
+    "fare": "Phổ thông tiêu chuẩn",
+    "price": 1650000
+   },
+   {
+    "id": "fl_02",
+    "flight_no": "JX513",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-02",
+    "depart": "09:05",
+    "arrive": "10:25",
+    "airline": "JetXanh",
+    "fare": "Phổ thông",
+    "price": 1190000
+   },
+   {
+    "id": "fl_03",
+    "flight_no": "SA103",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-02",
+    "depart": "12:40",
+    "arrive": "14:00",
+    "airline": "Sen Air",
+    "fare": "Phổ thông",
+    "price": 1420000
+   },
+   {
+    "id": "fl_04",
+    "flight_no": "JX525",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-02",
+    "depart": "19:00",
+    "arrive": "20:20",
+    "airline": "JetXanh",
+    "fare": "Phổ thông",
+    "price": 990000
+   },
+   {
+    "id": "fl_05",
+    "flight_no": "RV221",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-02",
+    "depart": "15:30",
+    "arrive": "16:50",
+    "airline": "Rồng Việt Air",
+    "fare": "Phổ thông tiêu chuẩn",
+    "change_allowed": false,
+    "price": 1650000
+   },
+   {
+    "id": "fl_06",
+    "flight_no": "RV221",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-02",
+    "depart": "15:30",
+    "arrive": "16:50",
+    "airline": "Rồng Việt Air",
+    "fare": "Phổ thông linh hoạt",
+    "change_allowed": true,
+    "price": 2150000
+   }
+  ],
+  "bookings": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_02",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_03",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_04",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_05",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_01",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-02T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_02",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-06T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_03",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-07T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_01",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-09-29T15:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_02",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-09-28T18:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_03",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-09-28T18:00:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "họp phụ huynh",
+    "start": "2026-10-03T09:30:00+07:00",
+    "end": "2026-10-03T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-03T08:00:00+07:00",
+    "end": "2026-10-03T09:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "đá bóng",
+    "start": "2026-10-02T08:30:00+07:00",
+    "end": "2026-10-02T09:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_01",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_02",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_03",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_04",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_05",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

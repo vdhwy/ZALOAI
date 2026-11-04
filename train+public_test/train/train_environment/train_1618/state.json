@@ -1,0 +1,670 @@
+{
+ "_meta": {
+  "question_id": "train_1618",
+  "current_time": "2026-11-24T06:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_572",
+    "title": "khám răng",
+    "start": "2026-11-25T10:00:00+07:00",
+    "end": "2026-11-25T11:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_375",
+    "title": "đi chơi công viên",
+    "start": "2026-11-25T18:30:00+07:00",
+    "end": "2026-11-25T19:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_921",
+    "title": "đá bóng",
+    "start": "2026-11-26T09:00:00+07:00",
+    "end": "2026-11-26T10:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3189",
+    "title": "họp phụ huynh",
+    "start": "2026-11-25T10:30:00+07:00",
+    "end": "2026-11-25T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_700",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-26T10:00:00+07:00",
+    "end": "2026-11-26T11:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_02",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-24T15:30:00+07:00",
+    "label": "Đón thằng Bi"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_982",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_96",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_828",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_607",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_755",
+    "time": "2026-11-22T20:15:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_8052",
+    "time": "2026-11-23T17:20:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_2760",
+    "time": "2026-11-22T20:35:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": true
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_808",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_2315",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_345",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_8023",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_623",
+    "show_id": "show_808",
+    "title": "Số 6: Sống chậm giữa thành phố",
+    "number": 6,
+    "duration_min": 18,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_4528",
+    "show_id": "show_808",
+    "title": "Số 7: Nghề diễn và những áp lực",
+    "number": 7,
+    "duration_min": 32,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_9357",
+    "show_id": "show_2315",
+    "title": "Số 6: Nhà giả kim - phần 1",
+    "number": 6,
+    "duration_min": 45,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_56",
+    "show_id": "show_345",
+    "title": "Số 14: Lỗ đen là gì",
+    "number": 14,
+    "duration_min": 32,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_855",
+    "show_id": "show_2315",
+    "title": "Số 7: Nhà giả kim - phần 2",
+    "number": 7,
+    "duration_min": 32,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_814",
+    "show_id": "show_8023",
+    "title": "Số 7: Đi xe đạp đi làm",
+    "number": 7,
+    "duration_min": 18,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_237",
+    "show_id": "show_8023",
+    "title": "Số 6: Trồng cây trên sân thượng",
+    "number": 6,
+    "duration_min": 45,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_939",
+    "show_id": "show_345",
+    "title": "Số 13: Giấc ngủ và trí nhớ",
+    "number": 13,
+    "duration_min": 45,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_61",
+    "show_id": "show_345",
+    "title": "Số 12: Vì sao bầu trời màu xanh",
+    "number": 12,
+    "duration_min": 32,
+    "published": "2026-11-03"
+   },
+   {
+    "id": "ep_203",
+    "show_id": "show_8023",
+    "title": "Số 5: Rác thải nhựa ở đô thị",
+    "number": 5,
+    "duration_min": 18,
+    "published": "2026-11-03"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_350",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_317",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_656",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_907",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_345"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_9753",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_856",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_931",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "quick",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_1681",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_773",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_275",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_217",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_665",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_9668",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_9668",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 1,
+      "note": null
+     },
+     {
+      "item_id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 65000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2857",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09873847916"
+   },
+   {
+    "id": "c_269",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09398965661"
+   },
+   {
+    "id": "c_278",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09195421607"
+   },
+   {
+    "id": "c_763",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09996337679"
+   },
+   {
+    "id": "c_699",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09172485703"
+   },
+   {
+    "id": "c_8742",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09638580627"
+   },
+   {
+    "id": "c_730",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09441563439"
+   },
+   {
+    "id": "c_896",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09186831174"
+   },
+   {
+    "id": "c_219",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09749802087"
+   },
+   {
+    "id": "c_780",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09542057440"
+   },
+   {
+    "id": "c_8401",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09324574475"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_687",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-24T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_348",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-30T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_4779",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-26T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_132",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-24T09:30:00+07:00",
+    "priority": "high",
+    "done": true
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_8692",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_841",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_308",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": false,
+    "battery": 80
+   }
+  ],
+  "guest_codes": []
+ }
+}

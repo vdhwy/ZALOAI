@@ -1,0 +1,201 @@
+{
+ "_meta": {
+  "question_id": "train_1519",
+  "current_time": "2026-11-12T08:25:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_443",
+    "name": "Lau nhà",
+    "assignee": "Bà nội",
+    "done": true
+   },
+   {
+    "id": "chore_607",
+    "name": "Đi chợ",
+    "assignee": "Bà nội",
+    "done": false
+   },
+   {
+    "id": "chore_1602",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_4545",
+    "name": "Giặt quần áo",
+    "assignee": "Cô Thảo",
+    "done": false
+   },
+   {
+    "id": "chore_3318",
+    "name": "Nhận thùng hàng Marigold Foods",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_7054",
+    "name": "Gửi trả hàng Marigold Farm",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Cô Thảo",
+   "Chú Năm",
+   "Bé Na",
+   "Bà nội"
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 90,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_9002",
+    "name": "bếp",
+    "area_m2": 18
+   },
+   {
+    "id": "room_6496",
+    "name": "phòng ngủ",
+    "area_m2": 22
+   },
+   {
+    "id": "room_6403",
+    "name": "phòng khách",
+    "area_m2": 10
+   }
+  ],
+  "current_job": null
+ },
+ "sms": {
+  "messages": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_776",
+    "name": "Lan",
+    "relation": "em gái",
+    "phone": "09406488379"
+   },
+   {
+    "id": "c_824",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09679263417"
+   },
+   {
+    "id": "c_509",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09926181040"
+   },
+   {
+    "id": "c_9852",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09965922585"
+   },
+   {
+    "id": "c_349",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09347597442"
+   },
+   {
+    "id": "c_584",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09290001663"
+   },
+   {
+    "id": "c_520",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09216199311"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_293",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_720",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_895",
+    "time": "2026-11-11T06:25:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_527",
+    "time": "2026-11-11T19:55:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_642",
+    "time": "2026-11-11T21:50:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_992",
+    "time": "2026-11-10T14:20:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_116",
+    "time": "2026-11-11T15:40:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   }
+  ]
+ }
+}

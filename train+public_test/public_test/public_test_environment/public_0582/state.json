@@ -1,0 +1,787 @@
+{
+ "_meta": {
+  "question_id": "public_0582",
+  "current_time": "2026-11-08T11:50:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "translator.translate",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_392",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_90",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_4410",
+    "name": "Lẩu Thái hải sản",
+    "tags": [
+     "lẩu",
+     "hải sản"
+    ],
+    "servings": 4,
+    "time_min": 50,
+    "ingredients": [
+     {
+      "name": "tôm",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "mực",
+      "quantity": 300,
+      "unit": "g"
+     },
+     {
+      "name": "nấm rơm",
+      "quantity": 200,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 4,
+      "unit": "cây"
+     },
+     {
+      "name": "lá chanh",
+      "quantity": 5,
+      "unit": "lá"
+     }
+    ],
+    "steps": [
+     "Nấu nước dùng với sả, lá chanh, ớt",
+     "Nêm chua cay",
+     "Nhúng hải sản và nấm khi ăn"
+    ]
+   },
+   {
+    "id": "rcp_517",
+    "name": "Lẩu nấm chay",
+    "tags": [
+     "lẩu",
+     "món chay"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "nấm đùi gà",
+      "quantity": 300,
+      "unit": "g"
+     },
+     {
+      "name": "nấm kim châm",
+      "quantity": 200,
+      "unit": "g"
+     },
+     {
+      "name": "đậu hũ non",
+      "quantity": 2,
+      "unit": "miếng"
+     },
+     {
+      "name": "cải thảo",
+      "quantity": 1,
+      "unit": "cây"
+     }
+    ],
+    "steps": [
+     "Hầm nước dùng rau củ 30 phút",
+     "Nêm muối, đường phèn",
+     "Nhúng nấm, đậu hũ và cải thảo khi ăn"
+    ]
+   },
+   {
+    "id": "rcp_3068",
+    "name": "Lẩu bò nhúng giấm",
+    "tags": [
+     "lẩu",
+     "bò"
+    ],
+    "servings": 4,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "thăn bò",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "giấm gạo",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 1,
+      "unit": "lít"
+     },
+     {
+      "name": "rau sống",
+      "quantity": 1,
+      "unit": "rổ"
+     }
+    ],
+    "steps": [
+     "Nấu nước dừa với giấm, sả",
+     "Thái bò mỏng",
+     "Nhúng bò, cuốn bánh tráng"
+    ]
+   },
+   {
+    "id": "rcp_2359",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_682",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_2562",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_39",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09566053442"
+   },
+   {
+    "id": "c_110",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09536457458"
+   },
+   {
+    "id": "c_485",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09121256118"
+   },
+   {
+    "id": "c_283",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09602668164"
+   },
+   {
+    "id": "c_6217",
+    "name": "Owen Bradley",
+    "relation": "đồng nghiệp",
+    "phone": "09617340285",
+    "email": "owen.bradley@nexora.example.test"
+   },
+   {
+    "id": "c_570",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09401760096"
+   },
+   {
+    "id": "c_102",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09263686718"
+   },
+   {
+    "id": "c_6309",
+    "name": "Owen Brady",
+    "relation": "đối tác",
+    "phone": "09348021576",
+    "email": "owen.brady@brightpath.example.test"
+   },
+   {
+    "id": "c_839",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09758113341"
+   },
+   {
+    "id": "c_261",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09108313746"
+   },
+   {
+    "id": "c_8898",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09291575176"
+   },
+   {
+    "id": "c_470",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09497729614"
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_352",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_890",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_90",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_86",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_4839",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_256",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_485",
+    "items": [
+     {
+      "product_id": "gro_352",
+      "name": "Yến mạch Quaker 500g",
+      "price": 89000,
+      "quantity": 2
+     }
+    ],
+    "total": 178000,
+    "status": "delivered",
+    "delivery_time": "2026-11-05T09:00:00+07:00"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_502",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-07T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_658",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-14T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_324",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-10T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_666",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-10T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_313",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-14",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_5929",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-14",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_284",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-14",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_544",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-14",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_789",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_23",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_7045",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_392",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_283",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 31,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-08",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-09",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-10",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-11",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 30
+   }
+  ]
+ }
+}

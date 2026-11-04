@@ -1,0 +1,631 @@
+{
+ "_meta": {
+  "question_id": "public_0565",
+  "current_time": "2026-11-17T08:45:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "translator.translate",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_695",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_565",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_293",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_448",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_4718",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_5182",
+    "name": "Gà hầm rượu vang kiểu Pháp",
+    "author": "Chloe Dubois",
+    "tags": [
+     "Chloe Dubois",
+     "món Pháp",
+     "món hầm"
+    ],
+    "servings": 4,
+    "time_min": 120,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 800,
+      "unit": "g"
+     },
+     {
+      "name": "rượu vang đỏ",
+      "quantity": 300,
+      "unit": "ml"
+     },
+     {
+      "name": "nấm mỡ",
+      "quantity": 200,
+      "unit": "g"
+     },
+     {
+      "name": "cà rốt",
+      "quantity": 2,
+      "unit": "củ"
+     }
+    ],
+    "steps": [
+     "Ướp gà với rượu vang qua đêm",
+     "Áp chảo gà cho vàng",
+     "Hầm gà với rượu, nấm, cà rốt lửa nhỏ"
+    ]
+   },
+   {
+    "id": "rcp_738",
+    "name": "Súp hành tây nướng phô mai",
+    "author": "Chloe Dubois",
+    "tags": [
+     "Chloe Dubois",
+     "món Pháp",
+     "súp"
+    ],
+    "servings": 3,
+    "time_min": 55,
+    "ingredients": [
+     {
+      "name": "hành tây",
+      "quantity": 4,
+      "unit": "củ"
+     },
+     {
+      "name": "bơ lạt",
+      "quantity": 40,
+      "unit": "g"
+     },
+     {
+      "name": "nước dùng bò",
+      "quantity": 800,
+      "unit": "ml"
+     },
+     {
+      "name": "phô mai",
+      "quantity": 100,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Thắng hành tây với bơ đến khi caramel",
+     "Đổ nước dùng, nấu 20 phút",
+     "Rải phô mai, nướng đến khi chảy"
+    ]
+   },
+   {
+    "id": "rcp_2690",
+    "name": "Bánh crêpe chuối mật ong",
+    "author": "Chloe Dubois",
+    "tags": [
+     "Chloe Dubois",
+     "món Pháp",
+     "bánh"
+    ],
+    "servings": 2,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 120,
+      "unit": "g"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 250,
+      "unit": "ml"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "mật ong",
+      "quantity": 2,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Đánh bột với trứng và sữa, để nghỉ 15 phút",
+     "Tráng bánh mỏng trên chảo",
+     "Cuộn chuối, rưới mật ong"
+    ]
+   },
+   {
+    "id": "rcp_317",
+    "name": "Trứng ốp la kiểu Pháp",
+    "author": "Chloe Dupont",
+    "tags": [
+     "Chloe Dupont",
+     "món Pháp",
+     "món nhanh"
+    ],
+    "servings": 1,
+    "time_min": 10,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "bơ lạt",
+      "quantity": 10,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Đun chảy bơ",
+     "Đập trứng, chiên lửa nhỏ"
+    ]
+   },
+   {
+    "id": "rcp_9024",
+    "name": "Salad cá ngừ kiểu Nice",
+    "author": "Chloe Dupont",
+    "tags": [
+     "Chloe Dupont",
+     "món Pháp",
+     "salad"
+    ],
+    "servings": 2,
+    "time_min": 20,
+    "ingredients": [
+     {
+      "name": "cá ngừ hộp",
+      "quantity": 1,
+      "unit": "hộp"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu que",
+      "quantity": 100,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Luộc trứng và đậu que",
+     "Trộn cá ngừ với rau, trứng"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_764",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09810339890"
+   },
+   {
+    "id": "c_903",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09782395801"
+   },
+   {
+    "id": "c_5007",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09690810890"
+   },
+   {
+    "id": "c_5546",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09741631876"
+   },
+   {
+    "id": "c_244",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09127687796"
+   },
+   {
+    "id": "c_221",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09570933860"
+   },
+   {
+    "id": "c_294",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09463256364"
+   },
+   {
+    "id": "c_5036",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09647914909"
+   },
+   {
+    "id": "c_759",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09889902937"
+   },
+   {
+    "id": "c_9473",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09810405030"
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_981",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_955",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_410",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_462",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_3831",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   },
+   {
+    "id": "gro_853",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Xin chào, rất vui được gặp bạn",
+    "to_lang": "ja",
+    "translation": "こんにちは、はじめまして"
+   },
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   },
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi Sếp David confirm lịch meeting tuần sau",
+    "time": "2026-11-17T20:00:00+07:00"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 29,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-17",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-19",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-20",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 30
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_929",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_4503",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_4087",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_728",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ }
+}

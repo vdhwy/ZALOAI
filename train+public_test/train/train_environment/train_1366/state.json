@@ -1,0 +1,378 @@
+{
+ "_meta": {
+  "question_id": "train_1366",
+  "current_time": "2026-10-20T22:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_632",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_579",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_6174",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_6296",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_601",
+    "time": "2026-10-20T21:48:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_406",
+    "time": "2026-10-20T01:15:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_5077",
+    "time": "2026-10-19T02:35:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_647",
+    "time": "2026-10-20T21:32:00+07:00",
+    "type": "doorbell",
+    "location": "cổng",
+    "message": "Khách Peter Hale bấm chuông ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_1589",
+    "time": "2026-10-20T19:05:00+07:00",
+    "type": "doorbell",
+    "location": "cổng",
+    "message": "Khách Peter Hall bấm chuông ở cổng",
+    "acknowledged": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_318",
+    "content": "Chở Peter Hale ra bến xe Cần Thơ",
+    "time": "2026-10-21T06:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_74",
+    "content": "Chở Peter Hall ra sân bay Cần Thơ",
+    "time": "2026-10-21T09:30:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_2051",
+    "content": "Tưới mấy luống rau sau nhà",
+    "time": "2026-10-21T16:30:00+07:00",
+    "repeat": "once",
+    "done": false
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_316",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_7706",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 80
+   },
+   {
+    "id": "lock_266",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_609",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_29",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_474",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09264861613"
+   },
+   {
+    "id": "c_132",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09939113410"
+   },
+   {
+    "id": "c_789",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09157352743"
+   },
+   {
+    "id": "c_3488",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09842518209"
+   },
+   {
+    "id": "c_316",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09225013248"
+   },
+   {
+    "id": "c_5780",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09820819850"
+   },
+   {
+    "id": "c_6042",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09439475348"
+   },
+   {
+    "id": "c_742",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09156915433"
+   },
+   {
+    "id": "c_6012",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09921457423"
+   },
+   {
+    "id": "c_2136",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09839624854"
+   },
+   {
+    "id": "c_968",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09965024252"
+   },
+   {
+    "id": "c_355",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09137697620"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_872",
+    "time": "2026-10-21T05:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_7633",
+    "time": "2026-10-21T07:30:00+07:00",
+    "label": "cho cá ăn",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "calculator": {}
+}

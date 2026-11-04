@@ -1,0 +1,382 @@
+{
+ "_meta": {
+  "question_id": "train_1088",
+  "current_time": "2026-11-20T15:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 121100000,
+    "sell": 123100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 115100000,
+    "sell": 117100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4187
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_608",
+    "title": "khám răng",
+    "start": "2026-11-22T18:00:00+07:00",
+    "end": "2026-11-22T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_28",
+    "title": "đi chơi công viên",
+    "start": "2026-11-21T10:30:00+07:00",
+    "end": "2026-11-21T11:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_2742",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_998",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_734",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_8110",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_4663",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09134397747"
+   },
+   {
+    "id": "c_750",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09440109568"
+   },
+   {
+    "id": "c_388",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09283158770"
+   },
+   {
+    "id": "c_306",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09459051003"
+   },
+   {
+    "id": "c_811",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09431685905"
+   },
+   {
+    "id": "c_473",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09866907779"
+   },
+   {
+    "id": "c_813",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09730110865"
+   },
+   {
+    "id": "c_774",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09941237959"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 24,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-20",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-22",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-23",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 28
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_44",
+    "name": "phòng làm việc",
+    "area_m2": 10
+   },
+   {
+    "id": "room_198",
+    "name": "phòng ngủ",
+    "area_m2": 18
+   },
+   {
+    "id": "room_989",
+    "name": "phòng khách",
+    "area_m2": 15
+   },
+   {
+    "id": "room_857",
+    "name": "bếp",
+    "area_m2": 22
+   },
+   {
+    "id": "room_848",
+    "name": "hành lang",
+    "area_m2": 25
+   },
+   {
+    "id": "room_85",
+    "name": "phòng ăn",
+    "area_m2": 12
+   }
+  ],
+  "current_job": null
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-20",
+    "to": "2026-11-20",
+    "kwh": 10.7,
+    "cost": 31000,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 4.8
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 2.1
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-14",
+    "to": "2026-11-20",
+    "kwh": 86.9,
+    "cost": 252000,
+    "days": [
+     {
+      "date": "2026-11-14",
+      "kwh": 13.3
+     },
+     {
+      "date": "2026-11-15",
+      "kwh": 15.5
+     },
+     {
+      "date": "2026-11-16",
+      "kwh": 8.1
+     },
+     {
+      "date": "2026-11-17",
+      "kwh": 10.4
+     },
+     {
+      "date": "2026-11-18",
+      "kwh": 15.2
+     },
+     {
+      "date": "2026-11-19",
+      "kwh": 13.7
+     },
+     {
+      "date": "2026-11-20",
+      "kwh": 10.7
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-20",
+    "kwh": 259.8,
+    "cost": 753400
+   }
+  },
+  "alert_threshold_kwh": 350
+ }
+}

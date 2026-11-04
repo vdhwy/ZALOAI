@@ -1,0 +1,331 @@
+{
+ "_meta": {
+  "question_id": "train_1181",
+  "current_time": "2026-12-12T09:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "fuel_price.get_price",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_968",
+    "title": "họp team",
+    "start": "2026-12-15T08:30:00+07:00",
+    "end": "2026-12-15T09:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_355",
+    "title": "khám răng",
+    "start": "2026-12-14T14:30:00+07:00",
+    "end": "2026-12-14T15:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_909",
+    "title": "đi chơi công viên",
+    "start": "2026-12-13T10:00:00+07:00",
+    "end": "2026-12-13T11:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_803",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09517516273"
+   },
+   {
+    "id": "c_493",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09955846826"
+   },
+   {
+    "id": "c_3593",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09759474386"
+   },
+   {
+    "id": "c_856",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09784278814"
+   },
+   {
+    "id": "c_66",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09494303923"
+   },
+   {
+    "id": "c_1557",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09651913947"
+   },
+   {
+    "id": "c_812",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09880453300"
+   },
+   {
+    "id": "c_673",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09148064530"
+   },
+   {
+    "id": "c_448",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09901773983"
+   },
+   {
+    "id": "c_9895",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09406420948"
+   },
+   {
+    "id": "c_3054",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09608056925"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23800
+   },
+   {
+    "type": "e5",
+    "price": 22600
+   },
+   {
+    "type": "diesel",
+    "price": 21200
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_238",
+    "name": "Thằng Bi",
+    "type": "direct",
+    "members": [
+     "Thằng Bi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_133",
+    "name": "Vợ",
+    "type": "direct",
+    "members": [
+     "Vợ"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Khám xong nhắn anh nha",
+      "time": "2026-12-12T07:40:00+07:00"
+     },
+     {
+      "from": "Vợ",
+      "content": "Bác sĩ khám lại rồi, Bi hết viêm họng, cho ngưng kháng sinh từ bữa nay. Siro ho thì uống nốt hết chai nha anh.",
+      "time": "2026-12-12T08:50:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_228",
+    "name": "Anh Sáu",
+    "type": "direct",
+    "members": [
+     "Anh Sáu"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_161",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6902",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_3310",
+    "name": "thuốc dạ dày",
+    "times": [
+     "06:30"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_427",
+    "name": "kháng sinh cho Bi",
+    "times": [
+     "07:00",
+     "19:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_58",
+    "name": "siro ho cho Bi",
+    "times": [
+     "20:00"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_524",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-24",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_938",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-24",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_1201",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-24",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_8604",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-12-24",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_949",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 201000,
+    "due_date": "2026-12-21",
+    "paid": false
+   },
+   {
+    "id": "bill_9737",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 216000,
+    "due_date": "2026-12-14",
+    "paid": false
+   },
+   {
+    "id": "bill_740",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 153000,
+    "due_date": "2026-12-19",
+    "paid": false
+   }
+  ]
+ }
+}

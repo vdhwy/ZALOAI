@@ -1,0 +1,300 @@
+{
+ "_meta": {
+  "question_id": "train_1649",
+  "current_time": "2026-11-21T07:20:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_252",
+    "name": "Lau nhà",
+    "assignee": "Tuấn",
+    "done": true
+   },
+   {
+    "id": "chore_434",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_792",
+    "name": "Phơi quần áo",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_127",
+    "name": "Tưới cây",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_164",
+    "name": "Giặt quần áo",
+    "assignee": "Anh Khoa",
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Khoa",
+   "Lan",
+   "Bé Na",
+   "Tuấn"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_255",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09151249078"
+   },
+   {
+    "id": "c_688",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09581543612"
+   },
+   {
+    "id": "c_905",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09348475594"
+   },
+   {
+    "id": "c_641",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09249030175"
+   },
+   {
+    "id": "c_929",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09149379866"
+   },
+   {
+    "id": "c_151",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09326208279"
+   },
+   {
+    "id": "c_350",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09498890681"
+   },
+   {
+    "id": "c_824",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09555400424"
+   },
+   {
+    "id": "c_78",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09509964204"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_437",
+    "status": "booked",
+    "pickup": "12 Nguyễn Huệ, Quận 1, TP.HCM",
+    "dropoff": "Sân bay Tân Sơn Nhất",
+    "vehicle": "car4",
+    "schedule_time": "2026-11-22T05:30:00+07:00"
+   },
+   {
+    "id": "ride_02",
+    "status": "booked",
+    "pickup": "12 Nguyễn Huệ, Quận 1, TP.HCM",
+    "dropoff": "Khu Công nghệ cao, TP. Thủ Đức, TP.HCM",
+    "vehicle": "car4",
+    "schedule_time": "2026-11-21T08:00:00+07:00"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_1727",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_258",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_8147",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen\nMột bó hoa cẩm chướng"
+   },
+   {
+    "id": "note_454",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_934",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_06",
+    "title": "Khách hàng quận bảy",
+    "content": "Chị Hạnh hẹn xem mẫu thứ ba"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_398",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-26T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_865",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-23T20:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_909",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-24T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "due": "2026-11-25T20:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Mua quà sinh nhật má"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 121300000,
+    "sell": 123300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 115300000,
+    "sell": 117300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4202
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_152",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 849000,
+    "due_date": "2026-11-25",
+    "paid": false
+   },
+   {
+    "id": "bill_340",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 212000,
+    "due_date": "2026-11-25",
+    "paid": false
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_954",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_2829",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_667",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_849",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ }
+}

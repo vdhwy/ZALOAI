@@ -1,0 +1,453 @@
+{
+ "_meta": {
+  "question_id": "train_1655",
+  "current_time": "2026-12-11T19:40:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_502",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-12-12T15:00:00+07:00",
+    "link": "https://meet.example.test/uzg-ahft-htc",
+    "attendees": [
+     "c_563",
+     "c_992"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_512",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-12-14T10:30:00+07:00",
+    "link": "https://meet.example.test/son-qyyv-gkh",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_817",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09771339942"
+   },
+   {
+    "id": "c_3345",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09498323042"
+   },
+   {
+    "id": "c_396",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09511263388"
+   },
+   {
+    "id": "c_563",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09396900129"
+   },
+   {
+    "id": "c_173",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09544703259"
+   },
+   {
+    "id": "c_8665",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09358320145"
+   },
+   {
+    "id": "c_5646",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09456340573"
+   },
+   {
+    "id": "c_664",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09894842532"
+   },
+   {
+    "id": "c_475",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09948698799"
+   },
+   {
+    "id": "c_958",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09788516543"
+   },
+   {
+    "id": "c_992",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09127730581"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_589",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-14T15:00:00+07:00",
+    "end": "2026-12-14T16:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_44",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-13T19:30:00+07:00",
+    "end": "2026-12-13T20:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_614",
+    "title": "đi chơi công viên",
+    "start": "2026-12-13T10:00:00+07:00",
+    "end": "2026-12-13T11:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_743",
+    "title": "họp team",
+    "start": "2026-12-14T15:30:00+07:00",
+    "end": "2026-12-14T16:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_291",
+    "title": "họp phụ huynh",
+    "start": "2026-12-12T14:30:00+07:00",
+    "end": "2026-12-12T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_600",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_5636",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_268",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_318",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-16T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_3639",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-13T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_502",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-17T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_369",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-12T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_05",
+    "due": "2026-12-14T09:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Mượn sách của Sophie Martin ở thư viện"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_970",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_88",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_5942",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_146",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_5942",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 55000,
+    "address": "Công ty BlueOrbit Logistics, 120 Nguyễn Văn Linh, Đà Nẵng",
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_461",
+    "name": "Cây xăng PetroHưng Nguyễn Văn Linh",
+    "address": "150 Nguyễn Văn Linh, Thanh Khê, Đà Nẵng",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_1675",
+    "name": "Ký Ức Cà Phê Bạch Đằng",
+    "address": "98 Bạch Đằng, Hải Châu, Đà Nẵng",
+    "category": "cafe"
+   },
+   {
+    "id": "place_467",
+    "name": "Nhà thuốc Minh Khang Lê Duẩn",
+    "address": "210 Lê Duẩn, Hải Châu, Đà Nẵng",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_1642",
+    "name": "Lotus Mart Đà Nẵng",
+    "address": "6 Nại Nam, Hải Châu, Đà Nẵng",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_365",
+    "name": "Đi chợ",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_371",
+    "name": "Lau nhà",
+    "assignee": "Mẹ",
+    "done": false
+   },
+   {
+    "id": "chore_6821",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_2862",
+    "name": "Nấu cơm tối",
+    "assignee": "Chị Trâm",
+    "done": true
+   }
+  ],
+  "members": [
+   "Chị Trâm",
+   "Tuấn",
+   "Mẹ"
+  ]
+ }
+}

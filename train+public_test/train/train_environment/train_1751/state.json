@@ -1,0 +1,432 @@
+{
+ "_meta": {
+  "question_id": "train_1751",
+  "current_time": "2026-11-27T06:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_87",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_689",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_03",
+    "checked": false,
+    "name": "thịt bò",
+    "quantity": 1
+   },
+   {
+    "id": "item_04",
+    "checked": false,
+    "name": "rau cải",
+    "quantity": 2
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_691",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_256",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 80
+   },
+   {
+    "id": "lock_9759",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_7532",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09832800606"
+   },
+   {
+    "id": "c_626",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09249179652"
+   },
+   {
+    "id": "c_400",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09123251496"
+   },
+   {
+    "id": "c_84",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09849535025"
+   },
+   {
+    "id": "c_92",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09220691526"
+   },
+   {
+    "id": "c_1556",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09922758620"
+   },
+   {
+    "id": "c_547",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09290477075"
+   },
+   {
+    "id": "c_779",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09678337137"
+   },
+   {
+    "id": "c_868",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09137036100"
+   },
+   {
+    "id": "c_748",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09942181644"
+   },
+   {
+    "id": "c_424",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09790618471"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_254",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-26T11:10:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_2010",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-27T00:40:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_135",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-26T01:40:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_3105",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-26T16:40:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_800",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-26T22:25:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   }
+  ],
+  "saved": []
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_651",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_906",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_429",
+    "name": "máy lọc không khí phòng khách",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "auto",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_5133",
+    "name": "máy lọc không khí phòng ngủ",
+    "type": "air_purifier",
+    "room": "phòng ngủ",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "auto",
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_77",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-26T00:10:00+07:00",
+    "unread": true,
+    "folder": "archive"
+   },
+   {
+    "id": "mail_776",
+    "from": "minh@gmail.example.test",
+    "from_name": "Minh",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-26T17:55:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_457",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-25T07:40:00+07:00",
+    "unread": false,
+    "folder": "inbox",
+    "replied": true
+   },
+   {
+    "id": "mail_639",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-25T02:40:00+07:00",
+    "unread": true,
+    "folder": "archive"
+   },
+   {
+    "id": "mail_142",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-25T21:25:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [
+   {
+    "id": "sent_01",
+    "to": [
+     "nhansu@congty.example.test"
+    ],
+    "cc": [],
+    "subject": "Re: Lịch nghỉ lễ Quốc khánh",
+    "body": "Tôi xin nhận trực ngày mùng hai.",
+    "in_reply_to": "mail_457"
+   }
+  ],
+  "drafts": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_813",
+    "time": "2026-11-28T06:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "calculator": {},
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_9290",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-29T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_701",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-28T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_323",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-27T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_447",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-30T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

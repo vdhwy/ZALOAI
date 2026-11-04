@@ -1,0 +1,680 @@
+{
+ "_meta": {
+  "question_id": "public_0440",
+  "current_time": "2026-10-16T18:25:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "fuel_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21800
+   },
+   {
+    "type": "e5",
+    "price": 20600
+   },
+   {
+    "type": "diesel",
+    "price": 19200
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_329",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_167",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_817",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8855",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_504",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "public_transit": {
+  "card_balance": 120000,
+  "routes": [
+   {
+    "id": "metro_655",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_205",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-10-16T18:27:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_205",
+    "time": "2026-10-16T18:45:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_205",
+    "time": "2026-10-16T18:55:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-10-16T18:43:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_655",
+    "time": "2026-10-16T18:51:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_655",
+    "time": "2026-10-16T18:31:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_655",
+    "time": "2026-10-16T18:41:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-10-16T18:35:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_205",
+    "time": "2026-10-16T18:35:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_510",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_3394",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_542",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_437",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_148",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_422",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_352",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-30",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_2507",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-30",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_366",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-30",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_675",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-30",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   }
+  ],
+  "bookings": []
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_480",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_856",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_545",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_869",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_681",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_233",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_1789",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-23",
+    "depart": "08:00",
+    "arrive": "21:00",
+    "price": 250000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_762",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-23",
+    "depart": "19:00",
+    "arrive": "09:00",
+    "price": 320000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_366",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-23",
+    "depart": "21:00",
+    "arrive": "13:30",
+    "price": 450000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_823",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-23",
+    "depart": "19:00",
+    "arrive": "11:20",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_280",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-10-17",
+    "depart": "21:00",
+    "arrive": "23:15",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_278",
+    "type": "train",
+    "operator": "Tàu LP3",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-10-16",
+    "depart": "09:20",
+    "arrive": "11:45",
+    "price": 105000,
+    "seats_left": 25
+   },
+   {
+    "id": "trip_295",
+    "type": "train",
+    "operator": "Tàu LP7",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-10-16",
+    "depart": "20:10",
+    "arrive": "22:35",
+    "price": 105000,
+    "seats_left": 40
+   },
+   {
+    "id": "trip_15",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-10-17",
+    "depart": "13:00",
+    "arrive": "15:15",
+    "price": 250000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_418",
+    "type": "train",
+    "operator": "Tàu LP6",
+    "origin": "Hải Phòng",
+    "destination": "Hà Nội",
+    "date": "2026-10-18",
+    "depart": "15:05",
+    "arrive": "17:30",
+    "price": 105000,
+    "seats_left": 35
+   },
+   {
+    "id": "trip_4093",
+    "type": "train",
+    "operator": "Tàu LP8",
+    "origin": "Hải Phòng",
+    "destination": "Hà Nội",
+    "date": "2026-10-18",
+    "depart": "18:40",
+    "arrive": "21:05",
+    "price": 105000,
+    "seats_left": 30
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_45",
+    "trip_id": "trip_15",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-10-17",
+    "depart": "13:00",
+    "seats": 1,
+    "total": 250000,
+    "status": "cancelled"
+   },
+   {
+    "id": "tk_219",
+    "trip_id": "trip_295",
+    "type": "train",
+    "operator": "Tàu LP7",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-10-16",
+    "depart": "20:10",
+    "seats": 1,
+    "total": 105000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_83",
+    "trip_id": "trip_418",
+    "type": "train",
+    "operator": "Tàu LP6",
+    "origin": "Hải Phòng",
+    "destination": "Hà Nội",
+    "date": "2026-10-18",
+    "depart": "15:05",
+    "seats": 1,
+    "total": 105000,
+    "status": "confirmed"
+   }
+  ]
+ }
+}

@@ -1,0 +1,418 @@
+{
+ "_meta": {
+  "question_id": "public_0614",
+  "current_time": "2026-11-24T16:05:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "phone.call",
+   "phone.recent_calls",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "translator.translate"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_637",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_2491",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_3773",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_133",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_9502",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_496",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_776",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_115",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_659",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_411",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-25T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_5496",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-28T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_8551",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-25T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 15000,
+  "routes": [
+   {
+    "id": "bus_652",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Bờ Hồ",
+     "Láng Hạ",
+     "Cầu Giấy",
+     "Đại học Mỏ"
+    ],
+    "fare": 7000,
+    "duration_min": 45,
+    "headway_min": 15,
+    "aliases": {
+     "nhà": "Bờ Hồ",
+     "Hàng Bạc": "Bờ Hồ"
+    }
+   },
+   {
+    "id": "metro_8980",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_8980",
+    "time": "2026-11-24T16:30:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_652",
+    "time": "2026-11-24T16:24:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_8980",
+    "time": "2026-11-24T16:20:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_652",
+    "time": "2026-11-24T16:09:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_8980",
+    "time": "2026-11-24T16:10:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_652",
+    "time": "2026-11-24T16:39:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_378",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09640766570"
+   },
+   {
+    "id": "c_704",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09796571206"
+   },
+   {
+    "id": "c_361",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09169433117"
+   },
+   {
+    "id": "c_973",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09180639141"
+   },
+   {
+    "id": "c_6604",
+    "name": "Thầy Mark Johnson",
+    "relation": "thầy giáo tiếng Anh của cháu nội",
+    "phone": "09264810375"
+   },
+   {
+    "id": "c_7880",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09794098927"
+   },
+   {
+    "id": "c_469",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09161650536"
+   },
+   {
+    "id": "c_299",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09515636881"
+   },
+   {
+    "id": "c_331",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09900886695"
+   },
+   {
+    "id": "c_5521",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09316256349"
+   },
+   {
+    "id": "c_827",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09481464297"
+   },
+   {
+    "id": "c_219",
+    "name": "Mark Johnston",
+    "relation": "khách thuê nhà",
+    "phone": "09917352648"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   },
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   }
+  ]
+ }
+}

@@ -1,0 +1,367 @@
+{
+ "_meta": {
+  "question_id": "public_0663",
+  "current_time": "2026-10-22T17:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fuel_price.get_price",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "translator.translate"
+  ]
+ },
+ "public_transit": {
+  "card_balance": 98000,
+  "routes": [
+   {
+    "id": "bus_894",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Chợ Cái Răng",
+     "Đại học Cần Thơ",
+     "Bến Ninh Kiều"
+    ],
+    "fare": 7000,
+    "duration_min": 35,
+    "headway_min": 15
+   },
+   {
+    "id": "bus_626",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Bến xe Trung tâm",
+     "Chợ Cái Răng",
+     "Ngã Bảy"
+    ],
+    "fare": 12000,
+    "duration_min": 55,
+    "headway_min": 20
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Bến xe Trung tâm",
+    "route": "bus_626",
+    "time": "2026-10-22T18:03:00+07:00"
+   },
+   {
+    "stop": "Bến xe Trung tâm",
+    "route": "bus_626",
+    "time": "2026-10-22T18:13:00+07:00"
+   },
+   {
+    "stop": "Chợ Cái Răng",
+    "route": "bus_894",
+    "time": "2026-10-22T17:53:00+07:00"
+   },
+   {
+    "stop": "Chợ Cái Răng",
+    "route": "bus_894",
+    "time": "2026-10-22T18:23:00+07:00"
+   },
+   {
+    "stop": "Chợ Cái Răng",
+    "route": "bus_894",
+    "time": "2026-10-22T18:08:00+07:00"
+   },
+   {
+    "stop": "Bến xe Trung tâm",
+    "route": "bus_626",
+    "time": "2026-10-22T17:53:00+07:00"
+   }
+  ],
+  "topups": [
+   {
+    "id": "top_01",
+    "amount": 50000,
+    "status": "done"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_418",
+    "time": "2026-10-23T05:00:00+07:00",
+    "label": "dậy đi giao hàng",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_73",
+    "time": "2026-10-23T07:00:00+07:00",
+    "label": "uống thuốc huyết áp",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_5203",
+    "title": "Giao xoài cho Anh Mười",
+    "start": "2026-10-23T06:30:00+07:00",
+    "end": "2026-10-23T07:30:00+07:00",
+    "location": "Chợ đầu mối Cái Răng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_467",
+    "title": "Giao sầu riêng cho Anh Mười",
+    "start": "2026-10-24T06:00:00+07:00",
+    "end": "2026-10-24T07:00:00+07:00",
+    "location": "Chợ đầu mối Cái Răng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9248",
+    "title": "Đám giỗ bên ngoại",
+    "start": "2026-10-25T10:00:00+07:00",
+    "end": "2026-10-25T14:00:00+07:00",
+    "location": "Phong Điền, Cần Thơ",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1666",
+    "title": "Khám răng",
+    "start": "2026-10-24T15:30:00+07:00",
+    "end": "2026-10-24T16:30:00+07:00",
+    "location": "Nha khoa Ninh Kiều",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_3112",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_165",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_399",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_41",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_580",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "ewallet": {
+  "balance": 900000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_85",
+    "amount": -2000000,
+    "note": "tiền xoài"
+   },
+   {
+    "id": "tx_02",
+    "type": "topup_mobile",
+    "phone": "09719836968",
+    "amount": -100000
+   },
+   {
+    "id": "tx_03",
+    "type": "transfer",
+    "to": "c_519",
+    "amount": -500000,
+    "note": "đi chợ"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_331",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09898797108"
+   },
+   {
+    "id": "c_855",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09190441233"
+   },
+   {
+    "id": "c_85",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09981129807"
+   },
+   {
+    "id": "c_519",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09563526725"
+   },
+   {
+    "id": "c_458",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09706290418"
+   },
+   {
+    "id": "c_832",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09393291613"
+   },
+   {
+    "id": "c_947",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09719836968"
+   },
+   {
+    "id": "c_12",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09986488226"
+   },
+   {
+    "id": "c_115",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09283001609"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22600
+   },
+   {
+    "type": "e5",
+    "price": 21400
+   },
+   {
+    "type": "diesel",
+    "price": 20000
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_110",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-27T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_681",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-27T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_346",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-28T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_553",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-25T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_8612",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-25T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

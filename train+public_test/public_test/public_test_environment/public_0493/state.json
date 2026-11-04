@@ -1,0 +1,415 @@
+{
+ "_meta": {
+  "question_id": "public_0493",
+  "current_time": "2026-10-25T15:20:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "pantry.consume",
+   "pantry.list_items",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_445",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_822",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_55",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_334",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_7632",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_873",
+    "name": "Trứng gà ta hộp 10 quả",
+    "price": 42000,
+    "unit": "hộp",
+    "category": "trứng",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_464",
+    "items": [
+     {
+      "product_id": "gro_55",
+      "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+      "price": 35000,
+      "quantity": 1
+     }
+    ],
+    "total": 35000,
+    "status": "delivered",
+    "delivery_time": "2026-10-20T09:00:00+07:00"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_217",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_5403",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_5418",
+    "name": "trứng vịt",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_119",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_7662",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_413",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": true
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22200
+   },
+   {
+    "type": "e5",
+    "price": 21000
+   },
+   {
+    "type": "diesel",
+    "price": 19600
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_8097",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_211",
+    "name": "Trang",
+    "type": "direct",
+    "members": [
+     "Trang"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1946",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_920",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_157",
+    "name": "Thầy Phong",
+    "type": "direct",
+    "members": [
+     "Thầy Phong"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_421",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_472",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_990",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_930",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_997",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09471524260"
+   },
+   {
+    "id": "c_89",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09633794450"
+   },
+   {
+    "id": "c_7504",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09799656988"
+   },
+   {
+    "id": "c_2546",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09276664246"
+   },
+   {
+    "id": "c_30",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09712065831"
+   },
+   {
+    "id": "c_4266",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09745242766"
+   },
+   {
+    "id": "c_452",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09816027711"
+   },
+   {
+    "id": "c_596",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09787204928"
+   },
+   {
+    "id": "c_9997",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09173735443"
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_3263",
+    "name": "trứng gà",
+    "stock": 7,
+    "unit": "quả"
+   },
+   {
+    "id": "pan_3271",
+    "name": "trứng vịt",
+    "stock": 0,
+    "unit": "quả"
+   },
+   {
+    "id": "pan_154",
+    "name": "gạo ST25",
+    "stock": 6,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_264",
+    "name": "sữa tươi",
+    "stock": 6,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_175",
+    "name": "yến mạch",
+    "stock": 2,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_753",
+    "name": "mì tôm",
+    "stock": 8,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_840",
+    "name": "cà phê G7",
+    "stock": 2,
+    "unit": "hộp"
+   }
+  ]
+ }
+}

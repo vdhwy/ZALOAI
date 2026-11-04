@@ -1,0 +1,289 @@
+{
+ "_meta": {
+  "question_id": "public_0644",
+  "current_time": "2026-12-11T09:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_606",
+    "time": "2026-12-12T07:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_367",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09123913378"
+   },
+   {
+    "id": "c_840",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09286975747"
+   },
+   {
+    "id": "c_931",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09352238765"
+   },
+   {
+    "id": "c_698",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09665772776"
+   },
+   {
+    "id": "c_9458",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09643091079"
+   },
+   {
+    "id": "c_446",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09485946892"
+   },
+   {
+    "id": "c_469",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09996232112"
+   },
+   {
+    "id": "c_767",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09975355474"
+   },
+   {
+    "id": "c_859",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09591168447"
+   },
+   {
+    "id": "c_783",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09968747156"
+   },
+   {
+    "id": "c_5521",
+    "name": "Noah Whitfield",
+    "relation": "khách",
+    "phone": "09713580246"
+   },
+   {
+    "id": "c_208",
+    "name": "Noah Whitford",
+    "relation": "khách",
+    "phone": "09862047315"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_905",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_5147",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_2408",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_2871",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_798",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 500,
+    "avg_price": 31750,
+    "price": 34150
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 200,
+    "avg_price": 28950,
+    "price": 26900
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 34150,
+    "change_pct": -0.8
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59500,
+    "change_pct": 0.0
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26900,
+    "change_pct": 3.5
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24550,
+    "change_pct": 0.5
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1711,
+    "change_pct": -0.2
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 126850,
+    "change_pct": -0.9
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 28,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-12-11",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-12",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-13",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-14",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 30
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_812",
+    "contact_id": "c_5521",
+    "phone_number": "09713580246",
+    "from": "Noah Whitfield",
+    "direction": "incoming",
+    "time": "2026-12-11T08:10:00+07:00",
+    "content": "Anh Đức, hai mã hôm qua tui nói là ZTS với ZTP nha, anh coi thử."
+   },
+   {
+    "id": "msg_445",
+    "contact_id": "c_208",
+    "phone_number": "09862047315",
+    "from": "Noah Whitford",
+    "direction": "incoming",
+    "time": "2026-12-11T08:40:00+07:00",
+    "content": "Hi anh Đức, tui thấy ZDH với Vitech đang hay, mai tui check-out sớm nha."
+   },
+   {
+    "id": "msg_903",
+    "contact_id": "c_469",
+    "phone_number": "09996232112",
+    "from": "Vợ Hà",
+    "direction": "incoming",
+    "time": "2026-12-11T09:05:00+07:00",
+    "content": "Trưa anh về ăn cơm nghe."
+   },
+   {
+    "id": "msg_04",
+    "contact_id": "c_5521",
+    "phone_number": "09713580246",
+    "direction": "outgoing",
+    "content": "Cảm ơn nghe, để anh coi."
+   }
+  ]
+ }
+}

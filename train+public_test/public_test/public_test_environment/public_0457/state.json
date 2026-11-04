@@ -1,0 +1,433 @@
+{
+ "_meta": {
+  "question_id": "public_0457",
+  "current_time": "2026-12-12T10:50:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "event_tickets.book",
+   "event_tickets.search",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_3890",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 223000,
+    "due_date": "2026-12-15",
+    "paid": false
+   },
+   {
+    "id": "bill_433",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 846000,
+    "due_date": "2026-12-16",
+    "paid": false
+   },
+   {
+    "id": "bill_6932",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 154000,
+    "due_date": "2026-12-19",
+    "paid": false
+   },
+   {
+    "id": "bill_14",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 202000,
+    "due_date": "2026-12-18",
+    "paid": false
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 100,
+    "avg_price": 29650,
+    "price": 33150
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 1000,
+    "avg_price": 56350,
+    "price": 57850
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 500,
+    "avg_price": 133700,
+    "price": 124950
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 57850,
+    "change_pct": -1.6
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 124950,
+    "change_pct": -2.3
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 91650,
+    "change_pct": 0.3
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33150,
+    "change_pct": 0.3
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1685,
+    "change_pct": -1.1
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 23600,
+    "change_pct": -1.1
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_263",
+    "name": "Stand-up comedy Sài Gòn Cười",
+    "category": "hài kịch",
+    "date": "2026-12-21",
+    "time": "18:00",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 300000,
+    "available": 30
+   },
+   {
+    "id": "event_526",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-12-21",
+    "time": "20:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 600000,
+    "available": 30
+   },
+   {
+    "id": "event_6021",
+    "name": "Đêm nhạc Jazz cuối tuần",
+    "category": "âm nhạc",
+    "date": "2026-12-16",
+    "time": "20:00",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 450000,
+    "available": 12
+   }
+  ],
+  "bookings": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 31000,
+    "eta_min": 5
+   },
+   {
+    "vehicle": "car4",
+    "price": 72000,
+    "eta_min": 8
+   },
+   {
+    "vehicle": "car7",
+    "price": 96000,
+    "eta_min": 12
+   }
+  ],
+  "rides": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_7188",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_764",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_191",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_61",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_8113",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_9727",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_6582",
+    "items": [
+     {
+      "product_id": "gro_61",
+      "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+      "price": 35000,
+      "quantity": 1
+     }
+    ],
+    "total": 35000,
+    "status": "delivered",
+    "delivery_time": "2026-12-07T09:00:00+07:00"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1251",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09420410943"
+   },
+   {
+    "id": "c_9365",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09692637787"
+   },
+   {
+    "id": "c_13",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09845351881"
+   },
+   {
+    "id": "c_383",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09182844208"
+   },
+   {
+    "id": "c_859",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09221754493"
+   },
+   {
+    "id": "c_2150",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09698993036"
+   },
+   {
+    "id": "c_7498",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09410588106"
+   },
+   {
+    "id": "c_425",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09759955436"
+   },
+   {
+    "id": "c_180",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09795290102"
+   },
+   {
+    "id": "c_7503",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09280031171"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   }
+  ]
+ }
+}

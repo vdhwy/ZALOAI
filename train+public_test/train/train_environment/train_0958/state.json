@@ -1,0 +1,545 @@
+{
+ "_meta": {
+  "question_id": "train_0958",
+  "current_time": "2026-11-21T06:30:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "tv": {
+  "power": "on",
+  "channel": "VTV1",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "volume": 30,
+  "programs": [
+   {
+    "id": "prg_118",
+    "channel": "VTV1",
+    "title": "Chào buổi sáng",
+    "start": "2026-11-21T06:00:00+07:00",
+    "end": "2026-11-21T07:00:00+07:00"
+   },
+   {
+    "id": "prg_163",
+    "channel": "VTV1",
+    "title": "Sức khỏe cho mọi nhà",
+    "start": "2026-11-21T07:00:00+07:00",
+    "end": "2026-11-21T07:30:00+07:00"
+   },
+   {
+    "id": "prg_205",
+    "channel": "VTV3",
+    "title": "Khởi động ngày mới",
+    "start": "2026-11-21T06:15:00+07:00",
+    "end": "2026-11-21T07:15:00+07:00"
+   },
+   {
+    "id": "prg_274",
+    "channel": "HTV7",
+    "title": "Phim hoạt hình buổi sáng",
+    "start": "2026-11-21T06:30:00+07:00",
+    "end": "2026-11-21T07:00:00+07:00"
+   }
+  ],
+  "recordings": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_6689",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_336",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_4857",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_284",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 400,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_302",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-12-19",
+    "used": false
+   },
+   {
+    "id": "vch_158",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-05",
+    "used": false
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_457",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Biển Mỹ Khê",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_7621",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Biển Mỹ Khê",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_433",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Công viên Biển Đông",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_537",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Công viên Biển Đông",
+    "available": true,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_7895",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_168",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_400",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_372",
+    "show_id": "show_400",
+    "title": "Số 19: Nhà giả kim - phần 2",
+    "number": 19,
+    "duration_min": 18,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_2264",
+    "show_id": "show_168",
+    "title": "Số 16: Đi xe đạp đi làm",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_955",
+    "show_id": "show_7895",
+    "title": "Số 19: Nghề diễn và những áp lực",
+    "number": 19,
+    "duration_min": 18,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_8901",
+    "show_id": "show_168",
+    "title": "Số 15: Trồng cây trên sân thượng",
+    "number": 15,
+    "duration_min": 18,
+    "published": "2026-11-07"
+   },
+   {
+    "id": "ep_9867",
+    "show_id": "show_400",
+    "title": "Số 18: Nhà giả kim - phần 1",
+    "number": 18,
+    "duration_min": 18,
+    "published": "2026-11-07"
+   },
+   {
+    "id": "ep_838",
+    "show_id": "show_168",
+    "title": "Số 14: Rác thải nhựa ở đô thị",
+    "number": 14,
+    "duration_min": 18,
+    "published": "2026-10-31"
+   },
+   {
+    "id": "ep_5727",
+    "show_id": "show_7895",
+    "title": "Số 18: Sống chậm giữa thành phố",
+    "number": 18,
+    "duration_min": 45,
+    "published": "2026-11-07"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_938",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_930",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_4069",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_876",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_168"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_6450",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_261",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_89",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_149",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25729
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27787
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.5
+   }
+  ]
+ }
+}

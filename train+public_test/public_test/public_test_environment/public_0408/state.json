@@ -1,0 +1,309 @@
+{
+ "_meta": {
+  "question_id": "public_0408",
+  "current_time": "2026-12-14T13:20:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "pantry.consume",
+   "pantry.list_items",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_8243",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09575790541"
+   },
+   {
+    "id": "c_551",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09298943857"
+   },
+   {
+    "id": "c_866",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09145133411"
+   },
+   {
+    "id": "c_8868",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09280333581"
+   },
+   {
+    "id": "c_241",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09342966009"
+   },
+   {
+    "id": "c_7876",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09382083777"
+   },
+   {
+    "id": "c_1650",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09201248893"
+   },
+   {
+    "id": "c_9081",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09578281684"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Ra sân bay đón đoàn khách Hàn",
+    "time": "2026-12-14T15:00:00+07:00"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_807",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_7863",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_7779",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_237",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_9189",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_108",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_7452",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_924",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_614",
+    "contact_id": "c_241",
+    "phone_number": "09342966009",
+    "direction": "incoming",
+    "content": "Cuối tuần đi cà phê không ông?",
+    "time": "2026-12-13T20:10:00+07:00"
+   },
+   {
+    "id": "msg_639",
+    "contact_id": "c_551",
+    "phone_number": "09298943857",
+    "direction": "incoming",
+    "content": "Anh ơi rảnh thì coi lại cổ phiếu nhà mình, mã nào đang lời thì báo em nghe.",
+    "time": "2026-12-14T11:45:00+07:00"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_976",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_8367",
+    "name": "táo",
+    "quantity": 4,
+    "checked": true
+   },
+   {
+    "id": "item_2233",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_1488",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "quantity": 100,
+    "avg_price": 59150,
+    "price": 64000
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 500,
+    "avg_price": 28300,
+    "price": 27500
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 64000,
+    "change_pct": -0.6
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1687,
+    "change_pct": -1.3
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 27500,
+    "change_pct": 0.5
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 127500,
+    "change_pct": -1.5
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24650,
+    "change_pct": 1.6
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59850,
+    "change_pct": 3.0
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_360",
+    "name": "yến mạch",
+    "stock": 3,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_3231",
+    "name": "gạo ST25",
+    "stock": 6,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_419",
+    "name": "sữa tươi",
+    "stock": 1,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_868",
+    "name": "nước mắm",
+    "stock": 2,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_518",
+    "name": "dầu ăn",
+    "stock": 2,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_793",
+    "name": "cà phê G7",
+    "stock": 4,
+    "unit": "hộp"
+   }
+  ]
+ }
+}

@@ -1,0 +1,334 @@
+{
+ "_meta": {
+  "question_id": "train_1715",
+  "current_time": "2026-12-15T18:55:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_355",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_692",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_64",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_767",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_05",
+    "title": "Lô hàng Osaka",
+    "content": "Lô hàng đi Osaka đóng container sáng thứ sáu"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_107",
+    "title": "họp phụ huynh",
+    "start": "2026-12-18T19:30:00+07:00",
+    "end": "2026-12-18T20:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1758",
+    "title": "đá bóng",
+    "start": "2026-12-18T09:30:00+07:00",
+    "end": "2026-12-18T10:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4841",
+    "title": "họp team",
+    "start": "2026-12-17T17:00:00+07:00",
+    "end": "2026-12-17T18:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "status": "confirmed",
+    "title": "Gặp Mr. Tanaka bàn lô hàng",
+    "start": "2026-12-16T10:00:00+07:00",
+    "end": "2026-12-16T11:00:00+07:00"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-12-15",
+    "to": "2026-12-15",
+    "kwh": 9.2,
+    "cost": 26700,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 4.1
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.8
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-12-09",
+    "to": "2026-12-15",
+    "kwh": 75.2,
+    "cost": 218100,
+    "days": [
+     {
+      "date": "2026-12-09",
+      "kwh": 12.8
+     },
+     {
+      "date": "2026-12-10",
+      "kwh": 8.4
+     },
+     {
+      "date": "2026-12-11",
+      "kwh": 9.0
+     },
+     {
+      "date": "2026-12-12",
+      "kwh": 13.2
+     },
+     {
+      "date": "2026-12-13",
+      "kwh": 13.3
+     },
+     {
+      "date": "2026-12-14",
+      "kwh": 9.3
+     },
+     {
+      "date": "2026-12-15",
+      "kwh": 9.2
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-12-01",
+    "to": "2026-12-15",
+    "kwh": 172.1,
+    "cost": 499100
+   }
+  },
+  "alert_threshold_kwh": 300
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_22",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-12-12T21:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_621",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-12-13T17:25:00+07:00",
+    "unread": false,
+    "folder": "inbox",
+    "replied": true
+   },
+   {
+    "id": "mail_471",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-12-12T23:25:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_496",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-12-13T06:10:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_3649",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-12-14T14:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [
+   {
+    "id": "sent_01",
+    "to": [
+     "thu.tran@congty.example.test"
+    ],
+    "cc": [],
+    "subject": "Re: Gửi lại báo cáo tháng 9",
+    "body": "Dạ chiều nay em gửi lại chị bản báo cáo có số liệu mới nhé.",
+    "in_reply_to": "mail_621"
+   }
+  ],
+  "drafts": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_956",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_659",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_588",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_669",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_189",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "tv": {
+  "power": "on",
+  "channel": "VTV1",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ }
+}

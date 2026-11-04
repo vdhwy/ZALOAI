@@ -1,0 +1,299 @@
+{
+ "_meta": {
+  "question_id": "train_1015",
+  "current_time": "2026-12-17T06:55:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "gold_price.get_price",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_8984",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2027-01-12",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_8798",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2027-01-11",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_423",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-12-27",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_392",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-12-30",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_9045",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-12-30",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 123000000,
+    "sell": 125000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 117000000,
+    "sell": 119000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4296
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_277",
+    "name": "Minh",
+    "relation": "bạn cùng phòng trọ",
+    "phone": "09788806231"
+   },
+   {
+    "id": "c_7581",
+    "name": "Cô giáo Mai",
+    "relation": "cô chủ nhiệm",
+    "phone": "09105516692"
+   },
+   {
+    "id": "c_7172",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09619254107"
+   },
+   {
+    "id": "c_225",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09857881714"
+   },
+   {
+    "id": "c_819",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09322564089"
+   },
+   {
+    "id": "c_847",
+    "name": "Lan",
+    "relation": "bạn cùng lớp",
+    "phone": "09883593364"
+   },
+   {
+    "id": "c_352",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09458511788"
+   },
+   {
+    "id": "c_363",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09595051903"
+   },
+   {
+    "id": "c_56",
+    "name": "Sếp Dũng",
+    "relation": "quản lý quán làm thêm",
+    "phone": "09903457546"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_984",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-21T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_7163",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-15T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_8982",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-20T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_8151",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-18T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "heat",
+     "temperature": 26
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ }
+}

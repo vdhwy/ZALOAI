@@ -1,0 +1,295 @@
+{
+ "_meta": {
+  "question_id": "train_1603",
+  "current_time": "2026-11-10T06:55:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "library.reserve",
+   "library.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_4321",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09909113743"
+   },
+   {
+    "id": "c_1397",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09822580600"
+   },
+   {
+    "id": "c_737",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09612760371"
+   },
+   {
+    "id": "c_408",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09766917386"
+   },
+   {
+    "id": "c_820",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09487534673"
+   },
+   {
+    "id": "c_2569",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09293679128"
+   },
+   {
+    "id": "c_434",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09770529346"
+   },
+   {
+    "id": "c_5182",
+    "name": "Emily Carter",
+    "relation": "khách",
+    "phone": "09543817260"
+   },
+   {
+    "id": "c_619",
+    "name": "Emily Parker",
+    "relation": "khách",
+    "phone": "09481562037"
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25418
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27451
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 169.5
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_627",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_7481",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_316",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": false
+   },
+   {
+    "id": "book_366",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": false
+   },
+   {
+    "id": "book_898",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_751",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_6800",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_8531",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_2525",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_284",
+    "name": "Cây xăng PetroHưng Nguyễn Văn Linh",
+    "address": "150 Nguyễn Văn Linh, Thanh Khê, Đà Nẵng",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_503",
+    "name": "Lotus Mart Đà Nẵng",
+    "address": "6 Nại Nam, Hải Châu, Đà Nẵng",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_9500",
+    "name": "Nhà thuốc Minh Khang Lê Duẩn",
+    "address": "210 Lê Duẩn, Hải Châu, Đà Nẵng",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_4047",
+    "name": "Bệnh viện Đà Nẵng",
+    "address": "124 Hải Phòng, Hải Châu, Đà Nẵng",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_01",
+    "contact_id": "c_737",
+    "phone_number": "09612760371",
+    "direction": "outgoing",
+    "content": "Anh tới trễ chừng mười lăm phút nghe."
+   },
+   {
+    "id": "msg_02",
+    "contact_id": "c_408",
+    "phone_number": "09766917386",
+    "direction": "outgoing",
+    "content": "Trưa nay anh không về ăn cơm nghe."
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_3882",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_373",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_36",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "ewallet": {
+  "balance": 3100000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "topup_mobile",
+    "phone": "09766917386",
+    "amount": -100000
+   },
+   {
+    "id": "tx_02",
+    "type": "transfer",
+    "to": "c_737",
+    "amount": -200000,
+    "note": "Tiền cà phê hôm qua"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "nhà",
+    "dropoff": "công ty",
+    "vehicle": "car4"
+   }
+  ]
+ }
+}

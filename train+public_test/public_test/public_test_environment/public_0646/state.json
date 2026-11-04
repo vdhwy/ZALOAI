@@ -1,0 +1,281 @@
+{
+ "_meta": {
+  "question_id": "public_0646",
+  "current_time": "2026-12-10T18:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "phone.call",
+   "phone.recent_calls",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "translator.translate"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "public_transit": {
+  "card_balance": 100000,
+  "routes": [
+   {
+    "id": "bus_804",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Công ty Sài Gòn Soft",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   },
+   {
+    "id": "bus_860",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   },
+   {
+    "id": "metro_676",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Công ty Sài Gòn Soft",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Bến Thành",
+    "route": "bus_860",
+    "time": "2026-12-10T18:41:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_860",
+    "time": "2026-12-10T18:56:00+07:00"
+   },
+   {
+    "stop": "Công ty Sài Gòn Soft",
+    "route": "bus_804",
+    "time": "2026-12-10T18:35:00+07:00"
+   },
+   {
+    "stop": "Công ty Sài Gòn Soft",
+    "route": "bus_804",
+    "time": "2026-12-10T18:47:00+07:00"
+   },
+   {
+    "stop": "Ba Son",
+    "route": "metro_676",
+    "time": "2026-12-10T18:41:00+07:00"
+   },
+   {
+    "stop": "Ba Son",
+    "route": "metro_676",
+    "time": "2026-12-10T18:33:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_860",
+    "time": "2026-12-10T19:11:00+07:00"
+   },
+   {
+    "stop": "Ba Son",
+    "route": "metro_676",
+    "time": "2026-12-10T18:49:00+07:00"
+   },
+   {
+    "stop": "Công ty Sài Gòn Soft",
+    "route": "bus_804",
+    "time": "2026-12-10T18:59:00+07:00"
+   },
+   {
+    "stop": "Công ty Sài Gòn Soft",
+    "route": "metro_676",
+    "time": "2026-12-10T18:46:00+07:00"
+   },
+   {
+    "stop": "Công ty Sài Gòn Soft",
+    "route": "metro_676",
+    "time": "2026-12-10T18:38:00+07:00"
+   },
+   {
+    "stop": "Công ty Sài Gòn Soft",
+    "route": "metro_676",
+    "time": "2026-12-10T18:54:00+07:00"
+   }
+  ],
+  "topups": [
+   {
+    "id": "top_01",
+    "amount": 100000,
+    "status": "done"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_793",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_453",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_418",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_683",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_277",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_216",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_648",
+    "items": [
+     {
+      "product_id": "gro_793",
+      "name": "Yến mạch Quaker 500g",
+      "price": 89000,
+      "quantity": 3
+     }
+    ],
+    "total": 267000,
+    "status": "delivered",
+    "delivery_time": "2026-12-07T09:00:00+07:00"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Xin chào, rất vui được gặp bạn",
+    "to_lang": "ja",
+    "translation": "こんにちは、はじめまして"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Ga tàu điện gần nhất ở đâu",
+    "to_lang": "zh",
+    "translation": "最近的地铁站在哪里"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ }
+}

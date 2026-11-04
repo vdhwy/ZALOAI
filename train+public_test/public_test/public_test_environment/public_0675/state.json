@@ -1,0 +1,340 @@
+{
+ "_meta": {
+  "question_id": "public_0675",
+  "current_time": "2026-11-03T14:25:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert"
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_829",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_618",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_191",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_98",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_7606",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 65000,
+  "routes": [
+   {
+    "id": "bus_621",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Công ty Sài Gòn Soft",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   },
+   {
+    "id": "metro_984",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_211",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Bến Thành",
+    "route": "bus_211",
+    "time": "2026-11-03T14:51:00+07:00"
+   },
+   {
+    "stop": "Hàng Xanh",
+    "route": "bus_621",
+    "time": "2026-11-03T14:55:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_211",
+    "time": "2026-11-03T14:36:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "metro_984",
+    "time": "2026-11-03T14:43:00+07:00"
+   },
+   {
+    "stop": "Hàng Xanh",
+    "route": "bus_621",
+    "time": "2026-11-03T14:43:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_211",
+    "time": "2026-11-03T15:06:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "metro_984",
+    "time": "2026-11-03T14:35:00+07:00"
+   },
+   {
+    "stop": "Hàng Xanh",
+    "route": "bus_621",
+    "time": "2026-11-03T14:31:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "metro_984",
+    "time": "2026-11-03T14:27:00+07:00"
+   }
+  ],
+  "topups": [
+   {
+    "id": "top_01",
+    "amount": 50000,
+    "status": "done"
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 200,
+    "avg_price": 136450,
+    "price": 126350
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 100,
+    "avg_price": 59900,
+    "price": 57700
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 100,
+    "avg_price": 84400,
+    "price": 90950
+   }
+  ],
+  "orders": [],
+  "alerts": [
+   {
+    "id": "alert_01",
+    "symbol": "VITECH",
+    "price": 135000,
+    "direction": "above",
+    "active": true
+   }
+  ],
+  "quotes": [
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1699,
+    "change_pct": 0.0
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 32550,
+    "change_pct": -0.4
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 57700,
+    "change_pct": -2.3
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 64200,
+    "change_pct": 2.6
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 126350,
+    "change_pct": 2.0
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 90950,
+    "change_pct": -2.0
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_786",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09714890435"
+   },
+   {
+    "id": "c_346",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09323808193"
+   },
+   {
+    "id": "c_4962",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09691807482"
+   },
+   {
+    "id": "c_1960",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09163284531"
+   },
+   {
+    "id": "c_6278",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09103751972"
+   },
+   {
+    "id": "c_235",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09242915349"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_5699",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 147000,
+    "due_date": "2026-11-12",
+    "paid": false
+   },
+   {
+    "id": "bill_2187",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 197000,
+    "due_date": "2026-11-12",
+    "paid": true,
+    "paid_with": "ewallet"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "ewallet": {
+  "balance": 323000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "topup_mobile",
+    "phone": "09163284531",
+    "amount": -100000
+   },
+   {
+    "id": "tx_02",
+    "type": "bill_payment",
+    "bill_id": "bill_2187",
+    "amount": -197000
+   }
+  ]
+ }
+}

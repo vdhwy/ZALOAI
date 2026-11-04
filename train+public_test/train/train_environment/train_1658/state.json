@@ -1,0 +1,427 @@
+{
+ "_meta": {
+  "question_id": "train_1658",
+  "current_time": "2026-11-11T19:35:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "gold_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "library.reserve",
+   "library.search",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 26,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-11",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-12",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-13",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-14",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_962",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7533",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_923",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_731",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5845",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 122900000,
+    "sell": 124900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 116900000,
+    "sell": 118900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4139
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_155",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_981",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_6344",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_862",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_393",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 120
+   }
+  ],
+  "lessons": [
+   {
+    "id": "les_01",
+    "course_id": "course_155",
+    "time": "2026-11-12T20:00:00+07:00",
+    "status": "scheduled"
+   }
+  ],
+  "progress": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_1542",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 222000,
+    "due_date": "2026-11-13",
+    "paid": false
+   },
+   {
+    "id": "bill_94",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 152000,
+    "due_date": "2026-11-16",
+    "paid": false
+   },
+   {
+    "id": "bill_3051",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 845000,
+    "due_date": "2026-11-14",
+    "paid": false
+   },
+   {
+    "id": "bill_241",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 206000,
+    "due_date": "2026-11-14",
+    "paid": true,
+    "paid_with": "bank"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_850",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_4606",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_18",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_374",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_300",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_2459",
+    "show_id": "show_374",
+    "title": "Số 9: Vì sao bầu trời màu xanh",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_9662",
+    "show_id": "show_18",
+    "title": "Số 12: Gửi tiết kiệm hay mua vàng",
+    "number": 12,
+    "duration_min": 32,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_876",
+    "show_id": "show_300",
+    "title": "Số 9: Nhà giả kim - phần 2",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_447",
+    "show_id": "show_18",
+    "title": "Số 11: Lập quỹ khẩn cấp",
+    "number": 11,
+    "duration_min": 32,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_492",
+    "show_id": "show_374",
+    "title": "Số 10: Giấc ngủ và trí nhớ",
+    "number": 10,
+    "duration_min": 32,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_339",
+    "show_id": "show_374",
+    "title": "Số 11: Lỗ đen là gì",
+    "number": 11,
+    "duration_min": 32,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_3940",
+    "show_id": "show_18",
+    "title": "Số 13: Quản lý chi tiêu gia đình",
+    "number": 13,
+    "duration_min": 18,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_8657",
+    "show_id": "show_300",
+    "title": "Số 8: Nhà giả kim - phần 1",
+    "number": 8,
+    "duration_min": 18,
+    "published": "2026-10-28"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_471",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_266",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_767",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_9771",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [
+   "ep_339"
+  ],
+  "now_playing": {
+   "episode_id": "ep_3940",
+   "show_id": "show_18",
+   "status": "playing"
+  }
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_706",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": false
+   },
+   {
+    "id": "book_41",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_444",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_21",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   }
+  ],
+  "reservations": []
+ }
+}

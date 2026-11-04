@@ -1,0 +1,443 @@
+{
+ "_meta": {
+  "question_id": "public_0616",
+  "current_time": "2026-11-09T16:35:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "phone.call",
+   "phone.recent_calls",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_929",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-08T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_800",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-13T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_688",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-13T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_4144",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-13T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_775",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-11T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_6089",
+    "name": "Thẻ Đại Việt Bank",
+    "balance": 1450000
+   },
+   {
+    "id": "acc_5058",
+    "name": "Thẻ Thịnh Phát Bank",
+    "balance": 7800000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_5567",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_4410",
+    "name": "Liam Forster",
+    "bank": "An Phát Bank",
+    "account_number": "31410009887120"
+   },
+   {
+    "id": "ben_3179",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_918",
+    "name": "Liam Foster",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000554213"
+   },
+   {
+    "id": "ben_2852",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_733",
+    "account_id": "acc_6089",
+    "amount": -350000,
+    "note": "Đổ xăng"
+   },
+   {
+    "id": "tx_212",
+    "account_id": "acc_5058",
+    "amount": 4200000,
+    "note": "Anh Sáu trả lương tuần"
+   },
+   {
+    "id": "tx_908",
+    "account_id": "acc_6089",
+    "amount": 600000,
+    "note": "Khách chuyển khoản cuốc sân bay"
+   },
+   {
+    "id": "tx_451",
+    "account_id": "acc_5058",
+    "beneficiary_id": "ben_5567",
+    "amount": -3500000,
+    "note": "Tiền nhà tháng 11"
+   },
+   {
+    "id": "tx_05",
+    "account_id": "acc_5058",
+    "beneficiary_id": "ben_918",
+    "amount": -2000000,
+    "note": null
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_1741",
+    "name": "Anh Sáu",
+    "type": "direct",
+    "members": [
+     "Anh Sáu"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_624",
+    "name": "Thằng Bi",
+    "type": "direct",
+    "members": [
+     "Thằng Bi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_339",
+    "name": "Vợ",
+    "type": "direct",
+    "members": [
+     "Vợ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_56",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8443",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_3215",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_439",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_358",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_8412",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "public_transit": {
+  "card_balance": 15000,
+  "routes": [
+   {
+    "id": "bus_3002",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   },
+   {
+    "id": "bus_2148",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Khu Công nghệ cao",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Nguyễn Huệ",
+    "route": "bus_3002",
+    "time": "2026-11-09T16:52:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_2148",
+    "time": "2026-11-09T16:59:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_2148",
+    "time": "2026-11-09T16:47:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Huệ",
+    "route": "bus_3002",
+    "time": "2026-11-09T17:07:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "bus_2148",
+    "time": "2026-11-09T17:11:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Huệ",
+    "route": "bus_3002",
+    "time": "2026-11-09T16:37:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_937",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09574920691"
+   },
+   {
+    "id": "c_108",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09682462670"
+   },
+   {
+    "id": "c_801",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09514063165"
+   },
+   {
+    "id": "c_8703",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09420634244"
+   },
+   {
+    "id": "c_356",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09784254223"
+   },
+   {
+    "id": "c_8853",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09841302490"
+   },
+   {
+    "id": "c_717",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09512417447"
+   },
+   {
+    "id": "c_7482",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09410214393"
+   },
+   {
+    "id": "c_2071",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09341376676"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ }
+}

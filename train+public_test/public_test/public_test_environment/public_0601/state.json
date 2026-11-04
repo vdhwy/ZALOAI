@@ -1,0 +1,464 @@
+{
+ "_meta": {
+  "question_id": "public_0601",
+  "current_time": "2026-11-05T07:45:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "fuel_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_8548",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_705",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_267",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_114",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_802",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_729",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_662",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 848000,
+    "due_date": "2026-11-11",
+    "paid": false
+   },
+   {
+    "id": "bill_9119",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 223000,
+    "due_date": "2026-11-08",
+    "paid": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21800
+   },
+   {
+    "type": "e5",
+    "price": 20600
+   },
+   {
+    "type": "diesel",
+    "price": 19200
+   }
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_269",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_9197",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.5,
+    "in_stock": true
+   },
+   {
+    "id": "prod_9411",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_128",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_185",
+    "name": "Bàn phím cơ AKKO 3068B",
+    "price": 1290000,
+    "seller": "AKKO Việt Nam",
+    "category": "máy tính",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_5105",
+    "name": "Balo laptop Mikkor 15.6 inch",
+    "price": 650000,
+    "seller": "Mikkor Store",
+    "category": "thời trang",
+    "rating": 4.8,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_702",
+    "items": [
+     {
+      "product_id": "prod_269",
+      "name": "Chuột không dây Logitech M331",
+      "price": 349000,
+      "quantity": 1
+     }
+    ],
+    "total": 349000,
+    "status": "delivered",
+    "placed_at": "2026-10-26T00:45:00+07:00",
+    "seller": "Logitech Store",
+    "delivered_at": "2026-10-29T00:45:00+07:00"
+   },
+   {
+    "id": "ord_525",
+    "items": [
+     {
+      "product_id": "prod_5105",
+      "name": "Balo laptop Mikkor 15.6 inch",
+      "price": 650000,
+      "quantity": 1
+     }
+    ],
+    "total": 650000,
+    "status": "shipping",
+    "placed_at": "2026-11-04T06:45:00+07:00",
+    "seller": "Mikkor Store"
+   }
+  ],
+  "returns": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_361",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-06",
+    "depart": "08:00",
+    "arrive": "11:30",
+    "price": 680000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_2247",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-06",
+    "depart": "09:15",
+    "arrive": "11:15",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_6340",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-06",
+    "depart": "06:00",
+    "arrive": "11:30",
+    "price": 680000,
+    "seats_left": 1
+   },
+   {
+    "id": "trip_9357",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-06",
+    "depart": "21:00",
+    "arrive": "02:30",
+    "price": 920000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_996",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-06",
+    "depart": "06:00",
+    "arrive": "09:00",
+    "price": 450000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_484",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-06",
+    "depart": "19:00",
+    "arrive": "00:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_274",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-06",
+    "depart": "13:00",
+    "arrive": "23:30",
+    "price": 320000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_395",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-06",
+    "depart": "21:00",
+    "arrive": "07:30",
+    "price": 400000,
+    "seats_left": 15
+   }
+  ],
+  "bookings": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_94",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09789925830"
+   },
+   {
+    "id": "c_1433",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09504772419"
+   },
+   {
+    "id": "c_9656",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09875229530"
+   },
+   {
+    "id": "c_584",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09678826781"
+   },
+   {
+    "id": "c_7753",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09688773570"
+   },
+   {
+    "id": "c_128",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09289034577"
+   },
+   {
+    "id": "c_7864",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09424828759"
+   },
+   {
+    "id": "c_2967",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09671273678"
+   },
+   {
+    "id": "c_2035",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09600320516"
+   }
+  ]
+ }
+}

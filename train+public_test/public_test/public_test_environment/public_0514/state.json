@@ -1,0 +1,471 @@
+{
+ "_meta": {
+  "question_id": "public_0514",
+  "current_time": "2026-11-01T17:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_582",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09736370892"
+   },
+   {
+    "id": "c_319",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09205728609"
+   },
+   {
+    "id": "c_4693",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09476512790"
+   },
+   {
+    "id": "c_195",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09643295503"
+   },
+   {
+    "id": "c_378",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09204399354"
+   },
+   {
+    "id": "c_16",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09977106302"
+   },
+   {
+    "id": "c_540",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09330931211"
+   },
+   {
+    "id": "c_5860",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09378309560"
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_7416",
+    "name": "Bãi đỗ Nam Đô Centre",
+    "address": "65 Lê Lợi, Quận 1, TP.HCM",
+    "area": "Lê Lợi",
+    "price_per_hour": 35000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_6896",
+    "name": "Bãi xe Khu Công nghệ cao",
+    "address": "Xa lộ Hà Nội, TP. Thủ Đức, TP.HCM",
+    "area": "Khu Công nghệ cao",
+    "price_per_hour": 20000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_282",
+    "name": "Hầm xe Sao Kim Plaza Đồng Khởi",
+    "address": "72 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "area": "Nguyễn Huệ",
+    "price_per_hour": 40000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_4620",
+    "name": "Bãi đỗ xe Công viên 23/9",
+    "address": "Phạm Ngũ Lão, Quận 1, TP.HCM",
+    "area": "Bến Thành",
+    "price_per_hour": 30000,
+    "available_spots": 0
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_2091",
+    "lot_id": "lot_282",
+    "from_time": "2026-10-31T18:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-10-31T21:00:00+07:00",
+    "total": 120000,
+    "status": "ended"
+   },
+   {
+    "id": "park_864",
+    "lot_id": "lot_7416",
+    "from_time": "2026-11-01T15:30:00+07:00",
+    "hours": 3,
+    "end_time": "2026-11-01T18:30:00+07:00",
+    "total": 105000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_993",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2317",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_208",
+    "name": "Anh Long",
+    "type": "direct",
+    "members": [
+     "Anh Long"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_134",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_158",
+    "name": "Sếp Kim",
+    "type": "direct",
+    "members": [
+     "Sếp Kim"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_896",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 210000,
+    "due_date": "2026-11-04",
+    "paid": false
+   },
+   {
+    "id": "bill_670",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 852000,
+    "due_date": "2026-11-07",
+    "paid": false
+   },
+   {
+    "id": "bill_229",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 153000,
+    "due_date": "2026-11-04",
+    "paid": false
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_722",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "TP.HCM",
+    "destination": "Vũng Tàu",
+    "date": "2026-11-05",
+    "depart": "08:00",
+    "arrive": "11:00",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_3166",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-11-05",
+    "depart": "06:00",
+    "arrive": "11:30",
+    "price": 450000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_682",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Vũng Tàu",
+    "date": "2026-11-05",
+    "depart": "19:00",
+    "arrive": "02:00",
+    "price": 250000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_172",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-11-05",
+    "depart": "13:00",
+    "arrive": "16:00",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_640",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-11-05",
+    "depart": "19:00",
+    "arrive": "22:30",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_604",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-11-05",
+    "depart": "13:00",
+    "arrive": "23:00",
+    "price": 680000,
+    "seats_left": 15
+   }
+  ],
+  "bookings": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_32",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_876",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_2742",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_3415",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_32",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 78000,
+    "address": "Nam Đô Centre, 65 Lê Lợi, Quận 1",
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_372",
+    "title": "đá bóng",
+    "start": "2026-11-02T14:30:00+07:00",
+    "end": "2026-11-02T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_8782",
+    "title": "đi chơi công viên",
+    "start": "2026-11-02T09:00:00+07:00",
+    "end": "2026-11-02T10:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_142",
+    "title": "khám răng",
+    "start": "2026-11-02T18:00:00+07:00",
+    "end": "2026-11-02T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_183",
+    "time": "2026-11-02T05:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_86",
+    "time": "2026-11-02T08:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ }
+}

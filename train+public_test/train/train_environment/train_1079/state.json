@@ -1,0 +1,225 @@
+{
+ "_meta": {
+  "question_id": "train_1079",
+  "current_time": "2026-10-14T19:25:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_8596",
+    "name": "phòng khách",
+    "area_m2": 25
+   },
+   {
+    "id": "room_66",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 25
+   },
+   {
+    "id": "room_849",
+    "name": "bếp",
+    "area_m2": 18
+   },
+   {
+    "id": "room_9068",
+    "name": "phòng làm việc",
+    "area_m2": 15
+   },
+   {
+    "id": "room_459",
+    "name": "phòng ngủ",
+    "area_m2": 18
+   }
+  ],
+  "current_job": null
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_7077",
+    "time": "2026-10-15T06:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_80",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-14T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_777",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-19T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_808",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-14T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_439",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-15T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_491",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-10-27",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_659",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-10-27",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_594",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-10-27",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_7773",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-10-27",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_3826",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-15",
+    "depart": "07:05",
+    "arrive": "08:25",
+    "airline": "Rồng Việt Air",
+    "price": 1780000
+   },
+   {
+    "id": "fl_5127",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-10-23",
+    "depart": "16:40",
+    "arrive": "18:00",
+    "airline": "JetXanh",
+    "price": 1290000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_58",
+    "flight_id": "fl_491",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_617",
+    "flight_id": "fl_5127",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_244",
+    "flight_id": "fl_3826",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_935",
+    "title": "khám răng",
+    "start": "2026-10-15T18:00:00+07:00",
+    "end": "2026-10-15T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_331",
+    "title": "họp phụ huynh",
+    "start": "2026-10-16T18:00:00+07:00",
+    "end": "2026-10-16T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_574",
+    "title": "đi chơi công viên",
+    "start": "2026-10-16T10:30:00+07:00",
+    "end": "2026-10-16T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

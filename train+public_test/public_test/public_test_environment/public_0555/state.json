@@ -1,0 +1,430 @@
+{
+ "_meta": {
+  "question_id": "public_0555",
+  "current_time": "2026-10-25T14:50:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "phone.call",
+   "phone.recent_calls",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_9272",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-10-31",
+    "depart": "06:00",
+    "arrive": "11:30",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_342",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-30",
+    "depart": "08:00",
+    "arrive": "18:00",
+    "price": 680000,
+    "seats_left": 28
+   },
+   {
+    "id": "trip_283",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-30",
+    "depart": "19:00",
+    "arrive": "00:30",
+    "price": 400000,
+    "seats_left": 29
+   },
+   {
+    "id": "trip_554",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-30",
+    "depart": "06:00",
+    "arrive": "11:00",
+    "price": 250000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_6698",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-10-31",
+    "depart": "08:00",
+    "arrive": "11:00",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_1239",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-10-31",
+    "depart": "08:00",
+    "arrive": "18:00",
+    "price": 920000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_311",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-10-31",
+    "depart": "06:00",
+    "arrive": "11:30",
+    "price": 320000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_221",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-10-30",
+    "depart": "19:00",
+    "arrive": "00:30",
+    "price": 680000,
+    "seats_left": 2
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_57",
+    "trip_id": "trip_311",
+    "seats": 1,
+    "total": 320000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_41",
+    "trip_id": "trip_554",
+    "seats": 1,
+    "total": 250000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_03",
+    "trip_id": "trip_342",
+    "seats": 2,
+    "total": 1360000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_04",
+    "trip_id": "trip_283",
+    "seats": 1,
+    "total": 400000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_621",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09577289153"
+   },
+   {
+    "id": "c_4703",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09899176492"
+   },
+   {
+    "id": "c_495",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09728481605"
+   },
+   {
+    "id": "c_787",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09327105096"
+   },
+   {
+    "id": "c_6614",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09576495926"
+   },
+   {
+    "id": "c_7110",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09377837149"
+   },
+   {
+    "id": "c_697",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09672695150"
+   },
+   {
+    "id": "c_8957",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09379096407"
+   },
+   {
+    "id": "c_865",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09612634562"
+   },
+   {
+    "id": "c_2796",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09520656788"
+   },
+   {
+    "id": "c_587",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09532807060"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 29,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-25",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-26",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-27",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-28",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 28
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_3915",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-13",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_7530",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-13",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_175",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-13",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_899",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-13",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ }
+}

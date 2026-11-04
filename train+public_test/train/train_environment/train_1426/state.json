@@ -1,0 +1,450 @@
+{
+ "_meta": {
+  "question_id": "train_1426",
+  "current_time": "2026-10-21T20:35:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_6124",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_639",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_519",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_7736",
+    "show_id": "show_6124",
+    "title": "Số 21: Trồng cây trên sân thượng",
+    "number": 21,
+    "duration_min": 25,
+    "published": "2026-10-07"
+   },
+   {
+    "id": "ep_1282",
+    "show_id": "show_639",
+    "title": "Số 21: Gửi tiết kiệm hay mua vàng",
+    "number": 21,
+    "duration_min": 45,
+    "published": "2026-10-07"
+   },
+   {
+    "id": "ep_307",
+    "show_id": "show_639",
+    "title": "Số 20: Lập quỹ khẩn cấp",
+    "number": 20,
+    "duration_min": 32,
+    "published": "2026-09-30"
+   },
+   {
+    "id": "ep_180",
+    "show_id": "show_639",
+    "title": "Số 22: Quản lý chi tiêu gia đình",
+    "number": 22,
+    "duration_min": 25,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_5792",
+    "show_id": "show_6124",
+    "title": "Số 22: Đi xe đạp đi làm",
+    "number": 22,
+    "duration_min": 45,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_637",
+    "show_id": "show_519",
+    "title": "Số 12: Nhà giả kim - phần 2",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_971",
+    "show_id": "show_519",
+    "title": "Số 11: Nhà giả kim - phần 1",
+    "number": 11,
+    "duration_min": 45,
+    "published": "2026-10-07"
+   },
+   {
+    "id": "ep_7937",
+    "show_id": "show_6124",
+    "title": "Số 20: Rác thải nhựa ở đô thị",
+    "number": 20,
+    "duration_min": 32,
+    "published": "2026-09-30"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_3915",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_1710",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_670",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_451",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "calculator": {},
+ "maps": {
+  "places": [
+   {
+    "id": "place_822",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_905",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_2498",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_665",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_6628",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_495",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_3184",
+    "name": "Laura Costa English Studio",
+    "address": "18 Hàng Bài, Hoàn Kiếm, Hà Nội",
+    "category": "education"
+   },
+   {
+    "id": "place_7702",
+    "name": "Laura Costa English Studio",
+    "address": "25 Trần Thái Tông, Cầu Giấy, Hà Nội",
+    "category": "education"
+   },
+   {
+    "id": "place_4419",
+    "name": "Lara Costa Piano House",
+    "address": "9 Hàng Bài, Hoàn Kiếm, Hà Nội",
+    "category": "education"
+   }
+  ],
+  "saved_places": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_209",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09168046330"
+   },
+   {
+    "id": "c_536",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09828493227"
+   },
+   {
+    "id": "c_422",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09782123114"
+   },
+   {
+    "id": "c_144",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09530986099"
+   },
+   {
+    "id": "c_7581",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09361760305"
+   },
+   {
+    "id": "c_9133",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09337946281"
+   },
+   {
+    "id": "c_302",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09398328170"
+   },
+   {
+    "id": "c_731",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09262927489"
+   },
+   {
+    "id": "c_496",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09515847469"
+   },
+   {
+    "id": "c_1615",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09643786890"
+   },
+   {
+    "id": "c_925",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09192870130"
+   },
+   {
+    "id": "c_428",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09311492559"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_9675",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-24T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_207",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-26T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_501",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-26T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_793",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_348",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_176",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_80",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_6243",
+    "contact_id": "c_428",
+    "phone_number": "09311492559",
+    "direction": "incoming",
+    "content": "Bố ơi, từ thứ bảy này bố đưa cái Bông đi học lớp tiếng Anh của cô Laura Costa trên phố Hàng Bài giúp con nhé, học tám giờ sáng."
+   },
+   {
+    "id": "msg_910",
+    "contact_id": "c_302",
+    "phone_number": "09398328170",
+    "direction": "incoming",
+    "content": "Mai sáu giờ ra bờ hồ đánh ván cờ nhé ông Tư."
+   }
+  ]
+ }
+}

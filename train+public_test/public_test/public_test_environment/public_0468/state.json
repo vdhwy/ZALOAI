@@ -1,0 +1,601 @@
+{
+ "_meta": {
+  "question_id": "public_0468",
+  "current_time": "2026-11-12T07:55:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "gold_price.get_price",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_301",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09249499758"
+   },
+   {
+    "id": "c_90",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09580358334"
+   },
+   {
+    "id": "c_4371",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09558420924"
+   },
+   {
+    "id": "c_5588",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09876213545"
+   },
+   {
+    "id": "c_366",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09380206930"
+   },
+   {
+    "id": "c_221",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09363295120"
+   },
+   {
+    "id": "c_597",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09523502747"
+   },
+   {
+    "id": "c_495",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09857415346"
+   },
+   {
+    "id": "c_939",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09684305487"
+   },
+   {
+    "id": "c_416",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09395919005"
+   },
+   {
+    "id": "c_519",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09501002816"
+   },
+   {
+    "id": "c_250",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09322595308"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 15000,
+  "routes": [
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   },
+   {
+    "id": "metro_281",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Láng",
+    "route": "metro_2a",
+    "time": "2026-11-12T08:05:00+07:00"
+   },
+   {
+    "stop": "Láng",
+    "route": "metro_2a",
+    "time": "2026-11-12T07:57:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_281",
+    "time": "2026-11-12T08:09:00+07:00"
+   },
+   {
+    "stop": "Láng",
+    "route": "metro_2a",
+    "time": "2026-11-12T08:13:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_281",
+    "time": "2026-11-12T07:59:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_281",
+    "time": "2026-11-12T08:19:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_4449",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_275",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_857",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_6132",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_5170",
+    "name": "Đậu hũ sốt cà chua",
+    "tags": [
+     "món chay",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 20,
+    "ingredients": [
+     {
+      "name": "đậu hũ",
+      "quantity": 4,
+      "unit": "bìa"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Chiên vàng đậu hũ",
+     "Xào cà chua thành sốt",
+     "Cho đậu vào rim, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_953",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_302",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_160",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_100",
+    "name": "Bàn phím cơ AKKO 3068B",
+    "price": 1290000,
+    "seller": "AKKO Việt Nam",
+    "category": "máy tính",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_820",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_9321",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_460",
+    "name": "Balo laptop Mikkor 15.6 inch",
+    "price": 650000,
+    "seller": "Mikkor Store",
+    "category": "thời trang",
+    "rating": 4.9,
+    "in_stock": true
+   },
+   {
+    "id": "prod_243",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_4544",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_154",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.8,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_5769",
+    "items": [
+     {
+      "product_id": "prod_820",
+      "name": "Áo khoác gió nam CoolWear",
+      "price": 499000,
+      "quantity": 1
+     }
+    ],
+    "total": 499000,
+    "status": "shipping",
+    "placed_at": "2026-11-11T03:55:00+07:00",
+    "seller": "CoolWear"
+   },
+   {
+    "id": "ord_4343",
+    "items": [
+     {
+      "product_id": "prod_100",
+      "name": "Bàn phím cơ AKKO 3068B",
+      "price": 1290000,
+      "quantity": 1
+     }
+    ],
+    "total": 1290000,
+    "status": "delivered",
+    "placed_at": "2026-11-06T00:55:00+07:00",
+    "seller": "AKKO Việt Nam",
+    "delivered_at": "2026-11-09T00:55:00+07:00"
+   },
+   {
+    "id": "ord_604",
+    "items": [
+     {
+      "product_id": "prod_243",
+      "name": "Sạc dự phòng Xiaomi 10000mAh",
+      "price": 399000,
+      "quantity": 1
+     }
+    ],
+    "total": 399000,
+    "status": "placed",
+    "placed_at": "2026-11-11T06:55:00+07:00",
+    "seller": "Xiaomi Official"
+   },
+   {
+    "id": "ord_1880",
+    "items": [
+     {
+      "product_id": "prod_4544",
+      "name": "Chuột không dây Logitech M331",
+      "price": 349000,
+      "quantity": 1
+     }
+    ],
+    "total": 349000,
+    "status": "shipping",
+    "placed_at": "2026-11-11T03:55:00+07:00",
+    "seller": "Logitech Store"
+   }
+  ],
+  "returns": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 129800000,
+    "sell": 131800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 123800000,
+    "sell": 125800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4300
+   }
+  ]
+ }
+}

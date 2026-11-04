@@ -1,0 +1,387 @@
+{
+ "_meta": {
+  "question_id": "public_0394",
+  "current_time": "2026-12-04T11:10:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_544",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_141",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_847",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_7138",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_464",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_4598",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_7276",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_933",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": {
+   "track_id": "trk_847",
+   "title": "Ngày đầu tiên",
+   "status": "playing"
+  }
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_476",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-05T18:30:00+07:00",
+    "end": "2026-12-05T20:00:00+07:00",
+    "location": "Nhà hàng Chả cá Thăng Long",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_699",
+    "title": "họp phụ huynh",
+    "start": "2026-12-07T08:00:00+07:00",
+    "end": "2026-12-07T09:30:00+07:00",
+    "location": "Trường Tiểu học Dịch Vọng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2914",
+    "title": "họp quyết toán cuối năm",
+    "start": "2026-12-04T13:30:00+07:00",
+    "end": "2026-12-04T15:30:00+07:00",
+    "location": "10 Quang Trung, Hà Đông",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_8150",
+    "title": "đi chơi công viên",
+    "start": "2026-12-06T15:00:00+07:00",
+    "end": "2026-12-06T17:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_32",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09730615090"
+   },
+   {
+    "id": "c_739",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09438930602"
+   },
+   {
+    "id": "c_324",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09542984719"
+   },
+   {
+    "id": "c_433",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09807797041"
+   },
+   {
+    "id": "c_2430",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09335678933"
+   },
+   {
+    "id": "c_1611",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09362842341"
+   },
+   {
+    "id": "c_4943",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09499736434"
+   },
+   {
+    "id": "c_293",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09414825238"
+   },
+   {
+    "id": "c_412",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09301062090"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_692",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_703",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_668",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_137",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_861",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_444",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_9786",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_917",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_876",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_4609",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_2266",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ }
+}

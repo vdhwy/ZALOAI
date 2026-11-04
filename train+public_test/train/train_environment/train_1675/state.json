@@ -1,0 +1,307 @@
+{
+ "_meta": {
+  "question_id": "train_1675",
+  "current_time": "2026-10-13T20:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_3914",
+    "title": "khám răng",
+    "start": "2026-10-16T14:00:00+07:00",
+    "end": "2026-10-16T15:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_747",
+    "title": "đá bóng",
+    "start": "2026-10-16T10:30:00+07:00",
+    "end": "2026-10-16T11:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3489",
+    "title": "họp phụ huynh",
+    "start": "2026-10-15T15:00:00+07:00",
+    "end": "2026-10-15T16:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_864",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-14T08:30:00+07:00",
+    "end": "2026-10-14T09:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_3373",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_379",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_8505",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_683",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 120
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_8205",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-15T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_801",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-18T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_869",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-17T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_9973",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-13T12:30:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_486",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-12T17:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_1411",
+    "time": "2026-10-14T06:15:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": false
+   },
+   {
+    "id": "alm_763",
+    "time": "2026-10-14T05:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_2563",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_548",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": false
+   },
+   {
+    "id": "rule_839",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_64",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_523",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_2955",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_1087",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_397",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_8546",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_453",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_3537",
+    "name": "Nhạc chill buổi tối",
+    "track_ids": [
+     "trk_397",
+     "trk_64"
+    ]
+   }
+  ],
+  "now_playing": {
+   "track_id": "trk_64",
+   "title": "Ngày đầu tiên",
+   "status": "paused"
+  },
+  "volume": 30
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_692",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_568",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_39",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "calculator": {}
+}

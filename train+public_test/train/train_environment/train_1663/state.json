@@ -1,0 +1,456 @@
+{
+ "_meta": {
+  "question_id": "train_1663",
+  "current_time": "2026-11-19T08:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_313",
+    "type": "internet",
+    "provider": "Nexora Fiber",
+    "amount": 216000,
+    "due_date": "2026-11-23",
+    "paid": false
+   },
+   {
+    "id": "bill_752",
+    "type": "phone",
+    "provider": "Nexora Mobile",
+    "amount": 199000,
+    "due_date": "2026-11-22",
+    "paid": false
+   },
+   {
+    "id": "bill_934",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 846000,
+    "due_date": "2026-11-26",
+    "paid": false
+   },
+   {
+    "id": "bill_9972",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 209000,
+    "due_date": "2026-11-21",
+    "paid": true,
+    "paid_with": "bank"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_217",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_28",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_175",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_103",
+    "time": "2026-11-18T17:25:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_781",
+    "time": "2026-11-19T08:30:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_9591",
+    "time": "2026-11-19T03:15:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_513",
+    "time": "2026-11-18T09:25:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_954",
+    "tracking_id": "MDXVN186823479",
+    "carrier": "MDX Express",
+    "name": "Hộp quà Trung thu",
+    "status": "in_transit",
+    "eta": "2026-11-20T10:00:00+07:00"
+   },
+   {
+    "id": "shp_70",
+    "tracking_id": "JV855634867",
+    "carrier": "JetViệt Express",
+    "name": "Áo khoác gió",
+    "status": "delivered",
+    "eta": "2026-11-18T10:00:00+07:00"
+   },
+   {
+    "id": "shp_668",
+    "tracking_id": "GST521817574",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Giày thể thao",
+    "status": "in_transit",
+    "eta": "2026-11-20T10:00:00+07:00"
+   },
+   {
+    "id": "shp_769",
+    "tracking_id": "EV377281435",
+    "carrier": "VNPost",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "out_for_delivery",
+    "eta": "2026-11-19T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_881",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-17T23:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_7409",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-18T03:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_564",
+    "from": "mrtanaka@gmail.example.test",
+    "from_name": "Mr. Tanaka",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-17T12:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_748",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-18T20:30:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_7943",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-18T08:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_178",
+    "time": "2026-11-20T06:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_970",
+    "time": "2026-11-20T08:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_176",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-12-17",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_1032",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-11-28",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_2255",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-11-29",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_566",
+    "name": "Bệnh viện Đà Nẵng",
+    "address": "124 Hải Phòng, Hải Châu, Đà Nẵng",
+    "category": "hospital"
+   },
+   {
+    "id": "place_997",
+    "name": "Nhà thuốc Minh Khang Lê Duẩn",
+    "address": "210 Lê Duẩn, Hải Châu, Đà Nẵng",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_265",
+    "name": "Ký Ức Cà Phê Bạch Đằng",
+    "address": "98 Bạch Đằng, Hải Châu, Đà Nẵng",
+    "category": "cafe"
+   },
+   {
+    "id": "place_84",
+    "name": "Cây xăng PetroHưng Nguyễn Văn Linh",
+    "address": "150 Nguyễn Văn Linh, Thanh Khê, Đà Nẵng",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_582",
+    "name": "Mì Quảng Bà Mùi",
+    "address": "19 Trần Bình Trọng, Hải Châu, Đà Nẵng",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "calculator": {},
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_203",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_448",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_427",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_29",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_301",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_478",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-23T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_996",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-21T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_534",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-24T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_805",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09132696129"
+   },
+   {
+    "id": "c_5106",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09984336451"
+   },
+   {
+    "id": "c_202",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09959186771"
+   },
+   {
+    "id": "c_746",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09665186304"
+   },
+   {
+    "id": "c_741",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09676050081"
+   },
+   {
+    "id": "c_699",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09970901432"
+   },
+   {
+    "id": "c_274",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09123158841"
+   },
+   {
+    "id": "c_166",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09975470663"
+   },
+   {
+    "id": "c_59",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09722899118"
+   }
+  ]
+ }
+}

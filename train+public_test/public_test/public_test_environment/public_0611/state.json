@@ -1,0 +1,418 @@
+{
+ "_meta": {
+  "question_id": "public_0611",
+  "current_time": "2026-10-24T15:10:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_8560",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_615",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_314",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 12
+   }
+  ],
+  "sessions": []
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_969",
+    "name": "Đọc sách 30 phút",
+    "streak": 12,
+    "last_logged": "2026-10-23"
+   },
+   {
+    "id": "habit_472",
+    "name": "Không uống trà sữa",
+    "streak": 0
+   },
+   {
+    "id": "habit_6050",
+    "name": "Thiền 10 phút",
+    "streak": 3,
+    "last_logged": "2026-10-22"
+   },
+   {
+    "id": "habit_617",
+    "name": "Uống đủ 2 lít nước",
+    "streak": 0
+   },
+   {
+    "id": "habit_749",
+    "name": "Ngủ trước 11 giờ",
+    "streak": 0
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_652",
+    "habit_id": "habit_969",
+    "date": "2026-10-23"
+   },
+   {
+    "id": "log_2502",
+    "habit_id": "habit_6050",
+    "date": "2026-10-22"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_100",
+    "title": "đá bóng",
+    "start": "2026-10-25T19:00:00+07:00",
+    "end": "2026-10-25T20:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5871",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-27T15:30:00+07:00",
+    "end": "2026-10-27T16:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_746",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-26T09:00:00+07:00",
+    "end": "2026-10-26T10:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_361",
+    "title": "đi chơi công viên",
+    "start": "2026-10-25T09:30:00+07:00",
+    "end": "2026-10-25T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_513",
+    "title": "họp phụ huynh",
+    "start": "2026-10-26T18:00:00+07:00",
+    "end": "2026-10-26T19:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": "c_3926",
+    "phone_number": "09538104726",
+    "status": "dialing"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_448",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09590488902"
+   },
+   {
+    "id": "c_5434",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09116936050"
+   },
+   {
+    "id": "c_617",
+    "name": "Hugo Lombard",
+    "relation": "khách hàng",
+    "phone": "09862035147"
+   },
+   {
+    "id": "c_987",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09445026965"
+   },
+   {
+    "id": "c_3148",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09965515998"
+   },
+   {
+    "id": "c_590",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09195138983"
+   },
+   {
+    "id": "c_3926",
+    "name": "Hugo Lambert",
+    "relation": "đối tác",
+    "phone": "09538104726"
+   },
+   {
+    "id": "c_701",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09325141825"
+   },
+   {
+    "id": "c_9112",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09772510988"
+   },
+   {
+    "id": "c_502",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09277694813"
+   },
+   {
+    "id": "c_1351",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09449840075"
+   },
+   {
+    "id": "c_6533",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09758762655"
+   },
+   {
+    "id": "c_134",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09381628142"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_813",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_811",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_79",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_254",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_185",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_7302",
+    "name": "Cao Nguyên Coffee Bà Triệu",
+    "address": "205 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_1165",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_953",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_514",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_397",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_8565",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_849",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_480",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ }
+}

@@ -1,0 +1,367 @@
+{
+ "_meta": {
+  "question_id": "train_1695",
+  "current_time": "2026-11-19T07:15:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_167",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-23T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_794",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-21T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_544",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-23T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_658",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_492",
+    "name": "Tài khoản thanh toán",
+    "balance": 27200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_577",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_57",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_5580",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_01",
+    "account_id": "acc_492",
+    "beneficiary_id": "ben_577",
+    "amount": -8000000,
+    "note": "tiền nhà tháng mười một"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_919",
+    "name": "Lucas",
+    "type": "direct",
+    "members": [
+     "Lucas"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_78",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_956",
+    "name": "Vợ Hà",
+    "type": "direct",
+    "members": [
+     "Vợ Hà"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5574",
+    "name": "Emily",
+    "type": "direct",
+    "members": [
+     "Emily"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4009",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_331",
+    "content": "Mua thuốc bổ cho mạ",
+    "time": "2026-11-19T16:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_87",
+    "content": "Gọi Emily nhắc giờ check-out",
+    "time": "2026-11-19T10:30:00+07:00",
+    "repeat": "once",
+    "done": false
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-16": {
+    "steps": 7595,
+    "calories": 303,
+    "distance_km": 5.5
+   },
+   "2026-11-17": {
+    "steps": 3278,
+    "calories": 131,
+    "distance_km": 2.4
+   },
+   "2026-11-18": {
+    "steps": 10467,
+    "calories": 418,
+    "distance_km": 7.5
+   },
+   "2026-11-19": {
+    "steps": 1635,
+    "calories": 65,
+    "distance_km": 1.2
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_965",
+    "type": "running",
+    "minutes": 30,
+    "time": "2026-11-15T18:30:00+07:00"
+   },
+   {
+    "id": "wo_856",
+    "type": "running",
+    "minutes": 20,
+    "time": "2026-11-18T17:00:00+07:00"
+   },
+   {
+    "id": "wo_23",
+    "type": "yoga",
+    "minutes": 30,
+    "time": "2026-11-17T18:00:00+07:00"
+   },
+   {
+    "id": "wo_04",
+    "type": "running",
+    "minutes": 30,
+    "time": "2026-11-19T07:15:00+07:00"
+   }
+  ]
+ },
+ "tv": {
+  "power": "on",
+  "channel": "VTV1",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "volume": 15
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_418",
+    "name": "Thuốc huyết áp Amlodipin",
+    "times": [
+     "07:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_93",
+    "name": "Men tiêu hoá",
+    "times": [
+     "12:00",
+     "19:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_2207",
+    "name": "Vitamin D",
+    "times": [
+     "08:30"
+    ],
+    "days": "weekdays"
+   },
+   {
+    "id": "med_560",
+    "name": "Thuốc dạ dày",
+    "times": [
+     "06:30",
+     "18:30"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_148",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09801936792"
+   },
+   {
+    "id": "c_532",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09807202334"
+   },
+   {
+    "id": "c_181",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09202012578"
+   },
+   {
+    "id": "c_500",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09170714032"
+   },
+   {
+    "id": "c_649",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09826259539"
+   },
+   {
+    "id": "c_254",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09899450138"
+   },
+   {
+    "id": "c_761",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09439406117"
+   },
+   {
+    "id": "c_135",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09570475591"
+   },
+   {
+    "id": "c_618",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09450762058"
+   },
+   {
+    "id": "c_43",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09458578163"
+   }
+  ]
+ }
+}

@@ -1,0 +1,216 @@
+{
+ "_meta": {
+  "question_id": "train_1588",
+  "current_time": "2026-11-10T20:35:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_418",
+    "contact_id": "c_7320",
+    "phone_number": "09849804686",
+    "direction": "incoming",
+    "time": "2026-11-10T17:20:00+07:00",
+    "content": "Phúc ơi, đoàn Phuket gửi tặng em 8 gói bánh dừa nướng, anh nhờ vợ em cầm về nhà rồi nha."
+   },
+   {
+    "id": "msg_53",
+    "contact_id": "c_7320",
+    "phone_number": "09849804686",
+    "direction": "incoming",
+    "time": "2026-11-10T17:25:00+07:00",
+    "content": "Còn đoàn Phu Quoc gửi em 6 hũ mắm cá, anh để ở công ty."
+   },
+   {
+    "id": "msg_2096",
+    "contact_id": "c_4270",
+    "phone_number": "09719819701",
+    "direction": "incoming",
+    "time": "2026-11-10T19:05:00+07:00",
+    "content": "Thank you anh Phúc, tour Bà Nà hôm qua rất vui."
+   },
+   {
+    "id": "msg_04",
+    "contact_id": "c_7320",
+    "phone_number": "09849804686",
+    "direction": "outgoing",
+    "content": "Cảm ơn anh, mai em qua công ty lấy mắm."
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_246",
+    "name": "Cây xăng PetroHưng Nguyễn Văn Linh",
+    "address": "150 Nguyễn Văn Linh, Thanh Khê, Đà Nẵng",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_789",
+    "name": "Mì Quảng Bà Mùi",
+    "address": "19 Trần Bình Trọng, Hải Châu, Đà Nẵng",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_7216",
+    "name": "Nhà thuốc Minh Khang Lê Duẩn",
+    "address": "210 Lê Duẩn, Hải Châu, Đà Nẵng",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_5506",
+    "name": "Ký Ức Cà Phê Bạch Đằng",
+    "address": "98 Bạch Đằng, Hải Châu, Đà Nẵng",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_5584",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_584",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 24000
+   },
+   {
+    "type": "e5",
+    "price": 22800
+   },
+   {
+    "type": "diesel",
+    "price": 21400
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_4270",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09719819701"
+   },
+   {
+    "id": "c_909",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09330888920"
+   },
+   {
+    "id": "c_534",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09893068722"
+   },
+   {
+    "id": "c_160",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09654398026"
+   },
+   {
+    "id": "c_7320",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09849804686"
+   },
+   {
+    "id": "c_501",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09938165089"
+   },
+   {
+    "id": "c_15",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09772850750"
+   },
+   {
+    "id": "c_421",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09491968927"
+   },
+   {
+    "id": "c_559",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09243408910"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_8478",
+    "name": "phòng làm việc",
+    "area_m2": 25
+   },
+   {
+    "id": "room_3714",
+    "name": "phòng khách",
+    "area_m2": 22
+   },
+   {
+    "id": "room_4870",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 18
+   },
+   {
+    "id": "room_1787",
+    "name": "bếp",
+    "area_m2": 25
+   },
+   {
+    "id": "room_846",
+    "name": "phòng ngủ",
+    "area_m2": 12
+   },
+   {
+    "id": "room_226",
+    "name": "hành lang",
+    "area_m2": 25
+   }
+  ],
+  "current_job": null
+ }
+}

@@ -1,0 +1,310 @@
+{
+ "_meta": {
+  "question_id": "train_1083",
+  "current_time": "2026-11-09T07:30:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_8170",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_198",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_716",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_2651",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_754",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_978",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-11-08T02:00:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_995",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-08T23:30:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_214",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-08T01:00:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_923",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-08T11:15:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_375",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-08T02:45:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   }
+  ],
+  "saved": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_513",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_584",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_581",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_207",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_3691",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_682",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_4127",
+    "name": "Đại lý vé số Kiến Thiết Út Mai",
+    "address": "45 Võ Tánh, Lê Bình, Cái Răng, Cần Thơ",
+    "category": "lottery_agent"
+   },
+   {
+    "id": "place_268",
+    "name": "Đại lý vé số Hồng Phát",
+    "address": "112 Đường 30 Tháng 4, Ninh Kiều, Cần Thơ",
+    "category": "lottery_agent"
+   },
+   {
+    "id": "place_7350",
+    "name": "Chợ Cái Răng",
+    "address": "Hàng Bàng, Lê Bình, Cái Răng, Cần Thơ",
+    "category": "market"
+   }
+  ],
+  "saved_places": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_8278",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09842953066"
+   },
+   {
+    "id": "c_477",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09765639746"
+   },
+   {
+    "id": "c_3552",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09613136650"
+   },
+   {
+    "id": "c_4790",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09889795083"
+   },
+   {
+    "id": "c_16",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09482795105"
+   },
+   {
+    "id": "c_578",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09874151465"
+   },
+   {
+    "id": "c_303",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09765251005"
+   },
+   {
+    "id": "c_87",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09438750826"
+   },
+   {
+    "id": "c_188",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09700061441"
+   },
+   {
+    "id": "c_598",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09555042437"
+   },
+   {
+    "id": "c_37",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09728966636"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_170",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_758",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_255",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_308",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_508",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-09",
+    "prizes": {
+     "special": "852723",
+     "first": "44400",
+     "eighth": "64"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-09",
+    "prizes": {
+     "special": "993734",
+     "first": "64428",
+     "eighth": "62"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-09",
+    "prizes": {
+     "special": "909504",
+     "first": "29630",
+     "eighth": "87"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-09",
+    "prizes": {
+     "special": "482957",
+     "first": "40727",
+     "eighth": "60"
+    }
+   }
+  ]
+ }
+}

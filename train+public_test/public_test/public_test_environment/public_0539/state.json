@@ -1,0 +1,448 @@
+{
+ "_meta": {
+  "question_id": "public_0539",
+  "current_time": "2026-10-30T16:40:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "event_tickets.book",
+   "event_tickets.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_361",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-02T14:00:00+07:00",
+    "end": "2026-11-02T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_716",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-02T14:30:00+07:00",
+    "end": "2026-11-02T15:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_95",
+    "title": "đá bóng",
+    "start": "2026-11-01T18:00:00+07:00",
+    "end": "2026-11-01T19:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_770",
+    "title": "đi chơi công viên",
+    "start": "2026-11-02T10:00:00+07:00",
+    "end": "2026-11-02T11:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_548",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_312",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_471",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_674",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_318",
+    "contact_id": "c_642",
+    "phone_number": "09680529919",
+    "direction": "incoming",
+    "content": "Linh ơi nhóm mình chốt bốn đứa đi HR Career Day nhé, tính cả cậu. Hà được khoa phát vé rồi, mấy đứa còn lại chưa có vé."
+   },
+   {
+    "id": "msg_295",
+    "contact_id": "c_331",
+    "phone_number": "09852543567",
+    "direction": "incoming",
+    "content": "Cuối tuần con có về nhà không?"
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_734",
+    "contact_id": "c_642",
+    "phone_number": "09680529919",
+    "direction": "missed",
+    "time": "2026-10-30T15:12:00+07:00"
+   },
+   {
+    "id": "call_752",
+    "contact_id": "c_965",
+    "phone_number": "09537952819",
+    "direction": "missed",
+    "time": "2026-10-30T16:05:00+07:00"
+   },
+   {
+    "id": "call_690",
+    "contact_id": "c_331",
+    "phone_number": "09852543567",
+    "direction": "incoming",
+    "time": "2026-10-30T11:20:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_809",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09420228827"
+   },
+   {
+    "id": "c_965",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09537952819"
+   },
+   {
+    "id": "c_642",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09680529919"
+   },
+   {
+    "id": "c_840",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09393126520"
+   },
+   {
+    "id": "c_331",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09852543567"
+   },
+   {
+    "id": "c_9346",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09961060742"
+   },
+   {
+    "id": "c_1614",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09801418483"
+   },
+   {
+    "id": "c_976",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09377449418"
+   },
+   {
+    "id": "c_221",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09116230574"
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_321",
+    "name": "Vở kịch Ngày Mưa",
+    "category": "kịch",
+    "date": "2026-11-10",
+    "time": "19:30",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 250000,
+    "available": 30
+   },
+   {
+    "id": "event_399",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-11-13",
+    "time": "18:00",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 600000,
+    "available": 12
+   },
+   {
+    "id": "event_246",
+    "name": "Triển lãm Ánh sáng Đô thị",
+    "category": "triển lãm",
+    "date": "2026-11-08",
+    "time": "20:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 80000,
+    "available": 12
+   },
+   {
+    "id": "event_587",
+    "name": "HR Career Day",
+    "category": "hội thảo",
+    "date": "2026-11-07",
+    "time": "08:30",
+    "venue": "Hội trường A, Đại học Ngoại thương, 91 Chùa Láng",
+    "price": 50000,
+    "available": 40
+   },
+   {
+    "id": "event_662",
+    "name": "HR Career Day",
+    "category": "hội thảo",
+    "date": "2026-11-14",
+    "time": "08:00",
+    "venue": "Đại học Bách khoa Hà Nội, 1 Đại Cồ Việt",
+    "price": 50000,
+    "available": 25
+   },
+   {
+    "id": "event_418",
+    "name": "HR Career Talk",
+    "category": "hội thảo",
+    "date": "2026-11-07",
+    "time": "14:00",
+    "venue": "Hội trường A, Đại học Ngoại thương, 91 Chùa Láng",
+    "price": 30000,
+    "available": 18
+   }
+  ],
+  "bookings": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_6311",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-31T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_298",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-03T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_5084",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-02T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "due": "2026-10-30T20:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Reply mail thầy Phong"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_343",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_632",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_7653",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_726",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ }
+}

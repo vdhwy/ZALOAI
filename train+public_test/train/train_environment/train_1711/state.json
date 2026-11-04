@@ -1,0 +1,389 @@
+{
+ "_meta": {
+  "question_id": "train_1711",
+  "current_time": "2026-11-10T20:50:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 31,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-10",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-11",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-12",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-13",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 31
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_174",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_5202",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_13",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_4223",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_271",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_921",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "nhà",
+    "dropoff": "công ty",
+    "vehicle": "bike"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_536",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_735",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_756",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_3014",
+    "time": "2026-11-09T00:10:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_3266",
+    "time": "2026-11-10T16:00:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_144",
+    "time": "2026-11-09T16:55:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_983",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09421456955"
+   },
+   {
+    "id": "c_891",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09261087586"
+   },
+   {
+    "id": "c_1521",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09538038983"
+   },
+   {
+    "id": "c_681",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09810984368"
+   },
+   {
+    "id": "c_8991",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09900994527"
+   },
+   {
+    "id": "c_989",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09707036024"
+   },
+   {
+    "id": "c_2750",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09712540288"
+   },
+   {
+    "id": "c_132",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09599817299"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_714",
+    "title": "đá bóng",
+    "start": "2026-11-13T19:30:00+07:00",
+    "end": "2026-11-13T20:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_111",
+    "title": "họp phụ huynh",
+    "start": "2026-11-11T10:00:00+07:00",
+    "end": "2026-11-11T11:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "status": "confirmed",
+    "title": "Họp tổ chuyên môn",
+    "start": "2026-11-12T15:00:00+07:00",
+    "end": "2026-11-12T16:00:00+07:00",
+    "location": "phòng hội đồng"
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-10",
+    "to": "2026-11-10",
+    "kwh": 9.0,
+    "cost": 26100,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 4.0
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.8
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-04",
+    "to": "2026-11-10",
+    "kwh": 87.9,
+    "cost": 254900,
+    "days": [
+     {
+      "date": "2026-11-04",
+      "kwh": 15.2
+     },
+     {
+      "date": "2026-11-05",
+      "kwh": 12.6
+     },
+     {
+      "date": "2026-11-06",
+      "kwh": 11.5
+     },
+     {
+      "date": "2026-11-07",
+      "kwh": 13.6
+     },
+     {
+      "date": "2026-11-08",
+      "kwh": 15.7
+     },
+     {
+      "date": "2026-11-09",
+      "kwh": 10.3
+     },
+     {
+      "date": "2026-11-10",
+      "kwh": 9.0
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-10",
+    "kwh": 125.1,
+    "cost": 362800
+   }
+  },
+  "alert_threshold_kwh": 400
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_837",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_278",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_4288",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_3579",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_246",
+    "name": "Xe đạp điện 106",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_596",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ }
+}

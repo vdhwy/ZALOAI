@@ -1,0 +1,413 @@
+{
+ "_meta": {
+  "question_id": "train_1660",
+  "current_time": "2026-11-03T21:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_669",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_132",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_685",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_648",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_7080",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_1202",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_830",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_986",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_473",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá\nnửa cân tôm"
+   },
+   {
+    "id": "note_06",
+    "title": "",
+    "content": "Mua quà sinh nhật bé Na trước thứ bảy"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_555",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-11-06T20:30:00+07:00",
+    "link": "https://meet.example.test/wxj-tmwi-dbz",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_860",
+    "title": "Họp lớp online",
+    "start": "2026-11-04T09:30:00+07:00",
+    "link": "https://meet.example.test/mua-llvw-rna",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_334",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-06T15:00:00+07:00",
+    "link": "https://meet.example.test/yxv-riyj-dyc",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_267",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-04T20:00:00+07:00",
+    "link": "https://meet.example.test/eev-vnqz-mul",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_05",
+    "title": "Chốt hồ sơ thầu",
+    "start": "2026-11-05T15:00:00+07:00",
+    "link": "https://meet.example.test/tjd-gbio-oox",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-31": {
+    "steps": 5884,
+    "calories": 235,
+    "distance_km": 4.2
+   },
+   "2026-11-01": {
+    "steps": 5642,
+    "calories": 225,
+    "distance_km": 4.1
+   },
+   "2026-11-02": {
+    "steps": 8581,
+    "calories": 343,
+    "distance_km": 6.2
+   },
+   "2026-11-03": {
+    "steps": 5787,
+    "calories": 231,
+    "distance_km": 4.2
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_8784",
+    "type": "yoga",
+    "minutes": 30,
+    "time": "2026-10-31T17:00:00+07:00"
+   },
+   {
+    "id": "wo_9119",
+    "type": "gym",
+    "minutes": 60,
+    "time": "2026-10-30T06:00:00+07:00"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_228",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_664",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_3565",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_9965",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 122100000,
+    "sell": 124100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 116100000,
+    "sell": 118100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4107
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_732",
+    "time": "2026-11-04T05:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_664",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_3420",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_3196",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_395",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_3196",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 2,
+      "note": null
+     },
+     {
+      "item_id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 115000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_395",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 39000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ }
+}

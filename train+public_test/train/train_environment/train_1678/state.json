@@ -1,0 +1,389 @@
+{
+ "_meta": {
+  "question_id": "train_1678",
+  "current_time": "2026-12-19T07:05:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_64",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-24T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_166",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-23T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_825",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-21T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "due": "2026-12-21T17:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Gửi invoice cho Sarah"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi Mr. Tanaka về lô hàng",
+    "time": "2026-12-19T07:30:00+07:00"
+   },
+   {
+    "id": "rem_02",
+    "repeat": "once",
+    "done": false,
+    "content": "Đóng gói hàng mẫu",
+    "time": "2026-12-19T21:00:00+07:00"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_929",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_488",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_5411",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_918",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_519",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_812",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_5081",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_8438",
+    "name": "Nhạc chill buổi tối",
+    "track_ids": [
+     "trk_488"
+    ]
+   }
+  ],
+  "now_playing": {
+   "playlist_id": "pl_5081",
+   "name": "Nhạc tập gym",
+   "status": "paused"
+  },
+  "volume": 30
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_2287",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_276",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_9165",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-16": {
+    "steps": 7189,
+    "calories": 287,
+    "distance_km": 5.2
+   },
+   "2026-12-17": {
+    "steps": 9753,
+    "calories": 390,
+    "distance_km": 7.0
+   },
+   "2026-12-18": {
+    "steps": 10758,
+    "calories": 430,
+    "distance_km": 7.7
+   },
+   "2026-12-19": {
+    "steps": 3507,
+    "calories": 140,
+    "distance_km": 2.5
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_9186",
+    "type": "yoga",
+    "minutes": 20,
+    "time": "2026-12-16T18:30:00+07:00"
+   },
+   {
+    "id": "wo_291",
+    "type": "yoga",
+    "minutes": 30,
+    "time": "2026-12-15T18:30:00+07:00"
+   },
+   {
+    "id": "wo_8569",
+    "type": "cycling",
+    "minutes": 45,
+    "time": "2026-12-18T17:00:00+07:00"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_3414",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09638743538"
+   },
+   {
+    "id": "c_429",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09573612508"
+   },
+   {
+    "id": "c_554",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09360832977"
+   },
+   {
+    "id": "c_4582",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09941066050"
+   },
+   {
+    "id": "c_718",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09282299865"
+   },
+   {
+    "id": "c_654",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09843686600"
+   },
+   {
+    "id": "c_924",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09670804453"
+   },
+   {
+    "id": "c_716",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09416816881"
+   },
+   {
+    "id": "c_285",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09953576385"
+   },
+   {
+    "id": "c_588",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09178301683"
+   },
+   {
+    "id": "c_986",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09955561280"
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_902",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-12-22T10:30:00+07:00",
+    "link": "https://meet.example.test/lyo-oriy-tmd",
+    "attendees": [
+     "c_3414",
+     "c_986"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_252",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-12-22T15:30:00+07:00",
+    "link": "https://meet.example.test/too-aplk-mom",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_6844",
+    "name": "phòng khách",
+    "area_m2": 22
+   },
+   {
+    "id": "room_537",
+    "name": "phòng ngủ",
+    "area_m2": 18
+   },
+   {
+    "id": "room_908",
+    "name": "phòng làm việc",
+    "area_m2": 22
+   },
+   {
+    "id": "room_800",
+    "name": "bếp",
+    "area_m2": 25
+   }
+  ],
+  "current_job": null
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_315",
+    "name": "Kháng sinh amoxicillin (bác sĩ Michael Chen kê)",
+    "times": [
+     "07:30",
+     "19:30"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_740",
+    "name": "Thuốc dạ dày (bác sĩ Michael Chan kê)",
+    "times": [
+     "06:30"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_92",
+    "name": "Siro ho (bác sĩ Michael Chen kê)",
+    "times": [
+     "08:00",
+     "20:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_268",
+    "name": "Vitamin D3",
+    "times": [
+     "07:00"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": []
+ }
+}

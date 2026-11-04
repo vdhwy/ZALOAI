@@ -1,0 +1,568 @@
+{
+ "_meta": {
+  "question_id": "train_1484",
+  "current_time": "2026-11-14T09:35:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "library.reserve",
+   "library.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_284",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_676",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_395",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_539",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_977",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_4089",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_788",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_251",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_7903",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_244",
+    "name": "Khách Hàn",
+    "type": "direct",
+    "members": [
+     "Khách Hàn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_232",
+    "name": "Vợ",
+    "type": "direct",
+    "members": [
+     "Vợ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3071",
+    "name": "Grace Nakamoto",
+    "type": "direct",
+    "members": [
+     "Grace Nakamoto"
+    ],
+    "messages": [
+     {
+      "from": "Grace Nakamoto",
+      "content": "Thanks Phuc, see you at the hotel lobby at 8."
+     },
+     {
+      "from": "me",
+      "content": "Giá dầu diesel hôm nay là 20.600 đồng một lít."
+     }
+    ]
+   },
+   {
+    "id": "chat_522",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_918",
+    "name": "Grace Nakamura",
+    "type": "direct",
+    "members": [
+     "Grace Nakamura"
+    ],
+    "messages": [
+     {
+      "from": "Grace Nakamura",
+      "content": "Is the rental car diesel? How much is fuel per litre?"
+     }
+    ]
+   },
+   {
+    "id": "chat_641",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5715",
+    "name": "Anh Bình",
+    "type": "direct",
+    "members": [
+     "Anh Bình"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "calculator": {},
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5562",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09440896550"
+   },
+   {
+    "id": "c_159",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09694022709"
+   },
+   {
+    "id": "c_138",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09141405543"
+   },
+   {
+    "id": "c_2944",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09882881318"
+   },
+   {
+    "id": "c_217",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09164164898"
+   },
+   {
+    "id": "c_188",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09420242698"
+   },
+   {
+    "id": "c_903",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09258282354"
+   },
+   {
+    "id": "c_97",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09171623201"
+   },
+   {
+    "id": "c_598",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09430728171"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_336",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-13T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_441",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-14T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_439",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-18T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23200
+   },
+   {
+    "type": "e5",
+    "price": 22000
+   },
+   {
+    "type": "diesel",
+    "price": 20600
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_7687",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_604",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_659",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_113",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_155",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_576",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-11-16",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_13",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-20",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_708",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-12-06",
+    "status": "paused",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_5683",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-11-20",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_408",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-29",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ }
+}

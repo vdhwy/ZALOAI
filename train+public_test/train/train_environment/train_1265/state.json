@@ -1,0 +1,432 @@
+{
+ "_meta": {
+  "question_id": "train_1265",
+  "current_time": "2026-11-21T15:15:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_997",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_474",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_554",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_511",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-21T12:30:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_526",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-23T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_432",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-22T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_714",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-22T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_8954",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-20T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25369
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27398
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 169.1
+   }
+  ]
+ },
+ "tv": {
+  "power": "on",
+  "channel": "VTV3",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_969",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-21T00:45:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_414",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-20T14:15:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_492",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-21T09:15:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_24",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-21T01:00:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_76",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-21T03:00:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   }
+  ],
+  "saved": []
+ },
+ "robot_vacuum": {
+  "battery": 90,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_156",
+    "name": "bếp",
+    "area_m2": 8
+   },
+   {
+    "id": "room_51",
+    "name": "phòng ngủ",
+    "area_m2": 22
+   },
+   {
+    "id": "room_650",
+    "name": "phòng khách",
+    "area_m2": 10
+   },
+   {
+    "id": "room_313",
+    "name": "phòng ăn",
+    "area_m2": 25
+   }
+  ],
+  "current_job": null
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-21",
+    "prizes": {
+     "special": "869199",
+     "first": "47455",
+     "eighth": "35"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-21",
+    "prizes": {
+     "special": "440739",
+     "first": "86844",
+     "eighth": "47"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-21",
+    "prizes": {
+     "special": "477191",
+     "first": "38577",
+     "eighth": "72"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-21",
+    "prizes": {
+     "special": "960292",
+     "first": "11933",
+     "eighth": "27"
+    }
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_352",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_410",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_223",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_991",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5387",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09424336731"
+   },
+   {
+    "id": "c_255",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09520327053"
+   },
+   {
+    "id": "c_908",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09515888150"
+   },
+   {
+    "id": "c_256",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09184653905"
+   },
+   {
+    "id": "c_393",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09105375415"
+   },
+   {
+    "id": "c_123",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09525363115"
+   },
+   {
+    "id": "c_56",
+    "name": "Hạnh",
+    "relation": "em gái",
+    "phone": "09779808907"
+   },
+   {
+    "id": "c_814",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09759963907"
+   },
+   {
+    "id": "c_536",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09934463918"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ }
+}

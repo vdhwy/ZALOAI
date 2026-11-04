@@ -1,0 +1,550 @@
+{
+ "_meta": {
+  "question_id": "train_1682",
+  "current_time": "2026-10-24T21:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "gold_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_285",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-10-22T06:20:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_329",
+    "from": "comai@gmail.example.test",
+    "from_name": "Cô Mai",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-10-24T09:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_7603",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-10-22T19:05:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_9565",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-28",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_989",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-28",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_674",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-28",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_3079",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2026-10-28",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_7182",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-10-26",
+    "depart": "07:00",
+    "arrive": "09:10",
+    "airline": "Sen Air",
+    "price": 1650000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_517",
+    "flight_id": "fl_7182",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   },
+   {
+    "id": "bk_02",
+    "flight_id": "fl_3079",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_238",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_03",
+    "title": "",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "06:00",
+    "enabled": true
+   },
+   {
+    "id": "rule_04",
+    "title": "",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "22:30",
+    "enabled": true
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-21": {
+    "steps": 2550,
+    "calories": 102,
+    "distance_km": 1.8
+   },
+   "2026-10-22": {
+    "steps": 3025,
+    "calories": 121,
+    "distance_km": 2.2
+   },
+   "2026-10-23": {
+    "steps": 4961,
+    "calories": 198,
+    "distance_km": 3.6
+   },
+   "2026-10-24": {
+    "steps": 4295,
+    "calories": 171,
+    "distance_km": 3.1
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_216",
+    "type": "walking",
+    "minutes": 45,
+    "time": "2026-10-20T18:30:00+07:00"
+   },
+   {
+    "id": "wo_469",
+    "type": "cycling",
+    "minutes": 30,
+    "time": "2026-10-22T18:00:00+07:00"
+   },
+   {
+    "id": "wo_231",
+    "type": "cycling",
+    "minutes": 20,
+    "time": "2026-10-21T06:00:00+07:00"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_542",
+    "title": "khám răng",
+    "start": "2026-10-25T10:00:00+07:00",
+    "end": "2026-10-25T11:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_407",
+    "title": "họp team",
+    "start": "2026-10-25T19:00:00+07:00",
+    "end": "2026-10-25T20:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_867",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-26T19:30:00+07:00",
+    "end": "2026-10-26T20:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_243",
+    "title": "họp phụ huynh",
+    "start": "2026-10-27T10:00:00+07:00",
+    "end": "2026-10-27T11:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_05",
+    "status": "confirmed",
+    "title": "Đi siêu thị với mẹ chồng",
+    "start": "2026-10-25T15:00:00+07:00",
+    "end": "2026-10-25T16:00:00+07:00"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_677",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_8797",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_571",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_956",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_172",
+    "show_id": "show_571",
+    "title": "Số 14: Lỗ đen là gì",
+    "number": 14,
+    "duration_min": 25,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_5455",
+    "show_id": "show_677",
+    "title": "Số 12: Nghề diễn và những áp lực",
+    "number": 12,
+    "duration_min": 18,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_5030",
+    "show_id": "show_956",
+    "title": "Số 14: Trồng cây trên sân thượng",
+    "number": 14,
+    "duration_min": 25,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_6867",
+    "show_id": "show_8797",
+    "title": "Số 8: Nhà giả kim - phần 1",
+    "number": 8,
+    "duration_min": 45,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_449",
+    "show_id": "show_571",
+    "title": "Số 13: Giấc ngủ và trí nhớ",
+    "number": 13,
+    "duration_min": 45,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_225",
+    "show_id": "show_956",
+    "title": "Số 15: Đi xe đạp đi làm",
+    "number": 15,
+    "duration_min": 18,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_891",
+    "show_id": "show_8797",
+    "title": "Số 9: Nhà giả kim - phần 2",
+    "number": 9,
+    "duration_min": 45,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_6473",
+    "show_id": "show_571",
+    "title": "Số 12: Vì sao bầu trời màu xanh",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-10-03"
+   },
+   {
+    "id": "ep_894",
+    "show_id": "show_677",
+    "title": "Số 11: Sống chậm giữa thành phố",
+    "number": 11,
+    "duration_min": 32,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_505",
+    "show_id": "show_956",
+    "title": "Số 13: Rác thải nhựa ở đô thị",
+    "number": 13,
+    "duration_min": 32,
+    "published": "2026-10-03"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_530",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_495",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_93",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_4101",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_571"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 126600000,
+    "sell": 128600000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 120600000,
+    "sell": 122600000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4007
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_3192",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_6216",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_157",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_152",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_489",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09194273498"
+   },
+   {
+    "id": "c_165",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09884127503"
+   },
+   {
+    "id": "c_553",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09503922628"
+   },
+   {
+    "id": "c_1710",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09613119101"
+   },
+   {
+    "id": "c_269",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09755191704"
+   },
+   {
+    "id": "c_5643",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09973982849"
+   },
+   {
+    "id": "c_4765",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09186622273"
+   },
+   {
+    "id": "c_4544",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09182658919"
+   },
+   {
+    "id": "c_925",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09299586750"
+   },
+   {
+    "id": "c_96",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09541167496"
+   },
+   {
+    "id": "c_248",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09412056445"
+   }
+  ]
+ }
+}

@@ -1,0 +1,590 @@
+{
+ "_meta": {
+  "question_id": "train_1749",
+  "current_time": "2026-12-17T16:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_2740",
+    "name": "Tưới cây",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_425",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Em Linh",
+    "done": false
+   },
+   {
+    "id": "chore_22",
+    "name": "Lau nhà",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_3318",
+    "name": "Lấy đồ giặt ở Bluebell Laundry",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_871",
+    "name": "Mang chăn ra Bluebird Laundry",
+    "assignee": "Tuấn",
+    "done": true
+   }
+  ],
+  "members": [
+   "Em Linh",
+   "Bà nội",
+   "Tuấn"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_960",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_1534",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_967",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_775",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_967",
+    "items": [
+     {
+      "item_id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "quantity": 1,
+      "note": null
+     },
+     {
+      "item_id": "rest_01_m3",
+      "name": "Chả cua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 60000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_960",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 39000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_229",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_395",
+    "name": "táo",
+    "quantity": 4,
+    "checked": true
+   },
+   {
+    "id": "item_248",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_205",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_546",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_06",
+    "checked": false,
+    "name": "sữa chua",
+    "quantity": 4
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_52",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_828",
+    "name": "Thầy Phong",
+    "type": "direct",
+    "members": [
+     "Thầy Phong"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_863",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_892",
+    "name": "Trang",
+    "type": "direct",
+    "members": [
+     "Trang"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_405",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_261",
+    "title": "họp phụ huynh",
+    "start": "2026-12-19T14:30:00+07:00",
+    "end": "2026-12-19T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_450",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-20T08:00:00+07:00",
+    "end": "2026-12-20T09:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5907",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-18T08:30:00+07:00",
+    "end": "2026-12-18T09:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5597",
+    "title": "đi chơi công viên",
+    "start": "2026-12-19T10:30:00+07:00",
+    "end": "2026-12-19T11:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_376",
+    "title": "họp team",
+    "start": "2026-12-19T18:30:00+07:00",
+    "end": "2026-12-19T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_5345",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_280",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_504",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_547",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": false
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_2462",
+    "time": "2026-12-17T12:35:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_8433",
+    "time": "2026-12-16T18:35:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_7122",
+    "time": "2026-12-16T16:55:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5134",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09258750321"
+   },
+   {
+    "id": "c_5736",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09646220874"
+   },
+   {
+    "id": "c_3665",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09107498222"
+   },
+   {
+    "id": "c_641",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09680722273"
+   },
+   {
+    "id": "c_8270",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09130069031"
+   },
+   {
+    "id": "c_4149",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09755525738"
+   },
+   {
+    "id": "c_884",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09237653937"
+   },
+   {
+    "id": "c_2518",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09922444217"
+   },
+   {
+    "id": "c_9357",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09889864406"
+   },
+   {
+    "id": "c_6009",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09785896877"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_666",
+    "time": "2026-12-18T08:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_620",
+    "time": "2026-12-18T05:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_7853",
+    "time": "2026-12-18T07:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": false
+   },
+   {
+    "id": "alm_04",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-12-18T06:00:00+07:00",
+    "label": "đi học"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_695",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_7436",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_9559",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_5976",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_243",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": [
+   {
+    "id": "fav_01",
+    "place_id": "place_7436",
+    "label": "Bệnh viện Bạch Mai"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_659",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_4002",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_668",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_1704",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ }
+}

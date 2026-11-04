@@ -1,0 +1,291 @@
+{
+ "_meta": {
+  "question_id": "train_0931",
+  "current_time": "2026-11-02T22:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_413",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 216000,
+    "due_date": "2026-11-10",
+    "paid": false
+   },
+   {
+    "id": "bill_4848",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 197000,
+    "due_date": "2026-11-11",
+    "paid": false
+   },
+   {
+    "id": "bill_3022",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 212000,
+    "due_date": "2026-11-08",
+    "paid": false
+   },
+   {
+    "id": "bill_4671",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 847000,
+    "due_date": "2026-11-09",
+    "paid": false
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_910",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_586",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_859",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_100",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_353",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 60
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_4360",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_9929",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_43",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_275",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_577",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_6219",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_412",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_372",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_675",
+    "time": "2026-11-03T08:00:00+07:00",
+    "label": "đưa cháu đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_643",
+    "time": "2026-11-03T06:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_329",
+    "title": "đi chơi công viên",
+    "start": "2026-11-03T10:30:00+07:00",
+    "end": "2026-11-03T11:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_216",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-03T09:30:00+07:00",
+    "end": "2026-11-03T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_241",
+    "title": "đá bóng",
+    "start": "2026-11-03T08:00:00+07:00",
+    "end": "2026-11-03T09:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_654",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-05T09:30:00+07:00",
+    "end": "2026-11-05T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6114",
+    "title": "khám răng",
+    "start": "2026-11-03T08:30:00+07:00",
+    "end": "2026-11-03T09:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_253",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_921",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_4183",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 80
+   }
+  ],
+  "guest_codes": []
+ }
+}

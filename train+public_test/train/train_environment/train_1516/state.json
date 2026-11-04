@@ -1,0 +1,372 @@
+{
+ "_meta": {
+  "question_id": "train_1516",
+  "current_time": "2026-12-11T06:55:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_877",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-13T18:00:00+07:00",
+    "end": "2026-12-13T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_256",
+    "title": "họp team",
+    "start": "2026-12-13T08:00:00+07:00",
+    "end": "2026-12-13T09:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2275",
+    "title": "đi chơi công viên",
+    "start": "2026-12-13T09:00:00+07:00",
+    "end": "2026-12-13T10:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3318",
+    "title": "Review layout sạp mới với Anh Mười",
+    "start": "2026-12-15T08:00:00+07:00",
+    "end": "2026-12-15T09:30:00+07:00",
+    "location": "Vựa trái cây Bảy Hồng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_642",
+    "title": "Booking xe tải chở xoài lên Sài Gòn",
+    "start": "2026-12-15T14:00:00+07:00",
+    "end": "2026-12-15T15:00:00+07:00",
+    "location": "Vựa trái cây Bảy Hồng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2051",
+    "title": "Review layout kho lạnh",
+    "start": "2026-12-17T09:00:00+07:00",
+    "end": "2026-12-17T10:00:00+07:00",
+    "location": "Kho lạnh Cái Răng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_514",
+    "type": "electricity",
+    "provider": "Điện lực Cần Thơ",
+    "amount": 1350000,
+    "due_date": "2026-12-15",
+    "paid": false
+   },
+   {
+    "id": "bill_2207",
+    "type": "water",
+    "provider": "Cấp nước Cần Thơ",
+    "amount": 186000,
+    "due_date": "2026-12-14",
+    "paid": true,
+    "paid_with": "bank"
+   },
+   {
+    "id": "bill_993",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 147000,
+    "due_date": "2026-12-19",
+    "paid": true,
+    "paid_with": "bank"
+   },
+   {
+    "id": "bill_613",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 221000,
+    "due_date": "2026-12-20",
+    "paid": false
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_971",
+    "name": "Giặt quần áo",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_823",
+    "name": "Đổ rác",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_636",
+    "name": "Phơi quần áo",
+    "assignee": "Chú Bảy",
+    "done": true
+   },
+   {
+    "id": "chore_4323",
+    "name": "Nấu cơm tối",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_377",
+    "name": "Đi chợ",
+    "assignee": "Bố",
+    "done": true
+   }
+  ],
+  "members": [
+   "Chú Bảy",
+   "Tuấn",
+   "Lan",
+   "Bố"
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_6299",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_967",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_2633",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_889",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_1038",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_648",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_788",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 26,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-11",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-12",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 34
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-13",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-14",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 28
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_408",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_679",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_20",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": false,
+    "battery": 80
+   },
+   {
+    "id": "lock_466",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_7581",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": false
+   },
+   {
+    "id": "rule_235",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ }
+}

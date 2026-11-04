@@ -1,0 +1,592 @@
+{
+ "_meta": {
+  "question_id": "train_1709",
+  "current_time": "2026-11-30T15:10:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "phone.call",
+   "phone.recent_calls",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_2196",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_766",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_988",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_1602",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_05",
+    "title": "Bật đèn phòng ngủ dậy đi thực tập",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "05:30",
+    "enabled": true
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-30",
+    "to": "2026-11-30",
+    "kwh": 7.2,
+    "cost": 20900,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.2
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.4
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-24",
+    "to": "2026-11-30",
+    "kwh": 69.7,
+    "cost": 202100,
+    "days": [
+     {
+      "date": "2026-11-24",
+      "kwh": 9.5
+     },
+     {
+      "date": "2026-11-25",
+      "kwh": 7.6
+     },
+     {
+      "date": "2026-11-26",
+      "kwh": 8.8
+     },
+     {
+      "date": "2026-11-27",
+      "kwh": 15.0
+     },
+     {
+      "date": "2026-11-28",
+      "kwh": 13.4
+     },
+     {
+      "date": "2026-11-29",
+      "kwh": 8.2
+     },
+     {
+      "date": "2026-11-30",
+      "kwh": 7.2
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-30",
+    "kwh": 320.1,
+    "cost": 928300
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_572",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 75
+   },
+   {
+    "id": "course_112",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_559",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_438",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": [
+   {
+    "id": "prog_01",
+    "course_id": "course_572",
+    "minutes": 30
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_9775",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_6524",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_686",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_428",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_7598",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "calculator": {},
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_653",
+    "name": "Tưới cây",
+    "assignee": null,
+    "done": true
+   },
+   {
+    "id": "chore_995",
+    "name": "Lau nhà",
+    "assignee": "Bé Ngọc",
+    "done": false
+   },
+   {
+    "id": "chore_4165",
+    "name": "Rửa bát",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_850",
+    "name": "Giặt quần áo",
+    "assignee": "Bé Na",
+    "done": false
+   }
+  ],
+  "members": [
+   "Bé Ngọc",
+   "Bé Na",
+   "Tuấn",
+   "Mẹ"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_40",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09176419524"
+   },
+   {
+    "id": "c_778",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09200078815"
+   },
+   {
+    "id": "c_171",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09246090729"
+   },
+   {
+    "id": "c_1584",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09379877549"
+   },
+   {
+    "id": "c_903",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09782211763"
+   },
+   {
+    "id": "c_9549",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09856397579"
+   },
+   {
+    "id": "c_817",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09486718351"
+   },
+   {
+    "id": "c_4531",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09654756169"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_641",
+    "name": "Nhi",
+    "type": "direct",
+    "members": [
+     "Nhi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_473",
+    "name": "Mạ",
+    "type": "direct",
+    "members": [
+     "Mạ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_18",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_453",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_260",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_574",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_569",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_3568",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_3533",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_569",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 1,
+      "note": null
+     },
+     {
+      "item_id": "rest_01_m3",
+      "name": "Chả cua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 70000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_574",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 39000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_45",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-29T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_365",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-29T17:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_863",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-03T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_3173",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-02T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_528",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-12-05",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_401",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-12-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_268",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-12-08",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ }
+}

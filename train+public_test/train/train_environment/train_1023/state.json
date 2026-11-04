@@ -1,0 +1,309 @@
+{
+ "_meta": {
+  "question_id": "train_1023",
+  "current_time": "2026-11-02T15:05:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_741",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_885",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_730",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_766",
+    "time": "2026-11-01T17:45:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_341",
+    "time": "2026-11-01T11:20:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_257",
+    "time": "2026-11-01T09:15:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_444",
+    "time": "2026-10-31T22:10:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_2598",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-22",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_404",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-22",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_222",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-22",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_7387",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-22",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   }
+  ],
+  "bookings": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_846",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09386641153"
+   },
+   {
+    "id": "c_2710",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09885445801"
+   },
+   {
+    "id": "c_206",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09564911038"
+   },
+   {
+    "id": "c_369",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09547264850"
+   },
+   {
+    "id": "c_498",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09213114618"
+   },
+   {
+    "id": "c_150",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09342638454"
+   },
+   {
+    "id": "c_752",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09835199543"
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_307",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-11-03",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_9005",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-12",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_544",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-11-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_287",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-11-28",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_702",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-11-07",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_98",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_219",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_288",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_4030",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_241",
+    "name": "Vy",
+    "type": "direct",
+    "members": [
+     "Vy"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_605",
+    "name": "Má",
+    "type": "direct",
+    "members": [
+     "Má"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_144",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_661",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_641",
+    "name": "Sếp Trân",
+    "type": "direct",
+    "members": [
+     "Sếp Trân"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

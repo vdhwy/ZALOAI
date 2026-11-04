@@ -1,0 +1,401 @@
+{
+ "_meta": {
+  "question_id": "train_1281",
+  "current_time": "2026-10-26T10:35:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_2069",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_7605",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_259",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_344",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_374",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "calculator": {},
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_348",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-30T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_22",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-31T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_55",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-30T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_5000",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-30T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_9368",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-01T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_2641",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_8004",
+    "name": "Xe đạp điện 105",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_601",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_481",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_4741",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_403",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_40",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09686463675"
+   },
+   {
+    "id": "c_900",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09931049195"
+   },
+   {
+    "id": "c_989",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09657234309"
+   },
+   {
+    "id": "c_3486",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09907939938"
+   },
+   {
+    "id": "c_379",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09728627045"
+   },
+   {
+    "id": "c_556",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09185991811"
+   },
+   {
+    "id": "c_6336",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09490543082"
+   },
+   {
+    "id": "c_50",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09917505118"
+   },
+   {
+    "id": "c_260",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09237864223"
+   },
+   {
+    "id": "c_339",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09905454860"
+   },
+   {
+    "id": "c_206",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09915563727"
+   },
+   {
+    "id": "c_436",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09366752491"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_43",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_673",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_611",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_815",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_9492",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_466",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_672",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_554",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_207",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 2000,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_797",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_1131",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-07",
+    "used": false
+   },
+   {
+    "id": "vch_953",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-11-12",
+    "used": false
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 31,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-26",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-27",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-28",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-29",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 32
+   }
+  ]
+ }
+}

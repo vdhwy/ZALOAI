@@ -1,0 +1,632 @@
+{
+ "_meta": {
+  "question_id": "public_0612",
+  "current_time": "2026-11-28T20:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "gold_price.get_price",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_905",
+    "phone_number": "09747588716",
+    "direction": "outgoing",
+    "status": "answered",
+    "time": "2026-11-25T08:10:00+07:00"
+   },
+   {
+    "id": "call_7120",
+    "phone_number": "09183884461",
+    "direction": "outgoing",
+    "status": "answered",
+    "time": "2026-11-24T21:15:00+07:00"
+   },
+   {
+    "id": "call_4471",
+    "phone_number": "09183884461",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-11-26T22:40:00+07:00"
+   },
+   {
+    "id": "call_3318",
+    "phone_number": "09259505454",
+    "direction": "outgoing",
+    "status": "answered",
+    "time": "2026-11-26T23:35:00+07:00"
+   },
+   {
+    "id": "call_2685",
+    "phone_number": "09183884461",
+    "direction": "outgoing",
+    "status": "answered",
+    "time": "2026-11-17T20:40:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_782",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09259505454"
+   },
+   {
+    "id": "c_318",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09524469302"
+   },
+   {
+    "id": "c_909",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09172815339"
+   },
+   {
+    "id": "c_821",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09183884461"
+   },
+   {
+    "id": "c_5243",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09747588716"
+   },
+   {
+    "id": "c_7608",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09825260091"
+   },
+   {
+    "id": "c_543",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09301643039"
+   },
+   {
+    "id": "c_12",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09581599321"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_627",
+    "time": "2026-11-29T06:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_478",
+    "time": "2026-11-29T06:15:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_928",
+    "time": "2026-11-29T07:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_4033",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_813",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_627",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_8709",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_2158",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_504",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_748",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-30T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_124",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-29T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_435",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-03T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_669",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-28T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_637",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-30T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_871",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_896",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_99",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_14",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_605",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_572",
+    "name": "Không uống trà sữa",
+    "streak": 1,
+    "last_logged": "2026-11-27"
+   },
+   {
+    "id": "habit_4410",
+    "name": "Gọi điện cho má",
+    "streak": 1,
+    "last_logged": "2026-11-27"
+   },
+   {
+    "id": "habit_1037",
+    "name": "Đọc sách 30 phút",
+    "streak": 1,
+    "last_logged": "2026-11-27"
+   },
+   {
+    "id": "habit_2746",
+    "name": "Ngủ trước 11 giờ",
+    "streak": 12,
+    "last_logged": "2026-11-27"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_329",
+    "habit_id": "habit_2746",
+    "date": "2026-11-27"
+   },
+   {
+    "id": "log_2393",
+    "habit_id": "habit_572",
+    "date": "2026-11-27"
+   },
+   {
+    "id": "log_510",
+    "habit_id": "habit_1037",
+    "date": "2026-11-27"
+   },
+   {
+    "id": "log_7781",
+    "habit_id": "habit_4410",
+    "date": "2026-11-27"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_746",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-09",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_4086",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-09",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_885",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-09",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_2389",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-09",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_5512",
+    "origin": "SGN",
+    "destination": "HAN",
+    "date": "2026-11-24",
+    "depart": "07:30",
+    "arrive": "09:40",
+    "airline": "JetXanh",
+    "price": 1290000
+   },
+   {
+    "id": "fl_6630",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-11-26",
+    "depart": "21:00",
+    "arrive": "23:10",
+    "airline": "Sen Air",
+    "price": 1350000
+   },
+   {
+    "id": "fl_3907",
+    "origin": "SGN",
+    "destination": "HAN",
+    "date": "2026-11-17",
+    "depart": "06:15",
+    "arrive": "08:25",
+    "airline": "Rồng Việt Air",
+    "price": 1540000
+   },
+   {
+    "id": "fl_8241",
+    "origin": "HAN",
+    "destination": "SGN",
+    "date": "2026-11-18",
+    "depart": "19:30",
+    "arrive": "21:40",
+    "airline": "JetXanh",
+    "price": 1180000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_59",
+    "flight_id": "fl_3907",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "completed"
+   },
+   {
+    "id": "bk_1460",
+    "flight_id": "fl_8241",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "completed"
+   },
+   {
+    "id": "bk_318",
+    "flight_id": "fl_5512",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "completed"
+   },
+   {
+    "id": "bk_742",
+    "flight_id": "fl_6630",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "completed"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 118000000,
+    "sell": 120000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 112000000,
+    "sell": 114000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4081
+   }
+  ]
+ }
+}

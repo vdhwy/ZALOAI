@@ -1,0 +1,272 @@
+{
+ "_meta": {
+  "question_id": "train_1382",
+  "current_time": "2026-11-26T20:50:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "gold_price.get_price",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 122200000,
+    "sell": 124200000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 116200000,
+    "sell": 118200000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4080
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_7023",
+    "title": "khám răng",
+    "start": "2026-11-27T19:00:00+07:00",
+    "end": "2026-11-27T20:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_458",
+    "title": "đá bóng",
+    "start": "2026-11-28T18:30:00+07:00",
+    "end": "2026-11-28T19:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_467",
+    "title": "họp phụ huynh",
+    "start": "2026-11-29T14:30:00+07:00",
+    "end": "2026-11-29T15:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_409",
+    "title": "đi chơi công viên",
+    "start": "2026-11-27T18:00:00+07:00",
+    "end": "2026-11-27T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_955",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-27T19:30:00+07:00",
+    "end": "2026-11-27T20:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "calculator": {},
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "số 4 ngõ 68 Cầu Giấy, Hà Nội",
+    "dropoff": "Pinnacle Design, Duy Tân, Cầu Giấy, Hà Nội",
+    "vehicle": "bike",
+    "schedule_time": "2026-11-27T08:00:00+07:00"
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-26",
+    "prizes": {
+     "special": "926020",
+     "first": "32097",
+     "eighth": "18"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-26",
+    "prizes": {
+     "special": "190477",
+     "first": "82150",
+     "eighth": "37"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-26",
+    "prizes": {
+     "special": "592191",
+     "first": "53334",
+     "eighth": "76"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-26",
+    "prizes": {
+     "special": "678599",
+     "first": "75604",
+     "eighth": "31"
+    }
+   }
+  ]
+ }
+}

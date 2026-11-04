@@ -1,0 +1,321 @@
+{
+ "_meta": {
+  "question_id": "train_1156",
+  "current_time": "2026-12-20T09:40:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_275",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_405",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_613",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_586",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_494",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Láng Hạ",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_4164",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": [
+   {
+    "id": "brs_01",
+    "bike_id": "bike_494",
+    "station": "Trạm Láng Hạ",
+    "status": "reserved"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-17": {
+    "steps": 3399,
+    "calories": 135,
+    "distance_km": 2.4
+   },
+   "2026-12-18": {
+    "steps": 3801,
+    "calories": 152,
+    "distance_km": 2.7
+   },
+   "2026-12-19": {
+    "steps": 4967,
+    "calories": 198,
+    "distance_km": 3.6
+   },
+   "2026-12-20": {
+    "steps": 3313,
+    "calories": 132,
+    "distance_km": 2.4
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_711",
+    "type": "cycling",
+    "minutes": 60,
+    "time": "2026-12-17T18:00:00+07:00"
+   },
+   {
+    "id": "wo_624",
+    "type": "cycling",
+    "minutes": 30,
+    "time": "2026-12-16T18:30:00+07:00"
+   },
+   {
+    "id": "wo_412",
+    "type": "walking",
+    "minutes": 30,
+    "time": "2026-12-19T06:30:00+07:00"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-12-20",
+    "prizes": {
+     "special": "530416",
+     "first": "60237",
+     "eighth": "30"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-12-20",
+    "prizes": {
+     "special": "163625",
+     "first": "59617",
+     "eighth": "17"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-12-20",
+    "prizes": {
+     "special": "176887",
+     "first": "16069",
+     "eighth": "48"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-12-20",
+    "prizes": {
+     "special": "193248",
+     "first": "79334",
+     "eighth": "96"
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_242",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09171840099"
+   },
+   {
+    "id": "c_909",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09510405295"
+   },
+   {
+    "id": "c_8986",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09471966833"
+   },
+   {
+    "id": "c_820",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09922353418"
+   },
+   {
+    "id": "c_895",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09592712331"
+   },
+   {
+    "id": "c_164",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09903215346"
+   },
+   {
+    "id": "c_432",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09744629089"
+   },
+   {
+    "id": "c_799",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09467842190"
+   },
+   {
+    "id": "c_8332",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09395017565"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_6300",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_220",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_8110",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_33",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_2353",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25673
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27726
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.2
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_643",
+    "tracking_id": "GST345488141",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-12-22T17:00:00+07:00"
+   },
+   {
+    "id": "shp_767",
+    "tracking_id": "STP791119130",
+    "carrier": "SaoTel Post",
+    "name": "Tai nghe Bluetooth",
+    "status": "delivered",
+    "eta": "2026-12-19T10:00:00+07:00"
+   },
+   {
+    "id": "shp_4159",
+    "tracking_id": "EV786413370",
+    "carrier": "VNPost",
+    "name": "Áo khoác gió",
+    "status": "in_transit",
+    "eta": "2026-12-22T14:00:00+07:00"
+   },
+   {
+    "id": "shp_83",
+    "tracking_id": "JV923245589",
+    "carrier": "JetViệt Express",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "out_for_delivery",
+    "eta": "2026-12-20T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ }
+}

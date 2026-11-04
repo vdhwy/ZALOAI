@@ -1,0 +1,393 @@
+{
+ "_meta": {
+  "question_id": "train_1703",
+  "current_time": "2026-12-13T08:30:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "gold_price.get_price",
+   "library.reserve",
+   "library.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_117",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_966",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_257",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_224",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_910",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 129900000,
+    "sell": 131900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 123900000,
+    "sell": 125900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3943
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_416",
+    "from": "emily.carter@mail.example.test",
+    "from_name": "Emily Carter",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Late check-in tonight",
+    "snippet": "Our flight is delayed, we will arrive around 10 pm.",
+    "body": "Hi Duc, our flight from Hanoi is delayed, we will check in around 10 pm tonight. Is that ok? Thanks, Emily",
+    "time": "2026-12-13T06:40:00+07:00",
+    "unread": false,
+    "folder": "inbox",
+    "replied": true
+   },
+   {
+    "id": "mail_840",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-12-12T09:45:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_8379",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-12-12T06:30:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_7189",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-12-12T04:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [
+   {
+    "id": "sent_01",
+    "to": [
+     "emily.carter@mail.example.test"
+    ],
+    "cc": [],
+    "subject": "Re: Late check-in tonight",
+    "body": "No problem, I will wait for you at 10 pm tonight.",
+    "in_reply_to": "mail_416"
+   }
+  ],
+  "drafts": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_44",
+    "tracking_id": "JV909329458",
+    "carrier": "JetViệt Express",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "out_for_delivery",
+    "eta": "2026-12-13T14:00:00+07:00"
+   },
+   {
+    "id": "shp_162",
+    "tracking_id": "EV906072890",
+    "carrier": "VNPost",
+    "name": "Tai nghe Bluetooth",
+    "status": "in_transit",
+    "eta": "2026-12-14T10:00:00+07:00"
+   },
+   {
+    "id": "shp_414",
+    "tracking_id": "GST504242708",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Giày thể thao",
+    "status": "in_transit",
+    "eta": "2026-12-16T17:00:00+07:00"
+   },
+   {
+    "id": "shp_302",
+    "tracking_id": "STP822221164",
+    "carrier": "SaoTel Post",
+    "name": "Ốp lưng điện thoại",
+    "status": "delivered",
+    "eta": "2026-12-12T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": null,
+    "phone_number": "09836472519",
+    "status": "dialing"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_1981",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_761",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_4108",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_166",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_920",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_3937",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_5521",
+    "name": "Đại Nội Huế",
+    "address": "23 Tháng 8, Phú Hậu, Huế",
+    "category": "attraction"
+   },
+   {
+    "id": "place_7740",
+    "name": "Chợ Đông Ba",
+    "address": "2 Trần Hưng Đạo, Phú Hòa, Huế",
+    "category": "market"
+   },
+   {
+    "id": "place_2318",
+    "name": "Bún bò O Thoa",
+    "address": "14 Trần Hưng Đạo, gần chợ Đông Ba, Huế",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_640",
+    "name": "Bún bò Mụ Ba",
+    "address": "45 Lê Duẩn, Phú Thuận, Huế",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": [
+   {
+    "id": "fav_01",
+    "place_id": "place_2318",
+    "label": "Quán bún cho khách"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_426",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_352",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6145",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_756",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_979",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_72",
+    "name": "Thuốc dạ dày",
+    "times": [
+     "06:30",
+     "18:30"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_318",
+    "name": "Thuốc huyết áp",
+    "times": [
+     "07:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_905",
+    "name": "Canxi",
+    "times": [
+     "20:00"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": []
+ }
+}

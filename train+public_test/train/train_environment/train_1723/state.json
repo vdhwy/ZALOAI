@@ -1,0 +1,371 @@
+{
+ "_meta": {
+  "question_id": "train_1723",
+  "current_time": "2026-12-10T13:45:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "fuel_price.get_price",
+   "gold_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2907",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09579623922"
+   },
+   {
+    "id": "c_941",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09749473834"
+   },
+   {
+    "id": "c_494",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09354143133"
+   },
+   {
+    "id": "c_758",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09277398195"
+   },
+   {
+    "id": "c_70",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09928610566"
+   },
+   {
+    "id": "c_857",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09454643263"
+   },
+   {
+    "id": "c_784",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09424340994"
+   },
+   {
+    "id": "c_849",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09257532610"
+   },
+   {
+    "id": "c_173",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09738681990"
+   },
+   {
+    "id": "c_330",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09386289476"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_724",
+    "title": "đi chơi công viên",
+    "start": "2026-12-11T09:00:00+07:00",
+    "end": "2026-12-11T10:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4068",
+    "title": "họp team",
+    "start": "2026-12-11T15:30:00+07:00",
+    "end": "2026-12-11T16:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_626",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-12T18:00:00+07:00",
+    "end": "2026-12-12T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_970",
+    "title": "khám răng",
+    "start": "2026-12-13T18:30:00+07:00",
+    "end": "2026-12-13T19:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_944",
+    "title": "đá bóng",
+    "start": "2026-12-13T18:30:00+07:00",
+    "end": "2026-12-13T19:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_6125",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_115",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_5915",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_3529",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_375",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_4904",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_442",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_592",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_491",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_905",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_778",
+    "time": "2026-12-10T00:25:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_3318",
+    "time": "2026-12-09T23:40:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện chuyển động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_7965",
+    "time": "2026-12-09T20:15:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện chuyển động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_9925",
+    "time": "2026-12-09T03:55:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 122100000,
+    "sell": 124100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 116100000,
+    "sell": 118100000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3905
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_616",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_6210",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_460",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_143",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21200
+   },
+   {
+    "type": "e5",
+    "price": 20000
+   },
+   {
+    "type": "diesel",
+    "price": 18600
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_01",
+    "days": "daily",
+    "name": "thuốc cảm",
+    "times": [
+     "08:00",
+     "20:00"
+    ]
+   }
+  ],
+  "logs": []
+ },
+ "phone": {
+  "calls": []
+ }
+}

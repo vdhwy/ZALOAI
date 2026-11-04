@@ -1,0 +1,193 @@
+{
+ "_meta": {
+  "question_id": "train_1116",
+  "current_time": "2026-10-21T17:40:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "phone.call",
+   "phone.recent_calls",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop"
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 100,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_945",
+    "name": "bếp",
+    "area_m2": 15
+   },
+   {
+    "id": "room_9022",
+    "name": "phòng ngủ",
+    "area_m2": 25
+   },
+   {
+    "id": "room_611",
+    "name": "phòng làm việc",
+    "area_m2": 10
+   },
+   {
+    "id": "room_929",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 18
+   },
+   {
+    "id": "room_2944",
+    "name": "phòng khách",
+    "area_m2": 8
+   }
+  ],
+  "current_job": null
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_190",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_5388",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_196",
+    "time": "2026-10-20T12:05:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_523",
+    "time": "2026-10-20T02:00:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_3103",
+    "time": "2026-10-21T06:25:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_800",
+    "time": "2026-10-21T09:05:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_6400",
+    "time": "2026-10-20T03:35:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 26117
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28206
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 174.1
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_635",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09526192240"
+   },
+   {
+    "id": "c_830",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09958116043"
+   },
+   {
+    "id": "c_687",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09434520670"
+   },
+   {
+    "id": "c_2980",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09112312739"
+   },
+   {
+    "id": "c_447",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09147294332"
+   },
+   {
+    "id": "c_9228",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09869443474"
+   },
+   {
+    "id": "c_1335",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09467951157"
+   },
+   {
+    "id": "c_7250",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09686192157"
+   }
+  ]
+ },
+ "calculator": {},
+ "phone": {
+  "calls": []
+ }
+}

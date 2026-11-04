@@ -1,0 +1,575 @@
+{
+ "_meta": {
+  "question_id": "train_1515",
+  "current_time": "2026-12-15T08:05:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_3163",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09273621921"
+   },
+   {
+    "id": "c_2218",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09836985277"
+   },
+   {
+    "id": "c_539",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09939441661"
+   },
+   {
+    "id": "c_680",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09799266480"
+   },
+   {
+    "id": "c_375",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09222955048"
+   },
+   {
+    "id": "c_410",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09928171906"
+   },
+   {
+    "id": "c_322",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09690927620"
+   },
+   {
+    "id": "c_386",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09417937437"
+   },
+   {
+    "id": "c_467",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09837231777"
+   },
+   {
+    "id": "c_2944",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09692831288"
+   },
+   {
+    "id": "c_8231",
+    "name": "Nathan Reid",
+    "relation": "khách",
+    "phone": "09224879708"
+   },
+   {
+    "id": "c_4706",
+    "name": "Nathan Reed",
+    "relation": "khách",
+    "phone": "09777797632"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_971",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_697",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_706",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_3875",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_941",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_5812",
+    "name": "English for Hostel Staff",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 16,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_2390",
+    "name": "English for Homestay Hosts",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 10,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_5297",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-18T19:30:00+07:00",
+    "end": "2026-12-18T20:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_152",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-16T14:00:00+07:00",
+    "end": "2026-12-16T15:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_193",
+    "title": "họp phụ huynh",
+    "start": "2026-12-16T10:30:00+07:00",
+    "end": "2026-12-16T11:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_232",
+    "title": "khám răng",
+    "start": "2026-12-16T08:30:00+07:00",
+    "end": "2026-12-16T09:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 27,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-12-15",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-16",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 34
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-17",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 29
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 28
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_4574",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2027-01-02",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_9594",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2027-01-02",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_236",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2027-01-02",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_37",
+    "origin": "HUI",
+    "destination": "VCA",
+    "date": "2027-01-02",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": []
+ },
+ "ewallet": {
+  "balance": 1500000,
+  "transactions": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_445",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_36",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_5679",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_2749",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_351",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_3165",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_886",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_247",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_613",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 149000,
+    "due_date": "2026-12-17",
+    "paid": false
+   },
+   {
+    "id": "bill_180",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 200000,
+    "due_date": "2026-12-21",
+    "paid": false
+   },
+   {
+    "id": "bill_4049",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 224000,
+    "due_date": "2026-12-21",
+    "paid": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,480 @@
+{
+ "_meta": {
+  "question_id": "train_1096",
+  "current_time": "2026-12-08T17:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "phone.call",
+   "phone.recent_calls",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_248",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_234",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_2782",
+    "time": "2026-12-07T11:00:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_885",
+    "time": "2026-12-08T09:45:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_554",
+    "time": "2026-12-08T16:05:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_258",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 195000,
+    "due_date": "2026-12-12",
+    "paid": false
+   },
+   {
+    "id": "bill_3015",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 217000,
+    "due_date": "2026-12-15",
+    "paid": false
+   },
+   {
+    "id": "bill_9433",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 214000,
+    "due_date": "2026-12-11",
+    "paid": false
+   },
+   {
+    "id": "bill_4472",
+    "type": "tuition",
+    "provider": "Dũng Haru",
+    "amount": 1450000,
+    "due_date": "2026-12-10",
+    "paid": false
+   },
+   {
+    "id": "bill_816",
+    "type": "tuition",
+    "provider": "Hàn ngữ KORA",
+    "amount": 1200000,
+    "due_date": "2026-12-14",
+    "paid": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_837",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_239",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_363",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": false
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_632",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-14T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_337",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-13T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_5267",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-09T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_583",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09915746494"
+   },
+   {
+    "id": "c_7939",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09199574240"
+   },
+   {
+    "id": "c_988",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09501938577"
+   },
+   {
+    "id": "c_109",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09101251739"
+   },
+   {
+    "id": "c_627",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09740936840"
+   },
+   {
+    "id": "c_728",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09746770820"
+   },
+   {
+    "id": "c_619",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09903660407"
+   },
+   {
+    "id": "c_6597",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09431141867"
+   },
+   {
+    "id": "c_739",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09508331234"
+   },
+   {
+    "id": "c_348",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09714384545"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_9787",
+    "name": "Tài khoản thanh toán",
+    "balance": 2900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_6686",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_5711",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_5482",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_871",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_341",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_7390",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_345",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_7052",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_404",
+    "title": "họp team",
+    "start": "2026-12-09T08:30:00+07:00",
+    "end": "2026-12-09T09:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_792",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-09T19:30:00+07:00",
+    "end": "2026-12-09T20:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_376",
+    "title": "họp phụ huynh",
+    "start": "2026-12-09T10:00:00+07:00",
+    "end": "2026-12-09T11:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_429",
+    "title": "khám răng",
+    "start": "2026-12-09T08:00:00+07:00",
+    "end": "2026-12-09T09:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_299",
+    "title": "đi chơi công viên",
+    "start": "2026-12-11T14:00:00+07:00",
+    "end": "2026-12-11T15:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

@@ -1,0 +1,556 @@
+{
+ "_meta": {
+  "question_id": "train_1339",
+  "current_time": "2026-10-18T15:05:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "library.reserve",
+   "library.search",
+   "notes.append",
+   "notes.create",
+   "notes.list"
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-18",
+    "to": "2026-10-18",
+    "kwh": 8.8,
+    "cost": 25500,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 4.0
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.8
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-12",
+    "to": "2026-10-18",
+    "kwh": 84.3,
+    "cost": 244500,
+    "days": [
+     {
+      "date": "2026-10-12",
+      "kwh": 16.0
+     },
+     {
+      "date": "2026-10-13",
+      "kwh": 11.0
+     },
+     {
+      "date": "2026-10-14",
+      "kwh": 14.3
+     },
+     {
+      "date": "2026-10-15",
+      "kwh": 8.5
+     },
+     {
+      "date": "2026-10-16",
+      "kwh": 15.3
+     },
+     {
+      "date": "2026-10-17",
+      "kwh": 10.4
+     },
+     {
+      "date": "2026-10-18",
+      "kwh": 8.8
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-18",
+    "kwh": 223.8,
+    "cost": 649000
+   }
+  },
+  "alert_threshold_kwh": 400
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_9854",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": false
+   },
+   {
+    "id": "book_4471",
+    "title": "Sapiens: A Graphic History",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_606",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": false
+   },
+   {
+    "id": "book_719",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_273",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_744",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-10-18T02:35:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_831",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-10-18T09:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_895",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-10-18T02:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_794",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-10-17T18:20:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_6018",
+    "from": "muontra@thuvienhanoi.example.test",
+    "from_name": "Thư viện Hà Nội",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sách quý độc giả đăng ký chờ đã có tại thư viện",
+    "snippet": "Cuốn sách quý độc giả đăng ký chờ đã được trả về.",
+    "body": "Kính gửi độc giả, cuốn Sapiens: A Graphic History mà quý độc giả đăng ký chờ đã được trả về thư viện. Quý độc giả vui lòng đặt giữ trên ứng dụng để thư viện để riêng tại quầy.",
+    "time": "2026-10-18T08:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_3390",
+    "from": "muontra@thuvienhanoi.example.test",
+    "from_name": "Thư viện Hà Nội",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Nhắc hạn trả sách",
+    "snippet": "Cuốn Số đỏ sắp đến hạn trả.",
+    "body": "Kính gửi độc giả, cuốn Số đỏ quý độc giả đang mượn sẽ đến hạn trả vào thứ tư tuần này.",
+    "time": "2026-10-16T09:10:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5120",
+    "from": "duongsinh@hangbac.example.test",
+    "from_name": "CLB Dưỡng sinh phường Hàng Bạc",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời buổi kick-off lớp dưỡng sinh mùa thu",
+    "snippet": "Kính mời các bác tới buổi kick-off lớp dưỡng sinh.",
+    "body": "Kính mời các bác tới buổi kick-off lớp dưỡng sinh mùa thu lúc bảy giờ sáng thứ bảy tại nhà văn hoá phường.",
+    "time": "2026-10-17T16:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_2387",
+    "from": "hoinguoicaotuoi@hoankiem.example.test",
+    "from_name": "Hội Người cao tuổi Hoàn Kiếm",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời kick-off giải cờ tướng mùa thu",
+    "snippet": "Hội trân trọng mời bác dự buổi kick-off giải cờ tướng.",
+    "body": "Hội trân trọng mời bác dự buổi kick-off giải cờ tướng mùa thu lúc chín giờ sáng chủ nhật tuần sau tại hội quán.",
+    "time": "2026-10-18T11:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_953",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09792164839"
+   },
+   {
+    "id": "c_259",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09274021375"
+   },
+   {
+    "id": "c_625",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09642531088"
+   },
+   {
+    "id": "c_667",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09164316112"
+   },
+   {
+    "id": "c_2630",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09426151918"
+   },
+   {
+    "id": "c_785",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09114812815"
+   },
+   {
+    "id": "c_1200",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09442263202"
+   },
+   {
+    "id": "c_825",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09967189953"
+   },
+   {
+    "id": "c_8105",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09572979390"
+   },
+   {
+    "id": "c_3301",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09876465735"
+   },
+   {
+    "id": "c_351",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09155917502"
+   },
+   {
+    "id": "c_4256",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09788994329"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_141",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_434",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_859",
+    "name": "Con dâu Hương",
+    "type": "direct",
+    "members": [
+     "Con dâu Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9824",
+    "name": "Thằng Tuấn",
+    "type": "direct",
+    "members": [
+     "Thằng Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_179",
+    "name": "Ông Ba",
+    "type": "direct",
+    "members": [
+     "Ông Ba"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_1254",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_2367",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_686",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_2087",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_705",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_849",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_187",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_895",
+    "title": "họp phụ huynh",
+    "start": "2026-10-21T14:30:00+07:00",
+    "end": "2026-10-21T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4586",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-19T10:00:00+07:00",
+    "end": "2026-10-19T11:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_793",
+    "title": "khám răng",
+    "start": "2026-10-19T19:30:00+07:00",
+    "end": "2026-10-19T20:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_841",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-21T18:00:00+07:00",
+    "end": "2026-10-21T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3934",
+    "title": "đi chơi công viên",
+    "start": "2026-10-19T19:00:00+07:00",
+    "end": "2026-10-19T20:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

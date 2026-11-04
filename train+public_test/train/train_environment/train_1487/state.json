@@ -1,0 +1,350 @@
+{
+ "_meta": {
+  "question_id": "train_1487",
+  "current_time": "2026-12-18T19:20:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "phone.call",
+   "phone.recent_calls",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_184",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09754555628"
+   },
+   {
+    "id": "c_5382",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09368756138"
+   },
+   {
+    "id": "c_209",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09992631526"
+   },
+   {
+    "id": "c_274",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09755547912"
+   },
+   {
+    "id": "c_318",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09216292494"
+   },
+   {
+    "id": "c_7713",
+    "name": "Olivia Browning",
+    "relation": "chủ nhà cho thuê",
+    "phone": "09381574026"
+   },
+   {
+    "id": "c_628",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09612900153"
+   },
+   {
+    "id": "c_978",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09135267777"
+   },
+   {
+    "id": "c_893",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09847520320"
+   },
+   {
+    "id": "c_2486",
+    "name": "Olivia Brown",
+    "relation": "cô giáo tiếng Anh của bé Bống",
+    "phone": "09627340158"
+   },
+   {
+    "id": "c_544",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09779082541"
+   },
+   {
+    "id": "c_71",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09154136920"
+   },
+   {
+    "id": "c_1640",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09193536152"
+   },
+   {
+    "id": "c_464",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09277405048"
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": "c_7713",
+    "phone_number": "09381574026",
+    "status": "dialing"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-15": {
+    "steps": 7016,
+    "calories": 280,
+    "distance_km": 5.1
+   },
+   "2026-12-16": {
+    "steps": 4824,
+    "calories": 192,
+    "distance_km": 3.5
+   },
+   "2026-12-17": {
+    "steps": 10512,
+    "calories": 420,
+    "distance_km": 7.6
+   },
+   "2026-12-18": {
+    "steps": 1613,
+    "calories": 64,
+    "distance_km": 1.2
+   }
+  },
+  "goal_steps": 6000,
+  "workouts": [
+   {
+    "id": "wo_9289",
+    "type": "gym",
+    "minutes": 20,
+    "time": "2026-12-16T18:00:00+07:00"
+   },
+   {
+    "id": "wo_4272",
+    "type": "gym",
+    "minutes": 45,
+    "time": "2026-12-14T18:30:00+07:00"
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25493
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27532
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 170.0
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_8170",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 210000,
+    "due_date": "2026-12-23",
+    "paid": false
+   },
+   {
+    "id": "bill_903",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 223000,
+    "due_date": "2026-12-21",
+    "paid": false
+   },
+   {
+    "id": "bill_747",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 850000,
+    "due_date": "2026-12-22",
+    "paid": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 27,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-18",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-21",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 31
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_1881",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2027-01-13",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_777",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-12-21",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_603",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2027-01-02",
+    "status": "paused",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_335",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-12-23",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_640",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_666",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_696",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_6540",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_886",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_427",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_968",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_215",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ }
+}

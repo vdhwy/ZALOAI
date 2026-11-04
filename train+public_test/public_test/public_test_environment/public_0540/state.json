@@ -1,0 +1,217 @@
+{
+ "_meta": {
+  "question_id": "public_0540",
+  "current_time": "2026-11-26T11:15:00+07:00",
+  "tools": [
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card"
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_4208",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_361",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_63",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 25
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_496",
+    "lot_id": "lot_4208",
+    "from_time": "2026-11-26T10:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-11-26T13:00:00+07:00",
+    "total": 120000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_9515",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_8839",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_57",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_04",
+    "title": "Khách phòng ba",
+    "content": "Khách phòng ba muốn thuê xe đạp sáng mai"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 0,
+  "routes": [
+   {
+    "id": "bus_417",
+    "name": "Tuyến 12",
+    "type": "bus",
+    "stops": [
+     "Nguyễn Sinh Cung",
+     "Đại Nội",
+     "Pilgrim Village",
+     "Lăng Khải Định"
+    ],
+    "fare": 8000,
+    "duration_min": 45,
+    "headway_min": 15,
+    "aliases": {
+     "homestay": "Nguyễn Sinh Cung",
+     "garden house": "Nguyễn Sinh Cung",
+     "nhà": "Nguyễn Sinh Cung"
+    }
+   },
+   {
+    "id": "bus_2690",
+    "name": "Tuyến 5",
+    "type": "bus",
+    "stops": [
+     "Nguyễn Sinh Cung",
+     "Chợ Đông Ba",
+     "Pilgrim Garden Hostel",
+     "Cầu ngói Thanh Toàn"
+    ],
+    "fare": 12000,
+    "duration_min": 50,
+    "headway_min": 20,
+    "aliases": {
+     "homestay": "Nguyễn Sinh Cung",
+     "garden house": "Nguyễn Sinh Cung",
+     "nhà": "Nguyễn Sinh Cung"
+    }
+   },
+   {
+    "id": "shuttle_88",
+    "name": "Xe điện Sông Hương",
+    "type": "shuttle",
+    "stops": [
+     "Bến Tòa Khâm",
+     "Đại Nội",
+     "Chợ Đông Ba"
+    ],
+    "fare": 20000,
+    "duration_min": 25,
+    "headway_min": 10
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Nguyễn Sinh Cung",
+    "route": "bus_417",
+    "time": "2026-11-26T13:30:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Sinh Cung",
+    "route": "bus_2690",
+    "time": "2026-11-26T13:40:00+07:00"
+   },
+   {
+    "stop": "Nguyễn Sinh Cung",
+    "route": "bus_417",
+    "time": "2026-11-26T13:45:00+07:00"
+   },
+   {
+    "stop": "Bến Tòa Khâm",
+    "route": "shuttle_88",
+    "time": "2026-11-26T11:30:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_7681",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_264",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_148",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_983",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_1743",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ }
+}

@@ -1,0 +1,365 @@
+{
+ "_meta": {
+  "question_id": "train_1017",
+  "current_time": "2026-11-19T14:20:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_290",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_145",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_819",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_18",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_2957",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_61",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_5366",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_2730",
+    "name": "bánh su kem",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_8942",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": true
+   },
+   {
+    "id": "item_795",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_727",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09453968431"
+   },
+   {
+    "id": "c_733",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09112303874"
+   },
+   {
+    "id": "c_721",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09119001708"
+   },
+   {
+    "id": "c_635",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09118022014"
+   },
+   {
+    "id": "c_1220",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09163889699"
+   },
+   {
+    "id": "c_981",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09838754846"
+   },
+   {
+    "id": "c_660",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09443460673"
+   },
+   {
+    "id": "c_3004",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09828521218"
+   },
+   {
+    "id": "c_535",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09764191276"
+   },
+   {
+    "id": "c_907",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09592560174"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_5299",
+    "title": "họp phụ huynh",
+    "start": "2026-11-21T10:30:00+07:00",
+    "end": "2026-11-21T11:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1948",
+    "title": "họp team",
+    "start": "2026-11-20T08:00:00+07:00",
+    "end": "2026-11-20T09:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5629",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-21T19:00:00+07:00",
+    "end": "2026-11-21T20:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_479",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-26",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_5925",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-26",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_220",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-26",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_1369",
+    "origin": "HAN",
+    "destination": "VCA",
+    "date": "2026-11-26",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_661",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_4166",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_7635",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_7973",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_16",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_686",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-16": {
+    "steps": 10599,
+    "calories": 423,
+    "distance_km": 7.6
+   },
+   "2026-11-17": {
+    "steps": 3434,
+    "calories": 137,
+    "distance_km": 2.5
+   },
+   "2026-11-18": {
+    "steps": 4737,
+    "calories": 189,
+    "distance_km": 3.4
+   },
+   "2026-11-19": {
+    "steps": 1079,
+    "calories": 43,
+    "distance_km": 0.8
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_3141",
+    "type": "gym",
+    "minutes": 30,
+    "time": "2026-11-18T06:30:00+07:00"
+   },
+   {
+    "id": "wo_420",
+    "type": "running",
+    "minutes": 30,
+    "time": "2026-11-16T06:00:00+07:00"
+   },
+   {
+    "id": "wo_146",
+    "type": "walking",
+    "minutes": 45,
+    "time": "2026-11-17T18:00:00+07:00"
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_8403",
+    "tracking_id": "EV602795887",
+    "carrier": "VNPost",
+    "name": "Ốp lưng điện thoại",
+    "status": "out_for_delivery",
+    "eta": "2026-11-19T10:00:00+07:00"
+   },
+   {
+    "id": "shp_5840",
+    "tracking_id": "JV805340981",
+    "carrier": "JetViệt Express",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-11-20T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ }
+}

@@ -1,0 +1,379 @@
+{
+ "_meta": {
+  "question_id": "train_0961",
+  "current_time": "2026-11-26T07:00:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 32,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-26",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-27",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 33
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-28",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-29",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 31
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6322",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09340046275"
+   },
+   {
+    "id": "c_143",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09737245715"
+   },
+   {
+    "id": "c_460",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09261539061"
+   },
+   {
+    "id": "c_679",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09545403864"
+   },
+   {
+    "id": "c_596",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09808192287"
+   },
+   {
+    "id": "c_485",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09263766346"
+   },
+   {
+    "id": "c_464",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09251869684"
+   },
+   {
+    "id": "c_384",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09486376069"
+   },
+   {
+    "id": "c_6653",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09803205153"
+   },
+   {
+    "id": "c_315",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09188719137"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-26",
+    "to": "2026-11-26",
+    "kwh": 4.0,
+    "cost": 11600,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 1.8
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 0.8
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-20",
+    "to": "2026-11-26",
+    "kwh": 68.0,
+    "cost": 197200,
+    "days": [
+     {
+      "date": "2026-11-20",
+      "kwh": 8.8
+     },
+     {
+      "date": "2026-11-21",
+      "kwh": 8.8
+     },
+     {
+      "date": "2026-11-22",
+      "kwh": 11.2
+     },
+     {
+      "date": "2026-11-23",
+      "kwh": 10.4
+     },
+     {
+      "date": "2026-11-24",
+      "kwh": 15.5
+     },
+     {
+      "date": "2026-11-25",
+      "kwh": 9.3
+     },
+     {
+      "date": "2026-11-26",
+      "kwh": 4.0
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-26",
+    "kwh": 275.7,
+    "cost": 799500
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_598",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 147000,
+    "due_date": "2026-11-29",
+    "paid": false
+   },
+   {
+    "id": "bill_9426",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 848000,
+    "due_date": "2026-12-03",
+    "paid": false
+   },
+   {
+    "id": "bill_438",
+    "type": "water",
+    "provider": "Dawaco",
+    "amount": 212000,
+    "due_date": "2026-11-28",
+    "paid": false
+   },
+   {
+    "id": "bill_40",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 220000,
+    "due_date": "2026-11-29",
+    "paid": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_816",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_516",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_655",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_754",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_7688",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_369",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_111",
+    "name": "Anh Bình",
+    "type": "direct",
+    "members": [
+     "Anh Bình"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2269",
+    "name": "Vợ",
+    "type": "direct",
+    "members": [
+     "Vợ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_622",
+    "name": "Khách Hàn",
+    "type": "direct",
+    "members": [
+     "Khách Hàn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_813",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_29",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-12-21",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_148",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-12-07",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_7788",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-12-06",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ }
+}

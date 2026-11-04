@@ -1,0 +1,605 @@
+{
+ "_meta": {
+  "question_id": "train_1407",
+  "current_time": "2026-10-21T18:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "sms.read_recent",
+   "sms.send",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 30,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-21",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-22",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-23",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-24",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 31
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_6237",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_59",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_506",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_413",
+    "show_id": "show_506",
+    "title": "Số 13: Gửi tiết kiệm hay mua vàng",
+    "number": 13,
+    "duration_min": 18,
+    "published": "2026-10-07"
+   },
+   {
+    "id": "ep_745",
+    "show_id": "show_59",
+    "title": "Số 15: Vì sao bầu trời màu xanh",
+    "number": 15,
+    "duration_min": 18,
+    "published": "2026-09-30"
+   },
+   {
+    "id": "ep_908",
+    "show_id": "show_506",
+    "title": "Số 12: Lập quỹ khẩn cấp",
+    "number": 12,
+    "duration_min": 32,
+    "published": "2026-09-30"
+   },
+   {
+    "id": "ep_9599",
+    "show_id": "show_506",
+    "title": "Số 14: Quản lý chi tiêu gia đình",
+    "number": 14,
+    "duration_min": 45,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_582",
+    "show_id": "show_59",
+    "title": "Số 17: Lỗ đen là gì",
+    "number": 17,
+    "duration_min": 25,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_714",
+    "show_id": "show_6237",
+    "title": "Số 6: Trồng cây trên sân thượng",
+    "number": 6,
+    "duration_min": 45,
+    "published": "2026-10-07"
+   },
+   {
+    "id": "ep_224",
+    "show_id": "show_59",
+    "title": "Số 16: Giấc ngủ và trí nhớ",
+    "number": 16,
+    "duration_min": 32,
+    "published": "2026-10-07"
+   },
+   {
+    "id": "ep_236",
+    "show_id": "show_6237",
+    "title": "Số 7: Đi xe đạp đi làm",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-14"
+   },
+   {
+    "id": "ep_5960",
+    "show_id": "show_6237",
+    "title": "Số 5: Rác thải nhựa ở đô thị",
+    "number": 5,
+    "duration_min": 32,
+    "published": "2026-09-30"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_394",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_635",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_87",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_111",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_458",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-10-21T01:40:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_3071",
+    "title": "Chuyên gia Sophie Martin: đọc sách cùng con mỗi tối mười lăm phút",
+    "topic": "education",
+    "source": "Giáo dục Thủ đô",
+    "published_at": "2026-10-21T07:15:00+07:00",
+    "summary": "Nhà giáo dục người Pháp chia sẻ cách giúp học sinh cấp hai yêu thích đọc sách."
+   },
+   {
+    "id": "art_6278",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-10-21T00:10:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_45",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-10-20T19:40:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_822",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-10-20T23:10:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_516",
+    "title": "Sophia Martin giành huy chương vàng bơi tự do tại Hà Nội",
+    "topic": "sports",
+    "source": "Thể thao Thủ đô",
+    "published_at": "2026-10-21T09:30:00+07:00",
+    "summary": "Vận động viên trẻ phá kỷ lục giải bơi mở rộng."
+   }
+  ],
+  "saved": []
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_8642",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_53",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_248",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_76",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_9149",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_768",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_97",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_575",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_424",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_630",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09665873464"
+   },
+   {
+    "id": "c_453",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09989265806"
+   },
+   {
+    "id": "c_820",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09365052987"
+   },
+   {
+    "id": "c_863",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09393626884"
+   },
+   {
+    "id": "c_4457",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09879147612"
+   },
+   {
+    "id": "c_127",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09729646878"
+   },
+   {
+    "id": "c_450",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09584111414"
+   },
+   {
+    "id": "c_424",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09419225260"
+   },
+   {
+    "id": "c_8653",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09107647228"
+   },
+   {
+    "id": "c_986",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09646786095"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_3239",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 12000,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_8749",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 600,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_9518",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-11-14",
+    "used": false
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_576",
+    "time": "2026-10-22T07:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_582",
+    "time": "2026-10-22T08:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_03",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-10-22T05:45:00+07:00"
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_7199",
+    "tracking_id": "GST760656641",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Giày thể thao",
+    "status": "out_for_delivery",
+    "eta": "2026-10-21T14:00:00+07:00"
+   },
+   {
+    "id": "shp_944",
+    "tracking_id": "EV480761873",
+    "carrier": "VNPost",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-10-24T17:00:00+07:00"
+   },
+   {
+    "id": "shp_183",
+    "tracking_id": "STP307212700",
+    "carrier": "SaoTel Post",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "delivered",
+    "eta": "2026-10-20T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ }
+}

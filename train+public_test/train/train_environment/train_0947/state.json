@@ -1,0 +1,305 @@
+{
+ "_meta": {
+  "question_id": "train_0947",
+  "current_time": "2026-12-14T08:45:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "library.reserve",
+   "library.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_4662",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_156",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_7062",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_780",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_89",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_980",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_6821",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_872",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_2460",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_658",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09311440967"
+   },
+   {
+    "id": "c_358",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09872848769"
+   },
+   {
+    "id": "c_9170",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09479926837"
+   },
+   {
+    "id": "c_980",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09962691136"
+   },
+   {
+    "id": "c_440",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09691755327"
+   },
+   {
+    "id": "c_9841",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09411378935"
+   },
+   {
+    "id": "c_732",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09504221250"
+   },
+   {
+    "id": "c_381",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09494690179"
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_702",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_7622",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_9914",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_1258",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_3435",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 300
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25561
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27605
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 170.4
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 29,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-12-14",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-15",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-16",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 29
+   },
+   {
+    "location": "Huế",
+    "date": "2026-12-17",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_01",
+    "contact_id": "c_358",
+    "phone_number": "09872848769",
+    "direction": "incoming",
+    "content": "Ngọc ơi, bà có cuốn Mắt biếc chưa, cho tui mượn đọc với nghe!"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ }
+}

@@ -1,0 +1,386 @@
+{
+ "_meta": {
+  "question_id": "public_0640",
+  "current_time": "2026-10-30T12:05:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "event_tickets.book",
+   "event_tickets.search",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "phone.call",
+   "phone.recent_calls",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_393",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_265",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_348",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_429",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_6428",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   }
+  ],
+  "cart": [
+   {
+    "product_id": "gro_429",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "quantity": 2
+   },
+   {
+    "product_id": "gro_393",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "quantity": 1
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_709",
+    "items": [
+     {
+      "product_id": "gro_393",
+      "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+      "price": 35000,
+      "quantity": 1
+     }
+    ],
+    "total": 35000,
+    "status": "delivered",
+    "delivery_time": "2026-10-22T09:00:00+07:00"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_9698",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-31T18:00:00+07:00",
+    "end": "2026-10-31T19:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_90",
+    "title": "đá bóng",
+    "start": "2026-10-31T14:00:00+07:00",
+    "end": "2026-10-31T15:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_331",
+    "title": "khám răng",
+    "start": "2026-11-02T14:00:00+07:00",
+    "end": "2026-11-02T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_435",
+    "title": "đi chơi công viên",
+    "start": "2026-10-31T14:00:00+07:00",
+    "end": "2026-10-31T15:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_325",
+    "title": "họp team",
+    "start": "2026-10-31T09:00:00+07:00",
+    "end": "2026-10-31T10:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_434",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-11-04",
+    "time": "18:00",
+    "venue": "Nhà hát Hòa Bình",
+    "price": 600000,
+    "available": 30
+   },
+   {
+    "id": "event_5576",
+    "name": "Chung kết bóng đá V-League",
+    "category": "thể thao",
+    "date": "2026-11-12",
+    "time": "20:00",
+    "venue": "Sân vận động Thống Nhất",
+    "price": 200000,
+    "available": 12
+   },
+   {
+    "id": "event_720",
+    "name": "Stand-up comedy Sài Gòn Cười",
+    "category": "hài kịch",
+    "date": "2026-11-11",
+    "time": "18:00",
+    "venue": "Saigon Opera House",
+    "price": 300000,
+    "available": 80
+   },
+   {
+    "id": "event_795",
+    "name": "Đêm nhạc Jazz cuối tuần",
+    "category": "âm nhạc",
+    "date": "2026-11-12",
+    "time": "18:00",
+    "venue": "Nhà hát Thành phố",
+    "price": 450000,
+    "available": 12
+   },
+   {
+    "id": "event_380",
+    "name": "Liên hoan phim ngắn",
+    "category": "điện ảnh",
+    "date": "2026-11-09",
+    "time": "19:30",
+    "venue": "Saigon Opera House",
+    "price": 120000,
+    "available": 80
+   }
+  ],
+  "bookings": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_501",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7380",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6612",
+    "name": "Anh Long",
+    "type": "direct",
+    "members": [
+     "Anh Long"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Anh ơi gửi em địa chỉ để em đặt đồ ăn sang cho anh nha.",
+      "time": "2026-10-29T20:10:00+07:00"
+     },
+     {
+      "from": "Anh Long",
+      "content": "Gửi về căn hộ Willowbrook Residence, 21 Quốc Hương, Thảo Điền cũng được, hay gửi lên khách sạn Willowbrook Suites, 15 Lê Thánh Tôn, Quận 1 chỗ anh đang làm sự kiện cũng được em.",
+      "time": "2026-10-29T20:32:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_205",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9971",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3165",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

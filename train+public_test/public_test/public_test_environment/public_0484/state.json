@@ -1,0 +1,324 @@
+{
+ "_meta": {
+  "question_id": "public_0484",
+  "current_time": "2026-11-03T22:20:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "gold_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "pantry.consume",
+   "pantry.list_items",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_5342",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_730",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_508",
+    "name": "mì tôm",
+    "stock": 0,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_6391",
+    "name": "yến mạch",
+    "stock": 1,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_625",
+    "name": "sữa tươi",
+    "stock": 6,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_471",
+    "name": "gạo ST25",
+    "stock": 6,
+    "unit": "kg"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 130500000,
+    "sell": 132500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 124500000,
+    "sell": 126500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 3944
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "plug_kettle",
+    "name": "ổ cắm ấm siêu tốc bếp",
+    "type": "plug",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off"
+    }
+   },
+   {
+    "id": "plug_bedkettle",
+    "name": "ổ cắm bình đun nước phòng ngủ",
+    "type": "plug",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off"
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_136",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09852804062"
+   },
+   {
+    "id": "c_724",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09104965486"
+   },
+   {
+    "id": "c_6787",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09566044712"
+   },
+   {
+    "id": "c_485",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09714525272"
+   },
+   {
+    "id": "c_321",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09926288329"
+   },
+   {
+    "id": "c_476",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09568348924"
+   },
+   {
+    "id": "c_7040",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09140199799"
+   },
+   {
+    "id": "c_3970",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09677364068"
+   },
+   {
+    "id": "c_7161",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09956656624"
+   },
+   {
+    "id": "c_502",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09424661721"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_6914",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_1376",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_577",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_396",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ }
+}

@@ -1,0 +1,271 @@
+{
+ "_meta": {
+  "question_id": "train_1308",
+  "current_time": "2026-10-27T20:15:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_3110",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09681985523"
+   },
+   {
+    "id": "c_854",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09737783060"
+   },
+   {
+    "id": "c_2863",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09453399596"
+   },
+   {
+    "id": "c_325",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09506671969"
+   },
+   {
+    "id": "c_894",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09274548256"
+   },
+   {
+    "id": "c_543",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09878639268"
+   },
+   {
+    "id": "c_262",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09524575625"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 90,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_74",
+    "name": "phòng khách",
+    "area_m2": 22
+   },
+   {
+    "id": "room_385",
+    "name": "bếp",
+    "area_m2": 15
+   },
+   {
+    "id": "room_2503",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   }
+  ],
+  "current_job": null
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_579",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-02T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_1478",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-31T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_737",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-01T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_1519",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-02T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_7489",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_9477",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   },
+   {
+    "id": "rule_7602",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_102",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": false
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_255",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_198",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_882",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_806",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_620",
+    "time": "2026-10-27T18:50:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_1211",
+    "time": "2026-10-26T08:40:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_842",
+    "time": "2026-10-27T06:35:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_384",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_725",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_900",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_3186",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_797",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "phone": {
+  "calls": []
+ }
+}

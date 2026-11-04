@@ -1,0 +1,471 @@
+{
+ "_meta": {
+  "question_id": "train_1237",
+  "current_time": "2026-12-04T14:10:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_557",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-12-05T15:30:00+07:00",
+    "link": "https://meet.example.test/fml-pgtn-dqe",
+    "attendees": [
+     "c_696"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_1739",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-12-05T09:30:00+07:00",
+    "link": "https://meet.example.test/fsw-fjmd-gwi",
+    "attendees": [
+     "c_2396"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_9682",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-12-06T08:30:00+07:00",
+    "link": "https://meet.example.test/bzo-sgnn-gkd",
+    "attendees": [
+     "c_859",
+     "c_236"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_2019",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Thảo Điền",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_460",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_632",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_3732",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_49",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-12-02T13:55:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_566",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-12-01T20:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_562",
+    "from": "anhlong@gmail.example.test",
+    "from_name": "Anh Long",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-12-02T04:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_7260",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-12-01T23:25:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_816",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-12-02T23:55:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_832",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_602",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_8008",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_907",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_6055",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_3172",
+    "name": "Nhà hàng Hoa Viên",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19036612345017"
+   },
+   {
+    "id": "ben_548",
+    "name": "Studio Mây",
+    "bank": "Bắc Hà Bank",
+    "account_number": "2468013579"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_7731",
+    "account_id": "acc_832",
+    "beneficiary_id": "ben_8008",
+    "amount": -8500000,
+    "note": "Tiền nhà tháng 12",
+    "time": "2026-12-01T09:12:00+07:00"
+   },
+   {
+    "id": "tx_7790",
+    "account_id": "acc_832",
+    "beneficiary_id": "ben_3172",
+    "amount": -2000000,
+    "note": "Cọc đặt bàn - Nhà hàng Hoa Viên, 28 Mạc Đĩnh Chi, Quận 1",
+    "time": "2026-12-03T10:05:00+07:00"
+   },
+   {
+    "id": "tx_7804",
+    "account_id": "acc_832",
+    "beneficiary_id": "ben_548",
+    "amount": -1500000,
+    "note": "Cọc chụp ảnh - Studio Mây, 120 Lý Chính Thắng, Quận 3",
+    "time": "2026-12-03T16:40:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_7979",
+    "name": "Lan",
+    "relation": "đồng nghiệp",
+    "phone": "09302927080"
+   },
+   {
+    "id": "c_968",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09871042360"
+   },
+   {
+    "id": "c_2396",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09189992096"
+   },
+   {
+    "id": "c_696",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09210405753"
+   },
+   {
+    "id": "c_859",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09555622969"
+   },
+   {
+    "id": "c_5580",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09488548859"
+   },
+   {
+    "id": "c_236",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09801463225"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_725",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_3939",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_5011",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_615",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_903",
+    "contact_id": "c_859",
+    "phone_number": "09555622969",
+    "status": "completed",
+    "time": "2026-12-04T09:20:00+07:00"
+   },
+   {
+    "id": "call_918",
+    "contact_id": "c_5580",
+    "phone_number": "09488548859",
+    "status": "missed",
+    "time": "2026-12-04T13:58:00+07:00"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_891",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_850",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_6130",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_9565",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_3737",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 45
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_9698",
+    "name": "Lau nhà",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_695",
+    "name": "Tưới cây",
+    "assignee": "Mẹ",
+    "done": true
+   },
+   {
+    "id": "chore_1550",
+    "name": "Nấu cơm tối",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_2035",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": null,
+    "done": true
+   },
+   {
+    "id": "chore_2271",
+    "name": "Giặt quần áo",
+    "assignee": "Mẹ",
+    "done": true
+   }
+  ],
+  "members": [
+   "Chị My",
+   "Mẹ",
+   "Tuấn"
+  ]
+ }
+}

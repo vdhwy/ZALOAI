@@ -1,0 +1,428 @@
+{
+ "_meta": {
+  "question_id": "train_1647",
+  "current_time": "2026-11-23T20:55:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_1534",
+    "name": "Phơi quần áo",
+    "assignee": "Anh Phúc",
+    "done": false
+   },
+   {
+    "id": "chore_334",
+    "name": "Rửa bát",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_477",
+    "name": "Lau nhà",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_510",
+    "name": "Giặt quần áo",
+    "assignee": "Tuấn",
+    "done": true
+   },
+   {
+    "id": "chore_953",
+    "name": "Đi chợ",
+    "assignee": "Anh Phúc",
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Phúc",
+   "Tuấn",
+   "Lan"
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_6206",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_554",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_233",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_236",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_955",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_108",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_1658",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_409",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_955",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 1,
+      "note": null
+     },
+     {
+      "item_id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 65000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_108",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 39000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_8662",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-26T19:00:00+07:00",
+    "end": "2026-11-26T20:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_671",
+    "title": "đá bóng",
+    "start": "2026-11-25T09:00:00+07:00",
+    "end": "2026-11-25T10:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_253",
+    "title": "họp phụ huynh",
+    "start": "2026-11-26T09:00:00+07:00",
+    "end": "2026-11-26T10:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "status": "confirmed",
+    "title": "Dẫn đoàn đi Bà Nà",
+    "start": "2026-11-27T07:00:00+07:00",
+    "end": "2026-11-27T17:00:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_786",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09576129818"
+   },
+   {
+    "id": "c_336",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09472220635"
+   },
+   {
+    "id": "c_44",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09998035889"
+   },
+   {
+    "id": "c_8582",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09634988760"
+   },
+   {
+    "id": "c_184",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09909324882"
+   },
+   {
+    "id": "c_9278",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09755663034"
+   },
+   {
+    "id": "c_880",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09901788563"
+   },
+   {
+    "id": "c_736",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09903497461"
+   },
+   {
+    "id": "c_394",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09621860293"
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_268",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-26T10:00:00+07:00",
+    "link": "https://meet.example.test/igx-cafy-hht",
+    "attendees": [
+     "c_394"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_5357",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-11-26T14:00:00+07:00",
+    "link": "https://meet.example.test/zgh-rxsn-ule",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_428",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-24T15:30:00+07:00",
+    "link": "https://meet.example.test/kdd-amla-sqh",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_736",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-25T20:30:00+07:00",
+    "link": "https://meet.example.test/ixv-hfia-qal",
+    "attendees": [
+     "c_786"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi Khách Hàn chốt lịch tour",
+    "time": "2026-11-23T15:00:00+07:00"
+   },
+   {
+    "id": "rem_02",
+    "repeat": "once",
+    "done": false,
+    "content": "Ra khách sạn đón đoàn",
+    "time": "2026-11-27T05:00:00+07:00"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ }
+}

@@ -1,0 +1,306 @@
+{
+ "_meta": {
+  "question_id": "train_0921",
+  "current_time": "2026-10-23T20:00:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "fuel_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_204",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-10-24T08:00:00+07:00",
+    "link": "https://meet.example.test/opl-hgby-ylj",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_6832",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-10-26T09:00:00+07:00",
+    "link": "https://meet.example.test/whp-ucjb-bho",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_176",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-10-25T09:00:00+07:00",
+    "link": "https://meet.example.test/bbm-irsv-qct",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_550",
+    "title": "Họp lớp online",
+    "start": "2026-10-26T10:30:00+07:00",
+    "link": "https://meet.example.test/otz-bnad-cgl",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22200
+   },
+   {
+    "type": "e5",
+    "price": 21000
+   },
+   {
+    "type": "diesel",
+    "price": 19600
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25321
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27346
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 168.8
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_986",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_173",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_933",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_211",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_8688",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_326",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_5224",
+    "time": "2026-10-24T07:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_2402",
+    "time": "2026-10-24T06:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_47",
+    "time": "2026-10-24T06:15:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-19": {
+    "steps": 9380,
+    "calories": 375,
+    "distance_km": 6.8
+   },
+   "2026-10-20": {
+    "steps": 7212,
+    "calories": 288,
+    "distance_km": 5.2
+   },
+   "2026-10-21": {
+    "steps": 8691,
+    "calories": 347,
+    "distance_km": 6.3
+   },
+   "2026-10-22": {
+    "steps": 6142,
+    "calories": 245,
+    "distance_km": 4.4
+   },
+   "2026-10-23": {
+    "steps": 2372,
+    "calories": 94,
+    "distance_km": 1.7
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_7260",
+    "type": "walking",
+    "minutes": 20,
+    "time": "2026-10-20T18:00:00+07:00"
+   }
+  ]
+ }
+}

@@ -1,0 +1,422 @@
+{
+ "_meta": {
+  "question_id": "train_1691",
+  "current_time": "2026-11-14T12:50:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_651",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0,
+    "detail": "Học phí 1.500.000đ trọn khoá; nhận thanh toán QR ví điện tử",
+    "merchant_id": "mch_3907"
+   },
+   {
+    "id": "course_1569",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_452",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 12,
+    "progress_minutes": 0,
+    "detail": "Học phí 1.200.000đ trọn khoá 12 buổi; nhận thanh toán QR ví điện tử",
+    "merchant_id": "mch_8126"
+   },
+   {
+    "id": "course_695",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 300
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_538",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_883",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_16",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_390",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_1163",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_879",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_1109",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_314",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_568",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09993269658"
+   },
+   {
+    "id": "c_731",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09694359296"
+   },
+   {
+    "id": "c_313",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09723848753"
+   },
+   {
+    "id": "c_245",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09467667421"
+   },
+   {
+    "id": "c_504",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09909064692"
+   },
+   {
+    "id": "c_3518",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09881062677"
+   },
+   {
+    "id": "c_6201",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09225281267"
+   },
+   {
+    "id": "c_472",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09451343425"
+   },
+   {
+    "id": "c_4725",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09402496217"
+   },
+   {
+    "id": "c_513",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09435920787"
+   },
+   {
+    "id": "c_7356",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09181955165"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_4591",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_928",
+    "name": "Tài khoản thanh toán",
+    "balance": 8000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_345",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_709",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_974",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_01",
+    "account_id": "acc_928",
+    "beneficiary_id": "ben_709",
+    "amount": -4500000,
+    "note": null
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_667",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 155000,
+    "due_date": "2026-11-19",
+    "paid": false
+   },
+   {
+    "id": "bill_184",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 225000,
+    "due_date": "2026-11-20",
+    "paid": false
+   },
+   {
+    "id": "bill_463",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 197000,
+    "due_date": "2026-11-17",
+    "paid": false
+   },
+   {
+    "id": "bill_3514",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 855000,
+    "due_date": "2026-11-20",
+    "paid": true,
+    "paid_with": "bank"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_7573",
+    "name": "Rửa bát",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_690",
+    "name": "Lau nhà",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_418",
+    "name": "Nấu cơm tối",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_8349",
+    "name": "Giặt quần áo",
+    "assignee": null,
+    "done": true
+   }
+  ],
+  "members": [
+   "Chị Hạnh",
+   "Bé Na",
+   "Bố",
+   "Lan"
+  ]
+ }
+}

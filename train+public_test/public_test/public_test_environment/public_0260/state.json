@@ -1,0 +1,229 @@
+{
+ "_meta": {
+  "question_id": "public_0260",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_01",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_02",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_03",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_04",
+    "name": "Bãi cổng phía tây SVĐ Mỹ Đình, ô W09",
+    "address": "Lê Đức Thọ, Nam Từ Liêm, Hà Nội",
+    "area": "Mỹ Đình",
+    "price_per_hour": 30000,
+    "available_spots": 1
+   },
+   {
+    "id": "lot_05",
+    "name": "Bãi cổng phía tây SVĐ Mỹ Đình, ô W12",
+    "address": "Lê Đức Thọ, Nam Từ Liêm, Hà Nội",
+    "area": "Mỹ Đình",
+    "price_per_hour": 35000,
+    "available_spots": 1
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_01",
+    "lot_id": "lot_03",
+    "from_time": "2026-09-25T08:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-09-25T11:00:00+07:00",
+    "total": 105000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_02",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_03",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_04",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "public_transit": {
+  "card_balance": 0,
+  "routes": [
+   {
+    "id": "bus_32",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_3",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_32",
+    "time": "2026-09-25T09:10:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_32",
+    "time": "2026-09-25T09:20:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_32",
+    "time": "2026-09-25T09:30:00+07:00"
+   },
+   {
+    "stop": "Nhổn",
+    "route": "metro_3",
+    "time": "2026-09-25T09:09:00+07:00"
+   },
+   {
+    "stop": "Nhổn",
+    "route": "metro_3",
+    "time": "2026-09-25T09:19:00+07:00"
+   },
+   {
+    "stop": "Nhổn",
+    "route": "metro_3",
+    "time": "2026-09-25T09:29:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:04:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:12:00+07:00"
+   },
+   {
+    "stop": "Cát Linh",
+    "route": "metro_2a",
+    "time": "2026-09-25T09:20:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

@@ -1,0 +1,386 @@
+{
+ "_meta": {
+  "question_id": "train_1511",
+  "current_time": "2026-10-31T21:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track"
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 124700000,
+    "sell": 126700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 118700000,
+    "sell": 120700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4267
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_7222",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_943",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_841",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_294",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_862",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_840",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_253",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_7798",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_7883",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_458",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_4818",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_156",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25825
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27891
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 172.2
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-01T05:30:00+07:00"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_7603",
+    "name": "Xe đạp điện 201",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 30000
+   },
+   {
+    "id": "bike_552",
+    "name": "Xe đạp đôi 206",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_4417",
+    "name": "Xe đạp thể thao 204",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 20000
+   },
+   {
+    "id": "bike_3701",
+    "name": "Xe đạp thể thao 202",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": false,
+    "price_per_hour": 20000
+   },
+   {
+    "id": "bike_810",
+    "name": "Xe đạp thường 203",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_40",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Chợ Xuân Khánh",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_879",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09313529293"
+   },
+   {
+    "id": "c_289",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09241097574"
+   },
+   {
+    "id": "c_7593",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09577842585"
+   },
+   {
+    "id": "c_250",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09795903428"
+   },
+   {
+    "id": "c_820",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09750616756"
+   },
+   {
+    "id": "c_275",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09417462496"
+   },
+   {
+    "id": "c_3877",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09350929760"
+   },
+   {
+    "id": "c_779",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09997388531"
+   },
+   {
+    "id": "c_922",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09634894395"
+   },
+   {
+    "id": "c_6021",
+    "name": "Mia Fischer",
+    "relation": "khách Đức",
+    "phone": "09183307462",
+    "email": "mia.fischer@hanse.example.test"
+   },
+   {
+    "id": "c_934",
+    "name": "Mia Fisher",
+    "relation": "khách Úc",
+    "phone": "09846152093",
+    "email": "mia.fisher@outback.example.test"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_182",
+    "tracking_id": "GST624142178",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Áo khoác gió",
+    "status": "in_transit",
+    "eta": "2026-11-03T17:00:00+07:00"
+   },
+   {
+    "id": "shp_985",
+    "tracking_id": "STP255051616",
+    "carrier": "SaoTel Post",
+    "name": "Hộp quà Trung thu",
+    "status": "delivered",
+    "eta": "2026-10-30T14:00:00+07:00"
+   },
+   {
+    "id": "shp_536",
+    "tracking_id": "MDXVN234207233",
+    "carrier": "MDX Express",
+    "name": "Giày thể thao",
+    "status": "out_for_delivery",
+    "eta": "2026-10-31T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ }
+}

@@ -1,0 +1,388 @@
+{
+ "_meta": {
+  "question_id": "train_1362",
+  "current_time": "2026-11-21T17:50:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_981",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_9358",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_744",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_8170",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_899",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": true
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_1873",
+    "name": "Vợ",
+    "type": "direct",
+    "members": [
+     "Vợ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6408",
+    "name": "Evergreen Farms",
+    "type": "direct",
+    "members": [
+     "Evergreen Farms"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_25",
+    "name": "Thằng Bi",
+    "type": "direct",
+    "members": [
+     "Thằng Bi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6391",
+    "name": "Evergreen Foods",
+    "type": "group",
+    "members": [
+     "Chị Ngân điều phối",
+     "Anh Quốc thủ kho"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8165",
+    "name": "Anh Sáu",
+    "type": "direct",
+    "members": [
+     "Anh Sáu"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_180",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-18T23:50:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_455",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-21T10:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_779",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-19T06:20:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_6021",
+    "from": "dieuphoi@evergreenfoods.example.test",
+    "from_name": "Evergreen Foods",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch lấy hàng tối nay",
+    "snippet": "Anh Tuấn lấy hàng ở kho Tân Bình lúc sáu giờ rưỡi tối nay nhé.",
+    "body": "Chào anh Tuấn, anh lấy giúp bên em 12 thùng hàng ở kho Tân Bình, 18 Cộng Hoà, lúc 18:30 tối nay 21/11. Tới cổng sau gọi chị Ngân điều phối.",
+    "time": "2026-11-21T16:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_6033",
+    "from": "lienhe@evergreenfarms.example.test",
+    "from_name": "Evergreen Farms",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Chuyến giao rau sáng mai",
+    "snippet": "Anh nhận giúp chuyến giao rau lúc sáu giờ sáng mai được không?",
+    "body": "Anh Tuấn ơi, sáng mai 22/11 lúc 6:00 bên em có chuyến giao rau từ Hóc Môn về Quận 3, anh nhận được không ạ?",
+    "time": "2026-11-21T17:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_702",
+    "title": "đá bóng",
+    "start": "2026-11-23T15:30:00+07:00",
+    "end": "2026-11-23T16:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_316",
+    "title": "đi chơi công viên",
+    "start": "2026-11-22T14:30:00+07:00",
+    "end": "2026-11-22T15:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_266",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-22T08:00:00+07:00",
+    "end": "2026-11-22T09:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_935",
+    "title": "khám răng",
+    "start": "2026-11-24T15:30:00+07:00",
+    "end": "2026-11-24T16:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9981",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-24T18:00:00+07:00",
+    "end": "2026-11-24T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_265",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_411",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_116",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_321",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_509",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_4061",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-18": {
+    "steps": 6126,
+    "calories": 245,
+    "distance_km": 4.4
+   },
+   "2026-11-19": {
+    "steps": 9288,
+    "calories": 371,
+    "distance_km": 6.7
+   },
+   "2026-11-20": {
+    "steps": 7302,
+    "calories": 292,
+    "distance_km": 5.3
+   },
+   "2026-11-21": {
+    "steps": 3756,
+    "calories": 150,
+    "distance_km": 2.7
+   }
+  },
+  "goal_steps": 6000,
+  "workouts": [
+   {
+    "id": "wo_891",
+    "type": "gym",
+    "minutes": 45,
+    "time": "2026-11-18T18:30:00+07:00"
+   },
+   {
+    "id": "wo_598",
+    "type": "walking",
+    "minutes": 60,
+    "time": "2026-11-17T17:30:00+07:00"
+   },
+   {
+    "id": "wo_576",
+    "type": "running",
+    "minutes": 45,
+    "time": "2026-11-19T06:30:00+07:00"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "robot_vacuum": {
+  "battery": 100,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_4809",
+    "name": "hành lang",
+    "area_m2": 22
+   },
+   {
+    "id": "room_910",
+    "name": "phòng làm việc",
+    "area_m2": 25
+   },
+   {
+    "id": "room_435",
+    "name": "bếp",
+    "area_m2": 18
+   },
+   {
+    "id": "room_4289",
+    "name": "phòng khách",
+    "area_m2": 22
+   },
+   {
+    "id": "room_663",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   },
+   {
+    "id": "room_188",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 22
+   }
+  ],
+  "current_job": null
+ }
+}

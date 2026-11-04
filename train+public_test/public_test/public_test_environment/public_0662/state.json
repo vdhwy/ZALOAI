@@ -1,0 +1,429 @@
+{
+ "_meta": {
+  "question_id": "public_0662",
+  "current_time": "2026-11-01T19:20:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "sms.read_recent",
+   "sms.send",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_548",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Cần Thơ",
+    "destination": "Lào Cai",
+    "date": "2026-11-05",
+    "depart": "06:00",
+    "arrive": "16:30",
+    "price": 320000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_586",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Cần Thơ",
+    "destination": "Hải Phòng",
+    "date": "2026-11-04",
+    "depart": "08:00",
+    "arrive": "15:00",
+    "price": 920000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_7801",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Cần Thơ",
+    "destination": "Hải Phòng",
+    "date": "2026-11-04",
+    "depart": "13:00",
+    "arrive": "16:00",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_897",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Cần Thơ",
+    "destination": "Lào Cai",
+    "date": "2026-11-05",
+    "depart": "19:00",
+    "arrive": "00:30",
+    "price": 450000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_1533",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Cần Thơ",
+    "destination": "Lào Cai",
+    "date": "2026-11-05",
+    "depart": "08:00",
+    "arrive": "18:30",
+    "price": 250000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_809",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Cần Thơ",
+    "destination": "Hải Phòng",
+    "date": "2026-11-04",
+    "depart": "13:00",
+    "arrive": "18:00",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_993",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Cần Thơ",
+    "destination": "Hải Phòng",
+    "date": "2026-11-04",
+    "depart": "08:00",
+    "arrive": "15:00",
+    "price": 250000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_3955",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Cần Thơ",
+    "destination": "Lào Cai",
+    "date": "2026-11-05",
+    "depart": "06:00",
+    "arrive": "11:00",
+    "price": 450000,
+    "seats_left": 2
+   }
+  ],
+  "bookings": []
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_7432",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   },
+   {
+    "id": "gro_4045",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_714",
+    "name": "Chuối già Nam Mỹ 1kg",
+    "price": 28000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_68",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_9304",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_7632",
+    "items": [
+     {
+      "product_id": "gro_68",
+      "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+      "price": 35000,
+      "quantity": 2
+     }
+    ],
+    "total": 70000,
+    "status": "delivered",
+    "delivery_time": "2026-10-29T09:00:00+07:00"
+   },
+   {
+    "id": "ord_02",
+    "items": [
+     {
+      "product_id": "gro_9304",
+      "name": "Gạo ST25 túi 5kg",
+      "price": 185000,
+      "quantity": 2
+     }
+    ],
+    "total": 370000,
+    "status": "placed"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_574",
+    "name": "Bãi xe Bến Ninh Kiều",
+    "address": "Hai Bà Trưng, Ninh Kiều, Cần Thơ",
+    "area": "Bến Ninh Kiều",
+    "price_per_hour": 30000,
+    "available_spots": 9
+   },
+   {
+    "id": "lot_978",
+    "name": "Bãi xe chợ Cái Răng",
+    "address": "Lê Bình, Cái Răng, Cần Thơ",
+    "area": "Cái Răng",
+    "price_per_hour": 20000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_2976",
+    "name": "Bãi đỗ xe Cái Khế",
+    "address": "Trần Văn Khéo, Ninh Kiều, Cần Thơ",
+    "area": "Cái Khế",
+    "price_per_hour": 25000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_3469",
+    "name": "Bãi xe Bệnh viện Đa khoa Trung ương Cần Thơ",
+    "address": "Nguyễn Văn Cừ, Ninh Kiều, Cần Thơ",
+    "area": "Ninh Kiều",
+    "price_per_hour": 15000,
+    "available_spots": 3
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_6872",
+    "lot_id": "lot_574",
+    "from_time": "2026-11-01T14:00:00+07:00",
+    "hours": 4,
+    "end_time": "2026-11-01T18:00:00+07:00",
+    "total": 120000,
+    "status": "ended"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2546",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09798927540"
+   },
+   {
+    "id": "c_529",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09112320761"
+   },
+   {
+    "id": "c_755",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09123637607"
+   },
+   {
+    "id": "c_162",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09523577491"
+   },
+   {
+    "id": "c_564",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09935608572"
+   },
+   {
+    "id": "c_684",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09815332124"
+   },
+   {
+    "id": "c_829",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09124567890"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_408",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_308",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": true
+   },
+   {
+    "id": "item_5387",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_477",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_761",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": true
+   }
+  ]
+ },
+ "tv": {
+  "power": "on",
+  "channel": "VTV1",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "programs": [
+   {
+    "id": "prg_731",
+    "channel": "VTV1",
+    "title": "Thời sự",
+    "start": "2026-11-01T19:00:00+07:00",
+    "end": "2026-11-01T19:45:00+07:00"
+   },
+   {
+    "id": "prg_266",
+    "channel": "VTV1",
+    "title": "Chuyển động 24h",
+    "start": "2026-11-01T18:00:00+07:00",
+    "end": "2026-11-01T18:45:00+07:00"
+   },
+   {
+    "id": "prg_590",
+    "channel": "VTV3",
+    "title": "Phim truyện: Về nhà đi con",
+    "start": "2026-11-01T20:00:00+07:00",
+    "end": "2026-11-01T21:00:00+07:00"
+   }
+  ],
+  "volume": 30
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_348",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_73",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_308",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_428",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_533",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_939",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_7114",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_7420",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ }
+}

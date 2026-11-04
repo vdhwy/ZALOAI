@@ -1,0 +1,454 @@
+{
+ "_meta": {
+  "question_id": "train_1531",
+  "current_time": "2026-10-27T16:45:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "library.reserve",
+   "library.search",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_972",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-10-27T09:15:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_6368",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-10-27T12:00:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_862",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-10-27T13:00:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_6331",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-10-27T09:45:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   }
+  ],
+  "saved": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_340",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_3625",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_196",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_243",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": false
+   }
+  ],
+  "reservations": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-24": {
+    "steps": 7021,
+    "calories": 280,
+    "distance_km": 5.1
+   },
+   "2026-10-25": {
+    "steps": 4912,
+    "calories": 196,
+    "distance_km": 3.5
+   },
+   "2026-10-26": {
+    "steps": 2599,
+    "calories": 103,
+    "distance_km": 1.9
+   },
+   "2026-10-27": {
+    "steps": 3067,
+    "calories": 122,
+    "distance_km": 2.2
+   }
+  },
+  "goal_steps": 6000,
+  "workouts": [
+   {
+    "id": "wo_764",
+    "type": "cycling",
+    "minutes": 20,
+    "time": "2026-10-23T18:30:00+07:00"
+   },
+   {
+    "id": "wo_966",
+    "type": "cycling",
+    "minutes": 45,
+    "time": "2026-10-25T17:30:00+07:00"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_478",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-30T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_228",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-29T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_8556",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-01T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_3709",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-27T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_36",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-27T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_312",
+    "contact_id": "c_518",
+    "phone_number": "09381647259",
+    "direction": "incoming",
+    "time": "2026-10-26T20:40:00+07:00",
+    "content": "Chị My ơi sáng mai phòng gym sửa máy lạnh, mình chuyển qua bơi ở hồ tầng năm nha chị."
+   },
+   {
+    "id": "msg_347",
+    "contact_id": "c_57",
+    "phone_number": "09378792094",
+    "direction": "incoming",
+    "time": "2026-10-26T21:02:00+07:00",
+    "content": "My ơi mai gửi chị bản plan Q4 trước 10 giờ nha."
+   },
+   {
+    "id": "msg_389",
+    "contact_id": "c_2091",
+    "phone_number": "09734158206",
+    "direction": "incoming",
+    "time": "2026-10-26T21:15:00+07:00",
+    "content": "Chị My ơi hồ bơi bên em bảo trì tới thứ Năm nên sáng mai mình vẫn tập tạ ở phòng gym như cũ nha chị."
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_435",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09520904436"
+   },
+   {
+    "id": "c_272",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09361703111"
+   },
+   {
+    "id": "c_935",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09215068393"
+   },
+   {
+    "id": "c_57",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09378792094"
+   },
+   {
+    "id": "c_7722",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09680163249"
+   },
+   {
+    "id": "c_340",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09529855520"
+   },
+   {
+    "id": "c_7398",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09128383239"
+   },
+   {
+    "id": "c_664",
+    "name": "Lan",
+    "relation": "bạn",
+    "phone": "09288165694"
+   },
+   {
+    "id": "c_7386",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09438331595"
+   },
+   {
+    "id": "c_2091",
+    "name": "Laura Costa",
+    "relation": "huấn luyện viên",
+    "phone": "09734158206"
+   },
+   {
+    "id": "c_518",
+    "name": "Laura Acosta",
+    "relation": "huấn luyện viên",
+    "phone": "09381647259"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_612",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_441",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_997",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_49",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_373",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_482",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_8631",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_564",
+    "time": "2026-10-26T00:25:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_92",
+    "time": "2026-10-26T15:30:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_765",
+    "time": "2026-10-27T12:40:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_4399",
+    "time": "2026-10-25T19:05:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_972",
+    "time": "2026-10-27T08:10:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

@@ -1,0 +1,216 @@
+{
+ "_meta": {
+  "question_id": "public_0183",
+  "current_time": "2026-09-24T09:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_01",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_02",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_03",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_04",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "public_transit": {
+  "card_balance": 0,
+  "routes": [
+   {
+    "id": "bus_32",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   },
+   {
+    "id": "metro_2a",
+    "name": "Metro 2A Cát Linh - Hà Đông",
+    "type": "metro",
+    "stops": [
+     "Cát Linh",
+     "Láng",
+     "Thượng Đình",
+     "Hà Đông",
+     "Yên Nghĩa"
+    ],
+    "fare": 15000,
+    "duration_min": 23,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Kim Liên",
+    "route": "bus_32",
+    "time": "2026-09-24T09:09:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_32",
+    "time": "2026-09-24T09:19:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_32",
+    "time": "2026-09-24T09:29:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-09-24T09:08:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-09-24T09:16:00+07:00"
+   },
+   {
+    "stop": "Hà Đông",
+    "route": "metro_2a",
+    "time": "2026-09-24T09:24:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_01",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_02",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_03",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 40
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_01",
+    "lot_id": "lot_03",
+    "from_time": "2026-09-24T08:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-09-24T11:00:00+07:00",
+    "total": 90000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "Gặp chị Thảo bàn triển lãm ảnh",
+    "start": "2026-09-24T10:30:00+07:00",
+    "end": "2026-09-24T11:30:00+07:00",
+    "location": "Bảo tàng Phụ nữ Việt Nam, 36 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "Ăn tối cùng gia đình",
+    "start": "2026-09-24T19:00:00+07:00",
+    "end": "2026-09-24T20:30:00+07:00",
+    "location": "25 Láng Hạ, Đống Đa, Hà Nội",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "Họp nhóm dự án",
+    "start": "2026-09-25T09:00:00+07:00",
+    "end": "2026-09-25T10:00:00+07:00",
+    "location": "Tòa nhà Kim Cương, Nam Từ Liêm, Hà Nội",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

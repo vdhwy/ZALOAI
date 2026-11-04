@@ -1,0 +1,516 @@
+{
+ "_meta": {
+  "question_id": "train_1221",
+  "current_time": "2026-11-15T16:20:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "fuel_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_4712",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-14T03:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_31",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-13T00:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_49",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-14T10:20:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_690",
+    "from": "basau@gmail.example.test",
+    "from_name": "Bà Sáu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-13T03:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_8144",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-13T14:35:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 26007
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28087
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 173.4
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_342",
+    "name": "Nhà thuốc Minh Khang Lê Duẩn",
+    "address": "210 Lê Duẩn, Hải Châu, Đà Nẵng",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_460",
+    "name": "Lotus Mart Đà Nẵng",
+    "address": "6 Nại Nam, Hải Châu, Đà Nẵng",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_2394",
+    "name": "Bệnh viện Đà Nẵng",
+    "address": "124 Hải Phòng, Hải Châu, Đà Nẵng",
+    "category": "hospital"
+   },
+   {
+    "id": "place_985",
+    "name": "Cây xăng PetroHưng Nguyễn Văn Linh",
+    "address": "150 Nguyễn Văn Linh, Thanh Khê, Đà Nẵng",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": [
+   {
+    "id": "fav_01",
+    "place_id": "place_460",
+    "label": "Lotus Mart"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_983",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09613745915"
+   },
+   {
+    "id": "c_954",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09700253231"
+   },
+   {
+    "id": "c_451",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09817675250"
+   },
+   {
+    "id": "c_689",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09919538374"
+   },
+   {
+    "id": "c_4917",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09819743359"
+   },
+   {
+    "id": "c_2446",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09512679133"
+   },
+   {
+    "id": "c_446",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09986517690"
+   },
+   {
+    "id": "c_444",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09677569111"
+   },
+   {
+    "id": "c_2128",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09502035251"
+   },
+   {
+    "id": "c_740",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09911537218"
+   },
+   {
+    "id": "c_830",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09275700448"
+   }
+  ]
+ },
+ "calculator": {},
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 26,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-15",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 33
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-16",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-17",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 31
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-12": {
+    "steps": 4809,
+    "calories": 192,
+    "distance_km": 3.5
+   },
+   "2026-11-13": {
+    "steps": 3483,
+    "calories": 139,
+    "distance_km": 2.5
+   },
+   "2026-11-14": {
+    "steps": 3826,
+    "calories": 153,
+    "distance_km": 2.8
+   },
+   "2026-11-15": {
+    "steps": 1039,
+    "calories": 41,
+    "distance_km": 0.7
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_937",
+    "type": "running",
+    "minutes": 45,
+    "time": "2026-11-11T18:00:00+07:00"
+   },
+   {
+    "id": "wo_14",
+    "type": "gym",
+    "minutes": 60,
+    "time": "2026-11-12T17:00:00+07:00"
+   },
+   {
+    "id": "wo_119",
+    "type": "cycling",
+    "minutes": 60,
+    "time": "2026-11-14T18:00:00+07:00"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_3578",
+    "name": "Bà Sáu",
+    "type": "direct",
+    "members": [
+     "Bà Sáu"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9215",
+    "name": "Thảo",
+    "type": "direct",
+    "members": [
+     "Thảo"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2911",
+    "name": "Ông xã",
+    "type": "direct",
+    "members": [
+     "Ông xã"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9818",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_180",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21900
+   },
+   {
+    "type": "e5",
+    "price": 20700
+   },
+   {
+    "type": "diesel",
+    "price": 19300
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_934",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_8152",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_849",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_9199",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_505",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ }
+}

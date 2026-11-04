@@ -1,0 +1,323 @@
+{
+ "_meta": {
+  "question_id": "train_1686",
+  "current_time": "2026-12-11T07:20:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "gold_price.get_price",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 31,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-11",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-12",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-13",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-14",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 32
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9052",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09448432880"
+   },
+   {
+    "id": "c_477",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09560624697"
+   },
+   {
+    "id": "c_700",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09229678384"
+   },
+   {
+    "id": "c_2002",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09257718009"
+   },
+   {
+    "id": "c_355",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09501803916"
+   },
+   {
+    "id": "c_946",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09807892137"
+   },
+   {
+    "id": "c_225",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09672349482"
+   },
+   {
+    "id": "c_562",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09532554249"
+   },
+   {
+    "id": "c_8564",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09178650073"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 100,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_5090",
+    "name": "phòng ngủ",
+    "area_m2": 25
+   },
+   {
+    "id": "room_454",
+    "name": "bếp",
+    "area_m2": 15
+   },
+   {
+    "id": "room_507",
+    "name": "phòng khách",
+    "area_m2": 10
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "bếp",
+    "phòng khách"
+   ],
+   "whole_house": false,
+   "mode": "vacuum"
+  }
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_584",
+    "tracking_id": "GST153006855",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "in_transit",
+    "eta": "2026-12-13T17:00:00+07:00"
+   },
+   {
+    "id": "shp_7676",
+    "tracking_id": "JV722602988",
+    "carrier": "JetViệt Express",
+    "name": "Hộp quà Trung thu",
+    "status": "out_for_delivery",
+    "eta": "2026-12-11T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_419",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-30",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_767",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-30",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_710",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-30",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_383",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-30",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_01",
+    "flight_id": "fl_383",
+    "passengers": 2,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_528",
+    "name": "Lau nhà",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_75",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Mẹ",
+    "done": false
+   },
+   {
+    "id": "chore_173",
+    "name": "Giặt quần áo",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_831",
+    "name": "Đi chợ",
+    "assignee": "Cô Thảo",
+    "done": false
+   },
+   {
+    "id": "chore_2848",
+    "name": "Tưới cây",
+    "assignee": "Tuấn",
+    "done": false
+   }
+  ],
+  "members": [
+   "Cô Thảo",
+   "Tuấn",
+   "Mẹ",
+   "Bà nội"
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 120300000,
+    "sell": 122300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 114300000,
+    "sell": 116300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4274
+   }
+  ]
+ }
+}

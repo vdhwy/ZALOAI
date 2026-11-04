@@ -1,0 +1,399 @@
+{
+ "_meta": {
+  "question_id": "train_1276",
+  "current_time": "2026-11-11T16:25:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "gold_price.get_price",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-11",
+    "prizes": {
+     "special": "274418",
+     "first": "58613",
+     "eighth": "81"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-11",
+    "prizes": {
+     "special": "444424",
+     "first": "76171",
+     "eighth": "17"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-11",
+    "prizes": {
+     "special": "835345",
+     "first": "42261",
+     "eighth": "51"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-11",
+    "prizes": {
+     "special": "551518",
+     "first": "21395",
+     "eighth": "41"
+    }
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 32,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-11",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-12",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-13",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-14",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 34
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_4753",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 208000,
+    "due_date": "2026-11-19",
+    "paid": false
+   },
+   {
+    "id": "bill_7154",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 218000,
+    "due_date": "2026-11-14",
+    "paid": false
+   },
+   {
+    "id": "bill_977",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 148000,
+    "due_date": "2026-11-17",
+    "paid": false
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_418",
+    "contact_id": "c_698",
+    "phone_number": "09501242812",
+    "status": "answered",
+    "direction": "incoming",
+    "time": "2026-11-11T09:15:00+07:00"
+   },
+   {
+    "id": "call_452",
+    "contact_id": null,
+    "phone_number": "09093184622",
+    "status": "missed",
+    "direction": "incoming",
+    "time": "2026-11-11T12:40:00+07:00"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_222",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-16T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_340",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-16T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_2902",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-16T17:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_2668",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-14T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_897",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-13T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_574",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_7463",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_8208",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_9667",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_6380",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_867",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_853",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09406951105"
+   },
+   {
+    "id": "c_63",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09279775545"
+   },
+   {
+    "id": "c_201",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09885151861"
+   },
+   {
+    "id": "c_44",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09483653312"
+   },
+   {
+    "id": "c_167",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09899889998"
+   },
+   {
+    "id": "c_698",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09501242812"
+   },
+   {
+    "id": "c_557",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09912213894"
+   },
+   {
+    "id": "c_197",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09391857147"
+   },
+   {
+    "id": "c_3224",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09292268873"
+   },
+   {
+    "id": "c_515",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09353067519"
+   },
+   {
+    "id": "c_7730",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09201536602"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_7719",
+    "status": "completed",
+    "pickup": "Tiệm tạp hóa Thảo, 203 Lê Văn Sỹ, Quận 3",
+    "dropoff": "Chợ Bình Tây, Quận 6, TP.HCM",
+    "vehicle": "car4",
+    "schedule_time": "2026-11-06T06:00:00+07:00"
+   },
+   {
+    "id": "ride_02",
+    "status": "booked",
+    "pickup": "Tiệm tạp hóa Thảo, 203 Lê Văn Sỹ, Quận 3",
+    "dropoff": "Chợ Bình Tây, Quận 6, TP.HCM",
+    "vehicle": "car4",
+    "schedule_time": "2026-11-13T06:00:00+07:00"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_319",
+    "time": "2026-11-12T05:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_8651",
+    "time": "2026-11-12T06:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 122600000,
+    "sell": 124600000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 116600000,
+    "sell": 118600000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4088
+   }
+  ]
+ }
+}

@@ -1,0 +1,627 @@
+{
+ "_meta": {
+  "question_id": "train_1622",
+  "current_time": "2026-11-11T18:25:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_6236",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 180,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   },
+   {
+    "id": "prog_669",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 960,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_9710",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 12000,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_262",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-28",
+    "used": false
+   },
+   {
+    "id": "vch_129",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-11-14",
+    "used": false
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_8699",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_227",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_588",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_424",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 33,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-11",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-12",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 33
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-13",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-14",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 34
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_54",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_8531",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_6909",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_655",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_8425",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_690",
+    "name": "Đi chợ",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_777",
+    "name": "Đổ rác",
+    "assignee": "Chị Trâm",
+    "done": false
+   },
+   {
+    "id": "chore_418",
+    "name": "Rửa bát",
+    "assignee": "Chị Trâm",
+    "done": true
+   },
+   {
+    "id": "chore_7696",
+    "name": "Lau nhà",
+    "assignee": "Chị Trâm",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị Trâm",
+   "Lan",
+   "Bố",
+   "Bà nội"
+  ]
+ },
+ "ewallet": {
+  "balance": 950000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_3753",
+    "amount": -300000,
+    "note": "Tiền vé xem phim tối nay"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_9073",
+    "tracking_id": "STP886339800",
+    "carrier": "SaoTel Post",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "out_for_delivery",
+    "eta": "2026-11-11T17:00:00+07:00"
+   },
+   {
+    "id": "shp_898",
+    "tracking_id": "GST331397267",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Hộp quà Trung thu",
+    "status": "in_transit",
+    "eta": "2026-11-12T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_228",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_891",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_859",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_1685",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_7334",
+    "show_id": "show_891",
+    "title": "Số 20: Giấc ngủ và trí nhớ",
+    "number": 20,
+    "duration_min": 18,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_466",
+    "show_id": "show_891",
+    "title": "Số 21: Lỗ đen là gì",
+    "number": 21,
+    "duration_min": 25,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_693",
+    "show_id": "show_1685",
+    "title": "Số 9: Đi xe đạp đi làm",
+    "number": 9,
+    "duration_min": 32,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_25",
+    "show_id": "show_228",
+    "title": "Số 12: Lập quỹ khẩn cấp",
+    "number": 12,
+    "duration_min": 32,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_100",
+    "show_id": "show_1685",
+    "title": "Số 8: Trồng cây trên sân thượng",
+    "number": 8,
+    "duration_min": 18,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_779",
+    "show_id": "show_859",
+    "title": "Số 14: Nhà giả kim - phần 1",
+    "number": 14,
+    "duration_min": 25,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_701",
+    "show_id": "show_228",
+    "title": "Số 14: Quản lý chi tiêu gia đình",
+    "number": 14,
+    "duration_min": 45,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_814",
+    "show_id": "show_1685",
+    "title": "Số 7: Rác thải nhựa ở đô thị",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_4048",
+    "show_id": "show_859",
+    "title": "Số 15: Nhà giả kim - phần 2",
+    "number": 15,
+    "duration_min": 18,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_376",
+    "show_id": "show_891",
+    "title": "Số 19: Vì sao bầu trời màu xanh",
+    "number": 19,
+    "duration_min": 32,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_2054",
+    "show_id": "show_228",
+    "title": "Số 13: Gửi tiết kiệm hay mua vàng",
+    "number": 13,
+    "duration_min": 18,
+    "published": "2026-10-28"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_5771",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_506",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_8188",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_181",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_891",
+   "show_228"
+  ],
+  "queue": [
+   "ep_2054",
+   "ep_466"
+  ],
+  "now_playing": {
+   "station_id": "st_181",
+   "station": "VOV Giao thông",
+   "status": "playing"
+  }
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_8616",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-10T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_153",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-12T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_304",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-17T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_569",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-17T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_28",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09227812843"
+   },
+   {
+    "id": "c_397",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09934568116"
+   },
+   {
+    "id": "c_29",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09200331716"
+   },
+   {
+    "id": "c_3753",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09865452795"
+   },
+   {
+    "id": "c_441",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09641021531"
+   },
+   {
+    "id": "c_996",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09588137113"
+   },
+   {
+    "id": "c_6632",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09877022274"
+   },
+   {
+    "id": "c_3338",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09725495326"
+   },
+   {
+    "id": "c_738",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09549202753"
+   }
+  ]
+ }
+}

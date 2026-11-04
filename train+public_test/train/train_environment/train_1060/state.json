@@ -1,0 +1,250 @@
+{
+ "_meta": {
+  "question_id": "train_1060",
+  "current_time": "2026-10-28T12:35:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 75,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_798",
+    "name": "bếp",
+    "area_m2": 22
+   },
+   {
+    "id": "room_336",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   },
+   {
+    "id": "room_555",
+    "name": "phòng khách",
+    "area_m2": 10
+   },
+   {
+    "id": "room_469",
+    "name": "hành lang",
+    "area_m2": 12
+   }
+  ],
+  "current_job": null
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_702",
+    "name": "Phơi quần áo",
+    "assignee": "Bé Ngọc",
+    "done": true
+   },
+   {
+    "id": "chore_8518",
+    "name": "Nấu cơm tối",
+    "assignee": "Tuấn",
+    "done": true
+   },
+   {
+    "id": "chore_859",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Tuấn",
+    "done": false
+   }
+  ],
+  "members": [
+   "Bé Ngọc",
+   "Bố",
+   "Tuấn",
+   "Bà nội"
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_579",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_293",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_925",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_8415",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_236",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_845",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_665",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_6343",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_929",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_20",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_5781",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 25,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-10-28",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-29",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 28
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-30",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-10-31",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 33
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_989",
+    "title": "họp phụ huynh",
+    "start": "2026-10-29T08:00:00+07:00",
+    "end": "2026-10-29T09:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_578",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-31T14:00:00+07:00",
+    "end": "2026-10-31T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3218",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-29T10:00:00+07:00",
+    "end": "2026-10-29T11:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4471",
+    "title": "Học nhóm với Nhi",
+    "start": "2026-10-28T15:00:00+07:00",
+    "end": "2026-10-28T17:00:00+07:00",
+    "location": "Phòng khách nhà mình",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

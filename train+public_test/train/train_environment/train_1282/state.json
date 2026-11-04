@@ -1,0 +1,464 @@
+{
+ "_meta": {
+  "question_id": "train_1282",
+  "current_time": "2026-10-12T13:15:00+07:00",
+  "tools": [
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_6537",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-10-27",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_605",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-10-27",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_1329",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-10-27",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_549",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-10-27",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-10-12",
+    "prizes": {
+     "special": "563909",
+     "first": "76391",
+     "eighth": "50"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-10-12",
+    "prizes": {
+     "special": "507909",
+     "first": "31472",
+     "eighth": "14"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-10-12",
+    "prizes": {
+     "special": "754552",
+     "first": "12132",
+     "eighth": "52"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-10-12",
+    "prizes": {
+     "special": "350902",
+     "first": "57776",
+     "eighth": "58"
+    }
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_333",
+    "tracking_id": "STP394015184",
+    "carrier": "SaoTel Post",
+    "name": "Tai nghe Bluetooth",
+    "status": "in_transit",
+    "eta": "2026-10-14T10:00:00+07:00"
+   },
+   {
+    "id": "shp_410",
+    "tracking_id": "MDXVN680854953",
+    "carrier": "MDX Express",
+    "name": "Giày thể thao",
+    "status": "delivered",
+    "eta": "2026-10-11T10:00:00+07:00"
+   },
+   {
+    "id": "shp_3549",
+    "tracking_id": "EV313507034",
+    "carrier": "VNPost",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "out_for_delivery",
+    "eta": "2026-10-12T14:00:00+07:00"
+   },
+   {
+    "id": "shp_1847",
+    "tracking_id": "JV721933292",
+    "carrier": "JetViệt Express",
+    "name": "Áo khoác gió",
+    "status": "in_transit",
+    "eta": "2026-10-14T16:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_408",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_917",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_882",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_652",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_675",
+    "time": "2026-10-11T21:50:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_6996",
+    "time": "2026-10-10T16:00:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_944",
+    "time": "2026-10-11T00:10:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_679",
+    "time": "2026-10-12T08:05:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_557",
+    "time": "2026-10-10T16:35:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-12",
+    "to": "2026-10-12",
+    "kwh": 5.4,
+    "cost": 15700,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 2.4
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.1
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-06",
+    "to": "2026-10-12",
+    "kwh": 66.3,
+    "cost": 192300,
+    "days": [
+     {
+      "date": "2026-10-06",
+      "kwh": 8.7
+     },
+     {
+      "date": "2026-10-07",
+      "kwh": 13.1
+     },
+     {
+      "date": "2026-10-08",
+      "kwh": 10.2
+     },
+     {
+      "date": "2026-10-09",
+      "kwh": 9.5
+     },
+     {
+      "date": "2026-10-10",
+      "kwh": 7.2
+     },
+     {
+      "date": "2026-10-11",
+      "kwh": 12.2
+     },
+     {
+      "date": "2026-10-12",
+      "kwh": 5.4
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-12",
+    "kwh": 128.2,
+    "cost": 371800
+   }
+  },
+  "alert_threshold_kwh": 300
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_3412",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-11T12:00:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_7700",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-17T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_903",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-14T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_639",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-16T20:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_114",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-12T12:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

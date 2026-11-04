@@ -1,0 +1,335 @@
+{
+ "_meta": {
+  "question_id": "train_1326",
+  "current_time": "2026-11-29T13:00:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_1331",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_5176",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_22",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   },
+   {
+    "id": "rule_463",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-29",
+    "prizes": {
+     "special": "859386",
+     "first": "79792",
+     "eighth": "58"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-29",
+    "prizes": {
+     "special": "218666",
+     "first": "11108",
+     "eighth": "72"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-29",
+    "prizes": {
+     "special": "945690",
+     "first": "23739",
+     "eighth": "84"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-29",
+    "prizes": {
+     "special": "690123",
+     "first": "22891",
+     "eighth": "80"
+    }
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_292",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-01T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_8146",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-01T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_168",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-02T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_467",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_957",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_2841",
+    "title": "Lớp 8A3 đi bảo tàng chiều Chủ nhật",
+    "content": "Đăng ký đi: Minh Anh, Bảo Ngọc, Gia Huy, Khánh Linh, Đức Trí, Phương Thảo, Quốc Bảo. Gia Huy vừa báo nghỉ vì sốt."
+   },
+   {
+    "id": "note_716",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_3908",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_5589",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_404",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_623",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_297",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_12",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_685",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_643",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_8810",
+    "name": "Bảo tàng Dân tộc học Việt Nam",
+    "address": "Nguyễn Văn Huyên, Cầu Giấy, Hà Nội",
+    "category": "museum",
+    "detail": "Vé người lớn 40.000đ, học sinh 20.000đ; nhận thanh toán QR ví điện tử",
+    "merchant_id": "mch_5302"
+   },
+   {
+    "id": "place_8857",
+    "name": "Bảo tàng Lịch sử Quân sự Việt Nam",
+    "address": "Đại lộ Thăng Long, Nam Từ Liêm, Hà Nội",
+    "category": "museum",
+    "detail": "Vé người lớn 40.000đ, học sinh 15.000đ; nhận thanh toán QR ví điện tử",
+    "merchant_id": "mch_5317"
+   }
+  ],
+  "saved_places": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_663",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09965751776"
+   },
+   {
+    "id": "c_757",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09780067164"
+   },
+   {
+    "id": "c_292",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09348910666"
+   },
+   {
+    "id": "c_833",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09680649260"
+   },
+   {
+    "id": "c_5823",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09549344592"
+   },
+   {
+    "id": "c_134",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09538508479"
+   },
+   {
+    "id": "c_490",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09768400903"
+   },
+   {
+    "id": "c_279",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09873632693"
+   },
+   {
+    "id": "c_939",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09556189755"
+   },
+   {
+    "id": "c_1879",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09618195144"
+   },
+   {
+    "id": "c_7516",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09887708962"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_277",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_5475",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_2657",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_335",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_790",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ }
+}

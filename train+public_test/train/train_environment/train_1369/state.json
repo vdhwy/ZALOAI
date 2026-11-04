@@ -1,0 +1,321 @@
+{
+ "_meta": {
+  "question_id": "train_1369",
+  "current_time": "2026-11-17T14:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_177",
+    "time": "2026-11-18T07:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_7264",
+    "name": "Lau nhà",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_8105",
+    "name": "Phơi quần áo",
+    "assignee": "Bé Na",
+    "done": false
+   },
+   {
+    "id": "chore_584",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_114",
+    "name": "Đi chợ",
+    "assignee": "Anh Việt",
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Việt",
+   "Tuấn",
+   "Bé Na",
+   "Bố"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_1423",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_8019",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_9755",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_5409",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 29,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-17",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-18",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-20",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 31
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_62",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09616734422"
+   },
+   {
+    "id": "c_419",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09312391783"
+   },
+   {
+    "id": "c_842",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09917364380"
+   },
+   {
+    "id": "c_680",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09311872001"
+   },
+   {
+    "id": "c_389",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09200006951"
+   },
+   {
+    "id": "c_527",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09451246179"
+   },
+   {
+    "id": "c_224",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09457444445"
+   },
+   {
+    "id": "c_9006",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09776116186"
+   },
+   {
+    "id": "c_1569",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09127158902"
+   },
+   {
+    "id": "c_9816",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09625438096"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_8295",
+    "title": "họp team",
+    "start": "2026-11-20T08:00:00+07:00",
+    "end": "2026-11-20T09:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1202",
+    "title": "khám răng",
+    "start": "2026-11-20T09:00:00+07:00",
+    "end": "2026-11-20T10:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_858",
+    "title": "họp phụ huynh",
+    "start": "2026-11-18T14:00:00+07:00",
+    "end": "2026-11-18T15:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_298",
+    "title": "đá bóng",
+    "start": "2026-11-20T10:30:00+07:00",
+    "end": "2026-11-20T11:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_565",
+    "name": "phòng khách",
+    "area_m2": 25
+   },
+   {
+    "id": "room_222",
+    "name": "bếp",
+    "area_m2": 25
+   },
+   {
+    "id": "room_359",
+    "name": "phòng làm việc",
+    "area_m2": 22
+   },
+   {
+    "id": "room_183",
+    "name": "phòng ngủ",
+    "area_m2": 22
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng khách",
+    "phòng làm việc"
+   ],
+   "whole_house": false,
+   "mode": "vacuum"
+  }
+ }
+}

@@ -1,0 +1,516 @@
+{
+ "_meta": {
+  "question_id": "train_1155",
+  "current_time": "2026-11-05T06:30:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_6136",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 960,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_372",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_867",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 500,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_5121",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-28",
+    "used": false
+   },
+   {
+    "id": "vch_562",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-21",
+    "used": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2744",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09295259472"
+   },
+   {
+    "id": "c_529",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09924525422"
+   },
+   {
+    "id": "c_8541",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09233063398"
+   },
+   {
+    "id": "c_642",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09315360478"
+   },
+   {
+    "id": "c_4744",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09930199325"
+   },
+   {
+    "id": "c_138",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09522327358"
+   },
+   {
+    "id": "c_836",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09453248072"
+   },
+   {
+    "id": "c_41",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09571524755"
+   },
+   {
+    "id": "c_415",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09215316489"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_1404",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2718",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9731",
+    "name": "Anh Mười",
+    "type": "direct",
+    "members": [
+     "Anh Mười"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_276",
+    "name": "Vợ Hồng",
+    "type": "direct",
+    "members": [
+     "Vợ Hồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4645",
+    "name": "Thằng Tí",
+    "type": "direct",
+    "members": [
+     "Thằng Tí"
+    ],
+    "messages": [
+     {
+      "from": "Thằng Tí",
+      "content": "Ba ơi tối rảnh ba nghe thử truyện Nhà giả kim trên app podcast nha, con nghe thấy hay lắm.",
+      "time": "2026-11-04T21:40:00+07:00"
+     }
+    ]
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-02": {
+    "steps": 5656,
+    "calories": 226,
+    "distance_km": 4.1
+   },
+   "2026-11-03": {
+    "steps": 5479,
+    "calories": 219,
+    "distance_km": 3.9
+   },
+   "2026-11-04": {
+    "steps": 7981,
+    "calories": 319,
+    "distance_km": 5.7
+   },
+   "2026-11-05": {
+    "steps": 3379,
+    "calories": 135,
+    "distance_km": 2.4
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_3691",
+    "type": "walking",
+    "minutes": 30,
+    "time": "2026-11-04T18:00:00+07:00"
+   },
+   {
+    "id": "wo_225",
+    "type": "yoga",
+    "minutes": 60,
+    "time": "2026-11-02T17:00:00+07:00"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_899",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_112",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_979",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_197",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_945",
+    "show_id": "show_899",
+    "title": "Số 10: Nhà giả kim - phần 1",
+    "number": 10,
+    "duration_min": 18,
+    "published": "2026-10-22"
+   },
+   {
+    "id": "ep_939",
+    "show_id": "show_979",
+    "title": "Số 18: Quản lý chi tiêu gia đình",
+    "number": 18,
+    "duration_min": 18,
+    "published": "2026-10-29"
+   },
+   {
+    "id": "ep_398",
+    "show_id": "show_112",
+    "title": "Số 7: Nghề diễn và những áp lực",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-29"
+   },
+   {
+    "id": "ep_539",
+    "show_id": "show_112",
+    "title": "Số 6: Sống chậm giữa thành phố",
+    "number": 6,
+    "duration_min": 32,
+    "published": "2026-10-22"
+   },
+   {
+    "id": "ep_260",
+    "show_id": "show_979",
+    "title": "Số 16: Lập quỹ khẩn cấp",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-10-15"
+   },
+   {
+    "id": "ep_6741",
+    "show_id": "show_197",
+    "title": "Số 13: Lỗ đen là gì",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-10-29"
+   },
+   {
+    "id": "ep_585",
+    "show_id": "show_197",
+    "title": "Số 11: Vì sao bầu trời màu xanh",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-10-15"
+   },
+   {
+    "id": "ep_7122",
+    "show_id": "show_197",
+    "title": "Số 12: Giấc ngủ và trí nhớ",
+    "number": 12,
+    "duration_min": 32,
+    "published": "2026-10-22"
+   },
+   {
+    "id": "ep_8150",
+    "show_id": "show_899",
+    "title": "Số 11: Nhà giả kim - phần 2",
+    "number": 11,
+    "duration_min": 18,
+    "published": "2026-10-29"
+   },
+   {
+    "id": "ep_67",
+    "show_id": "show_979",
+    "title": "Số 17: Gửi tiết kiệm hay mua vàng",
+    "number": 17,
+    "duration_min": 25,
+    "published": "2026-10-22"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_826",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_306",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_491",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_91",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": {
+   "station_id": "st_491",
+   "station": "VOV Giao thông",
+   "status": "playing"
+  }
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ }
+}

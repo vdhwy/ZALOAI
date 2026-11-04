@@ -1,0 +1,331 @@
+{
+ "_meta": {
+  "question_id": "public_0430",
+  "current_time": "2026-10-26T17:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fuel_price.get_price",
+   "pantry.consume",
+   "pantry.list_items",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_366",
+    "time": "2026-10-27T05:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_5829",
+    "time": "2026-10-27T06:15:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_318",
+    "contact_id": "c_699",
+    "phone_number": "09817348415",
+    "direction": "incoming",
+    "content": "Thứ năm nhớ gửi anh bản báo cáo sprint nhé.",
+    "time": "2026-10-23T09:12:00+07:00"
+   },
+   {
+    "id": "msg_342",
+    "contact_id": "c_8990",
+    "phone_number": "09321906729",
+    "direction": "incoming",
+    "content": "Chiều anh đón Bống giúp em nhé, em họp muộn.",
+    "time": "2026-10-26T14:05:00+07:00"
+   },
+   {
+    "id": "msg_357",
+    "contact_id": "c_699",
+    "phone_number": "09817348415",
+    "direction": "incoming",
+    "content": "Tối nay đối tác xin lùi sang tám giờ, vẫn ở Hoa Súng Tây Hồ. Em mang theo bản demo nhé.",
+    "time": "2026-10-26T15:48:00+07:00"
+   },
+   {
+    "id": "msg_366",
+    "contact_id": "c_699",
+    "phone_number": "09817348415",
+    "direction": "incoming",
+    "content": "Em ơi mai họp giao ban dời sang chín giờ.",
+    "time": "2026-10-24T20:30:00+07:00"
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_7877",
+    "name": "mì tôm",
+    "stock": 3,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_6651",
+    "name": "gạo ST25",
+    "stock": 3,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_237",
+    "name": "yến mạch",
+    "stock": 2,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_562",
+    "name": "trứng gà",
+    "stock": 8,
+    "unit": "quả"
+   },
+   {
+    "id": "pan_8451",
+    "name": "cà phê G7",
+    "stock": 4,
+    "unit": "hộp"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_699",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09817348415"
+   },
+   {
+    "id": "c_6888",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09506867539"
+   },
+   {
+    "id": "c_5959",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09204658228"
+   },
+   {
+    "id": "c_8990",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09321906729"
+   },
+   {
+    "id": "c_4811",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09709513037"
+   },
+   {
+    "id": "c_592",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09570447657"
+   },
+   {
+    "id": "c_290",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09989440913"
+   },
+   {
+    "id": "c_3591",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09995131715"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_237",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-28T10:00:00+07:00",
+    "end": "2026-10-28T11:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6649",
+    "title": "khám răng",
+    "start": "2026-10-28T18:00:00+07:00",
+    "end": "2026-10-28T19:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_13",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-27T08:30:00+07:00",
+    "end": "2026-10-27T09:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5172",
+    "title": "ăn tối với đối tác cùng sếp Dũng",
+    "start": "2026-10-26T19:30:00+07:00",
+    "end": "2026-10-26T21:00:00+07:00",
+    "location": "Nhà hàng Hoa Súng Tây Hồ",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21900
+   },
+   {
+    "type": "e5",
+    "price": 20700
+   },
+   {
+    "type": "diesel",
+    "price": 19300
+   }
+  ]
+ }
+}

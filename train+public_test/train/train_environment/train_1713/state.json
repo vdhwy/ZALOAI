@@ -1,0 +1,506 @@
+{
+ "_meta": {
+  "question_id": "train_1713",
+  "current_time": "2026-11-02T21:55:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_6261",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 197000,
+    "due_date": "2026-11-05",
+    "paid": true,
+    "paid_with": "bank"
+   },
+   {
+    "id": "bill_795",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 853000,
+    "due_date": "2026-11-11",
+    "paid": false
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_71",
+    "title": "khám răng",
+    "start": "2026-11-03T15:00:00+07:00",
+    "end": "2026-11-03T16:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_673",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-03T15:00:00+07:00",
+    "end": "2026-11-03T16:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_779",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-03T18:30:00+07:00",
+    "end": "2026-11-03T19:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_132",
+    "title": "đá bóng",
+    "start": "2026-11-05T09:30:00+07:00",
+    "end": "2026-11-05T10:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_210",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_6177",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_5457",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_871",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_53",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_710",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_541",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-11-22",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_109",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-26",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_985",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-29",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_866",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-11-26",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_240",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-11-12",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_363",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09927446843"
+   },
+   {
+    "id": "c_944",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09903645590"
+   },
+   {
+    "id": "c_75",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09639625640"
+   },
+   {
+    "id": "c_8417",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09825403595"
+   },
+   {
+    "id": "c_802",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09302956981"
+   },
+   {
+    "id": "c_4864",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09869973708"
+   },
+   {
+    "id": "c_637",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09725698680"
+   },
+   {
+    "id": "c_669",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09388474610"
+   },
+   {
+    "id": "c_4970",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09885870959"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_314",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-03T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_808",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-08T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_798",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-05T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_2208",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-07T12:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_375",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-03T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_06",
+    "due": "2026-11-07T09:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Mua quà sinh nhật mẹ"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_879",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-02T18:25:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_322",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-01T16:40:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_646",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-11-02T07:25:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_59",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-02T19:40:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_8598",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-01T21:55:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   }
+  ],
+  "saved": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_819",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_150",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_333",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_302",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_333",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 1,
+      "note": null
+     },
+     {
+      "item_id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 65000,
+    "address": null,
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_6673",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_799",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá\nSữa tươi"
+   },
+   {
+    "id": "note_74",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_869",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_488",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_06",
+    "title": "Quà Noel cho Bống",
+    "content": "Búp bê, sách tô màu"
+   }
+  ]
+ }
+}

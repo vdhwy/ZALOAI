@@ -1,0 +1,400 @@
+{
+ "_meta": {
+  "question_id": "train_1577",
+  "current_time": "2026-12-03T17:20:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "phone.call",
+   "phone.recent_calls",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 29,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-03",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 29
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-04",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-05",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-06",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1196",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09363246788"
+   },
+   {
+    "id": "c_814",
+    "name": "Mr. Fujimoto",
+    "relation": "đối tác",
+    "phone": "09369797987"
+   },
+   {
+    "id": "c_9360",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09906388957"
+   },
+   {
+    "id": "c_155",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09245273518"
+   },
+   {
+    "id": "c_8740",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09354227901"
+   },
+   {
+    "id": "c_603",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09302820633"
+   },
+   {
+    "id": "c_253",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09594887763"
+   },
+   {
+    "id": "c_851",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09896062303"
+   },
+   {
+    "id": "c_377",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09935461827"
+   },
+   {
+    "id": "c_5405",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09215327391"
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25322
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27347
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 168.8
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_6430",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "normal",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_9380",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "quick",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_8632",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "normal",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_877",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "auto",
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_8246",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Biển Mỹ Khê",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_156",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Công viên Biển Đông",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_189",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Công viên Biển Đông",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_127",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Biển Mỹ Khê",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_630",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-12-06",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_752",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-12-06",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_6604",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-12-06",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_925",
+    "origin": "DAD",
+    "destination": "HAN",
+    "date": "2026-12-06",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_2844",
+    "title": "Họp lớp online",
+    "start": "2026-12-04T20:30:00+07:00",
+    "link": "https://meet.example.test/qog-kxfz-isj",
+    "attendees": [
+     "c_377",
+     "c_5405"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_8811",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-12-06T20:30:00+07:00",
+    "link": "https://meet.example.test/gou-omqf-mbb",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_48",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-12-04T08:30:00+07:00",
+    "link": "https://meet.example.test/prn-iwcr-qiy",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_252",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-12-05T09:00:00+07:00",
+    "link": "https://meet.example.test/eys-lytt-ddt",
+    "attendees": [
+     "c_377"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_5307",
+    "title": "Chốt deadline invoice với Mr. Fujimoto",
+    "start": "2026-12-06T15:00:00+07:00",
+    "link": "https://meet.example.test/tnk-dlin-vce",
+    "attendees": [
+     "c_814"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_916",
+    "title": "Chốt deadline booking tàu với Sarah",
+    "start": "2026-12-07T10:00:00+07:00",
+    "link": "https://meet.example.test/srh-bkng-shp",
+    "attendees": [
+     "c_5405"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ }
+}

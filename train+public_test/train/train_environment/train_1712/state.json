@@ -1,0 +1,573 @@
+{
+ "_meta": {
+  "question_id": "train_1712",
+  "current_time": "2026-12-06T08:05:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_81",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_121",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_963",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_708",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_5849",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "nhà",
+    "dropoff": "Chợ nổi Cái Răng",
+    "vehicle": "car4",
+    "schedule_time": "2026-12-06T11:00:00+07:00"
+   }
+  ]
+ },
+ "calculator": {},
+ "news": {
+  "articles": [
+   {
+    "id": "art_688",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-12-05T15:35:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_237",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-12-05T03:05:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_380",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-12-05T04:35:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_837",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-12-05T18:35:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_638",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-12-05T20:20:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   }
+  ],
+  "saved": []
+ },
+ "ewallet": {
+  "balance": 950000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_1925",
+    "amount": -300000,
+    "note": "Tiền xăng"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_710",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 180,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   },
+   {
+    "id": "prog_615",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 800,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_6899",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 1000,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_464",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-12-31",
+    "used": false
+   },
+   {
+    "id": "vch_4376",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-27",
+    "used": false
+   },
+   {
+    "id": "vch_03",
+    "merchant": "CineViệt",
+    "name": "Vé xem phim 2D miễn phí",
+    "value": 95000,
+    "program_id": "prog_615",
+    "reward_id": "rw_02_1",
+    "used": false
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_4887",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-11T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_251",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-09T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_34",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-05T20:30:00+07:00",
+    "priority": "normal",
+    "done": true
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_953",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_548",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Công viên Lưu Hữu Phước",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_9210",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_6141",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Công viên Lưu Hữu Phước",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_377",
+    "name": "Xe đạp gấp 108",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_2614",
+    "name": "Xe đạp thường 105",
+    "station": "Trạm Bến Ninh Kiều",
+    "available": false,
+    "price_per_hour": 8000
+   },
+   {
+    "id": "bike_82",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Công viên Lưu Hữu Phước",
+    "available": true,
+    "price_per_hour": 8000
+   }
+  ],
+  "reservations": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_8067",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09629649601"
+   },
+   {
+    "id": "c_817",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09543697968"
+   },
+   {
+    "id": "c_542",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09933265883"
+   },
+   {
+    "id": "c_799",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09134825439"
+   },
+   {
+    "id": "c_141",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09165230950"
+   },
+   {
+    "id": "c_819",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09999208411"
+   },
+   {
+    "id": "c_1925",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09461840046"
+   },
+   {
+    "id": "c_1373",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09481743545"
+   },
+   {
+    "id": "c_52",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09955996204"
+   },
+   {
+    "id": "c_538",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09999932347"
+   },
+   {
+    "id": "c_4471",
+    "name": "David Miller",
+    "relation": "bạn (người Úc, khách quen vựa trái cây)",
+    "phone": "09372615840"
+   },
+   {
+    "id": "c_906",
+    "name": "David Müller",
+    "relation": "khách du lịch Đức ở homestay",
+    "phone": "09815503927"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_9804",
+    "name": "Tưới cây",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_5754",
+    "name": "Đổ rác",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_3218",
+    "name": "Lau nhà",
+    "assignee": "Ông Hải",
+    "done": false
+   },
+   {
+    "id": "chore_715",
+    "name": "Nấu cơm tối",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_3721",
+    "name": "Phơi quần áo",
+    "assignee": null,
+    "done": true
+   }
+  ],
+  "members": [
+   "Ông Hải",
+   "Bố",
+   "Mẹ",
+   "Tuấn"
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ }
+}

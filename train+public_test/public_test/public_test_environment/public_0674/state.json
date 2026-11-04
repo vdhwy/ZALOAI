@@ -1,0 +1,636 @@
+{
+ "_meta": {
+  "question_id": "public_0674",
+  "current_time": "2026-11-26T13:50:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "event_tickets.book",
+   "event_tickets.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_886",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_315",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_7077",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_678",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_5314",
+    "name": "Liên hoan phim ngắn",
+    "category": "điện ảnh",
+    "date": "2026-12-10",
+    "time": "18:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 120000,
+    "available": 30
+   },
+   {
+    "id": "event_581",
+    "name": "Chung kết bóng đá V-League",
+    "category": "thể thao",
+    "date": "2026-12-04",
+    "time": "20:00",
+    "venue": "Sân vận động Hàng Đẫy",
+    "price": 200000,
+    "available": 12
+   },
+   {
+    "id": "event_271",
+    "name": "Vở kịch Ngày Mưa",
+    "category": "kịch",
+    "date": "2026-12-09",
+    "time": "18:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 250000,
+    "available": 30
+   },
+   {
+    "id": "event_735",
+    "name": "Triển lãm Ánh sáng Đô thị",
+    "category": "triển lãm",
+    "date": "2026-12-06",
+    "time": "18:00",
+    "venue": "Nhà hát Tuổi Trẻ",
+    "price": 80000,
+    "available": 30
+   }
+  ],
+  "bookings": []
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_01",
+    "contact_id": "c_868",
+    "phone_number": "09885034388",
+    "direction": "outgoing",
+    "content": "Chiều nay mẹ đón muộn, con chờ mẹ ở cổng trường nhé."
+   },
+   {
+    "id": "msg_02",
+    "contact_id": "c_798",
+    "phone_number": "09155453204",
+    "direction": "outgoing",
+    "content": "Tối nay anh nấu cơm giúp em nhé."
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_558",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-12-01",
+    "depart": "19:00",
+    "arrive": "02:30",
+    "price": 920000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_88",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-03",
+    "depart": "08:00",
+    "arrive": "15:30",
+    "price": 320000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_861",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-12-01",
+    "depart": "19:00",
+    "arrive": "02:30",
+    "price": 250000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_856",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-12-01",
+    "depart": "06:00",
+    "arrive": "16:30",
+    "price": 320000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_440",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-03",
+    "depart": "19:00",
+    "arrive": "02:30",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_575",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-03",
+    "depart": "19:00",
+    "arrive": "05:30",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_910",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-03",
+    "depart": "13:00",
+    "arrive": "23:30",
+    "price": 450000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_120",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-12-01",
+    "depart": "13:00",
+    "arrive": "16:30",
+    "price": 920000,
+    "seats_left": 30
+   }
+  ],
+  "bookings": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_140",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-28T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_667",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-27T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_656",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-28T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_126",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-27T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_3943",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 0
+   },
+   {
+    "id": "lot_947",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_7059",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 25
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_01",
+    "lot_id": "lot_7059",
+    "from_time": "2026-11-26T07:30:00+07:00",
+    "hours": 3,
+    "end_time": "2026-11-26T10:30:00+07:00",
+    "total": 105000,
+    "status": "ended"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_9754",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-24T18:05:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_581",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-25T15:05:00+07:00",
+    "unread": false,
+    "folder": "inbox",
+    "replied": true
+   },
+   {
+    "id": "mail_187",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-25T05:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_8376",
+    "from": "minh@gmail.example.test",
+    "from_name": "Minh",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-25T05:20:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_149",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-23T23:35:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [
+   {
+    "id": "sent_01",
+    "to": [
+     "thu.tran@congty.example.test"
+    ],
+    "cc": [],
+    "subject": "Re: Gửi lại báo cáo tháng 9",
+    "body": "Dạ tối nay em gửi lại chị bản báo cáo tháng 9 có số liệu mới nhé.",
+    "in_reply_to": "mail_581"
+   }
+  ],
+  "drafts": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_9451",
+    "title": "họp team",
+    "start": "2026-11-28T14:30:00+07:00",
+    "end": "2026-11-28T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3922",
+    "title": "họp phụ huynh",
+    "start": "2026-11-27T19:00:00+07:00",
+    "end": "2026-11-27T20:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_845",
+    "title": "đá bóng",
+    "start": "2026-11-29T08:30:00+07:00",
+    "end": "2026-11-29T09:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_219",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-29T15:00:00+07:00",
+    "end": "2026-11-29T16:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_8053",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09878163956"
+   },
+   {
+    "id": "c_868",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09885034388"
+   },
+   {
+    "id": "c_368",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09725072316"
+   },
+   {
+    "id": "c_7614",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09436950444"
+   },
+   {
+    "id": "c_2832",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09941505384"
+   },
+   {
+    "id": "c_798",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09155453204"
+   },
+   {
+    "id": "c_989",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09522251118"
+   },
+   {
+    "id": "c_331",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09195693046"
+   },
+   {
+    "id": "c_975",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09513372279"
+   },
+   {
+    "id": "c_9800",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09913254889"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_317",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_414",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_362",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_699",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_6888",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   }
+  ]
+ }
+}

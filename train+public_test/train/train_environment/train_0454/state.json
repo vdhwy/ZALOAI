@@ -1,0 +1,198 @@
+{
+ "_meta": {
+  "question_id": "train_0454",
+  "current_time": "2026-09-24T09:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 207000,
+    "due_date": "2026-09-30",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 217000,
+    "due_date": "2026-09-30",
+    "paid": false
+   },
+   {
+    "id": "bill_03",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 152000,
+    "due_date": "2026-09-28",
+    "paid": false
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_01",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-09-29",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_02",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-10-19",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_03",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-10-13",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_04",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-10-05",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_02",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_03",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_04",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_05",
+    "title": "Chia tiền lẩu tối thứ hai",
+    "content": "Lẩu Nấm Sơn Mai tối thứ hai 21/9: tổng 900 nghìn, 5 người, mỗi người 180 nghìn. Tuấn trả trước, mọi người gửi lại Tuấn."
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_01",
+    "title": "ăn tối với gia đình",
+    "start": "2026-09-26T14:30:00+07:00",
+    "end": "2026-09-26T15:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_02",
+    "title": "đi chơi công viên",
+    "start": "2026-09-26T14:30:00+07:00",
+    "end": "2026-09-26T15:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-09-27T10:00:00+07:00",
+    "end": "2026-09-27T11:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_01",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09719018623"
+   },
+   {
+    "id": "c_02",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09148512617"
+   },
+   {
+    "id": "c_03",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09971412968"
+   },
+   {
+    "id": "c_04",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09534505382"
+   },
+   {
+    "id": "c_05",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09897077388"
+   },
+   {
+    "id": "c_06",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09394100860"
+   },
+   {
+    "id": "c_07",
+    "name": "Tuấn",
+    "relation": "bạn",
+    "phone": "09450070780"
+   }
+  ]
+ }
+}

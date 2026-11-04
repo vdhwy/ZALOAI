@@ -1,0 +1,425 @@
+{
+ "_meta": {
+  "question_id": "public_0641",
+  "current_time": "2026-11-18T14:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "pantry.consume",
+   "pantry.list_items",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_797",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09876611974"
+   },
+   {
+    "id": "c_386",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09269742784"
+   },
+   {
+    "id": "c_549",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09967224559"
+   },
+   {
+    "id": "c_71",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09773588423"
+   },
+   {
+    "id": "c_7387",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09458308984"
+   },
+   {
+    "id": "c_1153",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09747036297"
+   },
+   {
+    "id": "c_229",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09364889063"
+   },
+   {
+    "id": "c_939",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09909483967"
+   },
+   {
+    "id": "c_173",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09197927846"
+   },
+   {
+    "id": "c_334",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09217661394"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_259",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-11-18T09:35:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5488",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-18T01:20:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_29",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-15T20:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_178",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_761",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_470",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_614",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_59",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_9304",
+    "time": "2026-11-19T08:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_486",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_290",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7327",
+    "name": "Thằng Út",
+    "type": "direct",
+    "members": [
+     "Thằng Út"
+    ],
+    "messages": [
+     {
+      "from": "Thằng Út",
+      "content": "Ba ơi cuối tuần con về ăn giỗ nội nha.",
+      "time": "2026-11-17T20:15:00+07:00"
+     },
+     {
+      "from": "me",
+      "content": "Ừ về đi con.",
+      "time": "2026-11-17T20:30:00+07:00"
+     },
+     {
+      "from": "Thằng Út",
+      "content": "Ba ơi, mã nào ba đang lỗ thì đừng bán vội nha, ba đặt cảnh báo khi giá nó lên lại bằng giá vốn rồi mình tính.",
+      "time": "2026-11-18T11:40:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_431",
+    "name": "Chú Tám",
+    "type": "direct",
+    "members": [
+     "Chú Tám"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_813",
+    "name": "Hằng",
+    "type": "direct",
+    "members": [
+     "Hằng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "quantity": 500,
+    "avg_price": 54550,
+    "price": 61700
+   },
+   {
+    "symbol": "ZVT",
+    "name": "CTCP Vitech",
+    "quantity": 1000,
+    "avg_price": 131650,
+    "price": 130200
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 500,
+    "avg_price": 26200,
+    "price": 26750
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26750,
+    "change_pct": 1.2
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1713,
+    "change_pct": 0.9
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 23550,
+    "change_pct": -0.5
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 58200,
+    "change_pct": -0.5
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 61700,
+    "change_pct": -0.2
+   },
+   {
+    "symbol": "ZVT",
+    "name": "CTCP Vitech",
+    "price": 130200,
+    "change_pct": 1.7
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_280",
+    "title": "đi chơi công viên",
+    "start": "2026-11-21T10:30:00+07:00",
+    "end": "2026-11-21T11:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_524",
+    "title": "họp phụ huynh",
+    "start": "2026-11-19T18:00:00+07:00",
+    "end": "2026-11-19T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1044",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-21T09:30:00+07:00",
+    "end": "2026-11-21T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_606",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_862",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_149",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_2051",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_271",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_4153",
+    "name": "trứng gà",
+    "stock": 8,
+    "unit": "quả"
+   },
+   {
+    "id": "pan_652",
+    "name": "cà phê G7",
+    "stock": 1,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_962",
+    "name": "yến mạch",
+    "stock": 1,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_9497",
+    "name": "bột mì",
+    "stock": 2,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_6147",
+    "name": "đường",
+    "stock": 2,
+    "unit": "gói"
+   }
+  ]
+ }
+}

@@ -1,0 +1,275 @@
+{
+ "_meta": {
+  "question_id": "train_1027",
+  "current_time": "2026-10-27T19:35:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_6631",
+    "status": "completed",
+    "pickup": "Đại học Sư phạm Huế, 34 Lê Lợi",
+    "dropoff": "17 Nguyễn Huệ, Phú Nhuận, Huế",
+    "vehicle": "bike",
+    "schedule_time": "2026-10-24T17:10:00+07:00"
+   },
+   {
+    "id": "ride_6694",
+    "status": "booked",
+    "pickup": "17 Nguyễn Huệ, Phú Nhuận, Huế",
+    "dropoff": "Bến xe phía Nam, 97 An Dương Vương, Huế",
+    "vehicle": "bike",
+    "schedule_time": "2026-10-28T06:15:00+07:00",
+    "payment": "cash"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-24": {
+    "steps": 7328,
+    "calories": 293,
+    "distance_km": 5.3
+   },
+   "2026-10-25": {
+    "steps": 3141,
+    "calories": 125,
+    "distance_km": 2.3
+   },
+   "2026-10-26": {
+    "steps": 8806,
+    "calories": 352,
+    "distance_km": 6.3
+   },
+   "2026-10-27": {
+    "steps": 3126,
+    "calories": 125,
+    "distance_km": 2.3
+   }
+  },
+  "goal_steps": 6000,
+  "workouts": [
+   {
+    "id": "wo_371",
+    "type": "yoga",
+    "minutes": 20,
+    "time": "2026-10-24T17:00:00+07:00"
+   },
+   {
+    "id": "wo_44",
+    "type": "cycling",
+    "minutes": 30,
+    "time": "2026-10-26T18:30:00+07:00"
+   },
+   {
+    "id": "wo_96",
+    "type": "cycling",
+    "minutes": 30,
+    "time": "2026-10-25T06:30:00+07:00"
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_412",
+    "contact_id": "c_167",
+    "phone_number": "09229220916",
+    "direction": "incoming",
+    "time": "2026-10-26T20:10:00+07:00",
+    "content": "Thứ tư con về nhớ ghé mua cho mạ hộp mè xửng nghe"
+   },
+   {
+    "id": "msg_436",
+    "contact_id": "c_764",
+    "phone_number": "09234839794",
+    "direction": "incoming",
+    "time": "2026-10-27T17:05:00+07:00",
+    "content": "Mai mi về quê thiệt hả, tau gửi quà cho mạ mi nghe"
+   },
+   {
+    "id": "msg_451",
+    "contact_id": "c_167",
+    "phone_number": "09229220916",
+    "direction": "incoming",
+    "time": "2026-10-27T19:20:00+07:00",
+    "content": "Mai bão vô rồi, con khỏi về nghe, để tuần sau mạ lên thăm"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_5982",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_4184",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 1600,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_208",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-11-03",
+    "used": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_52",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09277777624"
+   },
+   {
+    "id": "c_2136",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09733087399"
+   },
+   {
+    "id": "c_764",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09234839794"
+   },
+   {
+    "id": "c_167",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09229220916"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_401",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_246",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_61",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_3695",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_173",
+    "name": "Phơi quần áo",
+    "assignee": "Bé Ngọc",
+    "done": false
+   },
+   {
+    "id": "chore_318",
+    "name": "Giặt quần áo",
+    "assignee": null,
+    "done": true
+   },
+   {
+    "id": "chore_821",
+    "name": "Lau nhà",
+    "assignee": "Tuấn",
+    "done": false
+   }
+  ],
+  "members": [
+   "Bé Ngọc",
+   "Bà nội",
+   "Tuấn"
+  ]
+ }
+}

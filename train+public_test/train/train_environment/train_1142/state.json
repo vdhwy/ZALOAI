@@ -1,0 +1,394 @@
+{
+ "_meta": {
+  "question_id": "train_1142",
+  "current_time": "2026-11-18T07:45:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_993",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09464338287"
+   },
+   {
+    "id": "c_127",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09330988280"
+   },
+   {
+    "id": "c_924",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09482647459"
+   },
+   {
+    "id": "c_528",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09844423206"
+   },
+   {
+    "id": "c_143",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09312127061"
+   },
+   {
+    "id": "c_156",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09344337407"
+   },
+   {
+    "id": "c_817",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09322801869"
+   },
+   {
+    "id": "c_581",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09569129281"
+   },
+   {
+    "id": "c_128",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09283090955"
+   },
+   {
+    "id": "c_588",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09829827689"
+   },
+   {
+    "id": "c_228",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09159455839"
+   },
+   {
+    "id": "c_668",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09924809001"
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_576",
+    "tracking_id": "GST233045542",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Giày thể thao",
+    "status": "out_for_delivery",
+    "eta": "2026-11-18T10:00:00+07:00"
+   },
+   {
+    "id": "shp_93",
+    "tracking_id": "JV565768435",
+    "carrier": "JetViệt Express",
+    "name": "Hộp quà Trung thu",
+    "status": "in_transit",
+    "eta": "2026-11-19T17:00:00+07:00"
+   },
+   {
+    "id": "shp_652",
+    "tracking_id": "MDXVN381173125",
+    "carrier": "MDX Express",
+    "name": "Áo khoác gió",
+    "status": "in_transit",
+    "eta": "2026-11-21T14:00:00+07:00"
+   },
+   {
+    "id": "shp_398",
+    "tracking_id": "EV180140180",
+    "carrier": "VNPost",
+    "name": "Tai nghe Bluetooth",
+    "status": "delivered",
+    "eta": "2026-11-17T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_401",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8797",
+    "name": "Thằng Út",
+    "type": "direct",
+    "members": [
+     "Thằng Út"
+    ],
+    "messages": [
+     {
+      "from": "Thằng Út",
+      "content": "Ba ơi con đặt vé máy bay cho ba ra Hà Nội thăm chị Hằng rồi nghen, ba coi trong điện thoại á",
+      "time": "2026-11-17T21:10:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_834",
+    "name": "Hằng",
+    "type": "direct",
+    "members": [
+     "Hằng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_986",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1281",
+    "name": "Chú Tám",
+    "type": "direct",
+    "members": [
+     "Chú Tám"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_125",
+    "origin": "VCA",
+    "destination": "HAN",
+    "date": "2026-11-27",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_391",
+    "origin": "VCA",
+    "destination": "HAN",
+    "date": "2026-11-27",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_162",
+    "origin": "VCA",
+    "destination": "HAN",
+    "date": "2026-11-27",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_94",
+    "origin": "VCA",
+    "destination": "HAN",
+    "date": "2026-11-27",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_416",
+    "flight_id": "fl_125",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_714",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_347",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_983",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_939",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_878",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ }
+}

@@ -1,0 +1,370 @@
+{
+ "_meta": {
+  "question_id": "public_0618",
+  "current_time": "2026-10-17T16:25:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "fuel_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 100,
+    "avg_price": 78900,
+    "price": 88850
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "quantity": 1000,
+    "avg_price": 25300,
+    "price": 24050
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 500,
+    "avg_price": 136250,
+    "price": 127000
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26400,
+    "change_pct": -2.1
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24050,
+    "change_pct": -2.3
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 127000,
+    "change_pct": -3.5
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1627,
+    "change_pct": 0.5
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33650,
+    "change_pct": -1.9
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 88850,
+    "change_pct": 1.9
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22600
+   },
+   {
+    "type": "e5",
+    "price": 21400
+   },
+   {
+    "type": "diesel",
+    "price": 20000
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_786",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_900",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_4929",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_4013",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_2013",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_823",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-18T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_445",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-21T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_7466",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-22T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_328",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09710854475"
+   },
+   {
+    "id": "c_776",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09171211697"
+   },
+   {
+    "id": "c_95",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09813515989"
+   },
+   {
+    "id": "c_569",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09711325154"
+   },
+   {
+    "id": "c_402",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09860020971"
+   },
+   {
+    "id": "c_7342",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09138725667"
+   },
+   {
+    "id": "c_572",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09392097346"
+   },
+   {
+    "id": "c_966",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09348937160"
+   },
+   {
+    "id": "c_388",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09751562690"
+   },
+   {
+    "id": "c_163",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09254809793"
+   },
+   {
+    "id": "c_570",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09550403286"
+   },
+   {
+    "id": "c_8812",
+    "name": "Mrs. Watanabe",
+    "relation": "môi giới chứng khoán",
+    "phone": "09163870524",
+    "email": "watanabe.yuki@kimngan.example.test"
+   },
+   {
+    "id": "c_2047",
+    "name": "Mr. Watanabe",
+    "relation": "khách mua xoài",
+    "phone": "09725418836"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_5369",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_703",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_2822",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_356",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_761",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_79",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_860",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-10-17T07:55:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_221",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-10-15T13:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5743",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-10-17T10:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_318",
+    "contact_id": "c_8812",
+    "phone_number": "09163870524",
+    "name": "Mrs. Watanabe",
+    "time": "2026-10-17T09:15:00+07:00",
+    "direction": "incoming",
+    "status": "answered"
+   },
+   {
+    "id": "call_472",
+    "contact_id": "c_2047",
+    "phone_number": "09725418836",
+    "name": "Mr. Watanabe",
+    "time": "2026-10-17T11:40:00+07:00",
+    "direction": "incoming",
+    "status": "missed"
+   }
+  ]
+ }
+}

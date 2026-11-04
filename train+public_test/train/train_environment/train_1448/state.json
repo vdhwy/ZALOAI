@@ -1,0 +1,371 @@
+{
+ "_meta": {
+  "question_id": "train_1448",
+  "current_time": "2026-11-16T21:10:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-13": {
+    "steps": 9845,
+    "calories": 393,
+    "distance_km": 7.1
+   },
+   "2026-11-14": {
+    "steps": 7394,
+    "calories": 295,
+    "distance_km": 5.3
+   },
+   "2026-11-15": {
+    "steps": 9867,
+    "calories": 394,
+    "distance_km": 7.1
+   },
+   "2026-11-16": {
+    "steps": 1476,
+    "calories": 59,
+    "distance_km": 1.1
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_156",
+    "type": "yoga",
+    "minutes": 45,
+    "time": "2026-11-14T17:00:00+07:00"
+   },
+   {
+    "id": "wo_6603",
+    "type": "running",
+    "minutes": 45,
+    "time": "2026-11-15T06:30:00+07:00"
+   },
+   {
+    "id": "wo_308",
+    "type": "running",
+    "minutes": 30,
+    "time": "2026-11-12T18:00:00+07:00"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "programs": [
+   {
+    "id": "prg_7741",
+    "channel": "S+ Sport",
+    "title": "Bóng đá V-League: TP.HCM - Hà Nội",
+    "start": "2026-11-18T19:15:00+07:00",
+    "end": "2026-11-18T21:15:00+07:00"
+   },
+   {
+    "id": "prg_218",
+    "channel": "VTV6",
+    "title": "Bóng đá giao hữu: Việt Nam - Thái Lan",
+    "start": "2026-11-19T19:30:00+07:00",
+    "end": "2026-11-19T21:30:00+07:00"
+   },
+   {
+    "id": "prg_5390",
+    "channel": "HTV7",
+    "title": "Phim truyện: Ánh đèn phố khuya",
+    "start": "2026-11-19T20:00:00+07:00",
+    "end": "2026-11-19T21:00:00+07:00"
+   },
+   {
+    "id": "prg_664",
+    "channel": "VTV3",
+    "title": "Gameshow: Đường lên đỉnh vinh quang",
+    "start": "2026-11-18T20:30:00+07:00",
+    "end": "2026-11-18T21:30:00+07:00"
+   },
+   {
+    "id": "prg_1029",
+    "channel": "VTV1",
+    "title": "Thời sự tối",
+    "start": "2026-11-19T19:00:00+07:00",
+    "end": "2026-11-19T19:45:00+07:00"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_651",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-16T14:10:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_54",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-16T08:10:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_151",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-15T23:10:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_818",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-16T03:10:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_1720",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-16T03:25:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   }
+  ],
+  "saved": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6857",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09109277768"
+   },
+   {
+    "id": "c_2589",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09442199323"
+   },
+   {
+    "id": "c_706",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09412373111"
+   },
+   {
+    "id": "c_395",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09229475491"
+   },
+   {
+    "id": "c_14",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09313566777"
+   },
+   {
+    "id": "c_910",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09555787242"
+   },
+   {
+    "id": "c_402",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09779270001"
+   },
+   {
+    "id": "c_728",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09502312990"
+   },
+   {
+    "id": "c_6131",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09793846411"
+   },
+   {
+    "id": "c_522",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09591532600"
+   },
+   {
+    "id": "c_1623",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09140419389"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 830000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "bill_payment",
+    "bill_id": "bill_433",
+    "amount": -210000
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_722",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 847000,
+    "due_date": "2026-11-25",
+    "paid": false
+   },
+   {
+    "id": "bill_433",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 210000,
+    "due_date": "2026-11-18",
+    "paid": true,
+    "paid_with": "ewallet"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_903",
+    "content": "Check-in xe định kỳ ở garage anh Sáu",
+    "time": "2026-11-18T07:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_5512",
+    "content": "Workshop tài xế Vivu ở Quận 3",
+    "time": "2026-11-19T08:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_03",
+    "repeat": "once",
+    "done": false,
+    "content": "Ra sân bay đón khách",
+    "time": "2026-11-18T21:00:00+07:00"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_3128",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-16T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_347",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-22T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_956",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-17T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 33,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-16",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-17",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-18",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 30
+   }
+  ]
+ }
+}

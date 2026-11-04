@@ -1,0 +1,413 @@
+{
+ "_meta": {
+  "question_id": "train_0952",
+  "current_time": "2026-10-13T13:00:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_4290",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_707",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_1575",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_6444",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_751",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_7150",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 0,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_738",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 180,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_328",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-12",
+    "used": false
+   },
+   {
+    "id": "vch_1191",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-10-16",
+    "used": false
+   },
+   {
+    "id": "vch_115",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-10-18",
+    "used": false
+   },
+   {
+    "id": "vch_04",
+    "merchant": "MinhMart",
+    "name": "Voucher MinhMart 100.000đ",
+    "value": 100000,
+    "program_id": "prog_7150",
+    "reward_id": "rw_01_1",
+    "used": false
+   },
+   {
+    "id": "vch_05",
+    "merchant": "MinhMart",
+    "name": "Voucher MinhMart 100.000đ",
+    "value": 100000,
+    "program_id": "prog_7150",
+    "reward_id": "rw_01_1",
+    "used": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_5323",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_5827",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_301",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_949",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_733",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09476182254"
+   },
+   {
+    "id": "c_5760",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09926791463"
+   },
+   {
+    "id": "c_2362",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09624833319"
+   },
+   {
+    "id": "c_2157",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09901898521"
+   },
+   {
+    "id": "c_922",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09685536079"
+   },
+   {
+    "id": "c_2721",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09301803992"
+   },
+   {
+    "id": "c_126",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09883747321"
+   },
+   {
+    "id": "c_877",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09790081330"
+   },
+   {
+    "id": "c_941",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09398396535"
+   },
+   {
+    "id": "c_607",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09808323249"
+   },
+   {
+    "id": "c_83",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09841924984"
+   },
+   {
+    "id": "c_931",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09563540013"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_4693",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-10-14T08:30:00+07:00",
+    "link": "https://meet.example.test/hvi-gxjk-ubj",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_177",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-10-16T15:30:00+07:00",
+    "link": "https://meet.example.test/qux-wevx-dwy",
+    "attendees": [
+     "c_2362",
+     "c_607"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_142",
+    "title": "Họp lớp online",
+    "start": "2026-10-14T09:30:00+07:00",
+    "link": "https://meet.example.test/nnw-xkbv-ndz",
+    "attendees": [
+     "c_941",
+     "c_877"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_8567",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-10-14T20:00:00+07:00",
+    "link": "https://meet.example.test/wjm-yxrq-mpl",
+    "attendees": [
+     "c_2362"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ }
+}

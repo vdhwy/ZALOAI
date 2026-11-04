@@ -1,0 +1,529 @@
+{
+ "_meta": {
+  "question_id": "train_1144",
+  "current_time": "2026-10-23T09:25:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "library.reserve",
+   "library.search",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_858",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_7957",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_222",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_828",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_203",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_103",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_701",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_388",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_563",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_3800",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_6254",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_852",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_868",
+    "show_id": "show_852",
+    "title": "Số 6: Giấc ngủ và trí nhớ",
+    "number": 6,
+    "duration_min": 18,
+    "published": "2026-10-09"
+   },
+   {
+    "id": "ep_391",
+    "show_id": "show_563",
+    "title": "Số 13: Sống chậm giữa thành phố",
+    "number": 13,
+    "duration_min": 45,
+    "published": "2026-10-09"
+   },
+   {
+    "id": "ep_944",
+    "show_id": "show_3800",
+    "title": "Số 7: Rác thải nhựa ở đô thị",
+    "number": 7,
+    "duration_min": 18,
+    "published": "2026-10-02"
+   },
+   {
+    "id": "ep_630",
+    "show_id": "show_852",
+    "title": "Số 7: Lỗ đen là gì",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-16"
+   },
+   {
+    "id": "ep_6361",
+    "show_id": "show_563",
+    "title": "Số 14: Nghề diễn và những áp lực",
+    "number": 14,
+    "duration_min": 45,
+    "published": "2026-10-16"
+   },
+   {
+    "id": "ep_800",
+    "show_id": "show_6254",
+    "title": "Số 10: Nhà giả kim - phần 1",
+    "number": 10,
+    "duration_min": 32,
+    "published": "2026-10-09"
+   },
+   {
+    "id": "ep_236",
+    "show_id": "show_3800",
+    "title": "Số 9: Đi xe đạp đi làm",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-10-16"
+   },
+   {
+    "id": "ep_2874",
+    "show_id": "show_3800",
+    "title": "Số 8: Trồng cây trên sân thượng",
+    "number": 8,
+    "duration_min": 45,
+    "published": "2026-10-09"
+   },
+   {
+    "id": "ep_154",
+    "show_id": "show_6254",
+    "title": "Số 11: Nhà giả kim - phần 2",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-10-16"
+   },
+   {
+    "id": "ep_932",
+    "show_id": "show_852",
+    "title": "Số 5: Vì sao bầu trời màu xanh",
+    "number": 5,
+    "duration_min": 25,
+    "published": "2026-10-02"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_5903",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_3915",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_5882",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_661",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_852"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_128",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_8303",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_884",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_6413",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-10-23",
+    "prizes": {
+     "special": "396163",
+     "first": "26090",
+     "eighth": "38"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-10-23",
+    "prizes": {
+     "special": "703908",
+     "first": "15378",
+     "eighth": "89"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-10-23",
+    "prizes": {
+     "special": "574239",
+     "first": "94586",
+     "eighth": "49"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-10-23",
+    "prizes": {
+     "special": "633067",
+     "first": "29909",
+     "eighth": "69"
+    }
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_721",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_897",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_1963",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_17",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "calculator": {},
+ "notes": {
+  "notes": [
+   {
+    "id": "note_6088",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_318",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_248",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 25,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-23",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-24",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-25",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-26",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 32
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_737",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_244",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": false
+   },
+   {
+    "id": "book_50",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": false
+   },
+   {
+    "id": "book_267",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": false
+   }
+  ],
+  "reservations": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_165",
+    "name": "Đổ rác",
+    "assignee": "Bé Na",
+    "done": false
+   },
+   {
+    "id": "chore_114",
+    "name": "Nấu cơm tối",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_229",
+    "name": "Rửa bát",
+    "assignee": "Bác Tư",
+    "done": true
+   },
+   {
+    "id": "chore_716",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Bố",
+    "done": false
+   }
+  ],
+  "members": [
+   "Bác Tư",
+   "Bé Na",
+   "Bố"
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25946
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28021
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 173.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,435 @@
+{
+ "_meta": {
+  "question_id": "train_1005",
+  "current_time": "2026-11-04T15:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_417",
+    "contact_id": "c_778",
+    "phone_number": "09488159183",
+    "direction": "incoming",
+    "time": "2026-11-04T14:05:00+07:00",
+    "content": "Ngọc ơi, mạ có tờ vé đài Đà Nẵng đuôi 95. Con dò giùm mạ coi trúng giải tám không nghe."
+   },
+   {
+    "id": "msg_93",
+    "contact_id": null,
+    "phone_number": "0234382211",
+    "direction": "incoming",
+    "time": "2026-11-04T09:20:00+07:00",
+    "content": "Thu vien DHSP Hue: sach muon cua ban se het han ngay 08/11."
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_778",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09488159183"
+   },
+   {
+    "id": "c_551",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09608470598"
+   },
+   {
+    "id": "c_426",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09481972954"
+   },
+   {
+    "id": "c_5840",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09700987066"
+   },
+   {
+    "id": "c_798",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09563444780"
+   },
+   {
+    "id": "c_580",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09248570410"
+   },
+   {
+    "id": "c_815",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09931012926"
+   },
+   {
+    "id": "c_325",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09755467834"
+   },
+   {
+    "id": "c_5743",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09549553471"
+   },
+   {
+    "id": "c_239",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09755383392"
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_348",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-07T08:00:00+07:00",
+    "link": "https://meet.example.test/phj-vcvy-xwk",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_553",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-05T10:00:00+07:00",
+    "link": "https://meet.example.test/ygd-fdhg-hkz",
+    "attendees": [
+     "c_798"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_6222",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-07T20:00:00+07:00",
+    "link": "https://meet.example.test/ryr-oqkl-udn",
+    "attendees": [
+     "c_325"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_5464",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_2461",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 500,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_202",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 960,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_7871",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-11-26",
+    "used": false
+   },
+   {
+    "id": "vch_948",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-12-01",
+    "used": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-04",
+    "prizes": {
+     "special": "665672",
+     "first": "41528",
+     "eighth": "67"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-04",
+    "prizes": {
+     "special": "408073",
+     "first": "63846",
+     "eighth": "57"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-04",
+    "prizes": {
+     "special": "872322",
+     "first": "83257",
+     "eighth": "93"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-04",
+    "prizes": {
+     "special": "282596",
+     "first": "45924",
+     "eighth": "95"
+    }
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_9417",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_381",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_6668",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_8080",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_976",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_24",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_804",
+    "time": "2026-11-05T05:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_112",
+    "time": "2026-11-05T06:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ }
+}

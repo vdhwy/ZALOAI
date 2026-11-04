@@ -1,0 +1,570 @@
+{
+ "_meta": {
+  "question_id": "public_0543",
+  "current_time": "2026-12-10T16:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "event_tickets.book",
+   "event_tickets.search",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "phone.call",
+   "phone.recent_calls",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_259",
+    "title": "khám răng",
+    "start": "2026-12-11T18:00:00+07:00",
+    "end": "2026-12-11T19:00:00+07:00",
+    "location": "Nha khoa Hải Châu",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_358",
+    "title": "họp phụ huynh",
+    "start": "2026-12-13T19:30:00+07:00",
+    "end": "2026-12-13T20:30:00+07:00",
+    "location": "Trường Tiểu học Hải Châu",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_648",
+    "title": "đá bóng",
+    "start": "2026-12-12T15:00:00+07:00",
+    "end": "2026-12-12T16:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_963",
+    "title": "họp team",
+    "start": "2026-12-12T09:00:00+07:00",
+    "end": "2026-12-12T10:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_419",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_6760",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_680",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_204",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_618",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_291",
+    "name": "Tài khoản lương",
+    "balance": 6900000
+   },
+   {
+    "id": "acc_237",
+    "name": "Tài khoản chi tiêu",
+    "balance": 3200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_326",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_60",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_517",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_744",
+    "name": "Sarah Nguyễn",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071002456789"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_5531",
+    "account_id": "acc_237",
+    "beneficiary_id": "ben_744",
+    "amount": -1500000,
+    "note": "Tiền vé xe đi Hội An",
+    "date": "2026-12-08"
+   },
+   {
+    "id": "tx_5602",
+    "account_id": "acc_291",
+    "beneficiary_id": "ben_326",
+    "amount": -4500000,
+    "note": "Tiền nhà tháng 12",
+    "date": "2026-12-05"
+   },
+   {
+    "id": "tx_5648",
+    "account_id": "acc_237",
+    "beneficiary_id": "ben_517",
+    "amount": -300000,
+    "note": "Góp quà sinh nhật",
+    "date": "2026-12-09"
+   },
+   {
+    "id": "tx_04",
+    "account_id": "acc_291",
+    "beneficiary_id": "ben_744",
+    "amount": -2000000,
+    "note": "Tiền booking khách sạn"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_225",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_17",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_1940",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_797",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_2196",
+    "time": "2026-12-11T06:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_4881",
+    "time": "2026-12-11T08:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_369",
+    "time": "2026-12-11T07:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6445",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09122441339"
+   },
+   {
+    "id": "c_649",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09833388260"
+   },
+   {
+    "id": "c_20",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09539472997"
+   },
+   {
+    "id": "c_320",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09498927659"
+   },
+   {
+    "id": "c_17",
+    "name": "Lan",
+    "relation": "em gái",
+    "phone": "09144984098"
+   },
+   {
+    "id": "c_9414",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09672242518"
+   },
+   {
+    "id": "c_836",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09779566087"
+   },
+   {
+    "id": "c_9691",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09218243379"
+   },
+   {
+    "id": "c_581",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09182241704"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_341",
+    "name": "Liên hoan phim ngắn",
+    "category": "điện ảnh",
+    "date": "2026-12-16",
+    "time": "20:00",
+    "venue": "Bảo tàng Đà Nẵng",
+    "price": 120000,
+    "available": 12
+   },
+   {
+    "id": "event_469",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-12-18",
+    "time": "19:30",
+    "venue": "Bảo tàng Đà Nẵng",
+    "price": 600000,
+    "available": 12
+   },
+   {
+    "id": "event_852",
+    "name": "Vở kịch Ngày Mưa",
+    "category": "kịch",
+    "date": "2026-12-17",
+    "time": "19:30",
+    "venue": "Cung Thể thao Tiên Sơn",
+    "price": 250000,
+    "available": 80
+   }
+  ],
+  "bookings": []
+ }
+}

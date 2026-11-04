@@ -1,0 +1,257 @@
+{
+ "_meta": {
+  "question_id": "train_1146",
+  "current_time": "2026-11-14T19:30:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "phone.call",
+   "phone.recent_calls",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_19",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-12-09",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_798",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-11-16",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_278",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-12-11",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_629",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_621",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_371",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 80
+   },
+   {
+    "id": "lock_2776",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": false,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-14",
+    "to": "2026-11-14",
+    "kwh": 12.3,
+    "cost": 35700,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 5.5
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 2.5
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-08",
+    "to": "2026-11-14",
+    "kwh": 74.2,
+    "cost": 215200,
+    "days": [
+     {
+      "date": "2026-11-08",
+      "kwh": 7.8
+     },
+     {
+      "date": "2026-11-09",
+      "kwh": 8.7
+     },
+     {
+      "date": "2026-11-10",
+      "kwh": 10.1
+     },
+     {
+      "date": "2026-11-11",
+      "kwh": 9.8
+     },
+     {
+      "date": "2026-11-12",
+      "kwh": 9.5
+     },
+     {
+      "date": "2026-11-13",
+      "kwh": 16.0
+     },
+     {
+      "date": "2026-11-14",
+      "kwh": 12.3
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-14",
+    "kwh": 139.3,
+    "cost": 404000
+   }
+  },
+  "alert_threshold_kwh": 300
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_6023",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 18
+   },
+   {
+    "id": "room_1787",
+    "name": "phòng làm việc",
+    "area_m2": 8
+   },
+   {
+    "id": "room_544",
+    "name": "phòng ăn",
+    "area_m2": 25
+   },
+   {
+    "id": "room_163",
+    "name": "phòng khách",
+    "area_m2": 18
+   },
+   {
+    "id": "room_708",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   },
+   {
+    "id": "room_695",
+    "name": "bếp",
+    "area_m2": 10
+   }
+  ],
+  "current_job": null
+ },
+ "phone": {
+  "calls": []
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_3169",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_452",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_1473",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_653",
+    "time": "2026-11-13T02:55:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_994",
+    "time": "2026-11-12T22:45:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_943",
+    "time": "2026-11-13T01:10:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_830",
+    "title": "họp phụ huynh",
+    "start": "2026-11-15T19:00:00+07:00",
+    "end": "2026-11-15T20:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

@@ -1,0 +1,523 @@
+{
+ "_meta": {
+  "question_id": "train_1646",
+  "current_time": "2026-10-22T13:00:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_1542",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 847000,
+    "due_date": "2026-10-28",
+    "paid": false
+   },
+   {
+    "id": "bill_7542",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 225000,
+    "due_date": "2026-10-24",
+    "paid": true,
+    "paid_with": "bank"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 100,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_816",
+    "name": "phòng khách",
+    "area_m2": 18
+   },
+   {
+    "id": "room_704",
+    "name": "phòng ngủ",
+    "area_m2": 22
+   },
+   {
+    "id": "room_389",
+    "name": "bếp",
+    "area_m2": 10
+   }
+  ],
+  "current_job": null
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-19": {
+    "steps": 4228,
+    "calories": 169,
+    "distance_km": 3.0
+   },
+   "2026-10-20": {
+    "steps": 9754,
+    "calories": 390,
+    "distance_km": 7.0
+   },
+   "2026-10-21": {
+    "steps": 4057,
+    "calories": 162,
+    "distance_km": 2.9
+   },
+   "2026-10-22": {
+    "steps": 5096,
+    "calories": 203,
+    "distance_km": 3.7
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_947",
+    "type": "walking",
+    "minutes": 30,
+    "time": "2026-10-19T18:30:00+07:00"
+   },
+   {
+    "id": "wo_935",
+    "type": "cycling",
+    "minutes": 60,
+    "time": "2026-10-20T06:30:00+07:00"
+   },
+   {
+    "id": "wo_237",
+    "type": "cycling",
+    "minutes": 30,
+    "time": "2026-10-18T18:00:00+07:00"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_9921",
+    "time": "2026-10-23T06:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_965",
+    "time": "2026-10-23T07:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-10-22",
+    "to": "2026-10-22",
+    "kwh": 8.0,
+    "cost": 23200,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.6
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.6
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-10-16",
+    "to": "2026-10-22",
+    "kwh": 81.7,
+    "cost": 236900,
+    "days": [
+     {
+      "date": "2026-10-16",
+      "kwh": 7.0
+     },
+     {
+      "date": "2026-10-17",
+      "kwh": 13.3
+     },
+     {
+      "date": "2026-10-18",
+      "kwh": 15.8
+     },
+     {
+      "date": "2026-10-19",
+      "kwh": 14.9
+     },
+     {
+      "date": "2026-10-20",
+      "kwh": 13.0
+     },
+     {
+      "date": "2026-10-21",
+      "kwh": 9.7
+     },
+     {
+      "date": "2026-10-22",
+      "kwh": 8.0
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-10-01",
+    "to": "2026-10-22",
+    "kwh": 241.8,
+    "cost": 701200
+   }
+  },
+  "alert_threshold_kwh": 350
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "cool",
+     "temperature": 26
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_4657",
+    "name": "Giặt quần áo",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_682",
+    "name": "Đi chợ",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_1229",
+    "name": "Nấu cơm tối",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_625",
+    "name": "Tưới cây",
+    "assignee": "Anh Việt",
+    "done": false
+   }
+  ],
+  "members": [
+   "Anh Việt",
+   "Bố",
+   "Tuấn",
+   "Lan"
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_264",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 960,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_902",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 75,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   },
+   {
+    "id": "prog_28",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 500,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_343",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-07",
+    "used": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_874",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09666769212"
+   },
+   {
+    "id": "c_203",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09722288222"
+   },
+   {
+    "id": "c_460",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09447192589"
+   },
+   {
+    "id": "c_415",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09956675681"
+   },
+   {
+    "id": "c_7706",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09882503218"
+   },
+   {
+    "id": "c_9280",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09109849538"
+   },
+   {
+    "id": "c_3355",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09787681882"
+   },
+   {
+    "id": "c_513",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09211251157"
+   },
+   {
+    "id": "c_1580",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09975789958"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 25,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-23",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-24",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-25",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 30
+   }
+  ]
+ }
+}

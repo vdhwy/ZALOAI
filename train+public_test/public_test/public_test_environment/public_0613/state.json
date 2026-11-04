@@ -1,0 +1,457 @@
+{
+ "_meta": {
+  "question_id": "public_0613",
+  "current_time": "2026-11-10T10:00:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_578",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_2670",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_341",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_886",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_627",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_935",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-12T15:00:00+07:00",
+    "end": "2026-11-12T16:00:00+07:00",
+    "location": "Cà phê Phố Bên Đồi",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3583",
+    "title": "họp team",
+    "start": "2026-11-13T15:30:00+07:00",
+    "end": "2026-11-13T16:30:00+07:00",
+    "location": "Phòng họp khoa Ngữ văn",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_697",
+    "title": "đá bóng",
+    "start": "2026-11-11T19:00:00+07:00",
+    "end": "2026-11-11T20:00:00+07:00",
+    "location": "Sân bóng Mini An Cựu",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_311",
+    "title": "đi chơi công viên",
+    "start": "2026-11-12T10:30:00+07:00",
+    "end": "2026-11-12T11:30:00+07:00",
+    "location": "Công viên Thương Bạc",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_69",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-11T18:00:00+07:00",
+    "end": "2026-11-11T19:00:00+07:00",
+    "location": "Nhà hàng Phố Hội",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_95",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     },
+     {
+      "id": "rest_01_m4",
+      "name": "Bánh lọc trần",
+      "price": 30000
+     }
+    ]
+   },
+   {
+    "id": "rest_2088",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_109",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_24",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_5521",
+    "restaurant_id": "rest_109",
+    "items": [
+     {
+      "item_id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "quantity": 2
+     }
+    ],
+    "total": 90000,
+    "payment": "ewallet",
+    "status": "delivered",
+    "time": "2026-11-08T15:20:00+07:00"
+   },
+   {
+    "id": "ord_7716",
+    "restaurant_id": "rest_95",
+    "items": [
+     {
+      "item_id": "rest_01_m3",
+      "name": "Chả cua",
+      "quantity": 4
+     },
+     {
+      "item_id": "rest_01_m4",
+      "name": "Bánh lọc trần",
+      "quantity": 10
+     }
+    ],
+    "total": 360000,
+    "payment": "cash",
+    "status": "delivered",
+    "time": "2026-11-10T08:40:00+07:00"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_893",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_6614",
+    "name": "chả cua",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_535",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_239",
+    "name": "bánh lọc",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_1180",
+    "name": "bún tươi",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_06",
+    "checked": false,
+    "name": "rau thơm",
+    "quantity": 1
+   }
+  ]
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_356",
+    "name": "Chạy bộ buổi sáng",
+    "streak": 0
+   },
+   {
+    "id": "habit_1733",
+    "name": "Học từ vựng tiếng Anh",
+    "streak": 0
+   },
+   {
+    "id": "habit_5768",
+    "name": "Thiền 10 phút",
+    "streak": 6,
+    "last_logged": "2026-11-09"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_188",
+    "habit_id": "habit_5768",
+    "date": "2026-11-08"
+   },
+   {
+    "id": "log_02",
+    "habit_id": "habit_5768",
+    "date": "2026-11-09"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1928",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09359195360"
+   },
+   {
+    "id": "c_1239",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09916589704"
+   },
+   {
+    "id": "c_333",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09186797894"
+   },
+   {
+    "id": "c_3092",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09523468759"
+   },
+   {
+    "id": "c_346",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09469826307"
+   },
+   {
+    "id": "c_438",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09384764012"
+   },
+   {
+    "id": "c_590",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09987621271"
+   },
+   {
+    "id": "c_7431",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09718992601"
+   },
+   {
+    "id": "c_728",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09692217961"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "bus_3529",
+    "name": "Tuyến 12",
+    "type": "bus",
+    "stops": [
+     "Bến xe Phía Nam",
+     "Đại học Sư phạm",
+     "Chợ Đông Ba",
+     "Kim Long"
+    ],
+    "fare": 7000,
+    "duration_min": 40,
+    "headway_min": 15
+   },
+   {
+    "id": "bus_166",
+    "name": "Tuyến 05",
+    "type": "bus",
+    "stops": [
+     "An Cựu",
+     "Đại học Sư phạm",
+     "Ga Huế",
+     "Vỹ Dạ"
+    ],
+    "fare": 7000,
+    "duration_min": 35,
+    "headway_min": 20
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Đại học Sư phạm",
+    "route": "bus_3529",
+    "time": "2026-11-10T10:08:00+07:00"
+   },
+   {
+    "stop": "Đại học Sư phạm",
+    "route": "bus_166",
+    "time": "2026-11-10T10:18:00+07:00"
+   },
+   {
+    "stop": "An Cựu",
+    "route": "bus_166",
+    "time": "2026-11-10T10:08:00+07:00"
+   },
+   {
+    "stop": "Đại học Sư phạm",
+    "route": "bus_3529",
+    "time": "2026-11-10T10:23:00+07:00"
+   },
+   {
+    "stop": "Chợ Đông Ba",
+    "route": "bus_3529",
+    "time": "2026-11-10T10:28:00+07:00"
+   }
+  ],
+  "topups": []
+ }
+}

@@ -1,0 +1,416 @@
+{
+ "_meta": {
+  "question_id": "train_1734",
+  "current_time": "2026-11-26T12:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "gold_price.get_price",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe"
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 122500000,
+    "sell": 124500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 116500000,
+    "sell": 118500000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4192
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_9582",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-11-25T06:25:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_92",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-26T10:40:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_8400",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-11-25T10:25:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_197",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-11-25T09:55:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_542",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-25T09:55:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   },
+   {
+    "id": "art_996",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-25T07:40:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   }
+  ],
+  "saved": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_4054",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_8837",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_833",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_109",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_385",
+    "show_id": "show_109",
+    "title": "Số 10: Rác thải nhựa ở đô thị",
+    "number": 10,
+    "duration_min": 45,
+    "published": "2026-11-05"
+   },
+   {
+    "id": "ep_4936",
+    "show_id": "show_8837",
+    "title": "Số 11: Lỗ đen là gì",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-11-19"
+   },
+   {
+    "id": "ep_458",
+    "show_id": "show_4054",
+    "title": "Số 21: Nhà giả kim - phần 2",
+    "number": 21,
+    "duration_min": 25,
+    "published": "2026-11-19"
+   },
+   {
+    "id": "ep_1568",
+    "show_id": "show_109",
+    "title": "Số 11: Trồng cây trên sân thượng",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-11-12"
+   },
+   {
+    "id": "ep_153",
+    "show_id": "show_833",
+    "title": "Số 10: Sống chậm giữa thành phố",
+    "number": 10,
+    "duration_min": 45,
+    "published": "2026-11-12"
+   },
+   {
+    "id": "ep_8444",
+    "show_id": "show_833",
+    "title": "Số 11: Nghề diễn và những áp lực",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-11-19"
+   },
+   {
+    "id": "ep_968",
+    "show_id": "show_8837",
+    "title": "Số 9: Vì sao bầu trời màu xanh",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-11-05"
+   },
+   {
+    "id": "ep_8130",
+    "show_id": "show_109",
+    "title": "Số 12: Đi xe đạp đi làm",
+    "number": 12,
+    "duration_min": 32,
+    "published": "2026-11-19"
+   },
+   {
+    "id": "ep_7425",
+    "show_id": "show_4054",
+    "title": "Số 20: Nhà giả kim - phần 1",
+    "number": 20,
+    "duration_min": 45,
+    "published": "2026-11-12"
+   },
+   {
+    "id": "ep_486",
+    "show_id": "show_8837",
+    "title": "Số 10: Giấc ngủ và trí nhớ",
+    "number": 10,
+    "duration_min": 18,
+    "published": "2026-11-12"
+   },
+   {
+    "id": "ep_2264",
+    "show_id": "show_8837",
+    "title": "Số 12: Điện thoại gập hoạt động ra sao",
+    "number": 12,
+    "duration_min": 28,
+    "published": "2026-11-26"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_2137",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_364",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_7063",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_8852",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_833"
+  ],
+  "queue": [
+   "ep_4936",
+   "ep_2264"
+  ],
+  "now_playing": {
+   "episode_id": "ep_8444",
+   "show_id": "show_833",
+   "status": "playing"
+  }
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": null,
+    "phone_number": "09031234567",
+    "status": "dialing"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_881",
+    "time": "2026-11-27T08:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_7610",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5182",
+    "name": "Vợ Hằng",
+    "type": "direct",
+    "members": [
+     "Vợ Hằng"
+    ],
+    "messages": [
+     {
+      "from": "Vợ Hằng",
+      "content": "Chiều nay anh đón Bin giúp em nha, em họp tới sáu giờ.",
+      "time": "2026-11-26T08:10:00+07:00"
+     },
+     {
+      "from": "me",
+      "content": "Ok em, năm giờ anh đón Bin."
+     }
+    ]
+   },
+   {
+    "id": "chat_347",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4997",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_564",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7275",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-26",
+    "to": "2026-11-26",
+    "kwh": 8.7,
+    "cost": 25200,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.9
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.7
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-20",
+    "to": "2026-11-26",
+    "kwh": 80.1,
+    "cost": 232300,
+    "days": [
+     {
+      "date": "2026-11-20",
+      "kwh": 15.0
+     },
+     {
+      "date": "2026-11-21",
+      "kwh": 7.3
+     },
+     {
+      "date": "2026-11-22",
+      "kwh": 8.4
+     },
+     {
+      "date": "2026-11-23",
+      "kwh": 13.2
+     },
+     {
+      "date": "2026-11-24",
+      "kwh": 15.5
+     },
+     {
+      "date": "2026-11-25",
+      "kwh": 12.0
+     },
+     {
+      "date": "2026-11-26",
+      "kwh": 8.7
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-26",
+    "kwh": 308.9,
+    "cost": 895800
+   }
+  },
+  "alert_threshold_kwh": 400
+ }
+}

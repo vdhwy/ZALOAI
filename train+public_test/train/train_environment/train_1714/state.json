@@ -1,0 +1,390 @@
+{
+ "_meta": {
+  "question_id": "train_1714",
+  "current_time": "2026-10-15T10:35:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_492",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-11-05",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_584",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-11-11",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_40",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-10-28",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_164",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_979",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09182991919"
+   },
+   {
+    "id": "c_307",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09268531868"
+   },
+   {
+    "id": "c_984",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09696582285"
+   },
+   {
+    "id": "c_5332",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09848346596"
+   },
+   {
+    "id": "c_420",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09173900908"
+   },
+   {
+    "id": "c_658",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09606129249"
+   },
+   {
+    "id": "c_340",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09625924164"
+   },
+   {
+    "id": "c_373",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09999270252"
+   },
+   {
+    "id": "c_3297",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09351708362"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_5063",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 146000,
+    "due_date": "2026-10-17",
+    "paid": false
+   },
+   {
+    "id": "bill_8484",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 855000,
+    "due_date": "2026-10-18",
+    "paid": false
+   },
+   {
+    "id": "bill_1424",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 221000,
+    "due_date": "2026-10-22",
+    "paid": false
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25623
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27672
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 170.8
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_915",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_195",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_6426",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_91",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_94",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_580",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_54",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2959",
+    "name": "Bé Bống",
+    "type": "direct",
+    "members": [
+     "Bé Bống"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_839",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_7457",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-14T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_683",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-21T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_745",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-16T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_784",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-17T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_354",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-15T09:30:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_2916",
+    "title": "Thanh toán voucher khách sạn Osaka 68.000 yên",
+    "due": "2026-10-20T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_3318",
+    "title": "Thanh toán voucher khách sạn Tokyo 95.000 yên",
+    "due": "2026-10-10T17:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_795",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-10-16T10:00:00+07:00",
+    "link": "https://meet.example.test/sah-hnmk-stl",
+    "attendees": [
+     "c_340"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_2141",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-10-16T10:30:00+07:00",
+    "link": "https://meet.example.test/hbh-xdrl-han",
+    "attendees": [
+     "c_658"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_577",
+    "title": "Họp lớp online",
+    "start": "2026-10-16T09:30:00+07:00",
+    "link": "https://meet.example.test/saw-ebgd-kep",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_632",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-10-16T10:30:00+07:00",
+    "link": "https://meet.example.test/pyh-bjcf-tyx",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_05",
+    "title": "Chốt báo giá với khách",
+    "start": "2026-10-16T15:00:00+07:00",
+    "link": "https://meet.example.test/fld-fulb-vqa",
+    "attendees": [
+     "c_979"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "calculator": {}
+}

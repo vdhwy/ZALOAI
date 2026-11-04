@@ -1,0 +1,407 @@
+{
+ "_meta": {
+  "question_id": "train_0968",
+  "current_time": "2026-10-20T12:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_706",
+    "time": "2026-10-21T05:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_2588",
+    "time": "2026-10-21T06:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_9948",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2166",
+    "name": "Mạ",
+    "type": "direct",
+    "members": [
+     "Mạ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_662",
+    "name": "Nhi",
+    "type": "direct",
+    "members": [
+     "Nhi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3785",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9388",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_5645",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_437",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_2362",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_277",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_1225",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_4342",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_859",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_665",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_7626",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_7362",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_675",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_328",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_576",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_358",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_59",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_825",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_905",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_131",
+    "show_id": "show_358",
+    "title": "Số 11: Nhà giả kim - phần 2",
+    "number": 11,
+    "duration_min": 45,
+    "published": "2026-10-13"
+   },
+   {
+    "id": "ep_721",
+    "show_id": "show_59",
+    "title": "Số 6: Lập quỹ khẩn cấp",
+    "number": 6,
+    "duration_min": 32,
+    "published": "2026-09-29"
+   },
+   {
+    "id": "ep_5899",
+    "show_id": "show_905",
+    "title": "Số 5: Rác thải nhựa ở đô thị",
+    "number": 5,
+    "duration_min": 18,
+    "published": "2026-09-29"
+   },
+   {
+    "id": "ep_907",
+    "show_id": "show_59",
+    "title": "Số 8: Quản lý chi tiêu gia đình",
+    "number": 8,
+    "duration_min": 45,
+    "published": "2026-10-13"
+   },
+   {
+    "id": "ep_4961",
+    "show_id": "show_905",
+    "title": "Số 6: Trồng cây trên sân thượng",
+    "number": 6,
+    "duration_min": 25,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_51",
+    "show_id": "show_825",
+    "title": "Số 10: Sống chậm giữa thành phố",
+    "number": 10,
+    "duration_min": 25,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_4975",
+    "show_id": "show_905",
+    "title": "Số 7: Đi xe đạp đi làm",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-13"
+   },
+   {
+    "id": "ep_3534",
+    "show_id": "show_825",
+    "title": "Số 11: Nghề diễn và những áp lực",
+    "number": 11,
+    "duration_min": 45,
+    "published": "2026-10-13"
+   },
+   {
+    "id": "ep_8261",
+    "show_id": "show_358",
+    "title": "Số 10: Nhà giả kim - phần 1",
+    "number": 10,
+    "duration_min": 32,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_2238",
+    "show_id": "show_59",
+    "title": "Số 7: Gửi tiết kiệm hay mua vàng",
+    "number": 7,
+    "duration_min": 18,
+    "published": "2026-10-06"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_651",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_3863",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_724",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_9332",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9451",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09192244911"
+   },
+   {
+    "id": "c_1649",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09564422541"
+   },
+   {
+    "id": "c_527",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09969716197"
+   },
+   {
+    "id": "c_616",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09922821935"
+   },
+   {
+    "id": "c_5640",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09559663508"
+   },
+   {
+    "id": "c_9269",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09766336707"
+   },
+   {
+    "id": "c_674",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09365768442"
+   },
+   {
+    "id": "c_320",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09758261840"
+   },
+   {
+    "id": "c_248",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09796845648"
+   }
+  ]
+ }
+}

@@ -1,0 +1,265 @@
+{
+ "_meta": {
+  "question_id": "public_0480",
+  "current_time": "2026-10-30T09:50:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_3277",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-04T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_615",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-04T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_584",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-31T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_570",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-30T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_9493",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-03T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 120000,
+  "routes": [
+   {
+    "id": "metro_669",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_927",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_927",
+    "time": "2026-10-30T10:19:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_669",
+    "time": "2026-10-30T10:01:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_669",
+    "time": "2026-10-30T09:53:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_927",
+    "time": "2026-10-30T10:34:00+07:00"
+   },
+   {
+    "stop": "Nhà hát Thành phố",
+    "route": "metro_669",
+    "time": "2026-10-30T10:09:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_927",
+    "time": "2026-10-30T10:04:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_5490",
+    "title": "họp phụ huynh",
+    "start": "2026-10-31T14:00:00+07:00",
+    "end": "2026-10-31T15:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_820",
+    "title": "đá bóng",
+    "start": "2026-10-31T19:30:00+07:00",
+    "end": "2026-10-31T20:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3586",
+    "title": "họp team",
+    "start": "2026-11-02T14:00:00+07:00",
+    "end": "2026-11-02T15:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2887",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-31T15:00:00+07:00",
+    "end": "2026-10-31T16:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5198",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09226492396"
+   },
+   {
+    "id": "c_354",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09847502926"
+   },
+   {
+    "id": "c_3001",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09602487871"
+   },
+   {
+    "id": "c_148",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09689229993"
+   },
+   {
+    "id": "c_731",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09619327142"
+   },
+   {
+    "id": "c_487",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09596152018"
+   },
+   {
+    "id": "c_828",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09380462990"
+   },
+   {
+    "id": "c_826",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09185119059"
+   },
+   {
+    "id": "c_905",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09898026136"
+   },
+   {
+    "id": "c_9941",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09792367294"
+   }
+  ]
+ }
+}

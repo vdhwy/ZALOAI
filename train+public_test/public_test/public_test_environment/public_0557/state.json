@@ -1,0 +1,672 @@
+{
+ "_meta": {
+  "question_id": "public_0557",
+  "current_time": "2026-12-19T18:55:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "gold_price.get_price",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_1310",
+    "name": "Salad dưa chuột sốt chanh",
+    "tags": [
+     "salad",
+     "món chay",
+     "ăn kiêng"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "dưa chuột",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành tím",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "rau thơm",
+      "quantity": 1,
+      "unit": "nắm"
+     }
+    ],
+    "steps": [
+     "Thái lát dưa chuột",
+     "Pha sốt chanh đường",
+     "Trộn đều với rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_3470",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_818",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   },
+   {
+    "id": "rcp_19",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_597",
+    "name": "Cháo nấm thịt bằm",
+    "tags": [
+     "cháo",
+     "món cho bé"
+    ],
+    "servings": 2,
+    "time_min": 45,
+    "ingredients": [
+     {
+      "name": "gạo tẻ",
+      "quantity": 100,
+      "unit": "g"
+     },
+     {
+      "name": "nấm hương",
+      "quantity": 50,
+      "unit": "g"
+     },
+     {
+      "name": "thịt nạc xay",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 2,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Ninh gạo thành cháo",
+     "Xào thịt với nấm",
+     "Cho vào cháo, nêm vừa ăn, rắc hành"
+    ]
+   },
+   {
+    "id": "rcp_983",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   }
+  ],
+  "saved": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_410",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_7196",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_964",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_201",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_2243",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-12-22",
+    "depart": "13:00",
+    "arrive": "18:30",
+    "price": 250000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_91",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-12-22",
+    "depart": "21:00",
+    "arrive": "07:00",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_2264",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-12-22",
+    "depart": "19:00",
+    "arrive": "04:30",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_4634",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-12-22",
+    "depart": "08:00",
+    "arrive": "16:10",
+    "price": 920000,
+    "seats_left": 6
+   },
+   {
+    "id": "trip_888",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Vũng Tàu",
+    "date": "2026-12-23",
+    "depart": "06:00",
+    "arrive": "08:30",
+    "price": 400000,
+    "seats_left": 6
+   },
+   {
+    "id": "trip_232",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "TP.HCM",
+    "destination": "Vũng Tàu",
+    "date": "2026-12-23",
+    "depart": "07:30",
+    "arrive": "10:00",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_3307",
+    "type": "train",
+    "operator": "Tàu SE6",
+    "origin": "Nha Trang",
+    "destination": "TP.HCM",
+    "date": "2026-12-26",
+    "depart": "20:00",
+    "arrive": "05:40",
+    "price": 920000,
+    "seats_left": 5
+   },
+   {
+    "id": "trip_3315",
+    "type": "train",
+    "operator": "Tàu SE8",
+    "origin": "Nha Trang",
+    "destination": "TP.HCM",
+    "date": "2026-12-26",
+    "depart": "07:00",
+    "arrive": "15:30",
+    "price": 880000,
+    "seats_left": 10
+   },
+   {
+    "id": "trip_3342",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Nha Trang",
+    "destination": "TP.HCM",
+    "date": "2026-12-26",
+    "depart": "21:30",
+    "arrive": "06:00",
+    "price": 300000,
+    "seats_left": 12
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_118",
+    "trip_id": "trip_888",
+    "seats": 2,
+    "total": 800000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_02",
+    "trip_id": "trip_4634",
+    "seats": 2,
+    "total": 1840000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_03",
+    "trip_id": "trip_3307",
+    "seats": 1,
+    "total": 920000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_9976",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-22T15:30:00+07:00",
+    "end": "2026-12-22T16:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_36",
+    "title": "họp team",
+    "start": "2026-12-21T14:00:00+07:00",
+    "end": "2026-12-21T15:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_347",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-20T10:00:00+07:00",
+    "end": "2026-12-20T11:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_981",
+    "name": "Đọc sách 30 phút",
+    "streak": 0
+   },
+   {
+    "id": "habit_183",
+    "name": "Chạy bộ buổi sáng",
+    "streak": 1,
+    "last_logged": "2026-12-18"
+   },
+   {
+    "id": "habit_8013",
+    "name": "Ngủ trước 11 giờ",
+    "streak": 1,
+    "last_logged": "2026-12-18"
+   },
+   {
+    "id": "habit_8610",
+    "name": "Không uống trà sữa",
+    "streak": 12,
+    "last_logged": "2026-12-18"
+   },
+   {
+    "id": "habit_658",
+    "name": "Uống đủ 2 lít nước",
+    "streak": 5,
+    "last_logged": "2026-12-18"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_106",
+    "habit_id": "habit_8610",
+    "date": "2026-12-18"
+   },
+   {
+    "id": "log_705",
+    "habit_id": "habit_658",
+    "date": "2026-12-18"
+   },
+   {
+    "id": "log_565",
+    "habit_id": "habit_8013",
+    "date": "2026-12-18"
+   },
+   {
+    "id": "log_318",
+    "habit_id": "habit_183",
+    "date": "2026-12-18"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_5501",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_416",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_638",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_595",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 1000,
+    "avg_price": 83300,
+    "price": 90750
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 100,
+    "avg_price": 34750,
+    "price": 32950
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 61900,
+    "change_pct": 3.3
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 32950,
+    "change_pct": 2.5
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1654,
+    "change_pct": 1.0
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 127100,
+    "change_pct": 0.2
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24300,
+    "change_pct": 2.5
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 90750,
+    "change_pct": 3.0
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_397",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_5605",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_5915",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_1741",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-21T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_786",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-25T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_215",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-24T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_578",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-20T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 130700000,
+    "sell": 132700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 124700000,
+    "sell": 126700000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4295
+   }
+  ]
+ }
+}

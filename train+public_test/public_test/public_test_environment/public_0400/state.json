@@ -1,0 +1,254 @@
+{
+ "_meta": {
+  "question_id": "public_0400",
+  "current_time": "2026-12-03T21:05:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "fuel_price.get_price",
+   "phone.call",
+   "phone.recent_calls",
+   "sms.read_recent",
+   "sms.send",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 21800
+   },
+   {
+    "type": "e5",
+    "price": 20600
+   },
+   {
+    "type": "diesel",
+    "price": 19200
+   }
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_148",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_296",
+    "name": "Nồi chiên không dầu Philips 4.1 lít",
+    "price": 1990000,
+    "seller": "Philips Official",
+    "category": "gia dụng",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_3979",
+    "name": "Ấm siêu tốc Lock&Lock 1.7 lít",
+    "price": 389000,
+    "seller": "Lock&Lock Mall",
+    "category": "gia dụng",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_371",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_238",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_6673",
+    "name": "Bàn phím cơ AKKO 3068B",
+    "price": 1290000,
+    "seller": "AKKO Việt Nam",
+    "category": "máy tính",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_496",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.6,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_466",
+    "items": [
+     {
+      "product_id": "prod_296",
+      "name": "Nồi chiên không dầu Philips 4.1 lít",
+      "price": 1990000,
+      "quantity": 1
+     }
+    ],
+    "total": 1990000,
+    "status": "placed",
+    "placed_at": "2026-12-03T17:05:00+07:00",
+    "seller": "Philips Official"
+   },
+   {
+    "id": "ord_9462",
+    "items": [
+     {
+      "product_id": "prod_148",
+      "name": "Cốc giữ nhiệt Elmich 500ml",
+      "price": 219000,
+      "quantity": 1
+     }
+    ],
+    "total": 219000,
+    "status": "delivered",
+    "placed_at": "2026-11-23T17:05:00+07:00",
+    "seller": "Elmich Store",
+    "delivered_at": "2026-11-26T17:05:00+07:00"
+   },
+   {
+    "id": "ord_504",
+    "items": [
+     {
+      "product_id": "prod_6673",
+      "name": "Bàn phím cơ AKKO 3068B",
+      "price": 1290000,
+      "quantity": 1
+     }
+    ],
+    "total": 1290000,
+    "status": "shipping",
+    "placed_at": "2026-12-02T13:05:00+07:00",
+    "seller": "AKKO Việt Nam"
+   }
+  ],
+  "returns": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_295",
+    "title": "họp team",
+    "start": "2026-12-05T19:00:00+07:00",
+    "end": "2026-12-05T20:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_779",
+    "title": "đi chơi công viên",
+    "start": "2026-12-04T19:30:00+07:00",
+    "end": "2026-12-04T20:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_686",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-04T18:30:00+07:00",
+    "end": "2026-12-04T19:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_7377",
+    "title": "họp phụ huynh",
+    "start": "2026-12-04T15:30:00+07:00",
+    "end": "2026-12-04T16:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_2616",
+    "time": "2026-12-04T07:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "tv": {
+  "power": "on",
+  "channel": "VTV1",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_274",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09054182379"
+   },
+   {
+    "id": "c_613",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09357724197"
+   },
+   {
+    "id": "c_88",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09143065828"
+   }
+  ]
+ }
+}

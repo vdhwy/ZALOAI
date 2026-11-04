@@ -1,0 +1,531 @@
+{
+ "_meta": {
+  "question_id": "train_1344",
+  "current_time": "2026-10-23T10:25:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "library.reserve",
+   "library.search",
+   "phone.call",
+   "phone.recent_calls"
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_890",
+    "name": "Lau nhà",
+    "assignee": "Chị Hoa",
+    "done": false
+   },
+   {
+    "id": "chore_3849",
+    "name": "Giặt quần áo",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_320",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Bố",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị Hoa",
+   "Bố",
+   "Tuấn"
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_6777",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_375",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": false
+   },
+   {
+    "id": "book_95",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_1152",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_6044",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_4953",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_8396",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_30",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_1284",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_534",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_116",
+    "time": "2026-10-24T08:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_976",
+    "time": "2026-10-24T07:00:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_682",
+    "time": "2026-10-24T06:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_5362",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_579",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_1424",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": false
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_259",
+    "time": "2026-10-22T22:00:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_769",
+    "time": "2026-10-22T23:55:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_47",
+    "time": "2026-10-21T13:40:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_575",
+    "time": "2026-10-21T22:50:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_9318",
+    "time": "2026-10-21T18:30:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_6612",
+    "time": "2026-10-23T09:31:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Có người bấm chuông ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_183",
+    "time": "2026-10-23T09:58:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện chuyển động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_4410",
+    "time": "2026-10-23T10:12:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25407
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27439
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 169.4
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_389",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09392481860"
+   },
+   {
+    "id": "c_4568",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09469513861"
+   },
+   {
+    "id": "c_970",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09816594002"
+   },
+   {
+    "id": "c_722",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09374097458"
+   },
+   {
+    "id": "c_5063",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09579214669"
+   },
+   {
+    "id": "c_4369",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09118429598"
+   },
+   {
+    "id": "c_97",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09649980601"
+   },
+   {
+    "id": "c_7788",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09205625245"
+   },
+   {
+    "id": "c_2872",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09289046996"
+   },
+   {
+    "id": "c_5031",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09238830205"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_544",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 209000,
+    "due_date": "2026-10-31",
+    "paid": false
+   },
+   {
+    "id": "bill_481",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 198000,
+    "due_date": "2026-10-27",
+    "paid": false
+   },
+   {
+    "id": "bill_5261",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 155000,
+    "due_date": "2026-10-27",
+    "paid": false
+   },
+   {
+    "id": "bill_163",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 845000,
+    "due_date": "2026-10-30",
+    "paid": false
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_787",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_956",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_153",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_200",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_5170",
+    "restaurant_id": "rest_787",
+    "items": [
+     {
+      "item_id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 219000,
+    "address": "số 4 ngõ 68 Cầu Giấy, Hà Nội",
+    "payment": "cash",
+    "status": "delivered"
+   },
+   {
+    "id": "ord_238",
+    "restaurant_id": "rest_153",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 110000,
+    "address": "số 4 ngõ 68 Cầu Giấy, Hà Nội",
+    "payment": "ewallet",
+    "status": "delivered"
+   },
+   {
+    "id": "ord_7742",
+    "restaurant_id": "rest_200",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 78000,
+    "address": "số 4 ngõ 68 Cầu Giấy, Hà Nội",
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ }
+}

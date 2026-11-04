@@ -1,0 +1,378 @@
+{
+ "_meta": {
+  "question_id": "public_0547",
+  "current_time": "2026-12-17T18:30:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fuel_price.get_price",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23800
+   },
+   {
+    "type": "e5",
+    "price": 22600
+   },
+   {
+    "type": "diesel",
+    "price": 21200
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 15000,
+  "routes": [
+   {
+    "id": "metro_701",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "bus_262",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   },
+   {
+    "id": "bus_309",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Hàng Bạc",
+     "Hàng Đào",
+     "Hồ Gươm",
+     "Bà Triệu",
+     "Lê Đại Hành"
+    ],
+    "fare": 7000,
+    "duration_min": 24,
+    "headway_min": 15,
+    "aliases": {
+     "31 Hàng Bạc": "Hàng Bạc",
+     "nhà": "Hàng Bạc"
+    }
+   },
+   {
+    "id": "bus_E02",
+    "name": "Tuyến điện E02",
+    "type": "bus",
+    "stops": [
+     "Hàng Bạc",
+     "Tràng Tiền",
+     "Bà Triệu",
+     "Kim Liên"
+    ],
+    "fare": 9000,
+    "duration_min": 18,
+    "headway_min": 10,
+    "aliases": {
+     "31 Hàng Bạc": "Hàng Bạc",
+     "nhà": "Hàng Bạc"
+    }
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_262",
+    "time": "2026-12-17T18:59:00+07:00"
+   },
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_262",
+    "time": "2026-12-17T18:39:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_701",
+    "time": "2026-12-17T18:39:00+07:00"
+   },
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_262",
+    "time": "2026-12-17T18:49:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_701",
+    "time": "2026-12-17T18:49:00+07:00"
+   },
+   {
+    "stop": "Kim Mã",
+    "route": "metro_701",
+    "time": "2026-12-17T18:59:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_11",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09304919184"
+   },
+   {
+    "id": "c_1150",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09166547783"
+   },
+   {
+    "id": "c_466",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09136274394"
+   },
+   {
+    "id": "c_729",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09694316165"
+   },
+   {
+    "id": "c_3887",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09823074407"
+   },
+   {
+    "id": "c_303",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09835442319"
+   },
+   {
+    "id": "c_696",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09859973471"
+   },
+   {
+    "id": "c_3717",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09557700979"
+   },
+   {
+    "id": "c_378",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09481019440"
+   },
+   {
+    "id": "c_199",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09846752506"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_779",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-12-16T14:45:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_258",
+    "from": "thangtuan@gmail.example.test",
+    "from_name": "Thằng Tuấn",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-12-17T12:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_908",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-12-15T05:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_868",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-12-15T10:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_4419",
+    "from": "anna.schmidt@hoasen.example.test",
+    "from_name": "Anna Schmidt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch học tiếng Anh tuần sau của bé Na",
+    "snippet": "Tuần sau lớp tiếng Anh học ba buổi: chiều thứ Hai, thứ Tư và thứ Sáu tại 45 Bà Triệu.",
+    "body": "Kính gửi phụ huynh bé Na, tuần sau lớp tiếng Anh học ba buổi vào chiều thứ Hai, thứ Tư và thứ Sáu, từ 17 giờ đến 18 giờ 30 tại Trung tâm Anh ngữ Hoa Sen, 45 Bà Triệu. Trân trọng, Anna Schmidt.",
+    "time": "2026-12-17T09:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_4436",
+    "from": "anna.smith@pianohouse.example.test",
+    "from_name": "Anna Smith",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch học piano tuần sau",
+    "snippet": "Lớp piano của bé Na tuần sau học hai buổi: thứ Ba và thứ Năm tại 12 Bà Triệu.",
+    "body": "Chào gia đình, lớp piano của bé Na tuần sau học hai buổi vào thứ Ba và thứ Năm, 16 giờ tại Piano House, 12 Bà Triệu. Anna Smith.",
+    "time": "2026-12-17T10:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 32,
+    "condition": "nắng"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-17",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-19",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-20",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 34
+   }
+  ]
+ }
+}

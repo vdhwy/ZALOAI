@@ -1,0 +1,222 @@
+{
+ "_meta": {
+  "question_id": "train_1311",
+  "current_time": "2026-12-08T12:55:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "library.reserve",
+   "library.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_523",
+    "title": "Sinh hoạt lớp online",
+    "start": "2026-12-10T15:30:00+07:00",
+    "link": "https://meet.example.test/svl-zdwc-xgr",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_626",
+    "title": "Học nhóm tiếng Anh",
+    "start": "2026-12-09T10:00:00+07:00",
+    "link": "https://meet.example.test/joo-rimj-qcj",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_530",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-12-10T09:00:00+07:00",
+    "link": "https://meet.example.test/lvc-ekqx-luz",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_6134",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-12-12T14:00:00+07:00",
+    "link": "https://meet.example.test/iaf-uzbl-twh",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_452",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_217",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_4392",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_1482",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": false
+   },
+   {
+    "id": "book_1727",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_973",
+    "title": "Dự giờ tiết Văn lớp 10A",
+    "start": "2026-12-10T07:30:00+07:00",
+    "end": "2026-12-10T08:15:00+07:00",
+    "location": "Trường THPT Hai Bà Trưng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5873",
+    "title": "Ăn tối với gia đình",
+    "start": "2026-12-13T18:30:00+07:00",
+    "end": "2026-12-13T20:00:00+07:00",
+    "location": "Nhà mạ",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

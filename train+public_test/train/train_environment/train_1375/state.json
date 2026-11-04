@@ -1,0 +1,405 @@
+{
+ "_meta": {
+  "question_id": "train_1375",
+  "current_time": "2026-10-26T07:45:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 33,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-26",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-27",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-28",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-29",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-10-26",
+    "prizes": {
+     "special": "497844",
+     "first": "94773",
+     "eighth": "14"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-10-26",
+    "prizes": {
+     "special": "979387",
+     "first": "76302",
+     "eighth": "17"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-10-26",
+    "prizes": {
+     "special": "673855",
+     "first": "28012",
+     "eighth": "60"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-10-26",
+    "prizes": {
+     "special": "123239",
+     "first": "52055",
+     "eighth": "54"
+    }
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_502",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Bến Thành",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_5852",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_840",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_206",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_3317",
+    "name": "Xe đạp điện 211",
+    "station": "Trạm Silverline Media",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_918",
+    "name": "Xe đạp điện 212",
+    "station": "Trạm Silverline Media",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_4470",
+    "name": "Xe đạp thường 215",
+    "station": "Trạm Silverline Media",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_62",
+    "name": "Xe đạp thường 217",
+    "station": "Trạm Silverline Media",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_7024",
+    "name": "Xe đạp điện 301",
+    "station": "Trạm Silverlink Plaza",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_1559",
+    "name": "Xe đạp điện 302",
+    "station": "Trạm Silverlink Plaza",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-23": {
+    "steps": 5190,
+    "calories": 207,
+    "distance_km": 3.7
+   },
+   "2026-10-24": {
+    "steps": 10172,
+    "calories": 406,
+    "distance_km": 7.3
+   },
+   "2026-10-25": {
+    "steps": 3505,
+    "calories": 140,
+    "distance_km": 2.5
+   },
+   "2026-10-26": {
+    "steps": 5529,
+    "calories": 221,
+    "distance_km": 4.0
+   }
+  },
+  "goal_steps": 6000,
+  "workouts": [
+   {
+    "id": "wo_138",
+    "type": "cycling",
+    "minutes": 20,
+    "time": "2026-10-22T06:30:00+07:00"
+   },
+   {
+    "id": "wo_826",
+    "type": "walking",
+    "minutes": 60,
+    "time": "2026-10-24T17:00:00+07:00"
+   },
+   {
+    "id": "wo_540",
+    "type": "running",
+    "minutes": 20,
+    "time": "2026-10-23T18:30:00+07:00"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_256",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_806",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_9060",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_545",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_256",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 55000,
+    "address": "Căn hộ Riverside Garden, Quận 7, TP.HCM",
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_781",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-28T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_494",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-31T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_242",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-26T09:00:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_221",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-25T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ }
+}

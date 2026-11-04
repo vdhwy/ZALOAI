@@ -1,0 +1,570 @@
+{
+ "_meta": {
+  "question_id": "train_1631",
+  "current_time": "2026-10-16T09:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_850",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-10-15T03:30:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_312",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-10-13T20:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_82",
+    "from": "anhhung@gmail.example.test",
+    "from_name": "Anh Hùng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-10-15T07:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "home_security": {
+  "mode": "off",
+  "cameras": [
+   {
+    "id": "cam_925",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_278",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_1213",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_143",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_6157",
+    "time": "2026-10-15T16:25:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_1950",
+    "time": "2026-10-16T06:25:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_8265",
+    "time": "2026-10-15T15:25:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_280",
+    "time": "2026-10-15T06:00:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_226",
+    "name": "Đổ rác",
+    "assignee": "Bố",
+    "done": true
+   },
+   {
+    "id": "chore_1346",
+    "name": "Giặt quần áo",
+    "assignee": null,
+    "done": true
+   },
+   {
+    "id": "chore_5129",
+    "name": "Lau nhà",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_474",
+    "name": "Tưới cây",
+    "assignee": "Bố",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị Hoa",
+   "Bố",
+   "Mẹ",
+   "Bà nội"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_29",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09990185955"
+   },
+   {
+    "id": "c_175",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09917372918"
+   },
+   {
+    "id": "c_2740",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09815527461"
+   },
+   {
+    "id": "c_619",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09171728601"
+   },
+   {
+    "id": "c_7671",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09393397115"
+   },
+   {
+    "id": "c_305",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09665539249"
+   },
+   {
+    "id": "c_527",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09702262109"
+   },
+   {
+    "id": "c_8432",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09413653146"
+   },
+   {
+    "id": "c_741",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09979884655"
+   },
+   {
+    "id": "c_92",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09896249704"
+   },
+   {
+    "id": "c_9894",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09478225096"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_920",
+    "title": "họp phụ huynh",
+    "start": "2026-10-17T08:00:00+07:00",
+    "end": "2026-10-17T09:00:00+07:00",
+    "location": "Trường Tiểu học Dịch Vọng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_434",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-18T19:00:00+07:00",
+    "end": "2026-10-18T20:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_548",
+    "title": "khám răng",
+    "start": "2026-10-19T09:00:00+07:00",
+    "end": "2026-10-19T10:00:00+07:00",
+    "location": "Nha khoa Hà Thành",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_523",
+    "title": "họp team",
+    "start": "2026-10-18T14:00:00+07:00",
+    "end": "2026-10-18T15:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_789",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_7651",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_336",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_207",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_631",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_238",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_9665",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_94",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_4979",
+    "time": "2026-10-17T05:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_502",
+    "tracking_id": "EV252547735",
+    "carrier": "VNPost",
+    "name": "Giày thể thao",
+    "status": "in_transit",
+    "eta": "2026-10-17T14:00:00+07:00"
+   },
+   {
+    "id": "shp_684",
+    "tracking_id": "GST951806380",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Hộp quà Trung thu",
+    "status": "out_for_delivery",
+    "eta": "2026-10-16T10:00:00+07:00"
+   },
+   {
+    "id": "shp_617",
+    "tracking_id": "JV776851395",
+    "carrier": "JetViệt Express",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "delivered",
+    "eta": "2026-10-15T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_9259",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_8786",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_8249",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_6755",
+    "show_id": "show_8786",
+    "title": "Số 8: Quản lý chi tiêu gia đình",
+    "number": 8,
+    "duration_min": 45,
+    "published": "2026-10-09"
+   },
+   {
+    "id": "ep_266",
+    "show_id": "show_9259",
+    "title": "Số 17: Trồng cây trên sân thượng",
+    "number": 17,
+    "duration_min": 18,
+    "published": "2026-10-02"
+   },
+   {
+    "id": "ep_4292",
+    "show_id": "show_9259",
+    "title": "Số 18: Đi xe đạp đi làm",
+    "number": 18,
+    "duration_min": 25,
+    "published": "2026-10-09"
+   },
+   {
+    "id": "ep_680",
+    "show_id": "show_8786",
+    "title": "Số 7: Gửi tiết kiệm hay mua vàng",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-02"
+   },
+   {
+    "id": "ep_963",
+    "show_id": "show_8786",
+    "title": "Số 6: Lập quỹ khẩn cấp",
+    "number": 6,
+    "duration_min": 45,
+    "published": "2026-09-25"
+   },
+   {
+    "id": "ep_803",
+    "show_id": "show_9259",
+    "title": "Số 16: Rác thải nhựa ở đô thị",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-09-25"
+   },
+   {
+    "id": "ep_693",
+    "show_id": "show_8249",
+    "title": "Số 17: Vì sao bầu trời màu xanh",
+    "number": 17,
+    "duration_min": 45,
+    "published": "2026-09-25"
+   },
+   {
+    "id": "ep_587",
+    "show_id": "show_8249",
+    "title": "Số 18: Giấc ngủ và trí nhớ",
+    "number": 18,
+    "duration_min": 32,
+    "published": "2026-10-02"
+   },
+   {
+    "id": "ep_205",
+    "show_id": "show_8249",
+    "title": "Số 19: Lỗ đen là gì",
+    "number": 19,
+    "duration_min": 32,
+    "published": "2026-10-09"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_477",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_887",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_396",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_8387",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_8249"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_361",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-17T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_777",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-18T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_47",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-21T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_414",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-22T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_6187",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-18T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_06",
+    "due": "2026-10-19T17:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Nộp báo cáo thuế quý ba"
+   }
+  ]
+ }
+}

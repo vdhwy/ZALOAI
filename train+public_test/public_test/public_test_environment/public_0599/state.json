@@ -1,0 +1,787 @@
+{
+ "_meta": {
+  "question_id": "public_0599",
+  "current_time": "2026-10-14T15:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "recipes.get",
+   "recipes.save",
+   "recipes.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate"
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_256",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_862",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_970",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_311",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_997",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_577",
+    "items": [
+     {
+      "product_id": "gro_997",
+      "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+      "price": 35000,
+      "quantity": 3
+     }
+    ],
+    "total": 105000,
+    "status": "delivered",
+    "delivery_time": "2026-10-11T09:00:00+07:00"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "bus_2556",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   },
+   {
+    "id": "bus_9312",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Bờ Hồ",
+     "Láng Hạ",
+     "Cầu Giấy",
+     "Đại học Mỏ"
+    ],
+    "fare": 7000,
+    "duration_min": 45,
+    "headway_min": 15
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_2556",
+    "time": "2026-10-14T15:42:00+07:00"
+   },
+   {
+    "stop": "Bờ Hồ",
+    "route": "bus_9312",
+    "time": "2026-10-14T15:59:00+07:00"
+   },
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_2556",
+    "time": "2026-10-14T16:02:00+07:00"
+   },
+   {
+    "stop": "Bờ Hồ",
+    "route": "bus_9312",
+    "time": "2026-10-14T15:44:00+07:00"
+   },
+   {
+    "stop": "Bờ Hồ",
+    "route": "bus_9312",
+    "time": "2026-10-14T16:14:00+07:00"
+   },
+   {
+    "stop": "Giáp Bát",
+    "route": "bus_2556",
+    "time": "2026-10-14T15:52:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "quantity": 1000,
+    "avg_price": 57950,
+    "price": 61000
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 500,
+    "avg_price": 26550,
+    "price": 26800
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 200,
+    "avg_price": 95650,
+    "price": 93300
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1716,
+    "change_pct": 0.9
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26800,
+    "change_pct": 0.6
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 61000,
+    "change_pct": -3.4
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 125450,
+    "change_pct": -3.3
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24400,
+    "change_pct": -2.5
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 93300,
+    "change_pct": -1.8
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_3921",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_490",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 0
+   },
+   {
+    "id": "lot_18",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 0
+   },
+   {
+    "id": "lot_768",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 0
+   }
+  ],
+  "sessions": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_4942",
+    "origin": "HUI",
+    "destination": "HAN",
+    "date": "2026-10-21",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_4160",
+    "origin": "HUI",
+    "destination": "HAN",
+    "date": "2026-10-21",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_511",
+    "origin": "HUI",
+    "destination": "HAN",
+    "date": "2026-10-21",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_8971",
+    "origin": "HUI",
+    "destination": "HAN",
+    "date": "2026-10-21",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_3317",
+    "flight_id": "fl_511",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed",
+    "passenger_name": "Daniel Lee"
+   },
+   {
+    "id": "bk_802",
+    "flight_id": "fl_4160",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed",
+    "passenger_name": "Daniel Lim"
+   },
+   {
+    "id": "bk_5560",
+    "flight_id": "fl_8971",
+    "passengers": 2,
+    "seat_class": "economy",
+    "status": "confirmed",
+    "passenger_name": "Andrew Scott"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_410",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09900507448"
+   },
+   {
+    "id": "c_710",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09660335798"
+   },
+   {
+    "id": "c_388",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09411857746"
+   },
+   {
+    "id": "c_114",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09744738776"
+   },
+   {
+    "id": "c_372",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09421425849"
+   },
+   {
+    "id": "c_342",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09944317771"
+   },
+   {
+    "id": "c_124",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09457599716"
+   },
+   {
+    "id": "c_553",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09747246199"
+   },
+   {
+    "id": "c_973",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09546073059"
+   },
+   {
+    "id": "c_924",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09894904777"
+   },
+   {
+    "id": "c_376",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09421282626"
+   },
+   {
+    "id": "c_6158",
+    "name": "Daniel Lee",
+    "relation": "khách",
+    "phone": "09883021457"
+   },
+   {
+    "id": "c_281",
+    "name": "Andrew Scott",
+    "relation": "khách",
+    "phone": "09356127840"
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_928",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Huế",
+    "destination": "Hải Phòng",
+    "date": "2026-10-19",
+    "depart": "21:00",
+    "arrive": "00:00",
+    "price": 450000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_247",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Huế",
+    "destination": "Hải Phòng",
+    "date": "2026-10-19",
+    "depart": "06:00",
+    "arrive": "09:00",
+    "price": 320000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_481",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Huế",
+    "destination": "Vinh",
+    "date": "2026-10-18",
+    "depart": "06:00",
+    "arrive": "11:00",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_339",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Huế",
+    "destination": "Hải Phòng",
+    "date": "2026-10-19",
+    "depart": "06:00",
+    "arrive": "09:30",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_486",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Huế",
+    "destination": "Hải Phòng",
+    "date": "2026-10-19",
+    "depart": "13:00",
+    "arrive": "23:00",
+    "price": 250000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_7321",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Huế",
+    "destination": "Vinh",
+    "date": "2026-10-18",
+    "depart": "19:00",
+    "arrive": "02:30",
+    "price": 250000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_624",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Huế",
+    "destination": "Vinh",
+    "date": "2026-10-18",
+    "depart": "08:00",
+    "arrive": "11:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_2510",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Huế",
+    "destination": "Vinh",
+    "date": "2026-10-18",
+    "depart": "08:00",
+    "arrive": "18:30",
+    "price": 680000,
+    "seats_left": 15
+   }
+  ],
+  "bookings": []
+ },
+ "recipes": {
+  "recipes": [
+   {
+    "id": "rcp_3987",
+    "name": "Canh chua cá lóc",
+    "tags": [
+     "canh",
+     "món miền Nam"
+    ],
+    "servings": 4,
+    "time_min": 40,
+    "ingredients": [
+     {
+      "name": "cá lóc",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "dứa",
+      "quantity": 1,
+      "unit": "lát dày"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "đậu bắp",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "me chua",
+      "quantity": 30,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Sơ chế cá, ướp chút muối",
+     "Nấu nước me, cho dứa và cà chua",
+     "Thả cá vào nấu chín, thêm đậu bắp",
+     "Nêm nếm, rắc rau thơm"
+    ]
+   },
+   {
+    "id": "rcp_932",
+    "name": "Thịt kho trứng",
+    "tags": [
+     "món kho",
+     "cơm nhà"
+    ],
+    "servings": 4,
+    "time_min": 90,
+    "ingredients": [
+     {
+      "name": "thịt ba chỉ",
+      "quantity": 600,
+      "unit": "g"
+     },
+     {
+      "name": "trứng vịt",
+      "quantity": 6,
+      "unit": "quả"
+     },
+     {
+      "name": "nước dừa",
+      "quantity": 500,
+      "unit": "ml"
+     },
+     {
+      "name": "nước mắm",
+      "quantity": 3,
+      "unit": "thìa"
+     }
+    ],
+    "steps": [
+     "Luộc trứng, bóc vỏ",
+     "Ướp thịt với nước mắm, đường",
+     "Kho thịt với nước dừa",
+     "Cho trứng vào kho lửa nhỏ 45 phút"
+    ]
+   },
+   {
+    "id": "rcp_221",
+    "name": "Gà xào sả ớt",
+    "tags": [
+     "món xào",
+     "cơm nhà"
+    ],
+    "servings": 3,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "đùi gà",
+      "quantity": 500,
+      "unit": "g"
+     },
+     {
+      "name": "sả",
+      "quantity": 3,
+      "unit": "cây"
+     },
+     {
+      "name": "ớt",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "tỏi",
+      "quantity": 3,
+      "unit": "tép"
+     }
+    ],
+    "steps": [
+     "Chặt gà, ướp gia vị",
+     "Phi thơm sả, tỏi, ớt",
+     "Cho gà vào xào săn, đảo đến khi chín"
+    ]
+   },
+   {
+    "id": "rcp_532",
+    "name": "Bánh pancake chuối",
+    "tags": [
+     "bánh",
+     "ăn sáng"
+    ],
+    "servings": 2,
+    "time_min": 25,
+    "ingredients": [
+     {
+      "name": "bột mì",
+      "quantity": 150,
+      "unit": "g"
+     },
+     {
+      "name": "chuối",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "trứng gà",
+      "quantity": 1,
+      "unit": "quả"
+     },
+     {
+      "name": "sữa tươi",
+      "quantity": 200,
+      "unit": "ml"
+     }
+    ],
+    "steps": [
+     "Nghiền chuối, trộn với trứng và sữa",
+     "Cho bột mì vào khuấy mịn",
+     "Đổ bánh trên chảo chống dính"
+    ]
+   },
+   {
+    "id": "rcp_601",
+    "name": "Trứng chiên cà chua",
+    "tags": [
+     "món nhanh",
+     "cơm nhà"
+    ],
+    "servings": 2,
+    "time_min": 15,
+    "ingredients": [
+     {
+      "name": "trứng gà",
+      "quantity": 3,
+      "unit": "quả"
+     },
+     {
+      "name": "cà chua",
+      "quantity": 2,
+      "unit": "quả"
+     },
+     {
+      "name": "hành lá",
+      "quantity": 1,
+      "unit": "nhánh"
+     }
+    ],
+    "steps": [
+     "Xào cà chua cho mềm",
+     "Đổ trứng đã đánh vào",
+     "Đảo nhẹ, rắc hành lá"
+    ]
+   },
+   {
+    "id": "rcp_7783",
+    "name": "Súp bí đỏ kem tươi",
+    "tags": [
+     "súp",
+     "món chay"
+    ],
+    "servings": 2,
+    "time_min": 30,
+    "ingredients": [
+     {
+      "name": "bí đỏ",
+      "quantity": 400,
+      "unit": "g"
+     },
+     {
+      "name": "hành tây",
+      "quantity": 1,
+      "unit": "củ"
+     },
+     {
+      "name": "kem tươi",
+      "quantity": 100,
+      "unit": "ml"
+     },
+     {
+      "name": "bơ",
+      "quantity": 20,
+      "unit": "g"
+     }
+    ],
+    "steps": [
+     "Xào hành tây với bơ",
+     "Cho bí đỏ và nước vào nấu mềm",
+     "Xay nhuyễn, thêm kem tươi"
+    ]
+   }
+  ],
+  "saved": []
+ }
+}

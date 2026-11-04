@@ -1,0 +1,329 @@
+{
+ "_meta": {
+  "question_id": "train_1439",
+  "current_time": "2026-11-04T17:25:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_387",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_992",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_37",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_635",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09988888705"
+   },
+   {
+    "id": "c_7076",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09941143887"
+   },
+   {
+    "id": "c_884",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09872686152"
+   },
+   {
+    "id": "c_796",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09201619457"
+   },
+   {
+    "id": "c_207",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09398018154"
+   },
+   {
+    "id": "c_3536",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09588772646"
+   },
+   {
+    "id": "c_431",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09987960457"
+   },
+   {
+    "id": "c_608",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09841925828"
+   },
+   {
+    "id": "c_2553",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09977402873"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_309",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 847000,
+    "due_date": "2026-11-08",
+    "paid": false
+   },
+   {
+    "id": "bill_816",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 224000,
+    "due_date": "2026-11-09",
+    "paid": false
+   },
+   {
+    "id": "bill_288",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 200000,
+    "due_date": "2026-11-09",
+    "paid": false
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_935",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-01T23:55:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_383",
+    "from": "anhkha@gmail.example.test",
+    "from_name": "Anh Kha",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-02T05:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_193",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-02T22:25:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_3727",
+    "name": "Sarah",
+    "type": "direct",
+    "members": [
+     "Sarah"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_884",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_981",
+    "name": "Mr. Tanaka",
+    "type": "direct",
+    "members": [
+     "Mr. Tanaka"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_726",
+    "name": "Anh Kha",
+    "type": "direct",
+    "members": [
+     "Anh Kha"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_684",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_369",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-11-20",
+    "status": "paused",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_228",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-11-12",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_5374",
+    "name": "BlueOrbit Workspace",
+    "price": 59000,
+    "next_billing": "2026-11-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_878",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-11-06",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_426",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-12-02",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_474",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-09T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_460",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-10T20:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_79",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-11-08T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "due": "2026-11-13T09:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Kick-off lô hàng với Mr. Tanaka"
+   }
+  ]
+ }
+}

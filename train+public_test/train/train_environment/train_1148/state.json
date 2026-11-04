@@ -1,0 +1,515 @@
+{
+ "_meta": {
+  "question_id": "train_1148",
+  "current_time": "2026-11-13T13:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 90,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_321",
+    "name": "bếp",
+    "area_m2": 12
+   },
+   {
+    "id": "room_7855",
+    "name": "phòng làm việc",
+    "area_m2": 10
+   },
+   {
+    "id": "room_5987",
+    "name": "hành lang",
+    "area_m2": 22
+   },
+   {
+    "id": "room_310",
+    "name": "phòng ngủ",
+    "area_m2": 8
+   },
+   {
+    "id": "room_548",
+    "name": "phòng khách",
+    "area_m2": 22
+   }
+  ],
+  "current_job": null
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_726",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-11-13T04:20:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_7884",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-12T22:05:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   },
+   {
+    "id": "art_799",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-12T21:05:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_264",
+    "title": "Giá xăng dầu dự kiến giảm nhẹ trong kỳ điều hành tới",
+    "topic": "business",
+    "source": "TinViệt",
+    "published_at": "2026-11-13T11:20:00+07:00",
+    "summary": "Liên Bộ Công Thương - Tài chính có thể giảm giá xăng RON95 khoảng 300 đồng mỗi lít."
+   },
+   {
+    "id": "art_434",
+    "title": "Hà Nội mở thêm tuyến buýt điện nối sân bay Nội Bài",
+    "topic": "general",
+    "source": "Tuổi Xanh",
+    "published_at": "2026-11-13T05:50:00+07:00",
+    "summary": "Tuyến mới chạy từ 5 giờ sáng, giá vé 9.000 đồng."
+   }
+  ],
+  "saved": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-13T21:00:00+07:00",
+    "label": "nghe sách"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_268",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_4989",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_622",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_684",
+    "show_id": "show_4989",
+    "title": "Số 13: Nhà giả kim - phần 2",
+    "number": 13,
+    "duration_min": 32,
+    "published": "2026-11-06"
+   },
+   {
+    "id": "ep_379",
+    "show_id": "show_268",
+    "title": "Số 18: Đi xe đạp đi làm",
+    "number": 18,
+    "duration_min": 18,
+    "published": "2026-11-06"
+   },
+   {
+    "id": "ep_106",
+    "show_id": "show_4989",
+    "title": "Số 12: Nhà giả kim - phần 1",
+    "number": 12,
+    "duration_min": 45,
+    "published": "2026-10-30"
+   },
+   {
+    "id": "ep_735",
+    "show_id": "show_268",
+    "title": "Số 17: Trồng cây trên sân thượng",
+    "number": 17,
+    "duration_min": 45,
+    "published": "2026-10-30"
+   },
+   {
+    "id": "ep_2893",
+    "show_id": "show_622",
+    "title": "Số 6: Sống chậm giữa thành phố",
+    "number": 6,
+    "duration_min": 32,
+    "published": "2026-10-30"
+   },
+   {
+    "id": "ep_513",
+    "show_id": "show_268",
+    "title": "Số 16: Rác thải nhựa ở đô thị",
+    "number": 16,
+    "duration_min": 32,
+    "published": "2026-10-23"
+   },
+   {
+    "id": "ep_551",
+    "show_id": "show_622",
+    "title": "Số 7: Nghề diễn và những áp lực",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-11-06"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_1856",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_2311",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_389",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_893",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_781",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_6209",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_48",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_9523",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_738",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_4469",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_3193",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_723",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_7711",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 7200,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_685",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 600,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_6966",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 75,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_9631",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-12-09",
+    "used": false
+   },
+   {
+    "id": "vch_9609",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-25",
+    "used": false
+   },
+   {
+    "id": "vch_146",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-18",
+    "used": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-13",
+    "prizes": {
+     "special": "306912",
+     "first": "54248",
+     "eighth": "71"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-13",
+    "prizes": {
+     "special": "845898",
+     "first": "91994",
+     "eighth": "59"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-13",
+    "prizes": {
+     "special": "198057",
+     "first": "77653",
+     "eighth": "83"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-13",
+    "prizes": {
+     "special": "952769",
+     "first": "60511",
+     "eighth": "68"
+    }
+   }
+  ]
+ }
+}

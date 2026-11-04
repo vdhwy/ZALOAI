@@ -1,0 +1,392 @@
+{
+ "_meta": {
+  "question_id": "train_1457",
+  "current_time": "2026-10-15T06:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_357",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09380812843"
+   },
+   {
+    "id": "c_777",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09268922132"
+   },
+   {
+    "id": "c_8970",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09511859794"
+   },
+   {
+    "id": "c_147",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09592948938"
+   },
+   {
+    "id": "c_412",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09784542380"
+   },
+   {
+    "id": "c_6293",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09823942861"
+   },
+   {
+    "id": "c_8631",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09608003804"
+   },
+   {
+    "id": "c_502",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09220281138"
+   },
+   {
+    "id": "c_432",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09556531677"
+   },
+   {
+    "id": "c_854",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09343969092"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_4470",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_1681",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_1853",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_7144",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_4470",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 100000,
+    "address": "Vựa trái cây Bảy Hồng, Cái Răng, Cần Thơ",
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_661",
+    "title": "Gửi brief đóng gói cho buyer Hàn Quốc",
+    "start": "2026-10-15T09:30:00+07:00",
+    "link": "https://meet.example.test/atj-hucy-jhe",
+    "attendees": [
+     "c_357"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_3307",
+    "title": "Chốt giá season xoài với buyer Singapore",
+    "start": "2026-10-15T07:15:00+07:00",
+    "link": "https://meet.example.test/mus-qogn-qmy",
+    "attendees": [
+     "c_357",
+     "c_8631"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_9935",
+    "title": "Họp giao ban vựa đầu tuần",
+    "start": "2026-10-19T09:00:00+07:00",
+    "link": "https://meet.example.test/pmy-qigh-zmi",
+    "attendees": [
+     "c_6293",
+     "c_8631"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_352",
+    "time": "2026-10-16T06:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_808",
+    "time": "2026-10-16T08:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_196",
+    "time": "2026-10-16T07:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_539",
+    "name": "Phơi quần áo",
+    "assignee": "Chú Bảy",
+    "done": false
+   },
+   {
+    "id": "chore_571",
+    "name": "Đổ rác",
+    "assignee": "Mẹ",
+    "done": true
+   },
+   {
+    "id": "chore_168",
+    "name": "Tưới cây",
+    "assignee": "Bố",
+    "done": true
+   },
+   {
+    "id": "chore_982",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Chú Bảy",
+   "Mẹ",
+   "Bố",
+   "Lan"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_461",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_6645",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_966",
+    "name": "Xe đạp điện 106",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_9413",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_747",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_602",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_3161",
+    "name": "bếp",
+    "area_m2": 25
+   },
+   {
+    "id": "room_615",
+    "name": "phòng khách",
+    "area_m2": 12
+   },
+   {
+    "id": "room_3633",
+    "name": "phòng làm việc",
+    "area_m2": 18
+   },
+   {
+    "id": "room_822",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   }
+  ],
+  "current_job": null
+ }
+}

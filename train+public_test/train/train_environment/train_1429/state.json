@@ -1,0 +1,386 @@
+{
+ "_meta": {
+  "question_id": "train_1429",
+  "current_time": "2026-11-27T10:50:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_953",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-29T09:00:00+07:00",
+    "link": "https://meet.example.test/kud-ggpv-bjs",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_784",
+    "title": "Họp lớp online",
+    "start": "2026-11-28T10:00:00+07:00",
+    "link": "https://meet.example.test/lya-eaio-cse",
+    "attendees": [
+     "c_249"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_4127",
+    "title": "Chốt booking container với Horizon Shipping",
+    "start": "2026-11-27T14:00:00+07:00",
+    "link": "https://meet.example.test/hzs-qtpw-mra",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_2290",
+    "title": "Review invoice với Horizon Shipyard",
+    "start": "2026-11-30T09:00:00+07:00",
+    "link": "https://meet.example.test/hzy-bnce-tok",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_555",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_214",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "quick",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_2959",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "scheduled",
+     "cycle": "eco",
+     "delay_minutes": 60
+    }
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_666",
+    "tracking_id": "MDXVN855502944",
+    "carrier": "MDX Express",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "out_for_delivery",
+    "eta": "2026-11-27T10:00:00+07:00"
+   },
+   {
+    "id": "shp_5447",
+    "tracking_id": "EV248368320",
+    "carrier": "VNPost",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-11-28T17:00:00+07:00"
+   },
+   {
+    "id": "shp_9468",
+    "tracking_id": "STP874106676",
+    "carrier": "SaoTel Post",
+    "name": "Giày thể thao",
+    "status": "delivered",
+    "eta": "2026-11-26T10:00:00+07:00"
+   },
+   {
+    "id": "shp_643",
+    "tracking_id": "JV483804135",
+    "carrier": "JetViệt Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "in_transit",
+    "eta": "2026-11-30T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_183",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09301426061"
+   },
+   {
+    "id": "c_776",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09782799685"
+   },
+   {
+    "id": "c_249",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09351363392"
+   },
+   {
+    "id": "c_2312",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09687469515"
+   },
+   {
+    "id": "c_1123",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09288474743"
+   },
+   {
+    "id": "c_878",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09775056526"
+   },
+   {
+    "id": "c_726",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09187530036"
+   },
+   {
+    "id": "c_9329",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09321720464"
+   },
+   {
+    "id": "c_694",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09250238953"
+   },
+   {
+    "id": "c_260",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09230905424"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_244",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-27T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_432",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-03T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_871",
+    "title": "Gửi invoice cho Horizon Shipyard",
+    "due": "2026-11-27T12:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_553",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-28T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_05",
+    "due": "2026-11-27T17:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Gửi invoice cho Mr. Tanaka"
+   }
+  ]
+ }
+}

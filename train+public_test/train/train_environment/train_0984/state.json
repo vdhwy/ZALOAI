@@ -1,0 +1,380 @@
+{
+ "_meta": {
+  "question_id": "train_0984",
+  "current_time": "2026-10-10T18:05:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop"
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-07": {
+    "steps": 2650,
+    "calories": 106,
+    "distance_km": 1.9
+   },
+   "2026-10-08": {
+    "steps": 7100,
+    "calories": 284,
+    "distance_km": 5.1
+   },
+   "2026-10-09": {
+    "steps": 2627,
+    "calories": 105,
+    "distance_km": 1.9
+   },
+   "2026-10-10": {
+    "steps": 1744,
+    "calories": 69,
+    "distance_km": 1.3
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_791",
+    "type": "yoga",
+    "minutes": 30,
+    "time": "2026-10-08T18:00:00+07:00"
+   },
+   {
+    "id": "wo_994",
+    "type": "yoga",
+    "minutes": 45,
+    "time": "2026-10-07T18:00:00+07:00"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_19",
+    "name": "phòng ngủ nhỏ",
+    "area_m2": 10
+   },
+   {
+    "id": "room_67",
+    "name": "bếp",
+    "area_m2": 18
+   },
+   {
+    "id": "room_42",
+    "name": "phòng ăn",
+    "area_m2": 18
+   },
+   {
+    "id": "room_2580",
+    "name": "phòng làm việc",
+    "area_m2": 8
+   },
+   {
+    "id": "room_7751",
+    "name": "phòng khách",
+    "area_m2": 22
+   },
+   {
+    "id": "room_275",
+    "name": "phòng ngủ lớn",
+    "area_m2": 12
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng ngủ nhỏ",
+    "bếp",
+    "phòng ăn",
+    "phòng làm việc",
+    "phòng khách",
+    "phòng ngủ lớn"
+   ],
+   "whole_house": true,
+   "mode": "vacuum"
+  }
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_293",
+    "name": "Tưới cây",
+    "assignee": "Mẹ",
+    "done": false
+   },
+   {
+    "id": "chore_755",
+    "name": "Phơi quần áo",
+    "assignee": "Mẹ",
+    "done": false
+   },
+   {
+    "id": "chore_22",
+    "name": "Đi chợ",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_163",
+    "name": "Nấu cơm tối",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_869",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Lan",
+    "done": true
+   }
+  ],
+  "members": [
+   "Chị Hoa",
+   "Mẹ",
+   "Lan"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_2562",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-11T18:00:00+07:00",
+    "end": "2026-10-11T19:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_57",
+    "title": "đi chơi công viên",
+    "start": "2026-10-11T08:00:00+07:00",
+    "end": "2026-10-11T09:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_745",
+    "title": "họp team",
+    "start": "2026-10-11T14:30:00+07:00",
+    "end": "2026-10-11T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_561",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_97",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_483",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_197",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_815",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_250",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_93",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_509",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_29",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_751",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_4993",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_5724",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ }
+}

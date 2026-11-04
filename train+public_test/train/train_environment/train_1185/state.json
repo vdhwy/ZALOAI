@@ -1,0 +1,227 @@
+{
+ "_meta": {
+  "question_id": "train_1185",
+  "current_time": "2026-10-25T19:55:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_86",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-10-28T14:30:00+07:00",
+    "link": "https://meet.example.test/zeo-yuki-vsp",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_728",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-10-28T10:30:00+07:00",
+    "link": "https://meet.example.test/pnt-xbya-gkg",
+    "attendees": [
+     "c_55"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_1546",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-10-26T09:30:00+07:00",
+    "link": "https://meet.example.test/ojd-iidr-zig",
+    "attendees": [
+     "c_2224"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_674",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-10-25T20:00:00+07:00",
+    "link": "https://meet.example.test/omx-bvlm-bzn",
+    "attendees": [
+     "c_2392",
+     "c_2224"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 25,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-26",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-27",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-28",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 30
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_55",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09677023958"
+   },
+   {
+    "id": "c_2392",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09905380857"
+   },
+   {
+    "id": "c_2224",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09991325604"
+   },
+   {
+    "id": "c_173",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09149394975"
+   },
+   {
+    "id": "c_6546",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09385898213"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_806",
+    "name": "Paracetamol hạ sốt 500mg",
+    "times": [
+     "07:30",
+     "19:30"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_93",
+    "name": "Siro ho Prospan",
+    "times": [
+     "08:00",
+     "20:00"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_366",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_5343",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_294",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_391",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_822",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_241",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ }
+}

@@ -1,0 +1,619 @@
+{
+ "_meta": {
+  "question_id": "train_1098",
+  "current_time": "2026-10-29T17:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_387",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_732",
+    "name": "Chị Yến",
+    "type": "direct",
+    "members": [
+     "Chị Yến"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_577",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_551",
+    "name": "Anh Thành",
+    "type": "direct",
+    "members": [
+     "Anh Thành"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_120",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_174",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 400,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_416",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 2000,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_42",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 600,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_881",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-15",
+    "used": false
+   },
+   {
+    "id": "vch_653",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-05",
+    "used": false
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_817",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_1670",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_1475",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_3423",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_371",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09136194665"
+   },
+   {
+    "id": "c_274",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09373283241"
+   },
+   {
+    "id": "c_753",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09932415216"
+   },
+   {
+    "id": "c_129",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09575203102"
+   },
+   {
+    "id": "c_9432",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09224578276"
+   },
+   {
+    "id": "c_328",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09631106433"
+   },
+   {
+    "id": "c_568",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09945040214"
+   },
+   {
+    "id": "c_901",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09364258883"
+   },
+   {
+    "id": "c_6605",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09249156613"
+   },
+   {
+    "id": "c_662",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09813360763"
+   },
+   {
+    "id": "c_589",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09709029084"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   }
+  ],
+  "scenes": [
+   {
+    "id": "scn_315",
+    "name": "Chấm bài",
+    "actions": [
+     {
+      "device_id": "light_office",
+      "state": {
+       "power": "on",
+       "brightness": 100
+      }
+     },
+     {
+      "device_id": "fan_office",
+      "state": {
+       "power": "on",
+       "speed": 2
+      }
+     },
+     {
+      "device_id": "light_living",
+      "state": {
+       "power": "off"
+      }
+     }
+    ]
+   },
+   {
+    "id": "scn_62",
+    "name": "Đọc sách",
+    "actions": [
+     {
+      "device_id": "light_office",
+      "state": {
+       "power": "on",
+       "brightness": 40
+      }
+     },
+     {
+      "device_id": "fan_office",
+      "state": {
+       "power": "on",
+       "speed": 1
+      }
+     }
+    ]
+   },
+   {
+    "id": "scn_487",
+    "name": "Thư giãn",
+    "actions": [
+     {
+      "device_id": "light_office",
+      "state": {
+       "power": "on",
+       "brightness": 30,
+       "color": "vàng ấm"
+      }
+     },
+     {
+      "device_id": "fan_office",
+      "state": {
+       "power": "off"
+      }
+     },
+     {
+      "device_id": "light_living",
+      "state": {
+       "power": "on",
+       "brightness": 40
+      }
+     }
+    ]
+   },
+   {
+    "id": "scn_90",
+    "name": "Ra khỏi nhà",
+    "actions": [
+     {
+      "device_id": "light_office",
+      "state": {
+       "power": "off"
+      }
+     },
+     {
+      "device_id": "light_living",
+      "state": {
+       "power": "off"
+      }
+     },
+     {
+      "device_id": "light_bedroom",
+      "state": {
+       "power": "off"
+      }
+     },
+     {
+      "device_id": "fan_office",
+      "state": {
+       "power": "off"
+      }
+     }
+    ]
+   }
+  ],
+  "active_scene": "scn_315"
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_406",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_2107",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_985",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_107",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_37",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

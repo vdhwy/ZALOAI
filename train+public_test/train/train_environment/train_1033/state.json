@@ -1,0 +1,373 @@
+{
+ "_meta": {
+  "question_id": "train_1033",
+  "current_time": "2026-11-06T15:50:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "phone.call",
+   "phone.recent_calls",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_9459",
+    "time": "2026-11-07T07:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_7581",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_157",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_4600",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_813",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_66",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_2348",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_957",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_448",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_184",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09726342700"
+   },
+   {
+    "id": "c_3190",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09302273512"
+   },
+   {
+    "id": "c_774",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09933050829"
+   },
+   {
+    "id": "c_217",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09296462301"
+   },
+   {
+    "id": "c_277",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09870816784"
+   },
+   {
+    "id": "c_6706",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09817002524"
+   },
+   {
+    "id": "c_442",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09107372964"
+   },
+   {
+    "id": "c_9945",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09132724862"
+   },
+   {
+    "id": "c_979",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09122249414"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-06",
+    "prizes": {
+     "special": "466956",
+     "first": "83590",
+     "eighth": "63"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-06",
+    "prizes": {
+     "special": "302972",
+     "first": "81079",
+     "eighth": "77"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-06",
+    "prizes": {
+     "special": "183543",
+     "first": "53232",
+     "eighth": "91"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-06",
+    "prizes": {
+     "special": "855053",
+     "first": "40168",
+     "eighth": "91"
+    }
+   }
+  ]
+ },
+ "calculator": {},
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_222",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_927",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_355",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_3145",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_423",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-11T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_632",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-06T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_839",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-08T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_318",
+    "contact": {
+     "id": "c_6706",
+     "name": "Sếp Trân",
+     "phone": "09817002524"
+    },
+    "direction": "outgoing",
+    "status": "completed",
+    "time": "2026-11-06T10:05:00+07:00"
+   },
+   {
+    "id": "call_752",
+    "contact": {
+     "id": "c_217",
+     "name": "Vy",
+     "phone": "09296462301"
+    },
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-11-06T15:20:00+07:00"
+   }
+  ]
+ }
+}

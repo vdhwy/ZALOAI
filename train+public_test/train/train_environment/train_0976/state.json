@@ -1,0 +1,574 @@
+{
+ "_meta": {
+  "question_id": "train_0976",
+  "current_time": "2026-11-25T09:00:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "library.reserve",
+   "library.search",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_551",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_6025",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_638",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_340",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_267",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_7807",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_9428",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": false
+   },
+   {
+    "id": "book_374",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_833",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_1238",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   }
+  ],
+  "reservations": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2728",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09163136043"
+   },
+   {
+    "id": "c_258",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09310611562"
+   },
+   {
+    "id": "c_340",
+    "name": "Hằng",
+    "relation": "con gái",
+    "phone": "09931914141"
+   },
+   {
+    "id": "c_90",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09637836451"
+   },
+   {
+    "id": "c_817",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09572053168"
+   },
+   {
+    "id": "c_528",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09197847498"
+   },
+   {
+    "id": "c_997",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09395606659"
+   },
+   {
+    "id": "c_931",
+    "name": "Thằng Út",
+    "relation": "con trai",
+    "phone": "09298654485"
+   },
+   {
+    "id": "c_650",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09188274054"
+   },
+   {
+    "id": "c_7489",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09742004039"
+   },
+   {
+    "id": "c_906",
+    "name": "Chú Tám",
+    "relation": "bạn nhậu",
+    "phone": "09710446887"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_432",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-01T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_262",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-24T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_556",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-28T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_724",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-01T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_28",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-25T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_815",
+    "title": "Tập hát bài Hoa nở không màu theo bản beat cho đám cưới thằng Út",
+    "due": "2026-11-25T19:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_3071",
+    "title": "Tập hát bài Nơi này có anh cho tiệc tất niên",
+    "due": "2026-12-18T19:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_956",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_359",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_2606",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_620",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_3594",
+    "title": "Hoa nở không màu (Beat karaoke)",
+    "artist": "Karaoke Tone Nam"
+   },
+   {
+    "id": "trk_614",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_1622",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_348",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_837",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_6045",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_989",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_7597",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_403",
+    "show_id": "show_6045",
+    "title": "Số 8: Nghề diễn và những áp lực",
+    "number": 8,
+    "duration_min": 45,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_266",
+    "show_id": "show_7597",
+    "title": "Số 18: Lập quỹ khẩn cấp",
+    "number": 18,
+    "duration_min": 32,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_107",
+    "show_id": "show_6045",
+    "title": "Số 7: Sống chậm giữa thành phố",
+    "number": 7,
+    "duration_min": 32,
+    "published": "2026-11-11"
+   },
+   {
+    "id": "ep_643",
+    "show_id": "show_7597",
+    "title": "Số 20: Quản lý chi tiêu gia đình",
+    "number": 20,
+    "duration_min": 18,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_236",
+    "show_id": "show_989",
+    "title": "Số 16: Nhà giả kim - phần 2",
+    "number": 16,
+    "duration_min": 45,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_698",
+    "show_id": "show_989",
+    "title": "Số 15: Nhà giả kim - phần 1",
+    "number": 15,
+    "duration_min": 25,
+    "published": "2026-11-11"
+   },
+   {
+    "id": "ep_753",
+    "show_id": "show_7597",
+    "title": "Số 19: Gửi tiết kiệm hay mua vàng",
+    "number": 19,
+    "duration_min": 18,
+    "published": "2026-11-11"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_86",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_751",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_941",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_596",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_6045"
+  ],
+  "queue": [],
+  "now_playing": null
+ }
+}

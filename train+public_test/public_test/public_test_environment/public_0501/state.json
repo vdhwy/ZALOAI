@@ -1,0 +1,365 @@
+{
+ "_meta": {
+  "question_id": "public_0501",
+  "current_time": "2026-11-22T19:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "gold_price.get_price",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert"
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_93",
+    "name": "Học từ vựng tiếng Anh",
+    "streak": 12,
+    "last_logged": "2026-11-20"
+   },
+   {
+    "id": "habit_333",
+    "name": "Thiền 10 phút",
+    "streak": 0
+   },
+   {
+    "id": "habit_951",
+    "name": "Chạy bộ buổi sáng",
+    "streak": 0
+   },
+   {
+    "id": "habit_1449",
+    "name": "Uống đủ 2 lít nước",
+    "streak": 0
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_286",
+    "habit_id": "habit_93",
+    "date": "2026-11-20"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 127400000,
+    "sell": 129400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 121400000,
+    "sell": 123400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4178
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "quantity": 200,
+    "avg_price": 24450,
+    "price": 23850
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 200,
+    "avg_price": 30100,
+    "price": 33800
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33800,
+    "change_pct": 1.0
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 93850,
+    "change_pct": 1.5
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59500,
+    "change_pct": 2.5
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 124950,
+    "change_pct": 3.0
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1691,
+    "change_pct": 0.3
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 23850,
+    "change_pct": 0.8
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_698",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_3695",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_742",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_2834",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09883905989"
+   },
+   {
+    "id": "c_458",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09718783328"
+   },
+   {
+    "id": "c_724",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09325840933"
+   },
+   {
+    "id": "c_474",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09362272023"
+   },
+   {
+    "id": "c_942",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09164612616"
+   },
+   {
+    "id": "c_496",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09274499789"
+   },
+   {
+    "id": "c_925",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09406819175"
+   },
+   {
+    "id": "c_63",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09892832067"
+   },
+   {
+    "id": "c_361",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09706044415"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "metro_251",
+    "name": "Metro Nhổn - Ga Hà Nội",
+    "type": "metro",
+    "stops": [
+     "Nhổn",
+     "Cầu Giấy",
+     "Kim Mã",
+     "Ga Hà Nội"
+    ],
+    "fare": 15000,
+    "duration_min": 25,
+    "headway_min": 10
+   },
+   {
+    "id": "bus_6841",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Bờ Hồ",
+     "Láng Hạ",
+     "Cầu Giấy",
+     "Đại học Mỏ"
+    ],
+    "fare": 7000,
+    "duration_min": 45,
+    "headway_min": 15
+   },
+   {
+    "id": "bus_1960",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_251",
+    "time": "2026-11-22T19:38:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_1960",
+    "time": "2026-11-22T19:24:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_251",
+    "time": "2026-11-22T19:28:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_1960",
+    "time": "2026-11-22T19:34:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_6841",
+    "time": "2026-11-22T19:53:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "metro_251",
+    "time": "2026-11-22T19:18:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_6841",
+    "time": "2026-11-22T19:23:00+07:00"
+   },
+   {
+    "stop": "Cầu Giấy",
+    "route": "bus_6841",
+    "time": "2026-11-22T19:38:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_1960",
+    "time": "2026-11-22T19:44:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_913",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_148",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_4865",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_729",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_163",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ }
+}

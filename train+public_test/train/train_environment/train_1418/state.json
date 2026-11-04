@@ -1,0 +1,395 @@
+{
+ "_meta": {
+  "question_id": "train_1418",
+  "current_time": "2026-11-13T16:30:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_5521",
+    "content": "Đi khám sức khỏe định kỳ ở Bệnh viện Gia Định",
+    "time": "2026-11-11T07:30:00+07:00",
+    "repeat": "once",
+    "done": true
+   },
+   {
+    "id": "rem_830",
+    "content": "Thay nhớt xe",
+    "time": "2026-11-15T08:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_03",
+    "repeat": "once",
+    "done": false,
+    "content": "Ghé nhà thuốc Dược Phố Lê Thánh Tôn mua thuốc",
+    "time": "2026-11-14T09:00:00+07:00"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_813",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Thảo Điền",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_233",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_716",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_317",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Thảo Điền",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_609",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_8826",
+    "name": "Xe đạp điện 105",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_613",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-25",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_581",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-25",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_229",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-25",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_864",
+    "origin": "SGN",
+    "destination": "VCA",
+    "date": "2026-11-25",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_6545",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-11-19",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_51",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-11-28",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_1735",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-11-23",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_848",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-12-04",
+    "status": "paused",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-10": {
+    "steps": 3934,
+    "calories": 157,
+    "distance_km": 2.8
+   },
+   "2026-11-11": {
+    "steps": 4337,
+    "calories": 173,
+    "distance_km": 3.1
+   },
+   "2026-11-12": {
+    "steps": 6347,
+    "calories": 253,
+    "distance_km": 4.6
+   },
+   "2026-11-13": {
+    "steps": 2320,
+    "calories": 92,
+    "distance_km": 1.7
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_697",
+    "type": "running",
+    "minutes": 20,
+    "time": "2026-11-09T18:00:00+07:00"
+   },
+   {
+    "id": "wo_668",
+    "type": "running",
+    "minutes": 20,
+    "time": "2026-11-10T17:00:00+07:00"
+   },
+   {
+    "id": "wo_818",
+    "type": "walking",
+    "minutes": 45,
+    "time": "2026-11-12T18:30:00+07:00"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_161",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_2284",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_3106",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_8307",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_200",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_7693",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_8675",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_21",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_646",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_840",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_711",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_618",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_981",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ }
+}

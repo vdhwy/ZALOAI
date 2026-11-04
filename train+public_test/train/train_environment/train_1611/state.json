@@ -1,0 +1,571 @@
+{
+ "_meta": {
+  "question_id": "train_1611",
+  "current_time": "2026-10-14T12:15:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "fuel_price.get_price",
+   "library.reserve",
+   "library.search",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_855",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": false
+   },
+   {
+    "id": "book_9866",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": false
+   },
+   {
+    "id": "book_1843",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_899",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   }
+  ],
+  "reservations": [
+   {
+    "id": "res_01",
+    "book_id": "book_1843",
+    "status": "ready"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_216",
+    "name": "Vy",
+    "type": "direct",
+    "members": [
+     "Vy"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Anh chuyển tiền vé xem phim rồi nha."
+     }
+    ]
+   },
+   {
+    "id": "chat_9371",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_990",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_667",
+    "name": "Má",
+    "type": "direct",
+    "members": [
+     "Má"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_153",
+    "name": "Sếp Trân",
+    "type": "direct",
+    "members": [
+     "Sếp Trân"
+    ],
+    "messages": [
+     {
+      "from": "Sếp Trân",
+      "content": "Khoa ơi, ba giờ chiều nay em qua công ty Tân Phú họp khách hàng với chị nhé.",
+      "time": "2026-10-14T08:05:00+07:00"
+     },
+     {
+      "from": "me",
+      "content": "Dạ ba giờ chiều em có mặt ạ."
+     }
+    ]
+   }
+  ],
+  "calls": [
+   {
+    "id": "ott_call_01",
+    "chat_id": "chat_667",
+    "video": false,
+    "status": "dialing"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 27,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-14",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-15",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-16",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-17",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 34
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-11": {
+    "steps": 10272,
+    "calories": 410,
+    "distance_km": 7.4
+   },
+   "2026-10-12": {
+    "steps": 6456,
+    "calories": 258,
+    "distance_km": 4.6
+   },
+   "2026-10-13": {
+    "steps": 2524,
+    "calories": 100,
+    "distance_km": 1.8
+   },
+   "2026-10-14": {
+    "steps": 3617,
+    "calories": 144,
+    "distance_km": 2.6
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_4267",
+    "type": "gym",
+    "minutes": 60,
+    "time": "2026-10-10T06:30:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_820",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09674377890"
+   },
+   {
+    "id": "c_5923",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09761130074"
+   },
+   {
+    "id": "c_305",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09328435172"
+   },
+   {
+    "id": "c_686",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09666568602"
+   },
+   {
+    "id": "c_23",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09530083929"
+   },
+   {
+    "id": "c_596",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09669356251"
+   },
+   {
+    "id": "c_257",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09702739568"
+   },
+   {
+    "id": "c_589",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09460203420"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_475",
+    "title": "đi chơi công viên",
+    "start": "2026-10-16T10:30:00+07:00",
+    "end": "2026-10-16T11:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_432",
+    "title": "họp phụ huynh",
+    "start": "2026-10-15T18:00:00+07:00",
+    "end": "2026-10-15T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_227",
+    "title": "đá bóng",
+    "start": "2026-10-16T10:30:00+07:00",
+    "end": "2026-10-16T11:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5932",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-17T08:30:00+07:00",
+    "end": "2026-10-17T09:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 26046
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28129
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 173.6
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 24100
+   },
+   {
+    "type": "e5",
+    "price": 22900
+   },
+   {
+    "type": "diesel",
+    "price": 21500
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_864",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-10-12T13:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_283",
+    "from": "vy@gmail.example.test",
+    "from_name": "Vy",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-10-12T10:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_5147",
+    "from": "vy@gmail.example.test",
+    "from_name": "Vy",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hình đi Vũng Tàu cuối tuần",
+    "snippet": "Em gửi anh mấy tấm hình chụp ở bãi Sau nè.",
+    "body": "Em gửi anh mấy tấm hình chụp ở bãi Sau hôm chủ nhật nè, anh lưu lại nha.",
+    "time": "2026-10-13T21:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_445",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-10-12T17:15:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_773",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-10-11T20:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_7446",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 221000,
+    "due_date": "2026-10-17",
+    "paid": false
+   },
+   {
+    "id": "bill_918",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 151000,
+    "due_date": "2026-10-17",
+    "paid": false
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_182",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 1200,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_7506",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 75,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   },
+   {
+    "id": "prog_287",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 1000,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_283",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-10-25",
+    "used": false
+   },
+   {
+    "id": "vch_203",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-03",
+    "used": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 420000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_589",
+    "amount": -200000,
+    "note": "Tiền vé xem phim"
+   }
+  ]
+ }
+}

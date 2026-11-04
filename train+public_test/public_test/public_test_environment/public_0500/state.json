@@ -1,0 +1,287 @@
+{
+ "_meta": {
+  "question_id": "public_0500",
+  "current_time": "2026-11-02T16:55:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_8798",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_252",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_4561",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_52",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_738",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_6894",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_240",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_484",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_578",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_124",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 120000,
+  "routes": [
+   {
+    "id": "metro_683",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_3659",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Tòa nhà Nam Sơn",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Thảo Điền",
+    "route": "metro_683",
+    "time": "2026-11-02T16:58:00+07:00"
+   },
+   {
+    "stop": "Thảo Điền",
+    "route": "metro_683",
+    "time": "2026-11-02T17:06:00+07:00"
+   },
+   {
+    "stop": "Thảo Điền",
+    "route": "metro_683",
+    "time": "2026-11-02T17:14:00+07:00"
+   },
+   {
+    "stop": "Tòa nhà Nam Sơn",
+    "route": "bus_3659",
+    "time": "2026-11-02T17:25:00+07:00"
+   },
+   {
+    "stop": "Tòa nhà Nam Sơn",
+    "route": "bus_3659",
+    "time": "2026-11-02T17:13:00+07:00"
+   },
+   {
+    "stop": "Tòa nhà Nam Sơn",
+    "route": "bus_3659",
+    "time": "2026-11-02T17:37:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_867",
+    "title": "đi chơi công viên",
+    "start": "2026-11-05T09:30:00+07:00",
+    "end": "2026-11-05T10:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_698",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-03T09:30:00+07:00",
+    "end": "2026-11-03T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3328",
+    "title": "họp phụ huynh",
+    "start": "2026-11-03T14:30:00+07:00",
+    "end": "2026-11-03T15:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_803",
+    "title": "đá bóng",
+    "start": "2026-11-03T19:30:00+07:00",
+    "end": "2026-11-03T20:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5142",
+    "title": "ăn tối với Vy",
+    "start": "2026-11-02T18:00:00+07:00",
+    "location": "nhà hàng gần chợ Bến Thành",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_623",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_6669",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_767",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_3457",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_704",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_316",
+    "content": "gửi báo giá cho sếp Trân",
+    "time": "2026-11-02T17:30:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_92",
+    "content": "gọi điện cho Má",
+    "time": "2026-11-03T20:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   }
+  ]
+ }
+}

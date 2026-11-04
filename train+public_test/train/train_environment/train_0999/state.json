@@ -1,0 +1,509 @@
+{
+ "_meta": {
+  "question_id": "train_0999",
+  "current_time": "2026-10-16T08:55:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_256",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_432",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": false
+   },
+   {
+    "id": "rule_118",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_4022",
+    "title": "khám răng",
+    "start": "2026-10-17T18:30:00+07:00",
+    "end": "2026-10-17T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_331",
+    "title": "đi chơi công viên",
+    "start": "2026-10-19T15:00:00+07:00",
+    "end": "2026-10-19T16:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2554",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-18T15:30:00+07:00",
+    "end": "2026-10-18T16:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_780",
+    "title": "Họp hợp tác xã trái cây",
+    "start": "2026-10-17T08:30:00+07:00",
+    "link": "https://meet.example.test/nrf-jisr-eiz",
+    "attendees": [
+     "c_281"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_37",
+    "title": "Họp hội nhà vườn online",
+    "start": "2026-10-16T15:00:00+07:00",
+    "link": "https://meet.example.test/lgj-mcjl-mbw",
+    "attendees": [
+     "c_656"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_117",
+    "title": "Họp mặt gia đình với thằng Tí",
+    "start": "2026-10-16T20:30:00+07:00",
+    "link": "https://meet.example.test/ggw-cief-lck",
+    "attendees": [
+     "c_3814"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_81",
+    "title": "Chốt giá sầu riêng với mối",
+    "start": "2026-10-17T15:00:00+07:00",
+    "link": "https://meet.example.test/mgg-whry-yve",
+    "attendees": [
+     "c_656"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_106",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09959185961"
+   },
+   {
+    "id": "c_656",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09628737046"
+   },
+   {
+    "id": "c_144",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09858571227"
+   },
+   {
+    "id": "c_816",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09953370141"
+   },
+   {
+    "id": "c_513",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09736249853"
+   },
+   {
+    "id": "c_9654",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09499150816"
+   },
+   {
+    "id": "c_4239",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09182656119"
+   },
+   {
+    "id": "c_281",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09248958645"
+   },
+   {
+    "id": "c_3814",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09771967781"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_69",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_45",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_612",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_878",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_3865",
+    "name": "Đi chợ",
+    "assignee": "Mẹ",
+    "done": false
+   },
+   {
+    "id": "chore_812",
+    "name": "Nấu cơm tối",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_577",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Lan",
+    "done": false
+   },
+   {
+    "id": "chore_959",
+    "name": "Phơi quần áo",
+    "assignee": "Mẹ",
+    "done": true
+   },
+   {
+    "id": "chore_781",
+    "name": "Tưới cây",
+    "assignee": "Lan",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chú Bảy",
+   "Mẹ",
+   "Lan"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_584",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-20T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_334",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-18T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_5324",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-18T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_2532",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-22T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_367",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-18T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ }
+}

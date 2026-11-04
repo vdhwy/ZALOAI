@@ -1,0 +1,380 @@
+{
+ "_meta": {
+  "question_id": "train_1740",
+  "current_time": "2026-12-17T21:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_01",
+    "days": "daily",
+    "name": "Vitamin C",
+    "times": [
+     "08:00"
+    ]
+   }
+  ],
+  "logs": []
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-12-17",
+    "prizes": {
+     "special": "941797",
+     "first": "89779",
+     "eighth": "37"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-12-17",
+    "prizes": {
+     "special": "779103",
+     "first": "60003",
+     "eighth": "25"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-12-17",
+    "prizes": {
+     "special": "841386",
+     "first": "63347",
+     "eighth": "40"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-12-17",
+    "prizes": {
+     "special": "676892",
+     "first": "19005",
+     "eighth": "32"
+    }
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_582",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 210000,
+    "due_date": "2026-12-26",
+    "paid": true,
+    "paid_with": "bank"
+   },
+   {
+    "id": "bill_174",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 845000,
+    "due_date": "2026-12-26",
+    "paid": false
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_834",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_666",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_3165",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_631",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_351",
+    "show_id": "show_3165",
+    "title": "Số 15: Đi xe đạp đi làm",
+    "number": 15,
+    "duration_min": 32,
+    "published": "2026-12-10"
+   },
+   {
+    "id": "ep_329",
+    "show_id": "show_666",
+    "title": "Số 10: Gửi tiết kiệm hay mua vàng",
+    "number": 10,
+    "duration_min": 32,
+    "published": "2026-12-03"
+   },
+   {
+    "id": "ep_4862",
+    "show_id": "show_3165",
+    "title": "Số 14: Trồng cây trên sân thượng",
+    "number": 14,
+    "duration_min": 32,
+    "published": "2026-12-03"
+   },
+   {
+    "id": "ep_134",
+    "show_id": "show_3165",
+    "title": "Số 13: Rác thải nhựa ở đô thị",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-11-26"
+   },
+   {
+    "id": "ep_312",
+    "show_id": "show_631",
+    "title": "Số 7: Sống chậm giữa thành phố",
+    "number": 7,
+    "duration_min": 25,
+    "published": "2026-12-03"
+   },
+   {
+    "id": "ep_875",
+    "show_id": "show_834",
+    "title": "Số 7: Nhà giả kim - phần 2",
+    "number": 7,
+    "duration_min": 25,
+    "published": "2026-12-10"
+   },
+   {
+    "id": "ep_887",
+    "show_id": "show_666",
+    "title": "Số 11: Quản lý chi tiêu gia đình",
+    "number": 11,
+    "duration_min": 45,
+    "published": "2026-12-10"
+   },
+   {
+    "id": "ep_475",
+    "show_id": "show_834",
+    "title": "Số 6: Nhà giả kim - phần 1",
+    "number": 6,
+    "duration_min": 45,
+    "published": "2026-12-03"
+   },
+   {
+    "id": "ep_2625",
+    "show_id": "show_631",
+    "title": "Số 8: Nghề diễn và những áp lực",
+    "number": 8,
+    "duration_min": 32,
+    "published": "2026-12-10"
+   },
+   {
+    "id": "ep_8820",
+    "show_id": "show_666",
+    "title": "Số 9: Lập quỹ khẩn cấp",
+    "number": 9,
+    "duration_min": 45,
+    "published": "2026-11-26"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_2776",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_873",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_4878",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_532",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_184",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09847888642"
+   },
+   {
+    "id": "c_797",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09433713550"
+   },
+   {
+    "id": "c_901",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09885512346"
+   },
+   {
+    "id": "c_7807",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09351940977"
+   },
+   {
+    "id": "c_7366",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09712345680"
+   },
+   {
+    "id": "c_129",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09461963480"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_111",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_331",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_936",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_407",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_286",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_216",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_908",
+    "name": "Nhạc chill buổi tối",
+    "track_ids": [
+     "trk_331"
+    ]
+   },
+   {
+    "id": "pl_437",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": {
+   "track_id": "trk_331",
+   "title": "Ngày đầu tiên",
+   "status": "playing"
+  }
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_642",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_638",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_9774",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_8891",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": "c_7807",
+    "phone_number": "09351940977",
+    "status": "dialing"
+   }
+  ]
+ }
+}

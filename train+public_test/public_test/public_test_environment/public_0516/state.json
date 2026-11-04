@@ -1,0 +1,322 @@
+{
+ "_meta": {
+  "question_id": "public_0516",
+  "current_time": "2026-11-25T11:15:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_634",
+    "title": "đi chơi công viên",
+    "start": "2026-11-27T10:00:00+07:00",
+    "end": "2026-11-27T11:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_205",
+    "title": "đá bóng",
+    "start": "2026-11-28T19:00:00+07:00",
+    "end": "2026-11-28T20:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1106",
+    "title": "họp team",
+    "start": "2026-11-26T10:00:00+07:00",
+    "end": "2026-11-26T11:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_919",
+    "title": "họp phụ huynh",
+    "start": "2026-11-28T09:30:00+07:00",
+    "end": "2026-11-28T10:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5758",
+    "title": "khám răng",
+    "start": "2026-11-26T19:30:00+07:00",
+    "end": "2026-11-26T20:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_990",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09142721220"
+   },
+   {
+    "id": "c_665",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09266333642"
+   },
+   {
+    "id": "c_3535",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09929547724"
+   },
+   {
+    "id": "c_6566",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09772843965"
+   },
+   {
+    "id": "c_384",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09445349660"
+   },
+   {
+    "id": "c_315",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09705914364"
+   },
+   {
+    "id": "c_6085",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09189194999"
+   },
+   {
+    "id": "c_5617",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09543571914"
+   },
+   {
+    "id": "c_976",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09855854868"
+   },
+   {
+    "id": "c_209",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09223661830"
+   },
+   {
+    "id": "c_378",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09652201285"
+   },
+   {
+    "id": "c_559",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09837482236"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_839",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_243",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_851",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_329",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_293",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 1000,
+    "avg_price": 133450,
+    "price": 130050
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 500,
+    "avg_price": 36250,
+    "price": 33900
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33900,
+    "change_pct": -3.4
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 130050,
+    "change_pct": 2.2
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 58200,
+    "change_pct": -3.0
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 61100,
+    "change_pct": -2.8
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 27400,
+    "change_pct": 1.4
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1715,
+    "change_pct": -0.8
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 26,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-25",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-26",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-27",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-28",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 34
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_753",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-01T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_4807",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-27T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_970",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-29T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_9339",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-26T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ }
+}

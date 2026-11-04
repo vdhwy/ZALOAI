@@ -1,0 +1,289 @@
+{
+ "_meta": {
+  "question_id": "train_1569",
+  "current_time": "2026-11-15T06:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "phone.call",
+   "phone.recent_calls",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_57",
+    "contact_id": "c_746",
+    "phone_number": "09202127070",
+    "direction": "incoming",
+    "status": "answered",
+    "time": "2026-11-14T20:10:00+07:00"
+   },
+   {
+    "id": "call_63",
+    "contact_id": "c_504",
+    "phone_number": "09153848840",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-11-14T22:40:00+07:00"
+   },
+   {
+    "id": "call_71",
+    "contact_id": null,
+    "phone_number": "09127730546",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-11-14T23:05:00+07:00"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-15",
+    "to": "2026-11-15",
+    "kwh": 3.3,
+    "cost": 9600,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 1.5
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 0.7
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-09",
+    "to": "2026-11-15",
+    "kwh": 63.0,
+    "cost": 182700,
+    "days": [
+     {
+      "date": "2026-11-09",
+      "kwh": 7.3
+     },
+     {
+      "date": "2026-11-10",
+      "kwh": 10.9
+     },
+     {
+      "date": "2026-11-11",
+      "kwh": 13.9
+     },
+     {
+      "date": "2026-11-12",
+      "kwh": 10.7
+     },
+     {
+      "date": "2026-11-13",
+      "kwh": 9.3
+     },
+     {
+      "date": "2026-11-14",
+      "kwh": 7.6
+     },
+     {
+      "date": "2026-11-15",
+      "kwh": 3.3
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-15",
+    "kwh": 150.8,
+    "cost": 437300
+   }
+  },
+  "alert_threshold_kwh": 350
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_3798",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09336749810"
+   },
+   {
+    "id": "c_417",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09217100381"
+   },
+   {
+    "id": "c_746",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09202127070"
+   },
+   {
+    "id": "c_653",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09704621324"
+   },
+   {
+    "id": "c_925",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09819760853"
+   },
+   {
+    "id": "c_504",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09153848840"
+   },
+   {
+    "id": "c_125",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09905520077"
+   },
+   {
+    "id": "c_899",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09850631574"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_729",
+    "title": "đá bóng",
+    "start": "2026-11-16T17:30:00+07:00",
+    "end": "2026-11-16T18:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_394",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-16T19:00:00+07:00",
+    "end": "2026-11-16T20:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_514",
+    "title": "khám răng",
+    "start": "2026-11-17T09:00:00+07:00",
+    "end": "2026-11-17T10:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_697",
+    "title": "họp team",
+    "start": "2026-11-16T08:30:00+07:00",
+    "end": "2026-11-16T09:30:00+07:00",
+    "location": "Tòa nhà Ngọc Viễn",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_862",
+    "title": "Ký hợp đồng thuê căn hộ Oakwood Residence (mang tiền cọc 8.000.000đ)",
+    "start": "2026-11-19T10:00:00+07:00",
+    "end": "2026-11-19T11:00:00+07:00",
+    "location": "Oakwood Residence, Thảo Điền",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_318",
+    "title": "Xem căn hộ mẫu Oakwood Riverside",
+    "start": "2026-11-21T15:00:00+07:00",
+    "end": "2026-11-21T16:00:00+07:00",
+    "location": "Oakwood Riverside, Bình Thạnh",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_223",
+    "name": "Tài khoản lương",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_881",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_176",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_268",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_4998",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_331",
+    "time": "2026-11-16T05:30:00+07:00",
+    "label": "đưa con đi học",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_515",
+    "time": "2026-11-16T06:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ }
+}

@@ -1,0 +1,409 @@
+{
+ "_meta": {
+  "question_id": "train_1570",
+  "current_time": "2026-11-21T19:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "library.reserve",
+   "library.search",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_557",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09867555768"
+   },
+   {
+    "id": "c_61",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09402519897"
+   },
+   {
+    "id": "c_968",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09914637784"
+   },
+   {
+    "id": "c_418",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09430601698"
+   },
+   {
+    "id": "c_884",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09553606206"
+   },
+   {
+    "id": "c_727",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09693099397"
+   },
+   {
+    "id": "c_253",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09102788768"
+   },
+   {
+    "id": "c_8116",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09975205850"
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_89",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": true
+   },
+   {
+    "id": "book_39",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": false
+   },
+   {
+    "id": "book_4451",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": false
+   },
+   {
+    "id": "book_395",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": false
+   }
+  ],
+  "reservations": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_6669",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 500,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_632",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 180,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   },
+   {
+    "id": "prog_191",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 600,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_553",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-13",
+    "used": false
+   },
+   {
+    "id": "vch_373",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-12-09",
+    "used": false
+   },
+   {
+    "id": "vch_800",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-25",
+    "used": false
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": "c_253",
+    "phone_number": "09102788768",
+    "status": "dialing"
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_763",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-12-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_970",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-12-05",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_259",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-12-01",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_613",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-12-06",
+    "status": "paused",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_609",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-12-11",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_5170",
+    "name": "SkyNest Lounge Singapore",
+    "price": 390000,
+    "next_billing": "2026-12-10",
+    "status": "cancelled",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_842",
+    "name": "SkyNest Lounge Taipei",
+    "price": 390000,
+    "next_billing": "2026-12-03",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_3391",
+    "name": "Harbor View Hotel Club Taipei",
+    "price": 450000,
+    "next_billing": "2026-12-15",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_706",
+    "name": "Harbor View Hotel Club Singapore",
+    "price": 450000,
+    "next_billing": "2026-12-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_1258",
+    "name": "Taipei Coworking Pass",
+    "price": 600000,
+    "next_billing": "2026-12-15",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_4417",
+    "name": "Lumi AI Studio",
+    "price": 290000,
+    "next_billing": "2026-12-03",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_2865",
+    "name": "Taipei Data eSIM",
+    "price": 150000,
+    "next_billing": "2026-12-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_739",
+    "name": "Taipei Food Tour Club",
+    "price": 200000,
+    "next_billing": "2026-12-10",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_437",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 216000,
+    "due_date": "2026-11-28",
+    "paid": false
+   },
+   {
+    "id": "bill_567",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 152000,
+    "due_date": "2026-11-23",
+    "paid": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-23",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-24",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 28
+   }
+  ]
+ }
+}

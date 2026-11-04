@@ -1,0 +1,290 @@
+{
+ "_meta": {
+  "question_id": "train_1572",
+  "current_time": "2026-11-27T14:15:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_43",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_8565",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_2283",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_397",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_857",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_370",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Nhắn cảm ơn Priya Sharma vì hộp trà masala",
+    "time": "2026-11-27T20:00:00+07:00"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_22",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_397",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_5164",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 25,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-27",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-28",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-29",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-30",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 33
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_6041",
+    "title": "Đóng học phí cho con",
+    "due": "2026-12-01T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_811",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-29T17:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_2026",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-30T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_296",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-03T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_8137",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_374",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_58",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_8069",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_883",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09411617560"
+   },
+   {
+    "id": "c_4261",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09991975807"
+   },
+   {
+    "id": "c_3299",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09834685485"
+   },
+   {
+    "id": "c_451",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09386463054"
+   },
+   {
+    "id": "c_509",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09609443364"
+   },
+   {
+    "id": "c_8259",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09367956948"
+   },
+   {
+    "id": "c_4577",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09201364050"
+   },
+   {
+    "id": "c_841",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09372403198"
+   },
+   {
+    "id": "c_848",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09507539884"
+   },
+   {
+    "id": "c_6317",
+    "name": "Priya Sharma",
+    "relation": "bạn trao đổi sinh viên",
+    "phone": "09316274805",
+    "email": "priya.sharma@hanu.example.test"
+   },
+   {
+    "id": "c_75",
+    "name": "Priya Shah",
+    "relation": "bạn cùng lớp",
+    "phone": "09582063147"
+   }
+  ]
+ }
+}

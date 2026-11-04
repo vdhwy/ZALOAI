@@ -1,0 +1,194 @@
+{
+ "_meta": {
+  "question_id": "train_1285",
+  "current_time": "2026-10-30T13:50:00+07:00",
+  "tools": [
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "fuel_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 31,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-10-30",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 29
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-10-31",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-01",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-11-02",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23900
+   },
+   {
+    "type": "e5",
+    "price": 22700
+   },
+   {
+    "type": "diesel",
+    "price": 21300
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_7108",
+    "origin": "VCA",
+    "destination": "HAN",
+    "date": "2026-11-05",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_408",
+    "origin": "VCA",
+    "destination": "HAN",
+    "date": "2026-11-05",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_255",
+    "origin": "VCA",
+    "destination": "HAN",
+    "date": "2026-11-05",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_3504",
+    "origin": "VCA",
+    "destination": "HAN",
+    "date": "2026-11-05",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_394",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_47",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_962",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_622",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_603",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-27": {
+    "steps": 2690,
+    "calories": 107,
+    "distance_km": 1.9
+   },
+   "2026-10-28": {
+    "steps": 3181,
+    "calories": 127,
+    "distance_km": 2.3
+   },
+   "2026-10-29": {
+    "steps": 9845,
+    "calories": 393,
+    "distance_km": 7.1
+   },
+   "2026-10-30": {
+    "steps": 5865,
+    "calories": 234,
+    "distance_km": 4.2
+   }
+  },
+  "goal_steps": 8000,
+  "workouts": [
+   {
+    "id": "wo_294",
+    "type": "cycling",
+    "minutes": 30,
+    "time": "2026-10-29T18:30:00+07:00"
+   },
+   {
+    "id": "wo_454",
+    "type": "yoga",
+    "minutes": 60,
+    "time": "2026-10-28T06:00:00+07:00"
+   }
+  ]
+ }
+}

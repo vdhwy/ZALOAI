@@ -1,0 +1,346 @@
+{
+ "_meta": {
+  "question_id": "public_0510",
+  "current_time": "2026-11-25T13:35:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "pantry.consume",
+   "pantry.list_items",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_655",
+    "name": "đường",
+    "stock": 2,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_3684",
+    "name": "bột mì",
+    "stock": 1,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_784",
+    "name": "yến mạch",
+    "stock": 2,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_512",
+    "name": "mì tôm",
+    "stock": 14,
+    "unit": "gói"
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_112",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_2817",
+    "name": "Gạo ST25 túi 5kg",
+    "price": 185000,
+    "unit": "túi",
+    "category": "gạo",
+    "in_stock": true
+   },
+   {
+    "id": "gro_7888",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_425",
+    "name": "Táo Envy New Zealand 1kg",
+    "price": 129000,
+    "unit": "kg",
+    "category": "trái cây",
+    "in_stock": true
+   },
+   {
+    "id": "gro_295",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_864",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_4661",
+    "items": [
+     {
+      "product_id": "gro_112",
+      "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+      "price": 35000,
+      "quantity": 3
+     }
+    ],
+    "total": 105000,
+    "status": "delivered",
+    "delivery_time": "2026-11-17T09:00:00+07:00"
+   }
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_380",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-11-23T22:50:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_415",
+    "from": "anhthanh@gmail.example.test",
+    "from_name": "Anh Thành",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-24T13:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_767",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-25T03:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_825",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_541",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_734",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": true
+   },
+   {
+    "id": "item_417",
+    "name": "bánh mì sandwich",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_3026",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 30,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-26",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-27",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-28",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 33
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_116",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09485546898"
+   },
+   {
+    "id": "c_499",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09398638062"
+   },
+   {
+    "id": "c_55",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09851267604"
+   },
+   {
+    "id": "c_369",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09946200022"
+   },
+   {
+    "id": "c_4333",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09791224802"
+   },
+   {
+    "id": "c_3029",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09616307158"
+   },
+   {
+    "id": "c_711",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09793753339"
+   },
+   {
+    "id": "c_121",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09355498496"
+   },
+   {
+    "id": "c_721",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09534533912"
+   },
+   {
+    "id": "c_5744",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09885828345"
+   }
+  ]
+ }
+}

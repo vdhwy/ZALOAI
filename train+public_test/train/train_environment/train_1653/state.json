@@ -1,0 +1,453 @@
+{
+ "_meta": {
+  "question_id": "train_1653",
+  "current_time": "2026-11-01T10:50:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_740",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-02T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_218",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-05T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_501",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-05T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_862",
+    "title": "Gửi CV cho Nexora Studio",
+    "due": "2026-11-04T17:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_368",
+    "title": "khám răng",
+    "start": "2026-11-02T08:00:00+07:00",
+    "end": "2026-11-02T09:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_36",
+    "title": "đá bóng",
+    "start": "2026-11-02T10:30:00+07:00",
+    "end": "2026-11-02T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2033",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-02T18:00:00+07:00",
+    "end": "2026-11-02T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5129",
+    "title": "Phỏng vấn thực tập Nexora Labs",
+    "start": "2026-11-01T15:00:00+07:00",
+    "end": "2026-11-01T16:00:00+07:00",
+    "location": "Nexora Labs, 33 Duy Tân, Cầu Giấy, Hà Nội",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25754
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27814
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.7
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "KTX Mỹ Đình, Nam Từ Liêm, Hà Nội",
+    "dropoff": "Nhà hàng Ngon, 26 Trần Phú, Hoàn Kiếm, Hà Nội",
+    "vehicle": "car7",
+    "schedule_time": "2026-11-01T18:30:00+07:00"
+   },
+   {
+    "id": "ride_02",
+    "status": "booked",
+    "pickup": "KTX Mỹ Đình, Nam Từ Liêm, Hà Nội",
+    "dropoff": "Đại học Ngoại thương, 91 Chùa Láng, Hà Nội",
+    "vehicle": "bike",
+    "schedule_time": "2026-11-02T07:00:00+07:00"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_163",
+    "name": "Nấu cơm tối",
+    "assignee": "Em Linh",
+    "done": false
+   },
+   {
+    "id": "chore_407",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_526",
+    "name": "Đi chợ",
+    "assignee": "Em Linh",
+    "done": false
+   },
+   {
+    "id": "chore_1021",
+    "name": "Phơi quần áo",
+    "assignee": "Bà nội",
+    "done": false
+   }
+  ],
+  "members": [
+   "Em Linh",
+   "Bà nội",
+   "Mẹ",
+   "Bố"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_966",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1984",
+    "name": "Trang",
+    "type": "direct",
+    "members": [
+     "Trang"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7518",
+    "name": "Thầy Phong",
+    "type": "direct",
+    "members": [
+     "Thầy Phong"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_814",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_868",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_8758",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09422065840"
+   },
+   {
+    "id": "c_4245",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09929219663"
+   },
+   {
+    "id": "c_3402",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09329974249"
+   },
+   {
+    "id": "c_4043",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09785307953"
+   },
+   {
+    "id": "c_5162",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09324172367"
+   }
+  ]
+ },
+ "tv": {
+  "power": "on",
+  "channel": "VTV3",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-29": {
+    "steps": 3790,
+    "calories": 151,
+    "distance_km": 2.7
+   },
+   "2026-10-30": {
+    "steps": 6459,
+    "calories": 258,
+    "distance_km": 4.7
+   },
+   "2026-10-31": {
+    "steps": 4898,
+    "calories": 195,
+    "distance_km": 3.5
+   },
+   "2026-11-01": {
+    "steps": 4344,
+    "calories": 173,
+    "distance_km": 3.1
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_4681",
+    "type": "running",
+    "minutes": 20,
+    "time": "2026-10-29T18:00:00+07:00"
+   },
+   {
+    "id": "wo_982",
+    "type": "yoga",
+    "minutes": 20,
+    "time": "2026-10-28T06:30:00+07:00"
+   },
+   {
+    "id": "wo_167",
+    "type": "running",
+    "minutes": 20,
+    "time": "2026-10-31T17:30:00+07:00"
+   }
+  ]
+ }
+}

@@ -1,0 +1,426 @@
+{
+ "_meta": {
+  "question_id": "train_1746",
+  "current_time": "2026-10-17T07:20:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play"
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_340",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_804",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_3933",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_6024",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_5220",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_44",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_4402",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_1010",
+    "name": "Nhạc chill buổi tối",
+    "track_ids": [
+     "trk_340"
+    ]
+   }
+  ],
+  "now_playing": {
+   "track_id": "trk_340",
+   "title": "Ngày đầu tiên",
+   "status": "playing"
+  }
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_102",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Phú Văn Lâu",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_5839",
+    "name": "Xe đạp thể thao 103",
+    "station": "Trạm Đập Đá",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_163",
+    "name": "Xe đạp thường 105",
+    "station": "Trạm Đại Nội",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_481",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Đập Đá",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_9743",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Phú Văn Lâu",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_4057",
+    "name": "Xe đạp thể thao 106",
+    "station": "Trạm Đại Nội",
+    "available": false,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": [
+   {
+    "id": "brs_01",
+    "bike_id": "bike_163",
+    "station": "Trạm Đại Nội",
+    "status": "reserved"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_765",
+    "device_id": "light_living",
+    "action": "off",
+    "time": "23:00",
+    "title": "Tắt đèn phòng khách khi đi ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_245",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   },
+   {
+    "id": "rule_8970",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_901",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": true
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_579",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_697",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_2683",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_195",
+    "time": "2026-10-16T23:25:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_63",
+    "time": "2026-10-16T16:20:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_255",
+    "time": "2026-10-16T13:35:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_2195",
+    "time": "2026-10-16T14:45:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_5807",
+    "time": "2026-10-15T12:00:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_816",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09679694549"
+   },
+   {
+    "id": "c_308",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09560979667"
+   },
+   {
+    "id": "c_544",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09232804008"
+   },
+   {
+    "id": "c_873",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09198056143"
+   },
+   {
+    "id": "c_8870",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09462959464"
+   },
+   {
+    "id": "c_6777",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09852306441"
+   },
+   {
+    "id": "c_549",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09499443013"
+   },
+   {
+    "id": "c_39",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09438833402"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_472",
+    "title": "họp team",
+    "start": "2026-10-18T17:30:00+07:00",
+    "end": "2026-10-18T18:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_362",
+    "title": "đi chơi công viên",
+    "start": "2026-10-19T15:00:00+07:00",
+    "end": "2026-10-19T16:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_249",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-19T10:30:00+07:00",
+    "end": "2026-10-19T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_04",
+    "status": "confirmed",
+    "title": "Học nhóm",
+    "start": "2026-10-18T09:00:00+07:00",
+    "end": "2026-10-18T10:00:00+07:00",
+    "location": "thư viện trường"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_520",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_878",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_1207",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_551",
+    "name": "Nhi",
+    "type": "direct",
+    "members": [
+     "Nhi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5976",
+    "name": "Mạ",
+    "type": "direct",
+    "members": [
+     "Mạ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_834",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_5864",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_9744",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_937",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ }
+}

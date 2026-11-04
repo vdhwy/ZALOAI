@@ -1,0 +1,383 @@
+{
+ "_meta": {
+  "question_id": "train_1334",
+  "current_time": "2026-11-15T16:10:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_318",
+    "name": "Vitamin D3 1000IU",
+    "times": [
+     "08:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_7702",
+    "name": "Omega-3 NutriBox",
+    "times": [
+     "08:00",
+     "20:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_95",
+    "name": "Thuốc dạ dày Gastrin",
+    "times": [
+     "07:00"
+    ],
+    "days": "weekdays"
+   }
+  ],
+  "logs": []
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_90",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_2824",
+    "name": "Xe đạp thể thao 106",
+    "station": "Trạm Láng Hạ",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_588",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_530",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_9005",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_976",
+    "name": "Xe đạp thường 105",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 28,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-15",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-16",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-18",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 28
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_164",
+    "name": "Bé Bống",
+    "type": "direct",
+    "members": [
+     "Bé Bống"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_313",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_532",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_423",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": [
+     {
+      "from": "Lan",
+      "content": "Chiều nay em đưa Bống đi học vẽ nhé.",
+      "time": "2026-11-14T14:02:00+07:00"
+     },
+     {
+      "from": "Lan",
+      "content": "Anh ơi bác sĩ bảo anh dừng Omega-3 nhé, vitamin D thì vẫn uống tiếp. Tiền khám 350 nghìn em trả rồi, anh chuyển lại em sau.",
+      "time": "2026-11-14T18:40:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_291",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_4053",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09286022032"
+   },
+   {
+    "id": "c_5334",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09867306931"
+   },
+   {
+    "id": "c_605",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09368584665"
+   },
+   {
+    "id": "c_431",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09160956107"
+   },
+   {
+    "id": "c_7782",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09121915615"
+   },
+   {
+    "id": "c_584",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09479425550"
+   },
+   {
+    "id": "c_7474",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09947647343"
+   },
+   {
+    "id": "c_543",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09381071267"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_9220",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_46",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_452",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_152",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_816",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-11-18",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_7877",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-12-11",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_4742",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-29",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_536",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-12-05",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_2290",
+    "name": "NutriBox Omega-3 giao hàng tháng",
+    "price": 189000,
+    "next_billing": "2026-11-20",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_641",
+    "name": "NutriBox Vitamin D3 giao hàng tháng",
+    "price": 145000,
+    "next_billing": "2026-11-26",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ }
+}

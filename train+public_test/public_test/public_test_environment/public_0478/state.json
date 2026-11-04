@@ -1,0 +1,236 @@
+{
+ "_meta": {
+  "question_id": "public_0478",
+  "current_time": "2026-12-04T18:10:00+07:00",
+  "tools": [
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_270",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-12-10T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_8782",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-08T17:00:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_478",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-09T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_85",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-09T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_7132",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-07T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 1000,
+    "avg_price": 30350,
+    "price": 33700
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 100,
+    "avg_price": 55500,
+    "price": 59700
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "quantity": 1000,
+    "avg_price": 24600,
+    "price": 23500
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33700,
+    "change_pct": 3.5
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 90000,
+    "change_pct": -3.5
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1680,
+    "change_pct": -1.5
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59700,
+    "change_pct": 1.0
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 128500,
+    "change_pct": -2.0
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 23500,
+    "change_pct": 1.3
+   }
+  ]
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_437",
+    "name": "Không uống trà sữa",
+    "streak": 1,
+    "last_logged": "2026-12-03"
+   },
+   {
+    "id": "habit_862",
+    "name": "Học từ vựng tiếng Anh",
+    "streak": 3,
+    "last_logged": "2026-12-03"
+   },
+   {
+    "id": "habit_906",
+    "name": "Chạy bộ buổi sáng",
+    "streak": 0
+   },
+   {
+    "id": "habit_2507",
+    "name": "Đọc sách 30 phút",
+    "streak": 0
+   },
+   {
+    "id": "habit_3073",
+    "name": "Thiền 10 phút",
+    "streak": 3,
+    "last_logged": "2026-12-03"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_2481",
+    "habit_id": "habit_437",
+    "date": "2026-12-03"
+   },
+   {
+    "id": "log_305",
+    "habit_id": "habit_862",
+    "date": "2026-12-03"
+   },
+   {
+    "id": "log_627",
+    "habit_id": "habit_3073",
+    "date": "2026-12-03"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_729",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_916",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_305",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 25
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_2048",
+    "lot_id": "lot_729",
+    "from_time": "2026-12-04T16:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-12-04T19:00:00+07:00",
+    "total": 120000,
+    "status": "reserved"
+   },
+   {
+    "id": "park_459",
+    "lot_id": "lot_916",
+    "from_time": "2026-12-04T17:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-12-04T20:00:00+07:00",
+    "total": 90000,
+    "status": "reserved"
+   },
+   {
+    "id": "park_3317",
+    "lot_id": "lot_305",
+    "from_time": "2026-12-01T08:00:00+07:00",
+    "hours": 2,
+    "end_time": "2026-12-01T10:00:00+07:00",
+    "total": 50000,
+    "status": "ended"
+   }
+  ]
+ }
+}

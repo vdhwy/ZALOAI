@@ -1,0 +1,300 @@
+{
+ "_meta": {
+  "question_id": "train_1689",
+  "current_time": "2026-11-12T15:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-12",
+    "prizes": {
+     "special": "895350",
+     "first": "34752",
+     "eighth": "81"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-12",
+    "prizes": {
+     "special": "850114",
+     "first": "36468",
+     "eighth": "28"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-12",
+    "prizes": {
+     "special": "982904",
+     "first": "57992",
+     "eighth": "14"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-12",
+    "prizes": {
+     "special": "632336",
+     "first": "87050",
+     "eighth": "76"
+    }
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_676",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_519",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_103",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_639",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_6983",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_8931",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-18T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_179",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-15T17:30:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_831",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-15T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "due": "2026-11-13T20:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Gửi lịch trình tour Hội An cho khách Hàn"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_863",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_2803",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_5550",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_85",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_7271",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_644",
+    "time": "2026-11-13T05:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_02",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-13T05:45:00+07:00",
+    "label": "Ra bến xe đón khách"
+   },
+   {
+    "id": "alm_03",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-11-12T21:00:00+07:00",
+    "label": "Soạn đồ đi tour"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_910",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_603",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   },
+   {
+    "id": "item_947",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_04",
+    "checked": false,
+    "name": "nước suối lớn",
+    "quantity": 2
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_129",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_965",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_78",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_5161",
+    "time": "2026-11-12T00:25:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_6265",
+    "time": "2026-11-12T01:45:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_312",
+    "time": "2026-11-11T04:00:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_6842",
+    "time": "2026-11-12T06:05:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": true
+   }
+  ]
+ }
+}

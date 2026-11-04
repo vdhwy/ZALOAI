@@ -1,0 +1,462 @@
+{
+ "_meta": {
+  "question_id": "train_1698",
+  "current_time": "2026-12-09T13:35:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-12-09",
+    "to": "2026-12-09",
+    "kwh": 7.8,
+    "cost": 22600,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.5
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.6
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-12-03",
+    "to": "2026-12-09",
+    "kwh": 85.4,
+    "cost": 247700,
+    "days": [
+     {
+      "date": "2026-12-03",
+      "kwh": 12.1
+     },
+     {
+      "date": "2026-12-04",
+      "kwh": 9.4
+     },
+     {
+      "date": "2026-12-05",
+      "kwh": 15.3
+     },
+     {
+      "date": "2026-12-06",
+      "kwh": 13.4
+     },
+     {
+      "date": "2026-12-07",
+      "kwh": 11.9
+     },
+     {
+      "date": "2026-12-08",
+      "kwh": 15.5
+     },
+     {
+      "date": "2026-12-09",
+      "kwh": 7.8
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-12-01",
+    "to": "2026-12-09",
+    "kwh": 105.1,
+    "cost": 304800
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_446",
+    "title": "họp team",
+    "start": "2026-12-11T08:30:00+07:00",
+    "end": "2026-12-11T09:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_281",
+    "title": "họp phụ huynh",
+    "start": "2026-12-10T19:00:00+07:00",
+    "end": "2026-12-10T20:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_427",
+    "title": "đá bóng",
+    "start": "2026-12-11T15:30:00+07:00",
+    "end": "2026-12-11T16:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_791",
+    "title": "đi chơi công viên",
+    "start": "2026-12-11T18:30:00+07:00",
+    "end": "2026-12-11T19:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_7178",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09932807851"
+   },
+   {
+    "id": "c_570",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09674504173"
+   },
+   {
+    "id": "c_194",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09170435199"
+   },
+   {
+    "id": "c_666",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09392977578"
+   },
+   {
+    "id": "c_67",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09513115757"
+   },
+   {
+    "id": "c_7905",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09755858939"
+   },
+   {
+    "id": "c_211",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09922867564"
+   },
+   {
+    "id": "c_7675",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09982660572"
+   },
+   {
+    "id": "c_7437",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09961820151"
+   },
+   {
+    "id": "c_560",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09685479604"
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_867",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_464",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_8062",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_9618",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_5826",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 300
+   }
+  ],
+  "lessons": [],
+  "progress": [
+   {
+    "id": "prog_01",
+    "course_id": "course_867",
+    "minutes": 45
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Ra sân bay đón đoàn khách Hàn",
+    "time": "2026-12-09T15:00:00+07:00"
+   },
+   {
+    "id": "rem_02",
+    "repeat": "once",
+    "done": false,
+    "content": "Gọi cho vợ",
+    "time": "2026-12-09T20:00:00+07:00"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_1452",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 206000,
+    "due_date": "2026-12-17",
+    "paid": false
+   },
+   {
+    "id": "bill_1361",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 218000,
+    "due_date": "2026-12-15",
+    "paid": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 320000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_211",
+    "amount": -200000,
+    "note": "Tiền cơm trưa"
+   },
+   {
+    "id": "tx_02",
+    "type": "topup_mobile",
+    "phone": "09961820151",
+    "amount": -100000
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_823",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_527",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_7264",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": true
+   },
+   {
+    "id": "item_04",
+    "checked": false,
+    "name": "nước suối",
+    "quantity": 5
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_477",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_827",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_5952",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_7679",
+    "show_id": "show_827",
+    "title": "Số 22: Lỗ đen là gì",
+    "number": 22,
+    "duration_min": 18,
+    "published": "2026-12-02"
+   },
+   {
+    "id": "ep_8620",
+    "show_id": "show_477",
+    "title": "Số 11: Sống chậm giữa thành phố",
+    "number": 11,
+    "duration_min": 32,
+    "published": "2026-11-25"
+   },
+   {
+    "id": "ep_859",
+    "show_id": "show_477",
+    "title": "Số 12: Nghề diễn và những áp lực",
+    "number": 12,
+    "duration_min": 45,
+    "published": "2026-12-02"
+   },
+   {
+    "id": "ep_501",
+    "show_id": "show_5952",
+    "title": "Số 22: Quản lý chi tiêu gia đình",
+    "number": 22,
+    "duration_min": 45,
+    "published": "2026-12-02"
+   },
+   {
+    "id": "ep_3852",
+    "show_id": "show_827",
+    "title": "Số 21: Giấc ngủ và trí nhớ",
+    "number": 21,
+    "duration_min": 32,
+    "published": "2026-11-25"
+   },
+   {
+    "id": "ep_7602",
+    "show_id": "show_5952",
+    "title": "Số 21: Gửi tiết kiệm hay mua vàng",
+    "number": 21,
+    "duration_min": 25,
+    "published": "2026-11-25"
+   },
+   {
+    "id": "ep_216",
+    "show_id": "show_827",
+    "title": "Số 20: Vì sao bầu trời màu xanh",
+    "number": 20,
+    "duration_min": 32,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_193",
+    "show_id": "show_5952",
+    "title": "Số 20: Lập quỹ khẩn cấp",
+    "number": 20,
+    "duration_min": 18,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_4419",
+    "show_id": "show_5952",
+    "title": "Số 19: Có nên mua vàng cuối năm",
+    "number": 19,
+    "duration_min": 28,
+    "published": "2026-11-11"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_742",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_474",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_3851",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_5928",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_827"
+  ],
+  "queue": [],
+  "now_playing": null
+ }
+}

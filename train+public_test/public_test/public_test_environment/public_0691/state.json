@@ -1,0 +1,421 @@
+{
+ "_meta": {
+  "question_id": "public_0691",
+  "current_time": "2026-12-07T17:30:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_413",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09290615361"
+   },
+   {
+    "id": "c_585",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09842315678"
+   },
+   {
+    "id": "c_461",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09221483830"
+   },
+   {
+    "id": "c_88",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09243368106"
+   },
+   {
+    "id": "c_6317",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09312285279"
+   },
+   {
+    "id": "c_400",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09157161943"
+   },
+   {
+    "id": "c_604",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09842084117"
+   },
+   {
+    "id": "c_913",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09457598287"
+   },
+   {
+    "id": "c_2099",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09275674392"
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_679",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-12-08",
+    "depart": "08:00",
+    "arrive": "11:00",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_49",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-12-12",
+    "depart": "13:00",
+    "arrive": "16:30",
+    "price": 920000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_9774",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-12-08",
+    "depart": "13:00",
+    "arrive": "23:30",
+    "price": 250000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_139",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-12-08",
+    "depart": "06:00",
+    "arrive": "16:30",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_793",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-12-08",
+    "depart": "19:00",
+    "arrive": "22:00",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_3065",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-12-12",
+    "depart": "13:00",
+    "arrive": "18:30",
+    "price": 320000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_467",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-12-12",
+    "depart": "21:00",
+    "arrive": "07:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_6311",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Đà Nẵng",
+    "date": "2026-12-12",
+    "depart": "08:00",
+    "arrive": "13:30",
+    "price": 450000,
+    "seats_left": 8
+   }
+  ],
+  "bookings": []
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Mua sữa cho con",
+    "time": "2026-12-07T18:00:00+07:00"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_569",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_685",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_151",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_607",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   }
+  ],
+  "saved_places": []
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Hạn chót nộp báo cáo quý là thứ Sáu này",
+    "to_lang": "en",
+    "translation": "The deadline for the quarterly report is this Friday"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_364",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_588",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_675",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_8633",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 33,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-07",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-08",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 32
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-09",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-12-10",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 32
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_774",
+    "name": "Cô Mai",
+    "type": "direct",
+    "members": [
+     "Cô Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_172",
+    "name": "Hương",
+    "type": "direct",
+    "members": [
+     "Hương"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_9094",
+    "name": "Anh Hùng",
+    "type": "direct",
+    "members": [
+     "Anh Hùng"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Chiều nay anh đón con giúp em nhé"
+     }
+    ]
+   },
+   {
+    "id": "chat_4185",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_285",
+    "name": "Mẹ chồng",
+    "type": "direct",
+    "members": [
+     "Mẹ chồng"
+    ],
+    "messages": []
+   }
+  ],
+  "calls": [
+   {
+    "id": "ott_call_01",
+    "chat_id": "chat_9094",
+    "video": false,
+    "status": "dialing"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ }
+}

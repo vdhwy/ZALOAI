@@ -1,0 +1,676 @@
+{
+ "_meta": {
+  "question_id": "train_1432",
+  "current_time": "2026-12-04T12:25:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "library.reserve",
+   "library.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe"
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_5506",
+    "title": "Lãi suất tiết kiệm tại nhiều ngân hàng tăng nhẹ",
+    "topic": "business",
+    "source": "Dân Trí",
+    "published_at": "2026-12-03T08:40:00+07:00",
+    "summary": "Kỳ hạn 12 tháng phổ biến ở mức 5,2 - 5,8% mỗi năm."
+   },
+   {
+    "id": "art_488",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-12-04T08:40:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_6738",
+    "title": "Ra mắt điện thoại gập giá rẻ tại thị trường Việt Nam",
+    "topic": "tech",
+    "source": "Genk",
+    "published_at": "2026-12-03T16:25:00+07:00",
+    "summary": "Mẫu máy gập mới có giá dưới 15 triệu đồng."
+   },
+   {
+    "id": "art_9468",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-12-03T11:10:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_2312",
+    "title": "Không khí lạnh tràn về, miền Bắc giảm nhiệt sâu",
+    "topic": "general",
+    "source": "VTV",
+    "published_at": "2026-12-03T11:55:00+07:00",
+    "summary": "Nhiệt độ thấp nhất tại Hà Nội có thể xuống 16 độ C."
+   },
+   {
+    "id": "art_798",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-12-03T06:10:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   }
+  ],
+  "saved": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_1499",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_712",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_536",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_933",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_318",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_915",
+    "title": "khám răng",
+    "start": "2026-12-07T19:30:00+07:00",
+    "end": "2026-12-07T20:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_173",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-07T08:00:00+07:00",
+    "end": "2026-12-07T09:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2358",
+    "title": "họp team",
+    "start": "2026-12-07T10:00:00+07:00",
+    "end": "2026-12-07T11:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5930",
+    "title": "đá bóng",
+    "start": "2026-12-05T15:00:00+07:00",
+    "end": "2026-12-05T16:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_185",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-05T09:30:00+07:00",
+    "end": "2026-12-05T10:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_663",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_528",
+    "name": "The Lemon Tree Café",
+    "tags": [
+     "bít tết",
+     "món Âu"
+    ],
+    "rating": 4.6,
+    "menu": [
+     {
+      "id": "rest_528_m1",
+      "name": "Bò bít tết Úc 250g",
+      "price": 189000
+     },
+     {
+      "id": "rest_528_m2",
+      "name": "Salad cá ngừ",
+      "price": 79000
+     },
+     {
+      "id": "rest_528_m3",
+      "name": "Khoai tây chiên",
+      "price": 45000
+     }
+    ]
+   },
+   {
+    "id": "rest_33",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_816",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_437",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_905",
+    "name": "The Lemon Tree Bistro",
+    "tags": [
+     "bít tết",
+     "món Âu"
+    ],
+    "rating": 4.3,
+    "menu": [
+     {
+      "id": "rest_905_m1",
+      "name": "Bò bít tết Mỹ 300g",
+      "price": 229000
+     },
+     {
+      "id": "rest_905_m2",
+      "name": "Mì Ý bò bằm",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "calculator": {},
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_5731",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09436820811"
+   },
+   {
+    "id": "c_585",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09187581661"
+   },
+   {
+    "id": "c_204",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09340133643"
+   },
+   {
+    "id": "c_622",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09326382339"
+   },
+   {
+    "id": "c_406",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09556386620"
+   },
+   {
+    "id": "c_109",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09192346925"
+   },
+   {
+    "id": "c_9473",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09265015671"
+   },
+   {
+    "id": "c_876",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09840575299"
+   },
+   {
+    "id": "c_468",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09195845449"
+   },
+   {
+    "id": "c_187",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09495625572"
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_9792",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_982",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "available": false
+   },
+   {
+    "id": "book_478",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_103",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_331",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_944",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_7602",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_937",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_213",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_3185",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_6407",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_2957",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_677",
+    "show_id": "show_6407",
+    "title": "Số 20: Vì sao bầu trời màu xanh",
+    "number": 20,
+    "duration_min": 18,
+    "published": "2026-11-13"
+   },
+   {
+    "id": "ep_14",
+    "show_id": "show_2957",
+    "title": "Số 17: Nghề diễn và những áp lực",
+    "number": 17,
+    "duration_min": 18,
+    "published": "2026-11-27"
+   },
+   {
+    "id": "ep_2416",
+    "show_id": "show_6407",
+    "title": "Số 21: Giấc ngủ và trí nhớ",
+    "number": 21,
+    "duration_min": 32,
+    "published": "2026-11-20"
+   },
+   {
+    "id": "ep_9740",
+    "show_id": "show_2957",
+    "title": "Số 16: Sống chậm giữa thành phố",
+    "number": 16,
+    "duration_min": 18,
+    "published": "2026-11-20"
+   },
+   {
+    "id": "ep_231",
+    "show_id": "show_6407",
+    "title": "Số 22: Lỗ đen là gì",
+    "number": 22,
+    "duration_min": 25,
+    "published": "2026-11-27"
+   },
+   {
+    "id": "ep_379",
+    "show_id": "show_3185",
+    "title": "Số 10: Đi xe đạp đi làm",
+    "number": 10,
+    "duration_min": 25,
+    "published": "2026-11-27"
+   },
+   {
+    "id": "ep_4492",
+    "show_id": "show_3185",
+    "title": "Số 9: Trồng cây trên sân thượng",
+    "number": 9,
+    "duration_min": 45,
+    "published": "2026-11-20"
+   },
+   {
+    "id": "ep_183",
+    "show_id": "show_3185",
+    "title": "Số 8: Rác thải nhựa ở đô thị",
+    "number": 8,
+    "duration_min": 25,
+    "published": "2026-11-13"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_8718",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_7223",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_851",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_930",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_6407"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_7314",
+    "from": "emily.carter@oakmail.example.test",
+    "from_name": "Emily Carter",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "BBQ night on Saturday",
+    "snippet": "We are a group of five flying from London via Taipei...",
+    "body": "Hi Duc, we are a group of five friends flying from London via Taipei and we will arrive in Huế on Saturday evening. Could we have a BBQ night at the homestay? Thanks, Emily",
+    "time": "2026-12-04T08:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_625",
+    "from": "lucas@gmail.example.test",
+    "from_name": "Lucas",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-12-01T13:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_688",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-12-02T22:25:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_82",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-12-03T06:55:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_699",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-12-02T19:10:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_3453",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-12-01T13:25:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_2950",
+    "from": "emily.carver@brightmail.example.test",
+    "from_name": "Emily Carver",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thank you for the stay",
+    "snippet": "We had a lovely time in Huế.",
+    "body": "Hi Duc, the two of us had a lovely time in Huế last month. We left you a five-star review. Best, Emily Carver",
+    "time": "2026-11-28T20:15:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ }
+}

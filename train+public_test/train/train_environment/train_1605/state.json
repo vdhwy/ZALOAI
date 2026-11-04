@@ -1,0 +1,460 @@
+{
+ "_meta": {
+  "question_id": "train_1605",
+  "current_time": "2026-12-18T06:40:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "calculator": {},
+ "weather": {
+  "current": [
+   {
+    "location": "Cần Thơ",
+    "temperature_c": 32,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 28
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 30
+   },
+   {
+    "location": "Cần Thơ",
+    "date": "2026-12-21",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 28
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25559
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27603
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 170.4
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_4863",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_424",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_8263",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_972",
+    "title": "đi chơi công viên",
+    "start": "2026-12-19T10:00:00+07:00",
+    "end": "2026-12-19T11:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_454",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-21T15:30:00+07:00",
+    "end": "2026-12-21T16:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_92",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-12-20T08:00:00+07:00",
+    "end": "2026-12-20T09:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_599",
+    "title": "đá bóng",
+    "start": "2026-12-19T09:30:00+07:00",
+    "end": "2026-12-19T10:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_227",
+    "title": "họp team",
+    "start": "2026-12-19T14:30:00+07:00",
+    "end": "2026-12-19T15:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "Chợ nổi Cái Răng, Cần Thơ",
+    "dropoff": "Vựa trái cây Bảy Hồng, Cái Răng, Cần Thơ",
+    "vehicle": "car4"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_456",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-12-20T15:00:00+07:00",
+    "link": "https://meet.example.test/ezx-tryw-dhf",
+    "attendees": [
+     "c_777"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_5874",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-12-19T08:30:00+07:00",
+    "link": "https://meet.example.test/ymg-kdao-aky",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_5197",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-12-20T15:30:00+07:00",
+    "link": "https://meet.example.test/wyk-dlhl-wwl",
+    "attendees": [
+     "c_127"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_127",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09333730884"
+   },
+   {
+    "id": "c_777",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09640077609"
+   },
+   {
+    "id": "c_6951",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09864061138"
+   },
+   {
+    "id": "c_891",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09217020203"
+   },
+   {
+    "id": "c_7474",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09223154309"
+   },
+   {
+    "id": "c_341",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09170239562"
+   },
+   {
+    "id": "c_485",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09178753718"
+   },
+   {
+    "id": "c_645",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09220512450"
+   },
+   {
+    "id": "c_642",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09113461487"
+   },
+   {
+    "id": "c_585",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09789524172"
+   },
+   {
+    "id": "c_293",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09609719663"
+   },
+   {
+    "id": "c_3307",
+    "name": "Sunrise Fresh",
+    "relation": "khách sỉ Nhật Bản",
+    "phone": "09412270538"
+   },
+   {
+    "id": "c_918",
+    "name": "Sunrise Foods",
+    "relation": "khách sỉ Đức",
+    "phone": "09685013472"
+   }
+  ]
+ }
+}

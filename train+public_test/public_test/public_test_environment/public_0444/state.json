@@ -1,0 +1,349 @@
+{
+ "_meta": {
+  "question_id": "public_0444",
+  "current_time": "2026-12-17T22:00:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "event_tickets.book",
+   "event_tickets.search",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_3764",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_218",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_878",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_65",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_987",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2870",
+    "name": "Thầy Phong",
+    "type": "direct",
+    "members": [
+     "Thầy Phong"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_727",
+    "name": "Trang",
+    "type": "direct",
+    "members": [
+     "Trang"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7535",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2688",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_829",
+    "name": "Vở kịch Ngày Mưa",
+    "category": "kịch",
+    "date": "2026-12-31",
+    "time": "18:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 250000,
+    "available": 12
+   },
+   {
+    "id": "event_198",
+    "name": "Đêm nhạc Jazz cuối tuần",
+    "category": "âm nhạc",
+    "date": "2026-12-23",
+    "time": "18:00",
+    "venue": "Trung tâm Hội nghị Quốc gia",
+    "price": 450000,
+    "available": 12
+   },
+   {
+    "id": "event_518",
+    "name": "Triển lãm Ánh sáng Đô thị",
+    "category": "triển lãm",
+    "date": "2026-12-20",
+    "time": "18:00",
+    "venue": "Nhà hát Lớn Hà Nội",
+    "price": 80000,
+    "available": 12
+   },
+   {
+    "id": "event_2207",
+    "name": "Đêm nhạc Acoustic sinh viên",
+    "category": "âm nhạc",
+    "date": "2026-12-19",
+    "time": "19:30",
+    "venue": "Hội trường Đại học Ngoại thương",
+    "price": 50000,
+    "available": 120
+   },
+   {
+    "id": "event_964",
+    "name": "Ngày hội việc làm cuối năm",
+    "category": "hội chợ",
+    "date": "2026-12-22",
+    "time": "08:00",
+    "venue": "Hội trường Đại học Ngoại thương",
+    "price": 0,
+    "available": 300
+   },
+   {
+    "id": "event_3310",
+    "name": "Đêm nhạc Acoustic Mùa đông",
+    "category": "âm nhạc",
+    "date": "2026-12-26",
+    "time": "20:00",
+    "venue": "Nhà văn hóa Thanh niên",
+    "price": 200000,
+    "available": 45
+   }
+  ],
+  "bookings": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_990",
+    "time": "2026-12-18T07:00:00+07:00",
+    "label": "dậy đi học",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_479",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09548778277"
+   },
+   {
+    "id": "c_6974",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09943646348"
+   },
+   {
+    "id": "c_14",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09770273724"
+   },
+   {
+    "id": "c_829",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09943439629"
+   },
+   {
+    "id": "c_111",
+    "name": "Lan",
+    "relation": "chị gái",
+    "phone": "09157044606"
+   },
+   {
+    "id": "c_717",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09150026632"
+   },
+   {
+    "id": "c_4712",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09344380674"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 126400000,
+    "sell": 128400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 120400000,
+    "sell": 122400000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4274
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_353",
+    "title": "đá bóng",
+    "start": "2026-12-18T18:00:00+07:00",
+    "end": "2026-12-18T19:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

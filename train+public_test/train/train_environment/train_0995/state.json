@@ -1,0 +1,405 @@
+{
+ "_meta": {
+  "question_id": "train_0995",
+  "current_time": "2026-12-04T20:15:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "phone.call",
+   "phone.recent_calls",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_860",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_388",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_344",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_253",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 60
+   }
+  ],
+  "guest_codes": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_413",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-08T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_746",
+    "title": "Trả sách thư viện",
+    "due": "2026-12-07T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_877",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-06T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_664",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_1615",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_868",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_696",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_466",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_7311",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 500,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ],
+    "merchant_id": "mch_7720"
+   },
+   {
+    "id": "prog_2636",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 300,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ],
+    "merchant_id": "mch_2648"
+   },
+   {
+    "id": "prog_550",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 400,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ],
+    "merchant_id": "mch_1093"
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_439",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-12-11",
+    "used": false
+   },
+   {
+    "id": "vch_818",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-12-08",
+    "used": false
+   },
+   {
+    "id": "vch_4858",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-24",
+    "used": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-12-04",
+    "to": "2026-12-04",
+    "kwh": 14.3,
+    "cost": 41500,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 6.4
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 2.9
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-28",
+    "to": "2026-12-04",
+    "kwh": 83.9,
+    "cost": 243300,
+    "days": [
+     {
+      "date": "2026-11-28",
+      "kwh": 9.1
+     },
+     {
+      "date": "2026-11-29",
+      "kwh": 15.1
+     },
+     {
+      "date": "2026-11-30",
+      "kwh": 13.1
+     },
+     {
+      "date": "2026-12-01",
+      "kwh": 13.6
+     },
+     {
+      "date": "2026-12-02",
+      "kwh": 8.5
+     },
+     {
+      "date": "2026-12-03",
+      "kwh": 10.2
+     },
+     {
+      "date": "2026-12-04",
+      "kwh": 14.3
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-12-01",
+    "to": "2026-12-04",
+    "kwh": 46.6,
+    "cost": 135100
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_423",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_4610",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_2956",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Láng Hạ",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_3319",
+    "name": "Xe đạp điện 105",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_317",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_382",
+    "name": "Xe đạp thường 106",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_295",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09204180273"
+   },
+   {
+    "id": "c_778",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09461886798"
+   },
+   {
+    "id": "c_8876",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09394078404"
+   },
+   {
+    "id": "c_809",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09871528910"
+   },
+   {
+    "id": "c_820",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09393731555"
+   },
+   {
+    "id": "c_593",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09425004666"
+   },
+   {
+    "id": "c_842",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09262997442"
+   },
+   {
+    "id": "c_653",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09301551824"
+   },
+   {
+    "id": "c_579",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09722110956"
+   },
+   {
+    "id": "c_69",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09277792384"
+   }
+  ]
+ }
+}

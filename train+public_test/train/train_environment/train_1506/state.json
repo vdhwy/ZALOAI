@@ -1,0 +1,378 @@
+{
+ "_meta": {
+  "question_id": "train_1506",
+  "current_time": "2026-12-04T10:15:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "library.reserve",
+   "library.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_965",
+    "title": "khám răng",
+    "start": "2026-12-07T19:30:00+07:00",
+    "end": "2026-12-07T20:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_988",
+    "title": "đi chơi công viên",
+    "start": "2026-12-05T18:30:00+07:00",
+    "end": "2026-12-05T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_564",
+    "title": "họp phụ huynh",
+    "start": "2026-12-07T10:00:00+07:00",
+    "end": "2026-12-07T11:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_693",
+    "title": "họp team",
+    "start": "2026-12-06T10:30:00+07:00",
+    "end": "2026-12-06T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-12-04",
+    "to": "2026-12-04",
+    "kwh": 7.9,
+    "cost": 22900,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.6
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.6
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-28",
+    "to": "2026-12-04",
+    "kwh": 72.0,
+    "cost": 208800,
+    "days": [
+     {
+      "date": "2026-11-28",
+      "kwh": 10.3
+     },
+     {
+      "date": "2026-11-29",
+      "kwh": 13.0
+     },
+     {
+      "date": "2026-11-30",
+      "kwh": 8.9
+     },
+     {
+      "date": "2026-12-01",
+      "kwh": 10.7
+     },
+     {
+      "date": "2026-12-02",
+      "kwh": 9.1
+     },
+     {
+      "date": "2026-12-03",
+      "kwh": 12.1
+     },
+     {
+      "date": "2026-12-04",
+      "kwh": 7.9
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-12-01",
+    "to": "2026-12-04",
+    "kwh": 39.8,
+    "cost": 115400
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_8223",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_352",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_253",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 80
+   }
+  ],
+  "guest_codes": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_189",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_5459",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_729",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_611",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_775",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_4418",
+    "title": "Little Fox Counts to Ten",
+    "author": "Tom Baker",
+    "available": true
+   },
+   {
+    "id": "book_232",
+    "title": "Tắt đèn",
+    "author": "Ngô Tất Tố",
+    "available": true
+   },
+   {
+    "id": "book_634",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": false
+   },
+   {
+    "id": "book_3172",
+    "title": "Little Fox Counts the Stars",
+    "author": "Tom Barker",
+    "available": true
+   },
+   {
+    "id": "book_837",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   },
+   {
+    "id": "book_875",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": false
+   },
+   {
+    "id": "book_6608",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": false
+   },
+   {
+    "id": "book_903",
+    "title": "Little Fox Goes to School",
+    "author": "Tom Baker",
+    "available": false
+   }
+  ],
+  "reservations": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_936",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09811321117"
+   },
+   {
+    "id": "c_281",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09993375566"
+   },
+   {
+    "id": "c_288",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09613410802"
+   },
+   {
+    "id": "c_142",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09381124413"
+   },
+   {
+    "id": "c_992",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09287948524"
+   },
+   {
+    "id": "c_94",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09720208817"
+   },
+   {
+    "id": "c_229",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09509913253"
+   },
+   {
+    "id": "c_806",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09717207700"
+   },
+   {
+    "id": "c_249",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09892018614"
+   },
+   {
+    "id": "c_2521",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09549374933"
+   },
+   {
+    "id": "c_271",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09608147500"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_442",
+    "name": "Mẹ chồng",
+    "type": "direct",
+    "members": [
+     "Mẹ chồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7725",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_650",
+    "name": "Cô Mai",
+    "type": "direct",
+    "members": [
+     "Cô Mai"
+    ],
+    "messages": [
+     {
+      "from": "Cô Mai",
+      "content": "Chị Hoa ơi, tuần này lớp mình học đếm số bằng tiếng Anh, chị cho cháu đọc cuốn sách đếm số của Tom Baker nhé.",
+      "time": "2026-12-04T08:40:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_597",
+    "name": "Anh Hùng",
+    "type": "direct",
+    "members": [
+     "Anh Hùng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_4765",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

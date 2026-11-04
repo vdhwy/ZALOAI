@@ -1,0 +1,306 @@
+{
+ "_meta": {
+  "question_id": "train_1257",
+  "current_time": "2026-11-19T21:15:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_5884",
+    "title": "họp phụ huynh",
+    "start": "2026-11-22T08:30:00+07:00",
+    "end": "2026-11-22T09:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3328",
+    "title": "họp team",
+    "start": "2026-11-22T19:30:00+07:00",
+    "end": "2026-11-22T20:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_804",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-20T18:30:00+07:00",
+    "end": "2026-11-20T19:30:00+07:00",
+    "location": "31 Hàng Bạc, Hoàn Kiếm",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_365",
+    "title": "uống cà phê với ông Ba",
+    "start": "2026-11-20T08:30:00+07:00",
+    "end": "2026-11-20T09:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_155",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_7373",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 32,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 34
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-21",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 28
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_586",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 197000,
+    "due_date": "2026-11-21",
+    "paid": false
+   },
+   {
+    "id": "bill_317",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 850000,
+    "due_date": "2026-11-28",
+    "paid": false
+   },
+   {
+    "id": "bill_751",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 153000,
+    "due_date": "2026-11-26",
+    "paid": false
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25845
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27912
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 172.3
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_55",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-22T14:30:00+07:00",
+    "link": "https://meet.example.test/rlu-qhug-wcb",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_8778",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-21T14:00:00+07:00",
+    "link": "https://meet.example.test/wky-wwlr-adg",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-16": {
+    "steps": 6500,
+    "calories": 260,
+    "distance_km": 4.7
+   },
+   "2026-11-17": {
+    "steps": 5084,
+    "calories": 203,
+    "distance_km": 3.7
+   },
+   "2026-11-18": {
+    "steps": 3587,
+    "calories": 143,
+    "distance_km": 2.6
+   },
+   "2026-11-19": {
+    "steps": 4270,
+    "calories": 170,
+    "distance_km": 3.1
+   }
+  },
+  "goal_steps": 6000,
+  "workouts": [
+   {
+    "id": "wo_662",
+    "type": "yoga",
+    "minutes": 20,
+    "time": "2026-11-16T06:30:00+07:00"
+   },
+   {
+    "id": "wo_7021",
+    "type": "walking",
+    "minutes": 40,
+    "time": "2026-11-19T16:30:00+07:00"
+   }
+  ]
+ },
+ "calculator": {},
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_77",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09560766087"
+   },
+   {
+    "id": "c_609",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09486462379"
+   },
+   {
+    "id": "c_63",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09660570845"
+   },
+   {
+    "id": "c_343",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09875376353"
+   },
+   {
+    "id": "c_139",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09986964595"
+   },
+   {
+    "id": "c_863",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09531000075"
+   },
+   {
+    "id": "c_101",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09621270995"
+   },
+   {
+    "id": "c_6574",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09810454821"
+   },
+   {
+    "id": "c_481",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09598691197"
+   },
+   {
+    "id": "c_258",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09348729901"
+   },
+   {
+    "id": "c_3460",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09526405573"
+   }
+  ]
+ }
+}

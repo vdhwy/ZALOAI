@@ -1,0 +1,510 @@
+{
+ "_meta": {
+  "question_id": "train_1685",
+  "current_time": "2026-12-19T06:50:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_959",
+    "title": "khám răng",
+    "start": "2026-12-21T09:30:00+07:00",
+    "end": "2026-12-21T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_962",
+    "title": "họp phụ huynh",
+    "start": "2026-12-20T18:30:00+07:00",
+    "end": "2026-12-20T19:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_108",
+    "title": "đi chơi công viên",
+    "start": "2026-12-20T15:30:00+07:00",
+    "end": "2026-12-20T16:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_9398",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 300
+   },
+   {
+    "id": "course_47",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_649",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_767",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 215000,
+    "due_date": "2026-12-21",
+    "paid": false
+   },
+   {
+    "id": "bill_827",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 216000,
+    "due_date": "2026-12-25",
+    "paid": false
+   },
+   {
+    "id": "bill_9853",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 854000,
+    "due_date": "2026-12-27",
+    "paid": false
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-12-19",
+    "prizes": {
+     "special": "434098",
+     "first": "32775",
+     "eighth": "15"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-12-19",
+    "prizes": {
+     "special": "978045",
+     "first": "47026",
+     "eighth": "23"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-12-19",
+    "prizes": {
+     "special": "621470",
+     "first": "88602",
+     "eighth": "54"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-12-19",
+    "prizes": {
+     "special": "403893",
+     "first": "62802",
+     "eighth": "91"
+    }
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_633",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_809",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_220",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_576",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09943267617"
+   },
+   {
+    "id": "c_922",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09480231355"
+   },
+   {
+    "id": "c_192",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09719523972"
+   },
+   {
+    "id": "c_138",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09861888648"
+   },
+   {
+    "id": "c_441",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09165194904"
+   },
+   {
+    "id": "c_69",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09310019968"
+   },
+   {
+    "id": "c_7176",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09852312864"
+   },
+   {
+    "id": "c_3678",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09103314461"
+   },
+   {
+    "id": "c_352",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09937926038"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_506",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 7200,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_8562",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 300,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_7678",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2027-01-08",
+    "used": false
+   },
+   {
+    "id": "vch_250",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2027-01-07",
+    "used": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 85000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_3678",
+    "amount": -300000,
+    "note": "tiền đi chợ"
+   },
+   {
+    "id": "tx_02",
+    "type": "topup_mobile",
+    "phone": "09103314461",
+    "amount": -50000
+   },
+   {
+    "id": "tx_03",
+    "type": "transfer",
+    "to": "c_441",
+    "amount": -85000,
+    "note": "trả tiền cà phê"
+   },
+   {
+    "id": "tx_04",
+    "type": "topup_mobile",
+    "phone": "09937926038",
+    "amount": -100000
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_782",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_479",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_470",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_275",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_152",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_638",
+    "name": "Laura Costa",
+    "bank": "Đại Việt Bank",
+    "account_number": "70120004581236"
+   },
+   {
+    "id": "ben_91",
+    "name": "Laura Acosta",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "55800012349876"
+   }
+  ],
+  "transactions": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_5499",
+    "name": "Ký Ức Cà Phê Bạch Đằng",
+    "address": "98 Bạch Đằng, Hải Châu, Đà Nẵng",
+    "category": "cafe"
+   },
+   {
+    "id": "place_15",
+    "name": "Nhà thuốc Minh Khang Lê Duẩn",
+    "address": "210 Lê Duẩn, Hải Châu, Đà Nẵng",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_884",
+    "name": "Cây xăng PetroHưng Nguyễn Văn Linh",
+    "address": "150 Nguyễn Văn Linh, Thanh Khê, Đà Nẵng",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_319",
+    "name": "Bệnh viện Đà Nẵng",
+    "address": "124 Hải Phòng, Hải Châu, Đà Nẵng",
+    "category": "hospital"
+   }
+  ],
+  "saved_places": []
+ }
+}

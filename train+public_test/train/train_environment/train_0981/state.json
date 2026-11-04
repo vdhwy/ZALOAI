@@ -1,0 +1,151 @@
+{
+ "_meta": {
+  "question_id": "train_0981",
+  "current_time": "2026-11-14T14:15:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "fuel_price.get_price",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_728",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 151000,
+    "due_date": "2026-11-18",
+    "paid": false
+   },
+   {
+    "id": "bill_235",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 219000,
+    "due_date": "2026-11-23",
+    "paid": false
+   },
+   {
+    "id": "bill_502",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 846000,
+    "due_date": "2026-11-20",
+    "paid": false
+   },
+   {
+    "id": "bill_663",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 211000,
+    "due_date": "2026-11-20",
+    "paid": false
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23900
+   },
+   {
+    "type": "e5",
+    "price": 22700
+   },
+   {
+    "type": "diesel",
+    "price": 21300
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_472",
+    "name": "kháng sinh Cefuroxim",
+    "times": [
+     "08:00",
+     "20:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_86",
+    "name": "canxi",
+    "times": [
+     "12:30"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_3051",
+    "name": "sắt Ferrovit",
+    "times": [
+     "07:00"
+    ],
+    "days": "weekdays"
+   }
+  ],
+  "logs": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_70",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-17",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_998",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-12-06",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_839",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-12-04",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_635",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-12-03",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_2935",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-11-23",
+    "status": "paused",
+    "cycle": "monthly"
+   }
+  ]
+ }
+}

@@ -1,0 +1,401 @@
+{
+ "_meta": {
+  "question_id": "public_0520",
+  "current_time": "2026-10-19T21:00:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "event_tickets.book",
+   "event_tickets.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_680",
+    "from": "thu.tran@congty.example.test",
+    "from_name": "Chị Thu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Gửi lại báo cáo tháng 9",
+    "snippet": "Em gửi lại giúp chị bản báo cáo có số liệu mới nhé.",
+    "body": "Em ơi, em gửi lại giúp chị bản báo cáo tháng 9 có cập nhật số liệu doanh thu tuần cuối nhé. Cảm ơn em.",
+    "time": "2026-10-18T14:00:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_210",
+    "from": "dung.pham@congty.example.test",
+    "from_name": "Anh Dũng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-10-17T01:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_9204",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-10-17T21:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_113",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-10-17T15:30:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "quantity": 100,
+    "avg_price": 60850,
+    "price": 62950
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 1000,
+    "avg_price": 115350,
+    "price": 129150
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 500,
+    "avg_price": 24000,
+    "price": 26350
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26350,
+    "change_pct": 0.0
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 93500,
+    "change_pct": 3.1
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1661,
+    "change_pct": -0.8
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24200,
+    "change_pct": -2.7
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 129150,
+    "change_pct": 2.5
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 62950,
+    "change_pct": 2.9
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_61",
+    "name": "Đêm nhạc Jazz cuối tuần",
+    "category": "âm nhạc",
+    "date": "2026-10-30",
+    "time": "19:30",
+    "venue": "Nhà hát Hòa Bình",
+    "price": 450000,
+    "available": 80
+   },
+   {
+    "id": "event_438",
+    "name": "Chung kết bóng đá V-League",
+    "category": "thể thao",
+    "date": "2026-10-23",
+    "time": "20:00",
+    "venue": "Sân vận động Thống Nhất",
+    "price": 200000,
+    "available": 0
+   },
+   {
+    "id": "event_51",
+    "name": "Vở kịch Ngày Mưa",
+    "category": "kịch",
+    "date": "2026-11-02",
+    "time": "20:00",
+    "venue": "Saigon Opera House",
+    "price": 250000,
+    "available": 12
+   },
+   {
+    "id": "event_368",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-10-31",
+    "time": "20:00",
+    "venue": "Nhà hát Hòa Bình",
+    "price": 600000,
+    "available": 12
+   },
+   {
+    "id": "event_225",
+    "name": "Stand-up comedy Sài Gòn Cười",
+    "category": "hài kịch",
+    "date": "2026-10-21",
+    "time": "18:00",
+    "venue": "Nhà hát Hòa Bình",
+    "price": 300000,
+    "available": 30
+   }
+  ],
+  "bookings": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_412",
+    "title": "khám răng",
+    "start": "2026-10-20T10:00:00+07:00",
+    "end": "2026-10-20T11:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4799",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-21T10:30:00+07:00",
+    "end": "2026-10-21T11:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9882",
+    "title": "đi chơi công viên",
+    "start": "2026-10-20T18:00:00+07:00",
+    "end": "2026-10-20T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4079",
+    "title": "đá bóng",
+    "start": "2026-10-21T18:30:00+07:00",
+    "end": "2026-10-21T19:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_620",
+    "title": "họp team",
+    "start": "2026-10-20T19:30:00+07:00",
+    "end": "2026-10-20T20:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_4944",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_2010",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_96",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_637",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_336",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_252",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_748",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_307",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_917",
+    "name": "Sân vận động Thống Nhất",
+    "address": "138 Đào Duy Từ, Quận 10, TP.HCM",
+    "category": "stadium"
+   }
+  ],
+  "saved_places": [],
+  "routes": [
+   {
+    "from": [
+     "88/5 pham van dong",
+     "nha"
+    ],
+    "to": [
+     "thong nhat",
+     "138 dao duy tu"
+    ],
+    "distance_km": 9.6,
+    "duration_min": {
+     "motorbike": 26,
+     "car": 32
+    }
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_667",
+    "time": "2026-10-20T05:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_7852",
+    "time": "2026-10-20T06:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_4805",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-18T12:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_2421",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-10-19T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_555",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-21T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_7912",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-18T09:00:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_3336",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-22T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

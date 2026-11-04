@@ -1,0 +1,504 @@
+{
+ "_meta": {
+  "question_id": "train_1109",
+  "current_time": "2026-12-13T20:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_3056",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_500",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_408",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_641",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_3681",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_843",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_933",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_144",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_189",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09165985328"
+   },
+   {
+    "id": "c_54",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09559841315"
+   },
+   {
+    "id": "c_39",
+    "name": "Bé Bống",
+    "relation": "con gái",
+    "phone": "09550271740"
+   },
+   {
+    "id": "c_105",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09460456138"
+   },
+   {
+    "id": "c_7889",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09244924666"
+   },
+   {
+    "id": "c_412",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09633725410"
+   },
+   {
+    "id": "c_7544",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09364122456"
+   },
+   {
+    "id": "c_354",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09736775778"
+   },
+   {
+    "id": "c_581",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09539045814"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_975",
+    "time": "2026-12-14T06:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_286",
+    "time": "2026-12-14T06:15:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25351
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27379
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 169.0
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_1534",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_633",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_464",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_155",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_218",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2027-01-02",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_68",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2027-01-02",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_502",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2027-01-02",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_9371",
+    "origin": "HAN",
+    "destination": "HUI",
+    "date": "2027-01-02",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_4410",
+    "content": "Đóng tiền học tiếng Anh cho Bống",
+    "time": "2026-12-15T08:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_87",
+    "content": "Đóng tiền học vẽ cho Bống",
+    "time": "2026-12-17T17:30:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_352",
+    "content": "Đóng tiền học bơi cho Bống",
+    "time": "2026-12-28T09:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_19",
+    "content": "Đặt lịch bảo dưỡng xe",
+    "time": "2026-12-16T12:00:00+07:00",
+    "repeat": "once",
+    "done": false
+   },
+   {
+    "id": "rem_660",
+    "content": "Đóng tiền học vẽ cho Bống",
+    "time": "2026-11-17T17:30:00+07:00",
+    "repeat": "once",
+    "done": true
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-12-10": {
+    "steps": 7342,
+    "calories": 293,
+    "distance_km": 5.3
+   },
+   "2026-12-11": {
+    "steps": 10043,
+    "calories": 401,
+    "distance_km": 7.2
+   },
+   "2026-12-12": {
+    "steps": 7061,
+    "calories": 282,
+    "distance_km": 5.1
+   },
+   "2026-12-13": {
+    "steps": 5414,
+    "calories": 216,
+    "distance_km": 3.9
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_8957",
+    "type": "walking",
+    "minutes": 30,
+    "time": "2026-12-09T18:00:00+07:00"
+   },
+   {
+    "id": "wo_329",
+    "type": "cycling",
+    "minutes": 30,
+    "time": "2026-12-11T17:00:00+07:00"
+   }
+  ]
+ }
+}

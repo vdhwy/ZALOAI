@@ -1,0 +1,383 @@
+{
+ "_meta": {
+  "question_id": "train_1706",
+  "current_time": "2026-11-09T21:05:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "fuel_price.get_price",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "news.headlines",
+   "news.save",
+   "news.search",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23900
+   },
+   {
+    "type": "e5",
+    "price": 22700
+   },
+   {
+    "type": "diesel",
+    "price": 21300
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_942",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-18",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_430",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-18",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_790",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-18",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_4450",
+    "origin": "HAN",
+    "destination": "DAD",
+    "date": "2026-11-18",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   }
+  ],
+  "bookings": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_65",
+    "time": "2026-11-10T06:00:00+07:00",
+    "label": "đi làm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_64",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09899239111"
+   },
+   {
+    "id": "c_1917",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09983249925"
+   },
+   {
+    "id": "c_182",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09695766356"
+   },
+   {
+    "id": "c_8691",
+    "name": "Thằng Tuấn",
+    "relation": "con trai",
+    "phone": "09768721606"
+   },
+   {
+    "id": "c_679",
+    "name": "Ông Ba",
+    "relation": "bạn cờ",
+    "phone": "09297039188"
+   },
+   {
+    "id": "c_592",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09147855582"
+   },
+   {
+    "id": "c_758",
+    "name": "Con dâu Hương",
+    "relation": "con dâu",
+    "phone": "09888005693"
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25753
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27813
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.7
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_01",
+    "status": "booked",
+    "pickup": "31 Hàng Bạc, Hoàn Kiếm, Hà Nội",
+    "dropoff": "Công viên Thống Nhất",
+    "vehicle": "bike"
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_612",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-11-12T14:00:00+07:00",
+    "link": "https://meet.example.test/lwq-agsf-udc",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_771",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-10T14:30:00+07:00",
+    "link": "https://meet.example.test/tyj-qjyb-dct",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_318",
+    "contact_id": "c_8691",
+    "name": "Thằng Tuấn",
+    "phone_number": "09768721606",
+    "direction": "incoming",
+    "status": "missed",
+    "time": "2026-11-09T07:40:00+07:00",
+    "duration_sec": 0
+   },
+   {
+    "id": "call_72",
+    "contact_id": "c_679",
+    "name": "Ông Ba",
+    "phone_number": "09297039188",
+    "direction": "incoming",
+    "status": "answered",
+    "time": "2026-11-08T16:10:00+07:00",
+    "duration_sec": 180
+   },
+   {
+    "id": "call_03",
+    "contact_id": "c_8691",
+    "phone_number": "09768721606",
+    "status": "dialing"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_7701",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-12T08:30:00+07:00",
+    "end": "2026-11-12T09:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "news": {
+  "articles": [
+   {
+    "id": "art_9297",
+    "title": "CLB Hà Nội thắng đậm trên sân Hàng Đẫy",
+    "topic": "sports",
+    "source": "Bóng Đá Plus",
+    "published_at": "2026-11-08T15:35:00+07:00",
+    "summary": "Đội chủ nhà thắng 3-0 ở vòng 8 V.League."
+   },
+   {
+    "id": "art_977",
+    "title": "Đội tuyển Việt Nam công bố danh sách dự AFF Cup",
+    "topic": "sports",
+    "source": "Nhịp Sống",
+    "published_at": "2026-11-09T15:50:00+07:00",
+    "summary": "HLV trưởng triệu tập 26 cầu thủ, có ba gương mặt mới."
+   },
+   {
+    "id": "art_581",
+    "title": "Startup AI Việt gọi vốn thành công 10 triệu USD",
+    "topic": "tech",
+    "source": "TinViệt",
+    "published_at": "2026-11-08T23:35:00+07:00",
+    "summary": "Khoản đầu tư dùng để mở rộng sang thị trường Đông Nam Á."
+   },
+   {
+    "id": "art_261",
+    "title": "Phim Việt cán mốc 200 tỷ đồng doanh thu phòng vé",
+    "topic": "entertainment",
+    "source": "Zing News",
+    "published_at": "2026-11-08T20:35:00+07:00",
+    "summary": "Bộ phim gia đình trở thành hiện tượng phòng vé cuối năm."
+   }
+  ],
+  "saved": [
+   {
+    "id": "saved_01",
+    "article_id": "art_977"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_7670",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 7200,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_8057",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 180,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_3336",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-11-30",
+    "used": false
+   },
+   {
+    "id": "vch_844",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-11-23",
+    "used": false
+   },
+   {
+    "id": "vch_435",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-11-29",
+    "used": false
+   }
+  ]
+ }
+}

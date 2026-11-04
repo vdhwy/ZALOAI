@@ -1,0 +1,391 @@
+{
+ "_meta": {
+  "question_id": "train_1738",
+  "current_time": "2026-10-20T16:25:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 60,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_791",
+    "name": "phòng ngủ",
+    "area_m2": 10
+   },
+   {
+    "id": "room_2195",
+    "name": "bếp",
+    "area_m2": 8
+   },
+   {
+    "id": "room_204",
+    "name": "phòng khách",
+    "area_m2": 25
+   }
+  ],
+  "current_job": null
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_01",
+    "contact_id": "c_1411",
+    "phone_number": "09307796056",
+    "status": "dialing"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_184",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_447",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_267",
+    "title": "Việc ở trường",
+    "content": "Nộp kế hoạch bài dạy cho cô hướng dẫn, mượn máy chiếu phòng 204"
+   },
+   {
+    "id": "note_1345",
+    "title": "Họp lớp cuối tháng",
+    "content": "Hỏi lớp trưởng chỗ đặt bàn, đóng quỹ lớp"
+   },
+   {
+    "id": "note_5512",
+    "title": "Feedback tiết dạy demo lớp 10A3",
+    "content": "Cô Hạnh: nói chậm lại, viết bảng rõ hơn"
+   },
+   {
+    "id": "note_6038",
+    "title": "Feedback tiết dạy demo lớp 11B2",
+    "content": "Cô Hạnh: thêm ví dụ thực tế, gọi nhiều bạn phát biểu"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_471",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_93",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_81",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_792",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_106",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   }
+  ],
+  "transactions": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_872",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09750709399"
+   },
+   {
+    "id": "c_42",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09322108656"
+   },
+   {
+    "id": "c_481",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09935248875"
+   },
+   {
+    "id": "c_900",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09487105790"
+   },
+   {
+    "id": "c_354",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09477514760"
+   },
+   {
+    "id": "c_216",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09309718513"
+   },
+   {
+    "id": "c_611",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09329413157"
+   },
+   {
+    "id": "c_1411",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09307796056"
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_122",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": true
+   },
+   {
+    "id": "item_9598",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_424",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_1971",
+    "name": "dầu ăn",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_05",
+    "checked": false,
+    "name": "giấy A4",
+    "quantity": 2
+   },
+   {
+    "id": "item_06",
+    "checked": false,
+    "name": "hộp phấn",
+    "quantity": 1
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_01",
+    "contact_id": "c_481",
+    "phone_number": "09935248875",
+    "direction": "outgoing",
+    "content": "Cô Hạnh góp ý rút ngắn phần khởi động, thêm thời gian luyện tập."
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_1142",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-19T09:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_805",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-19T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_985",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-25T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_330",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-22T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_468",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-20T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_06",
+    "due": "2026-10-23T08:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Nộp sổ dự giờ"
+   }
+  ]
+ }
+}

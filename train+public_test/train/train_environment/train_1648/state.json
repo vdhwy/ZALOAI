@@ -1,0 +1,544 @@
+{
+ "_meta": {
+  "question_id": "train_1648",
+  "current_time": "2026-11-11T09:35:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_175",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09681713690"
+   },
+   {
+    "id": "c_2232",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09441175348"
+   },
+   {
+    "id": "c_764",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09890708821"
+   },
+   {
+    "id": "c_291",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09727486980"
+   },
+   {
+    "id": "c_674",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09251237289"
+   },
+   {
+    "id": "c_609",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09774050035"
+   },
+   {
+    "id": "c_851",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09610071688"
+   },
+   {
+    "id": "c_1700",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09637394506"
+   },
+   {
+    "id": "c_6099",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09241317984"
+   },
+   {
+    "id": "c_476",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09453019180"
+   },
+   {
+    "id": "c_1059",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09982568973"
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_01",
+    "contact_id": "c_175",
+    "phone_number": "09681713690",
+    "direction": "outgoing",
+    "content": "Sáng nay giao thêm hai thùng nước suối cho cô nha"
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_418",
+    "contact_id": "c_175",
+    "phone_number": "09681713690",
+    "direction": "missed",
+    "time": "2026-11-11T07:52:00+07:00"
+   },
+   {
+    "id": "call_266",
+    "contact_id": "c_609",
+    "phone_number": "09774050035",
+    "direction": "missed",
+    "time": "2026-11-11T08:10:00+07:00"
+   },
+   {
+    "id": "call_193",
+    "contact_id": "c_674",
+    "phone_number": "09251237289",
+    "direction": "incoming",
+    "time": "2026-11-10T20:05:00+07:00"
+   },
+   {
+    "id": "call_04",
+    "contact_id": "c_609",
+    "phone_number": "09774050035",
+    "status": "dialing"
+   },
+   {
+    "id": "call_05",
+    "contact_id": "c_674",
+    "phone_number": "09251237289",
+    "status": "dialing"
+   },
+   {
+    "id": "call_06",
+    "contact_id": "c_6099",
+    "phone_number": "09241317984",
+    "status": "dialing"
+   },
+   {
+    "id": "call_07",
+    "contact_id": "c_175",
+    "phone_number": "09681713690",
+    "status": "dialing"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-11",
+    "prizes": {
+     "special": "858903",
+     "first": "63954",
+     "eighth": "51"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-11",
+    "prizes": {
+     "special": "322660",
+     "first": "88741",
+     "eighth": "96"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-11",
+    "prizes": {
+     "special": "440377",
+     "first": "32424",
+     "eighth": "90"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-11",
+    "prizes": {
+     "special": "842644",
+     "first": "75880",
+     "eighth": "11"
+    }
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_802",
+    "name": "Tài khoản thanh toán",
+    "balance": 20700000
+   },
+   {
+    "id": "acc_583",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_852",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_50",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_380",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_01",
+    "account_id": "acc_802",
+    "beneficiary_id": "ben_380",
+    "amount": -12000000,
+    "note": "Tiền thuê tiệm tháng 11"
+   },
+   {
+    "id": "tx_02",
+    "account_id": "acc_802",
+    "beneficiary_id": "ben_50",
+    "amount": -2500000,
+    "note": "Tiền hàng"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_7627",
+    "title": "đá bóng",
+    "start": "2026-11-12T15:30:00+07:00",
+    "end": "2026-11-12T16:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4983",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-14T15:00:00+07:00",
+    "end": "2026-11-14T16:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2418",
+    "title": "họp team",
+    "start": "2026-11-12T14:30:00+07:00",
+    "end": "2026-11-12T15:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_994",
+    "device_id": "light_kitchen",
+    "action": "off",
+    "time": "22:00",
+    "title": "Tắt đèn bếp buổi tối",
+    "enabled": true
+   },
+   {
+    "id": "rule_604",
+    "device_id": "light_living",
+    "action": "on",
+    "time": "18:30",
+    "title": "Bật đèn phòng khách buổi tối",
+    "enabled": false
+   },
+   {
+    "id": "rule_2173",
+    "device_id": "ac_bedroom",
+    "action": "off",
+    "time": "05:30",
+    "title": "Tắt điều hoà phòng ngủ lúc sáng sớm",
+    "enabled": true
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_2152",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_5117",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_7413",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_2278",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-12T15:30:00+07:00",
+    "link": "https://meet.example.test/pwn-yjfh-tcm",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_4614",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-12T08:00:00+07:00",
+    "link": "https://meet.example.test/xej-ymhy-ley",
+    "attendees": [
+     "c_674"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_8051",
+    "title": "Họp mối bánh kẹo Hong Kong",
+    "start": "2026-11-11T09:30:00+07:00",
+    "link": "https://meet.example.test/hkq-bnkr-tao",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_3307",
+    "title": "Họp mối trà sữa Hong Kong",
+    "start": "2026-11-11T14:00:00+07:00",
+    "link": "https://meet.example.test/tsh-kmlo-pqe",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-11",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-12",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-13",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-14",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 33
+   }
+  ]
+ }
+}

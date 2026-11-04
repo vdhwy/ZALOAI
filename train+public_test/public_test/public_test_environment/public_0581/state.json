@@ -1,0 +1,447 @@
+{
+ "_meta": {
+  "question_id": "public_0581",
+  "current_time": "2026-11-29T10:30:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 122200000,
+    "sell": 124200000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 116200000,
+    "sell": 118200000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4229
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9225",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09867129473"
+   },
+   {
+    "id": "c_792",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09927844227"
+   },
+   {
+    "id": "c_121",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09775008130"
+   },
+   {
+    "id": "c_746",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09765528484"
+   },
+   {
+    "id": "c_3592",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09315551863"
+   },
+   {
+    "id": "c_7797",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09100520287"
+   },
+   {
+    "id": "c_137",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09803603379"
+   },
+   {
+    "id": "c_411",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09140403225"
+   },
+   {
+    "id": "c_28",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09208971826"
+   },
+   {
+    "id": "c_6402",
+    "name": "Sarah Kim",
+    "relation": "đối tác",
+    "phone": "09186457302"
+   },
+   {
+    "id": "c_6417",
+    "name": "Sarah Lim",
+    "relation": "đồng nghiệp",
+    "phone": "09372265814"
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_3318",
+    "contact_id": "c_6402",
+    "phone_number": "09186457302",
+    "direction": "incoming",
+    "from": "Sarah Kim",
+    "time": "2026-11-29T08:47:00+07:00",
+    "content": "Hi Việt, 11h30 sáng nay gặp mình ở ga metro Thảo Điền, lối ra số 2 nha."
+   },
+   {
+    "id": "msg_3375",
+    "contact_id": "c_6417",
+    "phone_number": "09372265814",
+    "direction": "incoming",
+    "from": "Sarah Lim",
+    "time": "2026-11-29T09:20:00+07:00",
+    "content": "Việt ơi 3h chiều nay mình gặp ở ga Bến Thành để chốt slide nhé."
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_1637",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_204",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_9532",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_3043",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_137",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_976",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_1645",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_487",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_932",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_788",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_2738",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_4345",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "public_transit": {
+  "card_balance": 98000,
+  "routes": [
+   {
+    "id": "bus_4623",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   },
+   {
+    "id": "metro_369",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Văn Thánh",
+     "Tân Cảng",
+     "Thảo Điền",
+     "An Phú",
+     "Rạch Chiếc",
+     "Phước Long",
+     "Bình Thái",
+     "Thủ Đức",
+     "Khu Công nghệ cao",
+     "Đại học Quốc gia",
+     "Bến xe Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 39,
+    "headway_min": 8
+   },
+   {
+    "id": "bus_292",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Khu Công nghệ cao",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_292",
+    "time": "2026-11-29T11:05:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_4623",
+    "time": "2026-11-29T10:38:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_4623",
+    "time": "2026-11-29T11:08:00+07:00"
+   },
+   {
+    "stop": "Rạch Chiếc",
+    "route": "metro_369",
+    "time": "2026-11-29T10:35:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_292",
+    "time": "2026-11-29T10:53:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_292",
+    "time": "2026-11-29T10:41:00+07:00"
+   },
+   {
+    "stop": "Rạch Chiếc",
+    "route": "metro_369",
+    "time": "2026-11-29T10:51:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_4623",
+    "time": "2026-11-29T10:53:00+07:00"
+   },
+   {
+    "stop": "Rạch Chiếc",
+    "route": "metro_369",
+    "time": "2026-11-29T10:43:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "metro_369",
+    "time": "2026-11-29T10:44:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "metro_369",
+    "time": "2026-11-29T11:20:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "metro_369",
+    "time": "2026-11-29T10:56:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "metro_369",
+    "time": "2026-11-29T11:08:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_292",
+    "time": "2026-11-29T11:17:00+07:00"
+   }
+  ],
+  "topups": [
+   {
+    "id": "top_01",
+    "amount": 50000,
+    "status": "done"
+   }
+  ]
+ }
+}

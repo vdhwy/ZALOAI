@@ -1,0 +1,192 @@
+{
+ "_meta": {
+  "question_id": "train_1087",
+  "current_time": "2026-12-03T12:10:00+07:00",
+  "tools": [
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25481
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27519
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 169.9
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_9226",
+    "name": "phòng khách",
+    "area_m2": 25
+   },
+   {
+    "id": "room_193",
+    "name": "phòng ăn",
+    "area_m2": 10
+   },
+   {
+    "id": "room_6727",
+    "name": "bếp",
+    "area_m2": 25
+   },
+   {
+    "id": "room_5165",
+    "name": "phòng ngủ",
+    "area_m2": 15
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng ngủ",
+    "phòng ăn"
+   ],
+   "whole_house": false,
+   "mode": "vacuum"
+  }
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_388",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_311",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_905",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_8876",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_536",
+    "name": "Phơi quần áo",
+    "assignee": "Chị Hạnh",
+    "done": false
+   },
+   {
+    "id": "chore_605",
+    "name": "Tưới cây",
+    "assignee": "Bố",
+    "done": false
+   },
+   {
+    "id": "chore_549",
+    "name": "Đổ rác",
+    "assignee": "Bố",
+    "done": true
+   },
+   {
+    "id": "chore_7884",
+    "name": "Đi chợ",
+    "assignee": "Bố",
+    "done": true
+   },
+   {
+    "id": "chore_2011",
+    "name": "Lau nhà",
+    "assignee": "Tuấn",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chị Hạnh",
+   "Bố",
+   "Tuấn"
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_686",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-03T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_40",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-02T20:30:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_531",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-12-03T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ }
+}

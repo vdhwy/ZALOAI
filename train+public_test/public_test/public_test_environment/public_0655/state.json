@@ -1,0 +1,375 @@
+{
+ "_meta": {
+  "question_id": "public_0655",
+  "current_time": "2026-12-07T07:20:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "translator.translate",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_9652",
+    "name": "Bãi đỗ chợ Hàn",
+    "address": "Trần Phú, Hải Châu, Đà Nẵng",
+    "area": "Chợ Hàn",
+    "price_per_hour": 20000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_601",
+    "name": "Bãi xe Sao Kim Plaza Ngô Quyền",
+    "address": "910 Ngô Quyền, Sơn Trà, Đà Nẵng",
+    "area": "Sơn Trà",
+    "price_per_hour": 25000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_901",
+    "name": "Bãi đỗ xe Cầu Rồng",
+    "address": "Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
+    "area": "Cầu Rồng",
+    "price_per_hour": 20000,
+    "available_spots": 25
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_63",
+    "lot_id": "lot_9652",
+    "from_time": "2026-12-07T06:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-12-07T09:00:00+07:00",
+    "total": 60000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Tôi bị dị ứng hải sản",
+    "to_lang": "en",
+    "translation": "I am allergic to seafood"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   },
+   {
+    "text": "Xin chào, rất vui được gặp bạn",
+    "to_lang": "ja",
+    "translation": "こんにちは、はじめまして"
+   },
+   {
+    "text": "Cho tôi xem thực đơn",
+    "to_lang": "ko",
+    "translation": "메뉴판 좀 보여주세요"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 30,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-07",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 34
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-08",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 29
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-09",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-12-10",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 34
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_7840",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_214",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_858",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_954",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_671",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_3277",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_1442",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_8868",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": {
+   "playlist_id": "pl_1442",
+   "name": "Nhạc chill buổi tối",
+   "status": "playing"
+  },
+  "volume": 20
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_8384",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_5560",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_381",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_15",
+    "name": "Khách Hàn",
+    "relation": "khách",
+    "phone": "09869361664"
+   },
+   {
+    "id": "c_8085",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09975301240"
+   },
+   {
+    "id": "c_193",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09674242194"
+   },
+   {
+    "id": "c_169",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09116393686"
+   },
+   {
+    "id": "c_411",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09784010199"
+   },
+   {
+    "id": "c_936",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09695260726"
+   },
+   {
+    "id": "c_512",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09892602028"
+   },
+   {
+    "id": "c_242",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09228745951"
+   },
+   {
+    "id": "c_519",
+    "name": "Anh Bình",
+    "relation": "đồng nghiệp",
+    "phone": "09817667565"
+   }
+  ]
+ }
+}

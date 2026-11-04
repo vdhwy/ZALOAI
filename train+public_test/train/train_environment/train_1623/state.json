@@ -1,0 +1,399 @@
+{
+ "_meta": {
+  "question_id": "train_1623",
+  "current_time": "2026-11-21T17:50:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "fuel_price.get_price",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_7023",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09804943917"
+   },
+   {
+    "id": "c_283",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09152348428"
+   },
+   {
+    "id": "c_9687",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09255602717"
+   },
+   {
+    "id": "c_867",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09865314826"
+   },
+   {
+    "id": "c_522",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09899332991"
+   },
+   {
+    "id": "c_997",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09738795031"
+   },
+   {
+    "id": "c_7481",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09585981487"
+   },
+   {
+    "id": "c_160",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09775940292"
+   },
+   {
+    "id": "c_361",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09118481226"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 23600
+   },
+   {
+    "type": "e5",
+    "price": 22400
+   },
+   {
+    "type": "diesel",
+    "price": 21000
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_589",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_3909",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_678",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_2752",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_9316",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_716",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_4125",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_572",
+    "name": "Nhạc chill buổi tối",
+    "track_ids": [
+     "trk_2752"
+    ]
+   }
+  ],
+  "now_playing": {
+   "track_id": "trk_2752",
+   "title": "Bước qua nhau",
+   "status": "playing"
+  }
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_299",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-26T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_840",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-20T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_6262",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-21T17:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_619",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-22T12:30:00+07:00",
+    "priority": "high",
+    "done": true
+   },
+   {
+    "id": "task_05",
+    "due": "2026-11-23T09:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Follow-up với Team Design về bản mockup"
+   },
+   {
+    "id": "task_06",
+    "due": "2026-11-22T19:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Mua hoa cho Vợ Hằng"
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_3518",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_4700",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "normal",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_3829",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_983",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_608",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-02",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_1306",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-02",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   },
+   {
+    "id": "fl_367",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-02",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_906",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-02",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   }
+  ],
+  "bookings": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_416",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-21T00:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_3246",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-19T08:20:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_209",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-19T07:05:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "sms": {
+  "messages": []
+ }
+}

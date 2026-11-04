@@ -1,0 +1,350 @@
+{
+ "_meta": {
+  "question_id": "train_1041",
+  "current_time": "2026-10-12T11:30:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play"
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_303",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_669",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_440",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 35
+   },
+   {
+    "id": "lock_527",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": false,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_482",
+    "name": "Lan",
+    "relation": "bạn cùng phòng",
+    "phone": "09159963787"
+   },
+   {
+    "id": "c_79",
+    "name": "Cô giáo Mai",
+    "relation": "cô chủ nhiệm",
+    "phone": "09710728307"
+   },
+   {
+    "id": "c_100",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09332336346"
+   },
+   {
+    "id": "c_383",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09215335626"
+   },
+   {
+    "id": "c_701",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09981990397"
+   },
+   {
+    "id": "c_684",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09936874602"
+   },
+   {
+    "id": "c_703",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09353805957"
+   },
+   {
+    "id": "c_3144",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09752321076"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_935",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": [
+     {
+      "id": "pl_229",
+      "name": "Nhạc tập gym"
+     }
+    ]
+   },
+   {
+    "id": "trk_2760",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": [
+     {
+      "id": "pl_9030",
+      "name": "Nhạc chill buổi tối"
+     }
+    ]
+   },
+   {
+    "id": "trk_1367",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm",
+    "playlists": []
+   },
+   {
+    "id": "trk_677",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc",
+    "playlists": [
+     {
+      "id": "pl_9030",
+      "name": "Nhạc chill buổi tối"
+     }
+    ]
+   },
+   {
+    "id": "trk_639",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": [
+     {
+      "id": "pl_229",
+      "name": "Nhạc tập gym"
+     }
+    ]
+   },
+   {
+    "id": "trk_181",
+    "title": "Bước qua nhau",
+    "artist": "Vũ.",
+    "playlists": []
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_9030",
+    "name": "Nhạc chill buổi tối",
+    "track_ids": [
+     "trk_2760",
+     "trk_677"
+    ]
+   },
+   {
+    "id": "pl_229",
+    "name": "Nhạc tập gym",
+    "track_ids": [
+     "trk_639",
+     "trk_935"
+    ]
+   }
+  ],
+  "now_playing": null
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_713",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-13T08:30:00+07:00",
+    "end": "2026-10-13T09:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_100",
+    "title": "đi chơi công viên",
+    "start": "2026-10-13T10:00:00+07:00",
+    "end": "2026-10-13T11:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9721",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-14T10:00:00+07:00",
+    "end": "2026-10-14T11:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_700",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_187",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_47",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_884",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_996",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_418",
+    "name": "Mạ",
+    "type": "direct",
+    "members": [
+     "Mạ"
+    ],
+    "messages": [
+     {
+      "from": "Mạ",
+      "content": "Trưa ni con về ăn cơm không, mạ nấu canh chua đó.",
+      "time": "2026-10-12T09:40:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_2207",
+    "name": "Nhi",
+    "type": "direct",
+    "members": [
+     "Nhi"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Tối ni học bài chán quá Nhi ơi, có bài mô nghe cho đỡ buồn ngủ không?",
+      "time": "2026-10-11T21:05:00+07:00"
+     },
+     {
+      "from": "Nhi",
+      "content": "Nghe thử Bước qua nhau của Vũ với Hoa nở không màu của Hoài Lâm đi, tối nghe chill lắm á.",
+      "time": "2026-10-11T21:12:00+07:00"
+     },
+     {
+      "from": "me",
+      "content": "Okee để mai mình nghe thử.",
+      "time": "2026-10-11T21:15:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_93",
+    "name": "Lớp Sư phạm Toán K47",
+    "type": "group",
+    "members": [
+     "Nhi",
+     "Hoàng",
+     "Thảo",
+     "Quân"
+    ],
+    "messages": [
+     {
+      "from": "Hoàng",
+      "content": "Ai cần nhạc tập thể dục thì nghe Chúng ta của hiện tại nha, nhịp đều dễ chạy.",
+      "time": "2026-10-11T20:30:00+07:00"
+     },
+     {
+      "from": "Thảo",
+      "content": "Thứ tư nhớ nộp bài tập nhóm môn Giải tích nghe mọi người.",
+      "time": "2026-10-11T20:41:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_655",
+    "name": "Ba",
+    "type": "direct",
+    "members": [
+     "Ba"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

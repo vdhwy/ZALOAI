@@ -1,0 +1,262 @@
+{
+ "_meta": {
+  "question_id": "train_1553",
+  "current_time": "2026-11-30T18:30:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_733",
+    "name": "Xe đạp thường 302",
+    "station": "Trạm Phạm Ngũ Lão",
+    "available": true,
+    "price_per_hour": 8000
+   },
+   {
+    "id": "bike_211",
+    "name": "Xe đạp thường 211",
+    "station": "Trạm Đại Nội",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_216",
+    "name": "Xe đạp thể thao 216",
+    "station": "Trạm Đại Nội",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_4214",
+    "name": "Xe đạp thể thao 214",
+    "station": "Trạm Đại Nội",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_869",
+    "name": "Xe đạp đôi 219",
+    "station": "Trạm Đại Nội",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_5307",
+    "name": "Xe đạp đôi 305",
+    "station": "Trạm Phạm Ngũ Lão",
+    "available": true,
+    "price_per_hour": 22000
+   },
+   {
+    "id": "bike_158",
+    "name": "Xe đạp thể thao 117",
+    "station": "Trạm Cầu Trường Tiền",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_574",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_484",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_363",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_8370",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_743",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_4632",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1765",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09603801401"
+   },
+   {
+    "id": "c_211",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09553707758"
+   },
+   {
+    "id": "c_576",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09547801688"
+   },
+   {
+    "id": "c_856",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09404950898"
+   },
+   {
+    "id": "c_8017",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09858817073"
+   },
+   {
+    "id": "c_620",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09276643535"
+   },
+   {
+    "id": "c_395",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09958283431"
+   },
+   {
+    "id": "c_167",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09937596839"
+   },
+   {
+    "id": "c_789",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09364852726"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_266",
+    "name": "Isabel Moreno",
+    "type": "direct",
+    "members": [
+     "Isabel Moreno"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2420",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_395",
+    "name": "Vợ Hà",
+    "type": "direct",
+    "members": [
+     "Vợ Hà"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7731",
+    "name": "Isabel Moreira",
+    "type": "direct",
+    "members": [
+     "Isabel Moreira"
+    ],
+    "messages": [
+     {
+      "from": "Isabel Moreira",
+      "content": "Thank you, see you next year!"
+     }
+    ]
+   },
+   {
+    "id": "chat_513",
+    "name": "Lucas",
+    "type": "direct",
+    "members": [
+     "Lucas"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_118",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

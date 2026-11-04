@@ -1,0 +1,486 @@
+{
+ "_meta": {
+  "question_id": "train_1378",
+  "current_time": "2026-12-02T21:45:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_165",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_61",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_4291",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_277",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_5077",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_551",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_862",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 26083
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28169
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 173.9
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_51",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-12-08",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_359",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-12-13",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_6624",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-12-29",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_7164",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-12-29",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_812",
+    "name": "Quantum Leap Academy Plus",
+    "price": 149000,
+    "next_billing": "2026-12-05",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_430",
+    "name": "Quantum Leap Studio Pro",
+    "price": 129000,
+    "next_billing": "2026-12-10",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_413",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_983",
+    "name": "Thầy Phong",
+    "type": "direct",
+    "members": [
+     "Thầy Phong"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6546",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7945",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_103",
+    "name": "Trang",
+    "type": "direct",
+    "members": [
+     "Trang"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Tối mai tớ bận học, không đi ăn được nhé."
+     }
+    ]
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_58",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_580",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_8088",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 20,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_588",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Edura",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_731",
+    "name": "IELTS Speaking cấp tốc",
+    "provider": "Quantum Leap Academy",
+    "enrolled": true,
+    "lessons_total": 16,
+    "progress_minutes": 240
+   },
+   {
+    "id": "course_247",
+    "name": "IELTS Writing cấp tốc",
+    "provider": "Quantum Leap Studio",
+    "enrolled": true,
+    "lessons_total": 16,
+    "progress_minutes": 90
+   }
+  ],
+  "lessons": [
+   {
+    "id": "les_01",
+    "course_id": "course_580",
+    "time": "2026-12-03T20:00:00+07:00",
+    "status": "scheduled"
+   }
+  ],
+  "progress": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_7989",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09351782612"
+   },
+   {
+    "id": "c_3910",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09474526793"
+   },
+   {
+    "id": "c_2220",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09819927869"
+   },
+   {
+    "id": "c_3406",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09382312929"
+   },
+   {
+    "id": "c_356",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09582264949"
+   },
+   {
+    "id": "c_6255",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09504593612"
+   },
+   {
+    "id": "c_266",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09301990753"
+   },
+   {
+    "id": "c_605",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09310182453"
+   },
+   {
+    "id": "c_308",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09987177288"
+   },
+   {
+    "id": "c_4125",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09915020231"
+   }
+  ]
+ }
+}

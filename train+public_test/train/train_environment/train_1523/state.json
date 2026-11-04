@@ -1,0 +1,533 @@
+{
+ "_meta": {
+  "question_id": "train_1523",
+  "current_time": "2026-11-21T12:30:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_712",
+    "name": "Xe đạp điện 105",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_812",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_7222",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Láng Hạ",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_227",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_415",
+    "name": "Xe đạp thể thao 106",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_293",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_456",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_7561",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_109",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_1529",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_4113",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_787",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_3318",
+    "title": "Perfume River Nights",
+    "artist": "The Lantern Keepers"
+   },
+   {
+    "id": "trk_652",
+    "title": "Slow Morning",
+    "artist": "Mây Trắng Band"
+   },
+   {
+    "id": "trk_2087",
+    "title": "Riverside Coffee",
+    "artist": "The Lantern Keepers"
+   },
+   {
+    "id": "trk_914",
+    "title": "Đêm Huế",
+    "artist": "Ngọc Lan Trinh"
+   },
+   {
+    "id": "trk_5530",
+    "title": "Golden Hour Walk",
+    "artist": "Mây Trắng Band"
+   },
+   {
+    "id": "trk_271",
+    "title": "Mưa trên phố Huế",
+    "artist": "Ngọc Lan Trinh"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_431",
+    "name": "Nhạc tập gym",
+    "track_ids": [
+     "trk_456",
+     "trk_7561",
+     "trk_109",
+     "trk_787",
+     "trk_4113",
+     "trk_5530",
+     "trk_652",
+     "trk_2087"
+    ]
+   },
+   {
+    "id": "pl_552",
+    "name": "Nhạc chill buổi tối",
+    "track_ids": [
+     "trk_1529",
+     "trk_4113",
+     "trk_914",
+     "trk_271",
+     "trk_652"
+    ]
+   },
+   {
+    "id": "pl_918",
+    "name": "Welcome check-in",
+    "track_ids": [
+     "trk_652",
+     "trk_2087",
+     "trk_5530",
+     "trk_787",
+     "trk_1529"
+    ]
+   },
+   {
+    "id": "pl_207",
+    "name": "Sunset Rooftop",
+    "track_ids": [
+     "trk_2087",
+     "trk_5530",
+     "trk_914",
+     "trk_1529",
+     "trk_652",
+     "trk_4113",
+     "trk_3318"
+    ]
+   }
+  ],
+  "now_playing": null
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_983",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_6696",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_235",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_94",
+    "show_id": "show_235",
+    "title": "Số 8: Lập quỹ khẩn cấp",
+    "number": 8,
+    "duration_min": 45,
+    "published": "2026-10-31"
+   },
+   {
+    "id": "ep_520",
+    "show_id": "show_983",
+    "title": "Số 15: Sống chậm giữa thành phố",
+    "number": 15,
+    "duration_min": 45,
+    "published": "2026-11-07"
+   },
+   {
+    "id": "ep_904",
+    "show_id": "show_6696",
+    "title": "Số 16: Đi xe đạp đi làm",
+    "number": 16,
+    "duration_min": 32,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_401",
+    "show_id": "show_235",
+    "title": "Số 10: Quản lý chi tiêu gia đình",
+    "number": 10,
+    "duration_min": 32,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_5102",
+    "show_id": "show_983",
+    "title": "Số 16: Nghề diễn và những áp lực",
+    "number": 16,
+    "duration_min": 45,
+    "published": "2026-11-14"
+   },
+   {
+    "id": "ep_835",
+    "show_id": "show_6696",
+    "title": "Số 14: Rác thải nhựa ở đô thị",
+    "number": 14,
+    "duration_min": 18,
+    "published": "2026-10-31"
+   },
+   {
+    "id": "ep_578",
+    "show_id": "show_235",
+    "title": "Số 9: Gửi tiết kiệm hay mua vàng",
+    "number": 9,
+    "duration_min": 18,
+    "published": "2026-11-07"
+   },
+   {
+    "id": "ep_553",
+    "show_id": "show_6696",
+    "title": "Số 15: Trồng cây trên sân thượng",
+    "number": 15,
+    "duration_min": 32,
+    "published": "2026-11-07"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_588",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_668",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_5100",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_364",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_6696"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_3348",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 1000,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_9977",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 960,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_274",
+    "merchant": "Xinh Mart",
+    "name": "Giảm 50.000đ",
+    "value": 50000,
+    "expires": "2026-12-11",
+    "used": false
+   },
+   {
+    "id": "vch_143",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-12-18",
+    "used": false
+   },
+   {
+    "id": "vch_198",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-12-19",
+    "used": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_379",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09453469000"
+   },
+   {
+    "id": "c_269",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09743932298"
+   },
+   {
+    "id": "c_2914",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09488847109"
+   },
+   {
+    "id": "c_4272",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09885989545"
+   },
+   {
+    "id": "c_69",
+    "name": "Felix",
+    "relation": "khách",
+    "phone": "09227426462"
+   },
+   {
+    "id": "c_597",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09557844978"
+   },
+   {
+    "id": "c_148",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09632454395"
+   },
+   {
+    "id": "c_437",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09375138668"
+   },
+   {
+    "id": "c_194",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09498503424"
+   },
+   {
+    "id": "c_879",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09154389942"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_956",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_837",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_345",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": false,
+    "battery": 95
+   }
+  ],
+  "guest_codes": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_517",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_740",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": true
+   },
+   {
+    "id": "item_8834",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_980",
+    "tracking_id": "STP484312997",
+    "carrier": "SaoTel Post",
+    "name": "Áo khoác gió",
+    "status": "in_transit",
+    "eta": "2026-11-24T17:00:00+07:00"
+   },
+   {
+    "id": "shp_89",
+    "tracking_id": "MDXVN320861005",
+    "carrier": "MDX Express",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "out_for_delivery",
+    "eta": "2026-11-21T10:00:00+07:00"
+   },
+   {
+    "id": "shp_506",
+    "tracking_id": "EV408277083",
+    "carrier": "VNPost",
+    "name": "Ốp lưng điện thoại",
+    "status": "delivered",
+    "eta": "2026-11-20T14:00:00+07:00"
+   },
+   {
+    "id": "shp_649",
+    "tracking_id": "JV665148434",
+    "carrier": "JetViệt Express",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-11-22T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ }
+}

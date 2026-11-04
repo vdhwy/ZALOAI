@@ -1,0 +1,410 @@
+{
+ "_meta": {
+  "question_id": "train_1071",
+  "current_time": "2026-10-27T09:45:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe"
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_102",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_4409",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_287",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_474",
+    "show_id": "show_4409",
+    "title": "Số 5: Vì sao bầu trời màu xanh",
+    "number": 5,
+    "duration_min": 18,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_872",
+    "show_id": "show_4409",
+    "title": "Số 7: Lỗ đen là gì",
+    "number": 7,
+    "duration_min": 25,
+    "published": "2026-10-20"
+   },
+   {
+    "id": "ep_431",
+    "show_id": "show_102",
+    "title": "Số 18: Sống chậm giữa thành phố",
+    "number": 18,
+    "duration_min": 32,
+    "published": "2026-10-13"
+   },
+   {
+    "id": "ep_610",
+    "show_id": "show_287",
+    "title": "Số 13: Nhà giả kim - phần 2",
+    "number": 13,
+    "duration_min": 32,
+    "published": "2026-10-20"
+   },
+   {
+    "id": "ep_9994",
+    "show_id": "show_287",
+    "title": "Số 12: Nhà giả kim - phần 1",
+    "number": 12,
+    "duration_min": 45,
+    "published": "2026-10-13"
+   },
+   {
+    "id": "ep_167",
+    "show_id": "show_102",
+    "title": "Số 19: Nghề diễn và những áp lực",
+    "number": 19,
+    "duration_min": 32,
+    "published": "2026-10-20"
+   },
+   {
+    "id": "ep_5100",
+    "show_id": "show_4409",
+    "title": "Số 6: Giấc ngủ và trí nhớ",
+    "number": 6,
+    "duration_min": 32,
+    "published": "2026-10-13"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_341",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_9623",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_2577",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_710",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_4409"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_971",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_402",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_687",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_940",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-24": {
+    "steps": 10801,
+    "calories": 432,
+    "distance_km": 7.8
+   },
+   "2026-10-25": {
+    "steps": 5872,
+    "calories": 234,
+    "distance_km": 4.2
+   },
+   "2026-10-26": {
+    "steps": 4579,
+    "calories": 183,
+    "distance_km": 3.3
+   },
+   "2026-10-27": {
+    "steps": 3510,
+    "calories": 140,
+    "distance_km": 2.5
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_325",
+    "type": "gym",
+    "minutes": 45,
+    "time": "2026-10-23T17:00:00+07:00"
+   },
+   {
+    "id": "wo_8156",
+    "type": "walking",
+    "minutes": 20,
+    "time": "2026-10-25T18:00:00+07:00"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_239",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6026",
+    "name": "Bác Ba",
+    "type": "direct",
+    "members": [
+     "Bác Ba"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_174",
+    "name": "Cô giáo Mai",
+    "type": "direct",
+    "members": [
+     "Cô giáo Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_50",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_709",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_891",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_923",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_176",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_732",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_41",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_3945",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_68",
+    "name": "Nhạc tập gym"
+   },
+   {
+    "id": "pl_89",
+    "name": "Nhạc chill buổi tối"
+   }
+  ],
+  "now_playing": null
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_583",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-30T18:00:00+07:00",
+    "end": "2026-10-30T19:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_7068",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 203000,
+    "due_date": "2026-11-03",
+    "paid": false
+   },
+   {
+    "id": "bill_962",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 220000,
+    "due_date": "2026-11-05",
+    "paid": false
+   }
+  ]
+ }
+}

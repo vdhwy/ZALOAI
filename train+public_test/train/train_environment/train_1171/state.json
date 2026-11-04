@@ -1,0 +1,263 @@
+{
+ "_meta": {
+  "question_id": "train_1171",
+  "current_time": "2026-11-22T20:00:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "sms.read_recent",
+   "sms.send",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_76",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-12-12",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_552",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-12-20",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_3432",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-11-27",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_422",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-26",
+    "status": "paused",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_641",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-12-14",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_169",
+    "title": "khám răng",
+    "start": "2026-11-23T09:00:00+07:00",
+    "end": "2026-11-23T10:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Huế",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Huế",
+    "date": "2026-11-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-23",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-24",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 30
+   },
+   {
+    "location": "Huế",
+    "date": "2026-11-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   }
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_744",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 153000,
+    "due_date": "2026-12-01",
+    "paid": false
+   },
+   {
+    "id": "bill_727",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 206000,
+    "due_date": "2026-11-24",
+    "paid": false
+   },
+   {
+    "id": "bill_4515",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 845000,
+    "due_date": "2026-11-25",
+    "paid": false
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9768",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09763659599"
+   },
+   {
+    "id": "c_224",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09169047736"
+   },
+   {
+    "id": "c_4777",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09620174481"
+   },
+   {
+    "id": "c_524",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09486723672"
+   },
+   {
+    "id": "c_427",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09193557481"
+   },
+   {
+    "id": "c_1956",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09391728021"
+   },
+   {
+    "id": "c_690",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09864493643"
+   },
+   {
+    "id": "c_24",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09969330739"
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_141",
+    "name": "Xe đạp điện 105",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_1406",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_8318",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_6561",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_341",
+    "name": "Xe đạp thể thao 106",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_752",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Hồ Gươm",
+    "available": false,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ }
+}

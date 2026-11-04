@@ -1,0 +1,583 @@
+{
+ "_meta": {
+  "question_id": "public_0538",
+  "current_time": "2026-10-15T18:05:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "event_tickets.book",
+   "event_tickets.search",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_527",
+    "name": "Triển lãm Ánh sáng Đô thị",
+    "category": "triển lãm",
+    "date": "2026-10-17",
+    "time": "20:00",
+    "venue": "Nhà hát Hòa Bình",
+    "price": 80000,
+    "available": 12
+   },
+   {
+    "id": "event_553",
+    "name": "Liên hoan phim ngắn",
+    "category": "điện ảnh",
+    "date": "2026-10-27",
+    "time": "19:30",
+    "venue": "Saigon Opera House",
+    "price": 120000,
+    "available": 12
+   },
+   {
+    "id": "event_74",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-10-19",
+    "time": "20:00",
+    "venue": "Nhà hát Hòa Bình",
+    "price": 600000,
+    "available": 12
+   },
+   {
+    "id": "event_912",
+    "name": "Chung kết bóng đá V-League",
+    "category": "thể thao",
+    "date": "2026-10-22",
+    "time": "19:30",
+    "venue": "Sân vận động Thống Nhất",
+    "price": 200000,
+    "available": 12
+   }
+  ],
+  "bookings": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_396",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_385",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_515",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_980",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_362",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-14T20:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_739",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-16T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_5464",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-20T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_7099",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09727179697"
+   },
+   {
+    "id": "c_618",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09495259597"
+   },
+   {
+    "id": "c_69",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09890333375"
+   },
+   {
+    "id": "c_7562",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09706057611"
+   },
+   {
+    "id": "c_29",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09647119298"
+   },
+   {
+    "id": "c_394",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09493089507"
+   },
+   {
+    "id": "c_755",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09620552188"
+   },
+   {
+    "id": "c_9262",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09864823730"
+   },
+   {
+    "id": "c_8100",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09173258308"
+   },
+   {
+    "id": "c_235",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09513715652"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 27,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-15",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-16",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 28
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_64",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-10-16",
+    "depart": "08:00",
+    "arrive": "15:30",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_21",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-17",
+    "depart": "08:00",
+    "arrive": "15:40",
+    "price": 450000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_213",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-17",
+    "depart": "06:00",
+    "arrive": "13:50",
+    "price": 450000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_507",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-17",
+    "depart": "21:00",
+    "arrive": "02:30",
+    "price": 320000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_177",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-17",
+    "depart": "13:00",
+    "arrive": "23:30",
+    "price": 250000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_870",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-10-16",
+    "depart": "21:00",
+    "arrive": "07:30",
+    "price": 250000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_4402",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-17",
+    "depart": "19:30",
+    "arrive": "03:40",
+    "price": 420000,
+    "seats_left": 20
+   },
+   {
+    "id": "trip_9316",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-18",
+    "depart": "07:15",
+    "arrive": "14:40",
+    "price": 450000,
+    "seats_left": 12
+   }
+  ],
+  "bookings": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_425",
+    "time": "2026-10-16T07:00:00+07:00",
+    "label": "họp sớm",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_545",
+    "time": "2026-10-16T07:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_7322",
+    "title": "họp phụ huynh",
+    "start": "2026-10-16T19:30:00+07:00",
+    "end": "2026-10-16T20:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_4295",
+    "title": "đi chơi công viên",
+    "start": "2026-10-18T19:00:00+07:00",
+    "end": "2026-10-18T20:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_968",
+    "title": "họp team",
+    "start": "2026-10-16T18:30:00+07:00",
+    "end": "2026-10-16T19:30:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_191",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-17T19:30:00+07:00",
+    "end": "2026-10-17T20:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ }
+}

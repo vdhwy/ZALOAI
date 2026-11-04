@@ -1,0 +1,396 @@
+{
+ "_meta": {
+  "question_id": "train_1702",
+  "current_time": "2026-11-11T08:25:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_104",
+    "title": "Review kế hoạch quý 4",
+    "start": "2026-11-12T14:30:00+07:00",
+    "link": "https://meet.example.test/lzr-ijjq-nvo",
+    "attendees": [
+     "c_7075"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_216",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-11-14T20:30:00+07:00",
+    "link": "https://meet.example.test/hbg-dhux-hwu",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_342",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-11-13T10:30:00+07:00",
+    "link": "https://meet.example.test/nry-lrsl-psc",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_56",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-13T14:30:00+07:00",
+    "link": "https://meet.example.test/ltr-dexe-kke",
+    "attendees": [
+     "c_348",
+     "c_644"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_01",
+    "contact_id": "c_661",
+    "phone_number": "09123456789",
+    "direction": "outgoing",
+    "content": "Chín giờ cô qua rủ bà đi chợ Hàn nghe."
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_500",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09245239015"
+   },
+   {
+    "id": "c_161",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09839154122"
+   },
+   {
+    "id": "c_2020",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09625454027"
+   },
+   {
+    "id": "c_971",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09843212391"
+   },
+   {
+    "id": "c_348",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09481844323"
+   },
+   {
+    "id": "c_644",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09958485581"
+   },
+   {
+    "id": "c_7075",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09328931465"
+   },
+   {
+    "id": "c_2027",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09714422751"
+   },
+   {
+    "id": "c_582",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09348523576"
+   },
+   {
+    "id": "c_661",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09123456789"
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_4399",
+    "tracking_id": "JV900274507",
+    "carrier": "JetViệt Express",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-11-13T10:00:00+07:00"
+   },
+   {
+    "id": "shp_7315",
+    "tracking_id": "MDXVN527507921",
+    "carrier": "MDX Express",
+    "name": "Tai nghe Bluetooth",
+    "status": "delivered",
+    "eta": "2026-11-10T14:00:00+07:00"
+   },
+   {
+    "id": "shp_575",
+    "tracking_id": "GST222255978",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Giày thể thao",
+    "status": "out_for_delivery",
+    "eta": "2026-11-11T17:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_459",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-17T09:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_1188",
+    "title": "Trả sách thư viện",
+    "due": "2026-11-13T12:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_149",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-11-15T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_281",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_417",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_9862",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_777",
+    "show_id": "show_281",
+    "title": "Số 18: Quản lý chi tiêu gia đình",
+    "number": 18,
+    "duration_min": 25,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_2615",
+    "show_id": "show_417",
+    "title": "Số 14: Nhà giả kim - phần 1",
+    "number": 14,
+    "duration_min": 25,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_2072",
+    "show_id": "show_417",
+    "title": "Số 15: Nhà giả kim - phần 2",
+    "number": 15,
+    "duration_min": 18,
+    "published": "2026-11-04"
+   },
+   {
+    "id": "ep_124",
+    "show_id": "show_9862",
+    "title": "Số 15: Sống chậm giữa thành phố",
+    "number": 15,
+    "duration_min": 45,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_485",
+    "show_id": "show_281",
+    "title": "Số 16: Lập quỹ khẩn cấp",
+    "number": 16,
+    "duration_min": 18,
+    "published": "2026-10-21"
+   },
+   {
+    "id": "ep_387",
+    "show_id": "show_281",
+    "title": "Số 17: Gửi tiết kiệm hay mua vàng",
+    "number": 17,
+    "duration_min": 18,
+    "published": "2026-10-28"
+   },
+   {
+    "id": "ep_803",
+    "show_id": "show_9862",
+    "title": "Số 16: Nghề diễn và những áp lực",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-11-04"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_1465",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_2936",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_537",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_9926",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_281"
+  ],
+  "queue": [
+   "ep_777"
+  ],
+  "now_playing": null
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_4840",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_1005",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_735",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá\nCá lóc"
+   },
+   {
+    "id": "note_7167",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_502",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_8091",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   },
+   {
+    "id": "trk_684",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_320",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_696",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_1264",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_707",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_843",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_510",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": {
+   "playlist_id": "pl_843",
+   "name": "Nhạc chill buổi tối",
+   "status": "playing"
+  },
+  "volume": 50
+ }
+}

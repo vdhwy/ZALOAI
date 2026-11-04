@@ -1,0 +1,460 @@
+{
+ "_meta": {
+  "question_id": "train_1153",
+  "current_time": "2026-11-06T19:50:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "phone.call",
+   "phone.recent_calls",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 27,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-06",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-07",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-08",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 32
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-09",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 30
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_567",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09993223164"
+   },
+   {
+    "id": "c_228",
+    "name": "Lan",
+    "relation": "em gái",
+    "phone": "09885663588"
+   },
+   {
+    "id": "c_730",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09644272688"
+   },
+   {
+    "id": "c_104",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09560898870"
+   },
+   {
+    "id": "c_683",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09868075834"
+   },
+   {
+    "id": "c_201",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09864672877"
+   },
+   {
+    "id": "c_7291",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09444719536"
+   },
+   {
+    "id": "c_833",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09142066749"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_24",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_61",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_603",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_159",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_9155",
+    "show_id": "show_24",
+    "title": "Số 11: Quản lý chi tiêu gia đình",
+    "number": 11,
+    "duration_min": 18,
+    "published": "2026-10-30"
+   },
+   {
+    "id": "ep_989",
+    "show_id": "show_603",
+    "title": "Số 13: Giấc ngủ và trí nhớ",
+    "number": 13,
+    "duration_min": 45,
+    "published": "2026-10-23"
+   },
+   {
+    "id": "ep_80",
+    "show_id": "show_159",
+    "title": "Số 18: Trồng cây trên sân thượng",
+    "number": 18,
+    "duration_min": 45,
+    "published": "2026-10-23"
+   },
+   {
+    "id": "ep_332",
+    "show_id": "show_603",
+    "title": "Số 12: Vì sao bầu trời màu xanh",
+    "number": 12,
+    "duration_min": 32,
+    "published": "2026-10-16"
+   },
+   {
+    "id": "ep_742",
+    "show_id": "show_159",
+    "title": "Số 17: Rác thải nhựa ở đô thị",
+    "number": 17,
+    "duration_min": 32,
+    "published": "2026-10-16"
+   },
+   {
+    "id": "ep_9461",
+    "show_id": "show_24",
+    "title": "Số 10: Gửi tiết kiệm hay mua vàng",
+    "number": 10,
+    "duration_min": 18,
+    "published": "2026-10-23"
+   },
+   {
+    "id": "ep_5478",
+    "show_id": "show_61",
+    "title": "Số 14: Nhà giả kim - phần 1",
+    "number": 14,
+    "duration_min": 32,
+    "published": "2026-10-23"
+   },
+   {
+    "id": "ep_136",
+    "show_id": "show_24",
+    "title": "Số 9: Lập quỹ khẩn cấp",
+    "number": 9,
+    "duration_min": 45,
+    "published": "2026-10-16"
+   },
+   {
+    "id": "ep_2598",
+    "show_id": "show_61",
+    "title": "Số 15: Nhà giả kim - phần 2",
+    "number": 15,
+    "duration_min": 45,
+    "published": "2026-10-30"
+   },
+   {
+    "id": "ep_231",
+    "show_id": "show_603",
+    "title": "Số 14: Lỗ đen là gì",
+    "number": 14,
+    "duration_min": 45,
+    "published": "2026-10-30"
+   },
+   {
+    "id": "ep_326",
+    "show_id": "show_159",
+    "title": "Số 19: Đi xe đạp đi làm",
+    "number": 19,
+    "duration_min": 32,
+    "published": "2026-10-30"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_446",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_6682",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_315",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_815",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_603"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "phone": {
+  "calls": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_867",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-11-04T12:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_974",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-11-06T10:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_550",
+    "from": "anhlong@gmail.example.test",
+    "from_name": "Anh Long",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-11-06T13:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_510",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-11-06T02:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_8860",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": [
+     {
+      "from": "Mẹ",
+      "content": "Con ơi gửi mẹ ba triệu đóng tiền điện nước nha.",
+      "time": "2026-11-06T19:30:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_8193",
+    "name": "Sếp Kim",
+    "type": "direct",
+    "members": [
+     "Sếp Kim"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7714",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_340",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_3067",
+    "name": "Anh Long",
+    "type": "direct",
+    "members": [
+     "Anh Long"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_944",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_489",
+    "name": "Tài khoản lương",
+    "balance": 35200000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_586",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_9260",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_709",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_352",
+    "name": "Mẹ - Võ Thị Hạnh",
+    "bank": "Nông Thịnh Bank",
+    "account_number": "5100205123456"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_731",
+    "account_id": "acc_489",
+    "amount": 18500000,
+    "note": "Lương tháng 10",
+    "time": "2026-11-05T09:12:00+07:00"
+   },
+   {
+    "id": "tx_516",
+    "account_id": "acc_489",
+    "amount": -1200000,
+    "note": "Tiền điện thoại và internet",
+    "time": "2026-11-03T20:05:00+07:00"
+   },
+   {
+    "id": "tx_289",
+    "account_id": "acc_944",
+    "amount": 5000000,
+    "note": "Chuyển tiết kiệm",
+    "time": "2026-10-28T08:30:00+07:00"
+   }
+  ]
+ }
+}

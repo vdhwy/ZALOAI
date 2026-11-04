@@ -1,0 +1,311 @@
+{
+ "_meta": {
+  "question_id": "train_1363",
+  "current_time": "2026-11-27T21:05:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_900",
+    "title": "đi chơi công viên",
+    "start": "2026-11-28T15:00:00+07:00",
+    "end": "2026-11-28T16:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6023",
+    "title": "khám răng",
+    "start": "2026-11-29T09:30:00+07:00",
+    "end": "2026-11-29T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9453",
+    "title": "họp team",
+    "start": "2026-11-30T14:00:00+07:00",
+    "end": "2026-11-30T15:00:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_215",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09197571627"
+   },
+   {
+    "id": "c_326",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09355472982"
+   },
+   {
+    "id": "c_317",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09416258779"
+   },
+   {
+    "id": "c_3047",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09753609649"
+   },
+   {
+    "id": "c_978",
+    "name": "Lan",
+    "relation": "em gái",
+    "phone": "09981995404"
+   },
+   {
+    "id": "c_287",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09842860209"
+   },
+   {
+    "id": "c_314",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09209035569"
+   },
+   {
+    "id": "c_746",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09809988573"
+   },
+   {
+    "id": "c_2202",
+    "name": "Mr. Hayashi",
+    "relation": "đối tác",
+    "phone": "09267598949"
+   },
+   {
+    "id": "c_960",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09607801102"
+   }
+  ]
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_183",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 650,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_786",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 7200,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_4471",
+    "name": "JetXanh Club",
+    "merchant": "JetXanh",
+    "points": 3100,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_05_1",
+      "name": "Voucher 150.000đ vé nội địa",
+      "cost": 1500,
+      "value": 150000
+     },
+     {
+      "id": "rw_05_2",
+      "name": "Thêm 10kg hành lý ký gửi",
+      "cost": 2500,
+      "value": 250000
+     }
+    ]
+   },
+   {
+    "id": "prog_5520",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 350,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_04_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_04_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_61",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 1200,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_9684",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-15",
+    "used": false
+   }
+  ]
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_284",
+    "contact_id": "c_317",
+    "phone_number": "09416258779",
+    "direction": "incoming",
+    "content": "Chị Trâm ơi, invoice lô hàng đi Osaka em gửi qua email cho chị rồi nha.",
+    "time": "2026-11-27T18:20:00+07:00"
+   },
+   {
+    "id": "msg_93",
+    "contact_id": "c_960",
+    "phone_number": "09607801102",
+    "direction": "incoming",
+    "content": "Tối nay anh về trễ nghe em.",
+    "time": "2026-11-27T17:05:00+07:00"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_52",
+    "time": "2026-11-28T05:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_603",
+    "time": "2026-11-28T06:15:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_7953",
+    "time": "2026-11-28T07:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "Đặt vé JetXanh ra Hà Nội gặp Mr. Hayashi",
+    "time": "2026-11-28T08:00:00+07:00"
+   }
+  ]
+ }
+}

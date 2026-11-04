@@ -1,0 +1,626 @@
+{
+ "_meta": {
+  "question_id": "train_1628",
+  "current_time": "2026-10-14T10:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_705",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09313331351",
+    "email": "minh.ketoan@sonha.example.test"
+   },
+   {
+    "id": "c_955",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09570608308"
+   },
+   {
+    "id": "c_8203",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09590354645"
+   },
+   {
+    "id": "c_905",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09660800818"
+   },
+   {
+    "id": "c_8246",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09522264189",
+    "email": "comai.kimdong@school.example.test"
+   },
+   {
+    "id": "c_863",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09207915441",
+    "email": "anhhung@mail.example.test"
+   },
+   {
+    "id": "c_3243",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09969863954",
+    "email": "bachsuong@mail.example.test"
+   },
+   {
+    "id": "c_367",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09932837012"
+   },
+   {
+    "id": "c_982",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09204658835"
+   },
+   {
+    "id": "c_54",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09426682186"
+   },
+   {
+    "id": "c_419",
+    "name": "Hùng Phát Đạt",
+    "relation": "đối tác",
+    "phone": "09173380526",
+    "email": "hung.ld@phatdat.example.test"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_804",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_852",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_287",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_9352",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   }
+  ],
+  "saved_places": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 29,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-14",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-15",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-16",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 28
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_5915",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_782",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_550",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_839",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_5915",
+    "items": [
+     {
+      "item_id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "quantity": 2,
+      "note": null
+     },
+     {
+      "item_id": "rest_01_m3",
+      "name": "Chả cua",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 125000,
+    "address": "Công ty CP Dược Sơn Hà, 10 Quang Trung, Hà Đông",
+    "payment": "cash",
+    "status": "placed"
+   },
+   {
+    "id": "ord_02",
+    "restaurant_id": "rest_782",
+    "items": [
+     {
+      "item_id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 39000,
+    "address": "Công ty CP Dược Sơn Hà, 10 Quang Trung, Hà Đông",
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_3718",
+    "time": "2026-10-15T07:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_753",
+    "time": "2026-10-15T06:30:00+07:00",
+    "label": "đi làm",
+    "repeat": "daily",
+    "enabled": true
+   },
+   {
+    "id": "alm_5404",
+    "time": "2026-10-15T05:30:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 26022
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 28103
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 173.5
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_444",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-10-18T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_166",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-18T09:30:00+07:00",
+    "priority": "low",
+    "done": true
+   },
+   {
+    "id": "task_9474",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-18T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "due": "2026-10-16T17:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Nộp báo cáo thuế quý ba"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_11",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_900",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_9477",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_495",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_343",
+    "from": "no-reply@muado.example.test",
+    "from_name": "Muado",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Đơn hàng đã giao thành công",
+    "snippet": "Đơn hàng của bạn đã được giao.",
+    "body": "Đơn hàng gồm 2 sản phẩm đã được giao thành công. Đánh giá sản phẩm để nhận xu.",
+    "time": "2026-10-13T10:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_182",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-10-11T18:50:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_597",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-10-11T11:50:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_721",
+    "from": "anhhung@mail.example.test",
+    "from_name": "Anh Hùng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-10-13T02:05:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_2178",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-10-12T18:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-10-14",
+    "prizes": {
+     "special": "188511",
+     "first": "12574",
+     "eighth": "91"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-10-14",
+    "prizes": {
+     "special": "121438",
+     "first": "88898",
+     "eighth": "95"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-10-14",
+    "prizes": {
+     "special": "674082",
+     "first": "77966",
+     "eighth": "63"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-10-14",
+    "prizes": {
+     "special": "105221",
+     "first": "47131",
+     "eighth": "78"
+    }
+   }
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_660",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_160",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-11-11",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_44",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-10-17",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_639",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-10-31",
+    "status": "paused",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_8852",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-10-15",
+    "status": "cancelled",
+    "cycle": "monthly"
+   }
+  ]
+ }
+}

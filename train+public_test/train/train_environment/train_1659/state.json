@@ -1,0 +1,478 @@
+{
+ "_meta": {
+  "question_id": "train_1659",
+  "current_time": "2026-11-19T13:15:00+07:00",
+  "tools": [
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "fuel_price.get_price",
+   "home_automation.create_rule",
+   "home_automation.delete_rule",
+   "home_automation.list_rules",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "phone.call",
+   "phone.recent_calls"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_85",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09687552473"
+   },
+   {
+    "id": "c_5366",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09215806922"
+   },
+   {
+    "id": "c_1356",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09258052438"
+   },
+   {
+    "id": "c_228",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09270044703"
+   },
+   {
+    "id": "c_487",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09863533254"
+   },
+   {
+    "id": "c_116",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09666878842"
+   },
+   {
+    "id": "c_370",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09374668249"
+   },
+   {
+    "id": "c_383",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09918627990"
+   },
+   {
+    "id": "c_838",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09731112194"
+   }
+  ]
+ },
+ "phone": {
+  "calls": [
+   {
+    "id": "call_317",
+    "contact_id": "c_1356",
+    "phone_number": "09258052438",
+    "status": "missed",
+    "time": "2026-11-19T07:40:00+07:00"
+   },
+   {
+    "id": "call_02",
+    "contact_id": "c_487",
+    "phone_number": "09863533254",
+    "status": "dialing"
+   },
+   {
+    "id": "call_03",
+    "contact_id": "c_1356",
+    "phone_number": "09258052438",
+    "status": "dialing"
+   }
+  ]
+ },
+ "home_automation": {
+  "rules": [
+   {
+    "id": "rule_794",
+    "device_id": "light_bedroom",
+    "action": "on",
+    "time": "06:00",
+    "title": "Bật đèn phòng ngủ buổi sáng",
+    "enabled": false
+   },
+   {
+    "id": "rule_924",
+    "device_id": "ac_bedroom",
+    "action": "on",
+    "time": "21:30",
+    "title": "Bật điều hoà phòng ngủ trước giờ ngủ",
+    "enabled": true
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_710",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-22T18:30:00+07:00",
+    "end": "2026-11-22T20:30:00+07:00",
+    "location": "Nhà hàng Sen Hồ Tây",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_147",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-20T10:00:00+07:00",
+    "end": "2026-11-20T11:00:00+07:00",
+    "location": "Quán cà phê Mộc, Cầu Giấy",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_03",
+    "status": "confirmed",
+    "title": "Học nhóm với Trang",
+    "start": "2026-11-20T15:00:00+07:00",
+    "end": "2026-11-20T16:00:00+07:00",
+    "location": "thư viện trường"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_809",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_784",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_2123",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_2858",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_8562",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_299",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_7889",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_27",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_748",
+    "name": "Phơi quần áo",
+    "assignee": "Em Linh",
+    "done": false
+   },
+   {
+    "id": "chore_565",
+    "name": "Tưới cây",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_804",
+    "name": "Nấu cơm tối",
+    "assignee": "Em Linh",
+    "done": false
+   },
+   {
+    "id": "chore_638",
+    "name": "Giặt quần áo",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_5094",
+    "name": "Đi chợ",
+    "assignee": null,
+    "done": false
+   }
+  ],
+  "members": [
+   "Em Linh",
+   "Bé Na",
+   "Tuấn"
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_8908",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_811",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_7446",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_533",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_6127",
+    "name": "Sydney Grill",
+    "tags": [
+     "burger",
+     "gà rán",
+     "combo"
+    ],
+    "rating": 4.4,
+    "menu": [
+     {
+      "id": "rest_6127_m1",
+      "name": "Combo burger gà",
+      "price": 89000
+     },
+     {
+      "id": "rest_6127_m2",
+      "name": "Combo burger bò",
+      "price": 99000
+     },
+     {
+      "id": "rest_6127_m3",
+      "name": "Khoai tây chiên",
+      "price": 30000
+     }
+    ]
+   },
+   {
+    "id": "rest_2240",
+    "name": "Sydney Bakery",
+    "tags": [
+     "bánh mì",
+     "bánh ngọt"
+    ],
+    "rating": 4.3,
+    "menu": [
+     {
+      "id": "rest_2240_m1",
+      "name": "Bánh mì bơ tỏi",
+      "price": 25000
+     },
+     {
+      "id": "rest_2240_m2",
+      "name": "Combo bánh sừng bò và cà phê",
+      "price": 55000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_4980",
+    "restaurant_id": "rest_811",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 50000,
+    "address": "KTX Mỹ Đình, Nam Từ Liêm, Hà Nội",
+    "payment": "cash",
+    "status": "delivered"
+   },
+   {
+    "id": "ord_5512",
+    "restaurant_id": "rest_6127",
+    "items": [
+     {
+      "item_id": "rest_6127_m1",
+      "name": "Combo burger gà",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 89000,
+    "address": "KTX Mỹ Đình, Nam Từ Liêm, Hà Nội",
+    "payment": "ewallet",
+    "status": "placed"
+   },
+   {
+    "id": "ord_5530",
+    "restaurant_id": "rest_6127",
+    "items": [
+     {
+      "item_id": "rest_6127_m2",
+      "name": "Combo burger bò",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 198000,
+    "address": "Đại học Ngoại thương, 91 Chùa Láng, Hà Nội",
+    "payment": "ewallet",
+    "status": "placed"
+   },
+   {
+    "id": "ord_5547",
+    "restaurant_id": "rest_2240",
+    "items": [
+     {
+      "item_id": "rest_2240_m2",
+      "name": "Combo bánh sừng bò và cà phê",
+      "quantity": 2,
+      "note": null
+     }
+    ],
+    "total": 110000,
+    "address": "Đại học Ngoại thương, 91 Chùa Láng, Hà Nội",
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 24100
+   },
+   {
+    "type": "e5",
+    "price": 22900
+   },
+   {
+    "type": "diesel",
+    "price": 21500
+   }
+  ]
+ }
+}

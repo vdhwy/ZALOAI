@@ -1,0 +1,228 @@
+{
+ "_meta": {
+  "question_id": "train_1187",
+  "current_time": "2026-10-23T16:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_955",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-11-17",
+    "status": "paused",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_914",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-10",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_435",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-14",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_821",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-10-31",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "robot_vacuum": {
+  "battery": 45,
+  "status": "docked",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_990",
+    "name": "phòng khách",
+    "area_m2": 15
+   },
+   {
+    "id": "room_8616",
+    "name": "phòng ngủ",
+    "area_m2": 25
+   },
+   {
+    "id": "room_936",
+    "name": "bếp",
+    "area_m2": 8
+   },
+   {
+    "id": "room_661",
+    "name": "phòng ăn",
+    "area_m2": 10
+   }
+  ],
+  "current_job": null
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_419",
+    "tracking_id": "MDXVN157204474",
+    "carrier": "MDX Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "out_for_delivery",
+    "eta": "2026-10-23T17:00:00+07:00"
+   },
+   {
+    "id": "shp_468",
+    "tracking_id": "GST118054183",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Bộ nồi inox Sunhouse",
+    "status": "delivered",
+    "eta": "2026-10-22T14:00:00+07:00"
+   },
+   {
+    "id": "shp_735",
+    "tracking_id": "STP405207977",
+    "carrier": "SaoTel Post",
+    "name": "Giày thể thao",
+    "status": "in_transit",
+    "eta": "2026-10-26T14:00:00+07:00"
+   },
+   {
+    "id": "shp_99",
+    "tracking_id": "EV331264455",
+    "carrier": "VNPost",
+    "name": "Hộp quà Trung thu",
+    "status": "in_transit",
+    "eta": "2026-10-26T10:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_164",
+    "time": "2026-10-24T07:30:00+07:00",
+    "label": "họp sớm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ }
+}

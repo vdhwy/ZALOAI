@@ -1,0 +1,504 @@
+{
+ "_meta": {
+  "question_id": "train_1075",
+  "current_time": "2026-12-01T08:30:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_122",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_5968",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_6956",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_977",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_199",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_340",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_696",
+    "name": "Tưới cây",
+    "assignee": null,
+    "done": false
+   },
+   {
+    "id": "chore_717",
+    "name": "Phơi quần áo",
+    "assignee": "Bố",
+    "done": true
+   },
+   {
+    "id": "chore_236",
+    "name": "Lau nhà",
+    "assignee": "Bố",
+    "done": false
+   }
+  ],
+  "members": [
+   "Bé Ngọc",
+   "Bà nội",
+   "Bố"
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_7366",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_558",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_382",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_3409",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_245",
+    "show_id": "show_558",
+    "title": "Số 8: Vì sao bầu trời màu xanh",
+    "number": 8,
+    "duration_min": 18,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_135",
+    "show_id": "show_7366",
+    "title": "Số 11: Nhà giả kim - phần 1",
+    "number": 11,
+    "duration_min": 18,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_149",
+    "show_id": "show_558",
+    "title": "Số 9: Giấc ngủ và trí nhớ",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_4641",
+    "show_id": "show_382",
+    "title": "Số 11: Lập quỹ khẩn cấp",
+    "number": 11,
+    "duration_min": 45,
+    "published": "2026-11-10"
+   },
+   {
+    "id": "ep_1493",
+    "show_id": "show_3409",
+    "title": "Số 12: Nghề diễn và những áp lực",
+    "number": 12,
+    "duration_min": 45,
+    "published": "2026-11-24"
+   },
+   {
+    "id": "ep_3578",
+    "show_id": "show_558",
+    "title": "Số 10: Lỗ đen là gì",
+    "number": 10,
+    "duration_min": 25,
+    "published": "2026-11-24"
+   },
+   {
+    "id": "ep_4406",
+    "show_id": "show_382",
+    "title": "Số 12: Gửi tiết kiệm hay mua vàng",
+    "number": 12,
+    "duration_min": 45,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_35",
+    "show_id": "show_382",
+    "title": "Số 13: Quản lý chi tiêu gia đình",
+    "number": 13,
+    "duration_min": 18,
+    "published": "2026-11-24"
+   },
+   {
+    "id": "ep_564",
+    "show_id": "show_3409",
+    "title": "Số 11: Sống chậm giữa thành phố",
+    "number": 11,
+    "duration_min": 32,
+    "published": "2026-11-17"
+   },
+   {
+    "id": "ep_859",
+    "show_id": "show_7366",
+    "title": "Số 12: Nhà giả kim - phần 2",
+    "number": 12,
+    "duration_min": 32,
+    "published": "2026-11-24"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_735",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_588",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_644",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_157",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_558"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_373",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_999",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_247",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_20",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_684",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "medication": {
+  "schedules": [],
+  "logs": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_495",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_1361",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_5815",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-12-01",
+    "to": "2026-12-01",
+    "kwh": 7.4,
+    "cost": 21500,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.3
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.5
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-25",
+    "to": "2026-12-01",
+    "kwh": 65.4,
+    "cost": 189700,
+    "days": [
+     {
+      "date": "2026-11-25",
+      "kwh": 9.4
+     },
+     {
+      "date": "2026-11-26",
+      "kwh": 12.8
+     },
+     {
+      "date": "2026-11-27",
+      "kwh": 7.0
+     },
+     {
+      "date": "2026-11-28",
+      "kwh": 9.2
+     },
+     {
+      "date": "2026-11-29",
+      "kwh": 9.3
+     },
+     {
+      "date": "2026-11-30",
+      "kwh": 10.3
+     },
+     {
+      "date": "2026-12-01",
+      "kwh": 7.4
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-12-01",
+    "to": "2026-12-01",
+    "kwh": 7.4,
+    "cost": 21500
+   }
+  },
+  "alert_threshold_kwh": 300
+ }
+}

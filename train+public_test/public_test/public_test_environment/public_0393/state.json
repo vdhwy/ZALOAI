@@ -1,0 +1,354 @@
+{
+ "_meta": {
+  "question_id": "public_0393",
+  "current_time": "2026-12-05T08:30:00+07:00",
+  "tools": [
+   "phone.call",
+   "phone.recent_calls",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_3052",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-06T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_630",
+    "title": "Dọn kho đồ cũ",
+    "due": "2026-12-06T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_56",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-12-11T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_3800",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-12-07",
+    "depart": "21:00",
+    "arrive": "07:00",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_156",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-12",
+    "depart": "19:00",
+    "arrive": "00:00",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_313",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-12",
+    "depart": "21:00",
+    "arrive": "02:30",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_148",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-12",
+    "depart": "08:00",
+    "arrive": "11:00",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_446",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-12-07",
+    "depart": "19:00",
+    "arrive": "02:00",
+    "price": 320000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_630",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-12-12",
+    "depart": "13:00",
+    "arrive": "20:00",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_8473",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-12-07",
+    "depart": "08:00",
+    "arrive": "10:30",
+    "price": 320000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_853",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-12-07",
+    "depart": "19:00",
+    "arrive": "22:00",
+    "price": 680000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_5129",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hải Phòng",
+    "destination": "Hà Nội",
+    "date": "2026-12-08",
+    "depart": "15:30",
+    "arrive": "18:00",
+    "price": 320000,
+    "seats_left": 12
+   },
+   {
+    "id": "trip_2716",
+    "type": "train",
+    "operator": "Tàu HP2",
+    "origin": "Hải Phòng",
+    "destination": "Hà Nội",
+    "date": "2026-12-08",
+    "depart": "18:40",
+    "arrive": "21:10",
+    "price": 180000,
+    "seats_left": 40
+   },
+   {
+    "id": "trip_5174",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hải Phòng",
+    "destination": "Hà Nội",
+    "date": "2026-12-10",
+    "depart": "15:30",
+    "arrive": "18:00",
+    "price": 320000,
+    "seats_left": 11
+   },
+   {
+    "id": "trip_5162",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hải Phòng",
+    "destination": "Hà Nội",
+    "date": "2026-12-10",
+    "depart": "07:00",
+    "arrive": "09:30",
+    "price": 320000,
+    "seats_left": 20
+   },
+   {
+    "id": "trip_2731",
+    "type": "train",
+    "operator": "Tàu HP2",
+    "origin": "Hải Phòng",
+    "destination": "Hà Nội",
+    "date": "2026-12-10",
+    "depart": "18:40",
+    "arrive": "21:10",
+    "price": 180000,
+    "seats_left": 35
+   },
+   {
+    "id": "trip_5140",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hải Phòng",
+    "destination": "Hà Nội",
+    "date": "2026-12-09",
+    "depart": "15:30",
+    "arrive": "18:00",
+    "price": 320000,
+    "seats_left": 9
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_271",
+    "trip_id": "trip_8473",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-12-07",
+    "depart": "08:00",
+    "arrive": "10:30",
+    "seats": 1,
+    "total": 320000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_64",
+    "trip_id": "trip_5129",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hải Phòng",
+    "destination": "Hà Nội",
+    "date": "2026-12-08",
+    "depart": "15:30",
+    "arrive": "18:00",
+    "seats": 1,
+    "total": 320000,
+    "status": "confirmed"
+   }
+  ]
+ }
+}

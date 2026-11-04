@@ -1,0 +1,349 @@
+{
+ "_meta": {
+  "question_id": "train_1295",
+  "current_time": "2026-11-14T22:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "fuel_price.get_price",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set"
+  ]
+ },
+ "fuel_price": {
+  "prices": [
+   {
+    "type": "ron95",
+    "price": 22200
+   },
+   {
+    "type": "e5",
+    "price": 21000
+   },
+   {
+    "type": "diesel",
+    "price": 19600
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_413",
+    "name": "Xe đạp thường 105",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_461",
+    "name": "Xe đạp thể thao 106",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_841",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Láng Hạ",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_388",
+    "name": "Xe đạp thường 101",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": false,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_807",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_7992",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Công viên Thống Nhất",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_277",
+    "time": "2026-11-15T06:00:00+07:00",
+    "label": "tập thể dục",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_539",
+    "name": "táo",
+    "quantity": 4,
+    "checked": false
+   },
+   {
+    "id": "item_3141",
+    "name": "rau muống",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_862",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": true
+   },
+   {
+    "id": "item_6606",
+    "name": "nước mắm",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_46",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_7052",
+    "name": "Dọn nhà vệ sinh",
+    "assignee": "Tuấn",
+    "done": true
+   },
+   {
+    "id": "chore_7346",
+    "name": "Giặt quần áo",
+    "assignee": "Bà nội",
+    "done": false
+   },
+   {
+    "id": "chore_8946",
+    "name": "Tưới cây",
+    "assignee": "Bà nội",
+    "done": false
+   },
+   {
+    "id": "chore_450",
+    "name": "Phơi quần áo",
+    "assignee": "Bà nội",
+    "done": false
+   },
+   {
+    "id": "chore_217",
+    "name": "Đổ rác",
+    "assignee": "Bà nội",
+    "done": false
+   }
+  ],
+  "members": [
+   "Chú Bảy",
+   "Tuấn",
+   "Bà nội",
+   "Mẹ"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_685",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09926201021"
+   },
+   {
+    "id": "c_18",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09299950081"
+   },
+   {
+    "id": "c_3585",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09778982460"
+   },
+   {
+    "id": "c_700",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09570158296"
+   },
+   {
+    "id": "c_8986",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09658815394"
+   },
+   {
+    "id": "c_21",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09153435022"
+   },
+   {
+    "id": "c_318",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09737022819"
+   },
+   {
+    "id": "c_555",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09381169063"
+   },
+   {
+    "id": "c_391",
+    "name": "Thằng Tí",
+    "relation": "con trai",
+    "phone": "09392218857"
+   },
+   {
+    "id": "c_581",
+    "name": "Anh Mười",
+    "relation": "mối lấy hàng",
+    "phone": "09735266378"
+   },
+   {
+    "id": "c_285",
+    "name": "Vợ Hồng",
+    "relation": "vợ",
+    "phone": "09752665213"
+   }
+  ]
+ }
+}

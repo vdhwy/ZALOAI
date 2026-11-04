@@ -1,0 +1,456 @@
+{
+ "_meta": {
+  "question_id": "public_0643",
+  "current_time": "2026-11-30T16:45:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 25,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-30",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-01",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 31
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-02",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-03",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 33
+   }
+  ]
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "bus_730",
+    "name": "Tuyến 56",
+    "type": "bus",
+    "stops": [
+     "Chợ Lớn",
+     "Nguyễn Huệ",
+     "Bến Thành",
+     "Đại học Giao thông Vận tải"
+    ],
+    "fare": 6000,
+    "duration_min": 50,
+    "headway_min": 15
+   },
+   {
+    "id": "bus_164",
+    "name": "Tuyến 19",
+    "type": "bus",
+    "stops": [
+     "Bến Thành",
+     "Hàng Xanh",
+     "Khu Công nghệ cao",
+     "Đại học Quốc gia"
+    ],
+    "fare": 7000,
+    "duration_min": 60,
+    "headway_min": 12
+   },
+   {
+    "id": "metro_2761",
+    "name": "Metro số 1 Bến Thành - Suối Tiên",
+    "type": "metro",
+    "stops": [
+     "Bến Thành",
+     "Nhà hát Thành phố",
+     "Ba Son",
+     "Thảo Điền",
+     "Rạch Chiếc",
+     "Suối Tiên"
+    ],
+    "fare": 12000,
+    "duration_min": 30,
+    "headway_min": 8
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Bến Thành",
+    "route": "metro_2761",
+    "time": "2026-11-30T17:05:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "metro_2761",
+    "time": "2026-11-30T16:49:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_164",
+    "time": "2026-11-30T16:57:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_164",
+    "time": "2026-11-30T17:09:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_730",
+    "time": "2026-11-30T17:04:00+07:00"
+   },
+   {
+    "stop": "Khu Công nghệ cao",
+    "route": "bus_164",
+    "time": "2026-11-30T17:21:00+07:00"
+   },
+   {
+    "stop": "Bến Thành",
+    "route": "metro_2761",
+    "time": "2026-11-30T16:57:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_730",
+    "time": "2026-11-30T16:49:00+07:00"
+   },
+   {
+    "stop": "Chợ Lớn",
+    "route": "bus_730",
+    "time": "2026-11-30T17:19:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_56",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-05",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_2532",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-05",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_77",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-05",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_433",
+    "origin": "SGN",
+    "destination": "HUI",
+    "date": "2026-12-05",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": [
+   {
+    "id": "bk_317",
+    "flight_id": "fl_2532",
+    "passengers": 1,
+    "seat_class": "economy",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_741",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09455122884"
+   },
+   {
+    "id": "c_3145",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09598831643"
+   },
+   {
+    "id": "c_208",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09455453858"
+   },
+   {
+    "id": "c_7722",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09223597108"
+   },
+   {
+    "id": "c_9052",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09806670398"
+   },
+   {
+    "id": "c_72",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09881983152"
+   },
+   {
+    "id": "c_4674",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09234825687"
+   },
+   {
+    "id": "c_593",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09975369176"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_2912",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_435",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_981",
+    "name": "Lan",
+    "type": "direct",
+    "members": [
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_6098",
+    "name": "Anh Long",
+    "type": "direct",
+    "members": [
+     "Anh Long"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_204",
+    "name": "Sếp Kim",
+    "type": "direct",
+    "members": [
+     "Sếp Kim"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_746",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-02",
+    "depart": "13:00",
+    "arrive": "18:30",
+    "price": 250000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_270",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-02",
+    "depart": "13:00",
+    "arrive": "20:30",
+    "price": 920000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_440",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-02",
+    "depart": "19:00",
+    "arrive": "05:30",
+    "price": 920000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_6672",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-12-02",
+    "depart": "19:00",
+    "arrive": "22:30",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_436",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-12-02",
+    "depart": "08:00",
+    "arrive": "15:00",
+    "price": 320000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_654",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-12-02",
+    "depart": "21:00",
+    "arrive": "02:00",
+    "price": 250000,
+    "seats_left": 2
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_582",
+    "trip_id": "trip_9031",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-12-19",
+    "depart": "22:00",
+    "arrive": "05:00",
+    "seats": 2,
+    "total": 640000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_96",
+    "trip_id": "trip_4417",
+    "type": "train",
+    "operator": "Tàu SE2",
+    "origin": "Huế",
+    "destination": "TP.HCM",
+    "date": "2026-12-07",
+    "depart": "08:10",
+    "arrive": "05:40",
+    "seats": 1,
+    "total": 1150000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ }
+}

@@ -1,0 +1,309 @@
+{
+ "_meta": {
+  "question_id": "train_1132",
+  "current_time": "2026-11-19T07:55:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "library.reserve",
+   "library.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_382",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_817",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_670",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_737",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_3245",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_832",
+    "title": "ăn tối với gia đình",
+    "start": "2026-11-22T08:00:00+07:00",
+    "end": "2026-11-22T09:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_857",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-23T09:00:00+07:00",
+    "link": "https://meet.example.test/pqp-uhrv-cwk",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_705",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-11-20T15:00:00+07:00",
+    "link": "https://meet.example.test/nki-opyp-gvs",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_331",
+    "title": "Daily standup nhóm Backend",
+    "start": "2026-11-19T08:00:00+07:00",
+    "link": "https://meet.example.test/tre-wodk-bnf",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_948",
+    "title": "Phỏng vấn ứng viên Java",
+    "start": "2026-11-19T10:30:00+07:00",
+    "link": "https://meet.example.test/jfa-lcie-yxo",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_1577",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_323",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_512",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_52",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_343",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   }
+  ]
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-19",
+    "to": "2026-11-19",
+    "kwh": 4.5,
+    "cost": 13000,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 2.0
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 0.9
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-13",
+    "to": "2026-11-19",
+    "kwh": 72.6,
+    "cost": 210500,
+    "days": [
+     {
+      "date": "2026-11-13",
+      "kwh": 15.7
+     },
+     {
+      "date": "2026-11-14",
+      "kwh": 7.3
+     },
+     {
+      "date": "2026-11-15",
+      "kwh": 10.5
+     },
+     {
+      "date": "2026-11-16",
+      "kwh": 10.6
+     },
+     {
+      "date": "2026-11-17",
+      "kwh": 8.5
+     },
+     {
+      "date": "2026-11-18",
+      "kwh": 15.5
+     },
+     {
+      "date": "2026-11-19",
+      "kwh": 4.5
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-19",
+    "kwh": 201.2,
+    "cost": 583500
+   }
+  },
+  "alert_threshold_kwh": 400
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_9765",
+    "title": "Sapiens: Lược sử loài người",
+    "author": "Yuval Noah Harari",
+    "available": true
+   },
+   {
+    "id": "book_400",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": true
+   },
+   {
+    "id": "book_1419",
+    "title": "Mắt biếc",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_30",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   }
+  ],
+  "reservations": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_462",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-25",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_561",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-11-22",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_2474",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-12-06",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_35",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-12-07",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_1094",
+    "tracking_id": "GST809842466",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-11-20T10:00:00+07:00"
+   },
+   {
+    "id": "shp_7489",
+    "tracking_id": "JV800399938",
+    "carrier": "JetViệt Express",
+    "name": "Ốp lưng điện thoại",
+    "status": "out_for_delivery",
+    "eta": "2026-11-19T14:00:00+07:00"
+   },
+   {
+    "id": "shp_951",
+    "tracking_id": "MDXVN333365331",
+    "carrier": "MDX Express",
+    "name": "Tai nghe Bluetooth",
+    "status": "delivered",
+    "eta": "2026-11-18T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ }
+}

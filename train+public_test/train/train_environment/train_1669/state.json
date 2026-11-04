@@ -1,0 +1,543 @@
+{
+ "_meta": {
+  "question_id": "train_1669",
+  "current_time": "2026-10-24T19:25:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_292",
+    "title": "họp team",
+    "start": "2026-10-25T10:30:00+07:00",
+    "end": "2026-10-25T11:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_1654",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-25T09:00:00+07:00",
+    "end": "2026-10-25T10:00:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_8508",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-25T19:00:00+07:00",
+    "end": "2026-10-25T20:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_505",
+    "title": "khám răng",
+    "start": "2026-10-26T14:30:00+07:00",
+    "end": "2026-10-26T15:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_8235",
+    "title": "đi chơi công viên",
+    "start": "2026-10-26T19:00:00+07:00",
+    "end": "2026-10-26T20:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_569",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 1200,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_5973",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 12000,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_3762",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-11-01",
+    "used": false
+   },
+   {
+    "id": "vch_539",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-11",
+    "used": false
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_486",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_971",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_977",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_772",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_617",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_383",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_821",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_5290",
+    "title": "Tiếng Nhật N5",
+    "content": "Mục tiêu học đủ 600 phút trước kỳ thi tháng 12"
+   },
+   {
+    "id": "note_1147",
+    "title": "Tiếng Anh giao tiếp",
+    "content": "Luyện nói 15 phút mỗi tối với app"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_683",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09555783372"
+   },
+   {
+    "id": "c_235",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09285690593"
+   },
+   {
+    "id": "c_3275",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09179082118"
+   },
+   {
+    "id": "c_844",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09512089587"
+   },
+   {
+    "id": "c_432",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09944317153"
+   },
+   {
+    "id": "c_6446",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09418353542"
+   },
+   {
+    "id": "c_897",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09435227507"
+   },
+   {
+    "id": "c_204",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09809124632"
+   },
+   {
+    "id": "c_4727",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09552015366"
+   },
+   {
+    "id": "c_4676",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09743615342"
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 120300000,
+    "sell": 122300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 114300000,
+    "sell": 116300000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4254
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_66",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 12,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_164",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_841",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_4046",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 45
+   },
+   {
+    "id": "course_826",
+    "name": "Tiếng Nhật N5",
+    "provider": "Dũng Haru",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 300
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_8815",
+    "name": "Tài khoản thanh toán",
+    "balance": 5800000
+   },
+   {
+    "id": "acc_6193",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_8203",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_44",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_409",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_01",
+    "account_id": "acc_8815",
+    "beneficiary_id": "ben_44",
+    "amount": -1200000,
+    "note": "Tiền trọ tháng 10"
+   },
+   {
+    "id": "tx_02",
+    "account_id": "acc_8815",
+    "beneficiary_id": "ben_8203",
+    "amount": -300000,
+    "note": "Tiền photo tài liệu"
+   },
+   {
+    "id": "tx_03",
+    "account_id": "acc_8815",
+    "beneficiary_id": "ben_409",
+    "amount": -200000,
+    "note": "Tiền ăn bún"
+   }
+  ],
+  "savings": [
+   {
+    "id": "sav_01",
+    "account_id": "acc_8815",
+    "amount": 5000000,
+    "term_months": 6,
+    "status": "active"
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "home",
+  "cameras": [
+   {
+    "id": "cam_6477",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_243",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_7980",
+    "time": "2026-10-23T08:20:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_167",
+    "time": "2026-10-23T02:50:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_172",
+    "time": "2026-10-23T19:35:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_5940",
+    "time": "2026-10-22T21:45:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_792",
+    "time": "2026-10-23T16:35:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,373 @@
+{
+ "_meta": {
+  "question_id": "public_0695",
+  "current_time": "2026-11-26T18:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_726",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09654201670"
+   },
+   {
+    "id": "c_318",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09414531377"
+   },
+   {
+    "id": "c_215",
+    "name": "Huy",
+    "relation": "bạn thân",
+    "phone": "09306438991"
+   },
+   {
+    "id": "c_965",
+    "name": "Chị Hai",
+    "relation": "chị gái",
+    "phone": "09457651388"
+   },
+   {
+    "id": "c_584",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09430222260"
+   },
+   {
+    "id": "c_7607",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09716187122"
+   },
+   {
+    "id": "c_6776",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09494598750"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": [
+   {
+    "id": "rem_01",
+    "repeat": "once",
+    "done": false,
+    "content": "đi lấy áo đồng phục",
+    "time": "2026-11-26T17:00:00+07:00"
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_985",
+    "name": "Thịt ba chỉ heo 500g",
+    "price": 79000,
+    "unit": "khay",
+    "category": "thịt",
+    "in_stock": true
+   },
+   {
+    "id": "gro_226",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_7745",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_509",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_343",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_01",
+    "items": [
+     {
+      "product_id": "gro_226",
+      "name": "Cá hồi phi lê 300g",
+      "price": 165000,
+      "quantity": 1
+     },
+     {
+      "product_id": "gro_343",
+      "name": "Cà chua Đà Lạt 1kg",
+      "price": 32000,
+      "quantity": 2
+     }
+    ],
+    "total": 229000,
+    "status": "placed"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_689",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_479",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_220",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_180",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_796",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_9696",
+    "time": "2026-11-27T06:15:00+07:00",
+    "label": "học tiết một",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_460",
+    "time": "2026-11-27T06:00:00+07:00",
+    "label": "chạy bộ",
+    "repeat": "daily",
+    "enabled": false
+   },
+   {
+    "id": "alm_420",
+    "time": "2026-11-27T05:30:00+07:00",
+    "label": "đi làm thêm",
+    "repeat": "once",
+    "enabled": true
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_484",
+    "name": "giấy vệ sinh",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_229",
+    "name": "sữa tươi không đường",
+    "quantity": 2,
+    "checked": false
+   },
+   {
+    "id": "item_917",
+    "name": "khăn len tặng Sarah Kim",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_352",
+    "name": "quà sinh nhật Sarah Lim",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_640",
+    "name": "mì gói",
+    "quantity": 10,
+    "checked": true
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   }
+  ],
+  "rides": []
+ }
+}

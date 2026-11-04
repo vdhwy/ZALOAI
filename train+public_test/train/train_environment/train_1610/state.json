@@ -1,0 +1,361 @@
+{
+ "_meta": {
+  "question_id": "train_1610",
+  "current_time": "2026-11-02T12:35:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "gold_price.get_price",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "shopping_list.add",
+   "shopping_list.check",
+   "shopping_list.get",
+   "shopping_list.remove",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_9635",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_850",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_688",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_465",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_64",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   }
+  ],
+  "saved_places": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_8403",
+    "name": "Gym Sunrise Fitness",
+    "price": 1200000,
+    "next_billing": "2026-11-05",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_853",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-11-11",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_345",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-26",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_137",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-11-13",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_240",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-11-19",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "shopping_list": {
+  "items": [
+   {
+    "id": "item_933",
+    "name": "hành tây",
+    "quantity": 3,
+    "checked": false
+   },
+   {
+    "id": "item_657",
+    "name": "nước giặt",
+    "quantity": 1,
+    "checked": false
+   },
+   {
+    "id": "item_164",
+    "name": "trứng gà",
+    "quantity": 10,
+    "checked": true
+   },
+   {
+    "id": "item_04",
+    "checked": false,
+    "name": "sữa tươi",
+    "quantity": 2
+   }
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_808",
+    "name": "Xe đạp thể thao 101",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_447",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Bến Thành",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_737",
+    "name": "Xe đạp điện 102",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_778",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": [
+   {
+    "id": "brs_01",
+    "bike_id": "bike_447",
+    "station": "Trạm Bến Thành",
+    "status": "reserved"
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "speed": 3
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "cool",
+     "temperature": 26
+    }
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 127000000,
+    "sell": 129000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 121000000,
+    "sell": 123000000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4117
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_359",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 854000,
+    "due_date": "2026-11-07",
+    "paid": false
+   },
+   {
+    "id": "bill_678",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 153000,
+    "due_date": "2026-11-06",
+    "paid": false
+   },
+   {
+    "id": "bill_2017",
+    "type": "phone",
+    "provider": "SaoTel",
+    "amount": 201000,
+    "due_date": "2026-11-05",
+    "paid": false
+   },
+   {
+    "id": "bill_496",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 206000,
+    "due_date": "2026-11-09",
+    "paid": false
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ }
+}

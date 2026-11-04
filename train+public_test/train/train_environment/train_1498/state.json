@@ -1,0 +1,272 @@
+{
+ "_meta": {
+  "question_id": "train_1498",
+  "current_time": "2026-10-21T14:40:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_896",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_17",
+    "name": "Xe đạp thể thao 104",
+    "station": "Trạm Bến Thành",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_1500",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_276",
+    "name": "Xe đạp thể thao 106",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_8395",
+    "name": "Xe đạp thường 102",
+    "station": "Trạm Công viên Tao Đàn",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_5507",
+    "name": "Xe đạp điện 105",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": true,
+    "price_per_hour": 25000
+   }
+  ],
+  "reservations": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_3199",
+    "name": "Vy",
+    "relation": "bạn gái",
+    "phone": "09788613541"
+   },
+   {
+    "id": "c_19",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09812286523"
+   },
+   {
+    "id": "c_394",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09847608990"
+   },
+   {
+    "id": "c_25",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09697869790"
+   },
+   {
+    "id": "c_7628",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09878578035"
+   },
+   {
+    "id": "c_668",
+    "name": "Sếp Trân",
+    "relation": "sếp",
+    "phone": "09901614156"
+   },
+   {
+    "id": "c_2582",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09767864029"
+   },
+   {
+    "id": "c_805",
+    "name": "Má",
+    "relation": "mẹ",
+    "phone": "09461729851"
+   },
+   {
+    "id": "c_4928",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09106929691"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25651
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27703
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.0
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-18": {
+    "steps": 2845,
+    "calories": 113,
+    "distance_km": 2.0
+   },
+   "2026-10-19": {
+    "steps": 4526,
+    "calories": 181,
+    "distance_km": 3.3
+   },
+   "2026-10-20": {
+    "steps": 10927,
+    "calories": 437,
+    "distance_km": 7.9
+   },
+   "2026-10-21": {
+    "steps": 2789,
+    "calories": 111,
+    "distance_km": 2.0
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_132",
+    "type": "walking",
+    "minutes": 45,
+    "time": "2026-10-20T06:00:00+07:00"
+   },
+   {
+    "id": "wo_8698",
+    "type": "gym",
+    "minutes": 30,
+    "time": "2026-10-19T18:00:00+07:00"
+   },
+   {
+    "id": "wo_466",
+    "type": "gym",
+    "minutes": 20,
+    "time": "2026-10-17T17:30:00+07:00"
+   }
+  ]
+ },
+ "calculator": {},
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 32,
+    "condition": "nhiều mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-21",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-23",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-10-24",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 34
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ }
+}

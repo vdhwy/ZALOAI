@@ -1,0 +1,444 @@
+{
+ "_meta": {
+  "question_id": "public_0513",
+  "current_time": "2026-11-23T13:15:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "event_tickets.book",
+   "event_tickets.search",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_791",
+    "name": "Chung kết bóng đá V-League",
+    "category": "thể thao",
+    "date": "2026-12-05",
+    "time": "19:30",
+    "venue": "Sân vận động Thống Nhất",
+    "price": 200000,
+    "available": 30
+   },
+   {
+    "id": "event_383",
+    "name": "Đêm nhạc Jazz cuối tuần",
+    "category": "âm nhạc",
+    "date": "2026-12-02",
+    "time": "19:30",
+    "venue": "Nhà hát Thành phố",
+    "price": 450000,
+    "available": 30
+   },
+   {
+    "id": "event_4528",
+    "name": "Liên hoan phim ngắn",
+    "category": "điện ảnh",
+    "date": "2026-12-03",
+    "time": "20:00",
+    "venue": "Saigon Opera House",
+    "price": 120000,
+    "available": 80
+   },
+   {
+    "id": "event_614",
+    "name": "Stand-up comedy Sài Gòn Cười",
+    "category": "hài kịch",
+    "date": "2026-12-02",
+    "time": "20:00",
+    "venue": "Nhà hát Thành phố",
+    "price": 300000,
+    "available": 80
+   },
+   {
+    "id": "event_168",
+    "name": "Triển lãm Ánh sáng Đô thị",
+    "category": "triển lãm",
+    "date": "2026-12-06",
+    "time": "19:30",
+    "venue": "Saigon Opera House",
+    "price": 80000,
+    "available": 80
+   }
+  ],
+  "bookings": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_1935",
+    "name": "Anh Sáu",
+    "type": "direct",
+    "members": [
+     "Anh Sáu"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_909",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_677",
+    "name": "Sếp Dũng",
+    "type": "direct",
+    "members": [
+     "Sếp Dũng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_2365",
+    "name": "Thằng Bi",
+    "type": "direct",
+    "members": [
+     "Thằng Bi"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_118",
+    "name": "Vợ",
+    "type": "direct",
+    "members": [
+     "Vợ"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_32",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_981",
+    "name": "Cá hồi phi lê 300g",
+    "price": 165000,
+    "unit": "khay",
+    "category": "hải sản",
+    "in_stock": true
+   },
+   {
+    "id": "gro_607",
+    "name": "Sữa tươi Mộc Xanh không đường 1 lít",
+    "price": 35000,
+    "unit": "hộp",
+    "category": "sữa",
+    "in_stock": true
+   },
+   {
+    "id": "gro_831",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_9450",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_9879",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": []
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 500,
+    "avg_price": 116450,
+    "price": 127850
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 1000,
+    "avg_price": 32150,
+    "price": 34150
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 300,
+    "avg_price": 62300,
+    "price": 58900
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 127850,
+    "change_pct": 1.3
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1645,
+    "change_pct": 1.0
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 34150,
+    "change_pct": -3.1
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 58900,
+    "change_pct": -2.8
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 63950,
+    "change_pct": 0.8
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 27600,
+    "change_pct": 2.9
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_839",
+    "name": "Cây xăng Vinaco Lê Lợi",
+    "address": "5 Lê Lợi, Quận 1, TP.HCM",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_2548",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_5319",
+    "name": "Phở Hoà Pasteur",
+    "address": "260C Pasteur, Quận 3, TP.HCM",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_132",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_4707",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_571",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_5778",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_318",
+    "title": "Nguyên tắc chơi chứng khoán",
+    "content": "Mã nào đang lời thì đặt cảnh báo khi giá rớt về giá vốn. Mã đang lỗ thì để yên, không đặt gì."
+   },
+   {
+    "id": "note_174",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_7055",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_293",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09760998783"
+   },
+   {
+    "id": "c_9674",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09649162816"
+   },
+   {
+    "id": "c_193",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09473692853"
+   },
+   {
+    "id": "c_4947",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09898303000"
+   },
+   {
+    "id": "c_5341",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09706416823"
+   },
+   {
+    "id": "c_783",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09790331080"
+   },
+   {
+    "id": "c_556",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09868466760"
+   },
+   {
+    "id": "c_238",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09641210621"
+   },
+   {
+    "id": "c_504",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09695987632"
+   },
+   {
+    "id": "c_465",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09723959879"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 32,
+    "condition": "có mây"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-23",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-24",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-25",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-26",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 30
+   }
+  ]
+ }
+}

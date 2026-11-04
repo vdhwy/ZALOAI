@@ -1,0 +1,586 @@
+{
+ "_meta": {
+  "question_id": "train_1510",
+  "current_time": "2026-10-13T15:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_446",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09132252598"
+   },
+   {
+    "id": "c_3386",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09361712829"
+   },
+   {
+    "id": "c_180",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09473670208"
+   },
+   {
+    "id": "c_11",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09598636477"
+   },
+   {
+    "id": "c_755",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09554633498"
+   },
+   {
+    "id": "c_832",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09238788960"
+   },
+   {
+    "id": "c_431",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09734741342"
+   },
+   {
+    "id": "c_3806",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09658925060"
+   },
+   {
+    "id": "c_3691",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09899722860"
+   },
+   {
+    "id": "c_940",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09177379531"
+   },
+   {
+    "id": "c_3013",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09840532641"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_7304",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_6997",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_256",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_175",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_445",
+    "time": "2026-10-14T08:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   },
+   {
+    "id": "alm_570",
+    "time": "2026-10-14T07:00:00+07:00",
+    "label": "đi tập gym",
+    "repeat": "once",
+    "enabled": true
+   },
+   {
+    "id": "alm_454",
+    "time": "2026-10-14T06:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_1117",
+    "name": "Mì Quảng Bà Mùi",
+    "address": "19 Trần Bình Trọng, Hải Châu, Đà Nẵng",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_6642",
+    "name": "Ký Ức Cà Phê Bạch Đằng",
+    "address": "98 Bạch Đằng, Hải Châu, Đà Nẵng",
+    "category": "cafe"
+   },
+   {
+    "id": "place_9233",
+    "name": "Lotus Mart Đà Nẵng",
+    "address": "6 Nại Nam, Hải Châu, Đà Nẵng",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_667",
+    "name": "Nhà thuốc Minh Khang Lê Duẩn",
+    "address": "210 Lê Duẩn, Hải Châu, Đà Nẵng",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_358",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-10-16T10:30:00+07:00",
+    "end": "2026-10-16T11:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_355",
+    "title": "ăn tối với gia đình",
+    "start": "2026-10-15T15:00:00+07:00",
+    "end": "2026-10-15T16:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_2247",
+    "title": "đá bóng",
+    "start": "2026-10-14T08:00:00+07:00",
+    "end": "2026-10-14T09:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_461",
+    "title": "đi chơi công viên",
+    "start": "2026-10-14T15:00:00+07:00",
+    "end": "2026-10-14T16:00:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_59",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_6169",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_5119",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_1591",
+    "show_id": "show_59",
+    "title": "Số 19: Đi xe đạp đi làm",
+    "number": 19,
+    "duration_min": 32,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_2543",
+    "show_id": "show_5119",
+    "title": "Số 5: Vì sao bầu trời màu xanh",
+    "number": 5,
+    "duration_min": 18,
+    "published": "2026-09-22"
+   },
+   {
+    "id": "ep_7143",
+    "show_id": "show_5119",
+    "title": "Số 6: Giấc ngủ và trí nhớ",
+    "number": 6,
+    "duration_min": 25,
+    "published": "2026-09-29"
+   },
+   {
+    "id": "ep_885",
+    "show_id": "show_6169",
+    "title": "Số 21: Nhà giả kim - phần 2",
+    "number": 21,
+    "duration_min": 25,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_175",
+    "show_id": "show_59",
+    "title": "Số 17: Rác thải nhựa ở đô thị",
+    "number": 17,
+    "duration_min": 25,
+    "published": "2026-09-22"
+   },
+   {
+    "id": "ep_339",
+    "show_id": "show_6169",
+    "title": "Số 20: Nhà giả kim - phần 1",
+    "number": 20,
+    "duration_min": 32,
+    "published": "2026-09-29"
+   },
+   {
+    "id": "ep_290",
+    "show_id": "show_5119",
+    "title": "Số 7: Lỗ đen là gì",
+    "number": 7,
+    "duration_min": 18,
+    "published": "2026-10-06"
+   },
+   {
+    "id": "ep_1905",
+    "show_id": "show_59",
+    "title": "Số 18: Trồng cây trên sân thượng",
+    "number": 18,
+    "duration_min": 45,
+    "published": "2026-09-29"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_599",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_606",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_546",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_1244",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_412",
+    "name": "Thuốc huyết áp",
+    "times": [
+     "07:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_87",
+    "name": "Viên sắt",
+    "times": [
+     "12:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_256",
+    "name": "Thuốc dạ dày",
+    "times": [
+     "06:30",
+     "18:30"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_903",
+    "name": "Dầu cá Alaska",
+    "times": [
+     "12:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_6340",
+    "name": "Thuốc bổ gan",
+    "times": [
+     "12:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_77",
+    "name": "Canxi",
+    "times": [
+     "20:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_5518",
+    "name": "Tảo Hawaii",
+    "times": [
+     "12:00"
+    ],
+    "days": "daily"
+   }
+  ],
+  "logs": []
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_4252",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_684",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_648",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_368",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ }
+}

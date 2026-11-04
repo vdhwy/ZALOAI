@@ -1,0 +1,400 @@
+{
+ "_meta": {
+  "question_id": "train_1128",
+  "current_time": "2026-10-27T15:40:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_41",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09399728074"
+   },
+   {
+    "id": "c_989",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09879886465"
+   },
+   {
+    "id": "c_55",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09217312386"
+   },
+   {
+    "id": "c_890",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09349217050"
+   },
+   {
+    "id": "c_316",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09542039046"
+   },
+   {
+    "id": "c_844",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09751764278"
+   },
+   {
+    "id": "c_960",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09563117653"
+   },
+   {
+    "id": "c_821",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09797425799"
+   },
+   {
+    "id": "c_5477",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09770632420"
+   },
+   {
+    "id": "c_978",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09847675477"
+   },
+   {
+    "id": "c_8680",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09566544571"
+   }
+  ]
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_246",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 60
+   },
+   {
+    "id": "lock_589",
+    "name": "cửa ban công",
+    "location": "tầng 2",
+    "locked": false,
+    "battery": 80
+   },
+   {
+    "id": "lock_505",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": false,
+    "battery": 60
+   },
+   {
+    "id": "lock_1093",
+    "name": "cửa kho",
+    "location": "sân sau",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_41",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": false,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_7023",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-10-30T20:00:00+07:00",
+    "priority": "normal",
+    "done": true
+   },
+   {
+    "id": "task_888",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-01T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_8679",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-31T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   }
+  ]
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 80
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 40
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "cool",
+     "temperature": 26
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 80
+    }
+   }
+  ]
+ },
+ "learning": {
+  "courses": [
+   {
+    "id": "course_6262",
+    "name": "Tiếng Anh giao tiếp cơ bản",
+    "provider": "Speako",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_355",
+    "name": "Nhiếp ảnh điện thoại",
+    "provider": "Edura",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 120
+   },
+   {
+    "id": "course_40",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": false,
+    "lessons_total": 20,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_207",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   }
+  ],
+  "lessons": [],
+  "progress": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "programs": [
+   {
+    "id": "prg_4412",
+    "channel": "VTV6",
+    "title": "Bóng đá: Việt Nam - Indonesia (trực tiếp)",
+    "start": "2026-10-27T19:30:00+07:00",
+    "end": "2026-10-27T21:30:00+07:00"
+   },
+   {
+    "id": "prg_4437",
+    "channel": "S+ Sport",
+    "title": "Bóng đá nữ: Việt Nam - Myanmar (trực tiếp)",
+    "start": "2026-10-27T18:00:00+07:00",
+    "end": "2026-10-27T20:00:00+07:00"
+   },
+   {
+    "id": "prg_4451",
+    "channel": "VTV6",
+    "title": "Bóng đá: Việt Nam - Indonesia (phát lại)",
+    "start": "2026-10-28T10:00:00+07:00",
+    "end": "2026-10-28T12:00:00+07:00"
+   },
+   {
+    "id": "prg_4468",
+    "channel": "VTV3",
+    "title": "Phim truyện: Người phán xử",
+    "start": "2026-10-27T20:00:00+07:00",
+    "end": "2026-10-27T21:00:00+07:00"
+   },
+   {
+    "id": "prg_4479",
+    "channel": "HTV7",
+    "title": "Thời sự",
+    "start": "2026-10-27T18:30:00+07:00",
+    "end": "2026-10-27T19:00:00+07:00"
+   }
+  ],
+  "recordings": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-24": {
+    "steps": 5868,
+    "calories": 234,
+    "distance_km": 4.2
+   },
+   "2026-10-25": {
+    "steps": 9666,
+    "calories": 386,
+    "distance_km": 7.0
+   },
+   "2026-10-26": {
+    "steps": 8502,
+    "calories": 340,
+    "distance_km": 6.1
+   },
+   "2026-10-27": {
+    "steps": 4874,
+    "calories": 194,
+    "distance_km": 3.5
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_1823",
+    "type": "cycling",
+    "minutes": 20,
+    "time": "2026-10-25T17:30:00+07:00"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ }
+}

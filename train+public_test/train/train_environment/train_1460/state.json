@@ -1,0 +1,419 @@
+{
+ "_meta": {
+  "question_id": "train_1460",
+  "current_time": "2026-11-16T20:15:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "robot_vacuum.get_status",
+   "robot_vacuum.start",
+   "robot_vacuum.stop",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_426",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09853255265"
+   },
+   {
+    "id": "c_1255",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09362321095"
+   },
+   {
+    "id": "c_174",
+    "name": "Vợ Hà",
+    "relation": "vợ",
+    "phone": "09168501774"
+   },
+   {
+    "id": "c_656",
+    "name": "Emily",
+    "relation": "khách",
+    "phone": "09469684310"
+   },
+   {
+    "id": "c_149",
+    "name": "Lucas",
+    "relation": "khách",
+    "phone": "09155913788"
+   },
+   {
+    "id": "c_760",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09523427664"
+   },
+   {
+    "id": "c_581",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09305244366"
+   },
+   {
+    "id": "c_5480",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09918930122"
+   },
+   {
+    "id": "c_785",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09901274147"
+   },
+   {
+    "id": "c_422",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09276805894"
+   },
+   {
+    "id": "c_916",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09435663792"
+   }
+  ]
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "programs": [
+   {
+    "id": "prog_5160",
+    "channel": "VTV3",
+    "title": "Phim truyện: Mùa hoa gạo",
+    "start": "2026-11-16T20:30:00+07:00",
+    "end": "2026-11-16T21:30:00+07:00"
+   },
+   {
+    "id": "prog_4412",
+    "channel": "S+ Sport",
+    "title": "Bóng đá: Huế FC gặp Đà Nẵng FC",
+    "start": "2026-11-17T18:00:00+07:00",
+    "end": "2026-11-17T19:45:00+07:00"
+   },
+   {
+    "id": "prog_871",
+    "channel": "VTV6",
+    "title": "Bóng đá giao hữu: Việt Nam gặp Thái Lan",
+    "start": "2026-11-17T20:00:00+07:00",
+    "end": "2026-11-17T22:00:00+07:00"
+   },
+   {
+    "id": "prog_2093",
+    "channel": "VTV1",
+    "title": "Thời sự",
+    "start": "2026-11-17T19:00:00+07:00",
+    "end": "2026-11-17T19:45:00+07:00"
+   }
+  ],
+  "recordings": []
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_4136",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-11-24",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_708",
+    "name": "ViTube Premium",
+    "price": 79000,
+    "next_billing": "2026-11-30",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_877",
+    "name": "Melodify Premium",
+    "price": 59000,
+    "next_billing": "2026-11-30",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_615",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_3515",
+    "name": "máy sấy quần áo",
+    "type": "dryer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "delicate"
+    ],
+    "cycle_labels": {
+     "quick": "sấy nhanh",
+     "normal": "sấy thường",
+     "delicate": "đồ mỏng"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_5881",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "eco",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_5598",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_650",
+    "title": "khám răng",
+    "start": "2026-11-17T14:30:00+07:00",
+    "end": "2026-11-17T15:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_70",
+    "title": "đá bóng",
+    "start": "2026-11-17T14:30:00+07:00",
+    "end": "2026-11-17T15:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_902",
+    "title": "họp team",
+    "start": "2026-11-17T15:30:00+07:00",
+    "end": "2026-11-17T16:30:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_3381",
+    "title": "Đón Petra Hansen ở sân bay Phú Bài",
+    "start": "2026-11-17T17:00:00+07:00",
+    "end": "2026-11-17T18:30:00+07:00",
+    "location": "Sân bay Phú Bài",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5127",
+    "title": "Đón Peter Hansen ở ga Huế",
+    "start": "2026-11-17T20:30:00+07:00",
+    "end": "2026-11-17T21:30:00+07:00",
+    "location": "Ga Huế",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 3400000,
+  "transactions": []
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_295",
+    "origin": "HUI",
+    "destination": "SGN",
+    "date": "2026-11-20",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_7973",
+    "origin": "HUI",
+    "destination": "SGN",
+    "date": "2026-11-20",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_6055",
+    "origin": "HUI",
+    "destination": "SGN",
+    "date": "2026-11-20",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_527",
+    "origin": "HUI",
+    "destination": "SGN",
+    "date": "2026-11-20",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "robot_vacuum": {
+  "battery": 100,
+  "status": "cleaning",
+  "mode": "vacuum",
+  "rooms": [
+   {
+    "id": "room_7439",
+    "name": "phòng ngủ",
+    "area_m2": 8
+   },
+   {
+    "id": "room_373",
+    "name": "bếp",
+    "area_m2": 10
+   },
+   {
+    "id": "room_325",
+    "name": "phòng ăn",
+    "area_m2": 18
+   },
+   {
+    "id": "room_408",
+    "name": "phòng khách",
+    "area_m2": 12
+   }
+  ],
+  "current_job": {
+   "rooms": [
+    "phòng ăn"
+   ],
+   "whole_house": false,
+   "mode": "vacuum"
+  }
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_872",
+    "type": "tv",
+    "provider": "S+",
+    "amount": 155000,
+    "due_date": "2026-11-18",
+    "paid": false
+   },
+   {
+    "id": "bill_501",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 846000,
+    "due_date": "2026-11-21",
+    "paid": false
+   }
+  ]
+ }
+}

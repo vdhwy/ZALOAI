@@ -1,0 +1,130 @@
+{
+ "_meta": {
+  "question_id": "train_0598",
+  "current_time": "2026-09-25T09:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_01",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-10-06",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_02",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-10-03",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_03",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-10-11",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_04",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-10-05",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_05",
+    "name": "Nimbus One 100GB",
+    "price": 45000,
+    "next_billing": "2026-10-15",
+    "status": "paused",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_06",
+    "name": "Tạp chí Cuối Tuần bản điện tử",
+    "price": 49000,
+    "next_billing": "2026-10-01",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 847000,
+    "due_date": "2026-10-02",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 219000,
+    "due_date": "2026-09-29",
+    "paid": false
+   },
+   {
+    "id": "bill_03",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 207000,
+    "due_date": "2026-09-30",
+    "paid": false
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_02",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_03",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

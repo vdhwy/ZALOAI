@@ -1,0 +1,524 @@
+{
+ "_meta": {
+  "question_id": "train_1430",
+  "current_time": "2026-10-24T16:20:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "gold_price.get_price",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "medication.add",
+   "medication.list",
+   "medication.log_taken",
+   "medication.remove",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list"
+  ]
+ },
+ "calculator": {},
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_1745",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_602",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_767",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_41",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_760",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 1200,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_6206",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 180,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_253",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-11-09",
+    "used": false
+   },
+   {
+    "id": "vch_410",
+    "merchant": "VivuFood",
+    "name": "Giảm 25% tối đa 40.000đ",
+    "value": 40000,
+    "expires": "2026-11-23",
+    "used": false
+   },
+   {
+    "id": "vch_53",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-10-27",
+    "used": false
+   }
+  ]
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 118900000,
+    "sell": 120900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 112900000,
+    "sell": 114900000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4122
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_9882",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_788",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc"
+   },
+   {
+    "id": "trk_4075",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_107",
+    "title": "Bước qua nhau",
+    "artist": "Vũ."
+   },
+   {
+    "id": "trk_583",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP"
+   },
+   {
+    "id": "trk_4875",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm"
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_202",
+    "name": "Nhạc chill buổi tối"
+   },
+   {
+    "id": "pl_824",
+    "name": "Nhạc tập gym"
+   }
+  ],
+  "now_playing": null
+ },
+ "medication": {
+  "schedules": [
+   {
+    "id": "med_3307",
+    "name": "Viên sắt Brightpath",
+    "times": [
+     "08:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_582",
+    "name": "Vitamin D3 Brightpath",
+    "times": [
+     "07:30"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_4410",
+    "name": "Canxi Brightway",
+    "times": [
+     "12:00"
+    ],
+    "days": "daily"
+   },
+   {
+    "id": "med_91",
+    "name": "Magie B6 Elmstone",
+    "times": [
+     "21:00"
+    ],
+    "days": "weekdays"
+   }
+  ],
+  "logs": []
+ },
+ "fitness": {
+  "activity": {
+   "2026-10-21": {
+    "steps": 2947,
+    "calories": 117,
+    "distance_km": 2.1
+   },
+   "2026-10-22": {
+    "steps": 10721,
+    "calories": 428,
+    "distance_km": 7.7
+   },
+   "2026-10-23": {
+    "steps": 6573,
+    "calories": 262,
+    "distance_km": 4.7
+   },
+   "2026-10-24": {
+    "steps": 1125,
+    "calories": 45,
+    "distance_km": 0.8
+   }
+  },
+  "goal_steps": 10000,
+  "workouts": [
+   {
+    "id": "wo_234",
+    "type": "running",
+    "minutes": 45,
+    "time": "2026-10-22T17:30:00+07:00"
+   },
+   {
+    "id": "wo_782",
+    "type": "cycling",
+    "minutes": 30,
+    "time": "2026-10-21T17:00:00+07:00"
+   },
+   {
+    "id": "wo_393",
+    "type": "gym",
+    "minutes": 45,
+    "time": "2026-10-23T06:30:00+07:00"
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_770",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_339",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_3880",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_790",
+    "show_id": "show_3880",
+    "title": "Số 8: Giấc ngủ và trí nhớ",
+    "number": 8,
+    "duration_min": 18,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_5220",
+    "show_id": "show_3880",
+    "title": "Số 9: Lỗ đen là gì",
+    "number": 9,
+    "duration_min": 18,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_547",
+    "show_id": "show_339",
+    "title": "Số 8: Đi xe đạp đi làm",
+    "number": 8,
+    "duration_min": 25,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_8115",
+    "show_id": "show_3880",
+    "title": "Số 7: Vì sao bầu trời màu xanh",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-03"
+   },
+   {
+    "id": "ep_1979",
+    "show_id": "show_339",
+    "title": "Số 7: Trồng cây trên sân thượng",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_9222",
+    "show_id": "show_770",
+    "title": "Số 11: Lập quỹ khẩn cấp",
+    "number": 11,
+    "duration_min": 18,
+    "published": "2026-10-03"
+   },
+   {
+    "id": "ep_273",
+    "show_id": "show_770",
+    "title": "Số 12: Gửi tiết kiệm hay mua vàng",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_667",
+    "show_id": "show_339",
+    "title": "Số 6: Rác thải nhựa ở đô thị",
+    "number": 6,
+    "duration_min": 45,
+    "published": "2026-10-03"
+   },
+   {
+    "id": "ep_407",
+    "show_id": "show_770",
+    "title": "Số 13: Quản lý chi tiêu gia đình",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-10-17"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_543",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_870",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_193",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_546",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [],
+  "queue": [],
+  "now_playing": null
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_813",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_689",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_1375",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_3064",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_69",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   }
+  ],
+  "saved_places": []
+ }
+}

@@ -1,0 +1,258 @@
+{
+ "_meta": {
+  "question_id": "train_0455",
+  "current_time": "2026-09-24T09:00:00+07:00",
+  "tools": [
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "subscriptions.cancel",
+   "subscriptions.list"
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_01",
+    "name": "Vitech Play gói Max",
+    "price": 99000,
+    "next_billing": "2026-10-22",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_02",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-10-04",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_03",
+    "name": "Zing MP3 VIP",
+    "price": 25000,
+    "next_billing": "2026-10-13",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_04",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-09-26",
+    "status": "paused",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_05",
+    "name": "Podcast Plus",
+    "price": 49000,
+    "next_billing": "2026-10-01",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_01",
+    "type": "electricity",
+    "provider": "EVN",
+    "amount": 849000,
+    "due_date": "2026-09-27",
+    "paid": false
+   },
+   {
+    "id": "bill_02",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 218000,
+    "due_date": "2026-09-29",
+    "paid": false
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_01",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_02",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_03",
+    "name": "Một Ngụm Trà",
+    "host": "Thùy Minh",
+    "category": "trò chuyện"
+   },
+   {
+    "id": "show_04",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_01",
+    "show_id": "show_01",
+    "title": "Số 16: Vì sao bầu trời màu xanh",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-09-03"
+   },
+   {
+    "id": "ep_02",
+    "show_id": "show_01",
+    "title": "Số 17: Giấc ngủ và trí nhớ",
+    "number": 17,
+    "duration_min": 32,
+    "published": "2026-09-10"
+   },
+   {
+    "id": "ep_03",
+    "show_id": "show_01",
+    "title": "Số 18: Lỗ đen là gì",
+    "number": 18,
+    "duration_min": 25,
+    "published": "2026-09-17"
+   },
+   {
+    "id": "ep_04",
+    "show_id": "show_02",
+    "title": "Số 6: Rác thải nhựa ở đô thị",
+    "number": 6,
+    "duration_min": 25,
+    "published": "2026-09-03"
+   },
+   {
+    "id": "ep_05",
+    "show_id": "show_02",
+    "title": "Số 7: Trồng cây trên sân thượng",
+    "number": 7,
+    "duration_min": 18,
+    "published": "2026-09-10"
+   },
+   {
+    "id": "ep_06",
+    "show_id": "show_02",
+    "title": "Số 8: Đi xe đạp đi làm",
+    "number": 8,
+    "duration_min": 32,
+    "published": "2026-09-17"
+   },
+   {
+    "id": "ep_07",
+    "show_id": "show_03",
+    "title": "Số 10: Sống chậm giữa thành phố",
+    "number": 10,
+    "duration_min": 32,
+    "published": "2026-09-10"
+   },
+   {
+    "id": "ep_08",
+    "show_id": "show_03",
+    "title": "Số 11: Nghề diễn và những áp lực",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-09-17"
+   },
+   {
+    "id": "ep_09",
+    "show_id": "show_04",
+    "title": "Số 10: Nhà giả kim - phần 1",
+    "number": 10,
+    "duration_min": 18,
+    "published": "2026-09-10"
+   },
+   {
+    "id": "ep_10",
+    "show_id": "show_04",
+    "title": "Số 11: Nhà giả kim - phần 2",
+    "number": 11,
+    "duration_min": 25,
+    "published": "2026-09-17"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_01",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_02",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_03",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_04",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_01"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_01",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_02",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_03",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_04",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_05",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   }
+  ]
+ }
+}

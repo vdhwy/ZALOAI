@@ -1,0 +1,325 @@
+{
+ "_meta": {
+  "question_id": "public_0450",
+  "current_time": "2026-10-26T13:55:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "gold_price.get_price",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "public_transit.find_routes",
+   "public_transit.next_departures",
+   "public_transit.topup_card",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_925",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_3071",
+    "title": "Út dặn chuyện cổ phiếu",
+    "content": "Ba bán phân nửa số cổ Đại Việt Bank đang có, giá thị trường là được. Cổ sữa thì để đó giữ lâu."
+   },
+   {
+    "id": "note_146",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_2535",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_931",
+    "name": "Bãi xe Hồ Gươm",
+    "address": "Lê Thái Tổ, Hoàn Kiếm, Hà Nội",
+    "area": "Hồ Gươm",
+    "price_per_hour": 40000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_463",
+    "name": "Bãi đỗ Kim Cương",
+    "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
+    "area": "Kim Cương",
+    "price_per_hour": 35000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_201",
+    "name": "Bãi đỗ xe Sao Kim Plaza Bà Triệu",
+    "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
+    "area": "Bà Triệu",
+    "price_per_hour": 30000,
+    "available_spots": 40
+   },
+   {
+    "id": "lot_867",
+    "name": "Bãi xe ngầm Trần Nhân Tông",
+    "address": "Công viên Thống Nhất, Hai Bà Trưng, Hà Nội",
+    "area": "Công viên Thống Nhất",
+    "price_per_hour": 25000,
+    "available_spots": 0
+   }
+  ],
+  "sessions": []
+ },
+ "public_transit": {
+  "card_balance": 48000,
+  "routes": [
+   {
+    "id": "bus_320",
+    "name": "Tuyến 32",
+    "type": "bus",
+    "stops": [
+     "Giáp Bát",
+     "Kim Liên",
+     "Cầu Giấy",
+     "Nhổn"
+    ],
+    "fare": 7000,
+    "duration_min": 55,
+    "headway_min": 10
+   },
+   {
+    "id": "bus_678",
+    "name": "Tuyến 09",
+    "type": "bus",
+    "stops": [
+     "Bờ Hồ",
+     "Láng Hạ",
+     "Cầu Giấy",
+     "Đại học Mỏ"
+    ],
+    "fare": 7000,
+    "duration_min": 45,
+    "headway_min": 15
+   }
+  ],
+  "departures": [
+   {
+    "stop": "Kim Liên",
+    "route": "bus_320",
+    "time": "2026-10-26T14:02:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_320",
+    "time": "2026-10-26T14:12:00+07:00"
+   },
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_678",
+    "time": "2026-10-26T14:24:00+07:00"
+   },
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_678",
+    "time": "2026-10-26T14:39:00+07:00"
+   },
+   {
+    "stop": "Láng Hạ",
+    "route": "bus_678",
+    "time": "2026-10-26T14:09:00+07:00"
+   },
+   {
+    "stop": "Kim Liên",
+    "route": "bus_320",
+    "time": "2026-10-26T14:22:00+07:00"
+   }
+  ],
+  "topups": []
+ },
+ "gold_price": {
+  "prices": [
+   {
+    "type": "sjc",
+    "buy": 119800000,
+    "sell": 121800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "ring",
+    "buy": 113800000,
+    "sell": 115800000,
+    "unit": "VND/lượng"
+   },
+   {
+    "type": "world",
+    "usd_per_oz": 4064
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_230",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-10-31T09:30:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_8582",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-11-01T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_9028",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-30T09:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_374",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-10-29T12:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_6087",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_9172",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_98",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_8533",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_42",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_6943",
+    "time": "2026-10-27T05:30:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "quantity": 200,
+    "avg_price": 56300,
+    "price": 60950
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 1000,
+    "avg_price": 92200,
+    "price": 93400
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 131350,
+    "change_pct": -0.3
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 58700,
+    "change_pct": -2.0
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 60950,
+    "change_pct": -0.9
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1717,
+    "change_pct": -0.4
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 93400,
+    "change_pct": 2.9
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33350,
+    "change_pct": 1.9
+   }
+  ]
+ }
+}

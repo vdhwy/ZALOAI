@@ -1,0 +1,302 @@
+{
+ "_meta": {
+  "question_id": "public_0653",
+  "current_time": "2026-12-02T07:55:00+07:00",
+  "tools": [
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "pantry.consume",
+   "pantry.list_items",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_497",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09413001301"
+   },
+   {
+    "id": "c_8323",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09364837493"
+   },
+   {
+    "id": "c_465",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09151729240"
+   },
+   {
+    "id": "c_16",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09609935236"
+   },
+   {
+    "id": "c_6694",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09578057900"
+   },
+   {
+    "id": "c_6017",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09646321674"
+   },
+   {
+    "id": "c_339",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09936532951"
+   },
+   {
+    "id": "c_584",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09234509293"
+   }
+  ]
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_5414",
+    "name": "dầu ăn",
+    "stock": 1,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_412",
+    "name": "bột mì",
+    "stock": 1,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_950",
+    "name": "yến mạch",
+    "stock": 2,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_617",
+    "name": "sữa tươi",
+    "stock": 1,
+    "unit": "hộp"
+   },
+   {
+    "id": "pan_2723",
+    "name": "đường",
+    "stock": 2,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_890",
+    "name": "cà phê G7",
+    "stock": 0,
+    "unit": "hộp"
+   }
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_490",
+    "name": "Tuấn",
+    "type": "direct",
+    "members": [
+     "Tuấn"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_8177",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "type": "location",
+      "content": "Vị trí hiện tại"
+     }
+    ]
+   },
+   {
+    "id": "chat_488",
+    "name": "Mr. Tanaka",
+    "type": "direct",
+    "members": [
+     "Mr. Tanaka"
+    ],
+    "messages": [
+     {
+      "from": "Mr. Tanaka",
+      "content": "Good morning. Please confirm the shipment date for lot 12.",
+      "time": "2026-12-02T06:40:00+07:00"
+     },
+     {
+      "from": "me",
+      "content": "Lô 12 sẽ xuất kho chiều thứ sáu."
+     }
+    ]
+   },
+   {
+    "id": "chat_5751",
+    "name": "Sarah",
+    "type": "direct",
+    "members": [
+     "Sarah"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_214",
+    "name": "Anh Kha",
+    "type": "direct",
+    "members": [
+     "Anh Kha"
+    ],
+    "messages": [
+     {
+      "from": "me",
+      "content": "Chiều nay anh nhớ đón con lúc năm giờ nha."
+     }
+    ]
+   }
+  ],
+  "calls": [
+   {
+    "id": "ott_call_01",
+    "chat_id": "chat_490",
+    "video": false,
+    "status": "dialing"
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_914",
+    "title": "Đặt lịch khám răng",
+    "due": "2026-12-02T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_132",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-12-07T17:00:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_660",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-12-06T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_04",
+    "due": "2026-12-02T17:00:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Gửi invoice cho Mr. Tanaka"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 200,
+    "avg_price": 55450,
+    "price": 59350
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "quantity": 500,
+    "avg_price": 94750,
+    "price": 93000
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 500,
+    "avg_price": 112500,
+    "price": 127250
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1637,
+    "change_pct": -0.9
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 127250,
+    "change_pct": -1.7
+   },
+   {
+    "symbol": "ZDV",
+    "name": "Ngân hàng TMCP Đại Việt",
+    "price": 93000,
+    "change_pct": -2.3
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 59350,
+    "change_pct": 2.5
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26650,
+    "change_pct": 3.4
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 63950,
+    "change_pct": 2.1
+   }
+  ]
+ }
+}

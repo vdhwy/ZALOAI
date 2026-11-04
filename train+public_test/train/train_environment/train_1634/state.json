@@ -1,0 +1,713 @@
+{
+ "_meta": {
+  "question_id": "train_1634",
+  "current_time": "2026-10-31T20:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "learning.enroll",
+   "learning.list_courses",
+   "learning.log_progress",
+   "learning.schedule_lesson",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "package_tracking.reschedule_delivery",
+   "package_tracking.schedule_pickup",
+   "package_tracking.track",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6743",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09152436224"
+   },
+   {
+    "id": "c_611",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09696733227"
+   },
+   {
+    "id": "c_3615",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09779808772"
+   },
+   {
+    "id": "c_262",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09795235752"
+   },
+   {
+    "id": "c_390",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09990453234"
+   },
+   {
+    "id": "c_156",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09769318553"
+   },
+   {
+    "id": "c_545",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09935304979"
+   },
+   {
+    "id": "c_4364",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09747455191"
+   },
+   {
+    "id": "c_232",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09410327354"
+   },
+   {
+    "id": "c_3466",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09295682247"
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_4920",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_899",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_221",
+    "name": "máy rửa bát",
+    "type": "dishwasher",
+    "room": "bếp",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "intensive"
+    ],
+    "cycle_labels": {
+     "quick": "rửa nhanh",
+     "normal": "rửa thường",
+     "eco": "tiết kiệm",
+     "intensive": "rửa mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_117",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_667",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_93",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_898",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_246",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 2000,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_7132",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 75,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_772",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-11-17",
+    "used": false
+   }
+  ]
+ },
+ "package_tracking": {
+  "shipments": [
+   {
+    "id": "shp_4415",
+    "tracking_id": "STP711554329",
+    "carrier": "SaoTel Post",
+    "name": "Sách 'Nhà giả kim'",
+    "status": "in_transit",
+    "eta": "2026-11-01T17:00:00+07:00"
+   },
+   {
+    "id": "shp_3856",
+    "tracking_id": "GST211475361",
+    "carrier": "Giao Siêu Tốc",
+    "name": "Áo khoác gió",
+    "status": "in_transit",
+    "eta": "2026-11-01T10:00:00+07:00"
+   },
+   {
+    "id": "shp_890",
+    "tracking_id": "JV180803653",
+    "carrier": "JetViệt Express",
+    "name": "Bộ nồi inox ba đáy",
+    "status": "out_for_delivery",
+    "eta": "2026-10-31T14:00:00+07:00"
+   },
+   {
+    "id": "shp_355",
+    "tracking_id": "EV670950625",
+    "carrier": "VNPost",
+    "name": "Ốp lưng điện thoại",
+    "status": "delivered",
+    "eta": "2026-10-30T14:00:00+07:00"
+   }
+  ],
+  "pickups": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_8434",
+    "from": "vanphong@kimdong.example.test",
+    "from_name": "Trường Tiểu học Kim Đồng",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Thư mời họp phụ huynh",
+    "snippet": "Nhà trường kính mời phụ huynh dự họp đầu năm.",
+    "body": "Kính mời quý phụ huynh tới dự buổi họp phụ huynh đầu năm học tại phòng 2A lúc 8 giờ sáng chủ nhật.",
+    "time": "2026-10-31T10:35:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_669",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-10-31T08:20:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_9128",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-10-29T17:35:00+07:00",
+    "unread": false,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_1957",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-05T09:30:00+07:00",
+    "priority": "high",
+    "done": false
+   },
+   {
+    "id": "task_8110",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-05T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_268",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-04T20:30:00+07:00",
+    "priority": "high",
+    "done": false
+   }
+  ]
+ },
+ "calculator": {},
+ "learning": {
+  "courses": [
+   {
+    "id": "course_660",
+    "name": "IELTS 6.5 cấp tốc",
+    "provider": "Anh ngữ Ms Thu",
+    "enrolled": false,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_194",
+    "name": "Excel văn phòng nâng cao",
+    "provider": "Khóa Việt",
+    "enrolled": true,
+    "lessons_total": 30,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_896",
+    "name": "Tiếng Hàn sơ cấp 1",
+    "provider": "Hàn ngữ KORA",
+    "enrolled": false,
+    "lessons_total": 24,
+    "progress_minutes": 0
+   },
+   {
+    "id": "course_743",
+    "name": "Lập trình Python cho người mới",
+    "provider": "Coursera",
+    "enrolled": true,
+    "lessons_total": 24,
+    "progress_minutes": 165
+   }
+  ],
+  "lessons": [
+   {
+    "id": "les_01",
+    "course_id": "course_743",
+    "time": "2026-11-01T20:00:00+07:00",
+    "status": "scheduled"
+   }
+  ],
+  "progress": [
+   {
+    "id": "prog_01",
+    "course_id": "course_743",
+    "minutes": 45
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_755",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_799",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_325",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_521",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_8721",
+    "show_id": "show_521",
+    "title": "Số 16: Lỗ đen là gì",
+    "number": 16,
+    "duration_min": 18,
+    "published": "2026-10-24"
+   },
+   {
+    "id": "ep_211",
+    "show_id": "show_325",
+    "title": "Số 20: Quản lý chi tiêu gia đình",
+    "number": 20,
+    "duration_min": 32,
+    "published": "2026-10-24"
+   },
+   {
+    "id": "ep_684",
+    "show_id": "show_521",
+    "title": "Số 14: Vì sao bầu trời màu xanh",
+    "number": 14,
+    "duration_min": 25,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_466",
+    "show_id": "show_799",
+    "title": "Số 7: Đi xe đạp đi làm",
+    "number": 7,
+    "duration_min": 18,
+    "published": "2026-10-24"
+   },
+   {
+    "id": "ep_3364",
+    "show_id": "show_755",
+    "title": "Số 17: Nhà giả kim - phần 1",
+    "number": 17,
+    "duration_min": 32,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_556",
+    "show_id": "show_755",
+    "title": "Số 18: Nhà giả kim - phần 2",
+    "number": 18,
+    "duration_min": 25,
+    "published": "2026-10-24"
+   },
+   {
+    "id": "ep_7002",
+    "show_id": "show_799",
+    "title": "Số 5: Rác thải nhựa ở đô thị",
+    "number": 5,
+    "duration_min": 45,
+    "published": "2026-10-10"
+   },
+   {
+    "id": "ep_869",
+    "show_id": "show_799",
+    "title": "Số 6: Trồng cây trên sân thượng",
+    "number": 6,
+    "duration_min": 32,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_3257",
+    "show_id": "show_521",
+    "title": "Số 15: Giấc ngủ và trí nhớ",
+    "number": 15,
+    "duration_min": 32,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_616",
+    "show_id": "show_325",
+    "title": "Số 19: Gửi tiết kiệm hay mua vàng",
+    "number": 19,
+    "duration_min": 45,
+    "published": "2026-10-17"
+   },
+   {
+    "id": "ep_3452",
+    "show_id": "show_325",
+    "title": "Số 18: Lập quỹ khẩn cấp",
+    "number": 18,
+    "duration_min": 25,
+    "published": "2026-10-10"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_336",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_30",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_8804",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_844",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_521"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_877",
+    "time": "2026-11-01T06:15:00+07:00",
+    "label": "họp sớm",
+    "repeat": "daily",
+    "enabled": true
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_392",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   },
+   {
+    "id": "acc_938",
+    "name": "Tài khoản thanh toán",
+    "balance": 1900000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_548",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_9315",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_9726",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_01",
+    "account_id": "acc_938",
+    "beneficiary_id": "ben_548",
+    "amount": -7000000,
+    "note": "Tiền nhà tháng 11"
+   }
+  ]
+ }
+}

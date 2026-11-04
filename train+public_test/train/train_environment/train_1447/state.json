@@ -1,0 +1,488 @@
+{
+ "_meta": {
+  "question_id": "train_1447",
+  "current_time": "2026-11-17T18:00:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_647",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_7550",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_6193",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_5884",
+    "title": "Đi chợ cuối tuần",
+    "content": "Thịt ba chỉ, rau muống, trứng gà, nước mắm, hành lá"
+   },
+   {
+    "id": "note_1631",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_830",
+    "name": "MinhPoint",
+    "merchant": "MinhMart",
+    "points": 2000,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Voucher MinhMart 100.000đ",
+      "cost": 1000,
+      "value": 100000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher MinhMart 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   },
+   {
+    "id": "prog_90",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 1600,
+    "tier": "Vàng",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_113",
+    "name": "Góc Phố 24h Rewards",
+    "merchant": "Góc Phố 24h",
+    "points": 180,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Mì ly + nước ngọt",
+      "cost": 150,
+      "value": 30000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Voucher 20.000đ",
+      "cost": 100,
+      "value": 20000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_5501",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-12-05",
+    "used": false
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_334",
+    "name": "máy lọc không khí",
+    "type": "air_purifier",
+    "room": "phòng khách",
+    "cycles": [
+     "auto",
+     "sleep",
+     "turbo"
+    ],
+    "cycle_labels": {
+     "auto": "tự động",
+     "sleep": "ngủ",
+     "turbo": "lọc mạnh"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_920",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_4372",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_1925",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09355355094"
+   },
+   {
+    "id": "c_180",
+    "name": "Bé Na",
+    "relation": "con gái",
+    "phone": "09906687667"
+   },
+   {
+    "id": "c_658",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09703960341"
+   },
+   {
+    "id": "c_370",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09215098891"
+   },
+   {
+    "id": "c_5148",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09703366509"
+   },
+   {
+    "id": "c_594",
+    "name": "Anh Lộc",
+    "relation": "mối giao hàng",
+    "phone": "09850261966"
+   },
+   {
+    "id": "c_4049",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09716472253"
+   },
+   {
+    "id": "c_118",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09387765836"
+   },
+   {
+    "id": "c_13",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09607847168"
+   },
+   {
+    "id": "c_714",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09487372167"
+   },
+   {
+    "id": "c_452",
+    "name": "Chú Năm",
+    "relation": "chồng",
+    "phone": "09203060156"
+   },
+   {
+    "id": "c_6708",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09750303759"
+   }
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 24,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-17",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-18",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 23,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-19",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 29
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 28
+   }
+  ]
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_8898",
+    "title": "Đóng học phí cho con",
+    "due": "2026-11-19T20:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_77",
+    "title": "Chuẩn bị slide họp quý",
+    "due": "2026-11-17T20:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_289",
+    "title": "Gọi thợ sửa máy giặt",
+    "due": "2026-11-19T20:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_555",
+    "title": "Mua quà sinh nhật Lan",
+    "due": "2026-11-21T12:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_2118",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-11-23T17:00:00+07:00",
+    "priority": "low",
+    "done": false
+   },
+   {
+    "id": "task_3307",
+    "title": "Gọi Sarah Kang chốt đơn nước ngọt",
+    "due": "2026-11-20T10:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_07",
+    "due": "2026-11-19T19:30:00+07:00",
+    "priority": "normal",
+    "done": false,
+    "title": "Dẫn Sarah Kim đi coi phim"
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_585",
+    "name": "Nấu cơm tối",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_6220",
+    "name": "Đổ rác",
+    "assignee": "Cô Thảo",
+    "done": false
+   },
+   {
+    "id": "chore_299",
+    "name": "Tưới cây",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_513",
+    "name": "Phơi quần áo",
+    "assignee": "Cô Thảo",
+    "done": false
+   }
+  ],
+  "members": [
+   "Cô Thảo",
+   "Bố",
+   "Tuấn",
+   "Mẹ"
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-11-17",
+    "prizes": {
+     "special": "721110",
+     "first": "59337",
+     "eighth": "27"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-11-17",
+    "prizes": {
+     "special": "853349",
+     "first": "35339",
+     "eighth": "76"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-11-17",
+    "prizes": {
+     "special": "607847",
+     "first": "40222",
+     "eighth": "67"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-11-17",
+    "prizes": {
+     "special": "704944",
+     "first": "30766",
+     "eighth": "75"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,300 @@
+{
+ "_meta": {
+  "question_id": "public_0437",
+  "current_time": "2026-11-15T22:20:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 33,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-15",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-16",
+    "condition": "nắng",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 30
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-17",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-18",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 31
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_187",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09770538919"
+   },
+   {
+    "id": "c_8553",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09968808176"
+   },
+   {
+    "id": "c_608",
+    "name": "Vợ",
+    "relation": "vợ",
+    "phone": "09337688925"
+   },
+   {
+    "id": "c_796",
+    "name": "Anh Sáu",
+    "relation": "chủ xe",
+    "phone": "09172035142"
+   },
+   {
+    "id": "c_248",
+    "name": "Thằng Bi",
+    "relation": "con trai",
+    "phone": "09850123154"
+   },
+   {
+    "id": "c_8793",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09474449652"
+   },
+   {
+    "id": "c_7122",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09493403057"
+   },
+   {
+    "id": "c_939",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09785659436"
+   },
+   {
+    "id": "c_3316",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09195524151"
+   },
+   {
+    "id": "c_6029",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09373619413"
+   }
+  ]
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_8882",
+    "name": "Bãi đỗ Nam Đô Centre",
+    "address": "65 Lê Lợi, Quận 1, TP.HCM",
+    "area": "Lê Lợi",
+    "price_per_hour": 35000,
+    "available_spots": 12
+   },
+   {
+    "id": "lot_68",
+    "name": "Bãi đỗ xe Công viên 23/9",
+    "address": "Phạm Ngũ Lão, Quận 1, TP.HCM",
+    "area": "Bến Thành",
+    "price_per_hour": 30000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_248",
+    "name": "Hầm xe Sao Kim Plaza Đồng Khởi",
+    "address": "72 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "area": "Nguyễn Huệ",
+    "price_per_hour": 40000,
+    "available_spots": 25
+   },
+   {
+    "id": "lot_5130",
+    "name": "Bãi giữ xe Phạm Văn Đồng",
+    "address": "102 Phạm Văn Đồng, Gò Vấp, TP.HCM",
+    "area": "Gò Vấp",
+    "price_per_hour": 15000,
+    "available_spots": 7
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_741",
+    "lot_id": "lot_5130",
+    "from_time": "2026-11-15T14:00:00+07:00",
+    "hours": 10,
+    "end_time": "2026-11-16T00:00:00+07:00",
+    "total": 150000,
+    "status": "reserved"
+   },
+   {
+    "id": "park_2208",
+    "lot_id": "lot_8882",
+    "from_time": "2026-11-15T23:00:00+07:00",
+    "hours": 2,
+    "end_time": "2026-11-16T01:00:00+07:00",
+    "total": 70000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_483",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   },
+   {
+    "id": "note_323",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_419",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_394",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-11-21",
+    "depart": "06:00",
+    "arrive": "09:00",
+    "price": 250000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_255",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-11-19",
+    "depart": "21:00",
+    "arrive": "00:30",
+    "price": 250000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_728",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-11-19",
+    "depart": "06:00",
+    "arrive": "09:30",
+    "price": 320000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_542",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-11-19",
+    "depart": "13:00",
+    "arrive": "18:30",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_999",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Đà Lạt",
+    "date": "2026-11-21",
+    "depart": "21:00",
+    "arrive": "00:30",
+    "price": 250000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_9492",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-11-19",
+    "depart": "21:00",
+    "arrive": "02:00",
+    "price": 680000,
+    "seats_left": 15
+   }
+  ],
+  "bookings": []
+ }
+}

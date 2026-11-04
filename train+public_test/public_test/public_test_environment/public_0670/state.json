@@ -1,0 +1,507 @@
+{
+ "_meta": {
+  "question_id": "public_0670",
+  "current_time": "2026-10-30T07:40:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "email.archive",
+   "email.create_draft",
+   "email.list",
+   "email.read",
+   "email.reply",
+   "email.send",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "parking.end_session",
+   "parking.find",
+   "parking.list_sessions",
+   "parking.reserve",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "sms.read_recent",
+   "sms.send",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 30,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-10-30",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 32
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-10-31",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 30
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-01",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-02",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 34
+   }
+  ]
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_7197",
+    "title": "Mật khẩu wifi nhà ngoại",
+    "content": "Mạng NhaNgoai_5G, hỏi cậu Hai đổi lại pass"
+   },
+   {
+    "id": "note_39",
+    "title": "Quà sinh nhật mẹ",
+    "content": "Khăn lụa, máy massage cầm tay, đặt bánh kem ở tiệm quen"
+   },
+   {
+    "id": "note_261",
+    "title": "Việc cơ quan",
+    "content": "Gửi báo cáo tháng cho chị Thu, cập nhật slide dự án"
+   },
+   {
+    "id": "note_7592",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_05",
+    "title": "",
+    "content": "Mua nước mắm, đường, bột ngọt"
+   }
+  ]
+ },
+ "sms": {
+  "messages": []
+ },
+ "parking": {
+  "lots": [
+   {
+    "id": "lot_475",
+    "name": "Bãi đỗ chợ Hàn",
+    "address": "Trần Phú, Hải Châu, Đà Nẵng",
+    "area": "Chợ Hàn",
+    "price_per_hour": 20000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_6989",
+    "name": "Bãi xe Sao Kim Plaza Ngô Quyền",
+    "address": "910 Ngô Quyền, Sơn Trà, Đà Nẵng",
+    "area": "Sơn Trà",
+    "price_per_hour": 25000,
+    "available_spots": 3
+   },
+   {
+    "id": "lot_519",
+    "name": "Bãi đỗ xe Cầu Rồng",
+    "address": "Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
+    "area": "Cầu Rồng",
+    "price_per_hour": 20000,
+    "available_spots": 40
+   }
+  ],
+  "sessions": [
+   {
+    "id": "park_116",
+    "lot_id": "lot_475",
+    "from_time": "2026-10-30T06:00:00+07:00",
+    "hours": 3,
+    "end_time": "2026-10-30T09:00:00+07:00",
+    "total": 60000,
+    "status": "reserved"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_8428",
+    "name": "Tài khoản thanh toán",
+    "balance": 7700000
+   },
+   {
+    "id": "acc_868",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_485",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_634",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_518",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_3381",
+    "account_id": "acc_8428",
+    "amount": 4500000,
+    "note": "HANSEN P chuyen tien phong thang 10",
+    "time": "2026-10-29T20:05:00+07:00"
+   },
+   {
+    "id": "tx_3207",
+    "account_id": "acc_8428",
+    "amount": -650000,
+    "note": "Thanh toan tien dien thang 10",
+    "time": "2026-10-28T09:12:00+07:00"
+   },
+   {
+    "id": "tx_946",
+    "account_id": "acc_868",
+    "amount": 250000,
+    "note": "Tra lai tiet kiem",
+    "time": "2026-10-25T00:05:00+07:00"
+   },
+   {
+    "id": "tx_3150",
+    "account_id": "acc_8428",
+    "amount": -1200000,
+    "note": "Hoc phi tieng Anh cho Thao",
+    "time": "2026-10-26T15:40:00+07:00"
+   },
+   {
+    "id": "tx_05",
+    "account_id": "acc_8428",
+    "beneficiary_id": "ben_518",
+    "amount": -1200000,
+    "note": "tiền gạo"
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_567",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_297",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_419",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_133",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   }
+  ],
+  "orders": []
+ },
+ "phone": {
+  "calls": []
+ },
+ "email": {
+  "emails": [
+   {
+    "id": "mail_590",
+    "from": "nhansu@congty.example.test",
+    "from_name": "Phòng Nhân sự",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch nghỉ lễ Quốc khánh",
+    "snippet": "Công ty thông báo lịch nghỉ lễ và phân công trực.",
+    "body": "Chào anh chị, công ty thông báo lịch nghỉ lễ như sau. Bộ phận trực vui lòng xác nhận trước thứ sáu.",
+    "time": "2026-10-28T03:25:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_569",
+    "from": "thongbao@zdv.example.test",
+    "from_name": "Ngân hàng Đại Việt",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Sao kê tài khoản tháng 9",
+    "snippet": "Sao kê điện tử tài khoản của quý khách đã sẵn sàng.",
+    "body": "Kính gửi quý khách, sao kê điện tử tài khoản thanh toán tháng 9 đính kèm email này.",
+    "time": "2026-10-27T12:40:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_377",
+    "from": "basau@gmail.example.test",
+    "from_name": "Bà Sáu",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Hẹn cà phê bàn dự án",
+    "snippet": "Tuần này em rảnh hôm nào mình ngồi cà phê nhé.",
+    "body": "Tuần này em rảnh hôm nào thì anh em mình ngồi cà phê bàn dự án mới nhé, anh rảnh chiều thứ năm.",
+    "time": "2026-10-28T20:10:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_812",
+    "from": "peter.hansen@mailbox.example.test",
+    "from_name": "Peter Hansen",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Tiền phòng tháng 10",
+    "snippet": "Cô Lan ơi, con đã chuyển 4.500.000 đồng tiền phòng tháng 10 qua app rồi ạ.",
+    "body": "Cô Lan ơi, tối nay con đã chuyển 4.500.000 đồng tiền phòng tháng 10 vào tài khoản của cô qua app ngân hàng. Cô kiểm tra giúp con nhé. Peter",
+    "time": "2026-10-29T20:20:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   },
+   {
+    "id": "mail_4406",
+    "from": "peter.hanson@englishhub.example.test",
+    "from_name": "Peter Hanson",
+    "to": [
+     "me@example.test"
+    ],
+    "subject": "Lịch học tiếng Anh của Thảo",
+    "snippet": "Lớp tiếng Anh của Thảo tháng 11 đổi sang tối thứ ba và thứ năm, học phí 1.200.000 đồng.",
+    "body": "Chào chị, lớp tiếng Anh của Thảo tháng 11 đổi sang tối thứ ba và thứ năm, học phí 1.200.000 đồng, chị chuyển trước ngày 5 giúp em.",
+    "time": "2026-10-29T18:45:00+07:00",
+    "unread": true,
+    "folder": "inbox"
+   }
+  ],
+  "sent": [],
+  "drafts": []
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_511",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09155761778"
+   },
+   {
+    "id": "c_249",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09419561027"
+   },
+   {
+    "id": "c_953",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09555853224"
+   },
+   {
+    "id": "c_999",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09911816296"
+   },
+   {
+    "id": "c_149",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09515568379"
+   },
+   {
+    "id": "c_5600",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09266724220"
+   },
+   {
+    "id": "c_99",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09132979910"
+   },
+   {
+    "id": "c_613",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09765736340"
+   },
+   {
+    "id": "c_437",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09994745692"
+   },
+   {
+    "id": "c_7204",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09253314535"
+   },
+   {
+    "id": "c_583",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09828551693"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_01",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-10-30T16:00:00+07:00",
+    "label": "Đón cháu"
+   },
+   {
+    "id": "alm_02",
+    "repeat": "once",
+    "enabled": true,
+    "time": "2026-10-31T05:00:00+07:00",
+    "label": "Tập dưỡng sinh"
+   }
+  ]
+ }
+}

@@ -1,0 +1,313 @@
+{
+ "_meta": {
+  "question_id": "train_1582",
+  "current_time": "2026-11-19T14:35:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "home_energy.get_usage",
+   "home_energy.set_alert",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_5956",
+    "name": "Tài khoản thanh toán",
+    "balance": 35200000
+   },
+   {
+    "id": "acc_482",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_547",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_189",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   },
+   {
+    "id": "ben_651",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "home_energy": {
+  "usage": {
+   "today": {
+    "from": "2026-11-19",
+    "to": "2026-11-19",
+    "kwh": 6.6,
+    "cost": 19100,
+    "top_devices": [
+     {
+      "name": "điều hoà",
+      "kwh": 3.0
+     },
+     {
+      "name": "tủ lạnh",
+      "kwh": 1.3
+     }
+    ]
+   },
+   "week": {
+    "from": "2026-11-13",
+    "to": "2026-11-19",
+    "kwh": 60.7,
+    "cost": 176000,
+    "days": [
+     {
+      "date": "2026-11-13",
+      "kwh": 9.0
+     },
+     {
+      "date": "2026-11-14",
+      "kwh": 8.3
+     },
+     {
+      "date": "2026-11-15",
+      "kwh": 8.6
+     },
+     {
+      "date": "2026-11-16",
+      "kwh": 10.4
+     },
+     {
+      "date": "2026-11-17",
+      "kwh": 10.1
+     },
+     {
+      "date": "2026-11-18",
+      "kwh": 7.7
+     },
+     {
+      "date": "2026-11-19",
+      "kwh": 6.6
+     }
+    ]
+   },
+   "month": {
+    "from": "2026-11-01",
+    "to": "2026-11-19",
+    "kwh": 181.9,
+    "cost": 527500
+   }
+  },
+  "alert_threshold_kwh": null
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_2301",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_705",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_60",
+    "name": "Phở Thắng Bờ Hồ",
+    "address": "61 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_158",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_1994",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_753",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09921929135"
+   },
+   {
+    "id": "c_230",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09672349976"
+   },
+   {
+    "id": "c_7583",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09755277912"
+   },
+   {
+    "id": "c_444",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09535054427"
+   },
+   {
+    "id": "c_970",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09719846060"
+   },
+   {
+    "id": "c_866",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09993330512"
+   },
+   {
+    "id": "c_6141",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09550563913"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_600",
+    "title": "họp phụ huynh",
+    "start": "2026-11-20T09:00:00+07:00",
+    "end": "2026-11-20T10:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_121",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_7291",
+    "name": "Anh Thành",
+    "type": "direct",
+    "members": [
+     "Anh Thành"
+    ],
+    "messages": [
+     {
+      "from": "Anh Thành",
+      "content": "Chiều nay anh đón Minh nhé.",
+      "time": "2026-11-19T11:05:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_614",
+    "name": "Bố",
+    "type": "direct",
+    "members": [
+     "Bố"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_5390",
+    "name": "Chị Yến",
+    "type": "direct",
+    "members": [
+     "Chị Yến"
+    ],
+    "messages": [
+     {
+      "from": "Chị Yến",
+      "content": "Hạnh ơi, invoice tiền in đề kiểm tra giữa kỳ của tổ chị gửi qua email cho em rồi nhé, em xem rồi chuyển khoản cho nhà in giúp chị.",
+      "time": "2026-11-19T13:50:00+07:00"
+     },
+     {
+      "from": "Chị Yến",
+      "content": "Còn agenda họp tổ thứ hai tuần sau chị gửi luôn ở đây: một là review đề giữa kỳ, hai là phân công coi thi.",
+      "time": "2026-11-19T13:52:00+07:00"
+     }
+    ]
+   },
+   {
+    "id": "chat_9515",
+    "name": "Minh",
+    "type": "direct",
+    "members": [
+     "Minh"
+    ],
+    "messages": []
+   }
+  ]
+ }
+}

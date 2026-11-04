@@ -1,0 +1,376 @@
+{
+ "_meta": {
+  "question_id": "train_1548",
+  "current_time": "2026-12-12T12:50:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "door_lock.grant_guest_code",
+   "door_lock.list_locks",
+   "door_lock.set_lock",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_281",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-12-13T08:30:00+07:00",
+    "link": "https://meet.example.test/tcm-xddk-onn",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_3561",
+    "title": "Họp lớp online",
+    "start": "2026-12-13T20:30:00+07:00",
+    "link": "https://meet.example.test/xcf-hjry-buy",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_603",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-12-13T08:30:00+07:00",
+    "link": "https://meet.example.test/oga-bawq-mpg",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_815",
+    "name": "Tài khoản thanh toán",
+    "balance": 12500000
+   },
+   {
+    "id": "acc_663",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_522",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_52",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_7001",
+    "name": "Nguyễn Thị Lan",
+    "bank": "Đại Việt Bank",
+    "account_number": "0071000123456"
+   }
+  ],
+  "transactions": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_876",
+    "name": "Nhà thuốc Dược Phố Lê Thánh Tôn",
+    "address": "45 Lê Thánh Tôn, Quận 1, TP.HCM",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_2038",
+    "name": "Bệnh viện Chợ Rẫy",
+    "address": "201B Nguyễn Chí Thanh, Quận 5, TP.HCM",
+    "category": "hospital"
+   },
+   {
+    "id": "place_5298",
+    "name": "Nhà Cà Phê Nguyễn Huệ",
+    "address": "86 Nguyễn Huệ, Quận 1, TP.HCM",
+    "category": "cafe"
+   },
+   {
+    "id": "place_585",
+    "name": "HợpMart Cống Quỳnh",
+    "address": "189C Cống Quỳnh, Quận 1, TP.HCM",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_2108",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_180",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_9015",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": false
+   },
+   {
+    "id": "cam_7930",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_602",
+    "time": "2026-12-12T10:45:00+07:00",
+    "type": "smoke",
+    "location": "bếp",
+    "message": "Cảm biến khói ở bếp báo động",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_654",
+    "time": "2026-12-11T04:50:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_3454",
+    "time": "2026-12-11T08:55:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_721",
+    "time": "2026-12-11T15:40:00+07:00",
+    "type": "camera_offline",
+    "location": "gara",
+    "message": "Camera gara mất kết nối",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_564",
+    "time": "2026-12-12T04:45:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": false
+   }
+  ]
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_2166",
+    "name": "Tài chính cá nhân 101",
+    "host": "Hoàng Nam",
+    "category": "tài chính"
+   },
+   {
+    "id": "show_603",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   },
+   {
+    "id": "show_882",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_569",
+    "show_id": "show_2166",
+    "title": "Số 15: Gửi tiết kiệm hay mua vàng",
+    "number": 15,
+    "duration_min": 18,
+    "published": "2026-11-28"
+   },
+   {
+    "id": "ep_3778",
+    "show_id": "show_882",
+    "title": "Số 12: Nhà giả kim - phần 1",
+    "number": 12,
+    "duration_min": 32,
+    "published": "2026-11-28"
+   },
+   {
+    "id": "ep_999",
+    "show_id": "show_603",
+    "title": "Số 17: Đi xe đạp đi làm",
+    "number": 17,
+    "duration_min": 25,
+    "published": "2026-12-05"
+   },
+   {
+    "id": "ep_4533",
+    "show_id": "show_603",
+    "title": "Số 15: Rác thải nhựa ở đô thị",
+    "number": 15,
+    "duration_min": 25,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_3399",
+    "show_id": "show_2166",
+    "title": "Số 16: Quản lý chi tiêu gia đình",
+    "number": 16,
+    "duration_min": 25,
+    "published": "2026-12-05"
+   },
+   {
+    "id": "ep_517",
+    "show_id": "show_2166",
+    "title": "Số 14: Lập quỹ khẩn cấp",
+    "number": 14,
+    "duration_min": 18,
+    "published": "2026-11-21"
+   },
+   {
+    "id": "ep_170",
+    "show_id": "show_603",
+    "title": "Số 16: Trồng cây trên sân thượng",
+    "number": 16,
+    "duration_min": 32,
+    "published": "2026-11-28"
+   },
+   {
+    "id": "ep_4020",
+    "show_id": "show_882",
+    "title": "Số 13: Nhà giả kim - phần 2",
+    "number": 13,
+    "duration_min": 32,
+    "published": "2026-12-05"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_796",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_53",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_8395",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   },
+   {
+    "id": "st_802",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_603"
+  ],
+  "queue": [],
+  "now_playing": null
+ },
+ "door_lock": {
+  "locks": [
+   {
+    "id": "lock_6414",
+    "name": "cửa chính",
+    "location": "tầng 1",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_13",
+    "name": "cửa sau",
+    "location": "bếp",
+    "locked": true,
+    "battery": 80
+   },
+   {
+    "id": "lock_6167",
+    "name": "cổng",
+    "location": "sân trước",
+    "locked": true,
+    "battery": 95
+   },
+   {
+    "id": "lock_599",
+    "name": "cửa gara",
+    "location": "gara",
+    "locked": true,
+    "battery": 35
+   }
+  ],
+  "guest_codes": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "reminders": {
+  "reminders": []
+ }
+}

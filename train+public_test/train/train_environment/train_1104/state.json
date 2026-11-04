@@ -1,0 +1,209 @@
+{
+ "_meta": {
+  "question_id": "train_1104",
+  "current_time": "2026-10-20T11:05:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "phone.call",
+   "phone.recent_calls",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "tv": {
+  "power": "on",
+  "channel": "VTV1",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "programs": [
+   {
+    "id": "prg_218",
+    "channel": "VTV3",
+    "title": "Phim truyện: Thương ngày nắng về",
+    "start": "2026-10-20T11:00:00+07:00",
+    "end": "2026-10-20T11:50:00+07:00"
+   },
+   {
+    "id": "prg_276",
+    "channel": "SCTV9",
+    "title": "Phim Hàn Quốc: Hạ cánh nơi anh",
+    "start": "2026-10-20T11:00:00+07:00",
+    "end": "2026-10-20T12:00:00+07:00"
+   },
+   {
+    "id": "prg_241",
+    "channel": "VTV1",
+    "title": "Thời sự trưa",
+    "start": "2026-10-20T12:00:00+07:00",
+    "end": "2026-10-20T12:30:00+07:00"
+   },
+   {
+    "id": "prg_305",
+    "channel": "VTV6",
+    "title": "V-League: Hà Nội - Thể Công SaoTel",
+    "start": "2026-10-20T19:15:00+07:00",
+    "end": "2026-10-20T21:15:00+07:00"
+   },
+   {
+    "id": "prg_289",
+    "channel": "HTV7",
+    "title": "Gameshow: Ký ức vui vẻ",
+    "start": "2026-10-20T20:00:00+07:00",
+    "end": "2026-10-20T21:30:00+07:00"
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_9698",
+    "title": "Họp nhóm đồ án",
+    "start": "2026-10-23T10:30:00+07:00",
+    "link": "https://meet.example.test/ldr-hogl-pnm",
+    "attendees": [
+     "c_891"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_420",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-10-23T20:00:00+07:00",
+    "link": "https://meet.example.test/gkf-grvf-qvc",
+    "attendees": [
+     "c_492"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_1333",
+    "title": "Họp lớp online",
+    "start": "2026-10-21T15:00:00+07:00",
+    "link": "https://meet.example.test/obk-bczt-hyb",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 33,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-20",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 24,
+    "temp_max": 31
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 25,
+    "temp_max": 29
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-22",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-10-23",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 34
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_798",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09209896395"
+   },
+   {
+    "id": "c_4552",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09304873408"
+   },
+   {
+    "id": "c_891",
+    "name": "Thầy Phong",
+    "relation": "giảng viên",
+    "phone": "09422240957"
+   },
+   {
+    "id": "c_865",
+    "name": "Trang",
+    "relation": "bạn cùng phòng",
+    "phone": "09757820671"
+   },
+   {
+    "id": "c_1654",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09668470415"
+   },
+   {
+    "id": "c_833",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09826267729"
+   },
+   {
+    "id": "c_4454",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09274355702"
+   },
+   {
+    "id": "c_492",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09316287781"
+   }
+  ]
+ }
+}

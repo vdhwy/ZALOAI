@@ -1,0 +1,498 @@
+{
+ "_meta": {
+  "question_id": "public_0445",
+  "current_time": "2026-11-13T18:10:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "bill_payment.list_bills",
+   "bill_payment.pay",
+   "bill_payment.schedule_autopay",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ecommerce.add_to_cart",
+   "ecommerce.cancel_order",
+   "ecommerce.checkout",
+   "ecommerce.order_status",
+   "ecommerce.request_return",
+   "ecommerce.search",
+   "grocery.add_to_cart",
+   "grocery.checkout",
+   "grocery.search",
+   "notes.append",
+   "notes.create",
+   "notes.list",
+   "sms.read_recent",
+   "sms.send",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search"
+  ]
+ },
+ "bill_payment": {
+  "bills": [
+   {
+    "id": "bill_133",
+    "type": "water",
+    "provider": "Sawaco",
+    "amount": 210000,
+    "due_date": "2026-11-15",
+    "paid": false
+   },
+   {
+    "id": "bill_782",
+    "type": "internet",
+    "provider": "Vitech Telecom",
+    "amount": 221000,
+    "due_date": "2026-11-19",
+    "paid": false
+   }
+  ]
+ },
+ "grocery": {
+  "products": [
+   {
+    "id": "gro_244",
+    "name": "Dầu ăn Neptune 1 lít",
+    "price": 58000,
+    "unit": "chai",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_857",
+    "name": "Bột mì đa dụng Meizan 1kg",
+    "price": 26000,
+    "unit": "gói",
+    "category": "đồ khô",
+    "in_stock": true
+   },
+   {
+    "id": "gro_3480",
+    "name": "Yến mạch Quaker 500g",
+    "price": 89000,
+    "unit": "túi",
+    "category": "ngũ cốc",
+    "in_stock": true
+   },
+   {
+    "id": "gro_383",
+    "name": "Rau cải ngọt 500g",
+    "price": 18000,
+    "unit": "bó",
+    "category": "rau",
+    "in_stock": true
+   },
+   {
+    "id": "gro_626",
+    "name": "Cà chua Đà Lạt 1kg",
+    "price": 32000,
+    "unit": "kg",
+    "category": "rau củ",
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_49",
+    "items": [
+     {
+      "product_id": "gro_3480",
+      "name": "Yến mạch Quaker 500g",
+      "price": 89000,
+      "quantity": 2
+     }
+    ],
+    "total": 178000,
+    "status": "delivered",
+    "delivery_time": "2026-11-05T09:00:00+07:00"
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "quantity": 200,
+    "avg_price": 26500,
+    "price": 27400
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "quantity": 200,
+    "avg_price": 61950,
+    "price": 63100
+   },
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "quantity": 200,
+    "avg_price": 25600,
+    "price": 24500
+   }
+  ],
+  "orders": [],
+  "alerts": [],
+  "quotes": [
+   {
+    "symbol": "ZTP",
+    "name": "Ngân hàng TMCP Thịnh Phát",
+    "price": 24500,
+    "change_pct": -0.2
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 32450,
+    "change_pct": 3.3
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1629,
+    "change_pct": 0.3
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 130550,
+    "change_pct": -3.4
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 27400,
+    "change_pct": 1.6
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 63100,
+    "change_pct": 2.1
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_9833",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09819714335"
+   },
+   {
+    "id": "c_7319",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09142172859"
+   },
+   {
+    "id": "c_5925",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09371457758"
+   },
+   {
+    "id": "c_944",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09104353656"
+   },
+   {
+    "id": "c_139",
+    "name": "Minh",
+    "relation": "con trai",
+    "phone": "09614178961"
+   },
+   {
+    "id": "c_649",
+    "name": "Anh Thành",
+    "relation": "chồng",
+    "phone": "09136654543"
+   },
+   {
+    "id": "c_948",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09818086886"
+   },
+   {
+    "id": "c_551",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09842846988"
+   },
+   {
+    "id": "c_581",
+    "name": "Chị Yến",
+    "relation": "đồng nghiệp",
+    "phone": "09687710211"
+   },
+   {
+    "id": "c_7105",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09442014239"
+   }
+  ]
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_778",
+    "type": "train",
+    "operator": "Tàu SE3",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-19",
+    "depart": "08:00",
+    "arrive": "13:00",
+    "price": 450000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_9561",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-16",
+    "depart": "08:00",
+    "arrive": "11:30",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_784",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-16",
+    "depart": "21:00",
+    "arrive": "07:00",
+    "price": 400000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_4820",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-19",
+    "depart": "21:00",
+    "arrive": "00:00",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_93",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-19",
+    "depart": "15:30",
+    "arrive": "18:15",
+    "price": 250000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_249",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-16",
+    "depart": "13:00",
+    "arrive": "18:40",
+    "price": 450000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_129",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-19",
+    "depart": "06:00",
+    "arrive": "11:30",
+    "price": 450000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_173",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-16",
+    "depart": "08:00",
+    "arrive": "18:30",
+    "price": 400000,
+    "seats_left": 30
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_418",
+    "trip_id": "trip_93",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-19",
+    "depart": "15:30",
+    "arrive": "18:15",
+    "seats": 1,
+    "total": 250000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_36",
+    "trip_id": "trip_249",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Hà Nội",
+    "destination": "Vinh",
+    "date": "2026-11-16",
+    "depart": "13:00",
+    "arrive": "18:40",
+    "seats": 2,
+    "total": 900000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "ecommerce": {
+  "products": [
+   {
+    "id": "prod_770",
+    "name": "Sạc dự phòng Xiaomi 10000mAh",
+    "price": 399000,
+    "seller": "Xiaomi Official",
+    "category": "điện tử",
+    "rating": 4.6,
+    "in_stock": true
+   },
+   {
+    "id": "prod_2376",
+    "name": "Cốc giữ nhiệt Elmich 500ml",
+    "price": 219000,
+    "seller": "Elmich Store",
+    "category": "gia dụng",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_522",
+    "name": "Balo laptop Mikkor 15.6 inch",
+    "price": 650000,
+    "seller": "Mikkor Store",
+    "category": "thời trang",
+    "rating": 4.7,
+    "in_stock": true
+   },
+   {
+    "id": "prod_825",
+    "name": "Tai nghe Bluetooth Soundcore R50i",
+    "price": 450000,
+    "seller": "Anker Official Store",
+    "category": "điện tử",
+    "rating": 4.5,
+    "in_stock": true
+   },
+   {
+    "id": "prod_6854",
+    "name": "Chuột không dây Logitech M331",
+    "price": 349000,
+    "seller": "Logitech Store",
+    "category": "máy tính",
+    "rating": 4.8,
+    "in_stock": true
+   },
+   {
+    "id": "prod_318",
+    "name": "Áo khoác gió nam CoolWear",
+    "price": 499000,
+    "seller": "CoolWear",
+    "category": "thời trang",
+    "rating": 4.8,
+    "in_stock": true
+   }
+  ],
+  "cart": [],
+  "orders": [
+   {
+    "id": "ord_49",
+    "items": [
+     {
+      "product_id": "prod_318",
+      "name": "Áo khoác gió nam CoolWear",
+      "price": 499000,
+      "quantity": 1
+     }
+    ],
+    "total": 499000,
+    "status": "delivered",
+    "placed_at": "2026-11-04T13:10:00+07:00",
+    "seller": "CoolWear",
+    "delivered_at": "2026-11-07T13:10:00+07:00"
+   },
+   {
+    "id": "ord_223",
+    "items": [
+     {
+      "product_id": "prod_522",
+      "name": "Balo laptop Mikkor 15.6 inch",
+      "price": 650000,
+      "quantity": 1
+     }
+    ],
+    "total": 650000,
+    "status": "shipping",
+    "placed_at": "2026-11-11T10:10:00+07:00",
+    "seller": "Mikkor Store"
+   }
+  ],
+  "returns": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "notes": {
+  "notes": [
+   {
+    "id": "note_549",
+    "title": "Ý tưởng du lịch Tết",
+    "content": "Đà Lạt 3 ngày 2 đêm hoặc Hạ Long ngủ du thuyền"
+   },
+   {
+    "id": "note_421",
+    "title": "Họp phụ huynh",
+    "content": "Hỏi cô về điểm toán học kỳ một, đóng tiền quỹ lớp"
+   },
+   {
+    "id": "note_72",
+    "title": "Công thức canh chua",
+    "content": "Cá lóc, me chua, dứa, cà chua, đậu bắp, giá, rau ngổ"
+   }
+  ]
+ }
+}

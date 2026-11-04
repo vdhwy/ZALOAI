@@ -1,0 +1,384 @@
+{
+ "_meta": {
+  "question_id": "train_1133",
+  "current_time": "2026-10-16T11:40:00+07:00",
+  "tools": [
+   "calculator.calculate",
+   "calculator.convert_unit",
+   "chat_ott.call",
+   "chat_ott.list_chats",
+   "chat_ott.read_chat",
+   "chat_ott.send_location",
+   "chat_ott.send_message",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "exchange_rate.convert",
+   "exchange_rate.get_rate",
+   "food_delivery.cancel_order",
+   "food_delivery.get_menu",
+   "food_delivery.list_restaurants",
+   "food_delivery.order_history",
+   "food_delivery.place_order",
+   "household_chores.assign",
+   "household_chores.list_chores",
+   "lottery.check_ticket",
+   "lottery.get_results",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_6978",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09390241682"
+   },
+   {
+    "id": "c_365",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09510730218"
+   },
+   {
+    "id": "c_142",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09858705541"
+   },
+   {
+    "id": "c_344",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09628577105"
+   },
+   {
+    "id": "c_467",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09538522688"
+   },
+   {
+    "id": "c_5241",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09498440806"
+   },
+   {
+    "id": "c_810",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09602449835"
+   },
+   {
+    "id": "c_986",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09576984020"
+   },
+   {
+    "id": "c_73",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09361000560"
+   }
+  ]
+ },
+ "calculator": {},
+ "lottery": {
+  "results": [
+   {
+    "province": "TP.HCM",
+    "date": "2026-10-16",
+    "prizes": {
+     "special": "700602",
+     "first": "90845",
+     "eighth": "50"
+    }
+   },
+   {
+    "province": "Hà Nội",
+    "date": "2026-10-16",
+    "prizes": {
+     "special": "520342",
+     "first": "43686",
+     "eighth": "17"
+    }
+   },
+   {
+    "province": "Đồng Nai",
+    "date": "2026-10-16",
+    "prizes": {
+     "special": "441353",
+     "first": "47868",
+     "eighth": "58"
+    }
+   },
+   {
+    "province": "Đà Nẵng",
+    "date": "2026-10-16",
+    "prizes": {
+     "special": "885891",
+     "first": "93170",
+     "eighth": "59"
+    }
+   }
+  ]
+ },
+ "household_chores": {
+  "chores": [
+   {
+    "id": "chore_853",
+    "name": "Rửa bát",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_101",
+    "name": "Lau nhà",
+    "assignee": "Tuấn",
+    "done": false
+   },
+   {
+    "id": "chore_890",
+    "name": "Tưới cây",
+    "assignee": null,
+    "done": true
+   }
+  ],
+  "members": [
+   "Chị Hoa",
+   "Bà nội",
+   "Tuấn"
+  ]
+ },
+ "chat_ott": {
+  "chats": [
+   {
+    "id": "chat_200",
+    "name": "Mẹ chồng",
+    "type": "direct",
+    "members": [
+     "Mẹ chồng"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_169",
+    "name": "Cô Mai",
+    "type": "direct",
+    "members": [
+     "Cô Mai"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_911",
+    "name": "Gia đình",
+    "type": "group",
+    "members": [
+     "Mẹ",
+     "Bố",
+     "Lan"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_835",
+    "name": "Mẹ",
+    "type": "direct",
+    "members": [
+     "Mẹ"
+    ],
+    "messages": []
+   },
+   {
+    "id": "chat_454",
+    "name": "Anh Hùng",
+    "type": "direct",
+    "members": [
+     "Anh Hùng"
+    ],
+    "messages": []
+   }
+  ]
+ },
+ "food_delivery": {
+  "restaurants": [
+   {
+    "id": "rest_7178",
+    "name": "Cơm tấm Sài Gòn 168",
+    "tags": [
+     "cơm tấm",
+     "cơm"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "price": 50000
+     },
+     {
+      "id": "rest_02_m2",
+      "name": "Cơm tấm sườn",
+      "price": 40000
+     },
+     {
+      "id": "rest_02_m3",
+      "name": "Canh khổ qua",
+      "price": 15000
+     }
+    ]
+   },
+   {
+    "id": "rest_365",
+    "name": "Pizza Nhà Làm",
+    "tags": [
+     "pizza",
+     "món Ý"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_03_m1",
+      "name": "Pizza hải sản cỡ vừa",
+      "price": 189000
+     },
+     {
+      "id": "rest_03_m2",
+      "name": "Pizza bò cỡ lớn",
+      "price": 219000
+     },
+     {
+      "id": "rest_03_m3",
+      "name": "Mì Ý sốt kem",
+      "price": 99000
+     }
+    ]
+   },
+   {
+    "id": "rest_75",
+    "name": "Trà sữa Nhà Mèo",
+    "tags": [
+     "trà sữa",
+     "đồ uống"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_04_m1",
+      "name": "Trà sữa trân châu đường đen",
+      "price": 45000
+     },
+     {
+      "id": "rest_04_m2",
+      "name": "Trà đào cam sả",
+      "price": 39000
+     }
+    ]
+   },
+   {
+    "id": "rest_7893",
+    "name": "Bún bò Huế Cô Ba",
+    "tags": [
+     "bún bò",
+     "món Huế"
+    ],
+    "rating": 4.5,
+    "menu": [
+     {
+      "id": "rest_01_m1",
+      "name": "Bún bò Huế đặc biệt",
+      "price": 55000
+     },
+     {
+      "id": "rest_01_m2",
+      "name": "Bún bò giò",
+      "price": 45000
+     },
+     {
+      "id": "rest_01_m3",
+      "name": "Chả cua",
+      "price": 15000
+     }
+    ]
+   }
+  ],
+  "orders": [
+   {
+    "id": "ord_01",
+    "restaurant_id": "rest_7178",
+    "items": [
+     {
+      "item_id": "rest_02_m1",
+      "name": "Cơm tấm sườn bì chả",
+      "quantity": 1,
+      "note": null
+     }
+    ],
+    "total": 50000,
+    "address": "Công ty CP Dược Sơn Hà, 10 Quang Trung, Hà Đông",
+    "payment": "cash",
+    "status": "placed"
+   }
+  ]
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_1247",
+    "name": "Nhà thuốc Phúc Khang Thái Hà",
+    "address": "120 Thái Hà, Đống Đa, Hà Nội",
+    "category": "pharmacy"
+   },
+   {
+    "id": "place_852",
+    "name": "Cây xăng PetroHưng số 12",
+    "address": "2 Trường Chinh, Đống Đa, Hà Nội",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_724",
+    "name": "Cao Nguyên Coffee Láng Hạ",
+    "address": "88 Láng Hạ, Đống Đa, Hà Nội",
+    "category": "cafe"
+   },
+   {
+    "id": "place_107",
+    "name": "Bệnh viện Bạch Mai",
+    "address": "78 Giải Phóng, Đống Đa, Hà Nội",
+    "category": "hospital"
+   },
+   {
+    "id": "place_4470",
+    "name": "Siêu thị MinhMart Thiên Đô City",
+    "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "category": "supermarket"
+   }
+  ],
+  "saved_places": []
+ },
+ "exchange_rate": {
+  "rates": [
+   {
+    "from": "USD",
+    "to": "VND",
+    "rate": 25760
+   },
+   {
+    "from": "EUR",
+    "to": "VND",
+    "rate": 27820
+   },
+   {
+    "from": "JPY",
+    "to": "VND",
+    "rate": 171.7
+   }
+  ]
+ }
+}

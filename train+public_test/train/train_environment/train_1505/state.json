@@ -1,0 +1,138 @@
+{
+ "_meta": {
+  "question_id": "train_1505",
+  "current_time": "2026-11-28T20:00:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "sms.read_recent",
+   "sms.send"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_4577",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Biển Mỹ Khê",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_27",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Biển Mỹ Khê",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_609",
+    "name": "Xe đạp điện 104",
+    "station": "Trạm Công viên Biển Đông",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_333",
+    "name": "Xe đạp thường 103",
+    "station": "Trạm Công viên Biển Đông",
+    "available": true,
+    "price_per_hour": 10000
+   }
+  ],
+  "reservations": []
+ },
+ "sms": {
+  "messages": []
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": [
+   {
+    "id": "ride_731",
+    "status": "booked",
+    "pickup": "22 Lê Duẩn, Hải Châu, Đà Nẵng",
+    "dropoff": "Sân bay quốc tế Đà Nẵng",
+    "vehicle": "car4",
+    "schedule_time": "2026-11-29T05:15:00+07:00"
+   },
+   {
+    "id": "ride_748",
+    "status": "cancelled",
+    "pickup": "22 Lê Duẩn, Hải Châu, Đà Nẵng",
+    "dropoff": "Ga Đà Nẵng, 791 Hải Phòng, Thanh Khê",
+    "vehicle": "car4",
+    "schedule_time": "2026-11-29T06:00:00+07:00"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_343",
+    "name": "Ông xã",
+    "relation": "chồng",
+    "phone": "09955548476"
+   },
+   {
+    "id": "c_8558",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09550270851"
+   },
+   {
+    "id": "c_2981",
+    "name": "Thảo",
+    "relation": "con gái",
+    "phone": "09898428738"
+   },
+   {
+    "id": "c_883",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09388775535"
+   },
+   {
+    "id": "c_222",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09127822450"
+   },
+   {
+    "id": "c_626",
+    "name": "Bà Sáu",
+    "relation": "hàng xóm",
+    "phone": "09442818051"
+   },
+   {
+    "id": "c_906",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09618593405"
+   }
+  ]
+ }
+}

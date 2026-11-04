@@ -1,0 +1,328 @@
+{
+ "_meta": {
+  "question_id": "public_0619",
+  "current_time": "2026-11-19T07:40:00+07:00",
+  "tools": [
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "habit_tracker.list_habits",
+   "habit_tracker.log",
+   "maps.get_route",
+   "maps.save_place",
+   "maps.search_place",
+   "pantry.consume",
+   "pantry.list_items",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "habit_tracker": {
+  "habits": [
+   {
+    "id": "habit_194",
+    "name": "Uống đủ 2 lít nước",
+    "streak": 3,
+    "last_logged": "2026-11-17"
+   },
+   {
+    "id": "habit_82",
+    "name": "Ngủ trước 11 giờ",
+    "streak": 12,
+    "last_logged": "2026-11-18"
+   },
+   {
+    "id": "habit_225",
+    "name": "Thiền 10 phút",
+    "streak": 4,
+    "last_logged": "2026-11-19"
+   },
+   {
+    "id": "habit_5961",
+    "name": "Học từ vựng tiếng Anh",
+    "streak": 1,
+    "last_logged": "2026-11-18"
+   }
+  ],
+  "logs": [
+   {
+    "id": "log_885",
+    "habit_id": "habit_82",
+    "date": "2026-11-18"
+   },
+   {
+    "id": "log_440",
+    "habit_id": "habit_5961",
+    "date": "2026-11-18"
+   },
+   {
+    "id": "log_810",
+    "habit_id": "habit_225",
+    "date": "2026-11-18"
+   },
+   {
+    "id": "log_242",
+    "habit_id": "habit_194",
+    "date": "2026-11-17"
+   },
+   {
+    "id": "log_05",
+    "habit_id": "habit_225",
+    "date": "2026-11-19"
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_30",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09141908440"
+   },
+   {
+    "id": "c_436",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09799938352"
+   },
+   {
+    "id": "c_92",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09904976879"
+   },
+   {
+    "id": "c_239",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09122222482"
+   },
+   {
+    "id": "c_27",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09229986005"
+   },
+   {
+    "id": "c_730",
+    "name": "Anh Kha",
+    "relation": "chồng",
+    "phone": "09158891607"
+   },
+   {
+    "id": "c_465",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09291963010"
+   },
+   {
+    "id": "c_178",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09996073160"
+   },
+   {
+    "id": "c_764",
+    "name": "Mr. Tanaka",
+    "relation": "đối tác",
+    "phone": "09873674576"
+   },
+   {
+    "id": "c_2286",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09398243435"
+   },
+   {
+    "id": "c_671",
+    "name": "Sarah",
+    "relation": "đồng nghiệp",
+    "phone": "09571334709"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   }
+  ],
+  "rides": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Đà Nẵng",
+    "temperature_c": 32,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-19",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 23,
+    "temp_max": 31
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-20",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 30
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-21",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 21,
+    "temp_max": 34
+   },
+   {
+    "location": "Đà Nẵng",
+    "date": "2026-11-22",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 24,
+    "temp_max": 30
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 620000,
+  "transactions": []
+ },
+ "maps": {
+  "places": [
+   {
+    "id": "place_135",
+    "name": "Cây xăng PetroHưng Nguyễn Văn Linh",
+    "address": "150 Nguyễn Văn Linh, Thanh Khê, Đà Nẵng",
+    "category": "gas_station"
+   },
+   {
+    "id": "place_7742",
+    "name": "Cà phê Gác Nhỏ",
+    "address": "45 Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
+    "category": "cafe"
+   },
+   {
+    "id": "place_418",
+    "name": "Cà phê Mộc Lam",
+    "address": "8 Lê Đình Dương, Hải Châu, Đà Nẵng",
+    "category": "cafe",
+    "detail": "Góc Nguyễn Văn Linh, cách ngã tư 50 m"
+   },
+   {
+    "id": "place_3924",
+    "name": "Mì Quảng Bà Mùi",
+    "address": "19 Trần Bình Trọng, Hải Châu, Đà Nẵng",
+    "category": "restaurant"
+   },
+   {
+    "id": "place_319",
+    "name": "Bệnh viện Đà Nẵng",
+    "address": "124 Hải Phòng, Hải Châu, Đà Nẵng",
+    "category": "hospital"
+   },
+   {
+    "id": "place_535",
+    "name": "Lotus Mart Đà Nẵng",
+    "address": "6 Nại Nam, Hải Châu, Đà Nẵng",
+    "category": "supermarket"
+   },
+   {
+    "id": "place_975",
+    "name": "Ký Ức Cà Phê Bạch Đằng",
+    "address": "98 Bạch Đằng, Hải Châu, Đà Nẵng",
+    "category": "cafe"
+   },
+   {
+    "id": "place_2093",
+    "name": "Crestview Residences",
+    "address": "17 Lê Đình Dương, Hải Châu, Đà Nẵng",
+    "category": "hotel"
+   },
+   {
+    "id": "place_655",
+    "name": "Crestview Hotels",
+    "address": "47 Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
+    "category": "hotel",
+    "detail": "Sát vách quán Gác Nhỏ"
+   },
+   {
+    "id": "place_861",
+    "name": "Crestview Hotels",
+    "address": "21 Lê Đình Dương, Hải Châu, Đà Nẵng",
+    "category": "hotel",
+    "detail": "Đối diện quán Mộc Lam"
+   }
+  ],
+  "saved_places": []
+ },
+ "pantry": {
+  "items": [
+   {
+    "id": "pan_709",
+    "name": "gạo ST25",
+    "stock": 3,
+    "unit": "kg"
+   },
+   {
+    "id": "pan_700",
+    "name": "dầu ăn",
+    "stock": 2,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_583",
+    "name": "yến mạch",
+    "stock": 1,
+    "unit": "túi"
+   },
+   {
+    "id": "pan_747",
+    "name": "bột mì",
+    "stock": 1,
+    "unit": "gói"
+   },
+   {
+    "id": "pan_691",
+    "name": "nước mắm",
+    "stock": 2,
+    "unit": "chai"
+   },
+   {
+    "id": "pan_111",
+    "name": "trứng gà",
+    "stock": 5,
+    "unit": "quả"
+   }
+  ]
+ }
+}

@@ -1,0 +1,413 @@
+{
+ "_meta": {
+  "question_id": "train_0944",
+  "current_time": "2026-10-17T13:30:00+07:00",
+  "tools": [
+   "appliances.list",
+   "appliances.start_cycle",
+   "appliances.stop",
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "phone.call",
+   "phone.recent_calls",
+   "reminders.complete",
+   "reminders.create",
+   "reminders.delete",
+   "reminders.list",
+   "smart_home.climate_set",
+   "smart_home.fan_set",
+   "smart_home.get_status",
+   "smart_home.light_set",
+   "smart_home.scene_run",
+   "smart_home.switch_set",
+   "sms.read_recent",
+   "sms.send",
+   "tasks.add",
+   "tasks.complete",
+   "tasks.list",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_508",
+    "name": "Chị Dung",
+    "relation": "chủ trung tâm gia sư",
+    "phone": "09235793019"
+   },
+   {
+    "id": "c_280",
+    "name": "Thầy Hùng",
+    "relation": "giáo viên hướng dẫn",
+    "phone": "09637482649"
+   },
+   {
+    "id": "c_3473",
+    "name": "Ba",
+    "relation": "bố",
+    "phone": "09350806900"
+   },
+   {
+    "id": "c_9938",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09802957516"
+   },
+   {
+    "id": "c_1489",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo cấp ba",
+    "phone": "09171010920"
+   },
+   {
+    "id": "c_467",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09454813970"
+   },
+   {
+    "id": "c_766",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09118633382"
+   },
+   {
+    "id": "c_97",
+    "name": "Mạ",
+    "relation": "mẹ",
+    "phone": "09689336778"
+   },
+   {
+    "id": "c_991",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09361589977"
+   },
+   {
+    "id": "c_200",
+    "name": "Nhi",
+    "relation": "bạn thân",
+    "phone": "09739387792"
+   }
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_7400",
+    "name": "Tài khoản thanh toán",
+    "balance": 8900000
+   },
+   {
+    "id": "acc_373",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 50000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_726",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_1185",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_7063",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   }
+  ],
+  "transactions": []
+ },
+ "smart_home": {
+  "devices": [
+   {
+    "id": "fan_office",
+    "name": "quạt phòng làm việc",
+    "type": "fan",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_kitchen",
+    "name": "đèn bếp",
+    "type": "light",
+    "room": "bếp",
+    "floor": 1,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_office",
+    "name": "đèn phòng làm việc",
+    "type": "light",
+    "room": "phòng làm việc",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "ac_living",
+    "name": "điều hoà phòng khách",
+    "type": "climate",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "fan_living",
+    "name": "quạt phòng khách",
+    "type": "fan",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "speed": 2
+    }
+   },
+   {
+    "id": "light_bedroom2",
+    "name": "đèn phòng ngủ nhỏ",
+    "type": "light",
+    "room": "phòng ngủ nhỏ",
+    "floor": 2,
+    "state": {
+     "power": "on",
+     "brightness": 60
+    }
+   },
+   {
+    "id": "ac_bedroom",
+    "name": "điều hoà phòng ngủ",
+    "type": "climate",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "mode": "off"
+    }
+   },
+   {
+    "id": "light_living",
+    "name": "đèn phòng khách",
+    "type": "light",
+    "room": "phòng khách",
+    "floor": 1,
+    "state": {
+     "power": "off",
+     "brightness": 100
+    }
+   },
+   {
+    "id": "light_bedroom",
+    "name": "đèn phòng ngủ",
+    "type": "light",
+    "room": "phòng ngủ",
+    "floor": 2,
+    "state": {
+     "power": "off",
+     "brightness": 60
+    }
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_5250",
+    "title": "Demo sản phẩm với khách hàng",
+    "start": "2026-10-18T14:30:00+07:00",
+    "link": "https://meet.example.test/nng-fwsg-htp",
+    "attendees": [
+     "c_3473"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_293",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-10-18T08:30:00+07:00",
+    "link": "https://meet.example.test/oka-mwma-ccx",
+    "attendees": [
+     "c_200",
+     "c_1489"
+    ],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_8919",
+    "title": "Phỏng vấn ứng viên frontend",
+    "start": "2026-10-18T10:30:00+07:00",
+    "link": "https://meet.example.test/rfo-xilj-rrv",
+    "attendees": [
+     "c_9938"
+    ],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "reminders": {
+  "reminders": []
+ },
+ "sms": {
+  "messages": [
+   {
+    "id": "msg_517",
+    "contact_id": "c_200",
+    "phone_number": "09739387792",
+    "direction": "incoming",
+    "time": "2026-10-17T11:20:00+07:00",
+    "content": "Chiều ni ba giờ học nhóm ở thư viện nghe Ngọc"
+   },
+   {
+    "id": "msg_563",
+    "contact_id": "c_97",
+    "phone_number": "09689336778",
+    "direction": "incoming",
+    "time": "2026-10-17T13:05:00+07:00",
+    "content": "Ngọc ơi mạ đi đám cưới vội quá, quên tắt cái máy dưới bếp, con tắt giùm mạ nghe"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "tasks": {
+  "tasks": [
+   {
+    "id": "task_240",
+    "title": "Gia hạn bảo hiểm xe máy",
+    "due": "2026-10-20T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_862",
+    "title": "Nộp báo cáo tuần",
+    "due": "2026-10-20T12:00:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_427",
+    "title": "Đóng học phí cho con",
+    "due": "2026-10-23T17:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   },
+   {
+    "id": "task_5476",
+    "title": "Trả sách thư viện",
+    "due": "2026-10-21T09:30:00+07:00",
+    "priority": "normal",
+    "done": false
+   }
+  ]
+ },
+ "appliances": {
+  "appliances": [
+   {
+    "id": "appl_866",
+    "name": "lò vi sóng",
+    "type": "microwave",
+    "room": "bếp",
+    "cycles": [
+     "reheat",
+     "defrost",
+     "cook"
+    ],
+    "cycle_labels": {
+     "reheat": "hâm nóng",
+     "defrost": "rã đông",
+     "cook": "nấu"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "defrost",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_27",
+    "name": "nồi cơm điện",
+    "type": "rice_cooker",
+    "room": "bếp",
+    "cycles": [
+     "white_rice",
+     "quick",
+     "porridge",
+     "keep_warm"
+    ],
+    "cycle_labels": {
+     "white_rice": "nấu cơm trắng",
+     "quick": "nấu nhanh",
+     "porridge": "nấu cháo",
+     "keep_warm": "giữ ấm"
+    },
+    "state": {
+     "status": "running",
+     "cycle": "porridge",
+     "delay_minutes": 0
+    }
+   },
+   {
+    "id": "appl_989",
+    "name": "máy giặt",
+    "type": "washer",
+    "room": "phòng giặt",
+    "cycles": [
+     "quick",
+     "normal",
+     "eco",
+     "heavy",
+     "wool"
+    ],
+    "cycle_labels": {
+     "quick": "giặt nhanh",
+     "normal": "giặt thường",
+     "eco": "tiết kiệm",
+     "heavy": "đồ dày",
+     "wool": "đồ len"
+    },
+    "state": {
+     "status": "idle",
+     "cycle": null,
+     "delay_minutes": 0
+    }
+   }
+  ]
+ },
+ "phone": {
+  "calls": []
+ }
+}

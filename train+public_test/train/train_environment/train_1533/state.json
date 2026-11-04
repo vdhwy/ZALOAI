@@ -1,0 +1,377 @@
+{
+ "_meta": {
+  "question_id": "train_1533",
+  "current_time": "2026-11-26T12:45:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "fitness.get_activity",
+   "fitness.log_workout",
+   "fitness.set_goal",
+   "home_security.acknowledge_alert",
+   "home_security.arm",
+   "home_security.get_camera",
+   "home_security.list_alerts",
+   "library.reserve",
+   "library.search",
+   "loyalty.get_points",
+   "loyalty.list_vouchers",
+   "loyalty.redeem",
+   "video_meeting.create",
+   "video_meeting.join",
+   "video_meeting.list_meetings",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "Hà Nội",
+    "temperature_c": 27,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-26",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-27",
+    "condition": "nhiều mây",
+    "rain": false,
+    "temp_min": 22,
+    "temp_max": 30
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-28",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 28
+   },
+   {
+    "location": "Hà Nội",
+    "date": "2026-11-29",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 22,
+    "temp_max": 33
+   }
+  ]
+ },
+ "fitness": {
+  "activity": {
+   "2026-11-23": {
+    "steps": 5658,
+    "calories": 226,
+    "distance_km": 4.1
+   },
+   "2026-11-24": {
+    "steps": 6831,
+    "calories": 273,
+    "distance_km": 4.9
+   },
+   "2026-11-25": {
+    "steps": 10447,
+    "calories": 417,
+    "distance_km": 7.5
+   },
+   "2026-11-26": {
+    "steps": 1602,
+    "calories": 64,
+    "distance_km": 1.2
+   }
+  },
+  "goal_steps": 6000,
+  "workouts": [
+   {
+    "id": "wo_9722",
+    "type": "yoga",
+    "minutes": 45,
+    "time": "2026-11-25T17:00:00+07:00"
+   },
+   {
+    "id": "wo_358",
+    "type": "yoga",
+    "minutes": 45,
+    "time": "2026-11-23T17:30:00+07:00"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": []
+ },
+ "loyalty": {
+  "programs": [
+   {
+    "id": "prog_836",
+    "name": "CineViệt Membership",
+    "merchant": "CineViệt",
+    "points": 1600,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_03_1",
+      "name": "Vé xem phim 2D miễn phí",
+      "cost": 800,
+      "value": 95000
+     },
+     {
+      "id": "rw_03_2",
+      "name": "Combo bắp nước",
+      "cost": 400,
+      "value": 79000
+     }
+    ]
+   },
+   {
+    "id": "prog_933",
+    "name": "Rồng Miles",
+    "merchant": "Rồng Việt Air",
+    "points": 7200,
+    "tier": "Thành viên",
+    "rewards": [
+     {
+      "id": "rw_01_1",
+      "name": "Nâng hạng ghế nội địa",
+      "cost": 6000,
+      "value": 1200000
+     },
+     {
+      "id": "rw_01_2",
+      "name": "Voucher 200.000đ vé nội địa",
+      "cost": 2000,
+      "value": 200000
+     }
+    ]
+   },
+   {
+    "id": "prog_7050",
+    "name": "Cao Nguyên Rewards",
+    "merchant": "Cao Nguyên Coffee",
+    "points": 250,
+    "tier": "Bạc",
+    "rewards": [
+     {
+      "id": "rw_02_1",
+      "name": "Ly cà phê phin sữa đá miễn phí",
+      "cost": 300,
+      "value": 39000
+     },
+     {
+      "id": "rw_02_2",
+      "name": "Voucher giảm 50.000đ",
+      "cost": 500,
+      "value": 50000
+     }
+    ]
+   }
+  ],
+  "vouchers": [
+   {
+    "id": "vch_704",
+    "merchant": "Cao Nguyên Coffee",
+    "name": "Mua 1 tặng 1",
+    "value": 39000,
+    "expires": "2026-12-11",
+    "used": false
+   },
+   {
+    "id": "vch_248",
+    "merchant": "Muado",
+    "name": "Giảm 30.000đ đơn từ 150.000đ",
+    "value": 30000,
+    "expires": "2026-12-07",
+    "used": false
+   }
+  ]
+ },
+ "home_security": {
+  "mode": "away",
+  "cameras": [
+   {
+    "id": "cam_5067",
+    "name": "camera sân sau",
+    "location": "sân sau",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_4701",
+    "name": "camera phòng khách",
+    "location": "phòng khách",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_3586",
+    "name": "camera cổng",
+    "location": "cổng",
+    "online": true,
+    "recording": true
+   },
+   {
+    "id": "cam_674",
+    "name": "camera gara",
+    "location": "gara",
+    "online": true,
+    "recording": true
+   }
+  ],
+  "alerts": [
+   {
+    "id": "alert_4967",
+    "time": "2026-11-25T00:50:00+07:00",
+    "type": "door_open",
+    "location": "cửa sau",
+    "message": "Cửa sau mở quá 10 phút",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_287",
+    "time": "2026-11-24T13:15:00+07:00",
+    "type": "motion",
+    "location": "sân sau",
+    "message": "Camera sân sau phát hiện người lạ",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_211",
+    "time": "2026-11-25T16:10:00+07:00",
+    "type": "motion",
+    "location": "cổng",
+    "message": "Phát hiện chuyển động ở cổng",
+    "acknowledged": false
+   },
+   {
+    "id": "alert_883",
+    "time": "2026-11-25T06:40:00+07:00",
+    "type": "doorbell",
+    "location": "cửa chính",
+    "message": "Có người bấm chuông cửa chính",
+    "acknowledged": true
+   },
+   {
+    "id": "alert_9494",
+    "time": "2026-11-26T02:20:00+07:00",
+    "type": "door_open",
+    "location": "cửa kho",
+    "message": "Cảm biến báo cửa kho đang mở",
+    "acknowledged": false
+   }
+  ]
+ },
+ "video_meeting": {
+  "meetings": [
+   {
+    "id": "meet_511",
+    "title": "Họp giao ban đầu tuần",
+    "start": "2026-11-29T20:30:00+07:00",
+    "link": "https://meet.example.test/jve-hadd-mso",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_678",
+    "title": "Phỏng vấn thực tập Ironbridge Engineering",
+    "start": "2026-11-27T14:00:00+07:00",
+    "link": "https://meet.example.test/shp-tyej-hwe",
+    "attendees": [],
+    "status": "scheduled"
+   },
+   {
+    "id": "meet_2093",
+    "title": "Phỏng vấn thực tập Ironbridge Energy",
+    "start": "2026-11-27T09:00:00+07:00",
+    "link": "https://meet.example.test/kqo-vbrt-mzl",
+    "attendees": [],
+    "status": "scheduled"
+   }
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_3844",
+    "title": "hẹn cà phê với Minh",
+    "start": "2026-11-27T19:30:00+07:00",
+    "end": "2026-11-27T20:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_5887",
+    "title": "đá bóng",
+    "start": "2026-11-29T18:00:00+07:00",
+    "end": "2026-11-29T19:00:00+07:00",
+    "location": "Phòng khám Nha khoa Việt",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_913",
+    "title": "khám răng",
+    "start": "2026-11-27T09:30:00+07:00",
+    "end": "2026-11-27T10:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_6640",
+    "title": "họp phụ huynh",
+    "start": "2026-11-27T08:30:00+07:00",
+    "end": "2026-11-27T09:30:00+07:00",
+    "location": "Sân bóng Mini",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "library": {
+  "books": [
+   {
+    "id": "book_372",
+    "title": "Tuổi trẻ đáng giá bao nhiêu",
+    "author": "Rosie Nguyễn",
+    "available": true
+   },
+   {
+    "id": "book_558",
+    "title": "Dế Mèn phiêu lưu ký",
+    "author": "Tô Hoài",
+    "available": false
+   },
+   {
+    "id": "book_7494",
+    "title": "Cho tôi xin một vé đi tuổi thơ",
+    "author": "Nguyễn Nhật Ánh",
+    "available": true
+   },
+   {
+    "id": "book_879",
+    "title": "Đắc nhân tâm",
+    "author": "Dale Carnegie",
+    "available": true
+   },
+   {
+    "id": "book_744",
+    "title": "Số đỏ",
+    "author": "Vũ Trọng Phụng",
+    "available": true
+   }
+  ],
+  "reservations": []
+ }
+}

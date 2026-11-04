@@ -1,0 +1,299 @@
+{
+ "_meta": {
+  "question_id": "train_1340",
+  "current_time": "2026-11-28T18:05:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "calendar.cancel_event",
+   "calendar.create_event",
+   "calendar.list_events",
+   "calendar.update_event",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "flights.book",
+   "flights.cancel",
+   "flights.check_in",
+   "flights.my_bookings",
+   "flights.search",
+   "ride_hailing.book",
+   "ride_hailing.cancel",
+   "ride_hailing.get_quotes",
+   "ride_hailing.get_ride",
+   "weather.get_current",
+   "weather.get_forecast"
+  ]
+ },
+ "calendar": {
+  "events": [
+   {
+    "id": "evt_203",
+    "title": "họp team",
+    "start": "2026-11-29T09:30:00+07:00",
+    "end": "2026-11-29T10:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_158",
+    "title": "đá bóng",
+    "start": "2026-12-01T14:30:00+07:00",
+    "end": "2026-12-01T15:30:00+07:00",
+    "location": "Công viên Thống Nhất",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_531",
+    "title": "ăn tối với gia đình",
+    "start": "2026-12-01T15:00:00+07:00",
+    "end": "2026-12-01T16:00:00+07:00",
+    "location": "Nhà hàng Ngon",
+    "status": "confirmed"
+   },
+   {
+    "id": "evt_9283",
+    "title": "đi chơi công viên",
+    "start": "2026-12-01T18:30:00+07:00",
+    "end": "2026-12-01T19:30:00+07:00",
+    "location": "Văn phòng",
+    "status": "confirmed"
+   }
+  ]
+ },
+ "flights": {
+  "flights": [
+   {
+    "id": "fl_2849",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-10",
+    "depart": "09:00",
+    "arrive": "11:10",
+    "airline": "JetXanh",
+    "price": 1190000
+   },
+   {
+    "id": "fl_193",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-10",
+    "depart": "14:00",
+    "arrive": "16:10",
+    "airline": "Sen Air",
+    "price": 1420000
+   },
+   {
+    "id": "fl_922",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-10",
+    "depart": "19:00",
+    "arrive": "21:10",
+    "airline": "JetXanh",
+    "price": 990000
+   },
+   {
+    "id": "fl_6737",
+    "origin": "SGN",
+    "destination": "DAD",
+    "date": "2026-12-10",
+    "depart": "06:00",
+    "arrive": "08:10",
+    "airline": "Rồng Việt Air",
+    "price": 1850000
+   }
+  ],
+  "bookings": []
+ },
+ "weather": {
+  "current": [
+   {
+    "location": "TP.HCM",
+    "temperature_c": 30,
+    "condition": "mưa rào"
+   }
+  ],
+  "forecast": [
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-28",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-29",
+    "condition": "mưa rào",
+    "rain": true,
+    "temp_min": 20,
+    "temp_max": 34
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-11-30",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 25,
+    "temp_max": 33
+   },
+   {
+    "location": "TP.HCM",
+    "date": "2026-12-01",
+    "condition": "có mây",
+    "rain": false,
+    "temp_min": 21,
+    "temp_max": 32
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_959",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09800588705"
+   },
+   {
+    "id": "c_284",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09580223740"
+   },
+   {
+    "id": "c_333",
+    "name": "Vợ Hằng",
+    "relation": "vợ",
+    "phone": "09470770532"
+   },
+   {
+    "id": "c_5758",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09105739712"
+   },
+   {
+    "id": "c_965",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09529194201"
+   },
+   {
+    "id": "c_709",
+    "name": "Team Design",
+    "relation": "nhóm",
+    "phone": "09743999314"
+   },
+   {
+    "id": "c_127",
+    "name": "Bác Ba",
+    "relation": "hàng xóm",
+    "phone": "09718334128"
+   },
+   {
+    "id": "c_312",
+    "name": "Sếp David",
+    "relation": "sếp",
+    "phone": "09538644830"
+   },
+   {
+    "id": "c_4182",
+    "name": "Kevin Tran",
+    "relation": "Team Design",
+    "phone": "09618273045"
+   },
+   {
+    "id": "c_867",
+    "name": "Kevin Trần",
+    "relation": "khách hàng",
+    "phone": "09372651804"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 930000,
+  "transactions": [
+   {
+    "id": "tx_01",
+    "type": "transfer",
+    "to": "c_4182",
+    "amount": -320000,
+    "note": "tiền order trà sữa"
+   }
+  ]
+ },
+ "ride_hailing": {
+  "quotes": [
+   {
+    "vehicle": "bike",
+    "price": 35000,
+    "eta_min": 4
+   },
+   {
+    "vehicle": "car4",
+    "price": 85000,
+    "eta_min": 7
+   },
+   {
+    "vehicle": "car7",
+    "price": 110000,
+    "eta_min": 9
+   }
+  ],
+  "rides": []
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_33",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_6340",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Thảo Điền",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_7826",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Bến Thành",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_106",
+    "name": "Xe đạp điện 106",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_360",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Nhà hát Thành phố",
+    "available": false,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_3252",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Bến Thành",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ }
+}

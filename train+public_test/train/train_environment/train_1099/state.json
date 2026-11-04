@@ -1,0 +1,341 @@
+{
+ "_meta": {
+  "question_id": "train_1099",
+  "current_time": "2026-12-09T12:30:00+07:00",
+  "tools": [
+   "bike_rental.find_bikes",
+   "bike_rental.reserve",
+   "music.add_to_playlist",
+   "music.control",
+   "music.list_tracks",
+   "music.play",
+   "podcast_radio.play",
+   "podcast_radio.queue",
+   "podcast_radio.search",
+   "podcast_radio.subscribe",
+   "subscriptions.cancel",
+   "subscriptions.list",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "bike_rental": {
+  "bikes": [
+   {
+    "id": "bike_3827",
+    "name": "Xe đạp điện 101",
+    "station": "Trạm Hồ Tây",
+    "available": false,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_863",
+    "name": "Xe đạp điện 106",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_571",
+    "name": "Xe đạp thường 104",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 10000
+   },
+   {
+    "id": "bike_488",
+    "name": "Xe đạp thể thao 105",
+    "station": "Trạm Hồ Gươm",
+    "available": true,
+    "price_per_hour": 15000
+   },
+   {
+    "id": "bike_1696",
+    "name": "Xe đạp điện 103",
+    "station": "Trạm Láng Hạ",
+    "available": true,
+    "price_per_hour": 25000
+   },
+   {
+    "id": "bike_5725",
+    "name": "Xe đạp thể thao 102",
+    "station": "Trạm Hồ Tây",
+    "available": true,
+    "price_per_hour": 15000
+   }
+  ],
+  "reservations": []
+ },
+ "tv": {
+  "power": "off",
+  "channel": null,
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ]
+ },
+ "subscriptions": {
+  "subscriptions": [
+   {
+    "id": "sub_3194",
+    "name": "Xemflix gói Tiêu chuẩn",
+    "price": 220000,
+    "next_billing": "2026-12-18",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_6871",
+    "name": "TalkAI Plus",
+    "price": 500000,
+    "next_billing": "2026-12-30",
+    "status": "active",
+    "cycle": "monthly"
+   },
+   {
+    "id": "sub_466",
+    "name": "OrbitCloud+ 200GB",
+    "price": 59000,
+    "next_billing": "2026-12-12",
+    "status": "active",
+    "cycle": "monthly"
+   }
+  ]
+ },
+ "music": {
+  "tracks": [
+   {
+    "id": "trk_2702",
+    "title": "Ngày đầu tiên",
+    "artist": "Đức Phúc",
+    "playlists": [
+     {
+      "id": "pl_7255",
+      "name": "Nhạc chill buổi tối"
+     }
+    ]
+   },
+   {
+    "id": "trk_715",
+    "title": "Hoa nở không màu",
+    "artist": "Hoài Lâm",
+    "playlists": []
+   },
+   {
+    "id": "trk_5979",
+    "title": "Nơi này có anh",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": [
+     {
+      "id": "pl_346",
+      "name": "Nhạc tập gym"
+     }
+    ]
+   },
+   {
+    "id": "trk_281",
+    "title": "Xin gọi nhau là cố nhân",
+    "artist": "Quang Lê",
+    "playlists": [
+     {
+      "id": "pl_5318",
+      "name": "Bolero trữ tình"
+     }
+    ]
+   },
+   {
+    "id": "trk_7980",
+    "title": "Bước qua nhau",
+    "artist": "Vũ.",
+    "playlists": [
+     {
+      "id": "pl_7255",
+      "name": "Nhạc chill buổi tối"
+     }
+    ]
+   },
+   {
+    "id": "trk_7179",
+    "title": "Chúng ta của hiện tại",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": [
+     {
+      "id": "pl_346",
+      "name": "Nhạc tập gym"
+     }
+    ]
+   },
+   {
+    "id": "trk_8112",
+    "title": "Có chắc yêu là đây",
+    "artist": "Sơn Tùng M-TP",
+    "playlists": []
+   },
+   {
+    "id": "trk_4027",
+    "title": "Sầu tím thiệp hồng",
+    "artist": "Quang Lê, Lệ Quyên",
+    "playlists": [
+     {
+      "id": "pl_5318",
+      "name": "Bolero trữ tình"
+     }
+    ]
+   },
+   {
+    "id": "trk_639",
+    "title": "Đập vỡ cây đàn",
+    "artist": "Quang Lê",
+    "playlists": []
+   }
+  ],
+  "playlists": [
+   {
+    "id": "pl_346",
+    "name": "Nhạc tập gym",
+    "track_ids": [
+     "trk_5979",
+     "trk_7179"
+    ]
+   },
+   {
+    "id": "pl_7255",
+    "name": "Nhạc chill buổi tối",
+    "track_ids": [
+     "trk_2702",
+     "trk_7980"
+    ]
+   },
+   {
+    "id": "pl_5318",
+    "name": "Bolero trữ tình",
+    "track_ids": [
+     "trk_4027",
+     "trk_281"
+    ]
+   }
+  ],
+  "now_playing": null
+ },
+ "podcast_radio": {
+  "shows": [
+   {
+    "id": "show_269",
+    "name": "Sách nói đêm khuya",
+    "host": "Mai Anh",
+    "category": "sách nói"
+   },
+   {
+    "id": "show_415",
+    "name": "Khoa học mỗi ngày",
+    "host": "Thùy Linh",
+    "category": "khoa học"
+   },
+   {
+    "id": "show_2932",
+    "name": "Thành phố xanh",
+    "host": "Minh Đức",
+    "category": "môi trường"
+   }
+  ],
+  "episodes": [
+   {
+    "id": "ep_4966",
+    "show_id": "show_415",
+    "title": "Số 9: Lỗ đen là gì",
+    "number": 9,
+    "duration_min": 25,
+    "published": "2026-12-02"
+   },
+   {
+    "id": "ep_4164",
+    "show_id": "show_2932",
+    "title": "Số 11: Rác thải nhựa ở đô thị",
+    "number": 11,
+    "duration_min": 18,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_151",
+    "show_id": "show_2932",
+    "title": "Số 13: Đi xe đạp đi làm",
+    "number": 13,
+    "duration_min": 25,
+    "published": "2026-12-02"
+   },
+   {
+    "id": "ep_3426",
+    "show_id": "show_415",
+    "title": "Số 7: Vì sao bầu trời màu xanh",
+    "number": 7,
+    "duration_min": 45,
+    "published": "2026-11-18"
+   },
+   {
+    "id": "ep_7667",
+    "show_id": "show_269",
+    "title": "Số 11: Nhà giả kim - phần 2",
+    "number": 11,
+    "duration_min": 32,
+    "published": "2026-12-02"
+   },
+   {
+    "id": "ep_853",
+    "show_id": "show_269",
+    "title": "Số 10: Nhà giả kim - phần 1",
+    "number": 10,
+    "duration_min": 18,
+    "published": "2026-11-25"
+   },
+   {
+    "id": "ep_471",
+    "show_id": "show_415",
+    "title": "Số 8: Giấc ngủ và trí nhớ",
+    "number": 8,
+    "duration_min": 25,
+    "published": "2026-11-25"
+   },
+   {
+    "id": "ep_977",
+    "show_id": "show_2932",
+    "title": "Số 12: Trồng cây trên sân thượng",
+    "number": 12,
+    "duration_min": 25,
+    "published": "2026-11-25"
+   }
+  ],
+  "stations": [
+   {
+    "id": "st_131",
+    "name": "VOV1",
+    "frequency": "100 MHz"
+   },
+   {
+    "id": "st_784",
+    "name": "VOV Giao thông",
+    "frequency": "91 MHz"
+   },
+   {
+    "id": "st_3457",
+    "name": "VOV3",
+    "frequency": "102.7 MHz"
+   },
+   {
+    "id": "st_965",
+    "name": "Xone FM",
+    "frequency": "98.9 MHz"
+   }
+  ],
+  "subscriptions": [
+   "show_415"
+  ],
+  "queue": [],
+  "now_playing": null
+ }
+}

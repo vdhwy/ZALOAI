@@ -1,0 +1,309 @@
+{
+ "_meta": {
+  "question_id": "public_0404",
+  "current_time": "2026-10-14T08:20:00+07:00",
+  "tools": [
+   "alarm.create",
+   "alarm.delete",
+   "alarm.list",
+   "alarm.update",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "event_tickets.book",
+   "event_tickets.search",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "translator.translate"
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_236",
+    "name": "Sếp Kim",
+    "relation": "sếp",
+    "phone": "09509355859"
+   },
+   {
+    "id": "c_4487",
+    "name": "Anh Long",
+    "relation": "người yêu",
+    "phone": "09151652717"
+   },
+   {
+    "id": "c_1173",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09905083138"
+   },
+   {
+    "id": "c_6525",
+    "name": "Cô giáo Mai",
+    "relation": "cô giáo của con",
+    "phone": "09786853444"
+   },
+   {
+    "id": "c_192",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09757672744"
+   },
+   {
+    "id": "c_193",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09256429962"
+   },
+   {
+    "id": "c_364",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09464919473"
+   }
+  ]
+ },
+ "translator": {
+  "dictionary": [
+   {
+    "text": "Cảm ơn bạn rất nhiều",
+    "to_lang": "en",
+    "translation": "Thank you very much"
+   },
+   {
+    "text": "Good morning",
+    "to_lang": "vi",
+    "translation": "Chào buổi sáng"
+   },
+   {
+    "text": "Chúc mừng sinh nhật",
+    "to_lang": "fr",
+    "translation": "Joyeux anniversaire"
+   },
+   {
+    "text": "Nhà vệ sinh ở đâu",
+    "to_lang": "en",
+    "translation": "Where is the restroom"
+   },
+   {
+    "text": "Xin chào, rất vui được gặp bạn",
+    "to_lang": "ja",
+    "translation": "こんにちは、はじめまして"
+   },
+   {
+    "text": "Cái này giá bao nhiêu",
+    "to_lang": "en",
+    "translation": "How much is this"
+   }
+  ]
+ },
+ "event_tickets": {
+  "events": [
+   {
+    "id": "event_928",
+    "name": "Hòa nhạc Giao hưởng Mùa thu",
+    "category": "âm nhạc",
+    "date": "2026-10-23",
+    "time": "18:00",
+    "venue": "Saigon Opera House",
+    "price": 600000,
+    "available": 80
+   },
+   {
+    "id": "event_6856",
+    "name": "Đêm nhạc Jazz cuối tuần",
+    "category": "âm nhạc",
+    "date": "2026-10-28",
+    "time": "18:00",
+    "venue": "Nhà hát Thành phố",
+    "price": 450000,
+    "available": 12
+   },
+   {
+    "id": "event_303",
+    "name": "Triển lãm Ánh sáng Đô thị",
+    "category": "triển lãm",
+    "date": "2026-10-20",
+    "time": "18:00",
+    "venue": "Nhà hát Thành phố",
+    "price": 80000,
+    "available": 30
+   },
+   {
+    "id": "event_375",
+    "name": "Stand-up comedy Sài Gòn Cười",
+    "category": "hài kịch",
+    "date": "2026-10-17",
+    "time": "19:30",
+    "venue": "Nhà hát Hòa Bình",
+    "price": 300000,
+    "available": 12
+   },
+   {
+    "id": "event_250",
+    "name": "Liên hoan phim ngắn",
+    "category": "điện ảnh",
+    "date": "2026-10-16",
+    "time": "18:00",
+    "venue": "Nhà hát Hòa Bình",
+    "price": 120000,
+    "available": 30
+   }
+  ],
+  "bookings": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_171",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-20",
+    "depart": "21:00",
+    "arrive": "00:40",
+    "price": 680000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_702",
+    "type": "bus",
+    "operator": "Xe khách Hoàng Vân",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-19",
+    "depart": "19:00",
+    "arrive": "04:00",
+    "price": 320000,
+    "seats_left": 2
+   },
+   {
+    "id": "trip_1121",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-20",
+    "depart": "21:00",
+    "arrive": "01:00",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_2839",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-20",
+    "depart": "19:00",
+    "arrive": "23:00",
+    "price": 920000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_731",
+    "type": "bus",
+    "operator": "Xe khách Thành Lộc",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-20",
+    "depart": "06:00",
+    "arrive": "09:00",
+    "price": 320000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_5224",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-19",
+    "depart": "08:00",
+    "arrive": "16:30",
+    "price": 450000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_466",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-19",
+    "depart": "08:00",
+    "arrive": "16:00",
+    "price": 320000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_379",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-19",
+    "depart": "21:00",
+    "arrive": "05:30",
+    "price": 920000,
+    "seats_left": 15
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_57",
+    "trip_id": "trip_5224",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-19",
+    "depart": "08:00",
+    "seats": 1,
+    "total": 450000,
+    "status": "cancelled"
+   },
+   {
+    "id": "tk_318",
+    "trip_id": "trip_5224",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "TP.HCM",
+    "destination": "Nha Trang",
+    "date": "2026-10-19",
+    "depart": "08:00",
+    "seats": 2,
+    "total": 900000,
+    "status": "confirmed"
+   },
+   {
+    "id": "tk_604",
+    "trip_id": "trip_1121",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "TP.HCM",
+    "destination": "Phan Thiết",
+    "date": "2026-10-20",
+    "depart": "21:00",
+    "seats": 1,
+    "total": 400000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "alarm": {
+  "alarms": [
+   {
+    "id": "alm_8206",
+    "time": "2026-10-15T07:00:00+07:00",
+    "label": "uống thuốc",
+    "repeat": "weekdays",
+    "enabled": true
+   }
+  ]
+ }
+}

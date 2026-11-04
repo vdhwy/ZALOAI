@@ -1,0 +1,366 @@
+{
+ "_meta": {
+  "question_id": "public_0688",
+  "current_time": "2026-11-08T17:50:00+07:00",
+  "tools": [
+   "banking.get_balance",
+   "banking.list_beneficiaries",
+   "banking.list_transactions",
+   "banking.open_savings",
+   "banking.transfer",
+   "contacts.get",
+   "contacts.search",
+   "contacts.update",
+   "ewallet.get_balance",
+   "ewallet.pay_qr",
+   "ewallet.topup_mobile",
+   "ewallet.transfer",
+   "stocks.get_portfolio",
+   "stocks.get_quote",
+   "stocks.place_order",
+   "stocks.set_price_alert",
+   "train_bus_tickets.book",
+   "train_bus_tickets.cancel",
+   "train_bus_tickets.my_bookings",
+   "train_bus_tickets.search",
+   "tv.control",
+   "tv.guide",
+   "tv.record",
+   "tv.tune"
+  ]
+ },
+ "banking": {
+  "accounts": [
+   {
+    "id": "acc_9129",
+    "name": "Tài khoản thanh toán",
+    "balance": 4000000
+   },
+   {
+    "id": "acc_611",
+    "name": "Tài khoản tiết kiệm",
+    "balance": 30000000
+   }
+  ],
+  "beneficiaries": [
+   {
+    "id": "ben_2084",
+    "name": "Trần Văn Tuấn",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "19031234567890"
+   },
+   {
+    "id": "ben_629",
+    "name": "Chủ nhà - Phạm Hùng",
+    "bank": "An Phát Bank",
+    "account_number": "31410001234567"
+   },
+   {
+    "id": "ben_3036",
+    "name": "Lê Minh",
+    "bank": "Quân Việt Bank",
+    "account_number": "0123456789"
+   },
+   {
+    "id": "ben_7713",
+    "name": "Nhà hàng Tokyo Garden",
+    "bank": "Đại Việt Bank",
+    "account_number": "86012345678"
+   },
+   {
+    "id": "ben_458",
+    "name": "Nhà hàng Tokyo Deli",
+    "bank": "Thịnh Phát Bank",
+    "account_number": "70219988776"
+   }
+  ],
+  "transactions": [
+   {
+    "id": "tx_01",
+    "account_id": "acc_9129",
+    "beneficiary_id": "ben_629",
+    "amount": -8000000,
+    "note": "tiền nhà tháng mười một"
+   },
+   {
+    "id": "tx_02",
+    "account_id": "acc_9129",
+    "beneficiary_id": "ben_2084",
+    "amount": -500000,
+    "note": null
+   }
+  ],
+  "savings": [
+   {
+    "id": "sav_01",
+    "account_id": "acc_611",
+    "amount": 20000000,
+    "term_months": 6,
+    "status": "active"
+   }
+  ]
+ },
+ "stocks": {
+  "holdings": [
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "quantity": 100,
+    "avg_price": 54750,
+    "price": 57450
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "quantity": 500,
+    "avg_price": 34800,
+    "price": 33900
+   },
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "quantity": 500,
+    "avg_price": 129700,
+    "price": 131700
+   }
+  ],
+  "orders": [],
+  "alerts": [
+   {
+    "id": "alert_01",
+    "symbol": "VITECH",
+    "price": 125000,
+    "direction": "below",
+    "active": true
+   }
+  ],
+  "quotes": [
+   {
+    "symbol": "Vitech",
+    "name": "CTCP Vitech",
+    "price": 131700,
+    "change_pct": 3.0
+   },
+   {
+    "symbol": "VNINDEX",
+    "name": "Chỉ số VN-Index",
+    "price": 1697,
+    "change_pct": -0.2
+   },
+   {
+    "symbol": "ZTS",
+    "name": "CTCP Đầu tư Thế Giới Số",
+    "price": 57450,
+    "change_pct": 3.2
+   },
+   {
+    "symbol": "ZMX",
+    "name": "CTCP Sữa Mộc Xanh",
+    "price": 63950,
+    "change_pct": -1.2
+   },
+   {
+    "symbol": "ZDH",
+    "name": "CTCP Tập đoàn Thép Đại Hưng",
+    "price": 26450,
+    "change_pct": 1.4
+   },
+   {
+    "symbol": "ZKN",
+    "name": "CTCP Chứng khoán Kim Ngân",
+    "price": 33900,
+    "change_pct": 0.0
+   }
+  ]
+ },
+ "contacts": {
+  "contacts": [
+   {
+    "id": "c_3082",
+    "name": "Bố",
+    "relation": "bố",
+    "phone": "09241274492"
+   },
+   {
+    "id": "c_324",
+    "name": "Sếp Dũng",
+    "relation": "sếp",
+    "phone": "09652513168"
+   },
+   {
+    "id": "c_6780",
+    "name": "Mẹ chồng",
+    "relation": "mẹ chồng",
+    "phone": "09174676066"
+   },
+   {
+    "id": "c_943",
+    "name": "Cô Mai",
+    "relation": "cô giáo của con",
+    "phone": "09620107690"
+   },
+   {
+    "id": "c_651",
+    "name": "Lan",
+    "relation": "vợ",
+    "phone": "09788972909"
+   },
+   {
+    "id": "c_114",
+    "name": "Tuấn",
+    "relation": "anh trai",
+    "phone": "09614148148"
+   },
+   {
+    "id": "c_300",
+    "name": "Hương",
+    "relation": "bạn",
+    "phone": "09995389664"
+   },
+   {
+    "id": "c_828",
+    "name": "Minh",
+    "relation": "đồng nghiệp",
+    "phone": "09238872627"
+   },
+   {
+    "id": "c_1691",
+    "name": "Anh Hùng",
+    "relation": "chồng",
+    "phone": "09392846393"
+   },
+   {
+    "id": "c_6974",
+    "name": "Mẹ",
+    "relation": "mẹ",
+    "phone": "09758866919"
+   }
+  ]
+ },
+ "ewallet": {
+  "balance": 1250000,
+  "transactions": []
+ },
+ "train_bus_tickets": {
+  "trips": [
+   {
+    "id": "trip_3378",
+    "type": "train",
+    "operator": "Tàu SE9",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-09",
+    "depart": "08:00",
+    "arrive": "18:30",
+    "price": 450000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_49",
+    "type": "bus",
+    "operator": "Xe khách Hải Vân",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-09",
+    "depart": "19:00",
+    "arrive": "02:00",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_311",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-09",
+    "depart": "08:00",
+    "arrive": "11:30",
+    "price": 400000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_345",
+    "type": "train",
+    "operator": "Tàu SE7",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-14",
+    "depart": "08:00",
+    "arrive": "18:00",
+    "price": 450000,
+    "seats_left": 30
+   },
+   {
+    "id": "trip_3116",
+    "type": "bus",
+    "operator": "Xe khách Sao Băng",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-14",
+    "depart": "06:00",
+    "arrive": "16:00",
+    "price": 400000,
+    "seats_left": 15
+   },
+   {
+    "id": "trip_2806",
+    "type": "train",
+    "operator": "Tàu SE5",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-14",
+    "depart": "21:00",
+    "arrive": "00:30",
+    "price": 680000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_354",
+    "type": "bus",
+    "operator": "Xe khách Tân Phương",
+    "origin": "Hà Nội",
+    "destination": "Hải Phòng",
+    "date": "2026-11-14",
+    "depart": "21:00",
+    "arrive": "00:30",
+    "price": 400000,
+    "seats_left": 8
+   },
+   {
+    "id": "trip_843",
+    "type": "train",
+    "operator": "Tàu SE1",
+    "origin": "Hà Nội",
+    "destination": "Lào Cai",
+    "date": "2026-11-09",
+    "depart": "21:00",
+    "arrive": "00:30",
+    "price": 450000,
+    "seats_left": 13
+   }
+  ],
+  "bookings": [
+   {
+    "id": "tk_01",
+    "trip_id": "trip_843",
+    "seats": 2,
+    "total": 900000,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "tv": {
+  "power": "on",
+  "channel": "VTV3",
+  "channels": [
+   "VTV1",
+   "VTV3",
+   "VTV6",
+   "HTV7",
+   "S+ Sport",
+   "SCTV9"
+  ],
+  "volume": 30
+ }
+}
