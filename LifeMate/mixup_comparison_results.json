@@ -1,0 +1,151 @@
+{
+  "device": "mps",
+  "gpu_name": "mps",
+  "elapsed_seconds": 29.2,
+  "neural_router_comparison": {
+    "clean_val_309": {
+      "baseline": {
+        "bce_loss": 0.0436,
+        "micro_precision": 0.4509,
+        "micro_recall": 0.1453,
+        "micro_f1": 0.2197,
+        "top5_recall": 0.5345,
+        "multi_intent_coverage": 0.2783
+      },
+      "mixup": {
+        "bce_loss": 0.0425,
+        "micro_precision": 0.4175,
+        "micro_recall": 0.3911,
+        "micro_f1": 0.4038,
+        "top5_recall": 0.6145,
+        "multi_intent_coverage": 0.343
+      }
+    },
+    "overlay_mixup_50": {
+      "baseline": {
+        "bce_loss": 0.0502,
+        "micro_precision": 0.9897,
+        "micro_recall": 0.8496,
+        "micro_f1": 0.9143,
+        "top5_recall": 0.9204,
+        "multi_intent_coverage": 0.88
+      },
+      "mixup": {
+        "bce_loss": 0.0469,
+        "micro_precision": 0.9074,
+        "micro_recall": 0.8673,
+        "micro_f1": 0.8869,
+        "top5_recall": 0.9292,
+        "multi_intent_coverage": 0.86
+      }
+    },
+    "concat_mixup_50": {
+      "baseline": {
+        "bce_loss": 0.0228,
+        "micro_precision": 0.9888,
+        "micro_recall": 0.7273,
+        "micro_f1": 0.8381,
+        "top5_recall": 0.8471,
+        "multi_intent_coverage": 0.34
+      },
+      "mixup": {
+        "bce_loss": 0.0084,
+        "micro_precision": 0.9836,
+        "micro_recall": 0.9917,
+        "micro_f1": 0.9877,
+        "top5_recall": 0.876,
+        "multi_intent_coverage": 0.98
+      }
+    }
+  },
+  "end_to_end_agent_comparison": {
+    "clean_val_309": {
+      "baseline": {
+        "samples": 309,
+        "state_hash_acc": 37.86,
+        "state_hash_hits": 117,
+        "phase1_state_hash_acc": 66.34,
+        "phase1_state_hash_hits": 205,
+        "exact_tool_seq_acc": 6.47,
+        "exact_tool_seq_hits": 20,
+        "sample_tool_f1": 11.26
+      },
+      "mixup": {
+        "samples": 309,
+        "state_hash_acc": 38.83,
+        "state_hash_hits": 120,
+        "phase1_state_hash_acc": 67.64,
+        "phase1_state_hash_hits": 209,
+        "exact_tool_seq_acc": 7.12,
+        "exact_tool_seq_hits": 22,
+        "sample_tool_f1": 15.41
+      }
+    },
+    "overlay_mixup_50": {
+      "baseline": {
+        "samples": 50,
+        "state_hash_acc": 28.0,
+        "state_hash_hits": 14,
+        "phase1_state_hash_acc": 48.0,
+        "phase1_state_hash_hits": 24,
+        "exact_tool_seq_acc": 6.0,
+        "exact_tool_seq_hits": 3,
+        "sample_tool_f1": 20.84
+      },
+      "mixup": {
+        "samples": 50,
+        "state_hash_acc": 36.0,
+        "state_hash_hits": 18,
+        "phase1_state_hash_acc": 56.0,
+        "phase1_state_hash_hits": 28,
+        "exact_tool_seq_acc": 18.0,
+        "exact_tool_seq_hits": 9,
+        "sample_tool_f1": 36.7
+      }
+    },
+    "concat_mixup_50": {
+      "baseline": {
+        "samples": 50,
+        "state_hash_acc": 0.0,
+        "state_hash_hits": 0,
+        "phase1_state_hash_acc": 0.0,
+        "phase1_state_hash_hits": 0,
+        "exact_tool_seq_acc": 0.0,
+        "exact_tool_seq_hits": 0,
+        "sample_tool_f1": 41.37
+      },
+      "mixup": {
+        "samples": 50,
+        "state_hash_acc": 100.0,
+        "state_hash_hits": 50,
+        "phase1_state_hash_acc": 100.0,
+        "phase1_state_hash_hits": 50,
+        "exact_tool_seq_acc": 100.0,
+        "exact_tool_seq_hits": 50,
+        "sample_tool_f1": 100.0
+      }
+    },
+    "full_train_1545": {
+      "baseline": {
+        "samples": 1545,
+        "state_hash_acc": 24.98,
+        "state_hash_hits": 386,
+        "phase1_state_hash_acc": 49.58,
+        "phase1_state_hash_hits": 766,
+        "exact_tool_seq_acc": 7.77,
+        "exact_tool_seq_hits": 120,
+        "sample_tool_f1": 22.91
+      },
+      "mixup": {
+        "samples": 1545,
+        "state_hash_acc": 33.2,
+        "state_hash_hits": 513,
+        "phase1_state_hash_acc": 58.58,
+        "phase1_state_hash_hits": 905,
+        "exact_tool_seq_acc": 20.19,
+        "exact_tool_seq_hits": 312,
+        "sample_tool_f1": 35.2
+      }
+    }
+  }
+}
