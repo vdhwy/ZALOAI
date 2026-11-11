@@ -20,6 +20,287 @@ import urllib.request
 
 
 # ==============================================================================
+# 0. AUDIO PREPROCESSING & DATA AUGMENTATION SUITE
+# ==============================================================================
+
+class AudioProcessor:
+    """
+    Bộ tiền xử lý tín hiệu âm thanh chuyên sâu:
+    1. Pitch Shift Data Augmentation (pitch_shift): Dịch cao độ giọng nói theo semitone mà không đổi tốc độ.
+    2. Audio Normalization (normalize_audio): Chuẩn hóa 16,000 Hz mono & chuẩn hóa âm lượng RMS (-20 dBFS) + Peak limiter <= 0.95.
+    3. Audio Chunking (chunk_audio): Cắt âm thanh thành các đoạn chunk sliding window / pause-aware để huấn luyện batch.
+    4. Silence Cleaning (clean_silence): VAD cắt khoảng lặng đầu/cuối và nén khoảng lặng chết ở giữa câu lệnh.
+    """
+
+    TARGET_SR: int = 16000
+
+    @staticmethod
+    def read_wav(wav_path: Any) -> Tuple[Any, int]:
+        """Đọc file WAV 16-bit PCM sang mảng numpy float32 [-1.0, 1.0]."""
+        import wave
+        import numpy as np
+        with wave.open(str(wav_path), "rb") as wf:
+            sr = wf.getframerate()
+            n_frames = wf.getnframes()
+            raw = wf.readframes(n_frames)
+            audio = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+            if wf.getnchannels() > 1:
+                audio = audio.reshape(-1, wf.getnchannels()).mean(axis=1)
+        return audio, sr
+
+    @staticmethod
+    def write_wav(wav_path: Any, audio: Any, sr: int = 16000) -> None:
+        """Ghi mảng float32 [-1.0, 1.0] ra file WAV 16-bit PCM mono với peak limiter an toàn <= 0.95."""
+        import wave
+        import numpy as np
+        from pathlib import Path
+        Path(wav_path).parent.mkdir(parents=True, exist_ok=True)
+        peak = float(np.max(np.abs(audio))) if audio.size > 0 else 0.0
+        if peak > 0.95:
+            audio = audio * (0.95 / peak)
+        pcm16 = np.clip(audio * 32767.0, -32768, 32767).astype(np.int16)
+        with wave.open(str(wav_path), "wb") as wf:
+            wf.setnchannels(1)
+            wf.setsampwidth(2)
+            wf.setframerate(sr)
+            wf.writeframes(pcm16.tobytes())
+
+    @classmethod
+    def pitch_shift(cls, audio: Any, sr: int = 16000, n_steps: float = 2.0) -> Any:
+        """
+        Cải tiến 1: Pitch Shifting Data Augmentation.
+        Dịch chuyển cao độ giọng nói theo n_steps semitones (±1.0 đến ±3.0) mà không đổi thời lượng phát.
+        """
+        import numpy as np
+        if audio.size == 0 or abs(n_steps) < 1e-4:
+            return audio
+        try:
+            import librosa
+            import warnings
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                return librosa.effects.pitch_shift(y=audio, sr=sr, n_steps=n_steps).astype(np.float32)
+        except Exception:
+            pass
+
+        try:
+            import torch
+            import torchaudio
+            t = torch.from_numpy(audio).unsqueeze(0)
+            ps = torchaudio.transforms.PitchShift(sample_rate=sr, n_steps=int(round(n_steps)))
+            return ps(t).squeeze(0).numpy().astype(np.float32)
+        except Exception:
+            pass
+
+        # Phase Vocoder / Resampling fallback
+        try:
+            import scipy.signal as signal
+            rate = 2.0 ** (-n_steps / 12.0)
+            target_len = len(audio)
+            stretched_len = max(16, int(round(target_len * rate)))
+            stretched = signal.resample(audio, stretched_len)
+            shifted = signal.resample(stretched, target_len)
+            return shifted.astype(np.float32)
+        except Exception:
+            return audio
+
+    @classmethod
+    def normalize_audio(
+        cls,
+        audio: Any,
+        orig_sr: int,
+        target_sr: int = 16000,
+        target_rms: float = 0.08,
+        max_peak: float = 0.95,
+    ) -> Tuple[Any, int]:
+        """
+        Cải tiến 2: Chuẩn hóa Sample Rate (16kHz) và Âm Lượng (RMS = 0.08 / -20 dBFS, peak limiter <= 0.95).
+        """
+        import numpy as np
+        if audio.size == 0:
+            return audio, target_sr
+
+        # Triệt tiêu DC Offset
+        audio = audio - np.mean(audio)
+
+        # Resample về target_sr (16000 Hz)
+        if orig_sr != target_sr and orig_sr > 0:
+            try:
+                import scipy.signal as signal
+                num_samples = int(round(len(audio) * target_sr / orig_sr))
+                audio = signal.resample(audio, num_samples)
+            except Exception:
+                pass
+
+        # Chuẩn hóa năng lượng RMS về target_rms (~ -20 dBFS)
+        current_rms = float(np.sqrt(np.mean(audio ** 2)))
+        if current_rms > 1e-5:
+            gain = target_rms / current_rms
+            audio = audio * gain
+
+        # Peak Headroom Limiter tránh méo tiếng / clipping
+        peak = float(np.max(np.abs(audio)))
+        if peak > max_peak:
+            audio = audio * (max_peak / peak)
+
+        return audio.astype(np.float32), target_sr
+
+    @classmethod
+    def chunk_audio(
+        cls,
+        audio: Any,
+        sr: int = 16000,
+        chunk_sec: float = 3.0,
+        overlap_sec: float = 0.5,
+        min_chunk_sec: float = 1.0,
+        pad_last: bool = True,
+    ) -> List[Dict[str, Any]]:
+        """
+        Cải tiến 3: Cắt âm thanh thành các đoạn chunk sliding window để huấn luyện batch và trích xuất đặc trưng.
+        """
+        import numpy as np
+        chunk_samples = int(round(chunk_sec * sr))
+        step_samples = max(1, int(round((chunk_sec - overlap_sec) * sr)))
+        min_samples = min(int(round(min_chunk_sec * sr)), chunk_samples)
+        total_samples = len(audio)
+
+        if total_samples <= chunk_samples:
+            chunk = audio
+            if pad_last and len(chunk) < chunk_samples:
+                chunk = np.pad(chunk, (0, chunk_samples - len(chunk)), mode="constant")
+            return [{
+                "chunk_idx": 0,
+                "audio": chunk.astype(np.float32),
+                "start_sec": 0.0,
+                "end_sec": round(total_samples / sr, 3),
+                "is_padded": len(audio) < chunk_samples,
+            }]
+
+        chunks = []
+        for idx, start in enumerate(range(0, total_samples, step_samples)):
+            end = start + chunk_samples
+            chunk = audio[start:end]
+            if len(chunk) < min_samples:
+                continue
+            is_padded = False
+            if len(chunk) < chunk_samples:
+                if pad_last:
+                    chunk = np.pad(chunk, (0, chunk_samples - len(chunk)), mode="constant")
+                    is_padded = True
+            chunks.append({
+                "chunk_idx": idx,
+                "audio": chunk.astype(np.float32),
+                "start_sec": round(start / sr, 3),
+                "end_sec": round(min(end, total_samples) / sr, 3),
+                "is_padded": is_padded,
+            })
+        return chunks
+
+    @classmethod
+    def clean_silence(
+        cls,
+        audio: Any,
+        sr: int = 16000,
+        frame_ms: int = 20,
+        energy_thresh: float = 0.015,
+        max_pause_ms: int = 250,
+        target_pause_ms: int = 100,
+    ) -> Tuple[Any, Dict[str, float]]:
+        """
+        Cải tiến 4: Làm sạch khoảng lặng (Voice Activity Detection trimming & dead-air pause compression).
+        """
+        import numpy as np
+        if audio.size == 0:
+            return audio, {"original_dur": 0.0, "cleaned_dur": 0.0, "saved_dur": 0.0}
+
+        frame_len = int(sr * (frame_ms / 1000.0))
+        n_frames = len(audio) // frame_len
+        if n_frames < 4:
+            return audio, {"original_dur": len(audio)/sr, "cleaned_dur": len(audio)/sr, "saved_dur": 0.0}
+
+        frames = audio[:n_frames * frame_len].reshape(n_frames, frame_len)
+        rms_per_frame = np.sqrt(np.mean(frames ** 2, axis=1))
+
+        # Adaptive Noise-Floor Tracking (15th percentile)
+        noise_floor = float(np.percentile(rms_per_frame, 15))
+        thresh = max(energy_thresh, noise_floor * 2.5)
+        is_speech = rms_per_frame > thresh
+
+        active_idx = np.where(is_speech)[0]
+        if active_idx.size == 0:
+            return audio[:min(len(audio), sr)], {"original_dur": len(audio)/sr, "cleaned_dur": 1.0, "saved_dur": max(0.0, len(audio)/sr - 1.0)}
+
+        # Thêm safety margin 2 frames (40ms) trước và 3 frames (60ms) sau để không bị cụt âm đầu/cuối
+        start_f = max(0, active_idx[0] - 2)
+        end_f = min(n_frames, active_idx[-1] + 3)
+
+        # Nén khoảng lặng chết ở giữa (pause compression)
+        target_pause_frames = int(max(1, target_pause_ms // frame_ms))
+        cleaned_frames = []
+        pause_counter = 0
+
+        for f_idx in range(start_f, end_f):
+            if is_speech[f_idx]:
+                pause_counter = 0
+                cleaned_frames.append(frames[f_idx])
+            else:
+                pause_counter += 1
+                if pause_counter <= target_pause_frames:
+                    cleaned_frames.append(frames[f_idx])
+
+        if not cleaned_frames:
+            cleaned_audio = audio[start_f * frame_len : end_f * frame_len]
+        else:
+            cleaned_audio = np.concatenate(cleaned_frames)
+
+        orig_dur = round(len(audio) / sr, 3)
+        cleaned_dur = round(len(cleaned_audio) / sr, 3)
+        return cleaned_audio.astype(np.float32), {
+            "original_dur": orig_dur,
+            "cleaned_dur": cleaned_dur,
+            "saved_dur": round(max(0.0, orig_dur - cleaned_dur), 3),
+        }
+
+    @staticmethod
+    def extract_acoustic_features(samples: Any, sr: int = 16000, n_bins: int = 48) -> Any:
+        """Trích xuất vector đặc trưng âm học 48 chiều từ waveform (Log-Power Spectrum + Temporal Envelope + Prosody)."""
+        import numpy as np
+        if samples.size < 64:
+            return np.zeros(n_bins, dtype=np.float32)
+
+        n_fft = 512
+        hop = 256
+        if samples.size < n_fft:
+            padded = np.pad(samples, (0, n_fft - samples.size))
+        else:
+            padded = samples
+        n_frames = max(1, min(64, (padded.size - n_fft) // hop + 1))
+        idx = np.arange(n_fft)[None, :] + hop * np.arange(n_frames)[:, None]
+        idx = np.clip(idx, 0, padded.size - 1)
+        frames = padded[idx] * np.hanning(n_fft)[None, :]
+        mag = np.abs(np.fft.rfft(frames, axis=1))[:, :256]
+        bands = mag.reshape(n_frames, 32, 8).mean(axis=2)
+        log_bands = np.log1p(bands)
+        spec_mean = log_bands.mean(axis=0)
+
+        chunks = np.array_split(samples, 8)
+        env = np.array([np.log1p(np.sqrt(np.mean(c ** 2) + 1e-8)) for c in chunks], dtype=np.float32)
+
+        rms = float(np.sqrt(np.mean(samples ** 2) + 1e-8))
+        peak = float(np.max(np.abs(samples)) + 1e-8)
+        zcr = float(np.mean(np.abs(np.diff(np.sign(samples)))) / 2.0)
+        dur = float(samples.size / sr)
+        spec_std = float(log_bands.std())
+        spec_max = float(log_bands.max())
+        crest = float(peak / rms)
+        active_ratio = float(np.mean(np.abs(samples) > 0.02))
+        stats = np.array([rms, peak, zcr, dur / 10.0, spec_std, spec_max, crest / 10.0, active_ratio], dtype=np.float32)
+
+        feat = np.concatenate([spec_mean, env, stats]).astype(np.float32)
+        return feat[:n_bins]
+
+
+# ==============================================================================
 # 1. VIETNAMESE COLLOQUIAL & NUMBER NORMALIZER
 # ==============================================================================
 
@@ -1303,11 +1584,177 @@ class EnhancedRuleAgent:
 
 
 # ==============================================================================
-# 7. UNIFIED HYBRID AGENT
+# 7. MULTIMODAL NEURAL TOOL ROUTER
+# ==============================================================================
+
+class NeuralToolRouter:
+    """Bộ định tuyến công cụ nơ-ron đa phương thức sử dụng checkpoint router_sota.pt."""
+
+    def __init__(
+        self,
+        checkpoint_path: Optional[Any] = None,
+        device: str = "cpu",
+        threshold: float = 0.52,
+    ):
+        self.device = device
+        self.threshold = threshold
+        self.model = None
+        self.all_tools: List[str] = []
+        self.tool_to_idx: Dict[str, int] = {}
+        self.vocab_dim = 2048
+        self.audio_dim = 48
+        self._init_network(checkpoint_path)
+
+    def _init_network(self, checkpoint_path: Optional[Any]):
+        try:
+            import torch
+            import torch.nn as nn
+            from pathlib import Path
+            import json
+
+            root = Path(__file__).resolve().parent
+            ckpt_p = Path(checkpoint_path) if checkpoint_path else (root / "checkpoints" / "router_sota.pt")
+            if not ckpt_p.is_file():
+                return
+
+            catalog_p = root / "train+public_test" / "train" / "train_tools_catalog.json"
+            if not catalog_p.is_file():
+                return
+
+            cat_data = json.load(open(catalog_p, "r", encoding="utf-8"))
+            from zaic_tools.validate import catalog_tools
+            self.all_tools = sorted(set(catalog_tools(cat_data).keys()) | {"sys.ask_missing_info"})
+            self.tool_to_idx = {t: i for i, t in enumerate(self.all_tools)}
+            num_tools = len(self.all_tools)
+
+            class _Net(nn.Module):
+                def __init__(self, vocab_dim, audio_dim, num_tools, hidden_dim=256):
+                    super().__init__()
+                    self.audio_encoder = nn.Sequential(
+                        nn.Linear(audio_dim, 128), nn.BatchNorm1d(128), nn.GELU(), nn.Dropout(0.15),
+                        nn.Linear(128, 128), nn.GELU()
+                    )
+                    self.text_encoder = nn.Sequential(
+                        nn.Linear(vocab_dim, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.GELU(), nn.Dropout(0.25),
+                        nn.Linear(hidden_dim, hidden_dim), nn.GELU()
+                    )
+                    self.context_encoder = nn.Sequential(nn.Linear(num_tools, 128), nn.GELU())
+                    self.fusion_head = nn.Sequential(
+                        nn.Linear(128 + hidden_dim + 128, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.GELU(), nn.Dropout(0.2),
+                        nn.Linear(hidden_dim, num_tools)
+                    )
+                def forward(self, x_text, x_audio, app_mask):
+                    h_a = self.audio_encoder(x_audio)
+                    h_t = self.text_encoder(x_text)
+                    h_c = self.context_encoder(app_mask)
+                    fused = torch.cat([h_t, h_a, h_c], dim=-1)
+                    logits = self.fusion_head(fused)
+                    return logits + (1.0 - app_mask) * (-12.0)
+
+            model = _Net(self.vocab_dim, self.audio_dim, num_tools)
+            state = torch.load(ckpt_p, map_location=self.device)
+            model.load_state_dict(state)
+            model.to(self.device)
+            model.eval()
+            self.model = model
+        except Exception:
+            self.model = None
+
+    def encode_text(self, text: str) -> Any:
+        import numpy as np
+        import hashlib
+        vec = np.zeros(self.vocab_dim, dtype=np.float32)
+        s = VietnameseNormalizer.normalize_text(text)
+        words = re.findall(r"\w+", s)
+        for i, w in enumerate(words):
+            h1 = int(hashlib.md5(f"1g:{w}".encode("utf-8")).hexdigest()[:8], 16) % self.vocab_dim
+            vec[h1] += 1.0
+            if i + 1 < len(words):
+                h2 = int(hashlib.md5(f"2g:{w}_{words[i+1]}".encode("utf-8")).hexdigest()[:8], 16) % self.vocab_dim
+                vec[h2] += 1.2
+            if i + 2 < len(words):
+                h3 = int(hashlib.md5(f"3g:{w}_{words[i+1]}_{words[i+2]}".encode("utf-8")).hexdigest()[:8], 16) % self.vocab_dim
+                vec[h3] += 1.4
+        norm = float(np.linalg.norm(vec))
+        if norm > 0:
+            vec /= norm
+        return vec
+
+    def encode_app_mask(self, item: Dict[str, Any]) -> Any:
+        import numpy as np
+        mask = np.zeros(len(self.all_tools), dtype=np.float32)
+        apps = item.get("context", {}).get("installed_apps", {})
+        allowed = {t for a in apps.values() for t in a.get("tools", [])} | {"sys.ask_missing_info"}
+        for t in allowed:
+            if t in self.tool_to_idx:
+                mask[self.tool_to_idx[t]] = 1.0
+        return mask
+
+    def predict_and_call(self, item: Dict[str, Any], env: Any) -> List[Dict[str, Any]]:
+        if self.model is None or not self.all_tools:
+            return env.get_tool_calls()
+
+        try:
+            import torch
+            import numpy as np
+            from pathlib import Path
+
+            text = item.get("audio_text", "")
+            xt = torch.tensor(self.encode_text(text), dtype=torch.float32).unsqueeze(0).to(self.device)
+            am = torch.tensor(self.encode_app_mask(item), dtype=torch.float32).unsqueeze(0).to(self.device)
+
+            wav_path_rel = item.get("audio")
+            feat = np.zeros(self.audio_dim, dtype=np.float32)
+            if wav_path_rel:
+                root = Path(__file__).resolve().parent
+                for prefix in [root / "train+public_test" / "public_test", root / "train+public_test" / "train"]:
+                    p = prefix / wav_path_rel
+                    if p.is_file():
+                        samples, sr = AudioProcessor.read_wav(p)
+                        samples, _ = AudioProcessor.clean_silence(samples, sr)
+                        samples, sr = AudioProcessor.normalize_audio(samples, sr)
+                        feat = AudioProcessor.extract_acoustic_features(samples, sr)
+                        break
+
+            xa = torch.tensor(feat, dtype=torch.float32).unsqueeze(0).to(self.device)
+
+            with torch.no_grad():
+                logits = self.model(xt, xa, am)
+                probs = torch.sigmoid(logits)[0]
+
+            top_indices = torch.where(probs >= self.threshold)[0].tolist()
+            pred_tools = [self.all_tools[i] for i in top_indices if self.all_tools[i] in env.allowed]
+
+            if pred_tools:
+                chosen = pred_tools[0]
+                catalog_tools_dict = getattr(env, "tools", {})
+                tool_def = catalog_tools_dict.get(chosen, {})
+                params_obj = tool_def.get("parameters", {})
+                req = params_obj.get("required", [])
+                one_of = params_obj.get("x-one-of", [])
+
+                if not req and not one_of:
+                    env.call(chosen, {})
+                elif "date" in req and len(req) == 1:
+                    now_str = item.get("context", {}).get("current_time", "2026-11-10T08:00:00+07:00")
+                    d = EnhancedDateTimeResolver().resolve_date(text, now_str).isoformat()
+                    env.call(chosen, {"date": d})
+                else:
+                    missing_fields = req if req else [one_of[0][0]]
+                    if "sys.ask_missing_info" in env.allowed:
+                        env.call("sys.ask_missing_info", {"tool_name": chosen, "params": missing_fields})
+        except Exception:
+            pass
+
+        return env.get_tool_calls()
+
+
+# ==============================================================================
+# 8. UNIFIED HYBRID AGENT
 # ==============================================================================
 
 class HybridLifeMateAgent:
-    """Hợp nhất: Tận dụng trí tuệ của LLM ReAct Agent khi có LLM, và fallback sang Multi-Intent Rule Engine."""
+    """Hợp nhất: Tận dụng trí tuệ của LLM ReAct Agent khi có LLM, fallback sang Multi-Intent Rule Engine & Neural Tool Router."""
 
     def __init__(
         self,
@@ -1315,15 +1762,21 @@ class HybridLifeMateAgent:
         llm_model: str = "deepseek-r1:8b",
         ollama_host: Optional[str] = None,
         use_mixup_multi_intent: bool = True,
+        use_neural_router: bool = True,
+        device: str = "cpu",
     ):
         self.mode = mode
         self.rule_agent = EnhancedRuleAgent(use_mixup_multi_intent=use_mixup_multi_intent)
         self.llm_client = LLMClient(model=llm_model, host=ollama_host)
         self.llm_agent = LLMReActAgent(llm_client=self.llm_client)
+        self.neural_router = NeuralToolRouter(device=device) if use_neural_router else None
 
     def predict(self, item: Dict[str, Any], env: Any) -> List[Dict[str, Any]]:
         if self.mode == "rule":
-            return self.rule_agent.predict(item, env)
+            calls = self.rule_agent.predict(item, env)
+            if not calls and self.neural_router is not None:
+                calls = self.neural_router.predict_and_call(item, env)
+            return calls
 
         text = (item.get("audio_text") or "").lower()
 
@@ -1340,7 +1793,10 @@ class HybridLifeMateAgent:
             except Exception:
                 pass
 
-        return self.rule_agent.predict(item, env)
+        calls = self.rule_agent.predict(item, env)
+        if not calls and self.neural_router is not None:
+            calls = self.neural_router.predict_and_call(item, env)
+        return calls
 
 
 # Alias tương thích ngược với baseline.py

@@ -26,6 +26,7 @@ from typing import Any, Dict, List, Optional, Tuple
 import wave
 
 import numpy as np
+import scipy.signal as signal
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -52,11 +53,211 @@ from lifemate_agent import EnhancedRuleAgent, HybridLifeMateAgent, VietnameseNor
 
 
 # ==============================================================================
-# 1. AUDIO MIXUP AUGMENTER (WAVEFORM OVERLAY + CROSSFADE CONCAT)
+# 1. AUDIO PROCESSOR & DATA AUGMENTATION SUITE
 # ==============================================================================
 
-class AudioMixupAugmenter:
-    """Bộ tăng cường dữ liệu âm thanh Mixup cho huấn luyện ASR & Multi-Intent Tool Routing."""
+class AudioProcessor:
+    """
+    Bộ tiền xử lý tín hiệu âm thanh chuyên sâu:
+    1. Pitch Shift Data Augmentation: Dịch cao độ giọng nói theo semitone mà không đổi tốc độ.
+    2. Audio Normalization: Chuẩn hóa 16,000 Hz mono & chuẩn hóa âm lượng RMS (-20 dBFS) + Peak limiter.
+    3. Audio Chunking: Cắt âm thanh thành các đoạn chunk sliding window / pause-aware để huấn luyện batch.
+    4. Silence Cleaning: VAD cắt khoảng lặng đầu/cuối và nén khoảng lặng chết ở giữa câu lệnh.
+    """
+
+    TARGET_SR: int = 16000
+
+    @staticmethod
+    def read_wav(wav_path: Path) -> Tuple[np.ndarray, int]:
+        """Đọc file WAV 16-bit PCM sang mảng float32 [-1.0, 1.0]."""
+        with wave.open(str(wav_path), "rb") as wf:
+            sr = wf.getframerate()
+            n_frames = wf.getnframes()
+            raw_bytes = wf.readframes(n_frames)
+            pcm = np.frombuffer(raw_bytes, dtype=np.int16).astype(np.float32) / 32768.0
+            if wf.getnchannels() > 1:
+                pcm = pcm.reshape(-1, wf.getnchannels()).mean(axis=1)
+        return pcm, sr
+
+    @staticmethod
+    def write_wav(wav_path: Path, samples: np.ndarray, sr: int = 16000) -> None:
+        """Ghi mảng float32 [-1.0, 1.0] ra file WAV mono với peak limiter an toàn <= 0.95."""
+        wav_path.parent.mkdir(parents=True, exist_ok=True)
+        peak = float(np.max(np.abs(samples))) if samples.size > 0 else 0.0
+        if peak > 0.95:
+            samples = samples * (0.95 / peak)
+        pcm16 = np.clip(samples * 32767.0, -32768, 32767).astype(np.int16)
+        with wave.open(str(wav_path), "wb") as wf:
+            wf.setnchannels(1)
+            wf.setsampwidth(2)
+            wf.setframerate(sr)
+            wf.writeframes(pcm16.tobytes())
+
+    @classmethod
+    def pitch_shift(cls, audio: np.ndarray, sr: int = 16000, n_steps: float = 2.0) -> np.ndarray:
+        """Cải tiến 1: Pitch Shifting Data Augmentation mà không làm thay đổi tốc độ hay ngữ nghĩa."""
+        if audio.size == 0 or abs(n_steps) < 1e-4:
+            return audio
+        try:
+            import librosa
+            return librosa.effects.pitch_shift(y=audio, sr=sr, n_steps=n_steps).astype(np.float32)
+        except Exception:
+            pass
+
+        try:
+            import torchaudio
+            t = torch.from_numpy(audio).unsqueeze(0)
+            ps = torchaudio.transforms.PitchShift(sample_rate=sr, n_steps=int(round(n_steps)))
+            return ps(t).squeeze(0).numpy().astype(np.float32)
+        except Exception:
+            pass
+
+        rate = 2.0 ** (-n_steps / 12.0)
+        target_len = len(audio)
+        stretched_len = max(16, int(round(target_len * rate)))
+        stretched = signal.resample(audio, stretched_len)
+        shifted = signal.resample(stretched, target_len)
+        return shifted.astype(np.float32)
+
+    @classmethod
+    def normalize_audio(
+        cls,
+        audio: np.ndarray,
+        orig_sr: int,
+        target_sr: int = 16000,
+        target_rms: float = 0.08,
+        max_peak: float = 0.95,
+    ) -> Tuple[np.ndarray, int]:
+        """Cải tiến 2: Chuẩn hóa Sample Rate (16kHz) và Âm Lượng (RMS = 0.08 / -20 dBFS, peak limiter <= 0.95)."""
+        if audio.size == 0:
+            return audio, target_sr
+
+        audio = audio - np.mean(audio)
+        if orig_sr != target_sr and orig_sr > 0:
+            num_samples = int(round(len(audio) * target_sr / orig_sr))
+            audio = signal.resample(audio, num_samples)
+
+        current_rms = float(np.sqrt(np.mean(audio ** 2)))
+        if current_rms > 1e-5:
+            gain = target_rms / current_rms
+            audio = audio * gain
+
+        peak = float(np.max(np.abs(audio)))
+        if peak > max_peak:
+            audio = audio * (max_peak / peak)
+
+        return audio.astype(np.float32), target_sr
+
+    @classmethod
+    def chunk_audio(
+        cls,
+        audio: np.ndarray,
+        sr: int = 16000,
+        chunk_sec: float = 3.0,
+        overlap_sec: float = 0.5,
+        min_chunk_sec: float = 1.0,
+        pad_last: bool = True,
+    ) -> List[Dict[str, Any]]:
+        """Cải tiến 3: Cắt âm thanh thành các đoạn chunk sliding window để huấn luyện."""
+        chunk_samples = int(round(chunk_sec * sr))
+        step_samples = max(1, int(round((chunk_sec - overlap_sec) * sr)))
+        min_samples = min(int(round(min_chunk_sec * sr)), chunk_samples)
+        total_samples = len(audio)
+
+        if total_samples <= chunk_samples:
+            chunk = audio
+            if pad_last and len(chunk) < chunk_samples:
+                chunk = np.pad(chunk, (0, chunk_samples - len(chunk)), mode="constant")
+            return [{
+                "chunk_idx": 0,
+                "audio": chunk.astype(np.float32),
+                "start_sec": 0.0,
+                "end_sec": round(total_samples / sr, 3),
+                "is_padded": len(audio) < chunk_samples,
+            }]
+
+        chunks = []
+        for idx, start in enumerate(range(0, total_samples, step_samples)):
+            end = start + chunk_samples
+            chunk = audio[start:end]
+            if len(chunk) < min_samples:
+                continue
+            is_padded = False
+            if len(chunk) < chunk_samples:
+                if pad_last:
+                    chunk = np.pad(chunk, (0, chunk_samples - len(chunk)), mode="constant")
+                    is_padded = True
+            chunks.append({
+                "chunk_idx": idx,
+                "audio": chunk.astype(np.float32),
+                "start_sec": round(start / sr, 3),
+                "end_sec": round(min(end, total_samples) / sr, 3),
+                "is_padded": is_padded,
+            })
+        return chunks
+
+    @classmethod
+    def clean_silence(
+        cls,
+        audio: np.ndarray,
+        sr: int = 16000,
+        frame_ms: int = 20,
+        energy_thresh: float = 0.015,
+        max_pause_ms: int = 250,
+        target_pause_ms: int = 100,
+    ) -> Tuple[np.ndarray, Dict[str, float]]:
+        """Cải tiến 4: Làm sạch khoảng lặng (VAD trimming & dead air pause compression)."""
+        if audio.size == 0:
+            return audio, {"original_dur": 0.0, "cleaned_dur": 0.0, "saved_dur": 0.0}
+
+        frame_len = int(sr * (frame_ms / 1000.0))
+        n_frames = len(audio) // frame_len
+        if n_frames < 4:
+            return audio, {"original_dur": len(audio)/sr, "cleaned_dur": len(audio)/sr, "saved_dur": 0.0}
+
+        frames = audio[:n_frames * frame_len].reshape(n_frames, frame_len)
+        rms_per_frame = np.sqrt(np.mean(frames ** 2, axis=1))
+
+        noise_floor = float(np.percentile(rms_per_frame, 15))
+        thresh = max(energy_thresh, noise_floor * 2.5)
+        is_speech = rms_per_frame > thresh
+
+        active_idx = np.where(is_speech)[0]
+        if active_idx.size == 0:
+            return audio[:min(len(audio), sr)], {"original_dur": len(audio)/sr, "cleaned_dur": 1.0, "saved_dur": len(audio)/sr - 1.0}
+
+        start_f = max(0, active_idx[0] - 2)
+        end_f = min(n_frames, active_idx[-1] + 3)
+
+        target_pause_frames = int(max(1, target_pause_ms // frame_ms))
+        cleaned_frames = []
+        pause_counter = 0
+
+        for f_idx in range(start_f, end_f):
+            if is_speech[f_idx]:
+                pause_counter = 0
+                cleaned_frames.append(frames[f_idx])
+            else:
+                pause_counter += 1
+                if pause_counter <= target_pause_frames:
+                    cleaned_frames.append(frames[f_idx])
+
+        if not cleaned_frames:
+            cleaned_audio = audio[start_f * frame_len : end_f * frame_len]
+        else:
+            cleaned_audio = np.concatenate(cleaned_frames)
+
+        orig_dur = round(len(audio) / sr, 3)
+        cleaned_dur = round(len(cleaned_audio) / sr, 3)
+        return cleaned_audio.astype(np.float32), {
+            "original_dur": orig_dur,
+            "cleaned_dur": cleaned_dur,
+            "saved_dur": round(max(0.0, orig_dur - cleaned_dur), 3),
+        }
+
+
+class AudioMixupAugmenter(AudioProcessor):
+    """Bộ tăng cường dữ liệu âm thanh Mixup kết hợp Pitch Shift, Normalization, Silence Cleaning & Chunking."""
 
     CONJUNCTIONS: List[str] = [" và ", ", đồng thời ", ", sau đó ", " rồi "]
 
@@ -72,43 +273,9 @@ class AudioMixupAugmenter:
         return float(np.clip(lam, min_dom, max_dom))
 
     @staticmethod
-    def read_wav(wav_path: Path) -> Tuple[np.ndarray, int]:
-        with wave.open(str(wav_path), "rb") as wf:
-            sr = wf.getframerate()
-            n_frames = wf.getnframes()
-            raw_bytes = wf.readframes(n_frames)
-            pcm = np.frombuffer(raw_bytes, dtype=np.int16).astype(np.float32) / 32768.0
-            if wf.getnchannels() > 1:
-                pcm = pcm.reshape(-1, wf.getnchannels()).mean(axis=1)
-        return pcm, sr
-
-    @staticmethod
-    def write_wav(wav_path: Path, samples: np.ndarray, sr: int = 16000) -> None:
-        wav_path.parent.mkdir(parents=True, exist_ok=True)
-        peak = float(np.max(np.abs(samples))) if samples.size > 0 else 0.0
-        if peak > 0.98:
-            samples = samples * (0.98 / peak)
-        pcm16 = np.clip(samples * 32767.0, -32768, 32767).astype(np.int16)
-        with wave.open(str(wav_path), "wb") as wf:
-            wf.setnchannels(1)
-            wf.setsampwidth(2)
-            wf.setframerate(sr)
-            wf.writeframes(pcm16.tobytes())
-
-    @staticmethod
     def trim_silence(samples: np.ndarray, sr: int = 16000, threshold_db: float = -38.0) -> np.ndarray:
-        if samples.size == 0:
-            return samples
-        thresh = 10.0 ** (threshold_db / 20.0)
-        win = max(1, int(0.02 * sr))
-        energy = np.convolve(samples ** 2, np.ones(win) / win, mode="same")
-        active = np.where(np.sqrt(energy) > thresh)[0]
-        if active.size == 0:
-            return samples
-        pad = int(0.08 * sr)
-        start = max(0, int(active[0]) - pad)
-        end = min(samples.size, int(active[-1]) + pad)
-        return samples[start:end]
+        cleaned, _ = AudioProcessor.clean_silence(samples, sr=sr)
+        return cleaned
 
     def overlay_mixup(
         self, wav1: np.ndarray, wav2: np.ndarray, lam: Optional[float] = None
@@ -135,8 +302,8 @@ class AudioMixupAugmenter:
     def concat_mixup(
         self, wav1: np.ndarray, wav2: np.ndarray, sr: int = 16000, crossfade_ms: float = 60.0
     ) -> np.ndarray:
-        a1 = self.trim_silence(wav1, sr=sr)
-        a2 = self.trim_silence(wav2, sr=sr)
+        a1, _ = self.clean_silence(wav1, sr=sr)
+        a2, _ = self.clean_silence(wav2, sr=sr)
         cf_samples = min(int(sr * crossfade_ms / 1000.0), a1.size // 4, a2.size // 4)
         if cf_samples > 1:
             fade_out = np.cos(np.linspace(0.0, np.pi / 2.0, cf_samples, dtype=np.float32)) ** 2
@@ -194,6 +361,7 @@ class AudioMixupAugmenter:
         out_manifest_path: Path,
         num_overlay: int = 100,
         num_concat: int = 100,
+        num_pitch_shift: int = 50,
     ) -> List[Dict[str, Any]]:
         lines = [json.loads(line) for line in open(train_jsonl, "r", encoding="utf-8") if line.strip()]
         train_dir = train_jsonl.parent
@@ -216,12 +384,41 @@ class AudioMixupAugmenter:
         out_audio_dir.mkdir(parents=True, exist_ok=True)
         generated_records: List[Dict[str, Any]] = []
 
-        # 1. Linear Overlay Mixup
+        # 1. Pitch Shift Data Augmentation
+        for idx in range(1, num_pitch_shift + 1):
+            it = random.choice(valid_items)
+            w, sr = self.read_wav(train_dir / it["audio"])
+            w_clean, _ = self.clean_silence(w, sr)
+            w_norm, target_sr = self.normalize_audio(w_clean, sr)
+            n_steps = float(self.rng.choice([-2.5, -1.8, -1.0, 1.0, 1.8, 2.5]))
+            w_ps = self.pitch_shift(w_norm, target_sr, n_steps=n_steps)
+            ps_id = f"pitch_shift_{idx:04d}"
+            rel_wav = f"audio_mixup/{ps_id}.wav"
+            self.write_wav(out_audio_dir / f"{ps_id}.wav", w_ps, target_sr)
+
+            rec = {
+                "id": ps_id,
+                "mixup_type": "pitch_shift",
+                "pitch_steps": n_steps,
+                "source_ids": [it["id"]],
+                "audio": rel_wav,
+                "audio_text": it.get("audio_text", ""),
+                "context": copy.deepcopy(it["context"]),
+                "history": copy.deepcopy(it.get("history", [])),
+                "label": copy.deepcopy(it["label"]),
+            }
+            generated_records.append(rec)
+
+        # 2. Linear Overlay Mixup
         for idx in range(1, num_overlay + 1):
             it1, it2 = random.sample(valid_items, 2)
             w1, sr1 = self.read_wav(train_dir / it1["audio"])
             w2, _ = self.read_wav(train_dir / it2["audio"])
-            mixed_wav, lam = self.overlay_mixup(w1, w2)
+            w1_clean, _ = self.clean_silence(w1, sr1)
+            w2_clean, _ = self.clean_silence(w2, sr1)
+            w1_norm, _ = self.normalize_audio(w1_clean, sr1)
+            w2_norm, _ = self.normalize_audio(w2_clean, sr1)
+            mixed_wav, lam = self.overlay_mixup(w1_norm, w2_norm)
             mix_id = f"mixup_overlay_{idx:04d}"
             rel_wav = f"audio_mixup/{mix_id}.wav"
             self.write_wav(out_audio_dir / f"{mix_id}.wav", mixed_wav, sr1)
@@ -425,6 +622,8 @@ class MultimodalDataset(Dataset):
             wav_p = train_dir / it["audio"]
             if wav_p.is_file():
                 samples, sr = augmenter.read_wav(wav_p)
+                samples, _ = AudioProcessor.clean_silence(samples, sr)
+                samples, sr = AudioProcessor.normalize_audio(samples, sr)
                 a_feat = augmenter.extract_acoustic_features(samples, sr)
             else:
                 a_feat = np.zeros(fe.audio_dim, dtype=np.float32)

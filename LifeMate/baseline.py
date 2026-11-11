@@ -38,6 +38,7 @@ for p in [DATA_DIR / "train", DATA_DIR / "public_test"]:
 from zaic_tools import ToolEnv, schema_validate
 from zaic_tools.utils import state_hash
 from lifemate_agent import (
+    AudioProcessor,
     HybridLifeMateAgent,
     IntelligentReActAgent,
     LLMReActAgent,
@@ -48,9 +49,11 @@ from lifemate_agent import (
 
 
 class PhoWhisperASR:
-    def __init__(self, model_name: str = "vinai/PhoWhisper-base", device: str = device):
+    def __init__(self, model_name: str = "vinai/PhoWhisper-base", device: str = device, clean_silence: bool = True, normalize: bool = True):
         self.model_name = model_name
         self.device = device
+        self.clean_silence = clean_silence
+        self.normalize = normalize
         self.cache_path = PROJECT_ROOT / "public_test_transcriptions.json"
         self.cache: Dict[str, str] = {}
         self._pipe = None
@@ -85,7 +88,13 @@ class PhoWhisperASR:
         parts.extend(apps[:5])
         return "Trợ lý LifeMate: " + ", ".join(parts) if parts else ""
 
-    def transcribe(self, sample_id: str, audio_path: Path, fallback_text: str = "", item: Optional[Dict[str, Any]] = None) -> str:
+    def transcribe(
+        self,
+        sample_id: str,
+        audio_path: Path,
+        fallback_text: str = "",
+        item: Optional[Dict[str, Any]] = None,
+    ) -> str:
         if fallback_text:
             return fallback_text
         if sample_id in self.cache:
@@ -99,12 +108,24 @@ class PhoWhisperASR:
                     prompt = self.build_context_prompt(item)
                     if prompt:
                         kwargs["generate_kwargs"] = {"prompt_ids": prompt}
-                res = self._pipe(str(audio_path), **kwargs)
+
+                # Tiền xử lý tín hiệu âm thanh: Clean silent moments & Normalize Volume / Sample Rate
+                if self.clean_silence or self.normalize:
+                    audio, sr = AudioProcessor.read_wav(audio_path)
+                    if self.clean_silence:
+                        audio, _ = AudioProcessor.clean_silence(audio, sr=sr)
+                    if self.normalize:
+                        audio, sr = AudioProcessor.normalize_audio(audio, orig_sr=sr, target_sr=16000)
+                    input_data = {"raw": audio, "sampling_rate": sr}
+                else:
+                    input_data = str(audio_path)
+
+                res = self._pipe(input_data, **kwargs)
                 text = res.get("text", "").strip()
                 self.cache[sample_id] = text
                 return text
-            except Exception:
-                pass
+            except Exception as e:
+                print(f"[ASR Error] {sample_id}: {e}")
         return ""
 
 
@@ -202,15 +223,22 @@ def main():
     parser = argparse.ArgumentParser(description="ZAC 2026 LifeMate Baseline Runner")
     parser.add_argument("--evaluate", action="store_true", help="Run evaluation on train dataset")
     parser.add_argument("--predict", action="store_true", help="Run prediction on public_test dataset")
+    parser.add_argument("--output", type=str, default="submission2.jsonl", help="Output file path for predictions")
     parser.add_argument("--max-samples", type=int, default=None, help="Max samples to evaluate")
     parser.add_argument("--agent", type=str, default="hybrid", choices=["hybrid", "llm", "rule"], help="Agent mode")
     parser.add_argument("--model", type=str, default="deepseek-r1:8b", help="LLM Model name")
     parser.add_argument("--ollama-host", type=str, default=None, help="Ollama server host URL")
     parser.add_argument("--asr-model", type=str, default="vinai/PhoWhisper-base", help="Whisper ASR model name")
+    parser.add_argument("--disable-clean-silence", action="store_true", help="Disable VAD silence cleaning before ASR")
+    parser.add_argument("--disable-normalize", action="store_true", help="Disable volume and sample rate normalization before ASR")
     args = parser.parse_args()
 
-    agent = HybridLifeMateAgent(mode=args.agent, llm_model=args.model, ollama_host=args.ollama_host)
-    asr = PhoWhisperASR(model_name=args.asr_model)
+    agent = HybridLifeMateAgent(mode=args.agent, llm_model=args.model, ollama_host=args.ollama_host, device=device)
+    asr = PhoWhisperASR(
+        model_name=args.asr_model,
+        clean_silence=not args.disable_clean_silence,
+        normalize=not args.disable_normalize,
+    )
 
     print(f"[Agent Mode] {args.agent.upper()} (LLM Model: {args.model})")
 
@@ -218,7 +246,8 @@ def main():
         evaluate_agent(agent, split="train", max_samples=args.max_samples or 10)
 
     if args.predict:
-        generate_submission(agent, asr, split="public_test")
+        out_p = Path(args.output).resolve()
+        generate_submission(agent, asr, split="public_test", out_path=out_p)
 
 
 if __name__ == "__main__":
