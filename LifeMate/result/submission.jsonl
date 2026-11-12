@@ -1,5 +1,5 @@
 {"id": "public_0002", "tool_calls": [{"name": "calendar.list_events", "arguments": {}}, {"name": "ride_hailing.book", "arguments": {"pickup": "Tòa nhà Blue Pearl, Quận 7, TP.HCM", "dropoff": "Nha khoa Sài Gòn, 45 Nguyễn Thị Minh Khai, Quận 3, TP.HCM", "vehicle": "car4"}}], "state_hash": "818baf532fb6833a51eab7912291e3282cb1ce18631a8095c545f32495ea0e7a"}
-{"id": "public_0003", "tool_calls": [], "state_hash": "23f1c7d2419741b689aaa6bf48a180d3d250730740bafdfe9e69a745fbb4bf7a"}
+{"id": "public_0003", "tool_calls": [{"name": "contacts.search", "arguments": {}}], "state_hash": "23f1c7d2419741b689aaa6bf48a180d3d250730740bafdfe9e69a745fbb4bf7a"}
 {"id": "public_0004", "tool_calls": [], "state_hash": "b985bf45e87e3eee383647466e96031ea3b28736967d13b42ea34f5e498d6f0a"}
 {"id": "public_0005", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-09"}}], "state_hash": "ae2e71628f54888c8005ecb58d075d8b6523d8b3c8dffbdd31b6e7415fc5dc9e"}
 {"id": "public_0006", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-04"}}], "state_hash": "7aa09f3d23303339d24aa70a62c20d9c4a3534e5d484c7901745720f6f016e1f"}
@@ -8,7 +8,7 @@
 {"id": "public_0009", "tool_calls": [], "state_hash": "afbf8e61dbddd4df97c44eeed829ec71a22cff4d2c93d20271bf0ef9eb443f29"}
 {"id": "public_0010", "tool_calls": [], "state_hash": "c36f1e7bd1e8bee3c6308587055ddb7a75cc52da83e99bd4fbcdcc7a27b686de"}
 {"id": "public_0012", "tool_calls": [], "state_hash": "127d668b134de7f07c6892d7442ba5a2049da745f8734165399fb4210ea834ce"}
-{"id": "public_0015", "tool_calls": [], "state_hash": "75b1d5aa392fa3fa5cf71e747dd65ab29f3e96738aafbdbc6f768e7822b78707"}
+{"id": "public_0015", "tool_calls": [{"name": "contacts.search", "arguments": {}}], "state_hash": "75b1d5aa392fa3fa5cf71e747dd65ab29f3e96738aafbdbc6f768e7822b78707"}
 {"id": "public_0016", "tool_calls": [{"name": "bill_payment.list_bills", "arguments": {}}], "state_hash": "ad9d5ffd094b084de349ddd6cb9cb6caed03f0de457f81c5059d7deae87a6020"}
 {"id": "public_0017", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "ca3809f7ac58cc598e527d7f90a90e51cc6aaf849345ea16b619022278a43f82"}
 {"id": "public_0019", "tool_calls": [], "state_hash": "43b9520791e305eed8b4e14ae41a7132527ad149cff19665ac3fb5c57e195f7d"}
@@ -39,8 +39,8 @@
 {"id": "public_0045", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-23"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "phone.call", "params": ["contact_id"]}}], "state_hash": "aa7767539d2fabf8bcfde81b61b0479e66a10e74ca3829de9bd1046e63a9b6d2"}
 {"id": "public_0047", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}, {"name": "smart_home.light_set", "arguments": {"device_id": "light_living", "power": "on"}}], "state_hash": "23b9d3527a58572212a0bbcbc8f26977d35b81ee3df544a32e89b9cc7f40e1fc"}
 {"id": "public_0048", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-06"}}, {"name": "calendar.list_events", "arguments": {}}], "state_hash": "99795df3110557ea2a4b5463a557374ab8f5655a2127f33c966936719a59496e"}
-{"id": "public_0049", "tool_calls": [], "state_hash": "d23e1e78d01364de93e594782cd616b139adbdecbcd2a1bb2300fb362196f990"}
-{"id": "public_0050", "tool_calls": [{"name": "ewallet.transfer", "arguments": {"contact_id": "c_01", "amount": 500000}}], "state_hash": "f8a4e8a50281c9d51087aed1d5269ebf39ede83a37b97d66cf57c215cfc757e3"}
+{"id": "public_0049", "tool_calls": [{"name": "banking.get_balance", "arguments": {}}], "state_hash": "d23e1e78d01364de93e594782cd616b139adbdecbcd2a1bb2300fb362196f990"}
+{"id": "public_0050", "tool_calls": [{"name": "ewallet.get_balance", "arguments": {}}, {"name": "ewallet.transfer", "arguments": {"contact_id": "c_01", "amount": 500000}}], "state_hash": "f8a4e8a50281c9d51087aed1d5269ebf39ede83a37b97d66cf57c215cfc757e3"}
 {"id": "public_0051", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}, {"name": "smart_home.light_set", "arguments": {"device_id": "light_living", "power": "off"}}], "state_hash": "65a21206a4edf45f296f9ccb2b21e12d3107e28cbdf1c1657ca2f9ab0bb8a4a7"}
 {"id": "public_0052", "tool_calls": [], "state_hash": "6a548a8e52d66bffc8f8106ab0f229e4a2cfe0531ca9fe96cf543140087e0193"}
 {"id": "public_0053", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "b18981a9028d096dbdcc46330a061ad923c74905ad1eaee2e46c84ce9833cdf4"}
@@ -60,7 +60,7 @@
 {"id": "public_0069", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-17"}}], "state_hash": "d6aa7863f65e7545341df6705dcf87857420fd2c1a573fe5372fc0a9ed9d1fa5"}
 {"id": "public_0070", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}, {"name": "smart_home.light_set", "arguments": {"device_id": "light_living", "power": "on"}}], "state_hash": "1bbdb4712e7b2894dd6f1212771f2d82e27d44e7a452a2f96fce7c2d2329d130"}
 {"id": "public_0071", "tool_calls": [{"name": "bill_payment.list_bills", "arguments": {}}, {"name": "banking.get_balance", "arguments": {}}, {"name": "banking.list_beneficiaries", "arguments": {}}, {"name": "banking.transfer", "arguments": {"from_account_id": "acc_01", "beneficiary_id": "ben_01", "amount": 211000}}], "state_hash": "7f6798732d510fb5826e9e9f36d8e279ddb14e1e630ea9c04197b00a19b3cd99"}
-{"id": "public_0072", "tool_calls": [], "state_hash": "858dc75abafba8025913f8be9e00e08463aa193d4d14eeece099167f573cd6d9"}
+{"id": "public_0072", "tool_calls": [{"name": "banking.get_balance", "arguments": {}}], "state_hash": "858dc75abafba8025913f8be9e00e08463aa193d4d14eeece099167f573cd6d9"}
 {"id": "public_0073", "tool_calls": [], "state_hash": "85775d1085e046808ae504a9abf35767fb66b729a87e419ebc6738fcefb7d681"}
 {"id": "public_0074", "tool_calls": [{"name": "alarm.create", "arguments": {"time": "2026-11-13T18:30:00+07:00"}}], "state_hash": "d9bd704d3c10e2da9b7fcdbab132e5279c31b27e5a8e8eac3fbbcce1cc5742d8"}
 {"id": "public_0075", "tool_calls": [], "state_hash": "7e00ccecf0648f6e5b36def30409d0992ab77b2440734622e563e90d9d41a1be"}
@@ -75,7 +75,7 @@
 {"id": "public_0085", "tool_calls": [{"name": "bill_payment.list_bills", "arguments": {}}, {"name": "ewallet.get_balance", "arguments": {}}, {"name": "bill_payment.pay", "arguments": {"bill_id": "bill_01", "source": "bank"}}], "state_hash": "15d2c75a6e080251450a120eebad3c53d74726bcc3804cb2c9331a7997033c3b"}
 {"id": "public_0086", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "phone.call", "params": ["contact_id"]}}], "state_hash": "8cc250d17867c56e1f6f3026fb8d91f4add80ca76575eb256a95a3ef2a94676a"}
 {"id": "public_0087", "tool_calls": [], "state_hash": "7845ce0c98e212c84b29e0a368e54f33f1dc0d1928147981e69ccc645c772a4e"}
-{"id": "public_0088", "tool_calls": [], "state_hash": "7f0fa6fa34124da6b64485acf85f8ddf3593c2deb880a49fa45b6c79d40cf148"}
+{"id": "public_0088", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}], "state_hash": "7f0fa6fa34124da6b64485acf85f8ddf3593c2deb880a49fa45b6c79d40cf148"}
 {"id": "public_0089", "tool_calls": [], "state_hash": "f240c30d599297d494368993b9cdec92fff19569fc1701abd055208e263ab16e"}
 {"id": "public_0090", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}, {"name": "smart_home.light_set", "arguments": {"device_id": "light_bedroom", "brightness": 100}}], "state_hash": "d8907ac2ee672530558d9b0418d3e72d928ff221e82150083e6fc48c39b7ef4d"}
 {"id": "public_0091", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}, {"name": "smart_home.light_set", "arguments": {"device_id": "light_kitchen"}}], "state_hash": "bd4476bb0c9b527e28f8e23592d760e4766c59e5234cad94d053c4c60c472c33"}
@@ -96,12 +96,12 @@
 {"id": "public_0106", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "5b4e8c952ff82c52d9266079e0d12d5948102ec1725b883f84221c2f527a4e93"}
 {"id": "public_0107", "tool_calls": [], "state_hash": "b93fc2b8adbe249478fa1cf5b169a7094a60d9cf36ac352557dd744007ef2428"}
 {"id": "public_0108", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "689f0fe107650ff5dc1c049d023b1cfc66e70e2ba2e88de0b4fbbbcb69553df9"}
-{"id": "public_0109", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Anh Toán Gửi Lên Mình Hai"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "26a46683ac6e81b0ec2e73fd33f73574f3f1a2801a3d50fc3f0b51222c835ac8"}
+{"id": "public_0109", "tool_calls": [{"name": "banking.get_balance", "arguments": {}}, {"name": "contacts.search", "arguments": {"query": "Anh Toán Gửi Lên Mình Hai"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "26a46683ac6e81b0ec2e73fd33f73574f3f1a2801a3d50fc3f0b51222c835ac8"}
 {"id": "public_0110", "tool_calls": [{"name": "bill_payment.list_bills", "arguments": {}}, {"name": "ewallet.get_balance", "arguments": {}}, {"name": "bill_payment.pay", "arguments": {"bill_id": "bill_03", "source": "bank"}}, {"name": "reminders.create", "arguments": {"content": "nạp tiền vào ví", "time": "2026-11-23T20:00:00+07:00"}}], "state_hash": "94bf336187dd2a56f89c3828a153933959f100647cc9c2bbba976122d0e65295"}
-{"id": "public_0111", "tool_calls": [{"name": "reminders.create", "arguments": {"content": "rộng lời còn chưa tới khi lấy tài khoản thanh toán chuyện anh rừng vang tốn bao triệu rượi để anh ấy mua chung vàng cho em ạ", "time": "2026-11-09T20:00:00+07:00"}}], "state_hash": "21bd6d811bd16a731bb12dd6d9171a07c0cfc0fea9f793255c5cbefbc5abcb29"}
+{"id": "public_0111", "tool_calls": [{"name": "banking.get_balance", "arguments": {}}, {"name": "reminders.create", "arguments": {"content": "rộng lời còn chưa tới khi lấy tài khoản thanh toán chuyện anh rừng vang tốn bao triệu rượi để anh ấy mua chung vàng cho em ạ", "time": "2026-11-09T20:00:00+07:00"}}], "state_hash": "21bd6d811bd16a731bb12dd6d9171a07c0cfc0fea9f793255c5cbefbc5abcb29"}
 {"id": "public_0112", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Chị Gây Lấy Cuốn Sách Nhé"}}, {"name": "reminders.create", "arguments": {"content": "qua tiệm giảm lấy đồ", "time": "2026-11-19T07:30:00+07:00"}}], "state_hash": "d2f5e5ddfc8ed540501a22218a36f6cd8b403b7a5ca2b7c546af8de76776b62a"}
 {"id": "public_0113", "tool_calls": [{"name": "alarm.create", "arguments": {"time": "2026-11-13T102:30:00+07:00"}}], "state_hash": "4a340a985d4c6acbed530e97fa3dfeb7776f4a350667f030b5335d5cbfb78d35"}
-{"id": "public_0114", "tool_calls": [{"name": "reminders.create", "arguments": {"content": "lời nhắc", "time": "2026-11-05T15:00:00+07:00"}}], "state_hash": "a90d56bfb6decf9c16dd0cf6301284fa3a5d59c64ea393a9730403f8c404d9f3"}
+{"id": "public_0114", "tool_calls": [{"name": "banking.get_balance", "arguments": {}}, {"name": "reminders.create", "arguments": {"content": "lời nhắc", "time": "2026-11-05T15:00:00+07:00"}}], "state_hash": "a90d56bfb6decf9c16dd0cf6301284fa3a5d59c64ea393a9730403f8c404d9f3"}
 {"id": "public_0115", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Anh Giữ Hóa Đơn Đến Hạn Trong Năm"}}], "state_hash": "a52082313a7986ac36e246988ef5f17d5cab38dab45a40b502009bd81134f7da"}
 {"id": "public_0116", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Anh Lại Đạt Được Một Tiếng Đặt Tên Là Làm Thủ Thục Nhé"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "fa2a2ec381ac02e1dfd85f07c50fb2e2265555381aa12b6296c4a9be304937be"}
 {"id": "public_0117", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Bạn Kính Cửu Của Bố Theo Lúc Xe Tới Hai"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "6150acfba9d17fbc595e5bd561c003f73d4cfd5051d6f33b493aa8f3251ad02d"}
@@ -111,7 +111,7 @@
 {"id": "public_0121", "tool_calls": [{"name": "ewallet.transfer", "arguments": {"contact_id": "c_01", "amount": 500000}}], "state_hash": "75e14ba5a9fa75e7acc738b8a83b7c8743915106af6ce55cb5774436867e06ee"}
 {"id": "public_0122", "tool_calls": [{"name": "ewallet.transfer", "arguments": {"contact_id": "c_01", "amount": 500000}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "0367738c1beadaa8a689164553ed63c44edc5b7015d5f2889c57649c568fd1d0"}
 {"id": "public_0123", "tool_calls": [], "state_hash": "06e9adbd39602b11a9910dc843659022e54b3348c818be64fc0af087187803ba"}
-{"id": "public_0125", "tool_calls": [{"name": "reminders.create", "arguments": {"content": "bảy giờ", "time": "2026-11-17T07:00:00+07:00"}}], "state_hash": "73baf8e17755b51ef8b37bae93c2fcff8676a4531aaf34f9012fc6f3e640adff"}
+{"id": "public_0125", "tool_calls": [{"name": "banking.get_balance", "arguments": {}}, {"name": "reminders.create", "arguments": {"content": "bảy giờ", "time": "2026-11-17T07:00:00+07:00"}}], "state_hash": "73baf8e17755b51ef8b37bae93c2fcff8676a4531aaf34f9012fc6f3e640adff"}
 {"id": "public_0126", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-07"}}], "state_hash": "a8ffbb86aa66f244812ba48dbc56fc644a84efbc01db646cfc2b90140adb09f6"}
 {"id": "public_0127", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Anh Đặt Bún Bò Giò Uống Bún Bò Ghế Nhóm Gia Đình Cho Mấy Người Thì Đặt Máy Phần Không Tin Anh Nhé"}}], "state_hash": "40696a96972a1b294ff9f8ef6a7ebd73c68f1f5971d06c7d35ecd1b77304764b"}
 {"id": "public_0128", "tool_calls": [], "state_hash": "ff42dc32b7747ecc423e35a81850afef4ba86bc05b84da1b88179e35a4395e47"}
@@ -146,12 +146,12 @@
 {"id": "public_0164", "tool_calls": [], "state_hash": "5e459344e048cc37ac145d82ced49f382693c736d4fb278cf11fa56a025ec8bb"}
 {"id": "public_0165", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Chị Trà Đào Cam Xả Ở Quán Trà Sữa Nhà Mèo Nhóm Trác Phòng Cá Tính Mỗi Người Một Ly Tính Cả Chị Nữa Nhé"}}], "state_hash": "b1bbac32b5b736d488ae78888759a5da0650cf75f82e8cf2b1c2222930210dc2"}
 {"id": "public_0166", "tool_calls": [], "state_hash": "c8a16a0662b68d8120282a49fbe7ff61171c5b787e01bfba673b694fb21c1e1b"}
-{"id": "public_0167", "tool_calls": [], "state_hash": "e464fa6389f7d97352e51221340842d2f7cc6c86508963562b8bb9867ee23d5e"}
+{"id": "public_0167", "tool_calls": [{"name": "contacts.search", "arguments": {}}], "state_hash": "e464fa6389f7d97352e51221340842d2f7cc6c86508963562b8bb9867ee23d5e"}
 {"id": "public_0168", "tool_calls": [], "state_hash": "3ad51f663a36b02e48250d066d8d59d3d3235aa112ab69794fcfcdc41cb6d1a9"}
 {"id": "public_0169", "tool_calls": [{"name": "calendar.update_event", "arguments": {"event_id": "evt_01", "start": "2026-11-15T19:30:00+07:00", "end": "2026-11-15T20:30:00+07:00"}}], "state_hash": "25bf9899ab90fb26873bd98bf0ba44d04e753b3be1feec03c9bd0ffd7aedb56c"}
 {"id": "public_0170", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-07"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "4827c3395e0f0c991ab94db57a2c04477f5e225222ee50326f1b1c5d87b51389"}
 {"id": "public_0171", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "afd0546755a49fe2a2eb0e6aef9d6ffaa555655a823afe60b9f6633ab587ce59"}
-{"id": "public_0172", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Anh Toán Không Đủ Cả Hai"}}], "state_hash": "8c7b7060deb778e51b02e54b264fd1ee990c2ac37cc55e3501a5e891ce5fb6f1"}
+{"id": "public_0172", "tool_calls": [{"name": "banking.get_balance", "arguments": {}}, {"name": "contacts.search", "arguments": {"query": "Anh Toán Không Đủ Cả Hai"}}], "state_hash": "8c7b7060deb778e51b02e54b264fd1ee990c2ac37cc55e3501a5e891ce5fb6f1"}
 {"id": "public_0173", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Chị Em Trẻ Bằng Ngân Hàng Giúp Chị Cái Nào Từ Một Triệu Đến Lên Thì Để Chị Tự Ra Quầy Đóng Nha"}}], "state_hash": "39ae353e1f8fef70b3b8be1dab92fbb3c1568b179db7418dd7fcb82675f60efd"}
 {"id": "public_0174", "tool_calls": [], "state_hash": "b8c804396343a09aaa28523ae60e6ea83e4a68ced76045b1016329be5cf34c25"}
 {"id": "public_0175", "tool_calls": [], "state_hash": "f323aa56dd44946282926aae2543dd58b22ff091b74d9d5bb0e65d5ea2f0092c"}
@@ -371,7 +371,7 @@
 {"id": "public_0408", "tool_calls": [], "state_hash": "223669c918a2ad238329a0775fef2df803a6dacfbe59fb1a603a3792cf956247"}
 {"id": "public_0409", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Anh Sáng Món Chia Hè Ở Lưu Giường Em Thì Coi Rứng À Không Ten Khách Chuối Đi Cái Mô Làng Nha"}}], "state_hash": "10c266766ab3239cec9203a05a74e065247f8378334023ca922dff76e111aeee"}
 {"id": "public_0410", "tool_calls": [], "state_hash": "f0dcc762e127db09d71a5ad2810c293e5dea21acd6c1b7fa637a97cfb5ec65cd"}
-{"id": "public_0411", "tool_calls": [], "state_hash": "0f7fdd8f4f1c4266a970ffa7a9a96dbb64a2fb6c9c750d858e8c019dc582a7e1"}
+{"id": "public_0411", "tool_calls": [{"name": "banking.get_balance", "arguments": {}}], "state_hash": "0f7fdd8f4f1c4266a970ffa7a9a96dbb64a2fb6c9c750d858e8c019dc582a7e1"}
 {"id": "public_0412", "tool_calls": [], "state_hash": "da54ebb796d482a7e83bd3afda4ae4afcc77b16f445b580102a5b060eea4caf4"}
 {"id": "public_0413", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}, {"name": "smart_home.light_set", "arguments": {"device_id": "light_living", "power": "off", "brightness": 100}}], "state_hash": "49028e743c9bc8dd370614835d4e4149f2758310224bdd307c96e32e91eaf15c"}
 {"id": "public_0414", "tool_calls": [], "state_hash": "2c511a492019187c357932378ff9898d5527e78e448dc4aeb05d9d46b5675efe"}
@@ -450,7 +450,7 @@
 {"id": "public_0494", "tool_calls": [], "state_hash": "6841b76abc506c0dce0fe71113a803099224eaa22833e58be882dada69cfab01"}
 {"id": "public_0495", "tool_calls": [], "state_hash": "4bd6b7d0e0ba34155621f8c4fb3bb64ae5d0f819728a5b71d0174e55cd00e33f"}
 {"id": "public_0496", "tool_calls": [], "state_hash": "960e245e3688ec03d7ff1c30c7450505d2d3108ef112594235f54980166eecda"}
-{"id": "public_0497", "tool_calls": [], "state_hash": "83a4fa9e630764e796f20ed491c4b50c11786cb6d69dbc482ab78603b5247229"}
+{"id": "public_0497", "tool_calls": [{"name": "banking.get_balance", "arguments": {}}], "state_hash": "83a4fa9e630764e796f20ed491c4b50c11786cb6d69dbc482ab78603b5247229"}
 {"id": "public_0499", "tool_calls": [], "state_hash": "a2ba1eea74bc953b7ef2d2d838ded5baf5b7d22981d2cc72b1a962589338be17"}
 {"id": "public_0500", "tool_calls": [{"name": "calendar.update_event", "arguments": {"event_id": "evt_867", "start": "2026-11-05T10:30:00+07:00", "end": "2026-11-05T11:30:00+07:00"}}], "state_hash": "793eb7a21e4637eddc02b7726f070e5ebb2033aa96539ff3c1e58bb55947ca5a"}
 {"id": "public_0501", "tool_calls": [{"name": "ewallet.transfer", "arguments": {"contact_id": "c_01", "amount": 500000}}], "state_hash": "667fb6be9d23c36988980910790ceaa711ae1b32a09c84b51afcf0c33096df2b"}
@@ -577,7 +577,7 @@
 {"id": "public_0634", "tool_calls": [], "state_hash": "e5a466b2cef48ce5c362425668867fd25defd8e273aa42420ec6b4e035aa2465"}
 {"id": "public_0635", "tool_calls": [], "state_hash": "07281b855da09cedb3423377fad4b41f94064e3903aebe919347d194b2cd77a8"}
 {"id": "public_0636", "tool_calls": [], "state_hash": "e104423fee585b361028992e7a89282ac152350a3c5f0bb059c264b46ecf47d0"}
-{"id": "public_0637", "tool_calls": [], "state_hash": "bc76ff2eaef1989218001a8f00a551e355181d3883128b737156c9d9159f9ac6"}
+{"id": "public_0637", "tool_calls": [{"name": "banking.get_balance", "arguments": {}}], "state_hash": "bc76ff2eaef1989218001a8f00a551e355181d3883128b737156c9d9159f9ac6"}
 {"id": "public_0638", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Anh Để Vào Tội Bếp Giúp Anh Nhé"}}], "state_hash": "5c787c6001caf552e9aecf7fbc71c20db051b729efbdc43ec7c542ccad7e9a27"}
 {"id": "public_0639", "tool_calls": [], "state_hash": "b09f8276b34de6e7c1a13b430475d3076e929efea067a4af278a03c6d59f6cd9"}
 {"id": "public_0640", "tool_calls": [], "state_hash": "c7a98cc5b617d6e5959dd735cbe97d852ba2daa45321d9ba5aba8739f493a42a"}
@@ -621,7 +621,7 @@
 {"id": "public_0681", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Cô Chiếc Xe Máy Từ Tiệm Qua Cô Bo Mà Các Trinh Lấy Máy Sắp Bầu Chở In Cho Tiệm Nhé"}}], "state_hash": "a9de3882d8e12a90c5088b7b2675a0753d02274495c7f56fd143d7265751d81f"}
 {"id": "public_0682", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Anh Có Hai"}}], "state_hash": "e28f4a515d73d8dd470d9dcb19efea51c1b213d117c8aad5f784b9182928a339"}
 {"id": "public_0683", "tool_calls": [], "state_hash": "8aa8233c8f825f1d9519def2ead32fcf40644f7e8b2ac89a1402d3bde0983da7"}
-{"id": "public_0684", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Anh Hùng Tây Của Shop Pensor Đi Sai Xe Chạy Dầu Em Xem Giá Dầu Nhắn Anh Ấy Là Chỉ Đi Cùng Nhé"}}], "state_hash": "730735c3a064f1aa17bba13aed08187c09c60435d7520946d3b939c1800d3530"}
+{"id": "public_0684", "tool_calls": [{"name": "fuel_price.get_price", "arguments": {}}, {"name": "contacts.search", "arguments": {"query": "Anh Hùng Tây Của Shop Pensor Đi Sai Xe Chạy Dầu Em Xem Giá Dầu Nhắn Anh Ấy Là Chỉ Đi Cùng Nhé"}}], "state_hash": "730735c3a064f1aa17bba13aed08187c09c60435d7520946d3b939c1800d3530"}
 {"id": "public_0685", "tool_calls": [], "state_hash": "16cd3fbdd683e84bc44e4559338648dd1acdb754f2ae0b93a5e62078510d77bd"}
 {"id": "public_0686", "tool_calls": [], "state_hash": "aabbd051c7f37b3a0cdab80f3fd766fd3698869b97becaea49365f72878a6a80"}
 {"id": "public_0687", "tool_calls": [], "state_hash": "a050b26e92ac4107d4ba31ea88d7adba6bcc7b8236e84dfae487db5226965c85"}

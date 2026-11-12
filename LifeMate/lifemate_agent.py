@@ -28,8 +28,8 @@ class AudioProcessor:
     Bộ tiền xử lý tín hiệu âm thanh chuyên sâu:
     1. Pitch Shift Data Augmentation (pitch_shift): Dịch cao độ giọng nói theo semitone mà không đổi tốc độ.
     2. Audio Normalization (normalize_audio): Chuẩn hóa 16,000 Hz mono & chuẩn hóa âm lượng RMS (-20 dBFS) + Peak limiter <= 0.95.
-    3. Audio Chunking (chunk_audio): Cắt âm thanh thành các đoạn chunk sliding window / pause-aware để huấn luyện batch.
-    4. Silence Cleaning (clean_silence): VAD cắt khoảng lặng đầu/cuối và nén khoảng lặng chết ở giữa câu lệnh.
+    3. Silence Cleaning (clean_silence): VAD cắt khoảng lặng đầu/cuối và nén khoảng lặng chết ở giữa câu lệnh.
+    4. SpecAugment (spec_augment): Frequency & Time Masking chống overfitting trên biểu đồ phổ & đặc trưng âm học.
     """
 
     TARGET_SR: int = 16000
@@ -146,57 +146,6 @@ class AudioProcessor:
         return audio.astype(np.float32), target_sr
 
     @classmethod
-    def chunk_audio(
-        cls,
-        audio: Any,
-        sr: int = 16000,
-        chunk_sec: float = 3.0,
-        overlap_sec: float = 0.5,
-        min_chunk_sec: float = 1.0,
-        pad_last: bool = True,
-    ) -> List[Dict[str, Any]]:
-        """
-        Cải tiến 3: Cắt âm thanh thành các đoạn chunk sliding window để huấn luyện batch và trích xuất đặc trưng.
-        """
-        import numpy as np
-        chunk_samples = int(round(chunk_sec * sr))
-        step_samples = max(1, int(round((chunk_sec - overlap_sec) * sr)))
-        min_samples = min(int(round(min_chunk_sec * sr)), chunk_samples)
-        total_samples = len(audio)
-
-        if total_samples <= chunk_samples:
-            chunk = audio
-            if pad_last and len(chunk) < chunk_samples:
-                chunk = np.pad(chunk, (0, chunk_samples - len(chunk)), mode="constant")
-            return [{
-                "chunk_idx": 0,
-                "audio": chunk.astype(np.float32),
-                "start_sec": 0.0,
-                "end_sec": round(total_samples / sr, 3),
-                "is_padded": len(audio) < chunk_samples,
-            }]
-
-        chunks = []
-        for idx, start in enumerate(range(0, total_samples, step_samples)):
-            end = start + chunk_samples
-            chunk = audio[start:end]
-            if len(chunk) < min_samples:
-                continue
-            is_padded = False
-            if len(chunk) < chunk_samples:
-                if pad_last:
-                    chunk = np.pad(chunk, (0, chunk_samples - len(chunk)), mode="constant")
-                    is_padded = True
-            chunks.append({
-                "chunk_idx": idx,
-                "audio": chunk.astype(np.float32),
-                "start_sec": round(start / sr, 3),
-                "end_sec": round(min(end, total_samples) / sr, 3),
-                "is_padded": is_padded,
-            })
-        return chunks
-
-    @classmethod
     def clean_silence(
         cls,
         audio: Any,
@@ -283,8 +232,8 @@ class AudioProcessor:
         log_bands = np.log1p(bands)
         spec_mean = log_bands.mean(axis=0)
 
-        chunks = np.array_split(samples, 8)
-        env = np.array([np.log1p(np.sqrt(np.mean(c ** 2) + 1e-8)) for c in chunks], dtype=np.float32)
+        segments = np.array_split(samples, 8)
+        env = np.array([np.log1p(np.sqrt(np.mean(s ** 2) + 1e-8)) for s in segments], dtype=np.float32)
 
         rms = float(np.sqrt(np.mean(samples ** 2) + 1e-8))
         peak = float(np.max(np.abs(samples)) + 1e-8)
@@ -298,6 +247,43 @@ class AudioProcessor:
 
         feat = np.concatenate([spec_mean, env, stats]).astype(np.float32)
         return feat[:n_bins]
+
+    @classmethod
+    def spec_augment(
+        cls,
+        feat: Any,
+        freq_mask_max: int = 6,
+        time_mask_max: int = 2,
+        num_freq_masks: int = 2,
+        num_time_masks: int = 1,
+    ) -> Any:
+        """
+        SpecAugment (Frequency & Time Masking) cho vector đặc trưng âm học 48 chiều:
+        - Kênh 0..31: 32-band Log-Power FFT spectrum (Frequency Masking)
+        - Kênh 32..39: 8-segment Temporal Energy Envelope (Time Masking)
+        - Kênh 40..47: Thống kê toàn cục (Prosodic/Spectral stats)
+        """
+        import numpy as np
+        if feat.size < 48:
+            return feat.copy()
+        aug = feat.copy()
+        rng = np.random.default_rng()
+
+        # 1. Frequency Masking trên dải phổ 32 kênh
+        for _ in range(num_freq_masks):
+            f_len = int(rng.integers(1, freq_mask_max + 1))
+            f0 = int(rng.integers(0, 32))
+            f1 = min(32, f0 + f_len)
+            aug[f0:f1] = 0.0
+
+        # 2. Time Masking trên chuỗi năng lượng 8 phân đoạn thời gian
+        for _ in range(num_time_masks):
+            t_len = int(rng.integers(1, time_mask_max + 1))
+            t0 = 32 + int(rng.integers(0, 8))
+            t1 = min(40, t0 + t_len)
+            aug[t0:t1] = 0.0
+
+        return aug.astype(np.float32)
 
 
 # ==============================================================================
@@ -1015,6 +1001,21 @@ class EnhancedRuleAgent:
             b_res = env.call("bill_payment.list_bills", {})
             unpaid_bills = [b for b in b_res.get("bills", []) if not b.get("paid")]
 
+        # 6. Giá xăng dầu
+        if "fuel_price.get_price" in allowed and any(w in text for w in ["giá xăng", "xăng dầu", "xăng ron", "giá dầu", "xăng e5", "xăng hôm nay", "đổ xăng", "đổ e5", "đổ ron"]):
+            if not any(c["name"] == "fuel_price.get_price" for c in env.get_tool_calls()):
+                env.call("fuel_price.get_price", {})
+
+        # 7. Số dư tài khoản ngân hàng
+        if "banking.get_balance" in allowed and any(w in text for w in ["số dư tài khoản", "tài khoản ngân hàng còn", "tài khoản còn bao nhiêu", "kiểm tra số dư", "tài khoản thanh toán", "xem số dư", "coi nhanh tài khoản"]):
+            if not any(c["name"] == "banking.get_balance" for c in env.get_tool_calls()):
+                env.call("banking.get_balance", {})
+
+        # 8. Số dư ví điện tử
+        if "ewallet.get_balance" in allowed and any(w in text for w in ["số dư ví", "ví còn đủ", "ví em còn", "ví tôi còn", "ví còn bao nhiêu", "kiểm tra ví", "xem ví"]):
+            if not any(c["name"] == "ewallet.get_balance" for c in env.get_tool_calls()):
+                env.call("ewallet.get_balance", {})
+
         # Thực thi theo mệnh đề
         clauses = re.split(r";\s*|\s+(?:và|sau đó|rồi|với)\s+", text)
         for clause in clauses:
@@ -1594,7 +1595,7 @@ class NeuralToolRouter:
         self,
         checkpoint_path: Optional[Any] = None,
         device: str = "cpu",
-        threshold: float = 0.52,
+        threshold: float = 0.80,
     ):
         self.device = device
         self.threshold = threshold
@@ -1612,7 +1613,7 @@ class NeuralToolRouter:
             from pathlib import Path
             import json
 
-            root = Path(__file__).resolve().parent
+            root = Path(__file__).resolve().parent if "__file__" in globals() else Path(".").resolve()
             ckpt_p = Path(checkpoint_path) if checkpoint_path else (root / "checkpoints" / "router_sota.pt")
             if not ckpt_p.is_file():
                 return
@@ -1706,7 +1707,7 @@ class NeuralToolRouter:
             wav_path_rel = item.get("audio")
             feat = np.zeros(self.audio_dim, dtype=np.float32)
             if wav_path_rel:
-                root = Path(__file__).resolve().parent
+                root = Path(__file__).resolve().parent if "__file__" in globals() else Path(".").resolve()
                 for prefix in [root / "train+public_test" / "public_test", root / "train+public_test" / "train"]:
                     p = prefix / wav_path_rel
                     if p.is_file():
@@ -1726,23 +1727,37 @@ class NeuralToolRouter:
             pred_tools = [self.all_tools[i] for i in top_indices if self.all_tools[i] in env.allowed]
 
             if pred_tools:
+                ZERO_ARG_KEYWORD_GUARDS = {
+                    "smart_home.get_status": ["nhà thông minh", "thiết bị", "trạng thái nhà", "đèn", "quạt", "điều hoà", "nhiệt độ", "công tắc", "phòng khách", "phòng ngủ", "tầng"],
+                    "bill_payment.list_bills": ["hoá đơn", "tiền điện", "tiền nước", "tiền mạng", "tiền cước", "tiền truyền hình", "thanh toán hoá đơn"],
+                    "calendar.list_events": ["lịch", "sự kiện", "có hẹn", "hôm nay có gì", "ngày mai có gì", "lịch trình", "buổi họp", "chạy bộ", "đá bóng"],
+                    "banking.get_balance": ["số dư", "tài khoản còn", "tiết kiệm còn", "kiểm tra tài khoản", "xem tài khoản", "sao kê"],
+                    "banking.list_beneficiaries": ["người thụ hưởng", "danh sách thụ hưởng", "thụ hưởng"],
+                    "ewallet.get_balance": ["số dư ví", "ví còn bao nhiêu", "kiểm tra ví", "xem ví", "ví còn đủ"],
+                    "chat_ott.list_chats": ["tin nhắn zalo", "danh sách chat", "hộp thoại", "đoạn chat"],
+                    "gold_price.get_price": ["giá vàng", "vàng sjc", "vàng nhẫn"],
+                    "fuel_price.get_price": ["giá xăng", "giá dầu", "xăng ron", "xăng e5", "xăng"],
+                    "tv.guide": ["lịch chiếu", "kênh tivi", "kênh tv", "chương trình tivi"],
+                }
+
                 chosen = pred_tools[0]
                 catalog_tools_dict = getattr(env, "tools", {})
                 tool_def = catalog_tools_dict.get(chosen, {})
                 params_obj = tool_def.get("parameters", {})
                 req = params_obj.get("required", [])
                 one_of = params_obj.get("x-one-of", [])
+                text_lower = text.lower()
 
+                # Chỉ gọi công cụ 0 tham số nếu vượt qua semantic keyword guard
                 if not req and not one_of:
-                    env.call(chosen, {})
+                    guard_keywords = ZERO_ARG_KEYWORD_GUARDS.get(chosen)
+                    if guard_keywords is None or any(kw in text_lower for kw in guard_keywords):
+                        env.call(chosen, {})
                 elif "date" in req and len(req) == 1:
                     now_str = item.get("context", {}).get("current_time", "2026-11-10T08:00:00+07:00")
                     d = EnhancedDateTimeResolver().resolve_date(text, now_str).isoformat()
                     env.call(chosen, {"date": d})
-                else:
-                    missing_fields = req if req else [one_of[0][0]]
-                    if "sys.ask_missing_info" in env.allowed:
-                        env.call("sys.ask_missing_info", {"tool_name": chosen, "params": missing_fields})
+                # Tuyệt đối không gọi sys.ask_missing_info bừa bãi khi thiếu tham số
         except Exception:
             pass
 

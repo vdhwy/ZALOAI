@@ -27,6 +27,8 @@ echo "[4/4] Pulling results, checkpoints, and executed baseline.ipynb back to lo
 scp "$REMOTE:$REMOTE_DIR/baseline.ipynb" ./baseline.ipynb
 mkdir -p ./result ./checkpoints
 scp "$REMOTE:$REMOTE_DIR/result/submission.jsonl" ./result/submission.jsonl 2>/dev/null || true
+scp "$REMOTE:$REMOTE_DIR/submission2.jsonl" ./submission2.jsonl 2>/dev/null || true
+scp "$REMOTE:$REMOTE_DIR/result/submission2.jsonl" ./result/submission2.jsonl 2>/dev/null || true
 scp "$REMOTE:$REMOTE_DIR/result/eval_results.json" ./result/eval_results.json 2>/dev/null || true
 scp "$REMOTE:$REMOTE_DIR/checkpoints/router_sota.pt" ./checkpoints/router_sota.pt 2>/dev/null || true
 

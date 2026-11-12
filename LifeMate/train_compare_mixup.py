@@ -61,8 +61,8 @@ class AudioProcessor:
     Bộ tiền xử lý tín hiệu âm thanh chuyên sâu:
     1. Pitch Shift Data Augmentation: Dịch cao độ giọng nói theo semitone mà không đổi tốc độ.
     2. Audio Normalization: Chuẩn hóa 16,000 Hz mono & chuẩn hóa âm lượng RMS (-20 dBFS) + Peak limiter.
-    3. Audio Chunking: Cắt âm thanh thành các đoạn chunk sliding window / pause-aware để huấn luyện batch.
-    4. Silence Cleaning: VAD cắt khoảng lặng đầu/cuối và nén khoảng lặng chết ở giữa câu lệnh.
+    3. Silence Cleaning: VAD cắt khoảng lặng đầu/cuối và nén khoảng lặng chết ở giữa câu lệnh.
+    4. SpecAugment (spec_augment): Frequency & Time Masking trên biểu đồ phổ & đặc trưng âm học.
     """
 
     TARGET_SR: int = 16000
@@ -147,54 +147,6 @@ class AudioProcessor:
             audio = audio * (max_peak / peak)
 
         return audio.astype(np.float32), target_sr
-
-    @classmethod
-    def chunk_audio(
-        cls,
-        audio: np.ndarray,
-        sr: int = 16000,
-        chunk_sec: float = 3.0,
-        overlap_sec: float = 0.5,
-        min_chunk_sec: float = 1.0,
-        pad_last: bool = True,
-    ) -> List[Dict[str, Any]]:
-        """Cải tiến 3: Cắt âm thanh thành các đoạn chunk sliding window để huấn luyện."""
-        chunk_samples = int(round(chunk_sec * sr))
-        step_samples = max(1, int(round((chunk_sec - overlap_sec) * sr)))
-        min_samples = min(int(round(min_chunk_sec * sr)), chunk_samples)
-        total_samples = len(audio)
-
-        if total_samples <= chunk_samples:
-            chunk = audio
-            if pad_last and len(chunk) < chunk_samples:
-                chunk = np.pad(chunk, (0, chunk_samples - len(chunk)), mode="constant")
-            return [{
-                "chunk_idx": 0,
-                "audio": chunk.astype(np.float32),
-                "start_sec": 0.0,
-                "end_sec": round(total_samples / sr, 3),
-                "is_padded": len(audio) < chunk_samples,
-            }]
-
-        chunks = []
-        for idx, start in enumerate(range(0, total_samples, step_samples)):
-            end = start + chunk_samples
-            chunk = audio[start:end]
-            if len(chunk) < min_samples:
-                continue
-            is_padded = False
-            if len(chunk) < chunk_samples:
-                if pad_last:
-                    chunk = np.pad(chunk, (0, chunk_samples - len(chunk)), mode="constant")
-                    is_padded = True
-            chunks.append({
-                "chunk_idx": idx,
-                "audio": chunk.astype(np.float32),
-                "start_sec": round(start / sr, 3),
-                "end_sec": round(min(end, total_samples) / sr, 3),
-                "is_padded": is_padded,
-            })
-        return chunks
 
     @classmethod
     def clean_silence(
@@ -337,8 +289,8 @@ class AudioMixupAugmenter(AudioProcessor):
         spec_mean = log_bands.mean(axis=0)  # (32,)
 
         # 2. 8-segment Temporal Energy Envelope
-        chunks = np.array_split(samples, 8)
-        env = np.array([np.log1p(np.sqrt(np.mean(c ** 2) + 1e-8)) for c in chunks], dtype=np.float32)
+        segments = np.array_split(samples, 8)
+        env = np.array([np.log1p(np.sqrt(np.mean(s ** 2) + 1e-8)) for s in segments], dtype=np.float32)
 
         # 3. 8 Global Prosodic / Spectral Statistics
         rms = float(np.sqrt(np.mean(samples ** 2) + 1e-8))
@@ -353,6 +305,40 @@ class AudioMixupAugmenter(AudioProcessor):
 
         feat = np.concatenate([spec_mean, env, stats]).astype(np.float32)
         return feat[:n_bins]
+
+    @classmethod
+    def spec_augment(
+        cls,
+        feat: np.ndarray,
+        freq_mask_max: int = 6,
+        time_mask_max: int = 2,
+        num_freq_masks: int = 2,
+        num_time_masks: int = 1,
+    ) -> np.ndarray:
+        """
+        SpecAugment (Frequency & Time Masking) cho vector đặc trưng âm học 48 chiều:
+        - 0..31: 32-band Log-Power FFT spectrum (Frequency Masking)
+        - 32..39: 8-segment Temporal Energy Envelope (Time Masking)
+        - 40..47: Thống kê toàn cục prosodic/spectral
+        """
+        if feat.size < 48:
+            return feat.copy()
+        aug = feat.copy()
+        rng = np.random.default_rng()
+
+        for _ in range(num_freq_masks):
+            f_len = int(rng.integers(1, freq_mask_max + 1))
+            f0 = int(rng.integers(0, 32))
+            f1 = min(32, f0 + f_len)
+            aug[f0:f1] = 0.0
+
+        for _ in range(num_time_masks):
+            t_len = int(rng.integers(1, time_mask_max + 1))
+            t0 = 32 + int(rng.integers(0, 8))
+            t1 = min(40, t0 + t_len)
+            aug[t0:t1] = 0.0
+
+        return aug.astype(np.float32)
 
     def generate_mixup_dataset(
         self,
@@ -652,14 +638,64 @@ class MultimodalDataset(Dataset):
 
 
 # ==============================================================================
-# 3. TRAINING & EVALUATION ENGINE (BASELINE VS. MIXUP)
+# 3. TRAINING & EVALUATION ENGINE (BASELINE VS. MIXUP + SPECAUGMENT)
 # ==============================================================================
+
+class SpecAugment(nn.Module):
+    """
+    SpecAugment (Frequency & Time Masking) cho acoustic feature vector:
+    - Kênh 0..31: 32-band log-power FFT spectrum -> Frequency Masking (F-mask)
+    - Kênh 32..39: 8-segment temporal energy envelope -> Time Masking (T-mask)
+    """
+    def __init__(
+        self,
+        freq_mask_max: int = 6,
+        time_mask_max: int = 2,
+        num_freq_masks: int = 2,
+        num_time_masks: int = 1,
+        p: float = 0.8,
+    ):
+        super().__init__()
+        self.freq_mask_max = freq_mask_max
+        self.time_mask_max = time_mask_max
+        self.num_freq_masks = num_freq_masks
+        self.num_time_masks = num_time_masks
+        self.p = p
+
+    def forward(self, xa: torch.Tensor) -> torch.Tensor:
+        if not self.training or torch.rand(1).item() > self.p:
+            return xa
+
+        xa_aug = xa.clone()
+        B = xa_aug.size(0)
+
+        # 1. Frequency Masking on 32-band FFT (channels 0..31)
+        for _ in range(self.num_freq_masks):
+            f_len = torch.randint(1, self.freq_mask_max + 1, (B,), device=xa.device)
+            f_start = torch.randint(0, 32, (B,), device=xa.device)
+            for b in range(B):
+                f0 = f_start[b].item()
+                f1 = min(32, f0 + f_len[b].item())
+                xa_aug[b, f0:f1] = 0.0
+
+        # 2. Time Masking on 8-segment Temporal Envelope (channels 32..39)
+        for _ in range(self.num_time_masks):
+            t_len = torch.randint(1, self.time_mask_max + 1, (B,), device=xa.device)
+            t_start = torch.randint(0, 8, (B,), device=xa.device)
+            for b in range(B):
+                t0 = 32 + t_start[b].item()
+                t1 = min(40, t0 + t_len[b].item())
+                xa_aug[b, t0:t1] = 0.0
+
+        return xa_aug
+
 
 def train_router_model(
     train_ds: MultimodalDataset,
     val_ds: MultimodalDataset,
     fe: FeatureExtractor,
     use_mixup: bool = False,
+    use_spec_augment: bool = False,
     alpha: float = 0.4,
     epochs: int = 30,
     batch_size: int = 64,
@@ -672,6 +708,7 @@ def train_router_model(
     pos_weight = torch.ones(fe.num_tools, device=DEVICE) * 4.5
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
 
+    spec_aug = SpecAugment(freq_mask_max=6, time_mask_max=2, num_freq_masks=2, num_time_masks=1, p=0.8).to(DEVICE)
     loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
     rng = np.random.default_rng(2026)
     history_log = []
@@ -683,6 +720,9 @@ def train_router_model(
 
         for xt, xa, am, y in loader:
             xt, xa, am, y = xt.to(DEVICE), xa.to(DEVICE), am.to(DEVICE), y.to(DEVICE)
+
+            if use_spec_augment:
+                xa = spec_aug(xa)
 
             if use_mixup and xt.size(0) > 4:
                 perm = torch.randperm(xt.size(0), device=DEVICE)
@@ -932,13 +972,14 @@ def main():
     )
     print("-" * 80)
     model_mix, hist_mix = train_router_model(
-        ds_train_mixup, ds_val_clean, fe, use_mixup=True, alpha=0.4, epochs=30, batch_size=64
+        ds_train_mixup, ds_val_clean, fe, use_mixup=True, use_spec_augment=True, alpha=0.4, epochs=30, batch_size=64
     )
 
     ckpt_dir = PROJECT_ROOT / "checkpoints"
     ckpt_dir.mkdir(exist_ok=True)
     torch.save(model_base.state_dict(), ckpt_dir / "router_baseline.pt")
     torch.save(model_mix.state_dict(), ckpt_dir / "router_mixup.pt")
+    torch.save(model_mix.state_dict(), ckpt_dir / "router_sota.pt")
 
     # Evaluate Neural Routers across Clean, Overlay Mixup, and Concat Mixup sets
     router_clean_base = evaluate_router_dataset(model_base, ds_val_clean)
