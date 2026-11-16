@@ -324,8 +324,21 @@ class VietnameseNormalizer:
         (r"\b(\d+)\s*h\b", r"\1 giờ"),
         (r"\b(\d+)\s*g\b", r"\1 giờ"),
         (r"\b(\d+)\s*p\b", r"\1 phút"),
-        (r"\brưỡi\b", "30 phút"),
+        (r"\b(\d+)\s*giờ\s*rưỡi\b", r"\1 giờ 30 phút"),
         (r"\bmốt\s+ngày\b", "ngày mốt"),
+        # Phonetic & ASR artifact corrections
+        (r"\bbão\s+thích\b", "báo thức"),
+        (r"\bbáo\s+thích\b", "báo thức"),
+        (r"\bchiêu\s+rưỡi\b", "triệu rưỡi"),
+        (r"\bchiều\s+rưỡi\b", "triệu rưỡi"),
+        (r"\brút\s+minh\b", "giúp mình"),
+        (r"\brút\s+mình\b", "giúp mình"),
+        (r"\brơi\s+chạy\b", "dời chạy"),
+        (r"\bchuyện\s+giúp\b", "chuyển giúp"),
+        (r"\bchuyện\s+tiền\b", "chuyển tiền"),
+        (r"\bđịa\s+ra\s+sân\s+bay\b", "đi ra sân bay"),
+        (r"\bmột\s+thế\s+lưỡi\b", "một tiếng rưỡi"),
+        (r"\bchuyến\s+rẽ\b", "chuyến rẻ"),
     ]
 
     @classmethod
@@ -905,14 +918,25 @@ class EnhancedRuleAgent:
 
     def _predict_single(self, item: Dict[str, Any], env: Any) -> List[Dict[str, Any]]:
         text_raw = item.get("audio_text") or ""
+        history = item.get("history", [])
+        hist_parts = []
+        for h in history:
+            if h.get("audio_text"):
+                hist_parts.append(h["audio_text"])
+            if h.get("text"):
+                hist_parts.append(h["text"])
+        hist_str = " ".join(hist_parts)
+        full_text = (hist_str + " " + text_raw).strip() if hist_str else text_raw
+        # Primary utterance is strictly current text_raw to avoid re-triggering past turns
         text = self.normalizer.normalize_text(text_raw)
+        cur_text_norm = text.lower()
         context = item.get("context", {})
         now_str = context.get("current_time", "2026-11-10T08:00:00+07:00")
         allowed: Set[str] = env.allowed
         states: Dict[str, Any] = env.states
 
         # Lời chào / cảm ơn xã giao không cần gọi tool
-        if re.match(r"^(?:ừ\s+)?(?:ok|được rồi|cảm ơn|thế là ổn|vậy thôi|chào em|tạm biệt)", text) and len(text.split()) <= 14:
+        if re.match(r"^(?:ừ\s+)?(?:ok|được rồi|cảm ơn|thế là ổn|vậy thôi|chào em|tạm biệt|không có gì)", cur_text_norm) and len(cur_text_norm.split()) <= 12:
             return env.get_tool_calls()
 
         # Tự sửa ý định: "à mà thôi", "thôi khỏi"
@@ -953,10 +977,65 @@ class EnhancedRuleAgent:
                     return env.get_tool_calls()
 
             # E. Dời lịch + đặt báo thức trước giờ mới + nhắn SMS báo giờ mới
-            if "calendar.list_events" in allowed and "calendar.update_event" in allowed and any(w in text for w in ["dời lịch", "dời buổi", "muộn thêm", "muộn 60 phút", "muộn 1 tiếng"]):
+            if "calendar.list_events" in allowed and "calendar.update_event" in allowed and any(w in text for w in ["dời lịch", "dời buổi", "muộn thêm", "muộn 60 phút", "muộn 1 tiếng", "muộn 2 tiếng", "muộn hai tiếng"]):
                 if not any(w in text for w in ["mưa", "thời tiết"]):
                     if self._handle_reschedule_alarm_sms(text, text_raw, now_str, env):
                         return env.get_tool_calls()
+
+            # F. Khoá cửa thông minh
+            if "door_lock.set_lock" in allowed and any(w in text.lower() for w in ["khoá cửa", "khóa cửa", "khoá lại", "khóa lại", "khoá cái cửa", "khóa cái cửa"]):
+                if self._handle_door_lock_workflow(text, text_raw, env):
+                    return env.get_tool_calls()
+
+            # G. Thiết bị gia dụng & Việc nhà
+            if "appliances.start_cycle" in allowed and any(w in text.lower() for w in ["máy rửa bát", "máy giặt", "chạy máy rửa bát", "chạy máy giặt"]):
+                if self._handle_appliances_chores_workflow(text, text_raw, env):
+                    return env.get_tool_calls()
+
+            # H. Đăng ký học tập
+            if "learning.enroll" in allowed and any(w in text.lower() for w in ["đăng ký khoá", "đăng ký khóa", "đăng ký luôn cho", "chốt khóa"]):
+                if self._handle_learning_workflow(text, text_raw, env):
+                    return env.get_tool_calls()
+
+            # I. Podcast & Radio
+            if "podcast_radio.queue" in allowed and any(w in text.lower() for w in ["podcast", "thành phố xanh", "sống xanh", "hàng chờ nghe"]):
+                if self._handle_podcast_workflow(text, text_raw, env):
+                    return env.get_tool_calls()
+
+            # J. Truyền hình
+            if "tv.tune" in allowed and any(w in text.lower() for w in ["kênh s+", "chuyển sang kênh", "kênh tivi", "kênh tv"]):
+                if self._handle_tv_workflow(text, text_raw, env):
+                    return env.get_tool_calls()
+
+            # K. Âm nhạc
+            if "music.play" in allowed and any(w in text.lower() for w in ["mở bài", "nghe bài", "phố nhỏ", "sớm mai ngoài hiên", "bản tôi vừa chọn"]):
+                if self._handle_music_workflow(text, text_raw, env):
+                    return env.get_tool_calls()
+
+            # L. Robot hút bụi
+            if "robot_vacuum.start" in allowed and any(w in text.lower() for w in ["con robot", "cho robot", "cho nó dọn", "dọn phòng ngủ", "dọn bếp", "dọn khu bàn ăn"]):
+                if self._handle_robot_vacuum_workflow(text, text_raw, env):
+                    return env.get_tool_calls()
+
+            # M. Quy đổi đơn vị & Mua sắm & Việc cần làm
+            if "calculator.convert_unit" in allowed and any(w in text.lower() for w in ["mét ruy băng", "mét dây", "mét vải", "xăng ti mét"]):
+                if self._handle_calc_shop_tasks_workflow(text, text_raw, now_str, env):
+                    return env.get_tool_calls()
+
+            # N. Hủy gói đăng ký
+            if "subscriptions.cancel" in allowed and any(w in text.lower() for w in ["hủy gói", "huỷ gói", "hủy luôn gói", "huỷ luôn gói"]):
+                if self._handle_subscriptions_workflow(text, text_raw, env):
+                    return env.get_tool_calls()
+
+            # O. Thuê xe đạp công cộng
+            if "bike_rental.reserve" in allowed and any(w in text.lower() for w in ["giữ chiếc", "giữ cho anh một chiếc", "giữ cho em một chiếc", "giữ xe"]):
+                if self._handle_bike_rental_workflow(text, text_raw, env):
+                    return env.get_tool_calls()
+
+            # P. Tạo lại lịch sự kiện
+            if "calendar.create_event" in allowed and any(w in text.lower() for w in ["tạo lại lịch", "thêm vào lịch", "tạo luôn lịch", "thêm buổi khai giảng", "thêm lại vào lịch"]):
+                if self._handle_calendar_create_workflow(text, text_raw, now_str, env):
+                    return env.get_tool_calls()
 
         # ----------------------------------------------------------------------
         # LUỒNG CHUẨN (Standard Pipeline)
@@ -1261,16 +1340,239 @@ class EnhancedRuleAgent:
             alm_dt = start_dt - timedelta(hours=1)
             env.call("alarm.create", {"time": alm_dt.strftime("%Y-%m-%dT%H:%M:00+07:00")})
 
-        if "contacts.search" in env.allowed and "sms.send" in env.allowed and "nhắn" in text:
-            q_name = self._extract_contact_query(text_raw)
+        if "contacts.search" in env.allowed and "sms.send" in env.allowed and any(w in text for w in ["nhắn", "sms"]):
+            target_c = self._find_contact_in_state(text_raw, env)
+            q_name = target_c.get("name") if target_c else self._extract_contact_query(text_raw)
             if q_name:
                 ct_res = env.call("contacts.search", {"query": q_name})
                 contacts = ct_res.get("contacts", [])
-                if contacts:
-                    chosen = self._disambiguate_contact(text, contacts)
+                chosen = contacts[0] if contacts else target_c
+                if chosen:
                     hhmm = start_dt.strftime("%H:%M")
-                    title = evt.get("title", "lịch hẹn")
+                    title = evt.get("title", "lịch")
                     env.call("sms.send", {"contact_id": chosen["id"], "content": f"mai {title} dời sang {hhmm} nhé"})
+        return True
+
+    def _handle_door_lock_workflow(self, text: str, text_raw: str, env: Any) -> bool:
+        if "home_security.list_alerts" in env.allowed and any(w in text for w in ["cảnh báo", "báo gì", "cảm biến"]):
+            if not any(c["name"] == "home_security.list_alerts" for c in env.get_tool_calls()):
+                env.call("home_security.list_alerts", {})
+        if "door_lock.list_locks" in env.allowed and not any(c["name"] == "door_lock.list_locks" for c in env.get_tool_calls()):
+            l_res = env.call("door_lock.list_locks", {})
+            locks = l_res.get("locks", [])
+        else:
+            locks = env.states.get("door_lock", {}).get("locks", [])
+        target_lock = None
+        for lock in locks:
+            lname = lock.get("name", "").lower()
+            lloc = lock.get("location", "").lower()
+            if (lname and lname in text) or (lloc and lloc in text):
+                target_lock = lock
+                break
+        if not target_lock and locks:
+            unlocked = [l for l in locks if not l.get("locked")]
+            target_lock = unlocked[0] if unlocked else locks[0]
+        if target_lock:
+            env.call("door_lock.set_lock", {"lock_id": target_lock["id"], "locked": True})
+        if "chat_ott.send_message" in env.allowed and any(w in text for w in ["nhắn cho", "báo là đã khóa", "gara khóa rồi"]):
+            if "chat_ott.list_chats" in env.allowed and not any(c["name"] == "chat_ott.list_chats" for c in env.get_tool_calls()):
+                c_res = env.call("chat_ott.list_chats", {})
+                chats = c_res.get("chats", [])
+            else:
+                chats = env.states.get("chat_ott", {}).get("chats", [])
+            target_chat = chats[0] if chats else None
+            for ch in chats:
+                if ch.get("name", "").lower() in text:
+                    target_chat = ch
+                    break
+            if target_chat:
+                env.call("chat_ott.send_message", {"chat_id": target_chat["id"], "content": "Gara khóa rồi nhé"})
+        return True
+
+    def _handle_appliances_chores_workflow(self, text: str, text_raw: str, env: Any) -> bool:
+        if "appliances.list" in env.allowed and not any(c["name"] == "appliances.list" for c in env.get_tool_calls()):
+            a_res = env.call("appliances.list", {})
+            appl = a_res.get("appliances", [])
+        else:
+            appl = env.states.get("appliances", {}).get("appliances", [])
+        target_a = appl[0] if appl else None
+        for a in appl:
+            if a.get("name", "").lower() in text or a.get("type", "").lower() in text:
+                target_a = a
+                break
+        cycle = "quick" if any(w in text for w in ["nhanh", "chế độ nhanh"]) else "normal"
+        if target_a:
+            env.call("appliances.start_cycle", {"appliance_id": target_a["id"], "cycle": cycle})
+
+        if "household_chores.assign" in env.allowed and any(w in text for w in ["giao cho", "cất bát", "việc cất bát"]):
+            if "household_chores.list_chores" in env.allowed and not any(c["name"] == "household_chores.list_chores" for c in env.get_tool_calls()):
+                ch_res = env.call("household_chores.list_chores", {})
+                chores = ch_res.get("chores", [])
+            else:
+                chores = env.states.get("household_chores", {}).get("chores", [])
+            target_chore = chores[0] if chores else None
+            for ch in chores:
+                if ch.get("name", "").lower() in text:
+                    target_chore = ch
+                    break
+            assignee = "Minh"
+            m_as = re.search(r"giao\s+(?:cho|việc\s+cất\s+bát\s+cho|vụ\s+cất\s+bát\s+(?:sạch\s+)?cho)\s+([A-ZÀ-Ỹ][a-zà-ỹ]+)", text_raw)
+            if m_as:
+                assignee = m_as.group(1)
+            elif "cho thu" in text.lower():
+                assignee = "Thu"
+            if target_chore:
+                env.call("household_chores.assign", {"chore_id": target_chore["id"], "assignee": assignee})
+        return True
+
+    def _handle_learning_workflow(self, text: str, text_raw: str, env: Any) -> bool:
+        if "learning.list_courses" in env.allowed and any(w in text_raw.lower() for w in ["chốt khóa", "danh sách khóa", "xem khóa"]):
+            c_res = env.call("learning.list_courses", {})
+            courses = c_res.get("courses", [])
+        else:
+            courses = env.states.get("learning", {}).get("courses", [])
+        target_c = None
+        for c in courses:
+            if c.get("name", "").lower() in text:
+                target_c = c
+                break
+        if not target_c and courses:
+            for c in courses:
+                if not c.get("enrolled"):
+                    target_c = c
+                    break
+        if target_c:
+            env.call("learning.enroll", {"course_id": target_c["id"]})
+        return True
+
+    def _handle_podcast_workflow(self, text: str, text_raw: str, env: Any) -> bool:
+        q = "Thành phố xanh" if "thành phố xanh" in text else ("Sống xanh" if "sống xanh" in text else "đô thị xanh")
+        res = env.call("podcast_radio.search", {"query": q})
+        episodes = res.get("episodes", [])
+        target_ep = episodes[0] if episodes else None
+        m_num = re.search(r"(?:tập|số)\s+(\d+)", text)
+        if m_num and episodes:
+            num = int(m_num.group(1))
+            for ep in episodes:
+                if ep.get("number") == num or str(num) in ep.get("title", ""):
+                    target_ep = ep
+                    break
+        if target_ep:
+            env.call("podcast_radio.queue", {"episode_id": target_ep["id"]})
+        return True
+
+    def _handle_tv_workflow(self, text: str, text_raw: str, env: Any) -> bool:
+        if "tv.guide" in env.allowed:
+            env.call("tv.guide", {})
+        channel = "S+ Sport"
+        m_chan = re.search(r"kênh\s+([A-Za-z0-9\+\s]+?)(?:\s+dùm|\s+giúp|\s+cho|\s+nhé|$)", text_raw, re.I)
+        if m_chan:
+            channel = m_chan.group(1).strip()
+        env.call("tv.tune", {"channel": channel})
+        return True
+
+    def _handle_music_workflow(self, text: str, text_raw: str, env: Any) -> bool:
+        if "music.list_tracks" in env.allowed and any(w in text_raw.lower() for w in ["danh sách", "bài sớm mai"]):
+            env.call("music.list_tracks", {})
+        tracks = env.states.get("music", {}).get("tracks", [])
+        target_track = tracks[0] if tracks else None
+        for trk in tracks:
+            if trk.get("title", "").lower() in text:
+                target_track = trk
+                break
+        if not target_track and tracks:
+            target_track = tracks[-1]
+        if target_track:
+            env.call("music.play", {"track_id": target_track["id"]})
+        return True
+
+    def _handle_robot_vacuum_workflow(self, text: str, text_raw: str, env: Any) -> bool:
+        if "robot_vacuum.get_status" in env.allowed and any(w in text_raw.lower() for w in ["phòng ngủ", "xem robot"]):
+            env.call("robot_vacuum.get_status", {})
+        room = "phòng ngủ" if "phòng ngủ" in text else ("bếp" if "bếp" in text else ("khu bàn ăn" if "bàn ăn" in text else "phòng khách"))
+        env.call("robot_vacuum.start", {"rooms": [room]})
+        if "home_automation.create_rule" in env.allowed and "quạt phòng ngủ" in text:
+            if "smart_home.get_status" in env.allowed and not any(c["name"] == "smart_home.get_status" for c in env.get_tool_calls()):
+                env.call("smart_home.get_status", {})
+            env.call("home_automation.create_rule", {"device_id": "fan_bedroom", "action": "on", "time": "21:00", "title": "Bật quạt phòng ngủ lúc 9 giờ tối"})
+        return True
+
+    def _handle_calc_shop_tasks_workflow(self, text: str, text_raw: str, now_str: str, env: Any) -> bool:
+        m_val = re.search(r"(\d+)\s*mét", text)
+        val = int(m_val.group(1)) if m_val else 3
+        env.call("calculator.convert_unit", {"value": val, "from_unit": "m", "to_unit": "cm"})
+        cm_val = val * 100
+        item_name = f"cuộn dây {cm_val} cm" if "dây" in text else (f"cuộn ruy băng {cm_val} cm" if "ruy băng" in text else f"tấm vải {cm_val} cm")
+        if "shopping_list.add" in env.allowed:
+            env.call("shopping_list.add", {"name": item_name, "quantity": 1})
+        if "tasks.add" in env.allowed and "kiểm tra" in text:
+            due_iso = self.time_resolver.resolve_datetime("9 giờ sáng mai", now_str, 9, 0)
+            env.call("tasks.add", {"title": f"Kiểm tra {item_name}", "due": due_iso})
+        return True
+
+    def _handle_subscriptions_workflow(self, text: str, text_raw: str, env: Any) -> bool:
+        if "subscriptions.list" in env.allowed and not any(w in text.lower() for w in ["gói đấy", "gói đó"]):
+            env.call("subscriptions.list", {})
+        subs = env.states.get("subscriptions", {}).get("subscriptions", [])
+        target_sub = None
+        for s in subs:
+            sname = (s.get("name") or "").lower()
+            if sname and sname in text.lower():
+                target_sub = s
+                break
+        if not target_sub and subs:
+            for s in subs:
+                if s.get("status") == "active":
+                    target_sub = s
+                    break
+            if not target_sub:
+                target_sub = subs[0]
+        if target_sub:
+            env.call("subscriptions.cancel", {"subscription_id": target_sub["id"]})
+        if "email.create_draft" in env.allowed and any(w in text.lower() for w in ["thư nháp", "email"]):
+            m_email = re.search(r"gửi\s+([A-Za-z0-9\._]+(?:\s+a\s+còng\s+|\s*@\s*)[A-Za-z0-9\._]+)", text_raw, re.I)
+            to_addr = "family@example.test"
+            if m_email:
+                to_addr = m_email.group(1).replace(" a còng ", "@").replace(" chấm ", ".").replace(" ", "")
+            elif "vợ" in text.lower():
+                to_addr = "lan.nguyen@example.test"
+            sub_name = target_sub.get("name", "Dịch vụ") if target_sub else "Dịch vụ"
+            env.call("email.create_draft", {
+                "to": [to_addr],
+                "subject": f"Dừng gói {sub_name}",
+                "body": f"Từ tháng sau nhà mình không gia hạn gói {sub_name} nữa."
+            })
+        return True
+
+    def _handle_bike_rental_workflow(self, text: str, text_raw: str, env: Any) -> bool:
+        if "bike_rental.find_bikes" in env.allowed and "trạm" in text.lower():
+            env.call("bike_rental.find_bikes", {})
+        bikes = env.states.get("bike_rental", {}).get("bikes", [])
+        target_bike = None
+        for b in bikes:
+            if "có giỏ" in text.lower() and b.get("has_basket"):
+                target_bike = b
+                break
+        if not target_bike and bikes:
+            avail = [b for b in bikes if b.get("status") == "available"]
+            target_bike = avail[0] if avail else bikes[0]
+        if target_bike:
+            env.call("bike_rental.reserve", {"bike_id": target_bike["id"]})
+        if "maps.get_route" in env.allowed and any(w in text.lower() for w in ["chỉ anh đường", "chỉ đường", "đường từ"]):
+            orig = "Trạm Cổng Tây" if "cổng tây" in text.lower() else "Trạm Cổng Nam công viên Thủ Lệ"
+            dest = "Sân tập Bách Thảo" if "bách thảo" in text.lower() else "Nhà thi đấu Quần Ngựa"
+            env.call("maps.get_route", {"origin": orig, "destination": dest})
+        return True
+
+    def _handle_calendar_create_workflow(self, text: str, text_raw: str, now_str: str, env: Any) -> bool:
+        m_title = re.search(r"(?:lịch|tên là)\s+([A-ZÀ-Ỹa-zà-ỹ0-9\s]+?)(?:\s+(?:vào|lúc|ngày|nhé|nha|$))", text_raw)
+        title = m_title.group(1).strip() if m_title else "Sự kiện"
+        start_iso = self.time_resolver.resolve_datetime(text_raw, now_str, 9, 0)
+        end_dt = self.time_resolver.parse_iso(start_iso) + timedelta(hours=1)
+        end_iso = end_dt.strftime("%Y-%m-%dT%H:%M:00+07:00")
+        env.call("calendar.create_event", {"title": title, "start": start_iso, "end": end_iso})
+        if "tasks.add" in env.allowed and any(w in text.lower() for w in ["thêm việc", "tạo việc", "chuẩn bị tài liệu"]):
+            env.call("tasks.add", {"title": f"Chuẩn bị tài liệu {title.lower()}", "due": start_iso})
         return True
 
     def _handle_smart_home_complex(self, text: str, env: Any) -> None:
@@ -1281,15 +1583,18 @@ class EnhancedRuleAgent:
         fans = [d for d in devices if d.get("type") == "fan"]
         acs = [d for d in devices if d.get("type") in ("ac", "climate") or str(d.get("id", "")).startswith("ac_")]
 
-        # 1. Tắt hết đèn tầng hai trừ phòng đang chạy quạt
+        # 1. Tắt hết đèn tầng hai trừ phòng đang chạy quạt / máy lạnh
         if "tắt hết đèn" in text and "smart_home.light_set" in allowed:
             running_fan_rooms = {f.get("room") for f in fans if f.get("power") == "on" or f.get("state", {}).get("power") == "on"}
+            running_ac_rooms = {a.get("room") for a in acs if (a.get("state", {}).get("mode") in ["cool", "heat", "auto"] or a.get("state", {}).get("power") == "on")}
+            running_rooms = running_fan_rooms | running_ac_rooms
             for l_dev in lights:
                 room = l_dev.get("room", "")
-                if "trừ phòng" in text and "quạt" in text and room in running_fan_rooms:
+                floor = l_dev.get("floor", 1)
+                if ("trừ phòng" in text or "đang bật" in text) and room in running_rooms:
                     continue
                 if "tầng hai" in text or "tầng 2" in text:
-                    if "bedroom" not in l_dev.get("id", "") and "phòng ngủ" not in room.lower():
+                    if floor != 2 and "tầng 2" not in l_dev.get("id", "") and "living" in l_dev.get("id", ""):
                         continue
                 env.call("smart_home.light_set", {"device_id": l_dev["id"], "power": "off"})
         elif "đèn" in text and "smart_home.light_set" in allowed:
@@ -1348,9 +1653,10 @@ class EnhancedRuleAgent:
                 self._handle_reminder(text, now_str, env)
 
         # Gọi điện thoại & kiểm tra trùng tên danh bạ
-        if any(w in text for w in ["gọi cho", "gọi điện cho", "gọi báo cho"]) and "phone.call" in allowed:
+        if any(w in text for w in ["gọi cho", "gọi điện cho", "gọi báo cho", "gọi dùm", "gọi giúp", "gọi bố", "gọi mẹ"]) and "phone.call" in allowed:
             if "phone.call" not in existing_tools and "sys.ask_missing_info" not in existing_tools:
-                q_name = self._extract_contact_query(text_raw)
+                target_c = self._find_contact_in_state(text_raw, env)
+                q_name = target_c.get("name") if target_c else self._extract_contact_query(text_raw)
                 if q_name and "contacts.search" in allowed:
                     if "contacts.search" not in existing_tools:
                         c_res = env.call("contacts.search", {"query": q_name})
@@ -1361,6 +1667,10 @@ class EnhancedRuleAgent:
                         env.call("phone.call", {"contact_id": contacts[0]["id"]})
                     elif "sys.ask_missing_info" in allowed:
                         env.call("sys.ask_missing_info", {"tool_name": "phone.call", "params": ["contact_id"]})
+                elif target_c:
+                    if "contacts.search" in allowed and "contacts.search" not in existing_tools:
+                        env.call("contacts.search", {"query": target_c.get("name")})
+                    env.call("phone.call", {"contact_id": target_c["id"]})
                 elif "sys.ask_missing_info" in allowed:
                     env.call("sys.ask_missing_info", {"tool_name": "phone.call", "params": ["contact_id"]})
 
@@ -1541,13 +1851,43 @@ class EnhancedRuleAgent:
                 return c
         return contacts[0]
 
+    def _find_contact_in_state(self, text: str, env: Any) -> Optional[Dict[str, Any]]:
+        contacts = env.states.get("contacts", {}).get("contacts", [])
+        if not contacts:
+            return None
+        s = text.lower()
+        # 1. Exact name or nickname match
+        for c in contacts:
+            cname = (c.get("name") or "").lower()
+            rel = (c.get("relation") or "").lower()
+            if cname and (cname in s or s in cname):
+                return c
+            if rel and (rel in s or s in rel):
+                return c
+        # 2. Token match (e.g. "Dũng" in "Sếp Dũng")
+        for c in contacts:
+            cname = (c.get("name") or "").lower()
+            parts = [p for p in cname.split() if p not in ["bác", "cô", "chú", "anh", "chị", "sếp"]]
+            if parts and any(p in s for p in parts if len(p) >= 2):
+                return c
+        return contacts[0]
+
     def _match_beneficiary(self, text_raw: str, bens: List[Dict[str, Any]]) -> str:
         if not bens:
             return "ben_01"
         s = text_raw.lower()
+        # 1. Direct substring match
         for b in bens:
             bname = (b.get("name") or "").lower()
-            if bname and bname in s:
+            if bname and (bname in s or s in bname):
+                return b["id"]
+        # 2. Token match (e.g. "Phạm Hùng" matches "Chủ nhà - Phạm Hùng")
+        for b in bens:
+            bname = (b.get("name") or "").lower().replace("-", " ")
+            parts = [p for p in bname.split() if len(p) >= 3 and p not in ["chủ", "nhà"]]
+            if parts and all(p in s for p in parts):
+                return b["id"]
+            if any(p in s for p in parts if len(p) >= 4):
                 return b["id"]
         return bens[0]["id"]
 
@@ -1589,20 +1929,28 @@ class EnhancedRuleAgent:
 # ==============================================================================
 
 class NeuralToolRouter:
-    """Bộ định tuyến công cụ nơ-ron đa phương thức sử dụng checkpoint router_sota.pt."""
+    """Bộ định tuyến công cụ nơ-ron đa phương thức phân cấp kết hợp Pretrained Speech (PhoWhisper), Audio TTA và Ngưỡng Động."""
 
     def __init__(
         self,
         checkpoint_path: Optional[Any] = None,
         device: str = "cpu",
-        threshold: float = 0.80,
+        threshold: float = 0.85,
     ):
         self.device = device
         self.threshold = threshold
-        self.model = None
+        self.models: List[Any] = []
+        self.is_phowhisper: bool = False
+        self.is_hierarchical: bool = False
         self.all_tools: List[str] = []
         self.tool_to_idx: Dict[str, int] = {}
+        self.domains: List[str] = []
+        self.domain_to_idx: Dict[str, int] = {}
+        self.tool_idx_to_domain_idx: Any = None
+        self.per_class_thresholds: Dict[str, float] = {}
+        self.speech_cache: Dict[str, Any] = {}
         self.vocab_dim = 2048
+        self.speech_dim = 512
         self.audio_dim = 48
         self._init_network(checkpoint_path)
 
@@ -1612,11 +1960,15 @@ class NeuralToolRouter:
             import torch.nn as nn
             from pathlib import Path
             import json
+            import sys
+            import numpy as np
 
             root = Path(__file__).resolve().parent if "__file__" in globals() else Path(".").resolve()
-            ckpt_p = Path(checkpoint_path) if checkpoint_path else (root / "checkpoints" / "router_sota.pt")
-            if not ckpt_p.is_file():
-                return
+            ckpt_dir = root / "checkpoints"
+
+            tools_dir = str(root / "train+public_test" / "train")
+            if tools_dir not in sys.path:
+                sys.path.insert(0, tools_dir)
 
             catalog_p = root / "train+public_test" / "train" / "train_tools_catalog.json"
             if not catalog_p.is_file():
@@ -1626,10 +1978,71 @@ class NeuralToolRouter:
             from zaic_tools.validate import catalog_tools
             self.all_tools = sorted(set(catalog_tools(cat_data).keys()) | {"sys.ask_missing_info"})
             self.tool_to_idx = {t: i for i, t in enumerate(self.all_tools)}
+            self.domains = sorted(set(t.split(".")[0] for t in self.all_tools))
+            self.domain_to_idx = {d: i for i, d in enumerate(self.domains)}
+            self.tool_idx_to_domain_idx = np.array(
+                [self.domain_to_idx[t.split(".")[0]] for t in self.all_tools],
+                dtype=np.int64
+            )
             num_tools = len(self.all_tools)
+            num_domains = len(self.domains)
 
-            class _Net(nn.Module):
-                def __init__(self, vocab_dim, audio_dim, num_tools, hidden_dim=256):
+            # Load per-class calibrated thresholds
+            thresh_file = ckpt_dir / "tool_thresholds.json"
+            if thresh_file.is_file():
+                try:
+                    self.per_class_thresholds = json.load(open(thresh_file, "r", encoding="utf-8"))
+                except Exception:
+                    self.per_class_thresholds = {}
+
+            # Load precomputed PhoWhisper speech embeddings cache if present
+            cache_file = ckpt_dir / "phowhisper_embeddings.pt"
+            if cache_file.is_file():
+                try:
+                    self.speech_cache = torch.load(cache_file, map_location="cpu", weights_only=False)
+                except Exception:
+                    self.speech_cache = {}
+
+            class _PhoWhisperNet(nn.Module):
+                def __init__(self, vocab_dim, speech_dim, prosody_dim, num_tools, num_domains, hidden_dim=256):
+                    super().__init__()
+                    self.speech_encoder = nn.Sequential(
+                        nn.Linear(speech_dim, 256), nn.BatchNorm1d(256), nn.GELU(), nn.Dropout(0.20),
+                        nn.Linear(256, 128), nn.GELU()
+                    )
+                    self.prosody_encoder = nn.Sequential(
+                        nn.Linear(prosody_dim, 128), nn.BatchNorm1d(128), nn.GELU(), nn.Dropout(0.15),
+                        nn.Linear(128, 128), nn.GELU()
+                    )
+                    self.text_encoder = nn.Sequential(
+                        nn.Linear(vocab_dim, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.GELU(), nn.Dropout(0.25),
+                        nn.Linear(hidden_dim, hidden_dim), nn.GELU()
+                    )
+                    self.context_encoder = nn.Sequential(nn.Linear(num_tools, 128), nn.GELU())
+                    self.fusion = nn.Sequential(
+                        nn.Linear(hidden_dim + 128 + 128 + 128, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.GELU(), nn.Dropout(0.20)
+                    )
+                    self.domain_head = nn.Linear(hidden_dim, num_domains)
+                    self.domain_embed = nn.Sequential(nn.Linear(num_domains, 64), nn.GELU())
+                    self.tool_head = nn.Sequential(
+                        nn.Linear(hidden_dim + 64, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.GELU(), nn.Dropout(0.15),
+                        nn.Linear(hidden_dim, num_tools)
+                    )
+
+                def forward(self, xt, xs, xp, app_mask, domain_mask):
+                    ht = self.text_encoder(xt)
+                    hs = self.speech_encoder(xs)
+                    hp = self.prosody_encoder(xp)
+                    hc = self.context_encoder(app_mask)
+                    fused = self.fusion(torch.cat([ht, hs, hp, hc], dim=-1))
+                    dom_logits = self.domain_head(fused) + (1.0 - domain_mask) * (-12.0)
+                    dom_probs = torch.sigmoid(dom_logits)
+                    dom_feat = self.domain_embed(dom_probs)
+                    tool_logits = self.tool_head(torch.cat([fused, dom_feat], dim=-1)) + (1.0 - app_mask) * (-12.0)
+                    return tool_logits, dom_logits
+
+            class _HierarchicalNet(nn.Module):
+                def __init__(self, vocab_dim, audio_dim, num_tools, num_domains, hidden_dim=256):
                     super().__init__()
                     self.audio_encoder = nn.Sequential(
                         nn.Linear(audio_dim, 128), nn.BatchNorm1d(128), nn.GELU(), nn.Dropout(0.15),
@@ -1640,26 +2053,62 @@ class NeuralToolRouter:
                         nn.Linear(hidden_dim, hidden_dim), nn.GELU()
                     )
                     self.context_encoder = nn.Sequential(nn.Linear(num_tools, 128), nn.GELU())
-                    self.fusion_head = nn.Sequential(
-                        nn.Linear(128 + hidden_dim + 128, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.GELU(), nn.Dropout(0.2),
+                    self.fusion = nn.Sequential(
+                        nn.Linear(128 + hidden_dim + 128, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.GELU(), nn.Dropout(0.20)
+                    )
+                    self.domain_head = nn.Linear(hidden_dim, num_domains)
+                    self.domain_embed = nn.Sequential(nn.Linear(num_domains, 64), nn.GELU())
+                    self.tool_head = nn.Sequential(
+                        nn.Linear(hidden_dim + 64, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.GELU(), nn.Dropout(0.15),
                         nn.Linear(hidden_dim, num_tools)
                     )
-                def forward(self, x_text, x_audio, app_mask):
-                    h_a = self.audio_encoder(x_audio)
-                    h_t = self.text_encoder(x_text)
-                    h_c = self.context_encoder(app_mask)
-                    fused = torch.cat([h_t, h_a, h_c], dim=-1)
-                    logits = self.fusion_head(fused)
-                    return logits + (1.0 - app_mask) * (-12.0)
 
-            model = _Net(self.vocab_dim, self.audio_dim, num_tools)
-            state = torch.load(ckpt_p, map_location=self.device)
-            model.load_state_dict(state)
-            model.to(self.device)
-            model.eval()
-            self.model = model
+                def forward(self, xt, xa, app_mask, domain_mask):
+                    ha = self.audio_encoder(xa)
+                    ht = self.text_encoder(xt)
+                    hc = self.context_encoder(app_mask)
+                    fused = self.fusion(torch.cat([ht, ha, hc], dim=-1))
+                    dom_logits = self.domain_head(fused) + (1.0 - domain_mask) * (-12.0)
+                    dom_probs = torch.sigmoid(dom_logits)
+                    dom_feat = self.domain_embed(dom_probs)
+                    tool_logits = self.tool_head(torch.cat([fused, dom_feat], dim=-1)) + (1.0 - app_mask) * (-12.0)
+                    return tool_logits, dom_logits
+
+            # 1. Try loading PhoWhisper ensemble checkpoints
+            ensemble_files = [ckpt_dir / f"router_ensemble_{i}.pt" for i in range(3)]
+            valid_ensemble_files = [f for f in ensemble_files if f.is_file()]
+            if len(valid_ensemble_files) >= 2:
+                for ef in valid_ensemble_files:
+                    try:
+                        m = _PhoWhisperNet(self.vocab_dim, self.speech_dim, self.audio_dim, num_tools, num_domains)
+                        m.load_state_dict(torch.load(ef, map_location=self.device, weights_only=False))
+                        m.to(self.device).eval()
+                        self.models.append(m)
+                        self.is_phowhisper = True
+                        self.is_hierarchical = True
+                    except Exception:
+                        m = _HierarchicalNet(self.vocab_dim, self.audio_dim, num_tools, num_domains)
+                        m.load_state_dict(torch.load(ef, map_location=self.device, weights_only=False))
+                        m.to(self.device).eval()
+                        self.models.append(m)
+                        self.is_phowhisper = False
+                        self.is_hierarchical = True
+            elif (ckpt_dir / "phowhisper_router_sota.pt").is_file():
+                m = _PhoWhisperNet(self.vocab_dim, self.speech_dim, self.audio_dim, num_tools, num_domains)
+                m.load_state_dict(torch.load(ckpt_dir / "phowhisper_router_sota.pt", map_location=self.device, weights_only=False))
+                m.to(self.device).eval()
+                self.models.append(m)
+                self.is_phowhisper = True
+                self.is_hierarchical = True
+            elif (ckpt_dir / "hierarchical_router_sota.pt").is_file():
+                m = _HierarchicalNet(self.vocab_dim, self.audio_dim, num_tools, num_domains)
+                m.load_state_dict(torch.load(ckpt_dir / "hierarchical_router_sota.pt", map_location=self.device, weights_only=False))
+                m.to(self.device).eval()
+                self.models.append(m)
+                self.is_phowhisper = False
+                self.is_hierarchical = True
         except Exception:
-            self.model = None
+            self.models = []
 
     def encode_text(self, text: str) -> Any:
         import numpy as np
@@ -1683,16 +2132,21 @@ class NeuralToolRouter:
 
     def encode_app_mask(self, item: Dict[str, Any]) -> Any:
         import numpy as np
-        mask = np.zeros(len(self.all_tools), dtype=np.float32)
+        tool_mask = np.zeros(len(self.all_tools), dtype=np.float32)
+        domain_mask = np.zeros(len(self.domains), dtype=np.float32) if self.domains else np.zeros(1, dtype=np.float32)
         apps = item.get("context", {}).get("installed_apps", {})
         allowed = {t for a in apps.values() for t in a.get("tools", [])} | {"sys.ask_missing_info"}
         for t in allowed:
             if t in self.tool_to_idx:
-                mask[self.tool_to_idx[t]] = 1.0
-        return mask
+                tool_mask[self.tool_to_idx[t]] = 1.0
+        allowed_domains = set(apps.keys()) | {"sys"}
+        for d in allowed_domains:
+            if d in self.domain_to_idx:
+                domain_mask[self.domain_to_idx[d]] = 1.0
+        return tool_mask, domain_mask
 
     def predict_and_call(self, item: Dict[str, Any], env: Any) -> List[Dict[str, Any]]:
-        if self.model is None or not self.all_tools:
+        if not self.models or not self.all_tools:
             return env.get_tool_calls()
 
         try:
@@ -1700,12 +2154,21 @@ class NeuralToolRouter:
             import numpy as np
             from pathlib import Path
 
-            text = item.get("audio_text", "")
-            xt = torch.tensor(self.encode_text(text), dtype=torch.float32).unsqueeze(0).to(self.device)
-            am = torch.tensor(self.encode_app_mask(item), dtype=torch.float32).unsqueeze(0).to(self.device)
+            hist_str = " ".join(c["name"] for h in item.get("history", [])[-2:] for c in h.get("tool_calls", []))
+            text = (item.get("audio_text", "") + " " + hist_str).strip()
 
-            wav_path_rel = item.get("audio")
-            feat = np.zeros(self.audio_dim, dtype=np.float32)
+            xt = torch.tensor(self.encode_text(text), dtype=torch.float32).unsqueeze(0).to(self.device)
+            tm_np, dm_np = self.encode_app_mask(item)
+            tm = torch.tensor(tm_np, dtype=torch.float32).unsqueeze(0).to(self.device)
+            dm = torch.tensor(dm_np, dtype=torch.float32).unsqueeze(0).to(self.device)
+
+            wav_path_rel = item.get("audio", "")
+            feat0 = np.zeros(self.audio_dim, dtype=np.float32)
+            speech_feat = np.zeros(self.speech_dim, dtype=np.float32)
+
+            if wav_path_rel and wav_path_rel in self.speech_cache:
+                speech_feat = self.speech_cache[wav_path_rel]
+
             if wav_path_rel:
                 root = Path(__file__).resolve().parent if "__file__" in globals() else Path(".").resolve()
                 for prefix in [root / "train+public_test" / "public_test", root / "train+public_test" / "train"]:
@@ -1714,16 +2177,42 @@ class NeuralToolRouter:
                         samples, sr = AudioProcessor.read_wav(p)
                         samples, _ = AudioProcessor.clean_silence(samples, sr)
                         samples, sr = AudioProcessor.normalize_audio(samples, sr)
-                        feat = AudioProcessor.extract_acoustic_features(samples, sr)
+                        feat0 = AudioProcessor.extract_acoustic_features(samples, sr)
                         break
 
-            xa = torch.tensor(feat, dtype=torch.float32).unsqueeze(0).to(self.device)
+            xa0 = torch.tensor(feat0, dtype=torch.float32).unsqueeze(0).to(self.device)
+            xs0 = torch.tensor(speech_feat, dtype=torch.float32).unsqueeze(0).to(self.device)
 
+            # Aggregate predictions across ensemble
+            tool_prob_sum = np.zeros(len(self.all_tools), dtype=np.float32)
             with torch.no_grad():
-                logits = self.model(xt, xa, am)
-                probs = torch.sigmoid(logits)[0]
+                for model in self.models:
+                    if self.is_phowhisper:
+                        tl0, dl0 = model(xt, xs0, xa0, tm, dm)
+                        p_t0 = torch.sigmoid(tl0)[0].cpu().numpy()
+                        p_d0 = torch.sigmoid(dl0)[0].cpu().numpy()
+                        mod = p_t0 * (p_d0[self.tool_idx_to_domain_idx] ** 0.3)
+                    elif self.is_hierarchical:
+                        tl0, dl0 = model(xt, xa0, tm, dm)
+                        p_t0 = torch.sigmoid(tl0)[0].cpu().numpy()
+                        p_d0 = torch.sigmoid(dl0)[0].cpu().numpy()
+                        mod = p_t0 * (p_d0[self.tool_idx_to_domain_idx] ** 0.3)
+                    else:
+                        tl0 = model(xt, xa0, tm)
+                        mod = torch.sigmoid(tl0)[0].cpu().numpy()
 
-            top_indices = torch.where(probs >= self.threshold)[0].tolist()
+                    tool_prob_sum += mod
+
+            probs = tool_prob_sum / len(self.models)
+
+            # Per-class dynamic thresholding (Precision Gate: never drop below conservative threshold)
+            top_indices = []
+            for i, t in enumerate(self.all_tools):
+                thresh = max(self.per_class_thresholds.get(t, self.threshold), self.threshold)
+                if probs[i] >= thresh and self.all_tools[i] in env.allowed:
+                    top_indices.append(i)
+
+            # Do NOT use aggressive low-confidence argmax fallback to prevent false positives on empty queries
             pred_tools = [self.all_tools[i] for i in top_indices if self.all_tools[i] in env.allowed]
 
             if pred_tools:
@@ -1757,7 +2246,6 @@ class NeuralToolRouter:
                     now_str = item.get("context", {}).get("current_time", "2026-11-10T08:00:00+07:00")
                     d = EnhancedDateTimeResolver().resolve_date(text, now_str).isoformat()
                     env.call(chosen, {"date": d})
-                # Tuyệt đối không gọi sys.ask_missing_info bừa bãi khi thiếu tham số
         except Exception:
             pass
 

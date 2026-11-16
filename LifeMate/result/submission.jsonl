@@ -1,16 +1,16 @@
 {"id": "public_0002", "tool_calls": [{"name": "calendar.list_events", "arguments": {}}, {"name": "ride_hailing.book", "arguments": {"pickup": "Tòa nhà Blue Pearl, Quận 7, TP.HCM", "dropoff": "Nha khoa Sài Gòn, 45 Nguyễn Thị Minh Khai, Quận 3, TP.HCM", "vehicle": "car4"}}], "state_hash": "818baf532fb6833a51eab7912291e3282cb1ce18631a8095c545f32495ea0e7a"}
-{"id": "public_0003", "tool_calls": [{"name": "contacts.search", "arguments": {}}], "state_hash": "23f1c7d2419741b689aaa6bf48a180d3d250730740bafdfe9e69a745fbb4bf7a"}
-{"id": "public_0004", "tool_calls": [], "state_hash": "b985bf45e87e3eee383647466e96031ea3b28736967d13b42ea34f5e498d6f0a"}
+{"id": "public_0003", "tool_calls": [{"name": "calendar.update_event", "arguments": {"event_id": "evt_01", "start": "2026-11-15T09:00:00+07:00", "end": "2026-11-15T10:00:00+07:00"}}], "state_hash": "389077d3ba15156a3fe656e48efc28c580b01d359e9198d2a414c460a71d2cdc"}
+{"id": "public_0004", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "b985bf45e87e3eee383647466e96031ea3b28736967d13b42ea34f5e498d6f0a"}
 {"id": "public_0005", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-09"}}], "state_hash": "ae2e71628f54888c8005ecb58d075d8b6523d8b3c8dffbdd31b6e7415fc5dc9e"}
 {"id": "public_0006", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-04"}}], "state_hash": "7aa09f3d23303339d24aa70a62c20d9c4a3534e5d484c7901745720f6f016e1f"}
-{"id": "public_0007", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Bạn Đặt Cho Mình Cái Báo Thức Địa Ra Sân Bay Nhé"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "0c9a54bd6c97dad611c9db81fad24f5bb64c01d2c4e4aa1b670886ed17d8a350"}
+{"id": "public_0007", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Bạn Đặt Cho Mình Cái Báo Thức Đi Ra Sân Bay Nhé"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "0c9a54bd6c97dad611c9db81fad24f5bb64c01d2c4e4aa1b670886ed17d8a350"}
 {"id": "public_0008", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "37ce9720449a4ef2e291484fe7f440fe02afd31a3686ef150ff0ffe2ad37a51e"}
 {"id": "public_0009", "tool_calls": [], "state_hash": "afbf8e61dbddd4df97c44eeed829ec71a22cff4d2c93d20271bf0ef9eb443f29"}
 {"id": "public_0010", "tool_calls": [], "state_hash": "c36f1e7bd1e8bee3c6308587055ddb7a75cc52da83e99bd4fbcdcc7a27b686de"}
 {"id": "public_0012", "tool_calls": [], "state_hash": "127d668b134de7f07c6892d7442ba5a2049da745f8734165399fb4210ea834ce"}
-{"id": "public_0015", "tool_calls": [{"name": "contacts.search", "arguments": {}}], "state_hash": "75b1d5aa392fa3fa5cf71e747dd65ab29f3e96738aafbdbc6f768e7822b78707"}
+{"id": "public_0015", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "75b1d5aa392fa3fa5cf71e747dd65ab29f3e96738aafbdbc6f768e7822b78707"}
 {"id": "public_0016", "tool_calls": [{"name": "bill_payment.list_bills", "arguments": {}}], "state_hash": "ad9d5ffd094b084de349ddd6cb9cb6caed03f0de457f81c5059d7deae87a6020"}
-{"id": "public_0017", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "ca3809f7ac58cc598e527d7f90a90e51cc6aaf849345ea16b619022278a43f82"}
+{"id": "public_0017", "tool_calls": [{"name": "alarm.create", "arguments": {"time": "2026-11-13T06:30:00+07:00"}}, {"name": "contacts.search", "arguments": {"query": "Lan"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "phone.call", "params": ["contact_id"]}}], "state_hash": "642f59194eb3ec2154bee1ab408ed67eb3ca1adadeb2932af5d30637febd8496"}
 {"id": "public_0019", "tool_calls": [], "state_hash": "43b9520791e305eed8b4e14ae41a7132527ad149cff19665ac3fb5c57e195f7d"}
 {"id": "public_0020", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-15"}}], "state_hash": "bd1b72bca808e2af185bc27a3c0424176cd2c76a10465acb6e5a5e6ebcc62dcd"}
 {"id": "public_0021", "tool_calls": [{"name": "bill_payment.list_bills", "arguments": {}}, {"name": "bill_payment.list_bills", "arguments": {}}], "state_hash": "5bb4e06f184af428bd6832172f658ad657a6932264dafc1c12438a16e2408373"}
@@ -25,7 +25,7 @@
 {"id": "public_0030", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-13"}}], "state_hash": "ff082bb3da81650f131f55e4ce27dff1057c48400712f81a97d320ff94af810b"}
 {"id": "public_0031", "tool_calls": [], "state_hash": "7178277a2afe5b9e93895e3063f97dd5c63bb40ac216de7311a23976cf5bc72f"}
 {"id": "public_0032", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "30b7ce6f19592890a0da8b5ef8501e859747cbb0a4fa1399e61f6657bc9333e3"}
-{"id": "public_0033", "tool_calls": [{"name": "ewallet.transfer", "arguments": {"contact_id": "c_01", "amount": 500000}}], "state_hash": "59bd1df41730f80dde45e5ac4785d509ab69d26fbbcaafcfbde0457fdd82cc71"}
+{"id": "public_0033", "tool_calls": [{"name": "ewallet.transfer", "arguments": {"contact_id": "c_01", "amount": 500000}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "59bd1df41730f80dde45e5ac4785d509ab69d26fbbcaafcfbde0457fdd82cc71"}
 {"id": "public_0034", "tool_calls": [], "state_hash": "a2dff419474edcb0a64086600223b753b13c6597fdfc4d6fce46f1b2d6a1dbd6"}
 {"id": "public_0035", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-10"}}], "state_hash": "e122740a45b0f69ed379f5d86d76cfe72657f100970e6a4e58c50030481dd302"}
 {"id": "public_0036", "tool_calls": [{"name": "calendar.list_events", "arguments": {}}, {"name": "calendar.update_event", "arguments": {"event_id": "evt_01", "start": "2026-11-23T10:00:00+07:00", "end": "2026-11-23T11:00:00+07:00"}}, {"name": "alarm.create", "arguments": {"time": "2026-11-23T09:00:00+07:00"}}], "state_hash": "c5b3f82f68c77149ad5e87fb2a668faa3d8e90bd095813f88842c0b87440ea64"}
@@ -36,7 +36,7 @@
 {"id": "public_0041", "tool_calls": [], "state_hash": "b558cee8ece53824d3ba16d9ef81092003f6601555015305676fa2605371bcde"}
 {"id": "public_0043", "tool_calls": [], "state_hash": "593563db44e15d579d58e311bc5f52466bd3bb403892c40663a689fce8c32c0d"}
 {"id": "public_0044", "tool_calls": [{"name": "reminders.create", "arguments": {"content": "lời nhắc", "time": "2026-11-25T09:00:00+07:00"}}], "state_hash": "61314f0364ac35b4b0ce568325933059bc3e6718ac1e3b86d1afc05987b6c661"}
-{"id": "public_0045", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-23"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "phone.call", "params": ["contact_id"]}}], "state_hash": "aa7767539d2fabf8bcfde81b61b0479e66a10e74ca3829de9bd1046e63a9b6d2"}
+{"id": "public_0045", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-23"}}, {"name": "contacts.search", "arguments": {"query": "Hương"}}, {"name": "phone.call", "arguments": {"contact_id": "c_04"}}], "state_hash": "8221ecbc2198266833b3fb6ba4475852ebd09bd079f49e9a1e64287586288fce"}
 {"id": "public_0047", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}, {"name": "smart_home.light_set", "arguments": {"device_id": "light_living", "power": "on"}}], "state_hash": "23b9d3527a58572212a0bbcbc8f26977d35b81ee3df544a32e89b9cc7f40e1fc"}
 {"id": "public_0048", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-06"}}, {"name": "calendar.list_events", "arguments": {}}], "state_hash": "99795df3110557ea2a4b5463a557374ab8f5655a2127f33c966936719a59496e"}
 {"id": "public_0049", "tool_calls": [{"name": "banking.get_balance", "arguments": {}}], "state_hash": "d23e1e78d01364de93e594782cd616b139adbdecbcd2a1bb2300fb362196f990"}
@@ -73,9 +73,9 @@
 {"id": "public_0083", "tool_calls": [], "state_hash": "5850e1256e83e114b6ce43d9013b730addb5b69ff3ece7c86425775cf7168ae1"}
 {"id": "public_0084", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}, {"name": "smart_home.light_set", "arguments": {"device_id": "light_bedroom", "power": "on"}}], "state_hash": "f2ebca38b08b2e6b26ed5f05a22f55513efccefc9213b571430d718bcfe1f973"}
 {"id": "public_0085", "tool_calls": [{"name": "bill_payment.list_bills", "arguments": {}}, {"name": "ewallet.get_balance", "arguments": {}}, {"name": "bill_payment.pay", "arguments": {"bill_id": "bill_01", "source": "bank"}}], "state_hash": "15d2c75a6e080251450a120eebad3c53d74726bcc3804cb2c9331a7997033c3b"}
-{"id": "public_0086", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "phone.call", "params": ["contact_id"]}}], "state_hash": "8cc250d17867c56e1f6f3026fb8d91f4add80ca76575eb256a95a3ef2a94676a"}
+{"id": "public_0086", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "8cc250d17867c56e1f6f3026fb8d91f4add80ca76575eb256a95a3ef2a94676a"}
 {"id": "public_0087", "tool_calls": [], "state_hash": "7845ce0c98e212c84b29e0a368e54f33f1dc0d1928147981e69ccc645c772a4e"}
-{"id": "public_0088", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}], "state_hash": "7f0fa6fa34124da6b64485acf85f8ddf3593c2deb880a49fa45b6c79d40cf148"}
+{"id": "public_0088", "tool_calls": [], "state_hash": "7f0fa6fa34124da6b64485acf85f8ddf3593c2deb880a49fa45b6c79d40cf148"}
 {"id": "public_0089", "tool_calls": [], "state_hash": "f240c30d599297d494368993b9cdec92fff19569fc1701abd055208e263ab16e"}
 {"id": "public_0090", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}, {"name": "smart_home.light_set", "arguments": {"device_id": "light_bedroom", "brightness": 100}}], "state_hash": "d8907ac2ee672530558d9b0418d3e72d928ff221e82150083e6fc48c39b7ef4d"}
 {"id": "public_0091", "tool_calls": [{"name": "smart_home.get_status", "arguments": {}}, {"name": "smart_home.light_set", "arguments": {"device_id": "light_kitchen"}}], "state_hash": "bd4476bb0c9b527e28f8e23592d760e4766c59e5234cad94d053c4c60c472c33"}
@@ -88,7 +88,7 @@
 {"id": "public_0098", "tool_calls": [], "state_hash": "dc065e7927daeae2555242d5786d9f9ddb023e8ccaa905245d86aa35a43b6ced"}
 {"id": "public_0099", "tool_calls": [], "state_hash": "fc74c495eb36da0dce3300732528ab2526956dda48a1d8cc35e8298836ace3fa"}
 {"id": "public_0100", "tool_calls": [{"name": "calendar.list_events", "arguments": {}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "7a2795a256b8e819f5ea7d80cde1a0aeac00cfc8b807ee93b53ccf8f8c191ebf"}
-{"id": "public_0101", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "8cbae20848e72193a9f6581dc22650991655d7a10fae16bed839ba5abb9d721a"}
+{"id": "public_0101", "tool_calls": [{"name": "alarm.create", "arguments": {"time": "2026-11-23T06:30:00+07:00"}}, {"name": "contacts.search", "arguments": {"query": "Minh"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "phone.call", "params": ["contact_id"]}}], "state_hash": "4826d41db11be6efd9796375befc6cf05e81e4667311d345b1e40d7c894b97a0"}
 {"id": "public_0102", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-19"}}, {"name": "calendar.list_events", "arguments": {}}], "state_hash": "d5aee2c67ac94e05c8e5da4ff2f7100ead0452f62a3c470a151fdc06dfde1a1c"}
 {"id": "public_0103", "tool_calls": [], "state_hash": "c92e446742ae4a028164cdd6a5056240b5e2292d3214854af7aa45a55da5a13a"}
 {"id": "public_0104", "tool_calls": [{"name": "bill_payment.list_bills", "arguments": {}}, {"name": "bill_payment.pay", "arguments": {"bill_id": "bill_01", "source": "bank"}}], "state_hash": "2bad5fb16bfc2183f585717ce1437b025d0952da2a5f05bb49ca181912efd563"}
@@ -136,7 +136,7 @@
 {"id": "public_0153", "tool_calls": [], "state_hash": "4506d61b46ab8418850a036dbac04eef03ffe89d974a37d412a079e838dfc0fa"}
 {"id": "public_0155", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-18"}}], "state_hash": "bfee4099080865d3ab8bc07bc6aef561706630a1601fb4b10f690708f94c8757"}
 {"id": "public_0156", "tool_calls": [{"name": "bill_payment.list_bills", "arguments": {}}, {"name": "bill_payment.pay", "arguments": {"bill_id": "bill_02", "source": "bank"}}], "state_hash": "935c6130f148599a76a43977f64baa63e301f766af70daba00ed880f418a57a1"}
-{"id": "public_0157", "tool_calls": [], "state_hash": "d427edba439aef8b015e2837c5bee09a328d87f659aa45017136ad867dd84f5d"}
+{"id": "public_0157", "tool_calls": [{"name": "alarm.create", "arguments": {"time": "2026-11-11T102:30:00+07:00"}}], "state_hash": "61869f4e52b81d317273fcd48825c13f24ac7ee78fffc8af634d03b9fd2e9509"}
 {"id": "public_0158", "tool_calls": [], "state_hash": "ff6ffc20d64a85b866820c34cb3a35576d3f02721689f9cdc1ce50c95cbfd930"}
 {"id": "public_0159", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "818c01a9ba82e00d34dce7fac9dc8ee12cac4777972ce9708994a91e387c1d43"}
 {"id": "public_0160", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "26b6490fb359f63e6e06189249a688b5e4c7787ced46ad62131d8480a6169f69"}
@@ -146,7 +146,7 @@
 {"id": "public_0164", "tool_calls": [], "state_hash": "5e459344e048cc37ac145d82ced49f382693c736d4fb278cf11fa56a025ec8bb"}
 {"id": "public_0165", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Chị Trà Đào Cam Xả Ở Quán Trà Sữa Nhà Mèo Nhóm Trác Phòng Cá Tính Mỗi Người Một Ly Tính Cả Chị Nữa Nhé"}}], "state_hash": "b1bbac32b5b736d488ae78888759a5da0650cf75f82e8cf2b1c2222930210dc2"}
 {"id": "public_0166", "tool_calls": [], "state_hash": "c8a16a0662b68d8120282a49fbe7ff61171c5b787e01bfba673b694fb21c1e1b"}
-{"id": "public_0167", "tool_calls": [{"name": "contacts.search", "arguments": {}}], "state_hash": "e464fa6389f7d97352e51221340842d2f7cc6c86508963562b8bb9867ee23d5e"}
+{"id": "public_0167", "tool_calls": [], "state_hash": "e464fa6389f7d97352e51221340842d2f7cc6c86508963562b8bb9867ee23d5e"}
 {"id": "public_0168", "tool_calls": [], "state_hash": "3ad51f663a36b02e48250d066d8d59d3d3235aa112ab69794fcfcdc41cb6d1a9"}
 {"id": "public_0169", "tool_calls": [{"name": "calendar.update_event", "arguments": {"event_id": "evt_01", "start": "2026-11-15T19:30:00+07:00", "end": "2026-11-15T20:30:00+07:00"}}], "state_hash": "25bf9899ab90fb26873bd98bf0ba44d04e753b3be1feec03c9bd0ffd7aedb56c"}
 {"id": "public_0170", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-07"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "alarm.create", "params": ["time"]}}], "state_hash": "4827c3395e0f0c991ab94db57a2c04477f5e225222ee50326f1b1c5d87b51389"}
@@ -157,7 +157,7 @@
 {"id": "public_0175", "tool_calls": [], "state_hash": "f323aa56dd44946282926aae2543dd58b22ff091b74d9d5bb0e65d5ea2f0092c"}
 {"id": "public_0176", "tool_calls": [], "state_hash": "2cb593abe8b1a8be1044045f399ab1449494250094ef15c2e8495a10e7bcd1b7"}
 {"id": "public_0177", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Chị Một Cái Email Gửi Chi Ánh Báo Là Chiếc Gửi Số"}}], "state_hash": "d00fdcb8435433760af5389d0829bba0a524ccded751dd14dfed7a13a2ff79c5"}
-{"id": "public_0178", "tool_calls": [], "state_hash": "3451ba3331ca5c2dc23c96d38ad584b530d4ec1a025c9c1bcb31ef9af21eb53e"}
+{"id": "public_0178", "tool_calls": [{"name": "calendar.list_events", "arguments": {}}], "state_hash": "3451ba3331ca5c2dc23c96d38ad584b530d4ec1a025c9c1bcb31ef9af21eb53e"}
 {"id": "public_0179", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "91a0986b9ac5299bdf9404a9c4a31ba087b17dfe2f317b302c41d4ff3fec9278"}
 {"id": "public_0180", "tool_calls": [], "state_hash": "de7a048a7077395692968f1b6cf611f0ff334952c4fc7ee6103ea8bfbbd41c4a"}
 {"id": "public_0181", "tool_calls": [], "state_hash": "d18d7db820e655218c7e1e7785958f04a70ac44b3fa531b3f0407e39734059c3"}
@@ -235,13 +235,13 @@
 {"id": "public_0261", "tool_calls": [], "state_hash": "4463c1848306dc5cf0b37f8658d699951200589bc0344b4008df3373b3661576"}
 {"id": "public_0262", "tool_calls": [], "state_hash": "e23726ce0c77c15be03c6161e320625a33c9d01f6a3affc5f668add54615db19"}
 {"id": "public_0263", "tool_calls": [], "state_hash": "f31432c1d4b75017bb9001a002fae28b0b101317bdb618b49c8ee6f2179afab2"}
-{"id": "public_0264", "tool_calls": [], "state_hash": "2870237358932e286bca9c4c0ba264f1ad5d39f44069c3bab176482f10ed40c5"}
+{"id": "public_0264", "tool_calls": [{"name": "music.play", "arguments": {"track_id": "trk_06"}}], "state_hash": "429f1adde86025353997ab83db570b16c781ac0d70a2e8a5a5ffc3363b5507be"}
 {"id": "public_0265", "tool_calls": [], "state_hash": "65680409f476f8a252b4d227ee527bb2c891e1ec402c64fbcb2f993e3dc15349"}
 {"id": "public_0266", "tool_calls": [], "state_hash": "e03b11cfb6f1b14e8879e99916db6295bbc4db3c024d5e6abc39e218ea4150ba"}
 {"id": "public_0267", "tool_calls": [], "state_hash": "d4bb8cfe38132a686a829243eea17ce9aa0161069ac2c3ffa83d428e426fc391"}
 {"id": "public_0268", "tool_calls": [], "state_hash": "65b77ccde1e43c6966cb0f3623b2af280fe1ea91025ccb6f13dab323952e5e96"}
 {"id": "public_0269", "tool_calls": [], "state_hash": "cc2ded48ea27af199e18f444c3e190d353d25c07eb04f3aa6205381de3045484"}
-{"id": "public_0270", "tool_calls": [], "state_hash": "cc33375f8b8dafcca1980d03b6bbd6fcbc249cb6f502babb823bd84cd314c658"}
+{"id": "public_0270", "tool_calls": [{"name": "music.play", "arguments": {"track_id": "trk_07"}}], "state_hash": "4ff6b5d8b5223368ca44ee15173b0aec95496ebc25cb169b1dcb23db2a0889b4"}
 {"id": "public_0271", "tool_calls": [], "state_hash": "2acbfe14279b94a5cc22db9e6878445c6867b975bd723dd5d223a50c630f57e2"}
 {"id": "public_0272", "tool_calls": [], "state_hash": "71a3256e348775be186760bcdced4e2af290bea0bf0b462f2c5bbdf1876128f3"}
 {"id": "public_0273", "tool_calls": [{"name": "calendar.list_events", "arguments": {}}], "state_hash": "e49cbba276edda720810e38d99b9b8e0139e87f7adbb80ee5eff0a9558549991"}
@@ -289,7 +289,7 @@
 {"id": "public_0323", "tool_calls": [], "state_hash": "5c11f805e898ec2c4b82b606b1296f40b5f182065a15a73145b38d2528959ff0"}
 {"id": "public_0324", "tool_calls": [], "state_hash": "1af5a45e757f23ff922904215d108dc89ece4991fb8c41c23e53104d9278766d"}
 {"id": "public_0325", "tool_calls": [], "state_hash": "972b92acc4c967416c72b7359b5ecefefc7ce25f13c058d432b73f9875658e49"}
-{"id": "public_0326", "tool_calls": [{"name": "calendar.list_events", "arguments": {}}], "state_hash": "d192b30d0958fc741a2de868e0470a33bfcb6733a592b81c26313f42c7b9b40c"}
+{"id": "public_0326", "tool_calls": [{"name": "calendar.create_event", "arguments": {"title": "cho anh việt mang chuyện hàng ra chuyện trẻ", "start": "2026-10-01T10:00:00+07:00", "end": "2026-10-01T11:00:00+07:00"}}], "state_hash": "93de8510a442c40b57135f7dbae04db0137ccd5c28a08cf048e96efb9aaefacd"}
 {"id": "public_0327", "tool_calls": [], "state_hash": "5c1f88739998e0301e317435d70e8789a3280396b36174aaac44aed7024ca486"}
 {"id": "public_0328", "tool_calls": [], "state_hash": "4bbe94a60e4409e3a15a8f74940d03841c6d5be28f08908bfd5e76581efa380e"}
 {"id": "public_0329", "tool_calls": [], "state_hash": "34d05d71acab901fc5f9020c6967a52ff6fe6bb4bf9c60961587b2d70377fd72"}
@@ -379,7 +379,7 @@
 {"id": "public_0416", "tool_calls": [], "state_hash": "1c6ce53970d521acf16d59df119fdfdfaeef7c18ebd71595afba3ffcfe9981aa"}
 {"id": "public_0417", "tool_calls": [], "state_hash": "cfbdf2d50c5a22bbf84ba6aa34578d5434cbc0039759d33e29cae6cd17d2fa12"}
 {"id": "public_0418", "tool_calls": [], "state_hash": "2e1f1529c411097d0d3b5cd03c5090d4ba7117b15328da0eb0bc7fbfd23c3767"}
-{"id": "public_0419", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Chị Ba 30 Phút Là Không Bốn Giờ Chiều Bắt Đầu Nấu Không Thì Năm"}}, {"name": "reminders.create", "arguments": {"content": "ba 30 phút là không bốn giờ chiều bắt đầu nấu không thì năm giờ", "time": "2026-10-20T16:00:00+07:00"}}], "state_hash": "d16a309aaa17decab4e9ee4d26c3ceca426d3d68b55f070bf83ba9394df8d6fc"}
+{"id": "public_0419", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Chị Ba Rưỡi Là Không Bốn Giờ Chiều Bắt Đầu Nấu Không Thì Năm"}}, {"name": "reminders.create", "arguments": {"content": "ba rưỡi là không bốn giờ chiều bắt đầu nấu không thì năm giờ", "time": "2026-10-20T16:00:00+07:00"}}], "state_hash": "d16a309aaa17decab4e9ee4d26c3ceca426d3d68b55f070bf83ba9394df8d6fc"}
 {"id": "public_0420", "tool_calls": [], "state_hash": "8b7f270a47fb71971c00c164ae3bfb497828918e669ff2958ee75b8e4eb32efa"}
 {"id": "public_0421", "tool_calls": [], "state_hash": "7709ef9505f950acfb9784d64f81a8229207ed14d69688ad269d2ade24104285"}
 {"id": "public_0422", "tool_calls": [{"name": "ride_hailing.book", "arguments": {"pickup": "45 Trần Hưng Đạo, Ninh Kiều, Cần Thơ", "dropoff": "Điểm đến", "vehicle": "car4"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "ee927afec5aabfd72fad2f5066b1f3fda912110897e9caab7f70845f60713ecd"}
@@ -397,7 +397,7 @@
 {"id": "public_0435", "tool_calls": [], "state_hash": "c459fc372beb60ec11ce99dc24483b8c89b33f5725e76c23b503f0f8608bc159"}
 {"id": "public_0436", "tool_calls": [], "state_hash": "7b3cf269997bb42b6b0f508f3c8aa3c11aeae88cec5fcb6cf743d611b324806d"}
 {"id": "public_0437", "tool_calls": [], "state_hash": "8660ece302d1acfcb2c4dd7a644042bcc93403c9f0ef3c25abec3f126f32adb6"}
-{"id": "public_0438", "tool_calls": [{"name": "sys.ask_missing_info", "arguments": {"tool_name": "phone.call", "params": ["contact_id"]}}], "state_hash": "afdab13761be194a8da059162fe12e94d85e79bf82d7ce925f4c7b6832658a62"}
+{"id": "public_0438", "tool_calls": [{"name": "contacts.search", "arguments": {"query": "Anh Long"}}, {"name": "phone.call", "arguments": {"contact_id": "c_2624"}}], "state_hash": "53e89a5627a20f07547905315a0131734a19ea9a6eb5ed906d6e6ad3af062c2e"}
 {"id": "public_0440", "tool_calls": [], "state_hash": "871c53931baa124f906ead2bc132f53cbc298c2c8ad2021f9b43408651665a9c"}
 {"id": "public_0441", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-11-24"}}, {"name": "sys.ask_missing_info", "arguments": {"tool_name": "reminders.create", "params": ["time"]}}], "state_hash": "4e71c0a6ef62574274baf0610c909323db292957523b78ad985cfff30304f791"}
 {"id": "public_0442", "tool_calls": [{"name": "weather.get_forecast", "arguments": {"date": "2026-10-16"}}], "state_hash": "68a2e338149027fba470433c3d996943a61ca796f0188a5e3f9644d99e2c26c0"}

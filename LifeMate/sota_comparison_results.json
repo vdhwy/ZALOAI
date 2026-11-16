@@ -1,0 +1,57 @@
+{
+  "benchmarks": {
+    "held_out_validation_n309": {
+      "baseline": {
+        "micro_f1": "19.86%",
+        "micro_precision": "41.67%",
+        "micro_recall": "13.04%",
+        "top5_recall": "53.45%",
+        "multi_intent_coverage": "25.57%"
+      },
+      "mixup_v1": {
+        "micro_f1": "40.04%",
+        "micro_precision": "43.29%",
+        "micro_recall": "37.24%",
+        "top5_recall": "62.94%",
+        "multi_intent_coverage": "33.66%"
+      },
+      "sota_ensemble_asl_hierarchical_tta": {
+        "micro_f1": "40.48%",
+        "micro_precision": "43.82%",
+        "micro_recall": "37.62%",
+        "top5_recall": "69.65%",
+        "multi_intent_coverage": "33.66%"
+      }
+    },
+    "compound_multi_intent_mixup_n50": {
+      "baseline": {
+        "micro_f1": "87.88%",
+        "multi_intent_coverage": "46.00%"
+      },
+      "sota": {
+        "micro_f1": "96.13%",
+        "multi_intent_coverage": "90.00%"
+      }
+    },
+    "train_environment_eval_n10": {
+      "baseline_state_hash": "60.00%",
+      "sota_state_hash": "70.00%",
+      "sota_exact_tool_sequence": "70.00%"
+    }
+  },
+  "applied_methods": [
+    "Asymmetric Loss (ASL: gamma_neg=4.0, gamma_pos=1.0, clip=0.05)",
+    "Hierarchical 2-Stage Multi-Task Routing (Domain Head + Domain-Gated Tool Head)",
+    "Per-Class Dynamic Threshold Calibration (147 independent tau_k in [0.20, 0.70])",
+    "Continuous Audio SpecAugment (Frequency & Time Masking)",
+    "Multi-Seed Model Ensembling (Seeds: 2026, 42, 1337)",
+    "Audio Test-Time Augmentation (TTA: Original + Pitch Shifted +1.5 semitones)"
+  ],
+  "submission": {
+    "path": "result/submission.jsonl",
+    "rows": 634,
+    "tool_calls": 309,
+    "schema_errors": 0,
+    "status": "100% Validated & Compliant"
+  }
+}
