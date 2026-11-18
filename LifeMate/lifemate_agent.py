@@ -2003,6 +2003,44 @@ class NeuralToolRouter:
                 except Exception:
                     self.speech_cache = {}
 
+            class _ASTNet(nn.Module):
+                def __init__(self, vocab_dim, speech_dim, prosody_dim, num_tools, num_domains, hidden_dim=256):
+                    super().__init__()
+                    self.speech_encoder = nn.Sequential(
+                        nn.Linear(speech_dim, 384), nn.BatchNorm1d(384), nn.GELU(), nn.Dropout(0.20),
+                        nn.Linear(384, 192), nn.GELU()
+                    )
+                    self.prosody_encoder = nn.Sequential(
+                        nn.Linear(prosody_dim, 128), nn.BatchNorm1d(128), nn.GELU(), nn.Dropout(0.15),
+                        nn.Linear(128, 128), nn.GELU()
+                    )
+                    self.text_encoder = nn.Sequential(
+                        nn.Linear(vocab_dim, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.GELU(), nn.Dropout(0.25),
+                        nn.Linear(hidden_dim, hidden_dim), nn.GELU()
+                    )
+                    self.context_encoder = nn.Sequential(nn.Linear(num_tools, 128), nn.GELU())
+                    self.fusion = nn.Sequential(
+                        nn.Linear(hidden_dim + 192 + 128 + 128, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.GELU(), nn.Dropout(0.20)
+                    )
+                    self.domain_head = nn.Linear(hidden_dim, num_domains)
+                    self.domain_embed = nn.Sequential(nn.Linear(num_domains, 64), nn.GELU())
+                    self.tool_head = nn.Sequential(
+                        nn.Linear(hidden_dim + 64, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.GELU(), nn.Dropout(0.15),
+                        nn.Linear(hidden_dim, num_tools)
+                    )
+
+                def forward(self, xt, xs, xp, app_mask, domain_mask):
+                    ht = self.text_encoder(xt)
+                    hs = self.speech_encoder(xs)
+                    hp = self.prosody_encoder(xp)
+                    hc = self.context_encoder(app_mask)
+                    fused = self.fusion(torch.cat([ht, hs, hp, hc], dim=-1))
+                    dom_logits = self.domain_head(fused) + (1.0 - domain_mask) * (-12.0)
+                    dom_probs = torch.sigmoid(dom_logits)
+                    dom_feat = self.domain_embed(dom_probs)
+                    tool_logits = self.tool_head(torch.cat([fused, dom_feat], dim=-1)) + (1.0 - app_mask) * (-12.0)
+                    return tool_logits, dom_logits
+
             class _PhoWhisperNet(nn.Module):
                 def __init__(self, vocab_dim, speech_dim, prosody_dim, num_tools, num_domains, hidden_dim=256):
                     super().__init__()
@@ -2074,10 +2112,38 @@ class NeuralToolRouter:
                     tool_logits = self.tool_head(torch.cat([fused, dom_feat], dim=-1)) + (1.0 - app_mask) * (-12.0)
                     return tool_logits, dom_logits
 
-            # 1. Try loading PhoWhisper ensemble checkpoints
-            ensemble_files = [ckpt_dir / f"router_ensemble_{i}.pt" for i in range(3)]
-            valid_ensemble_files = [f for f in ensemble_files if f.is_file()]
-            if len(valid_ensemble_files) >= 2:
+            # 1. Try loading AST (Audio Spectrogram Transformer) Audio Classifier checkpoints
+            ast_ensemble_files = [ckpt_dir / f"ast_ensemble_{i}.pt" for i in range(3)]
+            valid_ast_files = [f for f in ast_ensemble_files if f.is_file()]
+            if (ckpt_dir / "ast_embeddings.pt").is_file():
+                try:
+                    self.speech_cache = torch.load(ckpt_dir / "ast_embeddings.pt", map_location="cpu", weights_only=False)
+                    self.speech_dim = 768
+                except Exception:
+                    pass
+            if (ckpt_dir / "ast_thresholds.json").is_file():
+                try:
+                    self.per_class_thresholds = json.load(open(ckpt_dir / "ast_thresholds.json", "r", encoding="utf-8"))
+                except Exception:
+                    pass
+
+            if len(valid_ast_files) >= 2:
+                for ef in valid_ast_files:
+                    m = _ASTNet(self.vocab_dim, 768, self.audio_dim, num_tools, num_domains)
+                    m.load_state_dict(torch.load(ef, map_location=self.device, weights_only=False))
+                    m.to(self.device).eval()
+                    self.models.append(m)
+                self.is_phowhisper = True
+                self.is_hierarchical = True
+            elif (ckpt_dir / "ast_router_sota.pt").is_file():
+                m = _ASTNet(self.vocab_dim, 768, self.audio_dim, num_tools, num_domains)
+                m.load_state_dict(torch.load(ckpt_dir / "ast_router_sota.pt", map_location=self.device, weights_only=False))
+                m.to(self.device).eval()
+                self.models.append(m)
+                self.is_phowhisper = True
+                self.is_hierarchical = True
+            # 2. Fallback to PhoWhisper ensemble checkpoints
+            elif len(valid_ensemble_files := [f for f in [ckpt_dir / f"router_ensemble_{i}.pt" for i in range(3)] if f.is_file()]) >= 2:
                 for ef in valid_ensemble_files:
                     try:
                         m = _PhoWhisperNet(self.vocab_dim, self.speech_dim, self.audio_dim, num_tools, num_domains)
